@@ -1,11 +1,11 @@
 ---
 cloud: Experience Cloud
-solution: Experience Cloud
-product: experience cloud
 type: Documentation
-mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/template.en
-index: no
+product: adobe primetime
+solution: Pass
+feature-set: Pass
+git-repo: https://github.com/AdobeDocs/pass.en
+hide: yes
 ---
 
 # Metadata for internal use
