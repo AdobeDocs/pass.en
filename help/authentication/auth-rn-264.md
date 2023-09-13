@@ -17,7 +17,6 @@ This page describes new features, changes, and known issues with this release:
 * [New Features](#new-featres-264)
 * [Bug fixes](#bug-fixes-264)
 
-
 ### Build Number {#build-no-264}
 
 Adobe Primetime authentication: adobe-pass-**2.64**
