@@ -10,7 +10,7 @@ Welcome to the Adobe Primetime Release Notes. The documents listed in the left n
 
 ## Enhancements and fixes in PTAI 22.9.2
 
-This release focuses on enhancements to ad performance telemetry data to include Ad call and Avail logging data.
+This release focuses on enhancements to ad performance telemetry data to include Ad call and Avail logging data. 
 
 For other fixes and details, see [Ad Insertion Release Notes](/help/release-notes/ptai-22x-release-notes.md).
 
