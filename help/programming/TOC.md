@@ -1,10 +1,10 @@
 ---
 audience: end-user
-user-guide-title: Primetime Programming Help
+user-guide-title: Adobe Pass Programming Help
 user-guide-description: Allows you to learn to develop applications and video players using Java on Android devices and Objective-C on iOS devices.
 ---
 
-# Primetime Programming Help {#programming}
+# Adobe Pass Programming Help {#programming}
 
 + [Programming Overview](home.md)
 + TVSDK 3x for Android {#tvsdk-3x-android-prog}

@@ -2,14 +2,14 @@
 product: adobe primetime
 audience: end-user
 feature: Authentication
-user-guide-title: Primetime Authentication
-user-guide-description: Primetime Authentication is an entitlement solution for TV Everywhere, providing a modular framework for determining whether someone who requests access to a resource is entitled to it.
+user-guide-title: Adobe Pass Authentication
+user-guide-description: Adobe Pass Authentication is an entitlement solution for TV Everywhere, providing a modular framework for determining whether someone who requests access to a resource is entitled to it.
 ---
 
-# Primetime Authentication Help {#authentication}
+# Adobe Pass Authentication Help {#authentication}
 
-+   [Primetime Authentication overview](home.md)
-+   Primetime Authentication concepts {#authentication-concepts}
++   [Pass Authentication overview](home.md)
++   Pass Authentication concepts {#authentication-concepts}
     + [Technical paper](technical-paper.md)
     + [Overview for programmers](programmer-overview.md)
     + [MVPD overview](mvpd-overview.md)
@@ -174,7 +174,7 @@ user-guide-description: Primetime Authentication is an entitlement solution for 
       + [Reset Temp Pass on iOS](reset-temp-pass-on-ios.md)
       + [Debugging the AccessEnabler iOS/tvOS SDK using Console app logs](debugging-the-accessenabler-iostvos-sdk-using-console-app-logs.md)
       + [AccessEnabler iOS/tvOS 3.7.0 Upgrade Path](accessenabler-iostvos-370-upgrade-path.md)            
-  + Primetime Authentication Environments {#primetime-authentication-environments}
+  + Pass Authentication Environments {#primetime-authentication-environments}
     + [Understanding the Adobe Environments](understanding-the-adobe-environments.md)
     + [Setting up Your Environment and Testing in Pre-Qual](setting-up-your-environment-and-testing-in-prequal.md)
     + [How to test Authentication and Authorization flows using Adobe API test site](test-authn-authz-flows-using-adobes-api-test-site.md)

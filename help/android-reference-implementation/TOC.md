@@ -1,14 +1,14 @@
 ---
 product: primetime
 audience: end-user
-user-guide-title: Primetime Reference Implementation Help
+user-guide-title: Adobe Pass Reference Implementation Help
 user-guide-description: Helps understand the TVSDK and modify the feature managers to customize your personal player.
 ---
 
 # PSDK 1.4 for Android Reference Implementation {#reference-implementation}
 
 + [Android Reference Implementation Overview](home.md)
-+ Primetime reference implementation {#reference}
++ Pass reference implementation {#reference}
    + [How to use the Primetime reference implementation](ref-implementation/how-to-use-ref-player.md)
    + [Reference implementation structure](ref-implementation/ref-player-structure.md)
    + How to use feature managers {#feature-managers}

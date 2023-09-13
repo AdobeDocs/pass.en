@@ -2,11 +2,11 @@
 product: adobe primetime
 feature: Concurrency Monitoring
 audience: end-user
-user-guide-title: Primetime Concurrency Monitoring
+user-guide-title: Adobe Pass Concurrency Monitoring
 user-guide-description: Learn to define and enforce limits on concurrent usage across multiple applications.
 ---
 
-# Primetime Concurrency Monitoring help {#cm}
+# Adobe Pass Concurrency Monitoring help {#cm}
 
 + [Concurrency Monitoring introduction](cm-home.md)
 +   [Concurrency Monitoring glossary](cm-glossary.md) 

@@ -1,14 +1,14 @@
 ---
 product: adobe primetime
 audience: end-user
-user-guide-title: Primetime Release Notes
+user-guide-title: Adobe Pass Release Notes
 user-guide-description: Provides release-specific information, system requirements, limitations, fixed issues, and known issues.
 ---
 
-# Primetime Release Notes {#release-notes}
+# Adobe Pass Release Notes {#release-notes}
 
 + [Release Notes Overview](home.md)
-+ Primetime Ad Insertion {#ptai}
++ Pass Ad Insertion {#ptai}
   + [PTAI 22.9.2 Release Notes](ptai-22x-release-notes.md)
   + [PTAI 21.11.1 Release Notes](ptai-21x-release-notes.md)
   + [PTAI 20.12.1 Release Notes](ptai-20x-release-notes.md)

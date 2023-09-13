@@ -1,11 +1,11 @@
 ---
 product: adobe primetime
 audience: end-user
-user-guide-title: Primetime Migration Help
-user-guide-description: Explains the conversion and migration process to move from your existing Primetime TVSDK Suite to the next-generation suite.
+user-guide-title: Adobe Pass Migration Help
+user-guide-description: Explains the conversion and migration process to move from your existing Pass TVSDK Suite to the next-generation suite.
 ---
 
-# Primetime Migration Help {#migration}
+# Adobe Pass Migration Help {#migration}
 
 + [Migration Help Overview](home.md)
 + [TVSDK 1.4 to 2.5 for Android (Java)](tvsdk-14-25-android.md)

@@ -1,7 +1,7 @@
 ---
 product: adobe primetime
 audience: end-user
-user-guide-title: Primetime Digital Rights Management Help
+user-guide-title: Adobe Pass Digital Rights Management Help
 user-guide-description: Helps you learn more about various user scenarios in Digital Rights Management (DRM).
 ---
 
@@ -183,7 +183,7 @@ user-guide-description: Helps you learn more about various user scenarios in Dig
     + [Requirements for Synchronization](protecting-content/introduction/usage-rules/authentication/synchronization.md)
   + Runtime and application restrictions {#runtime-application-restrictions}
     + [Allow list for Primetime DRM applications allowed to play protected content...](protecting-content/introduction/usage-rules/runtime-application-restrictions/allowlist-air.md)
-    + [Allow list for Adobe® Flash® Player SWFs](protecting-content/introduction/usage-rules/runtime-application-restrictions/allowlist-flash.md)
+    + [Allow list for Adobe&reg; Flash&reg; Player SWFs](protecting-content/introduction/usage-rules/runtime-application-restrictions/allowlist-flash.md)
     + [Block list of DRM Clients restricted from accessing protected content](protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-drm-clients.md)
     + [Block list of application runtimes](protecting-content/introduction/usage-rules/runtime-application-restrictions/blocklist-app-runtimes.md)
     + [Minimum security level for DRM and runtimes](protecting-content/introduction/usage-rules/runtime-application-restrictions/min-sec-level-for-drm.md)
@@ -417,8 +417,8 @@ user-guide-description: Helps you learn more about various user scenarios in Dig
   + [User authentication](aaxs-protecting-content/content-introduction/content-usage-rules/content-authentication/content-user-authentication.md)
   + [Time-based rules](aaxs-protecting-content/content-introduction/content-usage-rules/content-time-based-rules/content-time-based-rules-defining.md)
   + Runtime and application restrictions {#runtime-and-application-restrictions}
-    + [Allow list for Adobe® Primetime applications allowed to play protected content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md)
-    + [Allow list for Adobe® Flash® Player SWFs allowed to play protected   content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-flash.md)
+    + [Allow list for Adobe&reg; Primetime applications allowed to play protected content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-air.md)
+    + [Allow list for Adobe&reg; Flash&reg; Player SWFs allowed to play protected   content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-allowlist-flash.md)
     + [Block list of DRM Clients restricted from accessing protected content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-drm-clients.md)
     + [Block list of application runtimes restricted from accessing protected content](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-blocklist-app-runtimes.md)
     + [Minimum security level for DRM and runtimes](aaxs-protecting-content/content-introduction/content-usage-rules/content-runtime-application-restrictions/content-min-sec-level-for-drm.md)

@@ -1,13 +1,13 @@
 ---
 product: adobe primetime
 audience: end-user
-user-guide-title: Primetime Ad Insertion Help
+user-guide-title: Adobe Pass Ad Insertion Help
 ---
 
-# Primetime Ad Insertion Help {#ad-insertion}
+# Adobe Pass Ad Insertion Help {#ad-insertion}
 
-+ [Adobe Primetime Ad Insertion](home.md)
-+ Primetime Ad Insertion Announcements{#announcements}
++ [Adobe Pass Ad Insertion](home.md)
++ Pass Ad Insertion Announcements{#announcements}
   + [Announcements](announcements/overview.md)
   + [Release notes](https://experienceleague.adobe.com/docs/primetime/release-notes/ptai/ptai-22x-release-notes.html)
 + Get started with Primetime Ad Insertion{#get-started}
