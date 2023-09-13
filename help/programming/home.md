@@ -26,9 +26,6 @@ Check out for more information about the [current released version](tvsdk-3x-ios
 ## Helpful resources
 
 * [Get to Know Adobe Primetime](https://www.adobe.com/in/marketing/primetime.html)
-
 * [Concurrency Monitoring](https://tve.helpdocsonline.com/concurrency-monitoring-introduction)
-
 * [Primetime Authentication](https://tve.helpdocsonline.com/home)
-
 * [Adobe Primetime DRM Forums](https://forums.adobe.com/community/adobe_access)
