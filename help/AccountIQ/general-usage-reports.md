@@ -5,7 +5,7 @@ exl-id: 1272073a-61fe-47ec-aced-2e8055b6b11e
 ---
 # General Usage reports {#general-usage-reports}
 
-Account IQ reports are basic analytic tools and reports that let you drill into your data to isolate [cohorts](/help/AccountIQ/product-concepts.md#segmet-def), identify anomalies, and build an understanding of your account characteristics.
+Account IQ reports are basic analytic tools and reports that let you drill into your data to isolate [cohorts](/help/accountiq/product-concepts.md#segmet-def), identify anomalies, and build an understanding of your account characteristics.
 
 General Usage reports page provides tools to carve out subgroups metrics based on the number of account devices in use, IPs detected, and respective zip codes.
 
@@ -17,7 +17,7 @@ device filters
 segment and definition replicate to cohorts. Number of people and number of account that ......
 content consumption.....-->
 
-The reports are all based on the current segment selected using [Segments and time frame](/help/AccountIQ/howto-select-segment-timeframe.md) panel. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in [Snapshot Overview - Accounts above thresholds](#snapshot-overview) panel.
+The reports are all based on the current segment selected using [Segments and time frame](/help/accountiq/howto-select-segment-timeframe.md) panel. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in [Snapshot Overview - Accounts above thresholds](#snapshot-overview) panel.
 
 <!--To view General Usage Reports:
 
@@ -60,15 +60,15 @@ The x-axis presents the units within the current time frame and the y-axis repre
 
 * **AuthN OK**
 
-    AuthN OK is the number of successful authentications. For more information and definition see [Product concepts: AuthN OK](/help/AccountIQ/product-concepts.md#authn-ok-def).
+    AuthN OK is the number of successful authentications. For more information and definition see [Product concepts: AuthN OK](/help/accountiq/product-concepts.md#authn-ok-def).
 
 * **AuthZ OK**
   
-    AuthZ OK is the number of successful authorizations. For more information and definition see [Product concepts: AuthZ OK](/help/AccountIQ/product-concepts.md#authz-ok-def).
+    AuthZ OK is the number of successful authorizations. For more information and definition see [Product concepts: AuthZ OK](/help/accountiq/product-concepts.md#authz-ok-def).
 
 * **Play Requests**
 
-    Play requests are the number of Play Requests. For more information and definition see [Product concepts: Play requests](/help/AccountIQ/product-concepts.md#play-requests-def)
+    Play requests are the number of Play Requests. For more information and definition see [Product concepts: Play requests](/help/accountiq/product-concepts.md#play-requests-def)
 
     >[!NOTE]
     >
@@ -77,7 +77,7 @@ The x-axis presents the units within the current time frame and the y-axis repre
 
 * **Unique Subscribers**
 
-    Unique subscribers are the number of successful unique subscribers. For more information and definition see [Product concepts: Unique subscribers](/help/AccountIQ/product-concepts.md#unique-subscriber-def)
+    Unique subscribers are the number of successful unique subscribers. For more information and definition see [Product concepts: Unique subscribers](/help/accountiq/product-concepts.md#unique-subscriber-def)
 
     >[!NOTE]
     >
@@ -197,4 +197,4 @@ The Historical View bar graph helps you compare the usage metrics across differe
 
 >[!MORELIKETHIS]
 >
->* Know how to export reports for top 1000 subscribers in the selected segment using filters in General Usage Report using [Export top 1000 accounts](/help/AccountIQ/export-acc-information.md) option.
+>* Know how to export reports for top 1000 subscribers in the selected segment using filters in General Usage Report using [Export top 1000 accounts](/help/accountiq/export-acc-information.md) option.

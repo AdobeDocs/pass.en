@@ -21,22 +21,22 @@ Account IQ provides the tools and features to measure, manage, and monetize cred
 
 Account IQ application tools and features are explained in the following sections:
 
-* [Dashboard](/help/AccountIQ/dashboard.md)
-* [General Usage reports](/help/AccountIQ/general-usage-reports.md)
-* [Shared Accounts reports](/help/AccountIQ/shared-acc-reports.md)
-* [Usage Patterns](/help/AccountIQ/usage-patterns.md)
-* [Operations](/help/AccountIQ/operations.md)
+* [Dashboard](/help/accountiq/dashboard.md)
+* [General Usage reports](/help/accountiq/general-usage-reports.md)
+* [Shared Accounts reports](/help/accountiq/shared-acc-reports.md)
+* [Usage Patterns](/help/accountiq/usage-patterns.md)
+* [Operations](/help/accountiq/operations.md)
 
 Let's take a deep dive into the graphs and reports in each of these sections.
 
 >[!MORELIKETHIS]
 >
->* [How to get started with Account IQ](/help/AccountIQ/get-started.md)
->* [Dashboard](/help/AccountIQ/dashboard.md)
->* [General usage reports](/help/AccountIQ/general-usage-reports.md)
->* [Shared accounts reports](/help/AccountIQ/shared-acc-reports.md)
->* [Usage patterns](/help/AccountIQ/usage-patterns.md)
->* [Glossary of product terms](/help/AccountIQ/product-concepts.md)
+>* [How to get started with Account IQ](/help/accountiq/get-started.md)
+>* [Dashboard](/help/accountiq/dashboard.md)
+>* [General usage reports](/help/accountiq/general-usage-reports.md)
+>* [Shared accounts reports](/help/accountiq/shared-acc-reports.md)
+>* [Usage patterns](/help/accountiq/usage-patterns.md)
+>* [Glossary of product terms](/help/accountiq/product-concepts.md)
 >* [Account IQ whitepaper](https://www.adobe.com/content/dam/dx/us/en/products/primetime/resources/primetime-account-iq-whitepaper.pdf)
 
 <!-- Credential sharing is rampant and prevalent among subscribers in the video streaming industry. To add to it, understanding, identifying, and acting on password sharing is a complex process. There is complexity involved in understanding the subscriber usage behavior and developing a holistic view of viewer activity—for example, distinguishing sharing among members within the same household and outside. Due to this challenge, streaming service providers have inhibitions in acting against password sharing.

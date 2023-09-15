@@ -15,7 +15,7 @@ Check out for more information about the [current released version](tvsdk-3x-ios
 | User Guide | Description |
 |---|---|
 | [Primetime Release Notes](/help/release-notes/home.md) | Provides release-specific information, system requirements, limitations, fixed issues, and known issues. |
-| [Account IQ Documentation](/help/AccountIQ/home.md) | Explains how you can mitigate password sharing using Account IQ. |
+| [Account IQ Documentation](/help/accountiq/home.md) | Explains how you can mitigate password sharing using Account IQ. |
 | [Primetime Migration & Conversion Help](/help/migration-guides/home.md) | Explains the conversion and migration process to move from your existing Primetime TVSDK Suite to the next-generation suite.   |
 | [Reference Implementation](/help/android-reference-implementation/home.md) | Helps understand the TVSDK and modify the feature managers to customize your personal player. |
 | [Primetime Ad Insertion Help](/help/primetime-ad-insertion/home.md) | Explains how to monetize content by inserting user-targeted dynamic ads on the server and engage audience with personalized ads. |

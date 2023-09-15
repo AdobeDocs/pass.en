@@ -31,7 +31,7 @@ On the Operations page, you can:
 
   * creation and end date of the operation
 
-* [Create new operation](/help/AccountIQ/operation-affecting-user-segment.md)
+* [Create new operation](/help/accountiq/operation-affecting-user-segment.md)
 
 * [View operation reports](#operation-reports)
 
