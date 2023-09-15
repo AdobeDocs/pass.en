@@ -13,11 +13,11 @@ exl-id: b7493ca6-1862-4cea-a11e-a634c935c86e
 
 The Preauthorize API method is to be used by applications to obtain preauthorization decisions for one or more resources. The Preauthorize API request should be used for UI hints and/or content filtering. An actual Authorization API request must be made before allowing user access to the specified resources.
 
-In case an unexpected error (for example, network issue, and MVPD authorization endpoint unavailable) takes place when a Preauthorize API request is processed by the Adobe Primetime Authentication services, then one or multiple separate error information will be included for the affected resources as part of the Preauthorize API response result.
+In case an unexpected error (for example, network issue, and MVPD authorization endpoint unavailable) takes place when a Preauthorize API request is processed by the Adobe Pass Authentication services, then one or multiple separate error information will be included for the affected resources as part of the Preauthorize API response result.
 
 ### public preauthorize(request: PreauthorizeRequest, callback: AccessEnablerCallback&lt;any&gt;): void {#preauth-method}
 
-**Description:** This method is to be used by applications to obtain authenticated user's preauthorization (informative) decisions from Adobe Primetime Authentication service to view specific protected resources, for the primary purpose of decorating the application's UI (e.g. indicating access status with lock and unlock icons).
+**Description:** This method is to be used by applications to obtain authenticated user's preauthorization (informative) decisions from Adobe Pass Authentication service to view specific protected resources, for the primary purpose of decorating the application's UI (e.g. indicating access status with lock and unlock icons).
 
 **Availability:** v4.4.0+ 
 
@@ -102,11 +102,11 @@ In case an unexpected error (for example, network issue, and MVPD authorization 
 #### public status: number; {#public-status-numbr}
 
 * The HTTP response status code as documented in RFC 7231.
-* Might be 0 in case the `Status` comes from the SDK instead of Adobe Primetime Authentication services.
+* Might be 0 in case the `Status` comes from the SDK instead of Adobe Pass Authentication services.
 
 #### public code: number; {#public-code-numbr}
 
-* The standard Adobe Primetime Authentication services error code.
+* The standard Adobe Pass Authentication services error code.
 * Might hold an empty string or a `null` value.
 
 #### public message: string; {#public-msg-string}

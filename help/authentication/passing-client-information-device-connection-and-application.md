@@ -12,7 +12,7 @@ exl-id: 0b21ef0e-c169-48ff-ac01-25411cfece1e
 
 ## Scope {#pass-client-info-scope}
 
-This document aggregates details and cookbooks for passing client information (device, connection and application) from a Programmer application to Adobe Primetime Authentication REST APIs or SDKs.
+This document aggregates details and cookbooks for passing client information (device, connection and application) from a Programmer application to Adobe Pass Authentication REST APIs or SDKs.
 
 The benefits of providing client information are:
 
@@ -26,7 +26,7 @@ The benefits of providing client information are:
 The client information consists of:
 
 * **Device** information about the hardware and software attributes of the device from where the user is trying to consume the Programmer content.
-* **Connection** information about the connection attributes of the device from where the user is connecting to Adobe Primetime Authentication services and/or Programmer services (e.g. server-to-server implementations).
+* **Connection** information about the connection attributes of the device from where the user is connecting to Adobe Pass Authentication services and/or Programmer services (e.g. server-to-server implementations).
 * **Application** information about the registered application from where the user is trying to consume the Programmer content.
 
 The client information is a JSON object built with keys presented in the following table.
@@ -64,11 +64,11 @@ The client information is a JSON object built with keys presented in the followi
 
 ## API references {#api-ref}
 
-This section presents the API responsible for handling client information when using Adobe Primetime Authentication REST APIs or SDKs.
+This section presents the API responsible for handling client information when using Adobe Pass Authentication REST APIs or SDKs.
 
 ### REST API {#rest-api}
 
-Adobe Primetime Authentication services support receiving the client information in the following ways:
+Adobe Pass Authentication services support receiving the client information in the following ways:
 
 * As a **header: "X-Device-Info"**
 * As a **query parameter: "device_info"**
@@ -82,7 +82,7 @@ Adobe Primetime Authentication services support receiving the client information
 
 #### JavaScript SDK {#js-sdk}
 
-The AccessEnabler JavaScript SDK builds by default a client information JSON object, which will be passed to Adobe Primetime Authentication services, unless overridden.
+The AccessEnabler JavaScript SDK builds by default a client information JSON object, which will be passed to Adobe Pass Authentication services, unless overridden.
 
 The AccessEnabler JavaScript SDK supports **overriding only** the "applicationId" key from the client information JSON object through the [setRequestor](/help/authentication/javascript-sdk-api-reference.md#setrequestor(inRequestorID,endpoints,options))'s *applicationId* options parameter.
 
@@ -93,7 +93,7 @@ The AccessEnabler JavaScript SDK supports **overriding only** the "applicationId
 
 #### iOS/tvOS SDK {#ios-tvos-sdk}
 
-The AccessEnabler iOS/tvOS SDK builds by default a client information JSON object, which will be passed to Adobe Primetime Authentication services, unless overridden.
+The AccessEnabler iOS/tvOS SDK builds by default a client information JSON object, which will be passed to Adobe Pass Authentication services, unless overridden.
 
 The AccessEnabler iOS/tvOS SDK supports **overriding the whole** client information JSON object through the [setOptions](/help/authentication/iostvos-sdk-api-reference.md#setoptions)'s device_info parameter.
 
@@ -105,7 +105,7 @@ The AccessEnabler iOS/tvOS SDK supports **overriding the whole** client informat
 
 #### Android/FireOS SDK {#and-fire-os-sdk}
 
-The `AccessEnabler` Android/FireOS SDK builds by default a client information JSON object, which will be passed to Adobe Primetime Authentication services, unless overridden.
+The `AccessEnabler` Android/FireOS SDK builds by default a client information JSON object, which will be passed to Adobe Pass Authentication services, unless overridden.
 
 The `AccessEnabler` Android/FireOS SDK supports **overriding the whole** client information JSON object through the [setOptions](/help/authentication/android-sdk-api-reference.md#setOptions)'s/[setOptions](/help/authentication/amazon-fireos-native-client-api-reference.md#fire_setOption)'s `device_info` parameter.
 
@@ -155,7 +155,7 @@ The application information can be constructed the following way:
 
 >[!IMPORTANT]
 >
->The device, connection and application information must be added to the same JSON object. Afterwards, the resulting object must be **Base64 encoded**. Also, in the case of Adobe Primetime Authentication REST APIs, the value must be **URL encoded**.
+>The device, connection and application information must be added to the same JSON object. Afterwards, the resulting object must be **Base64 encoded**. Also, in the case of Adobe Pass Authentication REST APIs, the value must be **URL encoded**.
 
 **Sample code**
 
@@ -267,7 +267,7 @@ The application information can be constructed the following way:
 
 >[!IMPORTANT]
 >
->The device, connection and application information must be added to the same JSON object. Afterwards, the resulting object must be **Base64 encoded**. Also, in the case of Adobe Primetime Authentication REST APIs,  the value must be **URL encoded**.
+>The device, connection and application information must be added to the same JSON object. Afterwards, the resulting object must be **Base64 encoded**. Also, in the case of Adobe Pass Authentication REST APIs,  the value must be **URL encoded**.
 
 >[!NOTE]
 >
@@ -306,7 +306,7 @@ The application information can be constructed the following way:
 
 >[!IMPORTANT]
 >
->The device, connection and application information must be added to the same JSON object. Afterwards, the resulting object must be Base64 encoded. Also, in the case of Adobe Primetime Authentication REST APIs, the value must be URL encoded.
+>The device, connection and application information must be added to the same JSON object. Afterwards, the resulting object must be Base64 encoded. Also, in the case of Adobe Pass Authentication REST APIs, the value must be URL encoded.
 
 **Sample code**
 
@@ -413,7 +413,7 @@ The application information can be constructed the following way:
 
 >[!IMPORTANT]
 >
->The device, connection and application information must be added to the same JSON object. Afterwards, the resulting object must be **Base64 encoded**. Also, in the case of Adobe Primetime Authentication REST APIs, the value must be URL encoded.
+>The device, connection and application information must be added to the same JSON object. Afterwards, the resulting object must be **Base64 encoded**. Also, in the case of Adobe Pass Authentication REST APIs, the value must be URL encoded.
 
 >[!NOTE]
 >
@@ -449,7 +449,7 @@ The application information can be constructed the following way:
 
 >[!IMPORTANT]
 >
->The device, connection and application information must be added to the same JSON object. Afterwards, the resulting object must be **Base64 encoded**. Also, in the case of Adobe Primetime Authentication REST APIs, the value must be **URL encoded**.
+>The device, connection and application information must be added to the same JSON object. Afterwards, the resulting object must be **Base64 encoded**. Also, in the case of Adobe Pass Authentication REST APIs, the value must be **URL encoded**.
 
 **Resources**
 

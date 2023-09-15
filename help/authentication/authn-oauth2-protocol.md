@@ -47,7 +47,7 @@ After confirming that it supports the flow, the MVPD must provide us with the fo
 * we need an **end-point for user-profile**
     * this end-point will provide the userID, which needs to be unique for an account and shouldn't contain any Personally Identifiable Information
 * the **/logout** end-point (optional) 
-    * Adobe Primetime authentication will redirect to this end-point, provide the MVPD a redirect back URI; on this end-point, the MVPD can clear the cookies on the client machine or apply any desired logic for logout
+    * Adobe Pass authentication will redirect to this end-point, provide the MVPD a redirect back URI; on this end-point, the MVPD can clear the cookies on the client machine or apply any desired logic for logout
 * it is highly recommended to have support for authorized clients (client apps that don't trigger a user authorization page) 
 * we'll also need:
     * **clientID** and **client secret** for the integration configurations
@@ -57,7 +57,7 @@ After confirming that it supports the flow, the MVPD must provide us with the fo
 
 ## Authentication flow {#authn-flow}
 
-In the authentication flow, Adobe Primetime authentication will communicate with the MVPD on the protocol selected in the configuration. The OAuth 2.0 flow is depicted in the picture below:
+In the authentication flow, Adobe Pass authentication will communicate with the MVPD on the protocol selected in the configuration. The OAuth 2.0 flow is depicted in the picture below:
 
  
 
@@ -72,9 +72,9 @@ In the authentication flow, Adobe Primetime authentication will communicate with
 In a nutshell, the authentication flow for MVPDs supporting the OAuth 2.0 protocol follows these steps:
 
 1. The end-user navigates to the Programmer's site and selects to log in with his MVPD credentials
-1. The AccessEnabler installed on the Programmer's side with send an Authentication request in the form of an HTTP request to the Adobe Primetime authentication endpoint, which the Adobe Primetime authentication endpoint redirects to the MVPD authorization endpoint.
-1. The MVPD authorization endpoint sends an authorization code to the Adobe Primetime authentication endpoint
-1. Adobe Primetime authentication uses the received authorization code to request a refresh token and an access token from the MVPD's token endpoint
+1. The AccessEnabler installed on the Programmer's side with send an Authentication request in the form of an HTTP request to the Adobe Pass authentication endpoint, which the Adobe Pass authentication endpoint redirects to the MVPD authorization endpoint.
+1. The MVPD authorization endpoint sends an authorization code to the Adobe Pass authentication endpoint
+1. Adobe Pass authentication uses the received authorization code to request a refresh token and an access token from the MVPD's token endpoint
 1. A call to fetch user info & metadata can be sent to the user profile endpoint in case the user information is not included in the token
 1. The authentication token is passed to the end-user who can now successfully browse the Programmer site
 

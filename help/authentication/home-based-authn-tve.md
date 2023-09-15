@@ -21,7 +21,7 @@ For more information about HBA and the industry standards, read the [OATC Use Ca
 
 >[!NOTE]
 >
->Some HBA flows are part of the Premium Workflow package. Please contact your Primetime sales rep if interested in using this functionality.
+>Some HBA flows are part of the Premium Workflow package. Please contact your Adobe Pass sales rep if interested in using this functionality.
 
 ## Why HBA is important for you {#why-hba}
 
@@ -47,17 +47,17 @@ From our data, collected 6 months before and 6 months after enabling HBA, we saw
 
 ![](assets/user-engagement-increase.png)
 
-## Primetime authentication HBA Support {#auth-hba-support}
+## Adobe Pass authentication HBA Support {#auth-hba-support}
 
-This section describes the HBA support provided by Primetime authentication, the behavior of Primetime authentication platforms in HBA flows and also offers technical details useful for implementing HBA. 
+This section describes the HBA support provided by Adobe Pass authentication, the behavior of Adobe Pass authentication platforms in HBA flows and also offers technical details useful for implementing HBA. 
 
-Primetime authentication features supporting HBA
+Adobe Pass authentication features supporting HBA
 
 * Ability to set different authentication TTLs for HBA versus non-HBA authentications (also requires MVPD support)
 * Ability to automatically select an MVPD (skip MVPD picker) if the authentication expired. This is usefull especially when HBA TTLs are small.
 * Ability to expose to the Programmers if the authentication was HBA or not (also requires MVPD support)
  
-### HBA User Experience on Primetime authentication platforms {#hba-user-exp}
+### HBA User Experience on Adobe Pass authentication platforms {#hba-user-exp}
 
 The following tables provide information about the user experience for the supported platforms when HBA is enabled and when HBA is not enabled:
 
@@ -92,7 +92,7 @@ In the HBA flow for MVPDs integrated with the OAuth 2.0 authentication protocol,
 | User actions | System actions |
 |---|---|
 | The user navigates to the programmer's site. When attempting to play a video, the MVPD picker is displayed. The user selects their MVPD and clicks login. | A background check is carried out. The MVPD applies their set of rules for user detection (for example, map the user's IP address with the MAC address of distributor-provisioned modems or broadband-connected set-top boxes). |
-| A  screen, which persists for about 3 seconds, is displayed. An interstitial page can be displayed informing the user is informed that he/she is being automatically signed in by using their MVPD account. | <ol><li>The AccessEnabler, which is installed on the programmer's side, sends an authentication request (as an HTTP request) to the Adobe Primetime Authentication endpoint.</li><li>The Primetime Authentication endpoint redirects the request to the MVPD authentication endpoint. <br />**Note:** The request contains the `hba_flag` parameter (attempt HBA = true) which signals that the MVPD should attempt HBA authentication.</li><li>The MVPD authentication endpoint sends an authorization code to the Adobe Primetime Authentication endpoint.</li><li>Adobe Primetime Authentication uses the authorization code to request a refresh token and an access token from the MVPD's token endpoint.</li><li>The MVPD sends an authentication decision and the `hba_status` (true/false) parameter in the `id_token`.</li><li>A call to the MVPD user profile endpoint is sent to expose the [hba_status key in user metadata](/help/authentication/user-metadata-feature.md#obtaining).</li><li>The MVPD sets the refresh token TTL to an MVPD-agreed value and Adobe sets the AuthN token TTL to a value less or equal to the refresh token's value.</li></ol> |
+| A  screen, which persists for about 3 seconds, is displayed. An interstitial page can be displayed informing the user is informed that he/she is being automatically signed in by using their MVPD account. | <ol><li>The AccessEnabler, which is installed on the programmer's side, sends an authentication request (as an HTTP request) to the Adobe Pass Authentication endpoint.</li><li>The Adobe Pass Authentication endpoint redirects the request to the MVPD authentication endpoint. <br />**Note:** The request contains the `hba_flag` parameter (attempt HBA = true) which signals that the MVPD should attempt HBA authentication.</li><li>The MVPD authentication endpoint sends an authorization code to the Adobe Pass Authentication endpoint.</li><li>Adobe Pass Authentication uses the authorization code to request a refresh token and an access token from the MVPD's token endpoint.</li><li>The MVPD sends an authentication decision and the `hba_status` (true/false) parameter in the `id_token`.</li><li>A call to the MVPD user profile endpoint is sent to expose the [hba_status key in user metadata](/help/authentication/user-metadata-feature.md#obtaining).</li><li>The MVPD sets the refresh token TTL to an MVPD-agreed value and Adobe sets the AuthN token TTL to a value less or equal to the refresh token's value.</li></ol> |
 | The user is authenticated and can now browse entitled TV Everywhere content. | The authentication token is passed to the user who can now successfully browse the programmer's site. | 
 
 #### SAML Protocol {#saml-protocol} 
@@ -102,14 +102,14 @@ Description of the HBA authentication flow for the SAML authentication protocol
 | User actions | System actions |
 |---|---|
 | The user navigates to the programmer's site. When attempting to play a video, the MVPD picker is displayed. The user selects their MVPD and clicks login. | A background check is carried out. The MVPD applies their set of rules for user detection (for example, map the user's IP address with the MAC address of distributor-provisioned modems or broadband-connected set-top boxes). |
-| A  screen, which persists for about 3 seconds, is displayed. An interstitial page can be displayed informing the user is informed that he/she is being automatically signed in by using their MVPD account. | <ol><li>The AccessEnabler, which is installed on the programmer's side, sends an authentication request (as an HTTP request) to the Adobe Primetime Authentication endpoint.</li><li>The Primetime Authentication endpoint redirects the request to the MVPD authentication endpoint.</li><li>The MVPD should send an authentication decision in form of a SAML response that should contain the HBA flag: hba_status (true/false).</li><li>A call to the MVPD user profile endpoint is sent to expose the [hba_status key in user metadata](/help/authentication/user-metadata-feature.md#obtaining).</li></ol> |
+| A  screen, which persists for about 3 seconds, is displayed. An interstitial page can be displayed informing the user is informed that he/she is being automatically signed in by using their MVPD account. | <ol><li>The AccessEnabler, which is installed on the programmer's side, sends an authentication request (as an HTTP request) to the Adobe Pass Authentication endpoint.</li><li>The Adobe Pass Authentication endpoint redirects the request to the MVPD authentication endpoint.</li><li>The MVPD should send an authentication decision in form of a SAML response that should contain the HBA flag: hba_status (true/false).</li><li>A call to the MVPD user profile endpoint is sent to expose the [hba_status key in user metadata](/help/authentication/user-metadata-feature.md#obtaining).</li></ol> |
 | The user is authenticated and can now browse entitled TV Everywhere content. | The authentication token is passed to the user who can now successfully browse the programmer's site. |
 
  
 ## How to activate HBA {#how-to-activate-hba}
 
 *   **OAuth protocol:**
-    * For enabling HBA see, [Primetime TVE Dashboard User Guide](/help/authentication/tve-dashboard-user-guide.md)
+    * For enabling HBA see, [Adobe Pass TVE Dashboard User Guide](/help/authentication/tve-dashboard-user-guide.md)
 *   **SAML protocol:** Home Based Authentication is activated on the MVPD side. No action is required by the Programmer or Adobe. 
 For more information on the MVPDs that support Home Based Authentication, see [HBA status for MVPDs](/help/authentication/hba-status-mvpds.md). 
 
@@ -118,7 +118,7 @@ For more information on the MVPDs that support Home Based Authentication, see [H
 
 **Question:** Why the separation between Home Based Authentication with SAML and OAuth2 protocols?
 
-**Answer:** The HBA flow is different for the two protocols. From a programmer's perspective, there is no need for action to assure HBA is enabled for SAML MVPDs, whereas for OAuth2 MVPDs, HBA can be toggled on or off in the Primetime TVE Dashboard.
+**Answer:** The HBA flow is different for the two protocols. From a programmer's perspective, there is no need for action to assure HBA is enabled for SAML MVPDs, whereas for OAuth2 MVPDs, HBA can be toggled on or off in the Adobe Pass TVE Dashboard.
 
  
 
@@ -150,5 +150,5 @@ For more information on the MVPDs that support Home Based Authentication, see [H
 * [Home Based Authentication Infographic](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf?dc=201604260953-2640){target=_blank} - by Adobe
 * [Authentication using the OAuth 2.0 protocol](/help/authentication/authn-oauth2-protocol.md)
 * [Authentication with SAML MVPDs](/help/authentication/authn-usecase.md)
-* [Primetime TVE Dashboard User Guide](/help/authentication/tve-dashboard-user-guide.md)
+* [Adobe Pass TVE Dashboard User Guide](/help/authentication/tve-dashboard-user-guide.md)
 * [hba_status User Metadata](/help/authentication/user-metadata-feature.md#obtaining)

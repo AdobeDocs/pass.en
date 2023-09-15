@@ -11,15 +11,15 @@ exl-id: 6c83e703-d8cd-476b-8514-05b8230902be
 
 ## Overview {#overview-proxy-mvpd-saml-int}
 
-This document describes the SAML Authentication flow for Proxy integrations.  These flows are dependent on Proxy config data being present in the Adobe Primetime authentication server configuration. The Proxy MVPD pushes its Proxy config data to the Adobe Primetime authentication server via the Adobe Primetime authentication Proxy Web Service.
+This document describes the SAML Authentication flow for Proxy integrations.  These flows are dependent on Proxy config data being present in the Adobe Pass authentication server configuration. The Proxy MVPD pushes its Proxy config data to the Adobe Pass authentication server via the Adobe Pass authentication Proxy Web Service.
 
 ## Proxy Configuration Data {#proxy-config-data}
 
-Each MVPD Proxy provides Proxy configuration data for their Proxied MVPDs to the Adobe Primetime authentication Proxy Web Service.  Details for that are covered in the Proxy Web Service documentation.   For the SAML AuthN flow to work, the Proxy config data needs to include the following properties: 
+Each MVPD Proxy provides Proxy configuration data for their Proxied MVPDs to the Adobe Pass authentication Proxy Web Service.  Details for that are covered in the Proxy Web Service documentation.   For the SAML AuthN flow to work, the Proxy config data needs to include the following properties: 
 
 | Property               | Description                                                                                                                                                                |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| MVPD ID                | String representing the Proxied MVPD internally to Adobe Primetime authentication.  To be confirmed by Adobe as unique in the context of Adobe Primetime authentication.   |
+| MVPD ID                | String representing the Proxied MVPD internally to Adobe Pass authentication.  To be confirmed by Adobe as unique in the context of Adobe Pass authentication.   |
 | MVPD default logo URL  | URL to a logo that can be displayed in an MVPD Selector experience for the user.  Should use a transparent background.                                                     |
 | MVPD Display Name      | String to be used as the display name text that could be displayed with the logo, potentially as alt text.                                                                 |
 
@@ -27,13 +27,13 @@ Each MVPD Proxy provides Proxy configuration data for their Proxied MVPDs to the
 
 ## SAML Integration Flows {#saml-int-flows}
 
-When an MVPD subscriber visits a Programmer's site or application, Adobe Primetime authentication responds to an API call from the site or application with a list of MVPDs activated for that Programmer.  The integration can be direct or proxied; there is no distinction between them to the Programmer. This allows Programmers to present the list of active MVPDs in any ways they see fit. The subscriber chooses their MVPD, and Adobe Primetime authentication redirects the subscriber to the MVPD's specific Identity Provider. 
+When an MVPD subscriber visits a Programmer's site or application, Adobe Pass authentication responds to an API call from the site or application with a list of MVPDs activated for that Programmer.  The integration can be direct or proxied; there is no distinction between them to the Programmer. This allows Programmers to present the list of active MVPDs in any ways they see fit. The subscriber chooses their MVPD, and Adobe Pass authentication redirects the subscriber to the MVPD's specific Identity Provider. 
 
-In the case of an integrated MVPD Proxy, the integration is done between Adobe Primetime authentication and the MVPD Proxy. Adobe Primetime authentication sends the user authentication request to the MVPD Proxy, and the MVPD Proxy handles the redirection. In order for the MVPD Proxy to know where to redirect the user authentication request, Adobe Primetime authentication sends an MVPD identifier in the SAML authentication request.  This identifier is the MVPD ID specified by the Proxy Provider by way of the Proxy Web Service as specified above. 
+In the case of an integrated MVPD Proxy, the integration is done between Adobe Pass authentication and the MVPD Proxy. Adobe Pass authentication sends the user authentication request to the MVPD Proxy, and the MVPD Proxy handles the redirection. In order for the MVPD Proxy to know where to redirect the user authentication request, Adobe Pass authentication sends an MVPD identifier in the SAML authentication request.  This identifier is the MVPD ID specified by the Proxy Provider by way of the Proxy Web Service as specified above. 
 
 ### Authentication {#authn-saml-int}
 
-In order for Adobe Primetime authentication to integrate with a Proxy MVPD the following will be required:
+In order for Adobe Pass authentication to integrate with a Proxy MVPD the following will be required:
 
 *   A Proxy MVPD provided list of Proxied MVPDs, pushed to the Adobe Proxy Web Service
 

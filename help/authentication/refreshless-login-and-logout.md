@@ -17,7 +17,7 @@ For web applications, you must account for some different possible scenarios for
 - Some MVPDs require you to open an iFrame on your site to display the MVPD's login page
 - Some browsers do not handle the iFrame scenario well, so for those browsers a better alternative is to use a popup window instead of the iFrame
 
-Prior to Adobe Primetime authentication 2.7, all of these scenarios for authenticating a user involved a full page refresh of the Programmer's page.For 2.7 and subsequent releases, the Adobe Primetime authentication team improved these flows so that the user does not have to experience a page refresh on your app during login and logout.  
+Prior to Adobe Pass authentication 2.7, all of these scenarios for authenticating a user involved a full page refresh of the Programmer's page.For 2.7 and subsequent releases, the Adobe Pass authentication team improved these flows so that the user does not have to experience a page refresh on your app during login and logout.  
 
 
 ## Detailed Description {#detailed_description}
@@ -36,10 +36,10 @@ Let's begin with a summary of the original authentication and logout flows, then
 
 **Authentication**
 
-The Adobe Primetime authentication web clients have two ways of authenticating, depending upon the requirements of MVPDs:
+The Adobe Pass authentication web clients have two ways of authenticating, depending upon the requirements of MVPDs:
 
-1.  **Full-page Redirect -** After the user selects a provider    (configured with full-page redirect) from the MVPD picker on the    Programmer's website, `setSelectedProvider(<mvpd>)` is invoked on the AccessEnabler and the user is redirected to the MVPD's login page. After the user provides valid credentials he is redirected back to the Programmer's website. The AccessEnabler is initialized and the authentication token is retrieved from Adobe Primetime authentication during `setRequestor`.
-1.  **iFrame / Popup Window -** After the user selects a provider (configured with iFrame), `setSelectedProvider(<mvpd>)` is invoked on the AccessEnabler. This action will trigger the `createIFrame(width, height)` callback, notifying the Programmer to create an iFrame (or popup - depending on the browser/preferences) with the name `"mvpdframe"` and the provided dimensions. After the iFrame/popup is created, the AccessEnabler loads the MVPD's login page in the iFrame/popup. The user provides valid credentials and the iFrame/popup is redirected to Adobe Primetime authentication, which returns a JS snippet that closes the iFrame/popup and reloads the parent page (Programmer website). Similarly to flow 1, the authentication token is retrieved during `setRequestor`. 
+1.  **Full-page Redirect -** After the user selects a provider    (configured with full-page redirect) from the MVPD picker on the    Programmer's website, `setSelectedProvider(<mvpd>)` is invoked on the AccessEnabler and the user is redirected to the MVPD's login page. After the user provides valid credentials he is redirected back to the Programmer's website. The AccessEnabler is initialized and the authentication token is retrieved from Adobe Pass authentication during `setRequestor`.
+1.  **iFrame / Popup Window -** After the user selects a provider (configured with iFrame), `setSelectedProvider(<mvpd>)` is invoked on the AccessEnabler. This action will trigger the `createIFrame(width, height)` callback, notifying the Programmer to create an iFrame (or popup - depending on the browser/preferences) with the name `"mvpdframe"` and the provided dimensions. After the iFrame/popup is created, the AccessEnabler loads the MVPD's login page in the iFrame/popup. The user provides valid credentials and the iFrame/popup is redirected to Adobe Pass authentication, which returns a JS snippet that closes the iFrame/popup and reloads the parent page (Programmer website). Similarly to flow 1, the authentication token is retrieved during `setRequestor`. 
 
 The `displayProviderDialog` callback (triggered by `getAuthentication`/`getAuthorization`) returns a list of MVPDs and their appropriate settings. The `iFrameRequired` property of an MVPD allows the Programmer to know if it should activate flow 1 or flow 2. Note that the Programmer is required to take extra action (creating an iFrame/popup) only for flow 2.
 
@@ -86,13 +86,13 @@ Both the authentication (login) and logout flows discussed above provide a simil
 
 The following points describe the transition between the original authentication flows and the improved flows:
 
-1. The full-page redirect is replaced with a new browser tab in which the MVPD login is performed. The Programmer is required to create a new tab (via `window.open`) named `mvpdwindow` when the user selects an MVPD (with `iFrameRequired = false`). The Programmer then executes `setSelectedProvider(<mvpd>)`, allowing the AccessEnabler to load the MVPD login URL in the new tab. After the user provides valid credentials, Adobe Primetime authentication will close the tab and send a window.postMessage to the Programmer's website that signals to the AccessEnabler that the authentication flow has finished. The following callbacks are triggered:
+1. The full-page redirect is replaced with a new browser tab in which the MVPD login is performed. The Programmer is required to create a new tab (via `window.open`) named `mvpdwindow` when the user selects an MVPD (with `iFrameRequired = false`). The Programmer then executes `setSelectedProvider(<mvpd>)`, allowing the AccessEnabler to load the MVPD login URL in the new tab. After the user provides valid credentials, Adobe Pass authentication will close the tab and send a window.postMessage to the Programmer's website that signals to the AccessEnabler that the authentication flow has finished. The following callbacks are triggered:
 
     - If the flow was initiated by `getAuthentication`: `setAuthenticationStatus` and `sendTrackingData(AUTHENTICATION_DETECTION...)` will be triggered to signal successful/unsuccessful authentication.
 
     - If the flow was initiated by `getAuthorization`: `setToken/tokenRequestFailed` and `sendTrackingData(AUTHORIZATION_DETECTION...)` will be triggered to signal successful/unsuccessful authorization.
 
-1.  The iFrame / popup window flow remains mostly unchanged, with the difference being that after the user provides valid credentials, the parent page will not be reloaded. The iFrame/popup will automatically close after login and a `window.postMessage` is sent to the parent page, notifying the AccessEnabler that the flow has finished. The same callbacks are triggered as in the previous flow, **plus the following new callback: `destroyIFrame`**. The `destroyIFrame` callback allows the Programmer to remove any iFrame associated/auxiliary components, such as UI decorations. The existence of this callback was not required in the old authentication flow because after the login was complete, Adobe Primetime authentication would reload the Programmer's page, thus destroying all UI components on it.  
+1.  The iFrame / popup window flow remains mostly unchanged, with the difference being that after the user provides valid credentials, the parent page will not be reloaded. The iFrame/popup will automatically close after login and a `window.postMessage` is sent to the parent page, notifying the AccessEnabler that the flow has finished. The same callbacks are triggered as in the previous flow, **plus the following new callback: `destroyIFrame`**. The `destroyIFrame` callback allows the Programmer to remove any iFrame associated/auxiliary components, such as UI decorations. The existence of this callback was not required in the old authentication flow because after the login was complete, Adobe Pass authentication would reload the Programmer's page, thus destroying all UI components on it.  
 
 </br>     
 
@@ -118,7 +118,7 @@ These are the flows for canceling authentication:
 
 The new logout flow will be performed in a hidden iFrame, thus eliminating the full page redirect.  This is possible because the user does not need to take specific action on the MVPD's logout page.
 
-After the logout flow is complete, it will redirect the iFrame to a custom Adobe Primetime authentication endpoint. This will serve a JS snippet that performs a `window.postMessage` to the parent, notifying the AccessEnabler that logout is complete. The following callbacks are triggered: `setAuthenticationStatus()` and `sendTrackingData(AUTHENTICATION_DETECTION ...)`, signaling that the user is no longer authenticated. 
+After the logout flow is complete, it will redirect the iFrame to a custom Adobe Pass authentication endpoint. This will serve a JS snippet that performs a `window.postMessage` to the parent, notifying the AccessEnabler that logout is complete. The following callbacks are triggered: `setAuthenticationStatus()` and `sendTrackingData(AUTHENTICATION_DETECTION ...)`, signaling that the user is no longer authenticated. 
 
 The illustration below shows the refresh-less flow that enables a user to log in to their MVPD without refreshing your application's mainpage:
 

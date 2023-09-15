@@ -13,7 +13,7 @@ exl-id: 7cf47d01-a35a-4c85-b562-e5ebb6945693
 
 Apple provides an API which allows people to sign in to their TV provider account at the device system level, eliminating the need to authenticate on an app-by-app basis.
 
-Hence, Apple and Adobe Primetime Authentication partnered to create the platform Single Sign-On (SSO) user experience in the TV Everywhere ecosystem for iPhone, iPad and Apple TV owners.
+Hence, Apple and Adobe Pass Authentication partnered to create the platform Single Sign-On (SSO) user experience in the TV Everywhere ecosystem for iPhone, iPad and Apple TV owners.
 
 In order to benefit from the Single Sign-On (SSO) user experience on an Apple device, there is a list of prerequisites which must be completed.
 
@@ -21,7 +21,7 @@ In order to benefit from the Single Sign-On (SSO) user experience on an Apple de
 
 ## Prerequisites {#Prerequisites}
 
-Prerequisite may apply to one or multiple entities involved in the TVE business, such as Programmers, MVPDs, Adobe Primetime Authentication or Apple.
+Prerequisite may apply to one or multiple entities involved in the TVE business, such as Programmers, MVPDs, Adobe Pass Authentication or Apple.
 
 </br>
 
@@ -35,11 +35,11 @@ In order to benefit from the Single Sign-On (SSO) user experience, one Programme
 
 1.  Enable Single Sign-On (YES) for each desired integration (Channel x MVPD) and desired platform (iOS / tvOS) through the [Adobe Primetime TVE Dashboard](https://console.auth.adobe.com/).
 
-1.  Integrate the Apple SSO workflows using one of the following two solutions offered by Adobe Primetime Authentication team:
+1.  Integrate the Apple SSO workflows using one of the following two solutions offered by Adobe Pass Authentication team:
 
-    - The Adobe Primetime Authentication REST API can support platform Single Sign-On (SSO) authentication for end users of client applications running on iOS, iPadOS or tvOS. Please see also [Apple SSO Cookbook (REST API)](/help/authentication/apple-sso-cookbook-rest-api.md).
+    - The Adobe Pass Authentication REST API can support platform Single Sign-On (SSO) authentication for end users of client applications running on iOS, iPadOS or tvOS. Please see also [Apple SSO Cookbook (REST API)](/help/authentication/apple-sso-cookbook-rest-api.md).
 
-    - The Adobe Primetime Authentication AccessEnabler iOS/tvOS SDK can support platform Single Sign-On (SSO) authentication for end users of client applications running on iOS, iPadOS or tvOS. Please see also [Apple SSO Cookbook (iOS/tvOS SDK)](/help/authentication/apple-sso-cookbook-iostvos-sdk.md).
+    - The Adobe Pass Authentication AccessEnabler iOS/tvOS SDK can support platform Single Sign-On (SSO) authentication for end users of client applications running on iOS, iPadOS or tvOS. Please see also [Apple SSO Cookbook (iOS/tvOS SDK)](/help/authentication/apple-sso-cookbook-iostvos-sdk.md).
 
     - **<u>Pro Tip:</u>** In order to have access to the user's subscription information, the user must give the application permission to proceed, similar to providing access to the device's camera or microphone. This permission must be requested per application and the device will save the user's selection. Please bear in mind that the user can change its decision by going to the application settings (TV Provider permission access) or to the section from *`Settings -> TV Provider`* on iOS/iPadOS or *`Settings -> Accounts -> TV Provider`* on tvOS.
 
@@ -55,12 +55,12 @@ The result should create an experience in line with the following user flows, wh
 
 >[!IMPORTANT]
 >
-> When the Single Sign-On feature is **enabled** for iOS/tvOS **and** in the case of Apple **onboarded (supported) or picker** MVPDs the authentication/logout flows from the Apple SSO workflows will involve both Apple and Adobe Primetime Authentication solutions, while all other flows (authorization, preauthorization, metadata, etc.) will be serviced solely by Adobe Primetime Authentication.
+> When the Single Sign-On feature is **enabled** for iOS/tvOS **and** in the case of Apple **onboarded (supported) or picker** MVPDs the authentication/logout flows from the Apple SSO workflows will involve both Apple and Adobe Pass Authentication solutions, while all other flows (authorization, preauthorization, metadata, etc.) will be serviced solely by Adobe Pass Authentication.
 
 
 >[!IMPORTANT]
 >
-> When the Single Sign-On feature is **disabled** for iOS/tvOS **or** in the case of Apple **not onboarded (not supported)** MVPDs the authentication/logout flows will fallback from the Apple SSO workflows to the regular ones serviced solely by Adobe Primetime Authentication.
+> When the Single Sign-On feature is **disabled** for iOS/tvOS **or** in the case of Apple **not onboarded (not supported)** MVPDs the authentication/logout flows will fallback from the Apple SSO workflows to the regular ones serviced solely by Adobe Pass Authentication.
 
 
 >[!IMPORTANT]
@@ -77,7 +77,7 @@ MVPD must:
 
 1.  Be onboarded into the Apple SSO workflow on Apple's side. Please contact Apple to facilitate the onboarding process.
 1.  Provide a JavaScript TVML application capable of handling the user login form. Please contact Apple to receive proper documentation.
-1.  Provide a string value representing the provider identifier assigned by Apple during the onboarding process. Please contact Adobe Primetime Authentication to perform configuration changes.
+1.  Provide a string value representing the provider identifier assigned by Apple during the onboarding process. Please contact Adobe Pass Authentication to perform configuration changes.
 
 </br>
 
@@ -104,13 +104,13 @@ MVPD must:
 1.  Will the MVPD user ID change between Apple SSO and non-Apple SSO authentication flow?
       - The expectation is that the user ID will not change, but it needs to be verified for each selected provider. 
 1. Will there be any change to the authentication TTLs?
-      - Adobe Primetime Authentication will continue to respect the TTLs required by the Programmers for their integration with each MVPD.
+      - Adobe Pass Authentication will continue to respect the TTLs required by the Programmers for their integration with each MVPD.
       - When navigating from one Programmer application to another Programmer application through Apple SSO, the second application will have the TTL of its corresponding Programmer x MVPD integration (it won't share the TTL of the first application that authenticates)
 
-|                                      | Adobe Primetime Authentication TTL expired                                                                                      | Adobe Primetime Authentication TTL valid                                                            |
+|                                      | Adobe Pass Authentication TTL expired                                                                                      | Adobe Pass Authentication TTL valid                                                            |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| **Apple's device token TTL expired** | user is NOT authenticated (MVPD picker should appear) | user is authenticated and the TTL is the remaining time of his Adobe Primetime Authentication token |
-| **Apple's device token TTL valid** | user is silently authenticated and obtains another Adobe Primetime Authentication token with the TTL specified in TVE Dashboard | user is authenticated and the TTL is the remaining time of his Adobe Primetime Authentication token |
+| **Apple's device token TTL expired** | user is NOT authenticated (MVPD picker should appear) | user is authenticated and the TTL is the remaining time of his Adobe Pass Authentication token |
+| **Apple's device token TTL valid** | user is silently authenticated and obtains another Adobe Pass Authentication token with the TTL specified in TVE Dashboard | user is authenticated and the TTL is the remaining time of his Adobe Pass Authentication token |
 
 <!--
 

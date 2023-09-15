@@ -1,9 +1,9 @@
 ---
-title: Adobe Primetime authentication 2.65 Release Notes
-description: Adobe Primetime authentication 2.65 Release Notes
+title: Adobe Pass authentication 2.65 Release Notes
+description: Adobe Pass authentication 2.65 Release Notes
 exl-id: fa0d38d5-c3c3-4ecf-a5f4-6c33a8617108
 ---
-# Adobe Primetime Authentication 2.65 Release Notes {#pt-authn-265-rn}
+# Adobe Pass Authentication 2.65 Release Notes {#pt-authn-265-rn}
 
 >[!NOTE]
 >
@@ -18,7 +18,7 @@ This page describes new features, changes, and known issues with this release:
 
 ### Build Number {#build-number-265}
 
-Adobe Primetime authentication: adobe-pass-**2.65**
+Adobe Pass authentication: adobe-pass-**2.65**
 Release Date: **25/04/2023 - 27/04/2023** 
 
 ### New Features {#new-features-265}

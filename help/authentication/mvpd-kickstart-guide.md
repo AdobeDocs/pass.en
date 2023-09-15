@@ -11,13 +11,13 @@ exl-id: 6423cc9a-a45a-4cde-b562-4cb72c98e505
 
 ## Introduction {#mvpd-kickstart-intro}
 
-Welcome to Adobe Primetime authentication for TV Everywhere.  We look forward to working with you.
+Welcome to Adobe Pass authentication for TV Everywhere.  We look forward to working with you.
 
 >[!NOTE]
 >
 >This is the Kickstart Guide for Multichannel Video Programming Distributors (MVPDs). If you are a Programmer (content provider), see the [Programmers' Kickstart Guide](/help/authentication/programmer-kickstart-guide.md).  
 
-Support is available at all times through the Primetime authentication ticket system on Zendesk. This is also where you can find samples, documentation, and video tutorials for our processes. In order to use [Zendesk](https://adobeprimetime.zendesk.com/), you will have to register and create an account at https://tve.zendesk.com/home. There is no limit to the amount of users you can register and who can see or post comments on a filed ticket. All support questions should be addressed to: tve-support at adobe.com
+Support is available at all times through the Adobe Pass authentication ticket system on Zendesk. This is also where you can find samples, documentation, and video tutorials for our processes. In order to use [Zendesk](https://adobeprimetime.zendesk.com/), you will have to register and create an account at https://tve.zendesk.com/home. There is no limit to the amount of users you can register and who can see or post comments on a filed ticket. All support questions should be addressed to: tve-support at adobe.com
  
 **Team contacts**:
 
@@ -63,7 +63,7 @@ The two sides need to exchange the metadata for all environments involved (produ
 
 The following IPs should be whitelisted in the MVPD's firewall. Please contact Adobe for the list of IPs. 
 
-*   Primetime authentication requires that firewalls be opened on ports 80 and 443, for allowing access to restricted resources. 
+*   Adobe Pass authentication requires that firewalls be opened on ports 80 and 443, for allowing access to restricted resources. 
 
 *   The MVPD needs to add a list of IP addresses for authentication and authorization servers (if this is the case).
 
@@ -86,13 +86,13 @@ For more information on how to use Adobe's environments, see [Understanding the 
 
 ## 7. Staging deployment {#stag-env}
 
-Based on the metadata received from the MVPD, Adobe will create and configure a new MVPD in the Primetime authentication system. This will be deployed in Adobe's prequal staging environment, and will be configured with our test Programmer (TestDistributors). 
+Based on the metadata received from the MVPD, Adobe will create and configure a new MVPD in the Adobe Pass authentication system. This will be deployed in Adobe's prequal staging environment, and will be configured with our test Programmer (TestDistributors). 
  
 The MVPD needs to do the same deployment in their QA/staging/test environment.
 
 ## 8. Test and troubleshoot {#tes-troubleshoot}
 
-In this phase, Adobe and the MVPD test and troubleshoot the integration. To help test the integration, the Primetime authentication team can use Adobe's API test site. To know more about using Adobe's API test site see [Test authentication and authorization flows using Adobe API test site](/help/authentication/test-authn-authz-flows-using-adobes-api-test-site.md). 
+In this phase, Adobe and the MVPD test and troubleshoot the integration. To help test the integration, the Adobe Pass authentication team can use Adobe's API test site. To know more about using Adobe's API test site see [Test authentication and authorization flows using Adobe API test site](/help/authentication/test-authn-authz-flows-using-adobes-api-test-site.md). 
 
 When testing and troubleshooting has concluded successfully, the integration is enabled in Adobe's release staging environment. At this point, Adobe can integrate the MVPD with an actual programmer. 
 
@@ -110,7 +110,7 @@ When testing and troubleshooting has concluded successfully, the integration is 
 
 Once the integration is live in production it is critical to provide the best customer experience. To ensure the best response in the case of a server down issue, MVPDs must provide escalation procedure documentation for issues brought to Adobe's attention. 
 
-In turn, Adobe supplies MVPDs with the most current Primetime authentication escalation process.
+In turn, Adobe supplies MVPDs with the most current Adobe Pass authentication escalation process.
 
 
 <!--- [!RELATEDINFORMATION]

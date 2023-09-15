@@ -1,9 +1,9 @@
 ---
-title: Monitoring Adobe Primetime authentication
-description: Monitoring Adobe Primetime authentication
+title: Monitoring Adobe Pass authentication
+description: Monitoring Adobe Pass authentication
 exl-id: fb000e9d-b5aa-45b1-a914-9e419ec8a4d9
 ---
-# Monitoring Adobe Primetime authentication {#monitoring-adobe-primetime-authentication}
+# Monitoring Adobe Pass authentication {#monitoring-adobe-primetime-authentication}
 
 >[!NOTE]
 >
@@ -11,7 +11,7 @@ exl-id: fb000e9d-b5aa-45b1-a914-9e419ec8a4d9
 
 ## Introduction {#intro}
 
-Customers can use [Nagios](http://www.nagios.org) or other tools to check whether Adobe Primetime authentication is up or down. 
+Customers can use [Nagios](http://www.nagios.org) or other tools to check whether Adobe Pass authentication is up or down. 
 
 ## Monitoring Endpoints {#monitoring-endpoints}
 
@@ -19,7 +19,7 @@ Customers can use [Nagios](http://www.nagios.org) or other tools to check whethe
 
 *   The configuration endpoint for all platforms: `https://sp.auth.adobe.com/adobe-services/config/[your-config-ID]`- It is available over either HTTP or HTTPS (depending upon the choice made by the content provider's developer). If this endpoint is missing that means that your content will not be available across all platforms and all MVPDs. For the Clientless REST API we have also the following endpoint:  `https://api.auth.adobe.com/adobe-services/config your-config-ID]`.
 
-*   The following endpoints are part of the Adobe Primetime authentication web SDK.  If it is missing it means that pay-TVpass is down for all Programmers and all web properties:
+*   The following endpoints are part of the Adobe Pass authentication web SDK.  If it is missing it means that pay-TVpass is down for all Programmers and all web properties:
     
     * `https://entitlement.auth.adobe.com/entitlement/v4/AccessEnabler.js`
     * `https://entitlement.auth.adobe.com/entitlement/js/AccessEnabler.js`

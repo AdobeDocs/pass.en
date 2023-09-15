@@ -11,10 +11,10 @@ exl-id: 1688889a-2e30-4d66-96ff-1ddf4b287f68
 
 ## About the Media Token Verifier {#about-media-token-verifier}
 
-When authorization succeeds, Adobe Primetime authentication creates a long-lived authorization (AuthZ) token.  The AuthZ token is either passed to the client-side or stored on the server-side, depending upon the client's platform.  (See [Understanding Tokens](/help/authentication/programmer-overview.md#understanding-tokens) for how tokens are stored on different client systems, along with other details.)
+When authorization succeeds, Adobe Pass authentication creates a long-lived authorization (AuthZ) token.  The AuthZ token is either passed to the client-side or stored on the server-side, depending upon the client's platform.  (See [Understanding Tokens](/help/authentication/programmer-overview.md#understanding-tokens) for how tokens are stored on different client systems, along with other details.)
  
 
-An AuthZ token authorizes the user of the site to view a given resource.  It has a typical time-to-live (TTL) of 6 to 24 hours, after which the token expires. **For actual viewing access, the Primetime authentication uses the AuthZ token to generate a short-lived media token that you obtain and pass to your media server**. These short-lived media tokens have a very brief TTL (typically, a few minutes).
+An AuthZ token authorizes the user of the site to view a given resource.  It has a typical time-to-live (TTL) of 6 to 24 hours, after which the token expires. **For actual viewing access, the Adobe Pass authentication uses the AuthZ token to generate a short-lived media token that you obtain and pass to your media server**. These short-lived media tokens have a very brief TTL (typically, a few minutes).
  
 
 In AccessEnabler integrations, you obtain the short-lived media token via the `setToken()` callback. For Clientless API integrations, you obtain the short-lived Media token with the `<SP_FQDN>/api/v1/tokens/media` API call. The token is a string sent in clear text, signed by Adobe, using token protection based on PKI (Public Key Infrastructure). With this PKI-based protection, the token is signed using an asymmetric key, issued to Adobe by a certification authority.
@@ -33,7 +33,7 @@ We recommend that Programmers send the token to a web service that uses the Medi
 
  
 
-The [Media Token Verifier Library](https://adobeprimetime.zendesk.com/auth/v2/login/signin?return_to=https%3A%2F%2Ftve.zendesk.com%2Fhc%2Fen-us%2Farticles%2F204963159-Media-Token-Verifier-library&theme=hc&locale=en-us&brand_id=343429&auth_origin=343429%2Cfalse%2Ctrue){target=_blank} is available for Primetime authentication partners.
+The [Media Token Verifier Library](https://adobeprimetime.zendesk.com/auth/v2/login/signin?return_to=https%3A%2F%2Ftve.zendesk.com%2Fhc%2Fen-us%2Farticles%2F204963159-Media-Token-Verifier-library&theme=hc&locale=en-us&brand_id=343429&auth_origin=343429%2Cfalse%2Ctrue){target=_blank} is available for Adobe Pass authentication partners.
 
  
 

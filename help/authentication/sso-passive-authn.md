@@ -16,13 +16,13 @@ The scope of this document is to describe the implementation of the passive auth
 
 ## Usecases
 
-Adobe Primetime authentication enables Single Sign-On (SSO) between apps / sites. After a user logs in with their MVPD credentials, Adobe Primetime authentication generates a secure token that represents the MVPD's authentication session, and binds that token to the user's device using a Device ID. Adobe Primetime authentication stores the token / Device ID either on a server or on the device.
+Adobe Pass authentication enables Single Sign-On (SSO) between apps / sites. After a user logs in with their MVPD credentials, Adobe Pass authentication generates a secure token that represents the MVPD's authentication session, and binds that token to the user's device using a Device ID. Adobe Pass authentication stores the token / Device ID either on a server or on the device.
 
 As long as the token is still valid the users will appear directly as being authenticated. This allows users to enter their credentials less frequently while keeping transactions secure.
 
  
 
-The business use case detailed here is a very specific requirement: that the user MUST be authenticated at least once for every visited site. This enables the MVPD to apply business rules associated with the authN session that may vary per network. It conflicts with the current TVE promise that a user needs to login only once and will be authenticated on all the sites that are part of the Adobe Primetime authentication ecosystem.
+The business use case detailed here is a very specific requirement: that the user MUST be authenticated at least once for every visited site. This enables the MVPD to apply business rules associated with the authN session that may vary per network. It conflicts with the current TVE promise that a user needs to login only once and will be authenticated on all the sites that are part of the Adobe Pass authentication ecosystem.
 
  
 
@@ -36,7 +36,7 @@ To solve these, we implemented 2 distinct features: authentication per network a
 
 ## Authentication per network
 
-This feature ensures that the MVPD receives an authentication request once for every visited site. This functionality means that an Adobe Primetime authentication authentication token will be bounded to the requestorID, thus being valid only for the network who requested it. As a result, once the user authenticates on site "A" and afterwards visits site "B" it will be required to authenticate.
+This feature ensures that the MVPD receives an authentication request once for every visited site. This functionality means that an Adobe Pass authentication authentication token will be bounded to the requestorID, thus being valid only for the network who requested it. As a result, once the user authenticates on site "A" and afterwards visits site "B" it will be required to authenticate.
 
  
 
@@ -116,5 +116,5 @@ iOS – due to the nature of the iOS local storage, SSO flows do not work on iOS
 <!--
 >[!RELATEDINFORMATION]
 >* Single Sign-On on iOS
->* SSO on iOS when using the Primetime authentication Access Enabler
+>* SSO on iOS when using the Adobe Pass authentication Access Enabler
 -->

@@ -31,11 +31,11 @@ Please check the sample below:
 
 >[!IMPORTANT]
 >
->Users must be authenticated to be able to generate privacy requests for Primetime Authentication. Otherwise, programmers must find other means of extracting the MVPD userID.
+>Users must be authenticated to be able to generate privacy requests for Adobe Pass Authentication. Otherwise, programmers must find other means of extracting the MVPD userID.
 
 ## Types of requests {#req-type}
 
-Primetime Authentication supports Access and Delete requests.
+Adobe Pass Authentication supports Access and Delete requests.
 
 ### Access {#access-req}
 
@@ -47,7 +47,7 @@ all these events are filtered per Customer.
 
 **Request sample**
 
-You must upload a JSON with the Primetime Authentication identifiers for which you are submitting the data access request. To see what a well-formed JSON looks like, see this sample:
+You must upload a JSON with the Adobe Pass Authentication identifiers for which you are submitting the data access request. To see what a well-formed JSON looks like, see this sample:
 
 ```JSON
 {
@@ -96,7 +96,7 @@ You must upload a JSON with the Primetime Authentication identifiers for which y
     ],
     "productResponses": [
         {
-            "product": "Primetime Authentication",
+            "product": "Adobe Pass Authentication",
             "retryCount": 0,
             "processedDate": "12/16/2019 04:15 PM GMT",
             "productStatusResponse": {
@@ -129,7 +129,7 @@ You must upload a JSON with the Primetime Authentication identifiers for which y
 
 ### Delete {#delete-req}
 
-You must upload a JSON with the Primetime Authentication identifiers for which you are submitting the data delete request. To see what a well-formed JSON looks like, see this sample: 
+You must upload a JSON with the Adobe Pass Authentication identifiers for which you are submitting the data delete request. To see what a well-formed JSON looks like, see this sample: 
 
 **Request sample**
 
@@ -185,7 +185,7 @@ For a Delete request:
     ],
     "productResponses": [
         {
-            "product": "Primetime Authentication",
+            "product": "Adobe Pass Authentication",
             "retryCount": 0,
             "processedDate": "12/10/2019 02:34 PM GMT",
             "productStatusResponse": {

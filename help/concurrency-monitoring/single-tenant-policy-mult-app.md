@@ -118,7 +118,7 @@ Prerequisites:
 
 user is authenticated with an MVPD
 
-2    API call: Session initialization    the app/player calls CM to initiate a stream    the app/player sends all required metadata using information from Adobe Primetime Authentication
+2    API call: Session initialization    the app/player calls CM to initiate a stream    the app/player sends all required metadata using information from Adobe Pass Authentication
 3    CM responds with decision and streamId    
 the streamId json node value is stored by the application for the duration of the video playback
 
@@ -155,7 +155,7 @@ Prerequisites:
 
 user is authenticated with an MVPD
 
-2    API call: Session initialization    the app/player calls CM to initiate a stream    the app/player send all required metadata using information from Adobe Primetime Authentication
+2    API call: Session initialization    the app/player calls CM to initiate a stream    the app/player send all required metadata using information from Adobe Pass Authentication
 3    CM responds with decision and streamId    
 the streamId json node value is stored by the application for the duration of the video playback
 
@@ -185,7 +185,7 @@ Prerequisites:
 
 user is authenticated with an MVPD
 
-2    API call: Session initialization    the app/player calls CM to initiate a stream    the app/player send all required metadata using information from Adobe Primetime Authentication
+2    API call: Session initialization    the app/player calls CM to initiate a stream    the app/player send all required metadata using information from Adobe Pass Authentication
 3    CM responds with decision and streamId    
 the policyCompliant json node has value false so the app/player does NOT start playback
 
@@ -229,16 +229,16 @@ where to use it
 obtained from
 applicationId    iphone54-75b4-431b-adb2-eb6b9e546013    uri    Zendesk ticket at integration
 mvpdName    Sample_MVPD    uri    
-Adobe Primetime Authentication from config endpoint when user selects the MVPD
+Adobe Pass Authentication from config endpoint when user selects the MVPD
 
 accountId    12345    uri    
-Adobe Primetime Authentication upstreamUserID metadata after user login
+Adobe Pass Authentication upstreamUserID metadata after user login
 
-User Metadata upstreamUserID - Adobe Primetime Authentication
+User Metadata upstreamUserID - Adobe Pass Authentication
 
-programmerName    Sample_Programmer_Id    form parameter    Adobe Primetime Authentication
-channel    CHANNEL    form parameter    Adobe Primetime Authentication
-deviceId    30fe8d0f-35d4-4082-a728-405fcbae5ddb    form parameter    Adobe Primetime Authentication
+programmerName    Sample_Programmer_Id    form parameter    Adobe Pass Authentication
+channel    CHANNEL    form parameter    Adobe Pass Authentication
+deviceId    30fe8d0f-35d4-4082-a728-405fcbae5ddb    form parameter    Adobe Pass Authentication
  
 
  
@@ -363,12 +363,12 @@ value example
 where to use it
 obtained from
 mvpdName    Sample_MVPD    uri    
-Adobe Primetime Authentication from config endpoint when user selects the MVPD
+Adobe Pass Authentication from config endpoint when user selects the MVPD
 
 accountId    12345    uri    
-Adobe Primetime Authentication upstreamUserID metadata after user login
+Adobe Pass Authentication upstreamUserID metadata after user login
 
-User Metadata upstreamUserID - Adobe Primetime Authentication
+User Metadata upstreamUserID - Adobe Pass Authentication
 
  
 
@@ -464,5 +464,5 @@ curl -v -X POST 'http://streams.adobeprimetime.com/v1/iphone54-75b4-431b-adb2-eb
 Related Information
 Introduction - Adobe Concurrency Monitoring
 API Console - Adobe Concurrency Monitoring
-User Metadata - Adobe Primetime Authentication
+User Metadata - Adobe Pass Authentication
 ---> 

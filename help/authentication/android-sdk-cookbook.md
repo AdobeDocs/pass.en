@@ -16,7 +16,7 @@ exl-id: 7f66ab92-f52c-4dae-8016-c93464dd5254
 This document describes the entitlement workflows that a Programmer's upper-level application can implement through the APIs exposed by the Android AccessEnabler library.
 
 
-The Adobe Primetime authentication entitlement solution for Android is ultimately divided into two domains:
+The Adobe Pass authentication entitlement solution for Android is ultimately divided into two domains:
 
 - The UI domain - this is the upper-level application layer which implements the UI and uses the services provided by the AccessEnabler library to provide access to restricted content.
 - The AccessEnabler domain - this is where the entitlement workflows are implemented in the form of:
@@ -108,17 +108,17 @@ The AccessEnabler's network activity takes place in a different thread so the UI
 ### B. Startup Flow {#startup_flow}
 
 1.  Start the upper-level application.
-1.  Initiate Adobe Primetime authentication
+1.  Initiate Adobe Pass authentication
 
-    a.  Call [`getInstance`](#$getInstance) to create a single instance of the Adobe Primetime authentication AccessEnabler.
+    a.  Call [`getInstance`](#$getInstance) to create a single instance of the Adobe Pass authentication AccessEnabler.
         
-      - **Dependency:** Adobe Primetime authentication Native
+      - **Dependency:** Adobe Pass authentication Native
         Android Library (AccessEnabler)
     
-    b.  Call` setRequestor()` to establish the identify of the Programmer; pass in the Programmer's `requestorID` and (optionally) an array of Adobe Primetime authentication endpoints.
+    b.  Call` setRequestor()` to establish the identify of the Programmer; pass in the Programmer's `requestorID` and (optionally) an array of Adobe Pass authentication endpoints.
         
-      - **Dependency:** Valid Adobe Primetime authentication RequestorID  
-        (Work with your Adobe Primetime authentication Account Manager to arrange this.)
+      - **Dependency:** Valid Adobe Pass authentication RequestorID  
+        (Work with your Adobe Pass authentication Account Manager to arrange this.)
     
       - **Triggers:** setRequestorComplete() callback
 
@@ -180,7 +180,7 @@ The AccessEnabler's network activity takes place in a different thread so the UI
         - If there was some other type of error (connection error, network error, etc.) then display an appropriate error message to the user.
 
 1.  Validate the Short Media Token.  
-    Use the Adobe Primetime authentication Media Token Verifier library to to verify the short-lived media token returned from the `getAuthorization()` call above:
+    Use the Adobe Pass authentication Media Token Verifier library to to verify the short-lived media token returned from the `getAuthorization()` call above:
 
     - If the validation succeeds: Play the requested media for the user.
     - If the validation fails: The AuthZ token was invalid, the media request should be refused, and an error message should be displayed to the user.

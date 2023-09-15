@@ -87,6 +87,6 @@ Steps 1 and 2 are setting up the test environment on one of the testing machines
 
 ## STEP 6.  Perform testing using the API test site {#perform-testing-using-api-testing-site}
 
-* If you want to go deeper into testing Adobe Primetime authentication, we recommend you use the [API test site](http://entitlement-prequal.auth.adobe.com/apitest/api.html).
+* If you want to go deeper into testing Adobe Pass authentication, we recommend you use the [API test site](http://entitlement-prequal.auth.adobe.com/apitest/api.html).
 
 You can find more details on API test site at [How to test Authentication and Authorization flows using Adobe's API test site](/help/authentication/test-authn-authz-flows-using-adobes-api-test-site.md).

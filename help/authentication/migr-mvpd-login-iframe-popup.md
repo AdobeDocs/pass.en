@@ -14,10 +14,10 @@ exl-id: 389ea0ea-4e18-4c2e-a527-c84bffd808b4
 Some users have encountered 3rd-party cookie issues with the iFrame implementation of an MVPD login page. 
 <!--These issues are described in the tech notes linked below:
 
-* [Adobe Primetime authentication and Safari login issues](https://tve.helpdocsonline.com/adobe-pass)
+* [Adobe Pass authentication and Safari login issues](https://tve.helpdocsonline.com/adobe-pass)
 * [MVPD iFrame login and 3rd party cookies](https://tve.helpdocsonline.com/mvpd)-->
 
-The Adobe Primetime authentication team **recommends implementing the popup / new window login page** rather than the iFrame version on Firefox and Safari.  However, if you are implementing a login page for Internet Explorer, you may encounter issues with the popup implementation. The IE issues are caused by the fact that, after the user authenticates with their MVPD in the popup window, Adobe Primetime authentication forces a parent page redirect, which is seen as a popup blocker by Internet Explorer. The Adobe Primetime authentication team **recommends implementing the iFrame login for Internet Explorer**.
+The Adobe Pass authentication team **recommends implementing the popup / new window login page** rather than the iFrame version on Firefox and Safari.  However, if you are implementing a login page for Internet Explorer, you may encounter issues with the popup implementation. The IE issues are caused by the fact that, after the user authenticates with their MVPD in the popup window, Adobe Pass authentication forces a parent page redirect, which is seen as a popup blocker by Internet Explorer. The Adobe Pass authentication team **recommends implementing the iFrame login for Internet Explorer**.
 
 The sample code presented in this tech note uses a hybrid implementation of both iFrame and popup - opening an iFrame on Internet Explorer and a popup on the other browsers. 
 

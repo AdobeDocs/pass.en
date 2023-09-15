@@ -1,9 +1,9 @@
 ---
-title: Using Experience Cloud ID in Primetime Authentication
-description: Using Experience Cloud ID in Primetime Authentication
+title: Using Experience Cloud ID in Adobe Pass Authentication
+description: Using Experience Cloud ID in Adobe Pass Authentication
 exl-id: 03354c01-5aad-4d81-beee-1c3834599134
 ---
-# Using Experience Cloud ID in Primetime Authentication
+# Using Experience Cloud ID in Adobe Pass Authentication
 
 >[!NOTE]
 >
@@ -17,11 +17,11 @@ If you already have a system in place that provides a visitor ID you should use 
 
 One way of obtaining the ECID is to use Experience Cloud ID Service. You can use your preferred implementation type, either based on TDM, JS library, server side, direct integration, or native libraries for mobile platforms. For a comprehensive view of available services, libraries, SDK's and implementation guides, please see: <https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-guides.html>
  
-## What is the benefit of using the Experience Cloud ID in Primetime Authentication? {#benefit-ex-cloud-id}
+## What is the benefit of using the Experience Cloud ID in Adobe Pass Authentication? {#benefit-ex-cloud-id}
 
-If you configure our SDKs and Clientless REST API to use your ECID, you will later be able to link data collected by Primetime Authentication into your existing Experience Cloud solutions. This will enable you to better understand your customers journey and experience across all solutions provided by Adobe. 
+If you configure our SDKs and Clientless REST API to use your ECID, you will later be able to link data collected by Adobe Pass Authentication into your existing Experience Cloud solutions. This will enable you to better understand your customers journey and experience across all solutions provided by Adobe. 
 
-## How to use the Experience Cloud ID in Primetime Authentication? {#how-to-ex-cloud-id-authn}
+## How to use the Experience Cloud ID in Adobe Pass Authentication? {#how-to-ex-cloud-id-authn}
 
 After you obtain the ECID (explained above) you need to pass this information to our SDKs and our Clientless REST API. This information will be later passed to our servers on each network call that the SDK makes. The configuration process is different for every SDK as follows:
 
@@ -70,7 +70,7 @@ accessEnabler.setOptions(options);
 
 ### Clientless API {#clientless-api}
 
-When using Adobe Primetime via it's REST API, the **ECID** value should be sent **on all APIs** as a parameter named **'ap_vi'**. 
+When using Adobe Pass via it's REST API, the **ECID** value should be sent **on all APIs** as a parameter named **'ap_vi'**. 
 
 **Usage example:**
 

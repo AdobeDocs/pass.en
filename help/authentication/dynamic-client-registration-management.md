@@ -11,9 +11,9 @@ exl-id: 2c3ebb0b-c814-4b9e-af57-ce1403651e9e
 
 ## Overview {#overview}
 
-With the widespread adoption of [Android Chrome Custom Tabs](https://developer.chrome.com/multidevice/android/customtabs){target_blanck} and [Apple Safari View Controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller){target_blanck} in our customers' applications, we are updating the user authentication flow in Adobe Primetime Authentication. More specifically, we can no longer achieve the goal of maintaining the state so that the user agent flow of authenticating an MVPD subscriber can be tracked between redirects. This was previously done using HTTP cookies. This limitation is the driver for starting to migrate all the APIs to OAuth 2.0 [RFC6749](https://tools.ietf.org/html/rfc6749){target_blanck}.
+With the widespread adoption of [Android Chrome Custom Tabs](https://developer.chrome.com/multidevice/android/customtabs){target_blanck} and [Apple Safari View Controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller){target_blanck} in our customers' applications, we are updating the user authentication flow in Adobe Pass Authentication. More specifically, we can no longer achieve the goal of maintaining the state so that the user agent flow of authenticating an MVPD subscriber can be tracked between redirects. This was previously done using HTTP cookies. This limitation is the driver for starting to migrate all the APIs to OAuth 2.0 [RFC6749](https://tools.ietf.org/html/rfc6749){target_blanck}.
 
-With this update, Adobe Authentication Clients become OAuth 2.0 clients and a custom OAuth 2.0 authorization server is deployed to address the needs of Adobe Primetime Authentication Service.
+With this update, Adobe Authentication Clients become OAuth 2.0 clients and a custom OAuth 2.0 authorization server is deployed to address the needs of Adobe Pass Authentication Service.
 
 In order for the Client applications to utilize the OAuth 2.0 authorization, the server must dynamically register to obtain specific information (client credentials) to be able to interact with it. As part of the registration process, the client must present a set of built-in metadata to the client registration endpoint.
 
@@ -25,7 +25,7 @@ You can find a more detailed explanation on what software statements are and how
 
 The software statement should be deployed with the application on the user's device.
 
-Prior to this update, we had two mechanisms for allowing applications to perform calls to Adobe Primetime authentication:
+Prior to this update, we had two mechanisms for allowing applications to perform calls to Adobe Pass authentication:
 
 * browser-based clients are registered via allowed [domain listing](/help/authentication/programmer-overview.md#reg-and-init)
 * native application clients, such as iOS and Android applications are  registered through **signed requestor** mechanism  

@@ -13,17 +13,17 @@ exl-id: da2e7150-b6a8-42f3-9930-4bc846c7eee9
 
 "Preflight authorization" is a lightweight authorization check for multiple resources. Programmers primarily use it to decorate their UIs (for example, indicating access status with lock and unlock icons). 
 
-Adobe Primetime authentication can currently support Preflight Authorization in two ways for MVPDs, either via AuthN response attributes or via a multichannel AuthZ request.  The following scenarios describe the cost / benefit of the different ways that you can implement preflight authorization:
+Adobe Pass authentication can currently support Preflight Authorization in two ways for MVPDs, either via AuthN response attributes or via a multichannel AuthZ request.  The following scenarios describe the cost / benefit of the different ways that you can implement preflight authorization:
 
 * **Best Case Scenario** - The MVPD provides the list of preauthorized resources during the authorization phase (Multi-channel AuthZ).
-* **Worst Case Scenario** - If an MVPD does not support any form of multiple resources authorization, the Adobe Primetime authentication server performs an authorization call to the MVPD for each resource in the resources list. This scenario has an impact (proportional to the number of resources) on the response time for the preflight authorization request. It can increase the load on both Adobe & MVPD servers causing performance issues. Also, it will generate authorization requests / responses events without the actual need for a play.
+* **Worst Case Scenario** - If an MVPD does not support any form of multiple resources authorization, the Adobe Pass authentication server performs an authorization call to the MVPD for each resource in the resources list. This scenario has an impact (proportional to the number of resources) on the response time for the preflight authorization request. It can increase the load on both Adobe & MVPD servers causing performance issues. Also, it will generate authorization requests / responses events without the actual need for a play.
 * **Deprecated** - The MVPD provides the list of preauthorized resources during the authentication phase, so there will be no network calls needed, not even the preflight request, since the list is cached on the client.
  
-While MVPDs do not have to support preflight authorization, the following sections describe some preflight authorization methods that Adobe Primetime authentication can support, before falling back to the worst case scenario above.
+While MVPDs do not have to support preflight authorization, the following sections describe some preflight authorization methods that Adobe Pass authentication can support, before falling back to the worst case scenario above.
 
 ## Preflight in AuthN {#preflight-authn}
 
-This preflight scenario is OLCA Compatible (Cableabs). The Authentication and Authorization Interface 1.0 Specification section 7.5.2 titled "Attribute Statement Within Authentication Assertion", describes how a SAML authentication response can contain a list of preauthorized resources. If an IdP supports this, the Adobe Primetime authentication server will be able to generate the preflighted resources list at authentication time and cache it on the client along with the Authentication Token. This method also achieves the best case scenario, and no network calls will be performed when the Programmer calls checkPreauthorizedResources(), since everything is already on the client.
+This preflight scenario is OLCA Compatible (Cableabs). The Authentication and Authorization Interface 1.0 Specification section 7.5.2 titled "Attribute Statement Within Authentication Assertion", describes how a SAML authentication response can contain a list of preauthorized resources. If an IdP supports this, the Adobe Pass authentication server will be able to generate the preflighted resources list at authentication time and cache it on the client along with the Authentication Token. This method also achieves the best case scenario, and no network calls will be performed when the Programmer calls checkPreauthorizedResources(), since everything is already on the client.
  
 ### Custom Resource List in SAML Attribute Statement {#custom-res-saml-attr}
 
@@ -44,10 +44,10 @@ This effectively achieves the best case scenario, and no network calls will be p
 
 ## Multi-channel Preflight in AuthZ {#preflight-multich-authz}
 
-This preflight implementation is also OLCA Compatible (Cablelabs).  The Authentication and Authorization Interface 1.0 Specification (sections 7.5.3 and 7.5.4) describes methods for requesting Authorization information from an MVPD using either SAML Assertions or XACML. This is the recommended way to query authorization status for MVPDs that do not support this as part of the Authentication flow. Adobe Primetime authentication issues a single network call to the MVPD to retrieve the list of authorized resources.
+This preflight implementation is also OLCA Compatible (Cablelabs).  The Authentication and Authorization Interface 1.0 Specification (sections 7.5.3 and 7.5.4) describes methods for requesting Authorization information from an MVPD using either SAML Assertions or XACML. This is the recommended way to query authorization status for MVPDs that do not support this as part of the Authentication flow. Adobe Pass authentication issues a single network call to the MVPD to retrieve the list of authorized resources.
 
  
-Adobe Primetime authentication receives the list of resources from the Programmer's application. Adobe Primetime authentication's MVPD integration can then make one AuthZ call including all those resources, and then parse the response and extract the multiple permit/deny decisions.  The flow for the preflight with multi-channel AuthZ scenario works as follows: 
+Adobe Pass authentication receives the list of resources from the Programmer's application. Adobe Pass authentication's MVPD integration can then make one AuthZ call including all those resources, and then parse the response and extract the multiple permit/deny decisions.  The flow for the preflight with multi-channel AuthZ scenario works as follows: 
 
 1. The Programmer's app sends a comma separated list of resources through the preflight client API, for example: "TestChannel1,TestChannel2,TestChannel3". 
 1. The MVPD preflight AuthZ request call contains the multiple resources, and has the following structure:

@@ -11,19 +11,19 @@ exl-id: d17e60dc-6c61-4ca2-bad8-1840c95261e0
 
 ## Overview {#content-metadat-exchange-overview}
 
-This page describes two standard implementations that Adobe Primetime authentication uses to send structured data to MVPDs on the Authorization request.  The structured data represents the resource (the Programmer) making the request, and, possibly, additional data such as content rating. 
+This page describes two standard implementations that Adobe Pass authentication uses to send structured data to MVPDs on the Authorization request.  The structured data represents the resource (the Programmer) making the request, and, possibly, additional data such as content rating. 
 
-On the Programmer side, Adobe Primetime authentication supports structured MRSS data resources as follows:
+On the Programmer side, Adobe Pass authentication supports structured MRSS data resources as follows:
 
-1. The Programmer sends the Resource as an MRSS string. Adobe Primetime authentication does not encode it on the client side for either web or native devices. The MRSS is sent as a regular string to the Adobe Primetime authentication server.
-1. On the server side, the MRSS is validated against the predefined schema (http://search.yahoo.com/mrss/).  If the validation passes, Adobe Primetime authentication extracts the information from the MRSS fields, including:
+1. The Programmer sends the Resource as an MRSS string. Adobe Pass authentication does not encode it on the client side for either web or native devices. The MRSS is sent as a regular string to the Adobe Pass authentication server.
+1. On the server side, the MRSS is validated against the predefined schema (http://search.yahoo.com/mrss/).  If the validation passes, Adobe Pass authentication extracts the information from the MRSS fields, including:
     * channel title
     * item title
     * resource identifier
     * rating value and type
 1. The values extracted from the MRSS are used to build the authorization request which is passed to the MVPD. 
 
-Adobe Primetime authentication supports two approaches for translating the MRSS into formats supported by MVPDs:
+Adobe Pass authentication supports two approaches for translating the MRSS into formats supported by MVPDs:
 
 * **XACML**.  The first approach aligns with the OLCA standard.  It uses XACML, in which the MRSS values are extracted  to build an XACMLResource with attributes that map to the MRSS elements.  This is then passed to the MVPD.  
 * **REST**.  The second approach is REST-based.  The MRSS is base64 encoded and passed as a URL parameter on the REST call.
@@ -37,7 +37,7 @@ In both approaches, the MVPD processes the authorization request by including th
 
 ### OLCA-based XACML Structured Resource {#olca-based-xacml-struc-resource}
 
-Most Cable-oriented MVPDs use the XACML-based approach, but don't yet support the full structured data approach.  Other MVPDs that support XACML take the Channel Title and accept that for the ResourceID attribute. The example below shows the full structured XACML-based approach. The Adobe Primetime authentication team recommends that for MVPDs that use XACML, but don't yet support features like parental controls, they should adapt their XACML integration to the following example:
+Most Cable-oriented MVPDs use the XACML-based approach, but don't yet support the full structured data approach.  Other MVPDs that support XACML take the Channel Title and accept that for the ResourceID attribute. The example below shows the full structured XACML-based approach. The Adobe Pass authentication team recommends that for MVPDs that use XACML, but don't yet support features like parental controls, they should adapt their XACML integration to the following example:
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -103,7 +103,7 @@ Most Cable-oriented MVPDs use the XACML-based approach, but don't yet support th
 
 Some MVPDs have standardized on the following REST-based protocol for authorization. This approach is as full featured as the XACML approach, but provides a "lighter weight" implementation.   
 
-`// The MRSS is base64 encoded by Adobe Primetime authentication, and passed in that format to the REST-based Authorization endpoint.`
+`// The MRSS is base64 encoded by Adobe Pass authentication, and passed in that format to the REST-based Authorization endpoint.`
  
 `https://auth.somedomain.net/mediation/1/rest/client/authz?uuID=AC82CE4&mrss=base64encodedstring&IPAddress=123.456.78.901`
 

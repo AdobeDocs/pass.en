@@ -15,15 +15,15 @@ exl-id: b02a6234-d763-46c0-bc69-9cfd65917a19
 
 ## Introduction {#intro}
 
-iOS AccessEnabler is an Objective C iOS/tvOS library that enables mobile apps to use Adobe Primetime authentication for TV Everywhere's entitlement services. The implementation consists of the *AccessEnabler* interface that defines the entitlement API, and the *EntitlementDelegate* and *[EntitlementStatus](#ios%20entitlement%20status)* protocols that describes the callbacks that the library triggers. The interface together with the protocol is referred to under one common name: the AccessEnabler library.
+iOS AccessEnabler is an Objective C iOS/tvOS library that enables mobile apps to use Adobe Pass authentication for TV Everywhere's entitlement services. The implementation consists of the *AccessEnabler* interface that defines the entitlement API, and the *EntitlementDelegate* and *[EntitlementStatus](#ios%20entitlement%20status)* protocols that describes the callbacks that the library triggers. The interface together with the protocol is referred to under one common name: the AccessEnabler library.
 
 ## iOS and tvOS Requirements {#reqs}
 
-For current technical requirements related to the iOS and tvOS platform and Primetime Authentication, see [Platform / Device / Tool Requirements](#ios), and consult the release notes included with the SDK download. Throughout the rest of this page, you will see sections that note changes that apply to particular SDK versions and higher. For example, the following is a legitimate note regarding the 1.7.5 SDK:
+For current technical requirements related to the iOS and tvOS platform and Adobe Pass Authentication, see [Platform / Device / Tool Requirements](#ios), and consult the release notes included with the SDK download. Throughout the rest of this page, you will see sections that note changes that apply to particular SDK versions and higher. For example, the following is a legitimate note regarding the 1.7.5 SDK:
 
 ## Understanding Native Client Workflows {#flows}
 
-Native client workflows are typically the same as or very similar to those of browser-based Primetime authentication clients. However, there are a few exceptions, as described below.
+Native client workflows are typically the same as or very similar to those of browser-based Adobe Pass authentication clients. However, there are a few exceptions, as described below.
 
 - [Post-initialization Workflow](#post-init)
 - [Generic Initial Authentication Workflow](#generic)
@@ -73,7 +73,7 @@ Note that while this workflow differs for native clients from the typical browse
 
 For native clients, logout is handled similarly to the authentication process described above.
 
-1.  Your application initiates the logout workflow with a call to AccessEnabler's `logout() `API method. The logout is the result of a series of HTTP redirect operations due to the fact that the user needs to be logged out from both Primetime Authentication servers and also from the MVPD's servers. Because this flow cannot be completed with a simple HTTP request issued by the AccessEnabler library, a `UIWebView/WKWebView or SFSafariViewController` controller needs to be instantiated in order to be able to follow the HTTP redirect operations.
+1.  Your application initiates the logout workflow with a call to AccessEnabler's `logout() `API method. The logout is the result of a series of HTTP redirect operations due to the fact that the user needs to be logged out from both Adobe Pass Authentication servers and also from the MVPD's servers. Because this flow cannot be completed with a simple HTTP request issued by the AccessEnabler library, a `UIWebView/WKWebView or SFSafariViewController` controller needs to be instantiated in order to be able to follow the HTTP redirect operations.
 
 1.  A pattern similar with the authentication flow is employed. The iOS AccessEnabler triggers the `navigateToUrl:` callback or the `navigateToUrl:useSVC:` to create a `UIWebView/WKWebView or SFSafariViewController` controller and to load the URL provided in the callback's `url` parameter. This is the URL of the logout endpoint on the backend server. For the tvOS AccessEnabler neither the `navigateToUrl:` callback or the `navigateToUrl:useSVC:` callback is called.
 
@@ -94,7 +94,7 @@ The logout flow differs from the authentication flow in that the user is not req
 
 ### Definitions and Usage {#definitions}
 
-The Primetime authentication entitlement solution revolves around the generation of specific pieces of data (tokens) that Primetime authentication generates upon the successful completion of the authentication and authorization workflows. These tokens are stored locally on the client's iOS device.
+The Adobe Pass authentication entitlement solution revolves around the generation of specific pieces of data (tokens) that Adobe Pass authentication generates upon the successful completion of the authentication and authorization workflows. These tokens are stored locally on the client's iOS device.
 
  
 
@@ -108,7 +108,7 @@ There are three types of tokens issued during the entitlement workflows:
 - **Authorization token:** Grants access to a specific protected resource identified by a unique resourceID. It consists of an authorization grant issued by the authorizing party along with the original resourceID. This information is bound to the device initiating the request.
 - **Short-lived media token:** The AccessEnabler grants access to the hosting application for a given resource by returning a short-lived media token. This token is generated based on the authorization token that was previously acquired for that specific particular resource. Also, this token is not bound to the device and the associated life-span is significantly shorter (default: 5 minutes).
 
-Upon successful authentication and authorization, Primetime authentication will issue authentication, authorization and short-lived media tokens. These tokens should be cached on the user's device and used for the duration of their associated life-spans.
+Upon successful authentication and authorization, Adobe Pass authentication will issue authentication, authorization and short-lived media tokens. These tokens should be cached on the user's device and used for the duration of their associated life-spans.
 
  
 
@@ -145,7 +145,7 @@ The short-lived media token should NOT be cached at all. The media token should 
 
 ### Persistence {#persistence}
 
-Tokens need to be persistent across consecutive runs of the same application. This means that once the authentication and authorization tokens have been acquired and the user closes the application, the same tokens are available to the application when the user re-opens the application. Moreover, it is desirable that these tokens be persistent across multiple applications. In other words, after a user uses one application to login with a specific identity provider (successfully obtaining authentication and authorization tokens), the same tokens can be used through a different application, and the user is no longer prompted for credentials when logging in via the same identity provider. This type of seamless authentication / authorization workflow is what makes the Primetime authentication solution a true TV-Everywhere
+Tokens need to be persistent across consecutive runs of the same application. This means that once the authentication and authorization tokens have been acquired and the user closes the application, the same tokens are available to the application when the user re-opens the application. Moreover, it is desirable that these tokens be persistent across multiple applications. In other words, after a user uses one application to login with a specific identity provider (successfully obtaining authentication and authorization tokens), the same tokens can be used through a different application, and the user is no longer prompted for credentials when logging in via the same identity provider. This type of seamless authentication / authorization workflow is what makes the Adobe Pass authentication solution a true TV-Everywhere
 implementation. 
 
  
@@ -180,7 +180,7 @@ Since on tvOS the pasteboard is not available, the tvOS AccessEnabler library us
 
 - Bundle Seed ID/Team ID is the same between 2 apps if they are generated by the same Provisioning Profile. Find more information at this link:
   [http://developer.apple.com/library/ios/\#documentation/general/conceptual/DevPedia-CocoaCore/AppID.html ](http://developer.apple.com/library/ios/#documentation/general/conceptual/DevPedia-CocoaCore/AppID.html)
-- This "Cross SSO" limitation will be present in iOS 7 regardless of the Primetime authentication SDK used. 
+- This "Cross SSO" limitation will be present in iOS 7 regardless of the Adobe Pass authentication SDK used. 
 
 Please read this tech note for more information on configuring SSO on iOS 7 and upper (the tech note applies for Access Enabler v1.8 and upper): <https://tve.zendesk.com/entries/58233434-Configuring-Pay-TV-pass-SSO-on-iOS>
 
@@ -239,7 +239,7 @@ Without the Token Sanitizer removing invalid tokens, the AccessEnabler would fai
 - [Device Binding](#device_binding)
 
 
-Note that the format of the AuthN and AuthZ tokens are included here for background information only. The structure of these tokens could be changed by Primetime authentication at any time. Programmers don't need to know the exact structure of the AuthN and AuthZ tokens to implement their apps, as the AuthN and AuthZ tokens are not exposed on the local device. The Short Media token *is* exposed to the Programmer's application.
+Note that the format of the AuthN and AuthZ tokens are included here for background information only. The structure of these tokens could be changed by Adobe Pass authentication at any time. Programmers don't need to know the exact structure of the AuthN and AuthZ tokens to implement their apps, as the AuthN and AuthZ tokens are not exposed on the local device. The Short Media token *is* exposed to the Programmer's application.
 
  
 
@@ -304,11 +304,11 @@ The listing below presents the format of the short media token. This token is ex
 
 ### Device Binding {#device_binding}
 
-In the XML listings above, note the tag entitled `simpleTokenFingerprint`. The purpose of this tag is to hold native device ID individualization info. The AccessEnabler library is able to obtain such individualization information and to make it available to the Primetime authentication services during the entitlement calls. The service will use this information and embed it in the actual tokens, thus effectively binding the tokens to a specific device. The end goal of this is to make the tokens non-transferable across devices.
+In the XML listings above, note the tag entitled `simpleTokenFingerprint`. The purpose of this tag is to hold native device ID individualization info. The AccessEnabler library is able to obtain such individualization information and to make it available to the Adobe Pass authentication services during the entitlement calls. The service will use this information and embed it in the actual tokens, thus effectively binding the tokens to a specific device. The end goal of this is to make the tokens non-transferable across devices.
 
  
 
-Since this is obviously a security related feature, this information is inherently "sensitive" from the security point of view. As a result, this information needs to be protected against both tampering and eavesdropping. The eavesdropping issue is solved by sending the authentication/authorization requests over the HTTPS protocol. The tampering protection is handled by digitally signing the device identification information. The AccessEnabler library computes a device ID from information provided by the device, then sends the device ID "in the clear" to the Primetime authentication servers as a request parameter. The Primetime authentication servers digitally sign the device ID with Adobe's private key and add it to the authentication token that is returned to the AccessEnabler. Thus the device ID is bound with the authentication token. During the authorization flow, the AccessEnabler again sends the device ID in the clear, along with the authentication token. Failure of the validation process will automatically lead to failure of the authentication / authorization workflows. The Primetime authentication servers apply the private key to the device ID and compare it to the value in the authentication token. If they don't match, that entitlement flow fails.
+Since this is obviously a security related feature, this information is inherently "sensitive" from the security point of view. As a result, this information needs to be protected against both tampering and eavesdropping. The eavesdropping issue is solved by sending the authentication/authorization requests over the HTTPS protocol. The tampering protection is handled by digitally signing the device identification information. The AccessEnabler library computes a device ID from information provided by the device, then sends the device ID "in the clear" to the Adobe Pass authentication servers as a request parameter. The Adobe Pass authentication servers digitally sign the device ID with Adobe's private key and add it to the authentication token that is returned to the AccessEnabler. Thus the device ID is bound with the authentication token. During the authorization flow, the AccessEnabler again sends the device ID in the clear, along with the authentication token. Failure of the validation process will automatically lead to failure of the authentication / authorization workflows. The Adobe Pass authentication servers apply the private key to the device ID and compare it to the value in the authentication token. If they don't match, that entitlement flow fails.
 
  
 
@@ -320,12 +320,12 @@ Since this is obviously a security related feature, this information is inherent
 
 - [iOS/tvOS Integration Cookbook](#)
 - [iOS/tvOS API Reference](#)
-- [Handling MVPDs with 'Not Trusted Certificates' in Primetime
+- [Handling MVPDs with 'Not Trusted Certificates' in Adobe Pass
   authentication native SDK (Tech Note)](#)
 - [Registering Native Clients](#)
 - [Generating Digital Certificates](#)
 - [Understanding Tokens](#understanding_tokens)
 - [Identifying Protected Resources](#)
-- [SSO on iOS when using the Primetime authentication Access
+- [SSO on iOS when using the Adobe Pass authentication Access
   Enabler](#)
 -->

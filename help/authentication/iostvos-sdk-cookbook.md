@@ -13,7 +13,7 @@ exl-id: 4743521e-d323-4d1d-ad24-773127cfbe42
 
 This document describes the entitlement workflows that a Programmer's upper-level application can implement through the APIs exposed by the iOS/tvOS AccessEnabler library.
 
-The Adobe Primetime authentication entitlement solution for iOS/tvOS is ultimately divided into two domains:
+The Adobe Pass authentication entitlement solution for iOS/tvOS is ultimately divided into two domains:
 
 *   The UI domain - this is the upper-level application layer which implements the UI and uses the services provided by the AccessEnabler library to provide access to restricted content.
 
@@ -38,7 +38,7 @@ The AccessEnabler's network activity takes place in its own thread, so the UI th
 
 ## Configuring the Visitor ID {#visitorIDSetup}
 
-Configuring a [Marketing Cloud visitorID](https://experienceleague.adobe.com/docs/id-service/using/home.html) value is very important from the analytics point of view. Once a visitorID value is set, the SDK will send this information along with every netwrok calls and the Adobe Primetime Authentication server will collect this information. In the future you will be able to correlate the analytics from Adobe Primetime Authentication service with any other anayltics reports that you may have from other applications or websites. Information on how to setup visitorID can be found [here](#setOptions).
+Configuring a [Marketing Cloud visitorID](https://experienceleague.adobe.com/docs/id-service/using/home.html) value is very important from the analytics point of view. Once a visitorID value is set, the SDK will send this information along with every netwrok calls and the Adobe Pass Authentication server will collect this information. In the future you will be able to correlate the analytics from Adobe Pass Authentication service with any other anayltics reports that you may have from other applications or websites. Information on how to setup visitorID can be found [here](#setOptions).
 
 ## Entitlement Flows {#entitlement}
 
@@ -115,14 +115,14 @@ is authorized to view.
 ### B. Startup Flow {#startup_flow}
 
 1.  Start the upper-level application.</br>
-1.  Initiate Adobe Primetime authentication </br>
+1.  Initiate Adobe Pass authentication </br>
 
-    a.  Call [`init`](#$init) to create a single instance of the Adobe Primetime authentication AccessEnabler.
-    * **Dependency:** Adobe Primetime authentication Native iOS/tvOS Library (AccessEnabler)
+    a.  Call [`init`](#$init) to create a single instance of the Adobe Pass authentication AccessEnabler.
+    * **Dependency:** Adobe Pass authentication Native iOS/tvOS Library (AccessEnabler)
     
-    b.  Call `setRequestor()` to establish the identity of the Programmer; pass in the Programmer's `requestorID` and(optionally) an array of Adobe Primetime authentication endpoints. For tvOS you will also need to provide the public key and the secret. See [Clientless documentation](#create_dev) for details.
+    b.  Call `setRequestor()` to establish the identity of the Programmer; pass in the Programmer's `requestorID` and(optionally) an array of Adobe Pass authentication endpoints. For tvOS you will also need to provide the public key and the secret. See [Clientless documentation](#create_dev) for details.
 
-    *   **Dependency:** Valid Adobe Primetime authentication RequestorID (Work with your Adobe Primetime authentication Account
+    *   **Dependency:** Valid Adobe Pass authentication RequestorID (Work with your Adobe Pass authentication Account
       Manager to arrange this).
 
     *   **Triggers:**
@@ -231,7 +231,7 @@ is authorized to view.
       * If there was some other type of error (connection error, network error, etc.) then display an appropriate error message to the user.
 
 1.  Validate the Short Media Token.  
-    Use the Adobe Primetime authentication Media Token Verifier library to verify the short-lived media token returned from the [getAuthorization()](#$getAuthZ) call above:
+    Use the Adobe Pass authentication Media Token Verifier library to verify the short-lived media token returned from the [getAuthorization()](#$getAuthZ) call above:
 
     * If the validation succeeds: Play the requested media for the user.
     * If the validation fails: The AuthZ token was invalid, the media request should be refused, and an error message should be displayed to the user.
@@ -282,7 +282,7 @@ is authorized to view.
 
 - [Identifying Protected Resources](#)
 
-- [Handling MVPDs with 'Not Trusted Certificates' in Adobe Primetime
+- [Handling MVPDs with 'Not Trusted Certificates' in Adobe Pass
   authentication native SDK (Tech Note)](#)
 
 - [iOS Authentication error - adobepass.ios.app cannot be found (Tech

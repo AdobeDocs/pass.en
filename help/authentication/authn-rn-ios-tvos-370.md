@@ -13,7 +13,7 @@ This page describes new features, changes, and known issues with this release:
 
 ## Build Number {#build-no-ios-tvos-sdk-370}
 
-Adobe Primetime authentication: iOS / tvOS 3.7.0
+Adobe Pass authentication: iOS / tvOS 3.7.0
 
 Release Date: 09/03/2021
 

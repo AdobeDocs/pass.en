@@ -15,7 +15,7 @@ The Programmer may want to test or check the user experience of new MVPD integra
 
 ## Solution {#solution}
 
-In the `displayProviderDialog()` callback, Adobe Primetime authentication returns all of the MVPDs integrated with the selected Programmer (Requestor ID). But the Programmer can apply a filter on the return array of MVPDs and display only those that are in both lists.
+In the `displayProviderDialog()` callback, Adobe Pass authentication returns all of the MVPDs integrated with the selected Programmer (Requestor ID). But the Programmer can apply a filter on the return array of MVPDs and display only those that are in both lists.
 
 ## Example {#example}
 

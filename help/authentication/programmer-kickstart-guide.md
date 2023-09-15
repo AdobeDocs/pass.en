@@ -11,14 +11,14 @@ exl-id: 0aecdb81-9b97-4475-b0b0-654d916b2374
 
 ## Introduction {#prog-kickstart-guide-intro}
 
-Welcome to Adobe Primetime authentication for TV Everywhere. We look forward to working with you. 
+Welcome to Adobe Pass authentication for TV Everywhere. We look forward to working with you. 
 
 >[!NOTE]
 >
 >This is the Kickstart Guide for Programmers (content providers). If you are with a Multi-channel Video Programming Distributor (MVPD), please be sure to see the [MVPD kickstart guide](/help/authentication/mvpd-kickstart-guide.md).
 
 
-Adobe Primetime authentication contacts:
+Adobe Pass authentication contacts:
 
 * Support - for all questions, incidents or feature requests, `tve-support@adobe.com`
 * An Enablement contact will be assigned to your project by the time of your project kickoff. 
@@ -54,9 +54,9 @@ Adobe will first set you up with the Adobe test site, where Adobe acts as an MVP
 
 You will provide:
 
-1. Requestor ID. This is a string that will uniquely identify the brand of the website or the application that is making requests to Adobe Primetime authentication. The string itself is arbitrary but needs to be agreed between Adobe and the Programmer
+1. Requestor ID. This is a string that will uniquely identify the brand of the website or the application that is making requests to Adobe Pass authentication. The string itself is arbitrary but needs to be agreed between Adobe and the Programmer
 1. Channel information. This is a set of strings that identifies the content channel(s) being requested by the requestor ID. In many cases the channel and the Requestor ID are the same. You may however have multiple channels of content that can be requested by the same ID. Channel name strings should correspond to the cable TV channels. Some MVPDs will validate this value over the AuthN and/or AuthZ protocol.
-1. Domain names (to be allowed for that requestor ID). This will be a list of actual domain names that will be listed by Adobe to accept the requestor ID. This ensures that only your approved domains have access to Adobe Primetime authentication with your metadata. NOTE: domain names valid for production may be different for testing/staging and both should be provided and identified.
+1. Domain names (to be allowed for that requestor ID). This will be a list of actual domain names that will be listed by Adobe to accept the requestor ID. This ensures that only your approved domains have access to Adobe Pass authentication with your metadata. NOTE: domain names valid for production may be different for testing/staging and both should be provided and identified.
 
 Adobe will set up the account and Adobe will provide:
 
@@ -73,7 +73,7 @@ You will provide (via MVPD):
     * AuthN + Non-AuthZ : login/password for a user which is authenticated but not authorized
 *   **Resource ID**. This is a specific content identifier that will be validated with an MVPD over the AuthZ protocol. This can be at the channel, show, episode, or asset level; it should be agreed upon with your MVPD.
 
-Adobe Primetime authentication supports an MRSS-based metadata schema which means that Resource IDs can be as specific as needed, and can include identifiers that may be unique to a specific MVPD.
+Adobe Pass authentication supports an MRSS-based metadata schema which means that Resource IDs can be as specific as needed, and can include identifiers that may be unique to a specific MVPD.
 
 **NEW MVPD integration**: It is important to remember that your chosen MVPD plays an integral part in completing any integration. Adobe needs to write code for each MVPD according to their specs. Until these steps are complete, you will not be able to select that MVPD from the dialog, or complete your product testing. Adobe needs to schedule this work in advance to fit with the next available sprint. (For current schedule information, refer to the Release Calendar.)
 

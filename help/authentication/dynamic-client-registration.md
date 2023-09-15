@@ -12,9 +12,9 @@ exl-id: 9bc2597d-b634-4542-849b-8e91a76cb8da
 ## Context {#context}
 
 To align with modern security practices, improved UX and platform owners
-requirements, Adobe Primetime Authentication Android SDK and iOS SDK are moving in the direction of adopting [Android Chrome custom tabs](https://developer.chrome.com/multidevice/android/customtabs){target=_blank} and [Apple Safari view controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller){target=_blank}.
+requirements, Adobe Pass Authentication Android SDK and iOS SDK are moving in the direction of adopting [Android Chrome custom tabs](https://developer.chrome.com/multidevice/android/customtabs){target=_blank} and [Apple Safari view controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller){target=_blank}.
 
-The current AdobePass implementation uses platform specific web views, in order to provide the web environment for displaying the MVPD login page. These web views do not share credential management with platform browsers, thus the user cannot use a browser saved password when using an Adobe Primetime Authentication application. Moreover, for security reasons, some platforms are moving to deprecate the WebView controllers for authentication tasks. Both Google and Apple provide alternate options such as "Chrome Custom Tabs" and "Safari View Controller". These are basically single use tabs of their respective browsers. Adobe Primetime Authentication will adopt these new components in 2018.
+The current AdobePass implementation uses platform specific web views, in order to provide the web environment for displaying the MVPD login page. These web views do not share credential management with platform browsers, thus the user cannot use a browser saved password when using an Adobe Pass Authentication application. Moreover, for security reasons, some platforms are moving to deprecate the WebView controllers for authentication tasks. Both Google and Apple provide alternate options such as "Chrome Custom Tabs" and "Safari View Controller". These are basically single use tabs of their respective browsers. Adobe Pass Authentication will adopt these new components in 2018.
 
 ## Details {#details}
 

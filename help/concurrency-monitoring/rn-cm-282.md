@@ -1,9 +1,9 @@
 ---
-title: Primetime Concurrency Monitoring - 2.8.2 Release Notes
-description: Primetime Concurrency Monitoring - 2.8.2 Release Notes
+title: Adobe Pass Concurrency Monitoring - 2.8.2 Release Notes
+description: Adobe Pass Concurrency Monitoring - 2.8.2 Release Notes
 ---
 
-# Primetime Concurrency Monitoring - 2.8.2 Release Notes {#cm-rns-282} 
+# Adobe Pass Concurrency Monitoring - 2.8.2 Release Notes {#cm-rns-282} 
 
 This page describes new features, changes, and known issues with this release: 
 

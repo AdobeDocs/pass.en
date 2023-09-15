@@ -16,7 +16,7 @@ The Preauthorize API method need to be used by applications in order to obtain a
 
 
 
-In case of an unexpected error (e.g. network issue, MVPD authorization endpoint unavailable, etc.) taking place when a Preauthorize API request is processed by the Adobe Primetime Authentication services, one or multiple separated error informations will be included for the affected resource/s as part of the Preauthorize API response result.
+In case of an unexpected error (e.g. network issue, MVPD authorization endpoint unavailable, etc.) taking place when a Preauthorize API request is processed by the Adobe Pass Authentication services, one or multiple separated error informations will be included for the affected resource/s as part of the Preauthorize API response result.
 
 
 ## `public void preauthorize(PreauthorizeRequest request, AccessEnablerCallback<PreauthorizeResponse> callback);`
@@ -162,14 +162,14 @@ features)**
 ```java
 ///
 /// - Returns: The HTTP response status code as documented in RFC 7231.
-/// Might be 0 in case the \`Status\` comes from the SDK instead of Adobe Primetime Authentication services.
+/// Might be 0 in case the \`Status\` comes from the SDK instead of Adobe Pass Authentication services.
 
 ///
 
 **public int getStatus()**
 
     ///
-    /// - Returns: The standard Adobe Primetime Authentication services error code.
+    /// - Returns: The standard Adobe Pass Authentication services error code.
     ///            Might hold an empty string or a `null` value.
     ///
 

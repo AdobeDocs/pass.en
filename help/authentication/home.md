@@ -1,15 +1,15 @@
 ---
-title: Welcome to Adobe&reg; Primetime Authentication!
-description: Welcome to Adobe&reg; Primetime Authentication overview
+title: Welcome to Adobe&reg; Adobe Pass Authentication!
+description: Welcome to Adobe&reg; Adobe Pass Authentication overview
 exl-id: a8b01469-3d5f-4a44-9ae8-06a68c29d56d
 ---
-# Welcome to Adobe&reg; Primetime Authentication {#pt-auth-overview}
+# Welcome to Adobe&reg; Adobe Pass Authentication {#pt-auth-overview}
 
 >[!NOTE]
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
-Adobe Primetime authentication is an entitlement solution for TV Everywhere, providing a modular framework for determining whether someone who requests access to a resource is entitled to it. To participate in the Primetime authentication entitlement solution, Content Providers (Programmers) and Pay TV Providers (MVPDs) integrate their entitlement systems with the Primetime authentication workflows. This documentation site provides details on the integration process, as well as tips for existing partners.
+Adobe Pass authentication is an entitlement solution for TV Everywhere, providing a modular framework for determining whether someone who requests access to a resource is entitled to it. To participate in the Adobe Pass authentication entitlement solution, Content Providers (Programmers) and Pay TV Providers (MVPDs) integrate their entitlement systems with the Adobe Pass authentication workflows. This documentation site provides details on the integration process, as well as tips for existing partners.
 
 Your feedback is always appreciated!
 
@@ -21,7 +21,7 @@ Your feedback is always appreciated!
 
 | **Featured Items** |
 |-|
-| <ul><li>Single Sign-On for iOS</li><li>[Promotional Temp Pass](/help/authentication/promotional-temp-pass.md)</li><li>[Home-Based Authentication (HBA)](/help/authentication/home-based-authn-tve.md)</li><li>[HBA Infographic](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf)</li><li>[Primetime TVE Dashboard User Guide](/help/authentication/tve-dashboard-user-guide.md)</li></ul> |
+| <ul><li>Single Sign-On for iOS</li><li>[Promotional Temp Pass](/help/authentication/promotional-temp-pass.md)</li><li>[Home-Based Authentication (HBA)](/help/authentication/home-based-authn-tve.md)</li><li>[HBA Infographic](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf)</li><li>[Adobe Pass TVE Dashboard User Guide](/help/authentication/tve-dashboard-user-guide.md)</li></ul> |
 
 | **For Programmers** | **For MVPDs** |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -43,8 +43,8 @@ Your feedback is always appreciated!
 
 ## To find what you need {#how-to-search}
 
-*   **Search** anywhere on the Primetime authentication Helpdesk for results that include this
+*   **Search** anywhere on the Adobe Pass authentication Helpdesk for results that include this
 documentation.
-*   **Browse** all the Primetime authentication documentation, via the folder hierarchy in the navigation pane on the left.  
+*   **Browse** all the Adobe Pass authentication documentation, via the folder hierarchy in the navigation pane on the left.  
 *   **Filter** the folder hierarchy by entering terms in the field at the top of the navigation pane.  
 *   **Bookmark** "deep links" to pages of interest using your web browser.

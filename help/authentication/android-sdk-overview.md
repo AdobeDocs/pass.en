@@ -14,15 +14,15 @@ exl-id: a1d98325-32a1-4881-8635-9a3c38169422
 
 ## Introduction {#intro}
 
-Android AccessEnabler is a Java Android library that enables mobile apps to use Adobe Primetime authentication for TV Everywhere's entitlement services. An Android implementation consists of the AccessEnabler interface that defines the entitlement API, and an EntitlementDelegate protocol that describes the callbacks that the library triggers. The interface together with the protocol is referred to under one common name: the AccessEnabler Android library.
+Android AccessEnabler is a Java Android library that enables mobile apps to use Adobe Pass authentication for TV Everywhere's entitlement services. An Android implementation consists of the AccessEnabler interface that defines the entitlement API, and an EntitlementDelegate protocol that describes the callbacks that the library triggers. The interface together with the protocol is referred to under one common name: the AccessEnabler Android library.
 
 ## Android Requirements {#reqs}
 
-For current technical requirements related to the Android platform and Primetime authentication, see [Platform / Device / Tool Requirements](#android), or consult the release notes included with the Android SDK download.
+For current technical requirements related to the Android platform and Adobe Pass authentication, see [Platform / Device / Tool Requirements](#android), or consult the release notes included with the Android SDK download.
 
 ## Understanding Native Client Workflows {#native_client_workflows}
 
-Native client workflows are typically the same as, or very similar to, those of browser-based Primetime authentication clients. However, there are a few exceptions, as described below.
+Native client workflows are typically the same as, or very similar to, those of browser-based Adobe Pass authentication clients. However, there are a few exceptions, as described below.
 
 - [Post-initialization Workflow](#post-init)
 - [Generic Initial Authentication Workflow](#generic)
@@ -88,17 +88,17 @@ be deleted.
 
 ### Definitions and Usage {#definitions}
 
-The Primetime authentication entitlement solution revolves around the generation of specific pieces of data (tokens) that Primetime authentication generates upon the successful completion of the authentication and authorization workflows. These tokens are stored locally on the client's Android device.
+The Adobe Pass authentication entitlement solution revolves around the generation of specific pieces of data (tokens) that Adobe Pass authentication generates upon the successful completion of the authentication and authorization workflows. These tokens are stored locally on the client's Android device.
 
 Tokens have a limited lifespan; upon expiration, tokens need to be re-issued through the re-initiation of the authentication and/or authorization workflows.
 
 There are three types of tokens issued during the entitlement workflows:
 
-- **Authentication token** - The end result of the user authentication workflow will be an authentication GUID that the AccessEnabler can use to make authorization queries on the user's behalf. This authentication GUID will have an associated time-to-live (TTL) value which may be different from the user's authentication session itself. Primetime authentication generates an authentication token by binding the authentication GUID to the device initiating the authentication requests.
+- **Authentication token** - The end result of the user authentication workflow will be an authentication GUID that the AccessEnabler can use to make authorization queries on the user's behalf. This authentication GUID will have an associated time-to-live (TTL) value which may be different from the user's authentication session itself. Adobe Pass authentication generates an authentication token by binding the authentication GUID to the device initiating the authentication requests.
 - **Authorization token** - Grants access to a specific protected resource identified by a unique `resourceID`. It consists of an authorization grant issued by the authorizing party along with the original `resourceID`. This information is bound to the device initiating the request.
 - **Short-lived media token** - The AccessEnabler grants access to the hosting application for a given resource by returning a short-lived Media Token. This token is generated based on the authorization token that was previously acquired for that specific particular resource. Also, this token is not bound to the device, and the associated life-span is significantly shorter (default: 5 minutes).
 
-Upon successful authentication and authorization, Primetime authentication will issue authentication, authorization and short-lived media tokens. These tokens should be cached on the user's device and used for the duration of their associated life-spans.
+Upon successful authentication and authorization, Adobe Pass authentication will issue authentication, authorization and short-lived media tokens. These tokens should be cached on the user's device and used for the duration of their associated life-spans.
 
 
 
@@ -140,9 +140,9 @@ Tokens need to be persistent across consecutive runs of the same application. Th
 
 
 
-This type of seamless authentication / authorization workflow is what makes the Primetime authentication solution a true TV-Everywhere implementation. From a pure engineering point of view, the Android AccessEnabler library works around the issues of cross-application data sharing by storing the token data into a database file located on external storage. This system-level shared resources provides the key ingredients that enable the implementation of the desired persistent tokens use-case:
+This type of seamless authentication / authorization workflow is what makes the Adobe Pass authentication solution a true TV-Everywhere implementation. From a pure engineering point of view, the Android AccessEnabler library works around the issues of cross-application data sharing by storing the token data into a database file located on external storage. This system-level shared resources provides the key ingredients that enable the implementation of the desired persistent tokens use-case:
 
-- Support for structured storage - The Primetime authentication token storage is not just a simple linear buffer-like memory structure. It provides a dictionary-like storage mechanism that allows for data indexing based on user-specified key values.
+- Support for structured storage - The Adobe Pass authentication token storage is not just a simple linear buffer-like memory structure. It provides a dictionary-like storage mechanism that allows for data indexing based on user-specified key values.
 - Support for data persistence using the underlying file system - The contents of the database file are persisted by default and the data is saved on the device's external memory.
 
 
@@ -248,15 +248,15 @@ The listing below presents the format of the short media token.  This token is e
 
 #### Device Binding {#device_binding}
 
-In the XML listings above, note the tag entitled `simpleTokenFingerprint`. The purpose of this tag is to hold native device ID individualization info. The AccessEnabler library is able to obtain such individualization information and to make it available to the Primetime authentication services during the entitlement calls. The service will use this information and embed it in the actual tokens, thus effectively binding the tokens to a specific device. The end goal of this is to make the tokens non-transferable across devices.
+In the XML listings above, note the tag entitled `simpleTokenFingerprint`. The purpose of this tag is to hold native device ID individualization info. The AccessEnabler library is able to obtain such individualization information and to make it available to the Adobe Pass authentication services during the entitlement calls. The service will use this information and embed it in the actual tokens, thus effectively binding the tokens to a specific device. The end goal of this is to make the tokens non-transferable across devices.
 
 
 
-In the XML listings above, note the tag entitled simpleTokenFingerprint. The purpose of this tag is to hold native device ID individualization info. The AccessEnabler library is able to obtain such individualization information and to make it available to the Primetime authentication services during the entitlement calls. The service will use this information and embed it in the actual tokens, thus effectively binding the tokens to a specific device. The end goal of this is to make the tokens non-transferable across devices.
+In the XML listings above, note the tag entitled simpleTokenFingerprint. The purpose of this tag is to hold native device ID individualization info. The AccessEnabler library is able to obtain such individualization information and to make it available to the Adobe Pass authentication services during the entitlement calls. The service will use this information and embed it in the actual tokens, thus effectively binding the tokens to a specific device. The end goal of this is to make the tokens non-transferable across devices.
 
 
 
-Since this is obviously a security related feature, this information is inherently "sensitive" from the security point of view. As a result, this information needs to be protected against both tampering and eavesdropping. The eavesdropping issue is solved by sending the authentication/authorization requests over the HTTPS protocol. The tampering protection is handled by digitally signing the device identification information. The AccessEnabler library computes a device ID from information provided by the device, then sends the device ID "in the clear" to the Primetime authentication servers as a request parameter.  The Primetime authentication servers digitally sign the device ID with Adobe's private key and add it to the authentication token that is returned to the AccessEnabler. Thus the device ID is bound with the authentication token.  During the authorization flow, the AccessEnabler again sends the device ID in the clear, along with the authentication token.  Failure of the validation process will automatically lead to failure of the authentication/authorization workflows.  The Primetime authentication servers apply the private key to the device ID and compare it to the value in the authentication token.  If they don't match, that entitlement flow fails.
+Since this is obviously a security related feature, this information is inherently "sensitive" from the security point of view. As a result, this information needs to be protected against both tampering and eavesdropping. The eavesdropping issue is solved by sending the authentication/authorization requests over the HTTPS protocol. The tampering protection is handled by digitally signing the device identification information. The AccessEnabler library computes a device ID from information provided by the device, then sends the device ID "in the clear" to the Adobe Pass authentication servers as a request parameter.  The Adobe Pass authentication servers digitally sign the device ID with Adobe's private key and add it to the authentication token that is returned to the AccessEnabler. Thus the device ID is bound with the authentication token.  During the authorization flow, the AccessEnabler again sends the device ID in the clear, along with the authentication token.  Failure of the validation process will automatically lead to failure of the authentication/authorization workflows.  The Adobe Pass authentication servers apply the private key to the device ID and compare it to the value in the authentication token.  If they don't match, that entitlement flow fails.
 
 
 <!--
@@ -268,6 +268,6 @@ Since this is obviously a security related feature, this information is inherent
 - [Generating Digital Certificates](#)
 - [Understanding Tokens](#understanding_tokens)
 - [Identifying Protected Resources](#)
-- [Handling MVPDs with 'Not Trusted Certificates' in Primetime authentication native SDK (Tech Note)](#)
+- [Handling MVPDs with 'Not Trusted Certificates' in Adobe Pass authentication native SDK (Tech Note)](#)
 - [AE 1.6: How to resolve Gson dependencies (Tech Note)](#)
 -->

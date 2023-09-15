@@ -11,7 +11,7 @@ exl-id: 6f7f7901-db3a-4c68-ac6a-27082db9240a
 
 ## Introduction {#tve-db-intro}
 
-[[!DNL Adobe] TVE Dashboard (TVE Dashboard)](https://console.auth.adobe.com/) is a self-service dashboard aimed at users working for media companies (Programmers) that have a business relationship with the Adobe Primetime Authentication product team.
+[[!DNL Adobe] TVE Dashboard (TVE Dashboard)](https://console.auth.adobe.com/) is a self-service dashboard aimed at users working for media companies (Programmers) that have a business relationship with the Adobe Pass Authentication product team.
 
 Contact your Technical Account Manager (TAM) in order to obtain access. To gain access, you will need two new user groups to be configured in your Adobe Marketing Cloud Organization:
 
@@ -19,7 +19,7 @@ Contact your Technical Account Manager (TAM) in order to obtain access. To gain 
 * TVE Dashboard Read-Only - the members of this group only have viewing rights across the entire dashboard
  
 
-Before deep diving into this user guide, we recommend you to go through the following resources in order to have a good understanding of the flows and features provided by Adobe Primetime Authentication product team and to become familiar with the terms used in the present document:
+Before deep diving into this user guide, we recommend you to go through the following resources in order to have a good understanding of the flows and features provided by Adobe Pass Authentication product team and to become familiar with the terms used in the present document:
 
 * [TVE Technical Paper](/help/authentication/technical-paper.md)
 * [Programmer Kickstart Guide](/help/authentication/programmer-kickstart-guide.md)
@@ -30,7 +30,7 @@ Before deep diving into this user guide, we recommend you to go through the foll
 Continuing to the next sections of this user guide, you will discover ways of administering different settings for your company's Channels, Programmers or the Integrations between Channels and MVPDs (Multichannel Video Program Distributors).
 
 >[!IMPORTANT]
->TVE Dashboard offers the option of switching between a Basic and an Advanced Workspace. You can do this by toggling the icon in the upper right-hand corner. The Advanced Workspace is aimed at users with substantial technical knowledge as well as advanced knowledge of the features offered by the Adobe Primetime Authentication product team. 
+>TVE Dashboard offers the option of switching between a Basic and an Advanced Workspace. You can do this by toggling the icon in the upper right-hand corner. The Advanced Workspace is aimed at users with substantial technical knowledge as well as advanced knowledge of the features offered by the Adobe Pass Authentication product team. 
 
 ![TVE Dashbord workspaces](assets/tve-basic-advanced-workspace.png)
 
@@ -38,7 +38,7 @@ Continuing to the next sections of this user guide, you will discover ways of ad
 
 ## Environments {#authn-environments}
 
-Depending on the tasks a user might be required to fulfill, he/she might need to switch between Adobe Primetime Authentication environments. For detailed information on the Adobe Primetime Authentication environments, please consult the following document: [Understanding the Adobe Primetime Authentication environments](/help/authentication/understanding-the-adobe-environments.md).
+Depending on the tasks a user might be required to fulfill, he/she might need to switch between Adobe Pass Authentication environments. For detailed information on the Adobe Pass Authentication environments, please consult the following document: [Understanding the Adobe Pass Authentication environments](/help/authentication/understanding-the-adobe-environments.md).
 
 TVE Dashboard provides two environments named Prequal (Prequalification) and Release, each one having two profiles named Staging and Production, as shown below:
 
@@ -51,12 +51,12 @@ To switch between environments, the user can click on the desired environment re
 
 ![TVE Dashboard environments dropdown](assets/tve-dashboard-env.png)
 
-*Figure 2: The Adobe Primetime TVE Dashboard environments drop-down* 
+*Figure 2: The Adobe Pass TVE Dashboard environments drop-down* 
 
 >[!IMPORTANT]
->It is very important to note that when making administrative changes to your Adobe Primetime Authentication configuration through the TVE Dashboard, we strongly advise you to follow the sequence below in order to ensure proper functionality.
+>It is very important to note that when making administrative changes to your Adobe Pass Authentication configuration through the TVE Dashboard, we strongly advise you to follow the sequence below in order to ensure proper functionality.
 
-To make administrative changes to your Adobe Primetime Authentication configuration through the TVE Dashboard:
+To make administrative changes to your Adobe Pass Authentication configuration through the TVE Dashboard:
 
 * Perform the changes in [Release Staging and validate them](http://sp.auth-staging.adobe.com/apitest/api.html).
 * Perform the changes in [Prequal Production and validate them](http://sp.auth-staging.adobe.com/apitest/api.html).
@@ -92,13 +92,13 @@ This section allows viewing and editing settings for available Channels or creat
     * **Channel Id** - The Channel's unique id used in our system, also referred to as "requestor Id".
     * **Display Name** - The Channel's commercial name.
 * **General Settings**
-    * **Analytics Configuration** - Configure Adobe Primetime Authentication events to be forwarded to Adobe Analytics. Please contact Adobe for more details on how the Report Suite ID (RSID) needs to be configured before enabling this feature.
+    * **Analytics Configuration** - Configure Adobe Pass Authentication events to be forwarded to Adobe Analytics. Please contact Adobe for more details on how the Report Suite ID (RSID) needs to be configured before enabling this feature.
 * **Certificates**
 
     Contains the list of certificates used in the authentication flow alongside their issuing organization, issuing date and expiry date. These certificates serve as Private/Public Keys and are used for validation purposes. 
 * **Domains**
 
-    Contains the list of domains from which the respective Channel will communicate with Adobe Primetime Authentication.  
+    Contains the list of domains from which the respective Channel will communicate with Adobe Pass Authentication.  
 * **Integrations**
 
     Contains the list of integrations with available MVPDs, alongside the status of each integration which might be enabled or not. Navigating to Integration page is available by clicking on a specific entry. 
@@ -161,11 +161,11 @@ This section allows viewing and editing settings for integrations between Channe
     * **Platform Specific Settings** - Configure different settings to a specific platform (for example, TTLs, SSO, and IFrames).
 
 * **Authentication Settings**
-    * Contains settings related to the Adobe Primetime Authentication authentication feature.
+    * Contains settings related to the Adobe Pass Authentication authentication feature.
 * **Authorization Settings**
-    * Contains settings related to the Adobe Primetime Authentication authorization feature.
+    * Contains settings related to the Adobe Pass Authentication authorization feature.
 * **Logout Settings**
-    * Contains settings related to the Adobe Primetime Authentication logout feature.
+    * Contains settings related to the Adobe Pass Authentication logout feature.
  
 #### Create integration {#create-integration}
 
@@ -216,17 +216,17 @@ In the case of both Basic and Advanced Workspace modes, these settings can be ch
 This sub-section can be used to override the settings for specific platforms. The available platforms are:
 
 * **All Platforms** - Set values that will be applied to all platforms regardless of the Programmer implementations in case there are no other values set for a specific platform.
-* **Android** - Set values that will be applied to the Programmer implementations over Adobe Primetime Authentication Android SDK.
-* **Clientless REST API** - Set values that will be applied to the Programmer implementations over Adobe Primetime Authentication REST API.
-* **Fire TV** - Set values that will be applied to the Programmer implementations over Adobe Primetime Authentication FireTV SDK.
+* **Android** - Set values that will be applied to the Programmer implementations over Adobe Pass Authentication Android SDK.
+* **Clientless REST API** - Set values that will be applied to the Programmer implementations over Adobe Pass Authentication REST API.
+* **Fire TV** - Set values that will be applied to the Programmer implementations over Adobe Pass Authentication FireTV SDK.
 * **Flash SDK** - This platform is deprecated. **deprecated**
-* **JavaScript SDK** - Set values that will be applied to the Programmer implementations over Adobe Primetime Authentication JavaScript SDK.
-* **Roku** - Set values that will be applied to the Programmer implementations over Adobe Primetime Authentication REST API and that are sending "Roku" as the device type. This takes precedence over the values set for the Clientless REST API platform in the case of Roku devices.
+* **JavaScript SDK** - Set values that will be applied to the Programmer implementations over Adobe Pass Authentication JavaScript SDK.
+* **Roku** - Set values that will be applied to the Programmer implementations over Adobe Pass Authentication REST API and that are sending "Roku" as the device type. This takes precedence over the values set for the Clientless REST API platform in the case of Roku devices.
 * **Xbox native SDK** - This platform is deprecated. **deprecated**
-* **Xbox 360 REST API** -  Set values that will be applied to the Programmer implementations over Adobe Primetime Authentication REST API and that are sending "xbox" as the device type. This takes precedence over the values set for the Clientless REST API platform in the case of Xbox 360 devices.
-* **Xbox One REST API** - Set values that will be applied to the Programmer implementations over Adobe Primetime Authentication REST API and that are sending "xboxOne" as the device type. This takes precedence over the values set for the Clientless REST Api platform in the case of XboxOne devices.
-* **iOS** - Set values that will be applied to the Programmer implementations over Adobe Primetime Authentication iOS SDK.
-* **tvOS** - Set values that will be applied to the Programmer implementations over Adobe Primetime Authentication tvOS SDK.
+* **Xbox 360 REST API** -  Set values that will be applied to the Programmer implementations over Adobe Pass Authentication REST API and that are sending "xbox" as the device type. This takes precedence over the values set for the Clientless REST API platform in the case of Xbox 360 devices.
+* **Xbox One REST API** - Set values that will be applied to the Programmer implementations over Adobe Pass Authentication REST API and that are sending "xboxOne" as the device type. This takes precedence over the values set for the Clientless REST Api platform in the case of XboxOne devices.
+* **iOS** - Set values that will be applied to the Programmer implementations over Adobe Pass Authentication iOS SDK.
+* **tvOS** - Set values that will be applied to the Programmer implementations over Adobe Pass Authentication tvOS SDK.
  
 
 ![](assets/platform-sp-settings.png)
@@ -250,7 +250,7 @@ Please follow the steps below to enable / disable Single Sign On for a specific 
 *   toggle the **Enforce Platform Permission** flag to the desired value (Yes / No)
 
     >[!IMPORTANT]
-    >It is important to note that the **Enforce Platform Permission** flag controls if the user's decision to Allow or Deny platform access to his/her TV Provider subscription will be enforced or not. Considering the scenario when **Enable Single Sign On** flag is set to "Yes", **Enforce Platform Permission** flag is also set to "Yes" and the user chooses to Deny platform access to his/her TV Provider subscription, then the respective application (channel) won't be able to use the Adobe Primetime authentication token obtained by another application (channel). 
+    >It is important to note that the **Enforce Platform Permission** flag controls if the user's decision to Allow or Deny platform access to his/her TV Provider subscription will be enforced or not. Considering the scenario when **Enable Single Sign On** flag is set to "Yes", **Enforce Platform Permission** flag is also set to "Yes" and the user chooses to Deny platform access to his/her TV Provider subscription, then the respective application (channel) won't be able to use the Adobe Pass authentication token obtained by another application (channel). 
 
  
 #### Enable Home-Based Authentication {#enable-hba}
@@ -332,37 +332,37 @@ This section allows viewing and exporting aggregated data for several types of r
 All reports aggregate values across the following platforms: 
 
 **BROWSERS**
-Displays values that will be applied to the Programmer implementations over Adobe Primetime Authentication JavaScript SDK.
+Displays values that will be applied to the Programmer implementations over Adobe Pass Authentication JavaScript SDK.
 
 **MOBILE: IOS**
-Displays values that will be applied to the Programmer implementations over Adobe Primetime Authentication iOS SDK.
+Displays values that will be applied to the Programmer implementations over Adobe Pass Authentication iOS SDK.
 
 **MOBILE: ANDROID**
-Displays values that will be applied to the Programmer implementations over Adobe Primetime Authentication Android SDK.
+Displays values that will be applied to the Programmer implementations over Adobe Pass Authentication Android SDK.
 
 **MOBILE: OTHERS**
-Displays values that will be applied to the Programmer implementations over Adobe Primetime Authentication REST API developed for mobile devices.
+Displays values that will be applied to the Programmer implementations over Adobe Pass Authentication REST API developed for mobile devices.
 
 **TVCD: ROKU**
-Displays values that will be applied to the Programmer implementations over Adobe Primetime Authentication REST API and that are sending "Roku" as the device type.
+Displays values that will be applied to the Programmer implementations over Adobe Pass Authentication REST API and that are sending "Roku" as the device type.
 
 **TVCD: FIRETV**
-Displays values that will be applied to the Programmer implementations over Adobe Primetime Authentication FireTV SDK.
+Displays values that will be applied to the Programmer implementations over Adobe Pass Authentication FireTV SDK.
 
 **TVCD: APPLETV**
-Displays values that will be applied to the Programmer implementations over Adobe Primetime Authentication tvOS SDK.
+Displays values that will be applied to the Programmer implementations over Adobe Pass Authentication tvOS SDK.
 
 **TVCD: OTHERS**
-Displays values that will be applied to the Programmer implementations over Adobe Primetime Authentication REST API developed for TV connected devices.
+Displays values that will be applied to the Programmer implementations over Adobe Pass Authentication REST API developed for TV connected devices.
 
 **PLATFORM: UKNOWN**
-Displays values that will be applied to the Programmer implementations for which Adobe Primetime Authentication services detect an unknown device type. 
+Displays values that will be applied to the Programmer implementations for which Adobe Pass Authentication services detect an unknown device type. 
 
-Review the mechanism of [passing client information](/help/authentication/passing-client-information-device-connection-and-application.md) to Adobe Primetime Authentication REST APIs or SDKs for more details on how to send the desired device type (for example,"Roku"). 
+Review the mechanism of [passing client information](/help/authentication/passing-client-information-device-connection-and-application.md) to Adobe Pass Authentication REST APIs or SDKs for more details on how to send the desired device type (for example,"Roku"). 
 
-All reports aggregate values computed based on the configuration which is specific for each Adobe Primetime Authentication environment. Therefore, you can expect different reporting data when switching between different TVE Dashboard environments.
+All reports aggregate values computed based on the configuration which is specific for each Adobe Pass Authentication environment. Therefore, you can expect different reporting data when switching between different TVE Dashboard environments.
  
-Please review the [Environments](#authn-environments) section for more details related to the Adobe Primetime Authentication available environments.
+Please review the [Environments](#authn-environments) section for more details related to the Adobe Pass Authentication available environments.
  
 
 ##### Selecting specific Channels/ MVPDs {#selecting-specific-channels-mvpds} 
@@ -407,7 +407,7 @@ The AuthN TTL Reports table contains pages and is horizontally and vertically sc
 In case you consider making a change to an AuthN TTL value, please review the [Integrations](#tve-db-integrations-sec) section. 
 
 >[!IMPORTANT]
->The "**Set by MVPD**" placeholder is used in cases when the MVPD will be the one enforcing the AuthN TTL value and not the Adobe Primetime Authentication configuration.
+>The "**Set by MVPD**" placeholder is used in cases when the MVPD will be the one enforcing the AuthN TTL value and not the Adobe Pass Authentication configuration.
 
  
 #### AuthZ TTL reports {#authz-ttl-reports}
@@ -429,7 +429,7 @@ The AuthZ TTL Reports table contains pages and is horizontally and vertically sc
 If you consider making a change to an AuthZ TTL value, see the [Integrations](#tve-db-integrations-sec) section. 
 
 >[!IMPORTANT]
->The "**Set by MVPD**" placeholder is used in cases when the MVPD will be the one enforcing the AuthZ TTL value and not the Adobe Primetime Authentication configuration.
+>The "**Set by MVPD**" placeholder is used in cases when the MVPD will be the one enforcing the AuthZ TTL value and not the Adobe Pass Authentication configuration.
 
  
 #### SSO Reports {#sso-reports}
@@ -457,7 +457,7 @@ In case you consider making a change to an SSO status, please review the [Integr
 
 ### Change log {#tve-db-changelog-sec}
 
-This section displays a list of all the modifications pushed through the TVE Dashboard to the Adobe Primetime Authentication environment and configuration. 
+This section displays a list of all the modifications pushed through the TVE Dashboard to the Adobe Pass Authentication environment and configuration. 
 
 There are columns which indicate the push date, the user who operated the modification and the status of the push. 
 
@@ -465,7 +465,7 @@ This section also allows the comparison of two table entries in order to narrow 
 
 ### Feedback {#tve-db-feedback-sec}
 
-This section allows users to send feedback. Follow the steps to provide feedback to the Adobe Primetime Authentication product team: 
+This section allows users to send feedback. Follow the steps to provide feedback to the Adobe Pass Authentication product team: 
 
 * click the "Feedback" button on the right-hand side of the screen
 * enter the Subject
@@ -495,7 +495,7 @@ For instructions on how to capture screenshots, view the links below:
 
 In case the TVE Dashboard is in "maintenance mode", then users will not be able to view or make new changes. 
 
-If this occurs, then you will have to wait for the Adobe Primetime Authentication engineering team to finish maintenance work on the TVE Dashboard. 
+If this occurs, then you will have to wait for the Adobe Pass Authentication engineering team to finish maintenance work on the TVE Dashboard. 
 
 ### Degraded state {#degraded-state}
 
@@ -506,4 +506,4 @@ If this occurs, then you will have to wait for the Adobe Primetime Authenticatio
 
 In case the TVE Dashboard is in "degraded state", then users will lack search and sorting capabilities, but users will be able to view or make new changes. 
 
-If this occurs, then you will have to wait for the Adobe Primetime Authentication engineering team to finish maintenance work on the TVE Dashboard.
+If this occurs, then you will have to wait for the Adobe Pass Authentication engineering team to finish maintenance work on the TVE Dashboard.

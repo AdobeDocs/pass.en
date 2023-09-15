@@ -12,7 +12,7 @@ exl-id: 36ad4a64-dde8-4a5f-b0fe-64b6c0ddcbee
 
 ## Overview {#overview}
 
-The purpose of this cookbook document is to detail best practices for implementing Adobe Primetime Authentication using the Server-to-Server architectures.  It provides basic requirements, step-by-step flow implementation and general considerations for production environments and operation.
+The purpose of this cookbook document is to detail best practices for implementing Adobe Pass Authentication using the Server-to-Server architectures.  It provides basic requirements, step-by-step flow implementation and general considerations for production environments and operation.
 
  
 

@@ -17,8 +17,8 @@ The Concurrency Monitoring API forces clients to send the following values as pa
 | Field Name | Example value | Where to use it | Obtained from |
 |-------------|---------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | applicationId | 75b4-431b-adb2-eb6b9e546013 | Authorization header | Zendesk ticket at integration |
-| mvpdName | Sample_MVPD | URI path | Adobe Primetime Authentication from config endpoint when user selects the MVPD |
-| accountId     | 12345 | URI path | Adobe Primetime Authentication upstreamUserID metadata after user login [User Metadata upstreamUserID - Adobe Primetime Authentication](/help/authentication/user-metadata-feature.md) |
+| mvpdName | Sample_MVPD | URI path | Adobe Pass Authentication from config endpoint when user selects the MVPD |
+| accountId     | 12345 | URI path | Adobe Pass Authentication upstreamUserID metadata after user login [User Metadata upstreamUserID - Adobe Pass Authentication](/help/authentication/user-metadata-feature.md) |
 
 
 ## Metadata attributes {#metadata-attr}

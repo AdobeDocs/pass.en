@@ -25,7 +25,7 @@ exl-id: 78eeaf24-4cc1-4523-8298-999c9effdb7a
 
 ## Description {#description}
 
-A request to Adobe Primetime authentication to obtain the list of preauthorized resources.
+A request to Adobe Pass authentication to obtain the list of preauthorized resources.
 
 There are two sets of APIs: one set for the Streaming App or Programmer Service and one set for the Second Screen Web App. This page describes the API for the AuthN App.
 
