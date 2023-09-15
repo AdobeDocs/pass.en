@@ -9,7 +9,7 @@ The Dashboard in Account IQ displays tables and graphs for credential sharing st
 
 To export metrics for an MVPD and selected programmers, once you are logged in as an authorized MVPD user:
 
-1. Define a desired segment following the steps in [How to define segment and select timeframe](/help/AccountIQ/howto-select-segment-timeframe.md) for evaluation from [segment and timeframe](/help/AccountIQ/segments-timeframe.md) panel.
+1. Define a desired segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation from [segment and timeframe](/help/accountiq/segments-timeframe.md) panel.
 
 1. Go to one of the following panels:
 

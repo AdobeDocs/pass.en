@@ -13,20 +13,20 @@ Account IQ being a robust and scalable analytics tool enables you to view, analy
 
 To view subscriber account sharing statistics for multiple MVPDs:
 
-1. Define a desired segment following the steps in [How to define segment and select timeframe](/help/AccountIQ/howto-select-segment-timeframe.md) for evaluation from [segment and timeframe panel](/help/AccountIQ/segments-timeframe.md).
+1. Define a desired segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation from [segment and timeframe panel](/help/accountiq/segments-timeframe.md).
 
 1. Select a desired reports page from the left navigation:
 
-* [Dashboard](/help/AccountIQ/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
+* [Dashboard](/help/accountiq/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
 
   ![](assets/mult-mvpds-dashboard.png)
 
   *Figure: Dashboard report for multiple MVPDs*
 
-* [General Usage](/help/AccountIQ/general-usage-reports.md)
+* [General Usage](/help/accountiq/general-usage-reports.md)
 
-* [Shared Accounts](/help/AccountIQ/shared-acc-reports.md)
+* [Shared Accounts](/help/accountiq/shared-acc-reports.md)
 
-* [Usage Patterns](/help/AccountIQ/usage-patterns.md)
+* [Usage Patterns](/help/accountiq/usage-patterns.md)
 
 Each of these pages will reflect the activity.

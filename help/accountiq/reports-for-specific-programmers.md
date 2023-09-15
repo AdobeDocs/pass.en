@@ -7,24 +7,24 @@ exl-id: 34b198e1-dbb9-4486-b688-92780eec0a56
 
 To view reports in Account IQ, once you have successfully logged in to the application as an MVPD:
 
-1. Select the specific programmer as you define your subscriber segment for analysis and viewing reports using steps in [How to define segment](/help/AccountIQ/howto-select-segment-timeframe.md). 
+1. Select the specific programmer as you define your subscriber segment for analysis and viewing reports using steps in [How to define segment](/help/accountiq/howto-select-segment-timeframe.md). 
 
    ![select channels](assets/programmer-selection.png)
 
 
 1. Select a desired reports page from the left navigation:
 
-* [General Usage](/help/AccountIQ/general-usage-reports.md)
+* [General Usage](/help/accountiq/general-usage-reports.md)
 
   ![](assets/specific-mvpd-gen-usage.png)
-* [Shared Accounts](/help/AccountIQ/shared-acc-reports.md)
+* [Shared Accounts](/help/accountiq/shared-acc-reports.md)
 
   ![](assets/specific-mvpd-shared-acc.png)
-* [Usage Patterns](/help/AccountIQ/usage-patterns.md)
+* [Usage Patterns](/help/accountiq/usage-patterns.md)
 
   ![](assets/specific-mvpd-usage-pattern.png)
 
-* [Dashboard](/help/AccountIQ/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
+* [Dashboard](/help/accountiq/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
 
   ![](assets/specific-mvpd-dashboard.png)
 

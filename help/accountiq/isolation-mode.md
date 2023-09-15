@@ -30,7 +30,7 @@ To view metrics in isolation mode:
 
    *Figure: MVPD selection in Isolation mode*
 
-1. Select the desired channels from the **Channels in segment** drop-down option, and select **Apply Selection**. Also, select a [time frame](/help/AccountIQ/product-concepts.md#granularity-def).
+1. Select the desired channels from the **Channels in segment** drop-down option, and select **Apply Selection**. Also, select a [time frame](/help/accountiq/product-concepts.md#granularity-def).
 
    >[!IMPORTANT]
    >

@@ -5,7 +5,7 @@ exl-id: 86fe010d-3202-4ce2-b803-ff44f5538d7e
 ---
 # Define a segment and time frame {#define-segment}
 
-All analysis or viewing reports in Account IQ begin with defining segment and selecting time frame for evaluation. [Segment](/help/AccountIQ/product-concepts.md#segmet-def) refers to all the subscribers or viewers that meet your criteria (subscribing to an MVPD and viewing sepcific channels) of evaluation.
+All analysis or viewing reports in Account IQ begin with defining segment and selecting time frame for evaluation. [Segment](/help/accountiq/product-concepts.md#segmet-def) refers to all the subscribers or viewers that meet your criteria (subscribing to an MVPD and viewing sepcific channels) of evaluation.
 
 ![](assets/segment-panel.png)
 
@@ -47,7 +47,7 @@ To select the desired programmer channels from the **Channels in segment** optio
 
 1. Click or tap the desired channels or programmers.
 
-   The top level list items in the **Channels in segment** are [programmer](/help/AccountIQ/product-concepts.md#programmer-def) companies and the list items under programmer names are their [channels](/help/AccountIQ/product-concepts.md#channel-def). You can either select individual channels under programmers, or select programmers and all the activities of the channels under that programmer are included in report and graph results.
+   The top level list items in the **Channels in segment** are [programmer](/help/accountiq/product-concepts.md#programmer-def) companies and the list items under programmer names are their [channels](/help/accountiq/product-concepts.md#channel-def). You can either select individual channels under programmers, or select programmers and all the activities of the channels under that programmer are included in report and graph results.
 
    ![](assets/programmer-channels.png)
 

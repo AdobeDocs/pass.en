@@ -9,7 +9,7 @@ Each reports page on Account IQ has a **Create new operation** option to help yo
 
 To create an operation:
 
-1. Define your segment (cohort) for analysis on any of the reports or dashboards page, using the steps in [Defining segments and timeframe](/help/AccountIQ/howto-select-segment-timeframe.md).
+1. Define your segment (cohort) for analysis on any of the reports or dashboards page, using the steps in [Defining segments and timeframe](/help/accountiq/howto-select-segment-timeframe.md).
 
 1. Select **Create new operation** option available on any of the reports or dashboards pages. The **Create new operation** page is displayed.
 
@@ -44,7 +44,7 @@ Name the new operation in **Operation name** field under Operation details. For 
 
 +++Programmer- Target segment
 
-The **Segment** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **segment** you selected using [segment and timeframe panel](/help/AccountIQ/howto-select-segment-timeframe.md) on main reports or dashboards page in step 1 above.
+The **Segment** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **segment** you selected using [segment and timeframe panel](/help/accountiq/howto-select-segment-timeframe.md) on main reports or dashboards page in step 1 above.
 
 <!--* The first segment entry in the **Segment** section, by default, shows the **segment** you selected in the step 1.
 
@@ -58,7 +58,7 @@ This segment defines the subscribers that will be impacted by the operation bein
 
 +++MVPD- Target segment
 
-The **Segment** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **segment** you selected using [segment and timeframe panel](/help/AccountIQ/howto-select-segment-timeframe.md) on main reports or dashboards page in step 1 above.
+The **Segment** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **segment** you selected using [segment and timeframe panel](/help/accountiq/howto-select-segment-timeframe.md) on main reports or dashboards page in step 1 above.
 
 <!--* The first segment entry in the **Segment** section, by default, shows the **segment** you selected in the step 1.
 
@@ -190,7 +190,7 @@ When you save the operation, a message screen is displayed that informs you that
 
 Once you have created an operation, it will run from the start date till the end date that you have specified.
 
-The details of your saved operation can be seen on the main [Operations](/help/AccountIQ/operations.md) page.
+The details of your saved operation can be seen on the main [Operations](/help/accountiq/operations.md) page.
 
 ![](assets/new-operation-created.png)
 

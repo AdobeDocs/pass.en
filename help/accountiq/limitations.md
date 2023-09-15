@@ -11,7 +11,7 @@ Adobe strives to offer robust functionality and seamless user experiences throug
 
 * When estimating sharing scores for individual accounts, Account IQ takes a conservative approach that enables companies to act on sharing with great degree of confidence. However, this approach tends to underestimate the total amount of sharing when aggregated across many accounts.
 
-* The [Overall Sharing Score](/help/AccountIQ/dashboard.md#overall-sharing-score) currently only factors in [Sharing Level](/help/AccountIQ/dashboard.md#sharing-level) and [Usage from Shared Accounts](/help/AccountIQ/dashboard.md#usage-from-shared-accounts). Future versions will factor in additional metrics.
+* The [Overall Sharing Score](/help/accountiq/dashboard.md#overall-sharing-score) currently only factors in [Sharing Level](/help/accountiq/dashboard.md#sharing-level) and [Usage from Shared Accounts](/help/accountiq/dashboard.md#usage-from-shared-accounts). Future versions will factor in additional metrics.
 
 * When defining cohorts in the dashboard or reports pages, the selectors for MVPDs and channels lack the search mechanism, as of now.
 
@@ -23,13 +23,13 @@ Adobe strives to offer robust functionality and seamless user experiences throug
 
 * The Benchmarking, Detection Models, Segments, Snapshots, and Rules sections in the left navigation are currently disabled and will be available in a forthcoming version.
 
-* When creating [Operations](/help/AccountIQ/operation-affecting-user-segment.md), you can identify only two kinds of [Actions](/help/AccountIQ/operation-affecting-user-segment.md) as of now — Concurrency Monitory rules and External Actions.
+* When creating [Operations](/help/accountiq/operation-affecting-user-segment.md), you can identify only two kinds of [Actions](/help/accountiq/operation-affecting-user-segment.md) as of now — Concurrency Monitory rules and External Actions.
 
-* Currently, Operations can only be created and [scheduled](/help/AccountIQ/operation-affecting-user-segment.md#action). Future versions will allow you to pause, resume, and fully manage them.
+* Currently, Operations can only be created and [scheduled](/help/accountiq/operation-affecting-user-segment.md#action). Future versions will allow you to pause, resume, and fully manage them.
 
 * Because of the more limited set of data used, Isolation mode does not truly reflect the amount of sharing. Therefore, MVPD in Isolation mode cannot be compared to any other MVPD. <!--do we need to separate out this limitation, which is from a different persona i.e. only for Programmer persona?-->
 
-* When you are defining a new [segment](/help/AccountIQ/segments-timeframe.md) for an operation you can add metrics. But if you select a saved segment then you cannot add more metrics to refine the segment.
+* When you are defining a new [segment](/help/accountiq/segments-timeframe.md) for an operation you can add metrics. But if you select a saved segment then you cannot add more metrics to refine the segment.
 
 * Granularity and timeframe selector is limited to one week or one month, which means data can be evaluated on a single week or a single month only.
 
