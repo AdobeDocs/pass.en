@@ -27,7 +27,7 @@ A Software Statement is a JWT token that contains information about your applica
 
 ### If you have access to Adobe's TVE Dashboard:
 
-* Open your browser and navigate to [Adobe Primetime TVE Dashboard](https://console.auth.adobe.com).
+* Open your browser and navigate to [Adobe Pass TVE Dashboard](https://console.auth.adobe.com).
 * Navigate to `Channels` section and select your channel.
 * Navigate to `Registered Applications` Tab.
 * Click on `Add new application`.

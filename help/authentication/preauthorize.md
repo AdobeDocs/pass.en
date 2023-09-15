@@ -19,9 +19,9 @@ In case the Preauthorize API response result contains one or more resources with
 
 >[!IMPORTANT]
 >
->The enhanced error reporting feature which adds additional error information for denied preauthorization decisions is available upon request as it has to be enabled on Adobe Primetime Authentication configuration side.
+>The enhanced error reporting feature which adds additional error information for denied preauthorization decisions is available upon request as it has to be enabled on Adobe Pass Authentication configuration side.
 
-In case the Preauthorize API request could not be serviced due to an Adobe Primetime Authentication SDK error or in case an Adobe Primetime Authentication services error takes place, then an additional error information (regardles of above configuration) and no resources will be included as part of the Preauthorize API response result.
+In case the Preauthorize API request could not be serviced due to an Adobe Pass Authentication SDK error or in case an Adobe Pass Authentication services error takes place, then an additional error information (regardles of above configuration) and no resources will be included as part of the Preauthorize API response result.
 
 </br>
 
@@ -189,7 +189,7 @@ All requested resources are having a positive preathorization decision
 ```
  
 
-One or more resources are having a denied preauthorization decision and enhanced error reporting feature is not enabled in Adobe Primetime Authentication configuration
+One or more resources are having a denied preauthorization decision and enhanced error reporting feature is not enabled in Adobe Pass Authentication configuration
 
 ```JSON
     {
@@ -212,7 +212,7 @@ One or more resources are having a denied preauthorization decision and enhanced
 ```
  
 
-One or more resources are having a denied preauthorization decision and enhanced error reporting feature is enabled in Adobe Primetime Authentication configuration
+One or more resources are having a denied preauthorization decision and enhanced error reporting feature is enabled in Adobe Pass Authentication configuration
 
 ```JSON
     {
@@ -247,7 +247,7 @@ One or more resources are having a denied preauthorization decision and enhanced
 
  
 
-Adobe Primetime Authentication services hit an error while servicing the Preauthorize API request
+Adobe Pass Authentication services hit an error while servicing the Preauthorize API request
 
 ```JSON
     {
@@ -267,7 +267,7 @@ Adobe Primetime Authentication services hit an error while servicing the Preauth
 
 #### Failure
 
-Adobe Primetime Authentication SDK hits an error while servicing the Preauthorize API request
+Adobe Pass Authentication SDK hits an error while servicing the Preauthorize API request
     
 ```JSON    
     {
@@ -320,12 +320,12 @@ Adobe Primetime Authentication SDK hits an error while servicing the Preauthoriz
 ```
     ///
     /// - Returns: The HTTP response status code as documented in RFC 7231.
-    ///            Might be 0 in case the `Status` comes from the SDK instead of Adobe Primetime Authentication services.
+    ///            Might be 0 in case the `Status` comes from the SDK instead of Adobe Pass Authentication services.
     ///
     public int getStatus()
 
     ///
-    /// - Returns: The standard Adobe Primetime Authentication services error code.
+    /// - Returns: The standard Adobe Pass Authentication services error code.
     ///            Might hold an empty string or a `nil` value.
     ///
     public String getCode()

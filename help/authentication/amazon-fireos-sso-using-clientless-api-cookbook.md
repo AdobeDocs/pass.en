@@ -13,9 +13,9 @@ exl-id: 4c65eae7-81c1-4926-9202-a36fd13af6ec
 
 ## Introduction {#Introduction}
 
-This document provides instructions to implement Amazon's SSO version of Adobe Primetime Authentication flow using clientless API. The first part of this document focuses on the specificity of Amazon version of the architecture, for the many partners already familiar and experienced with its implementation.
+This document provides instructions to implement Amazon's SSO version of Adobe Pass Authentication flow using clientless API. The first part of this document focuses on the specificity of Amazon version of the architecture, for the many partners already familiar and experienced with its implementation.
 
-Second part of the document goes over the main steps to implement Adobe Primetime Authentication clientless API.
+Second part of the document goes over the main steps to implement Adobe Pass Authentication clientless API.
 
 For a broad technical overview of how the Clientless solution works, see the [REST API Overview](/help/authentication/rest-api-overview.md). Adobe is the preferred contact for support about the overall architecture and first implementations.
 
@@ -137,7 +137,7 @@ If for any reason, the API calls don't return a payload, please use the regular 
     * Value in milliseconds. if set, override the default timeout value of 1 minute for sync API.
 
 
-### Adobe Primetime Clientless API update to use Dynamic Client Registration {#clientlessdcr}
+### Adobe Pass Clientless API update to use Dynamic Client Registration {#clientlessdcr}
 
 If this is your first implementation please see the **Clientless Technical Overview** and contact Adobe in case you need support.
 
@@ -145,11 +145,11 @@ Adobe Clientless API requires applications to use Dynamic Client Registration in
 
 *   To use Dynamic Client Registration in your application, follow the instructions in [ Dynamic Client Registration Management to register the application](/help/authentication/dynamic-client-registration-management.md).
 
-*   To implement Dynamic Client Registration API to perform authentication and authorization requests to Adobe Primetime servers, follow instructions in [Dynamic client registration API](/help/authentication/dynamic-client-registration-api.md) .
+*   To implement Dynamic Client Registration API to perform authentication and authorization requests to Adobe Pass servers, follow instructions in [Dynamic client registration API](/help/authentication/dynamic-client-registration-api.md) .
 
-### Adobe Primetime Clientless API update to use Amazon SSO {#clientlesssso}
+### Adobe Pass Clientless API update to use Amazon SSO {#clientlesssso}
 
-Amazon SSO payload obtained from Amazon SDK need to be present on requests made to Adobe Primetime Authentication endpoints :
+Amazon SSO payload obtained from Amazon SDK need to be present on requests made to Adobe Pass Authentication endpoints :
 
 ```
       /adobe-services/*
@@ -158,7 +158,7 @@ Amazon SSO payload obtained from Amazon SDK need to be present on requests made 
 ```
 
 
-All Primetime Authentication endpoints support the following methods to receive the Device-scoped identifier or Platform- Scoped identifier (present in Amazon SSO payload) :
+All Adobe Pass Authentication endpoints support the following methods to receive the Device-scoped identifier or Platform- Scoped identifier (present in Amazon SSO payload) :
 
 * As a header : "Adobe-Subject-Token"
 * As a query parameter : "ast"
@@ -206,4 +206,4 @@ boundary=---- WebKitFormBoundary7MA4YWxkTrZu0gW
 
 >[!NOTE]
 >
->If the Amazon SSO is not present or invalid, the Adobe Primetime Authentication will ignore the attribute and the calls will be executed as if SSO is not present.
+>If the Amazon SSO is not present or invalid, the Adobe Pass Authentication will ignore the attribute and the calls will be executed as if SSO is not present.

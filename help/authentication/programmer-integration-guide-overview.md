@@ -33,7 +33,7 @@ exl-id: 51461caf-08ef-459e-b284-8f317f45e7b1
 * AccessEnabler Android SDK Overview
 * REST API Overview
 
-These are intended for software engineers who will handle the technical side of an Adobe Primetime Authentication integration.
+These are intended for software engineers who will handle the technical side of an Adobe Pass Authentication integration.
 
 <!--
 
@@ -46,5 +46,5 @@ These are intended for software engineers who will handle the technical side of 
 >* Temp Pass
 >* Integrating the Media Token Verifier
 >* User Metadata
->* Tracking Data in Adobe Primetime authentication
+>* Tracking Data in Adobe Pass authentication
 -->

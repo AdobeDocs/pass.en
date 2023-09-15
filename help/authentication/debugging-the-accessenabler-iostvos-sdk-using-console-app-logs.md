@@ -66,7 +66,7 @@ In order to be able to better debug the functionality of other components and **
 
 ## Reporting an issue
 
-When you are reporting an issue to Adobe Primetime Authentication please consider the following suggestions:
+When you are reporting an issue to Adobe Pass Authentication please consider the following suggestions:
 
 * please try to provide the reproduction steps.
 * please try to provide the OS version/s and device model/s on which the issue occurs.

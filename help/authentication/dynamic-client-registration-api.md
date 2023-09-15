@@ -11,18 +11,18 @@ exl-id: 06a76c71-bb19-4115-84bc-3d86ebcb60f3
 
 ## Overview {#overview}
 
-Currently, there are two ways in which Primetime Authentication identifies and registers applications:
+Currently, there are two ways in which Adobe Pass Authentication identifies and registers applications:
 
 * browser-based clients are registered via allowed [domain listing](/help/authentication/programmer-overview.md)
 * native application clients, such as iOS and Android applications are registered through signed requestor mechanism.
 
-Adobe Primetime authentication proposes a new mechanism for registering applications. This mechanism is described in the following paragraphs.
+Adobe Pass authentication proposes a new mechanism for registering applications. This mechanism is described in the following paragraphs.
 
 ## The Application Registration Mechanism {#appRegistrationMechanism}
 
 ### Technical Reasons {#reasons}
 
-The authentication mechanism in Adobe Primetime authentication was relying on session cookies, but because of [Android Chrome Custom Tabs](https://developer.chrome.com/multidevice/android/customtabs){target=_blank} and [Apple Safari View Controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller){target=_blank}, this goal cannot be achieved anymore.
+The authentication mechanism in Adobe Pass authentication was relying on session cookies, but because of [Android Chrome Custom Tabs](https://developer.chrome.com/multidevice/android/customtabs){target=_blank} and [Apple Safari View Controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller){target=_blank}, this goal cannot be achieved anymore.
 
 Given these limitations, Adobe introduces a new registration mechanism for all its clients. It is based on the OAuth 2.0 RFC and consists
 of the following steps:
@@ -44,7 +44,7 @@ For more details on how to create software statements, visit [Client Registratio
 
 ### Obtaining Client Credentials {#clientCredentials}
 
-After retrieving a software statement from TVE Dashboard, you need to register your application with the Adobe Primetime authorization server. Do this by performing a /register call and retrieving your unique client identifier.
+After retrieving a software statement from TVE Dashboard, you need to register your application with the Adobe Pass authorization server. Do this by performing a /register call and retrieving your unique client identifier.
 
 **Request**
 
@@ -147,7 +147,7 @@ Pragma: no-cache
 
 ### Obtaining Access Token {#accessToken}
 
-After retrieving the unique client identifier (client id and client secret) for your application, you need to obtain an access token. The access token is a mandatory OAuth 2.0 token, used to call the Primetime authentication APIs.
+After retrieving the unique client identifier (client id and client secret) for your application, you need to obtain an access token. The access token is a mandatory OAuth 2.0 token, used to call the Adobe Pass authentication APIs.
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ After retrieving the unique client identifier (client id and client secret) for 
 
 | response fields | | |
 | --- | --- | --- |
-| `access_token` | The access token value you should use to call the Primetime APIs | mandatory |
+| `access_token` | The access token value you should use to call the Adobe Pass APIs | mandatory |
 | `expires_in` | The time in seconds until the access_token expires | mandatory |
 | `token_type` | The type of the token **bearer** | mandatory |
 | `created_at` | The issue time of the token | mandatory |
@@ -228,7 +228,7 @@ Pragma: no-cache
 
 ## Performing Authentication Requests {#autheticationRequests}
 
-Use the access token to perform Adobe Primetime [Authentication API calls](/help/authentication/initiate-authentication.md). In order to do this, the access token needs to be added to the API request, in one of the following ways:
+Use the access token to perform Adobe Pass [Authentication API calls](/help/authentication/initiate-authentication.md). In order to do this, the access token needs to be added to the API request, in one of the following ways:
 
 * by adding a new query parameter to the request. That new parameter is called **access_token**.
 

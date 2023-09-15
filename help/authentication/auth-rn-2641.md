@@ -1,9 +1,9 @@
 ---
-title: Adobe Primetime authentication 2.64.1 Release Notes
-description: Adobe Primetime authentication 2.64.1 Release Notes
+title: Adobe Pass authentication 2.64.1 Release Notes
+description: Adobe Pass authentication 2.64.1 Release Notes
 exl-id: b0edbd90-ebb5-40a7-9034-1699dccfadb5
 ---
-# Adobe Primetime authentication 2.64.1 Release Notes {#authn-264-rn}
+# Adobe Pass authentication 2.64.1 Release Notes {#authn-264-rn}
 
 >[!NOTE]
 >
@@ -18,7 +18,7 @@ This page describes new features, changes, and known issues with this release:
 
 ### Build Number {#build-number-2641}
 
-Adobe Primetime authentication: adobe-pass-**2.64.1**
+Adobe Pass authentication: adobe-pass-**2.64.1**
 Release Date: **01/31/2023 - 02/02/2023** 
 
 ### Release Overview {#release-overview-2641}

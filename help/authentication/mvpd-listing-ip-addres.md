@@ -9,7 +9,7 @@ exl-id: be18084c-22f5-47b5-b088-d9032681113d
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
-For an MVPD / Adobe Primetime authentication integration certain IPs must be allowed in an MVPD's firewall. These are the egress IPs:
+For an MVPD / Adobe Pass authentication integration certain IPs must be allowed in an MVPD's firewall. These are the egress IPs:
 
 * 34.233.60.171
 * 34.233.163.243

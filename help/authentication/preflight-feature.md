@@ -9,7 +9,7 @@ exl-id: 9e4ec343-371f-4116-915f-191e5f42cb47
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
-There has been a change in the way Adobe Primetime authentication computes preAuthorizeResources. The PreAuthorization API has a new implementation. This implementation replaces the old solution which comprises making multiple authorization calls only.
+There has been a change in the way Adobe Pass authentication computes preAuthorizeResources. The PreAuthorization API has a new implementation. This implementation replaces the old solution which comprises making multiple authorization calls only.
 The external interface for the PreAuthorization API is unchanged, no updates are required in the Programmer's application.
 
 There are three ways the Preflight resources are computed:
@@ -20,7 +20,7 @@ There are three ways the Preflight resources are computed:
 
 Regardless of the MVPD, the Client application will make a single call to the Preflight endpoint (checkPreauthorizedResources API), passing a set of resourceIDs. Based on one of the above ways supported by MVPD, Adobe will then return the pre-authorized resourceIDs.
 
-If Preflight is based on the fork & join method, then the Adobe Primetime Authentication backend checks a value set for the 'max preauthorization calls' in its configuration. This is configured by Adobe.
+If Preflight is based on the fork & join method, then the Adobe Pass Authentication backend checks a value set for the 'max preauthorization calls' in its configuration. This is configured by Adobe.
 
 The default value for 'max preauthorization calls' config is '5', meaning at max only 5 resources can be sent in Preflight for the fork & join MVPDs. Passing more than 5 resources will result in an exception and a null list will be returned. This is the expected behavior. We can configure this to any value if the MVPD does not support channel lineup or multi channel authorization, but only after consulting them as multiple fork & join authorization calls will increase their load times. 
 

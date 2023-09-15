@@ -11,9 +11,9 @@ exl-id: f75cbc4d-4132-4ce8-a81c-1561a69d1d3a
 
 ## Overview {#overview-proxy-mvpd-webserv}
 
-A "Proxy MVPD" is an MVPD that, in addition to managing its own integration with Adobe Primetime authentication, also manages the entitlement process on behalf of a group of associated "Proxied MVPDs". This arrangement is transparent to Programmers. 
+A "Proxy MVPD" is an MVPD that, in addition to managing its own integration with Adobe Pass authentication, also manages the entitlement process on behalf of a group of associated "Proxied MVPDs". This arrangement is transparent to Programmers. 
 
-To implement the ProxyMVPD feature, Adobe Primetime authentication provides RESTful web services, with which ProxyMVPDs can submit and retrieve lists of ProxiedMVPDs. The protocol used for this public API is REST HTTP, with the following assumptions:
+To implement the ProxyMVPD feature, Adobe Pass authentication provides RESTful web services, with which ProxyMVPDs can submit and retrieve lists of ProxiedMVPDs. The protocol used for this public API is REST HTTP, with the following assumptions:
 
 * The Proxy MVPD uses the HTTP GET method to retrieve the list of the current integrated MVPDs.
 * The Proxy MVPD uses the HTTP POST method to update the list of the supported MVPDs.
@@ -121,7 +121,7 @@ XML example:
 
 ### Posting Frequency {#posting-frequency}
 
-Adobe Primetime authentication recommends that ProxyMVPDs should push their list of ProxiedMVPDs only when there is a change from the previous push. 
+Adobe Pass authentication recommends that ProxyMVPDs should push their list of ProxiedMVPDs only when there is a change from the previous push. 
 
 ### Deleting Proxied MVPDs {#delete-proxied-freqency}
 
@@ -209,7 +209,7 @@ Adobe has defined the following accepted format for posting/retrieving proxied M
 
 *   `iframeSize` (optional) - The iframeSize element is optional and defines the size of the iFrame if the MVPD authentication page is supposed to be in an iFrame. Otherwise, if the iframeSize element is not present, the authentication will happen in a full browser redirect page.
 *   `requestorIds` (optional) - The requestorIds values will be provided by Adobe. A requirement is that a proxied MVPD should be integrated with at least one requestorId. If the "requestorIds" tag is not present on the proxied MVPD element, then that proxied MVPD will be integrated with all available requestors integrated under the Proxy MVPD.
-*   `ProviderID` (optional) - When the ProviderID attribute is present on the id element, the value of ProviderID will be sent on the SAML authentication request to the Proxy MVPD as the Proxied MVPD / SubMVPD ID (instead of the id value). In this case, the value of id will be used only in the MVPD picker presented on the Programmer page, and internally by Adobe Primetime authentication. The length of the ProviderID attribute must be between 1 and 128 characters.
+*   `ProviderID` (optional) - When the ProviderID attribute is present on the id element, the value of ProviderID will be sent on the SAML authentication request to the Proxy MVPD as the Proxied MVPD / SubMVPD ID (instead of the id value). In this case, the value of id will be used only in the MVPD picker presented on the Programmer page, and internally by Adobe Pass authentication. The length of the ProviderID attribute must be between 1 and 128 characters.
  
 ## Security {#security}
 
@@ -225,7 +225,7 @@ Curl example:
 
 `curl -X GET -H "apikey: ???provided-by-adobe???" "https://mgmt-prequal.auth-staging.adobe.com/control/v1/proxiedMvpds"`
 
-## Proxy MVPD Web Service Endpoints for the Adobe Primetime authentication Environments {#proxy-mvpd-wevserv-endpoints}
+## Proxy MVPD Web Service Endpoints for the Adobe Pass authentication Environments {#proxy-mvpd-wevserv-endpoints}
 
 * **Production URL:** https://mgmt.auth.adobe.com/control/v1/proxiedMvpds
 * **Staging URL:** https://mgmt.auth-staging.adobe.com/control/v1/proxiedMvpds
@@ -237,5 +237,5 @@ Curl example:
 >* [Proxy MVPD SAML integration](/help/authentication/proxy-mvpd-saml-int.md)
 >* [User metadata exchange](/help/authentication/mvpd-user-metadata-exchng.md)
 >* [Technical paper](/help/authentication/technical-paper.md)
->* [Adobe Primetime Authentication glossary](/help/authentication/glossary.md)
+>* [Adobe Pass Authentication glossary](/help/authentication/glossary.md)
 -->

@@ -17,15 +17,15 @@ Promotional Temp Pass is designed to be used for running promotional campaigns w
 
 >[!IMPORTANT]
 >
->Adobe doesn't store any Personally Identifiable Information (PII). Therefore, the Programmer must set a hash over the unique user provided information on the Primetime authentication APIs.
+>Adobe doesn't store any Personally Identifiable Information (PII). Therefore, the Programmer must set a hash over the unique user provided information on the Adobe Pass authentication APIs.
 
 Promotional Temp Pass is built on top of the [Temp Pass](/help/authentication/temp-pass.md) feature, meaning it includes all the Temp Pass functionality. 
 
-Once the maximum predefined number of VOD titles or the predefined period of time are exceeded, that user will not be able to access content on the same device or by using the same user identifier information (for example, e-mail address) until the authorization tokens are cleared from the Adobe Primetime authentication server.
+Once the maximum predefined number of VOD titles or the predefined period of time are exceeded, that user will not be able to access content on the same device or by using the same user identifier information (for example, e-mail address) until the authorization tokens are cleared from the Adobe Pass authentication server.
 
 >[!NOTE]
 >
->Temp Pass is part of the Premium Workflow package. Please contact your Primetime sales rep if interested in using this functionality.
+>Temp Pass is part of the Premium Workflow package. Please contact your Adobe Pass sales rep if interested in using this functionality.
 
 ## Temp Pass and Promotional Temp Pass comparison {#tp-ptp-comparison}
 
@@ -42,7 +42,7 @@ This feature enables users to access promotional content from a specific device 
 
 The Programmer will provide a hash over the user's PII on the authentication and authorization APIs. This hash will be used together with the device Id in generating a unique key to identify the user and device.   
 
-Based on device Id and the information the user provided and following the logic below, Adobe Primetime authentication will determine if the user is in a new trial or in an existing one:
+Based on device Id and the information the user provided and following the logic below, Adobe Pass authentication will determine if the user is in a new trial or in an existing one:
 
 * new hash over user-provided information (for example, e-mail), new device Id => new trial
 * existing hash over user-provided information (for example, e-mail), new device Id  => existing trial (with existing hash over user provided information (for example, e-mail)) 
@@ -102,18 +102,18 @@ All the tokens on a device are deleted on logout. Therefore, switching from the 
 
 Promotional Temp Pass requires the following client-side functionalities:
 
-* **User identifier information, for example e-mail address propagation** (sending the user's e-mail address on the authentication and authorization flows). The e-mail is required by Adobe Primetime authentication to bind the authentication and authorization tokens (similar to the case of the `device_ID`, required on all the calls).
+* **User identifier information, for example e-mail address propagation** (sending the user's e-mail address on the authentication and authorization flows). The e-mail is required by Adobe Pass authentication to bind the authentication and authorization tokens (similar to the case of the `device_ID`, required on all the calls).
 * **Force authentication** - allowing the Programmer to force an authentication flow when the user is already authenticated. This functionality is required in order to force a user metadata refresh (the user metadata key **used_assets** contains the number of available resources) every time the app is started. Because the user can login on multiple devices, the user metadata present on the device during app startup is unreliable, and we need to update it in order to reflect the current state for that specific user (identified by e-mail address).
  
 
 >[!IMPORTANT]
 >Force authentication is possible only on iOS and Android.
->Primetime authentication does not have a built-in mechanism to stop the free streaming after the X minutes have passed. Primetime authentication will cease issuing **authorization** and **short media** tokens once the user consumes the Y free resources. It is up to Programmers to restrict the access once the Promotional Temp Pass expires.
+>Adobe Pass authentication does not have a built-in mechanism to stop the free streaming after the X minutes have passed. Adobe Pass authentication will cease issuing **authorization** and **short media** tokens once the user consumes the Y free resources. It is up to Programmers to restrict the access once the Promotional Temp Pass expires.
 
 ## Security {#security}
 
 >[!IMPORTANT]
->Adobe doesn't store any Personally Identifiable Information (PII). Therefore, the Programmer must set a hash over the unique user provided information on the Primetime authentication APIs. 
+>Adobe doesn't store any Personally Identifiable Information (PII). Therefore, the Programmer must set a hash over the unique user provided information on the Adobe Pass authentication APIs. 
 
 **Hashing of user identifier information**
 
@@ -123,7 +123,7 @@ For example, **SHA-256** over **"user@domain.com"** is **"f7ee5ec7312165148b69fc
 
 ## Reset or purge Promotional Temp Pass {#reset-promo-tempass}
 
-Certain business rules require a regular purging of Promotional Temp Pass. In order to do so, Primetime authentication provides Programmers with a *public* web API, described below:
+Certain business rules require a regular purging of Promotional Temp Pass. In order to do so, Adobe Pass authentication provides Programmers with a *public* web API, described below:
 
 | `DELETE https://mgmt.auth.adobe.com/reset-tempass/v2/reset` |
 |----|
@@ -140,7 +140,7 @@ $ curl -X DELETE -H "Authorization:Bearer H4j7cF3GtJX81BrsgDa10GwSizVz" "https:/
 
 ### Supported clients {#supported-clients}
 
-| Adobe Primetime authentication Clients | Promotional Temp Pass | Reset Tool | Supports Dedicated Response Code / Client Error |
+| Adobe Pass authentication Clients | Promotional Temp Pass | Reset Tool | Supports Dedicated Response Code / Client Error |
 |:--------------------------------------:|:---------------------:|:----------:|:-----------------------------------------------:|
 | JS Access Enabler                      | YES                   | YES        | YES (starting with v 3.0.0)                     |
 | Native Client iOS                      | YES                   | YES        | YES (starting with v 1.10)                      |
@@ -156,7 +156,7 @@ This section describes the limitations that apply to the current implementation 
 
 **Smart devices without a Unique Device ID** 
 
-Not all smart device apps are able to provide a Unique Device ID. In the absence of one, Adobe Primetime authentication can use the UUID generated by the Adobe Registration Code Service as the Unique Device ID. This means that when user signs out, the authentication and authorization tokens will be deleted. Once the user will attempt to authenticate again, this time with different user information (for example, e-mail) the user will be able to authorize again. Adobe recommends adding an UI flow that will not allow a user to "fool" the system and add logic to determine whether it is a new user requesting a trial or an existing trial. 
+Not all smart device apps are able to provide a Unique Device ID. In the absence of one, Adobe Pass authentication can use the UUID generated by the Adobe Registration Code Service as the Unique Device ID. This means that when user signs out, the authentication and authorization tokens will be deleted. Once the user will attempt to authenticate again, this time with different user information (for example, e-mail) the user will be able to authorize again. Adobe recommends adding an UI flow that will not allow a user to "fool" the system and add logic to determine whether it is a new user requesting a trial or an existing trial. 
 
 **Resetting / purging Temp Pass**
 

@@ -11,7 +11,7 @@ exl-id: cb27c4b7-bdb4-44a3-8f84-c522a953426f
 
 ## Introduction {#Introduction}
 
-The Adobe Primetime Authentication REST API can support platform Single Sign-On (SSO) authentication for end users of client applications running on iOS, iPadOS or tvOS through what we call Apple SSO workflow.
+The Adobe Pass Authentication REST API can support platform Single Sign-On (SSO) authentication for end users of client applications running on iOS, iPadOS or tvOS through what we call Apple SSO workflow.
 
 Please note that this document acts as an extension to the existing REST API documentation, which can be found [here](/help/authentication/rest-api-reference.md).
 
@@ -19,7 +19,7 @@ Please note that this document acts as an extension to the existing REST API doc
 
 ## Cookbooks {#Cookbooks}
 
-In order to benefit from the Apple SSO user experience, one application would need to integrate the [Video Subscriber Account](https://developer.apple.com/documentation/videosubscriberaccount) framework developed by Apple, while regarding the Adobe Primetime Authentication REST API communication, it would have to follow the sequence of tips presented below.
+In order to benefit from the Apple SSO user experience, one application would need to integrate the [Video Subscriber Account](https://developer.apple.com/documentation/videosubscriberaccount) framework developed by Apple, while regarding the Adobe Pass Authentication REST API communication, it would have to follow the sequence of tips presented below.
 
 </br>
 
@@ -47,7 +47,7 @@ In order to benefit from the Apple SSO user experience, one application would ne
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Implement this through the medium of [Adobe Primetime Authentication](/help/authentication/check-authentication-token.md) service.
+> **<u>Tip:</u>** Implement this through the medium of [Adobe Pass Authentication](/help/authentication/check-authentication-token.md) service.
 
 </br>
 
@@ -97,10 +97,10 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
                             // The vsaMetadata!.authenticationExpirationDate should be compared against current date.
                             ...
                             // The vsaMetadata!.accountProviderIdentifier will contain the provider identifier as it is known for the platform configuration.
-                            // The vsaMetadata!.accountProviderIdentifier represents the platformMappingId in terms of Adobe Primetime Authentication configuration.
+                            // The vsaMetadata!.accountProviderIdentifier represents the platformMappingId in terms of Adobe Pass Authentication configuration.
                             ...
                             // The application must determine the MVPD id property value based on the platformMappingId property value obtained above.
-                            // The application must use the MVPD id further in its communication with Adobe Primetime Authentication services.
+                            // The application must use the MVPD id further in its communication with Adobe Pass Authentication services.
                             ...
                             // Continue with the "Obtain a profile request from Adobe for the selected MVPD" step.
                             ...
@@ -127,7 +127,7 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Implement this through the medium of [Adobe Primetime Authentication](/help/authentication/provide-mvpd-list.md) service.
+> **<u>Tip:</u>** Implement this through the medium of [Adobe Pass Authentication](/help/authentication/provide-mvpd-list.md) service.
 
 
 >[!TIP]
@@ -182,10 +182,10 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
                         // This is going to make the Video Subscriber Account framework to prompt the user with the providers picker at this step. 
                         vsaMetadataRequest.isInterruptionAllowed = true;
                         
-                        // This can be computed from the [Adobe Primetime Authentication](/help/authentication/provide-mvpd-list.md) service response in order to filter the TV providers from the Apple picker.
+                        // This can be computed from the [Adobe Pass Authentication](/help/authentication/provide-mvpd-list.md) service response in order to filter the TV providers from the Apple picker.
                         vsaMetadataRequest.supportedAccountProviderIdentifiers = supportedAccountProviderIdentifiers;
     
-                        // This can be computed from the [Adobe Primetime Authentication](/help/authentication/provide-mvpd-list.md) service response in order to sort the TV providers from the Apple picker.
+                        // This can be computed from the [Adobe Pass Authentication](/help/authentication/provide-mvpd-list.md) service response in order to sort the TV providers from the Apple picker.
                         if #available(iOS 11.0, tvOS 11, *) {
                             vsaMetadataRequest.featuredAccountProviderIdentifiers = featuredAccountProviderIdentifiers;
                         }
@@ -198,10 +198,10 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
                                 // The vsaMetadata!.authenticationExpirationDate should be compared against current date.
                                 ...
                                 // The vsaMetadata!.accountProviderIdentifier will contain the provider identifier as it is known for the platform configuration.
-                                // The vsaMetadata!.accountProviderIdentifier represents the platformMappingId in terms of Adobe Primetime Authentication configuration.
+                                // The vsaMetadata!.accountProviderIdentifier represents the platformMappingId in terms of Adobe Pass Authentication configuration.
                                 ...
                                 // The application must determine the MVPD id property value based on the platformMappingId property value obtained above.
-                                // The application must use the MVPD id further in its communication with Adobe Primetime Authentication services.
+                                // The application must use the MVPD id further in its communication with Adobe Pass Authentication services.
                                 ...
                                 // Continue with the "Obtain a profile request from Adobe for the selected MVPD" step.
                                 ...
@@ -263,11 +263,11 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Implement this through the medium of Adobe Primetime Authentication [Profile Request](/help/authentication/retrieve-profilerequest.md) service.
+> **<u>Tip:</u>** Implement this through the medium of Adobe Pass Authentication [Profile Request](/help/authentication/retrieve-profilerequest.md) service.
 
 >[!TIP]
 >
-> **<u>Pro Tip:</u>** Please be aware that the provider identifier obtained from the Video Subscriber Account framework represents the *`platformMappingId`* in terms of Adobe Primetime Authentication configuration. Therefore, the application must determine the MVPD id property value, using the *`platformMappingId`* value, through the medium of Adobe Primetime Authentication [Provide MVPD List](/help/authentication/provide-mvpd-list.md) service.
+> **<u>Pro Tip:</u>** Please be aware that the provider identifier obtained from the Video Subscriber Account framework represents the *`platformMappingId`* in terms of Adobe Pass Authentication configuration. Therefore, the application must determine the MVPD id property value, using the *`platformMappingId`* value, through the medium of Adobe Pass Authentication [Provide MVPD List](/help/authentication/provide-mvpd-list.md) service.
 
 </br>
 
@@ -311,10 +311,10 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
                         // This is going to make the Video Subscriber Account framework to refrain from prompting the user with the providers picker at this step. 
                         vsaMetadataRequest.isInterruptionAllowed = false;
     
-                        // This are the user metadata fields expected to be available on a successful login and are determined from the [Adobe Primetime Authentication](/help/authentication/provide-mvpd-list.md) service. Look for the requiredMetadataFields associated with the provider determined in a previous step.
+                        // This are the user metadata fields expected to be available on a successful login and are determined from the [Adobe Pass Authentication](/help/authentication/provide-mvpd-list.md) service. Look for the requiredMetadataFields associated with the provider determined in a previous step.
                         vsaMetadataRequest.attributeNames = requiredMetadataFields;
     
-                        // This is the payload from [Adobe Primetime Authentication](/help/authentication/retrieve-profilerequest.md) service.
+                        // This is the payload from [Adobe Pass Authentication](/help/authentication/retrieve-profilerequest.md) service.
                         vsaMetadataRequest.verificationToken = profileRequestPayload;
                         
                         // Submit the request for subscriber account information.
@@ -356,7 +356,7 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Implement this through the medium of Adobe Primetime Authentication [Token Exchange](/help/authentication/token-exchange.md) service.
+> **<u>Tip:</u>** Implement this through the medium of Adobe Pass Authentication [Token Exchange](/help/authentication/token-exchange.md) service.
 
 
 >[!TIP]
@@ -369,7 +369,7 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Implement this through the medium Adobe Primetime Authentication [Token Exchange](/help/authentication/token-exchange.md) successful response, which will be a *`204 No Content`*, indicating that the token was successfully created and is ready to be used for the authorization flows.
+> **<u>Tip:</u>** Implement this through the medium Adobe Pass Authentication [Token Exchange](/help/authentication/token-exchange.md) successful response, which will be a *`204 No Content`*, indicating that the token was successfully created and is ready to be used for the authorization flows.
 
 </br>
 
@@ -380,7 +380,7 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Implement this through the medium of Adobe Primetime Authentication
+> **<u>Tip:</u>** Implement this through the medium of Adobe Pass Authentication
 
 [Registration Code Request](/help/authentication/registration-code-request.md), [Initiate Authentication](/help/authentication/initiate-authentication.md) and [REST API Retrieve Authentication Token](/help/authentication/retrieve-authentication-token.md) or [Check Authentication Token](/help/authentication/check-authentication-token.md) services.
 
@@ -411,7 +411,7 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Implement this through the medium of Adobe Primetime Authentication [Initiate Authorization](/help/authentication/initiate-authorization.md) and [Obtain Short Media Token](/help/authentication/obtain-short-media-token.md) services.
+> **<u>Tip:</u>** Implement this through the medium of Adobe Pass Authentication [Initiate Authorization](/help/authentication/initiate-authorization.md) and [Obtain Short Media Token](/help/authentication/obtain-short-media-token.md) services.
 
 </br>
 
@@ -421,7 +421,7 @@ The [Video Subscriber Account](https://developer.apple.com/documentation/videosu
 
 >[!TIP]
 >
-> **<u>Tip:</u>** Implement this through the medium of Adobe Primetime Authentication [User Metadata Call](/help/authentication/user-metadata.md) and [Logout](/help/authentication/initiate-logout.md) services.
+> **<u>Tip:</u>** Implement this through the medium of Adobe Pass Authentication [User Metadata Call](/help/authentication/user-metadata.md) and [Logout](/help/authentication/initiate-logout.md) services.
 
 
 >[!TIP]
@@ -429,9 +429,9 @@ The [Video Subscriber Account](https://developer.apple.com/documentation/videosu
 > **<u>Pro Tip:</u>** Follow the steps below for the tvOS implementation/s.
  
 
-- The application would have to determine if the authentication has happened as a result of a sign-in through the platform SSO or not, using the "*tokenSource"* [user metadata](/help/authentication/user-metadata.md) from the Adobe Primetime Authentication service.
+- The application would have to determine if the authentication has happened as a result of a sign-in through the platform SSO or not, using the "*tokenSource"* [user metadata](/help/authentication/user-metadata.md) from the Adobe Pass Authentication service.
 - The application would have to instruct/prompt the user to explicitly sign out from *`Settings -> Accounts -> TV Provider`* on tvOS **only** in case the *"tokenSource"* value is equal to "*Apple".*
-- The application would have to [initiate the logout](/help/authentication/initiate-logout.md) from the Adobe Primetime Authentication service using a direct HTTP call. This would not facilitate session clean-up on the MVPD side.
+- The application would have to [initiate the logout](/help/authentication/initiate-logout.md) from the Adobe Pass Authentication service using a direct HTTP call. This would not facilitate session clean-up on the MVPD side.
 
  
 
@@ -439,9 +439,9 @@ The [Video Subscriber Account](https://developer.apple.com/documentation/videosu
 >
 > **<u>Pro Tip:</u>** Follow the steps below for the iOS/iPadOS implementation/s.
 
-- The application would have to determine if the authentication has happened as a result of a sign-in through the platform SSO or not,using the "*tokenSource"* [user metadata](/help/authentication/user-metadata.md) from the Adobe Primetime Authentication service.
+- The application would have to determine if the authentication has happened as a result of a sign-in through the platform SSO or not,using the "*tokenSource"* [user metadata](/help/authentication/user-metadata.md) from the Adobe Pass Authentication service.
 - The application would have to instruct/prompt the user to explicitly sign out from *`Settings -> TV Provider`* on iOS/iPadOS **only** in case the *"tokenSource"* value is equal to *"Apple"*.
-- The application would have to [initiate the logout](/help/authentication/initiate-logout.md) from the Adobe Primetime Authentication service using a [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview) or a [SFSafariViewController](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) component. This would facilitate session clean-up on the MVPD side.
+- The application would have to [initiate the logout](/help/authentication/initiate-logout.md) from the Adobe Pass Authentication service using a [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview) or a [SFSafariViewController](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) component. This would facilitate session clean-up on the MVPD side.
 
 <!--
 

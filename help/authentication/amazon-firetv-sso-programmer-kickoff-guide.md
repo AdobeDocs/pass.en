@@ -13,7 +13,7 @@ exl-id: cf9ba614-57ad-46c3-b154-34204b38742d
 
 ## Introduction {#intro}
 
-This document describes the information needed to integrate the new **Adobe Primetime authentication's fireTV SDK** in your fireTV application. This new SDK takes advantage of OS level integration on Amazon's fireTV platform thus offering **Single Sign On** support. To benefit from Single Sign On there is a little effort required from your side in order to migrate your application from Clientless API to the new fireTV SDK. There are some changes in the authentication flows that will be detailed below.
+This document describes the information needed to integrate the new **Adobe Pass authentication's fireTV SDK** in your fireTV application. This new SDK takes advantage of OS level integration on Amazon's fireTV platform thus offering **Single Sign On** support. To benefit from Single Sign On there is a little effort required from your side in order to migrate your application from Clientless API to the new fireTV SDK. There are some changes in the authentication flows that will be detailed below.
 
 ## High level architecture and OS level integration {#high}
 
@@ -49,12 +49,12 @@ Compared with existing Android SDK, on fireTV SDK the authentication process wil
 
 1.  How will the **SSO** work?
     
-      * SSO will work across all Programmer applications powered by Adobe Primetime authentication that are using the new fireTV SDK on the same Amazon fireTV device
+      * SSO will work across all Programmer applications powered by Adobe Pass authentication that are using the new fireTV SDK on the same Amazon fireTV device
       * SSO between Programmer apps implemented on Clientless REST API and apps implemented on fireTV SDK **will NOT be supported**
 
 1.  What is the MVPD coverage of fireTV SSO?
     
-      * **All MVPDs** integrated by Adobe Primetime authentication will be technically SSO supported on fireTV SDK.
+      * **All MVPDs** integrated by Adobe Pass authentication will be technically SSO supported on fireTV SDK.
 
 1.  Besides using the new SDK, what other **workflow changes** should Programmers be aware of?
     
@@ -75,4 +75,4 @@ Compared with existing Android SDK, on fireTV SDK the authentication process wil
 
 1.  Will other Adobe functionality work as before?
     
-      * All Primetime authentication functionality will work on fireTV as on Android devices.
+      * All Adobe Pass authentication functionality will work on fireTV as on Android devices.

@@ -86,7 +86,7 @@ The structure of the data parameter, values vary between types:
 
 ## Available Metadata {#available_metadata}
 
-The following table lays out the current state of user metadata in the Adobe Primetime authentication eco-system:
+The following table lays out the current state of user metadata in the Adobe Pass authentication eco-system:
 
   
 |     | **Legal**<br><br>**Agreement**<br><br>**Signed (zip only)** | **User ID**<br><br>**on AuthN** | **Zipcode**<br><br>**on AuthN/Z** | **Rating**<br><br>**on AuthN/Z** | **Household**<br><br>**ID on AuthN/Z** | **Channel ID on AuthN** | **Head of Household on AuthN** | **Type ID on AuthN** | **Primary OID on AuthN** | Language | Upstream UserID **on AuthN** | HBA Status | OnNet | inHome | Allow Mirroring on AuthZ | **Notes** |
@@ -117,7 +117,7 @@ The following table lays out the current state of user metadata in the Adobe Pri
 | **All Other**<br><br>**MVPDs** | **No** | **Yes** | **No** | **No** | **No** | **No** | **No** | **No** | **No** | **No** | **Yes** | **No** | **No** | **No** | **No** | **No legal agreement yet, sensitive metadata not available for Production.**  <br>For all MVPDs, the User ID is available with no extra work. |
 
 
-The list of user metadata types will be expanded as new types are made available and added into the Adobe Primetime authentication system.
+The list of user metadata types will be expanded as new types are made available and added into the Adobe Pass authentication system.
 
 ## Code Samples {#code_samples}
 

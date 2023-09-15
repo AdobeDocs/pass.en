@@ -55,7 +55,7 @@ exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
 
 1. Do we need to work with internal technology groups and distribution partners to implement measures like smart CM (Concurrency Monitoring)?
 
-   **Answer.** Not necessarily. Adobe Primetime Support can work to create your own CM rules based on your AIQ data.
+   **Answer.** Not necessarily. Adobe Pass Support can work to create your own CM rules based on your AIQ data.
 
 1. Can I see how segments trend over time?
 

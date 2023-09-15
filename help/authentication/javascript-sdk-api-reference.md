@@ -55,7 +55,7 @@ These functions initiate requests for interaction with an MVPD. All calls are as
 
 ```
 
-- The Programmer can override the MVPD settings that are configured in Adobe Primetime authentication, by specifying if an iFrame is required or not for login (*iFrameRequired* key) and the iFrame dimensions (*iFrameWidth* and *iFrameHeight* keys). The JSON object has the following template:
+- The Programmer can override the MVPD settings that are configured in Adobe Pass authentication, by specifying if an iFrame is required or not for login (*iFrameRequired* key) and the iFrame dimensions (*iFrameWidth* and *iFrameHeight* keys). The JSON object has the following template:
 
 ```JSON
     {  
@@ -441,7 +441,7 @@ You must implement these callbacks to handle the responses to your asynchronous 
 >
 >The device type and operating system are derived through the use of a public Java library (<http://java.net/projects/user-agent-utils>) and the user agent string. Be advised that this information is provided only as a coarse way to break down operational metrics into device categories, but that Adobe can take no responsibility for incorrect results. Please use the new functionality accordingly.
 
-**Description:** Implement this callback to receive tracking data when specific events occur. You can use this, for example, to keep track of how many users have logged in with the same credentials. Tracking is not currently configurable. With Adobe Primetime authentication 1.6, `sendTrackingData()` also reports information on the device, the Access Enabler client, and the operating system type. The `sendTrackingData()` callback remains backwards compatible.  
+**Description:** Implement this callback to receive tracking data when specific events occur. You can use this, for example, to keep track of how many users have logged in with the same credentials. Tracking is not currently configurable. With Adobe Pass authentication 1.6, `sendTrackingData()` also reports information on the device, the Access Enabler client, and the operating system type. The `sendTrackingData()` callback remains backwards compatible.  
  
 - Possible values for device type:
     - computer
@@ -516,13 +516,13 @@ Data is specific to each event type:
 
 >[!IMPORTANT]
 >
->This callback function is part of the older, original Primetime authentication error reporting system. It is retained for backwards compatibility, but it is not necessary touse this function at all if you have implemented your own callbacks using the current, Advanced Error Reporting system. The newer error reporting system provides more detailed information about why an authorization (or other operation) failed, along with suggested courses of action for each type of error or warning.
+>This callback function is part of the older, original Adobe Pass authentication error reporting system. It is retained for backwards compatibility, but it is not necessary touse this function at all if you have implemented your own callbacks using the current, Advanced Error Reporting system. The newer error reporting system provides more detailed information about why an authorization (or other operation) failed, along with suggested courses of action for each type of error or warning.
 
 **Parameters:**
 
 - *inRequestedResourceID* - A string providing the Resource ID that was used on the authorization request.
-- *inRequestErrorCode* - A string that displays the Adobe Primetime authentication error code, indicating the reason for the failure; possible values are "User Not Authenticated Error" and "User Not Authorized Error"; for more details, see "Callback error codes" below.
-- *inRequestDetailedErrorMessage* - An additional descriptive string suitable for display. If this descriptive string is not available for any reason, Adobe Primetime authentication sends an empty string **("")**.  This can be used by an MVPD to pass custom error messages or sales-related messages. For example, if a subscriber is denied authorization for a resource, the MVPD could reply with an `*inRequestDetailedErrorMessage*` such as: **"You currently do nothave access to this channel in your package. If you would like to upgrade your package click \*here\*."** The message is passed by Adobe Primetime authentication through this callback to the Programmer's site. The Programmer then has the option to display or ignore it. Adobe Primetime authentication can also use `*inRequestDetailedErrorMessage*` to notify the Programmer of the condition that might have led to an error. For example, **"A network error occurred when communicating with the provider's authorization service".**
+- *inRequestErrorCode* - A string that displays the Adobe Pass authentication error code, indicating the reason for the failure; possible values are "User Not Authenticated Error" and "User Not Authorized Error"; for more details, see "Callback error codes" below.
+- *inRequestDetailedErrorMessage* - An additional descriptive string suitable for display. If this descriptive string is not available for any reason, Adobe Pass authentication sends an empty string **("")**.  This can be used by an MVPD to pass custom error messages or sales-related messages. For example, if a subscriber is denied authorization for a resource, the MVPD could reply with an `*inRequestDetailedErrorMessage*` such as: **"You currently do nothave access to this channel in your package. If you would like to upgrade your package click \*here\*."** The message is passed by Adobe Pass authentication through this callback to the Programmer's site. The Programmer then has the option to display or ignore it. Adobe Pass authentication can also use `*inRequestDetailedErrorMessage*` to notify the Programmer of the condition that might have led to an error. For example, **"A network error occurred when communicating with the provider's authorization service".**
 
  
 
@@ -645,7 +645,7 @@ For example:
 * **JavaScript Code Samples**
 * [Error Reporting](/help/authentication/error-reporting.md)
 * [Understanding Tokens](#understanding_tokens)
-* **Tracking Data in Adobe Primetime authentication**
+* **Tracking Data in Adobe Pass authentication**
 -->
 
 [Back To Top](#top)

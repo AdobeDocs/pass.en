@@ -34,7 +34,7 @@ The AccessEnabler exposes an API / callback function pair to implement preflight
 
 Call this function on the AccessEnabler object to request authorization status for a list of resources.
 
-The resources parameter is the list of resources for which the authorization should be checked. Each element in the list should be a string representing the resource ID. The resource ID is subject to the same limitations as the resource ID in the `getAuthorization()` call, that is, it is agreed upon value established between the Programmer and the MVPD, or a media RSS fragment. Note that Adobe Primetime authentication does not manage resources in any way, except for a thin mediation layer that can transform resource formats depending on what the MVPD actually supports.
+The resources parameter is the list of resources for which the authorization should be checked. Each element in the list should be a string representing the resource ID. The resource ID is subject to the same limitations as the resource ID in the `getAuthorization()` call, that is, it is agreed upon value established between the Programmer and the MVPD, or a media RSS fragment. Note that Adobe Pass authentication does not manage resources in any way, except for a thin mediation layer that can transform resource formats depending on what the MVPD actually supports.
 
 ### preauthorizedResources(Array:authorizedResources) {#preauthRes}
 
@@ -66,16 +66,16 @@ The API call tries to find a cached list of authorized resources for the current
 
 The caching mechanism improves performance times on subsequent calls by skipping the network call altogether. Also, the cached list can be populated in advance as part of the authentication process.  (For information on setting up this scenario, see [Preflight Authorization Integration](/help/authentication/authz-usecase.md#preflight_authz_int) in the Authorization section of the MVPD Integration Guide).
 
-In addition, the cached list of resources can potentially be used to optimize the authorization flow, in the sense that if a cached list of resources exists, `checkAuthorization()` can check it before doing a network call. If the resource is not in the list of preauthorized resources, the check can fail without needing to call the Primetime authentication servers.
+In addition, the cached list of resources can potentially be used to optimize the authorization flow, in the sense that if a cached list of resources exists, `checkAuthorization()` can check it before doing a network call. If the resource is not in the list of preauthorized resources, the check can fail without needing to call the Adobe Pass authentication servers.
 
 
 ### Preflight Using ChannelID {#preflight_using_channelID}
 
-Beginning with the Primetime authentication 2.4.1 Release, the Preflight flow works as follows:
+Beginning with the Adobe Pass authentication 2.4.1 Release, the Preflight flow works as follows:
 
-1.  During authentication, Primetime authentication reads the `channelIID` element from the MVPD's SAML response, and uses this value to set the `authorizedResources` element in the authentication token.
-1.  Inside the `checkPreauthorizedResources()` API function, Primetime authentication checks if the `authorizedResources` element is set.
-1.  If the `authorizedResources` element is set, Primetime authentication reads that value and performs an intersect between the resource list from the `authorizedResources` element and the list of resources received from `checkPreauthorizedResources()` parameter.  The result of this intersection is the final list of preauthorized resources.
+1.  During authentication, Adobe Pass authentication reads the `channelIID` element from the MVPD's SAML response, and uses this value to set the `authorizedResources` element in the authentication token.
+1.  Inside the `checkPreauthorizedResources()` API function, Adobe Pass authentication checks if the `authorizedResources` element is set.
+1.  If the `authorizedResources` element is set, Adobe Pass authentication reads that value and performs an intersect between the resource list from the `authorizedResources` element and the list of resources received from `checkPreauthorizedResources()` parameter.  The result of this intersection is the final list of preauthorized resources.
 1.  If the `authorizedResources` element is not set, execute the previously-implemented flow, in which the list of resources received from `checkPreauthorizedResources()` parameter is passed to the PreAuthorizationServlet. This servlet performs the authorization calls to the MVPD endpoints and returns the list of preauthorized resources.
 
 ### Example of Preflight With ChannelID
@@ -188,7 +188,7 @@ A list of preauthorized resources that the AccessEnabler gets from the Service P
 - Is stored along with the AuthN and the AuthZ tokens
 - Is valid as long as the user is on the same website, or until the
   AuthN token expires
-- Is re-retrieved each time the user lands on a new Primetime
+- Is re-retrieved each time the user lands on a new Adobe Pass
   authentication integrated website
 
 Each entry contains the resource ID that user is preauthorized for.

@@ -8,20 +8,20 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
 
 # Adobe Pass Authentication Help {#authentication}
 
-+   [Pass Authentication overview](home.md)
-+   Pass Authentication concepts {#authentication-concepts}
++ [Adobe Pass Authentication overview](home.md)
++ Adobe Pass Authentication concepts {#authentication-concepts}
     + [Technical paper](technical-paper.md)
     + [Overview for programmers](programmer-overview.md)
     + [MVPD overview](mvpd-overview.md)
-+   Kickstart guides {#kickstart-guides}
++ Kickstart guides {#kickstart-guides}
     + [Programmer kickstart guide](programmer-kickstart-guide.md)
     + [MVPD kickstart guide](mvpd-kickstart-guide.md)
-+   Programmer integration guide {#programmer-integration-guide}
-    +   [Programmer integration guide overview](programmer-integration-guide-overview.md)
-    +   [The programmer entitlement flow](entitlement-flow.md)
-    +   [Programmer use cases](programmer-use-cases.md)
-    +   [Passing client information (device, connection, and application)](passing-client-information-device-connection-and-application.md)
-    +   REST API {#restapi}
++ Programmer integration guide {#programmer-integration-guide}
+    + [Programmer integration guide overview](programmer-integration-guide-overview.md)
+    + [The programmer entitlement flow](entitlement-flow.md)
+    + [Programmer use cases](programmer-use-cases.md)
+    + [Passing client information (device, connection, and application)](passing-client-information-device-connection-and-application.md)
+    + REST API {#restapi}
         + [REST API Overview](rest-api-overview.md)
         + [REST API Cookbook (Server-to-Server)](rest-api-cookbook-servertoserver.md)
         + [REST API Cookbook (Client-to-Server)](rest-api-cookbook-clienttoserver.md)
@@ -107,10 +107,10 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
   + [Proxy MVPD SAML integration](proxy-mvpd-saml-int.md)
   + [Service provider scoping](serv-provider-scoping.md)
   + [MVPD allow IP addresses](mvpd-listing-ip-addres.md)
-+ Primetime Authentication features {#auth-features}
++ Adobe Pass Authentication features {#auth-features}
   + Adobe Analytics integration {#analytics-int}
-    + [Integrating Primetime authentication server side data into Adobe Analytics](integrate-authn-servr-data-analytics.md)
-    + [Using Experience Cloud ID in Primetime Authentication](exp-cloud-id-authn.md)
+    + [Integrating Adobe Pass authentication server side data into Adobe Analytics](integrate-authn-servr-data-analytics.md)
+    + [Using Experience Cloud ID in Adobe Pass Authentication](exp-cloud-id-authn.md)
   + Entitlement service monitoring {#entitlement-service-monitoring}
     + [Entitlement service monitoring overview](entitlement-service-monitoring-overview.md)
     + [Entitlement service monitoring API](entitlement-service-monitoring-api.md)
@@ -144,32 +144,32 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
   + [Prevent MVPDs from appearing the selection dialog](prevent-mvpd-selectn-dialog.md)
 + Support {#support}
   + [Escalation Procedures](escalation-procedures.md)
-  + [Monitoring Primetime Adobe PayTV Pass](monitoring-adobe-pay-tv-pass.md)
+  + [Monitoring Adobe Pass Adobe PayTV Pass](monitoring-adobe-pay-tv-pass.md)
   + [Minimum System Requirements](minimum-system-requirements.md)
 + Release notes {#release-notes}
   + [Adobe Pass Authentication 2.67 release notes](auth-rn-267.md)
   + [Adobe Pass Authentication 2.66 release notes](auth-rn-266.md)
   + [Adobe Pass Authentication 2.65.1 release notes](auth-rn-2651.md)
-  + [Primetime Authentication 2.65 release notes](auth-rn-265.md)
-  + [Primetime Authentication 2.64.1 release notes](auth-rn-2641.md)
-  + [Primetime Authentication 2.64 release notes](auth-rn-264.md)
-  + [Primetime Authentication 2.63 release notes](auth-rn-263.md)
-  + [Primetime Authentication 2.62.1 release notes](auth-rn-2621.md)
-  + [Primetime Authentication iOS / tvOS 3.7.0 Release Notes](authn-rn-ios-tvos-370.md)
-  + [Primetime Authentication iOS / tvOS 3.8.1 Release Notes](authn-rn-ios-tvos-381.md)
+  + [Adobe Pass Authentication 2.65 release notes](auth-rn-265.md)
+  + [Adobe Pass Authentication 2.64.1 release notes](auth-rn-2641.md)
+  + [Adobe Pass Authentication 2.64 release notes](auth-rn-264.md)
+  + [Adobe Pass Authentication 2.63 release notes](auth-rn-263.md)
+  + [Adobe Pass Authentication 2.62.1 release notes](auth-rn-2621.md)
+  + [Adobe Pass Authentication iOS / tvOS 3.7.0 Release Notes](authn-rn-ios-tvos-370.md)
+  + [Adobe Pass Authentication iOS / tvOS 3.8.1 Release Notes](authn-rn-ios-tvos-381.md)
 + Tech Notes {#tech-notes}
-  + Primetime Authentication SDKs {#primetime-authentication-sdks}
+  + Adobe Pass Authentication SDKs {#primetime-authentication-sdks}
     + [Certificates Q&A](certificates-qa.md)
     + JavaScript SDK {#javascript}
       + [JS SDK limitations for Safari browser](js-sdk-limitations-for-safari-browser.md)
       + [Cookies Updates - SameSite and Secure flags](cookies-updates--samesite-and-secure-flags.md)
     + Android SDK {#android}
       + [Access Enabler Android SDK Single Sign-On (SSO) on Android 10 apps](access-enabler-android-sdk-single-signon-sso-on-android-10-devices.md)
-      + [Adobe Primetime Authentication and the Android 6 "Marshmallow" New Permissions Model](adobe-primetime-authentication-and-the-android-6-marshmallow-new-permissions-model.md)
+      + [Adobe Pass Authentication and the Android 6 "Marshmallow" New Permissions Model](adobe-primetime-authentication-and-the-android-6-marshmallow-new-permissions-model.md)
     + iOS/tvOS SDK {#iostvos}
       + [WKWebView support on iOS SDK 3.1+](wkwebview-support-on-ios-sdk-31.md)
       + [SFSafariViewController support on iOS SDK 3.2+](sfsafariviewcontroller-support-on-ios-sdk-32.md)
-      + [SSO on iOS when using the Primetime authentication Access Enabler](sso-on-ios-when-using-the-primetime-authentication-access-enabler.md)
+      + [SSO on iOS when using the Adobe Pass authentication Access Enabler](sso-on-ios-when-using-the-primetime-authentication-access-enabler.md)
       + [iOS Authentication Error - adobepass.ios.app Cannot Be Found](ios-authentication-error-adobepassiosapp-cannot-be-found.md)
       + [Reset Temp Pass on iOS](reset-temp-pass-on-ios.md)
       + [Debugging the AccessEnabler iOS/tvOS SDK using Console app logs](debugging-the-accessenabler-iostvos-sdk-using-console-app-logs.md)
@@ -182,7 +182,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + [Clientless API Implementation - Error codes / Messages With Probable Reason / Cause](clientless-api-implementation-error-codes--messages-with-probable-reason--cause.md)
     + [Clientless API Flow in the Absence of Device ID](clientless-api-flow-in-the-absence-of-device-id.md)
     + [Clientless: Avoid Using '&'reg_code in /authenticate Request](clientless-avoid-using-reg-code-in-authenticate-request.md)
-    + [Enabling Primetime Entitlement Services for a Programer on Xbox 360 and XboxOne Clientless](enabling-primetime-entitlement-services-for-a-programmer-on-xbox-360-and-xboxone-clientless-solution.md)
+    + [Enabling Adobe Pass Entitlement Services for a Programer on Xbox 360 and XboxOne Clientless](enabling-primetime-entitlement-services-for-a-programmer-on-xbox-360-and-xboxone-clientless-solution.md)
     + [Clientless device type and metrics](benefits-of-using-the-clientless-devicetype-parameter-in-pass-metrics.md)
   + User experience {#user-exp}
     + [How to migrate the MVPD login page from iFrame to popup](migr-mvpd-login-iframe-popup.md)

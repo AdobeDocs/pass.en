@@ -12,7 +12,7 @@ description: Concurrency Monitoring escalation procedures
 
 ## Introduction {#cm-escalation-intro}
 
-This document describes the support procedures for major incidents (**SEVERITY 1** level) affecting Adobe Primetime authentication, Primetime Concurrency Monitoring and its partners.
+This document describes the support procedures for major incidents (**SEVERITY 1** level) affecting Adobe Pass authentication, Adobe Pass Concurrency Monitoring and its partners.
  
 ## Definition of Escalation Severity 1 Level {#defn-escl-sevrityone-level}
 
@@ -40,7 +40,7 @@ A **SEVERITY 1** level incident is a **LIVE** situation, **happening in the prod
 
 ## Severity 1 Escalation Flows {#sevone-escalation-flows}
 
-Severity 1 incidents may be initiated by either Adobe or an Adobe Primetime authentication partner. The steps for each are presented below.
+Severity 1 incidents may be initiated by either Adobe or an Adobe Pass authentication partner. The steps for each are presented below.
 
 ### Partner-initiated Flow {#partner-initiated-flow}
 
@@ -64,7 +64,7 @@ Severity 1 incidents may be initiated by either Adobe or an Adobe Primetime auth
  
 ### Adobe initiated flow {#adobe-initiated-flow}
 
-**...for an Adobe Primetime authentication issue**
+**...for an Adobe Pass authentication issue**
     
 1. Adobe identifies an internal issue and opens a ticket with our tracking system. 
 

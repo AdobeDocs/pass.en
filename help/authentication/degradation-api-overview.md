@@ -24,8 +24,8 @@ A degradation rule is applied only for a fixed period of time. Although the prim
 Degradation Notes:
 
 * This feature is designed to be used together with the usage monitoring API, which provides realtime information about the number of authentications and authorizations per MVPD, average authorization latency, and other metrics needed for a complete service overview.
-* This feature does not allow bypassing of the Adobe Primetim authentication service. If Primetime authentication is down there is no mechanism within the service that can be used to allow users to see content. The sites or apps could, however, route around Primetime authentication by themselves.
-* Adobe will not currently trigger degradation directly-the decision must always reside with a specific Programmer that has agreed to such conditions with MVPDs. In the future, Primetime authentication might be proactive in triggering degradation rules if agreements (SLA protection) can be reached with MVPDs.
+* This feature does not allow bypassing of the Adobe Primetim authentication service. If Adobe Pass authentication is down there is no mechanism within the service that can be used to allow users to see content. The sites or apps could, however, route around Adobe Pass authentication by themselves.
+* Adobe will not currently trigger degradation directly-the decision must always reside with a specific Programmer that has agreed to such conditions with MVPDs. In the future, Adobe Pass authentication might be proactive in triggering degradation rules if agreements (SLA protection) can be reached with MVPDs.
 
 <!--
 ## Related Information {#related}

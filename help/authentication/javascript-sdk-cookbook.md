@@ -11,7 +11,7 @@ exl-id: d57f7a4a-ac77-4f3c-8008-0cccf8839f7c
 
 ## Introduction {#intro}
 
-This document describes the entitlement workflows that a Programmer's upper-level application implements for a JavaScript integration with Adobe Primetime Authentication service. Links to the JavaScript API Reference are included throughout.  
+This document describes the entitlement workflows that a Programmer's upper-level application implements for a JavaScript integration with Adobe Pass Authentication service. Links to the JavaScript API Reference are included throughout.  
 
 Also note that the [Related Information](#related) section includes a
 link to a set of JavaScript code samples.
@@ -33,8 +33,8 @@ link to a set of JavaScript code samples.
 
 **Dependencies:**
 
-- Adobe Primetime authentication Library (AccessEnabler), work with your Adobe Primetime authentication Account Manager to arrange this.
-- Valid Adobe Primetime authentication requestorId, work with your Adobe Primetime authentication Account Manager to arrange this.
+- Adobe Pass authentication Library (AccessEnabler), work with your Adobe Pass authentication Account Manager to arrange this.
+- Valid Adobe Pass authentication requestorId, work with your Adobe Pass authentication Account Manager to arrange this.
 
 Create your callback functions:
 
@@ -109,13 +109,13 @@ src="https://entitlement.auth.adobe.com/entitlement/v4/AccessEnabler.js">
 
 ```  
   
-**Triggers:** When initialization is complete, Adobe Primetime
+**Triggers:** When initialization is complete, Adobe Pass
 authentication calls your `entitlementLoaded()` callback function. This is the entry point to your application's communication with the AccessEnabler. 
 
  
 **II.** Call `setRequestor()`to establish the
 identity of the Programmer; pass in the Programmer's `requestorID` and
-(optionally) an array of Adobe Primetime authentication endpoints.
+(optionally) an array of Adobe Pass authentication endpoints.
 
 **Triggers:** None, but enables `displayProviderDialog()` to be called when needed.
 
@@ -178,7 +178,7 @@ AccessEnabler library)
 
 ## Configuring the Visitor ID {#visitorID}
 
-Configuring a [Experience Cloud visitorID](https://experienceleague.adobe.com/docs/id-service/using/home.html) value is very important from the analytics point of view. Once a EC visitorID value is set, the SDK will send this information along with every network call and the Adobe Primetime Authentication service will collect this information. This way you will be able to correlate the analytics data from Adobe Primetime Authentication service with any other anayltics reports that you may have from other applications or websites. Information on how to setup EC visitorID can be found [here](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en).
+Configuring a [Experience Cloud visitorID](https://experienceleague.adobe.com/docs/id-service/using/home.html) value is very important from the analytics point of view. Once a EC visitorID value is set, the SDK will send this information along with every network call and the Adobe Pass Authentication service will collect this information. This way you will be able to correlate the analytics data from Adobe Pass Authentication service with any other anayltics reports that you may have from other applications or websites. Information on how to setup EC visitorID can be found [here](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en).
 
  
 >[!NOTE]

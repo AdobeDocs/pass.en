@@ -1,9 +1,9 @@
 ---
-title: Adobe Primetime Concurrency Monitoring 2.6.0 Release Notes
-description: Adobe Primetime Concurrency Monitoring 2.6.0 Release Notes
+title: Adobe Pass Concurrency Monitoring 2.6.0 Release Notes
+description: Adobe Pass Concurrency Monitoring 2.6.0 Release Notes
 ---
 
-# Adobe Primetime Concurrency Monitoring 2.6.0 Release Notes {#cm-260}
+# Adobe Pass Concurrency Monitoring 2.6.0 Release Notes {#cm-260}
  
 
 This page describes new features, changes, and known issues with this release:

@@ -11,15 +11,15 @@ exl-id: f932e9a1-2dbe-4e35-bd60-a4737407942d
 
 ## Introduction {#intro}
 
-This document details the methods and callbacks exposed by the Android SDK for Adobe Primetime authentication, supported with Adobe Primetime authentication versions 1.7 and later. The methods and callback functions described here are defined in the AccessEnabler.h and EntitlementDelegate.h header files.
+This document details the methods and callbacks exposed by the Android SDK for Adobe Pass authentication, supported with Adobe Pass authentication versions 1.7 and later. The methods and callback functions described here are defined in the AccessEnabler.h and EntitlementDelegate.h header files.
 
 Please refer to [https://tve.zendesk.com/hc/en-us/articles/204963219-Android-Native-AccessEnabler-Library](https://tve.zendesk.com/hc/en-us/articles/204963219-Android-Native-AccessEnabler-Library) for the latest Android AccessEnabler SDK. 
 
 
-  **Note:** The Adobe Primetime authentication team encourages you to use only Adobe Primetime authentication *public* APIs:
+  **Note:** The Adobe Pass authentication team encourages you to use only Adobe Pass authentication *public* APIs:
 
 - Public APIs are available *and fully tested* on all supported client types. For any public feature, we make sure that each client type has a corresponding version of the associated method(s).</span>
-- Public APIs are required to be as stable as possible, to support backwards compatibility and ensure that partner integrations do not break. However, for *non*-public APIs, we reserve the right to change their signature at any future point. If you encounter a particular flow that cannot be supported through a combination of the current public Adobe Primetime authentication API calls, the best approach is to let us know. Taking into account your needs, we can modify the public APIs and provide a stable solution moving forward.
+- Public APIs are required to be as stable as possible, to support backwards compatibility and ensure that partner integrations do not break. However, for *non*-public APIs, we reserve the right to change their signature at any future point. If you encounter a particular flow that cannot be supported through a combination of the current public Adobe Pass authentication API calls, the best approach is to let us know. Taking into account your needs, we can modify the public APIs and provide a stable solution moving forward.
 
 ## Android API {#api}
 
@@ -72,7 +72,7 @@ Please refer to [https://tve.zendesk.com/hc/en-us/articles/204963219-Android-Nat
 
 ### setRequestor {#setRequestor}
 
-**Description:** Establishes the identity of the Programmer. Each Programmer is assigned a unique ID upon registering with Adobe for the Adobe Primetime authentication system. When dealing with SSO and remote tokens the authentication state can change when the application is in the background, setRequestor can be called again when the application is brought into foreground in order to synchronize with the system state (fetch a remote token if SSO is enabled or delete the local token if a logout happened in the meantime).
+**Description:** Establishes the identity of the Programmer. Each Programmer is assigned a unique ID upon registering with Adobe for the Adobe Pass authentication system. When dealing with SSO and remote tokens the authentication state can change when the application is in the background, setRequestor can be called again when the application is brought into foreground in order to synchronize with the system state (fetch a remote token if SSO is enabled or delete the local token if a logout happened in the meantime).
 
 The server response contains a list of MVPDs together with some configuration information that is attached to the identity of the Programmer. The server response is used internally by the Access Enabler code. Only the status of the operation (i.e. SUCCESS/FAIL) is presented to your application via the setRequestorComplete() callback.
 
@@ -94,11 +94,11 @@ If a value is provided for the *urls* parameter, the resulting network call targ
 
 **Parameters:**
 
-- *requestorID*: The unique ID associated with the Programmer. Pass the unique ID assigned by Adobe to your site when you first registered with the Adobe Primetime authentication service.
+- *requestorID*: The unique ID associated with the Programmer. Pass the unique ID assigned by Adobe to your site when you first registered with the Adobe Pass authentication service.
 
 - *signedRequestorID*: A copy of the requestor ID that is digitally signed with your private key. <!--For more details. see [Registering Native Clients](http://tve.helpdocsonline.com/registering-native-clients)-->.
 
-- *urls*: Optional parameter; by default, the Adobe service provider is used (http://sp.auth.adobe.com/). This array allows you to specify endpoints for authentication and authorization services provided by Adobe (different instances might be used for debugging purposes). You can use this to specify multiple Adobe Primetime authentication service provider instances. When doing so, the MVPD list is composed of the endpoints from all the service providers. Each MVPD is associated with the fastest service provider; that is, the provider that responded first and that supports that MVPD.
+- *urls*: Optional parameter; by default, the Adobe service provider is used (http://sp.auth.adobe.com/). This array allows you to specify endpoints for authentication and authorization services provided by Adobe (different instances might be used for debugging purposes). You can use this to specify multiple Adobe Pass authentication service provider instances. When doing so, the MVPD list is composed of the endpoints from all the service providers. Each MVPD is associated with the fastest service provider; that is, the provider that responded first and that supports that MVPD.
 
 **Callbacks triggered:** `setRequestorComplete()`
 
@@ -491,9 +491,9 @@ The `cache` parameter specifies if cached preauthorization response can be used 
 - *resourceId*: The resource for which the authorization was obtained
 - *errorCode*: Error code associated to the failure scenario. Possible values:
     - `AccessEnablerConstants.USER_NOT_AUTHORIZED_ERROR` - The user was not able to authorize for the given resource
-- *errorDescription*: Additional details about the failure scenario. If this descriptive string is not available for any reason, Adobe Primetime authentication sends an empty string **("")**.
+- *errorDescription*: Additional details about the failure scenario. If this descriptive string is not available for any reason, Adobe Pass authentication sends an empty string **("")**.
 
-  This string can be used by an MVPD to pass custom error messages or sales-related messages. For example, if a subscriber is denied authorization for a resource, the MVPD could send a message such as: "You currently do not have access to this channel in your package. If you would like to upgrade your package click here." The message is passed by Adobe Primetime authentication through this callback to the Programmer, who has the option to display or ignore it. Adobe Primetime authentication can also use this parameter to provide notification of the condition that might have led to an error. For example, "A network error occurred when communicating with the provider's authorization service."
+  This string can be used by an MVPD to pass custom error messages or sales-related messages. For example, if a subscriber is denied authorization for a resource, the MVPD could send a message such as: "You currently do not have access to this channel in your package. If you would like to upgrade your package click here." The message is passed by Adobe Pass authentication through this callback to the Programmer, who has the option to display or ignore it. Adobe Pass authentication can also use this parameter to provide notification of the condition that might have led to an error. For example, "A network error occurred when communicating with the provider's authorization service."
 
 **Triggered by:** `checkAuthorization(), getAuthorization()`
 
@@ -501,7 +501,7 @@ The `cache` parameter specifies if cached preauthorization response can be used 
 
 ### logout {#logout}
 
-**Description:** Use this method to initiate the logout flow. The logout is the result of a series of HTTP-redirect operations due to the fact that the user needs to be logged out from both Adobe Primetime authentication servers and also from the MVPD's servers. As a result, this flow cannot be completed with a simple HTTP request issued by the Access Enabler library. A Chrome Custom Tabs is used by the SDK to execute the HTTP-redirect operations. This flow will be visible to the user and closed when complete
+**Description:** Use this method to initiate the logout flow. The logout is the result of a series of HTTP-redirect operations due to the fact that the user needs to be logged out from both Adobe Pass authentication servers and also from the MVPD's servers. As a result, this flow cannot be completed with a simple HTTP request issued by the Access Enabler library. A Chrome Custom Tabs is used by the SDK to execute the HTTP-redirect operations. This flow will be visible to the user and closed when complete
 
 | API call: initiate the logout flow |
 | --- |
@@ -599,7 +599,7 @@ There are two types of metadata available to Programmers:
 
 >[!NOTE]
 >
->The actual User Metadata available to a Programmer depends on what an MVPD makes available.  This list will be further expanded as new metadata is made available and added into the Adobe Primetime authentication system.
+>The actual User Metadata available to a Programmer depends on what an MVPD makes available.  This list will be further expanded as new metadata is made available and added into the Adobe Pass authentication system.
 
 **Callbacks triggered:** [`setMetadataStatus()`](#setMetadaStatus)
 
