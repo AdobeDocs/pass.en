@@ -1,6 +1,6 @@
 ---
 title: Harman Primetime Overview
-description: 
+description: Harman maintains Primetime advertising and publishing products, while Adobe manages Adobe Pass products for AccountIQ, Authentication, and Concurrency Monitoring.
 ---
 # Harman Primetime Documentation
 
