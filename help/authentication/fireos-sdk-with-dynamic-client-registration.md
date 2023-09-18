@@ -38,12 +38,12 @@ FireOS AccessEnabler SDK for FireTV was modified to enable Authentication withou
 
 **Notes**
 
-- invalid softwareStatement will cause the application not to initialize AccessEnabler or to register application for Adobe Pass authentication and authorization
+- invalid softwareStatement will cause the application not to initialize AccessEnabler or to register application for Adobe Pass Authentication and authorization
 - redirectUrl parameter for FireTV is set by the SDK to adobepass://android.app as authentication is handled by unique AccessEnabler instance.
 
 ### setRequestor
 
-**Description:** Establishes the identity of the Channel. Each Channel is assigned an unique ID upon registering with Adobe for the Adobe Pass authentication system. When dealing with SSO and remote tokens the authentication state can change when the application is in the background, setRequestor can be called again when the application is brought into foreground in order to synchronize with the system state (fetch a remote token if SSO is enabled or delete the local token if a logout happened in the meantime).
+**Description:** Establishes the identity of the Channel. Each Channel is assigned an unique ID upon registering with Adobe for the Adobe Pass Authentication system. When dealing with SSO and remote tokens the authentication state can change when the application is in the background, setRequestor can be called again when the application is brought into foreground in order to synchronize with the system state (fetch a remote token if SSO is enabled or delete the local token if a logout happened in the meantime).
 
 The server response contains a list of MVPDs together with some configuration information that is attached to the identity of the Channel. The server response is used internally by the Access Enabler code. Only the status of the operation (i.e. SUCCESS/FAIL) is presented to your application via the setRequestorComplete() callback.
 
@@ -65,8 +65,8 @@ If a value is provided for the *urls* parameter, the resulting network call targ
 
 **Parameters:**
 
-- *requestorID*: The unique ID associated with the Channel. Pass the unique ID assigned by Adobe to your site when you first register with the Adobe Pass authentication service.
-- *urls*: Optional parameter; by default, the Adobe service provider is used (http://sp.auth.adobe.com/). This array allows you to specify endpoints for authentication and authorization services provided by Adobe (different instances might be used for debugging purposes). You can use this to specify multiple Adobe Pass authentication service provider instances. When doing so, the MVPD list is composed of the endpoints from all the service providers. Each MVPD is associated with the fastest service provider; that is, the provider that responded first and that supports that MVPD.
+- *requestorID*: The unique ID associated with the Channel. Pass the unique ID assigned by Adobe to your site when you first register with the Adobe Pass Authentication service.
+- *urls*: Optional parameter; by default, the Adobe service provider is used (http://sp.auth.adobe.com/). This array allows you to specify endpoints for authentication and authorization services provided by Adobe (different instances might be used for debugging purposes). You can use this to specify multiple Adobe Pass Authentication service provider instances. When doing so, the MVPD list is composed of the endpoints from all the service providers. Each MVPD is associated with the fastest service provider; that is, the provider that responded first and that supports that MVPD.
 
 Deprecated:
 
@@ -78,7 +78,7 @@ Deprecated:
 
 ### logout
 
-**Description:** Use this method to initiate the logout flow. The logout is the result of a series of HTTP-redirect operations due to the fact that the user needs to be logged out from both Adobe Pass authentication servers and also from the MVPD's servers. As a result, this flow will open a ChromeCustomTab window to execute logout.
+**Description:** Use this method to initiate the logout flow. The logout is the result of a series of HTTP-redirect operations due to the fact that the user needs to be logged out from both Adobe Pass Authentication servers and also from the MVPD's servers. As a result, this flow will open a ChromeCustomTab window to execute logout.
 
 | API call: initiate the logout flow |
 | --- |

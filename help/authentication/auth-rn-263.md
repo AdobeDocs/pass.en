@@ -1,6 +1,6 @@
 ---
-title: Adobe Pass authentication 2.63 Release Notes
-description: Adobe Pass authentication 2.63 Release Notes
+title: Adobe Pass Authentication 2.63 Release Notes
+description: Adobe Pass Authentication 2.63 Release Notes
 exl-id: 40987328-6d41-4948-aa4a-bab31f98a18a
 ---
 # Adobe Pass Authentication 2.63 Release Notes {#pt-authn-263-rn}
@@ -18,7 +18,7 @@ This page describes new features, changes, and known issues with this release:
 
 ### Build Number {#build-number-263}
 
-Adobe Pass authentication: adobe-pass-**2.63**
+Adobe Pass Authentication: adobe-pass-**2.63**
 Release Date: **09/20/2022 - 09/22/2022** 
 
 ### New Features {#new-features-263}

@@ -13,23 +13,23 @@ exl-id: b1c8623a-55da-4b7b-9827-73a9fe90ebac
 
 This document describes the basic entitlement flow from the Programmer's perspective.  For information on features and use cases beyond the basic TVE integration covered here, see [Programmer use cases](/help/authentication/programmer-use-cases.md).   
 
-Adobe Pass authentication mediates the entitlement flow between Programmers and MVPDs by providing secure, consistent interfaces for both parties.  On the Programmer's side, Adobe Pass authentication provides two general types of entitlement interface:
+Adobe Pass Authentication mediates the entitlement flow between Programmers and MVPDs by providing secure, consistent interfaces for both parties.  On the Programmer's side, Adobe Pass Authentication provides two general types of entitlement interface:
 
 1. AccessEnabler - A client component that provides a library of APIs for apps on devices that can render web pages (e.g., web apps, smartphone / tablet apps).  
 2. Clientless API - RESTful web services for devices that cannot render web pages (e.g., set-top boxes, game consoles, smart TVs). The requirement for rendering web pages comes from the MVPD's requirement that users authenticate on the MVPD's website.
 
 In addition to the platform-neutral overview presented here, there is a Clientless API-specific overview here: Clientless API documentation. The AccessEnabler runs natively on supported platforms (AS / JS on Web, Objective-C on iOS, and Java on Android). The AccessEnabler APIs are consistent across the supported platforms. All of the platforms that do not support AccessEnabler use the same Clientless API.
 
-For both types of interface, Adobe Pass authentication securely mediates the entitlement flow between the Programmer's app and the user's MVPD:
+For both types of interface, Adobe Pass Authentication securely mediates the entitlement flow between the Programmer's app and the user's MVPD:
 
 ![](assets/prog-entitlement-flow.png)
 
 
-*Figure: Adobe Pass authentication Ecosystem*
+*Figure: Adobe Pass Authentication Ecosystem*
 
 >[!IMPORTANT]
 >
->Note in the diagram above that there is one part of the entitlement flow that does not go through Adobe Pass authentication servers: the MVPD login. Users must log on to their MVPD's login page. Because of this requirement, on devices that cannot render web pages, the Programmer's app must direct users to switch to a web-capable device to log in with their MVPD, after which they return to the original device for the remainder of the entitlement flow.
+>Note in the diagram above that there is one part of the entitlement flow that does not go through Adobe Pass Authentication servers: the MVPD login. Users must log on to their MVPD's login page. Because of this requirement, on devices that cannot render web pages, the Programmer's app must direct users to switch to a web-capable device to log in with their MVPD, after which they return to the original device for the remainder of the entitlement flow.
 
 ## Entitlement Flow {#entitlement-flow}
 
@@ -49,7 +49,7 @@ Establishes the identity of the Programmer and the device, performs initializati
 
 **AccessEnabler**
 
-*   **`setRequestor()`** - Establishes your identify with the AccessEnalber, and by extension, the Adobe Pass authentication servers. This call is a precursor to the rest of the entitlement flow. For example, in JavaScript:
+*   **`setRequestor()`** - Establishes your identify with the AccessEnalber, and by extension, the Adobe Pass Authentication servers. This call is a precursor to the rest of the entitlement flow. For example, in JavaScript:
 
     ```JavaScript
       /* Define the requestor ID (Programmer/aggregator ID). */
@@ -75,13 +75,13 @@ Successful authentication generates an AuthN token tied to the device and reques
 **AccessEnabler**
 
 * `checkAuthentication()` - Checks if a valid cached authentication token exists in the local token cache, without actually triggering the full authentication flow. This triggers the `setAuthenticationStatus()` callback function.
-* `getAuthentication()` - Initiates the full authentication flow. If successful, Adobe Pass authentication generates an AuthN token, and caches it on the client. The user logs in on their selected MVPDs site, presented either in an iFrame, Popup window, or a webview, depending upon the platform. This triggers the displayProviderDialog().
+* `getAuthentication()` - Initiates the full authentication flow. If successful, Adobe Pass Authentication generates an AuthN token, and caches it on the client. The user logs in on their selected MVPDs site, presented either in an iFrame, Popup window, or a webview, depending upon the platform. This triggers the displayProviderDialog().
 
 **Clientless API**
 
 * `<FQDN>/.../checkauthn` - The web service version of `checkAuthentication()` above.
 * `<FQDN>/.../config` - Returns the list of MVPDs to the 2nd-screen app.
-* `<FQDN>/.../authenticate` - Initiates the authentication flow from the 2nd-screen app, redirecting users to their selected MVPD for login. If successful, Adobe Pass authentication generates an AuthN token and stores it on the server, and the user returns to their original device to complete the entitlement flow.
+* `<FQDN>/.../authenticate` - Initiates the authentication flow from the 2nd-screen app, redirecting users to their selected MVPD for login. If successful, Adobe Pass Authentication generates an AuthN token and stores it on the server, and the user returns to their original device to complete the entitlement flow.
 
 An AuthN token is considered valid if the following two points are true:
 
@@ -100,7 +100,7 @@ An AuthN token is considered valid if the following two points are true:
 
 1.  When the AccessEnabler is informed of the user's MVPD selection, a network call is made to the backend server, and the user is redirected to the MVPD login page.
 
-1.  Within the authentication workflow, the AccessEnabler communicates with Adobe Pass authentication and the selected MVPD to solicit the user's credentials (user ID and password) and to verify their identity. While some MVPDs redirect to their own site for the login, others require you to display their login page within an iFrame. Your page must include the callback that creates an iFrame, in case the customer chooses one of those MVPDs.<!-- For more information on creating a login iFrame, see  [Managing the Login IFrame](https://tve.helpdocsonline.com/managing-the-login-iframe)-->.
+1.  Within the authentication workflow, the AccessEnabler communicates with Adobe Pass Authentication and the selected MVPD to solicit the user's credentials (user ID and password) and to verify their identity. While some MVPDs redirect to their own site for the login, others require you to display their login page within an iFrame. Your page must include the callback that creates an iFrame, in case the customer chooses one of those MVPDs.<!-- For more information on creating a login iFrame, see  [Managing the Login IFrame](https://tve.helpdocsonline.com/managing-the-login-iframe)-->.
 
 1.  Once the user has successfully logged in, the AccessEnabler retrieves the authentication token and informs your app that the authentication flow is complete. The AccessEnabler calls the `setAuthenticationStatus()` callback with a status code of 1, indicating success. If there is an error during the execution of these steps, the `setAuthenticationStatus()` callback is triggered with a status code of 0, indicating authentication failure, as well as a corresponding error code.
 
@@ -123,7 +123,7 @@ Your app initiates authorization when a user requests access to a protected reso
 You provide the following callback functions to handle the results of
 the authorization call:
 
-*   `setToken()` - If authentication was previously successful and authorization succeeds, the AccessEnabler calls your `setToken()` callback function, passing the short-lived media token, indicating a successful conclusion to the Adobe Pass authentication entitlement flow. (Before allowing the user to view protected content, the Programmer's app checks the validity of the Media Token using the Media Token Verifier.
+*   `setToken()` - If authentication was previously successful and authorization succeeds, the AccessEnabler calls your `setToken()` callback function, passing the short-lived media token, indicating a successful conclusion to the Adobe Pass Authentication entitlement flow. (Before allowing the user to view protected content, the Programmer's app checks the validity of the Media Token using the Media Token Verifier.
 
 *   `tokenRequestFailed()` - If the user is not authorized for the requested resource (or if the query fails for any other reason), the AccessEnabler calls this callback function (plus your own error reporting functions), passing details on the failure.
 

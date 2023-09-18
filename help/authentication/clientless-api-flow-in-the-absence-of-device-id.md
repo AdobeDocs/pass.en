@@ -27,7 +27,7 @@ For clients with no Device ID:
 1.  Display the registration code obtained in Step 3 on the console UI
 
 
-After these steps are done, Adobe Pass authentication will use the UUID as the Device ID. Store this Device ID (UUID) in the local storage of the device. In the event that the user generates a new registration code, you should again run steps 1 through 4, and then replace the previously stored Device ID (UUID) with the new one.
+After these steps are done, Adobe Pass Authentication will use the UUID as the Device ID. Store this Device ID (UUID) in the local storage of the device. In the event that the user generates a new registration code, you should again run steps 1 through 4, and then replace the previously stored Device ID (UUID) with the new one.
 
 
 

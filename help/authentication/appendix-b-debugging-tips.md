@@ -12,7 +12,7 @@ exl-id: ea024797-315e-47c0-99ea-1ac49c8c9697
 
 ## Clearing Temporary Data {#clearing-temporary-data}
 
-Adobe Pass authentication stores temporary data such as browser cache, LSOs cache and cookies. Clearing temporary data is important, to ensure that you get a clean slate when testing.
+Adobe Pass Authentication stores temporary data such as browser cache, LSOs cache and cookies. Clearing temporary data is important, to ensure that you get a clean slate when testing.
 
 - [Clearing the Browser Cache and Cookies](#clearing-the-browser-cache-and-cookies)
 - [Clearing LSOs Cache](#clearing-lsos-cache)  
@@ -32,7 +32,7 @@ Select the ```entitlement.\*``` (depending on what it is tested) and click "Dele
 
 ## Debugging Tools {#tools}
 
-Adobe Pass authentication engineers use the following debugging tools:
+Adobe Pass Authentication engineers use the following debugging tools:
 
 - Firebug - <http://www.getfirebug.com/>
 - Flashbug (works with the debug version of the flash player)

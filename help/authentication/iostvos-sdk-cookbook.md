@@ -13,7 +13,7 @@ exl-id: 4743521e-d323-4d1d-ad24-773127cfbe42
 
 This document describes the entitlement workflows that a Programmer's upper-level application can implement through the APIs exposed by the iOS/tvOS AccessEnabler library.
 
-The Adobe Pass authentication entitlement solution for iOS/tvOS is ultimately divided into two domains:
+The Adobe Pass Authentication entitlement solution for iOS/tvOS is ultimately divided into two domains:
 
 *   The UI domain - this is the upper-level application layer which implements the UI and uses the services provided by the AccessEnabler library to provide access to restricted content.
 
@@ -115,14 +115,14 @@ is authorized to view.
 ### B. Startup Flow {#startup_flow}
 
 1.  Start the upper-level application.</br>
-1.  Initiate Adobe Pass authentication </br>
+1.  Initiate Adobe Pass Authentication </br>
 
-    a.  Call [`init`](#$init) to create a single instance of the Adobe Pass authentication AccessEnabler.
-    * **Dependency:** Adobe Pass authentication Native iOS/tvOS Library (AccessEnabler)
+    a.  Call [`init`](#$init) to create a single instance of the Adobe Pass Authentication AccessEnabler.
+    * **Dependency:** Adobe Pass Authentication Native iOS/tvOS Library (AccessEnabler)
     
-    b.  Call `setRequestor()` to establish the identity of the Programmer; pass in the Programmer's `requestorID` and(optionally) an array of Adobe Pass authentication endpoints. For tvOS you will also need to provide the public key and the secret. See [Clientless documentation](#create_dev) for details.
+    b.  Call `setRequestor()` to establish the identity of the Programmer; pass in the Programmer's `requestorID` and(optionally) an array of Adobe Pass Authentication endpoints. For tvOS you will also need to provide the public key and the secret. See [Clientless documentation](#create_dev) for details.
 
-    *   **Dependency:** Valid Adobe Pass authentication RequestorID (Work with your Adobe Pass authentication Account
+    *   **Dependency:** Valid Adobe Pass Authentication RequestorID (Work with your Adobe Pass Authentication Account
       Manager to arrange this).
 
     *   **Triggers:**
@@ -231,7 +231,7 @@ is authorized to view.
       * If there was some other type of error (connection error, network error, etc.) then display an appropriate error message to the user.
 
 1.  Validate the Short Media Token.  
-    Use the Adobe Pass authentication Media Token Verifier library to verify the short-lived media token returned from the [getAuthorization()](#$getAuthZ) call above:
+    Use the Adobe Pass Authentication Media Token Verifier library to verify the short-lived media token returned from the [getAuthorization()](#$getAuthZ) call above:
 
     * If the validation succeeds: Play the requested media for the user.
     * If the validation fails: The AuthZ token was invalid, the media request should be refused, and an error message should be displayed to the user.

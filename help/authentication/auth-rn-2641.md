@@ -1,9 +1,9 @@
 ---
-title: Adobe Pass authentication 2.64.1 Release Notes
-description: Adobe Pass authentication 2.64.1 Release Notes
+title: Adobe Pass Authentication 2.64.1 Release Notes
+description: Adobe Pass Authentication 2.64.1 Release Notes
 exl-id: b0edbd90-ebb5-40a7-9034-1699dccfadb5
 ---
-# Adobe Pass authentication 2.64.1 Release Notes {#authn-264-rn}
+# Adobe Pass Authentication 2.64.1 Release Notes {#authn-264-rn}
 
 >[!NOTE]
 >
@@ -18,7 +18,7 @@ This page describes new features, changes, and known issues with this release:
 
 ### Build Number {#build-number-2641}
 
-Adobe Pass authentication: adobe-pass-**2.64.1**
+Adobe Pass Authentication: adobe-pass-**2.64.1**
 Release Date: **01/31/2023 - 02/02/2023** 
 
 ### Release Overview {#release-overview-2641}

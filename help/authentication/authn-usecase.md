@@ -11,9 +11,9 @@ exl-id: 9ff4a46e-a37b-414c-a163-9e586252a9c3
 
 ## Overview {#mvpd-authn-overview}
 
-The actual service provider (SP) role is held by a Programmer, but Adobe Pass authentication serves as the SP proxy for that Programmer. Using Adobe Pass authentication as an intermediary allows both MVPDs and Programmers to avoid having to customize their entitlement processes on a case-by-case basis.
+The actual service provider (SP) role is held by a Programmer, but Adobe Pass Authentication serves as the SP proxy for that Programmer. Using Adobe Pass Authentication as an intermediary allows both MVPDs and Programmers to avoid having to customize their entitlement processes on a case-by-case basis.
                
-The steps below present the sequence of events, using Adobe Pass authentication, when a Programmer requests authentication from an MVPD that supports SAML. Note that the Adobe Pass authentication Access Enabler component is active on the user's/subscriber's client. From there, the Access Enabler facilitates all steps of the authentication flow.
+The steps below present the sequence of events, using Adobe Pass Authentication, when a Programmer requests authentication from an MVPD that supports SAML. Note that the Adobe Pass Authentication Access Enabler component is active on the user's/subscriber's client. From there, the Access Enabler facilitates all steps of the authentication flow.
  
 1. When the user requests access to protected content, the Access Enabler initiates authentication (AuthN) on behalf of the Programmer (SP).
 1. The SP's app presents an "MVPD Picker" to the user in order to obtain their Pay TV provider (MVPD). The SP then redirects the user's browser to the selected MVPD's identity provider (IdP) service.  This is "**Programmer-initiated Login**".  The MVPD sends the response of the IdP to Adobe's SAML assertion consumer service, where it is processed.
@@ -23,11 +23,11 @@ The steps below present the sequence of events, using Adobe Pass authentication,
 
 As presented in the steps above, during the AuthN flow an MVPD must both accept a SAML-based AuthN request and send a SAML AuthN response.
  
-The [Online Content Access (OLCA) Authentication and Authorization Interface Specification](https://www.cablelabs.com/specifications/search?query=&category=&subcat=&doctype=&content=false&archives=false){target=_blanck} presents a standard AuthN request and response. While Adobe Pass authentication does not require MVPDs to base their entitlement messaging on this standard, looking at the specification can provide insight into the key attributes that are required for an AuthN transaction.
+The [Online Content Access (OLCA) Authentication and Authorization Interface Specification](https://www.cablelabs.com/specifications/search?query=&category=&subcat=&doctype=&content=false&archives=false){target=_blanck} presents a standard AuthN request and response. While Adobe Pass Authentication does not require MVPDs to base their entitlement messaging on this standard, looking at the specification can provide insight into the key attributes that are required for an AuthN transaction.
  
 >[!NOTE]
 >
->The AuthN request an MVPD receives with Adobe Pass authentication does contain a digital signature. However, the example below does not show a signature, for reasons of brevity. For an example that shows a digital signature, see the example in [the authentication response](#authn-response) in the following sections.
+>The AuthN request an MVPD receives with Adobe Pass Authentication does contain a digital signature. However, the example below does not show a signature, for reasons of brevity. For an example that shows a digital signature, see the example in [the authentication response](#authn-response) in the following sections.
  
 Sample SAML authentication request:
 
@@ -176,7 +176,7 @@ In the sample above, the Adobe SP expects to fetch the user ID out of the Subjec
 ```
 
 **SAML Authentication response details**
-| samlp:Response               | Response received by Adobe Pass authentication.                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| samlp:Response               | Response received by Adobe Pass Authentication.                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Destination                  | A URI reference indicating the address to which this request has been sent. This is useful to prevent malicious forwarding of requests to unintended recipients, a protection that is required by some protocol bindings. If it is present, the actual recipient MUST check that the URI reference identifies the location at which the message was received. If it does not, the request MUST be discarded. Some protocol bindings may require the use of this attribute. |
 | ID                           | An identifier for the request. It is of type xs:ID and MUST follow the requirements specified in Section 1.3.4 of [SAML core 2.0-os](http://docs.oasis-open.org/security/saml/v2.0/saml-core-2.0-os.pdf){target=_blank} for identifier uniqueness. The values of the ID attribute in a request and the InResponseTo attribute in the corresponding response MUST match.                                                                                                                                                                                         |

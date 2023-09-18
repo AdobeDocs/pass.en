@@ -11,22 +11,22 @@ exl-id: 017a55a8-0855-4c52-aad0-d3d597996fcb
 
 ## Introduction {#intro}
 
-This page describes the methods and callback functions exposed by the iOS/tvOS native client for Adobe Pass authentication. The methods and callback functions described here are defined in the `AccessEnabler.h` and `EntitlementDelegate.h` header files; you can find them in the iOS AccessEnabler SDK here: `[SDK directory]/AccessEnabler/headers/api/`
+This page describes the methods and callback functions exposed by the iOS/tvOS native client for Adobe Pass Authentication. The methods and callback functions described here are defined in the `AccessEnabler.h` and `EntitlementDelegate.h` header files; you can find them in the iOS AccessEnabler SDK here: `[SDK directory]/AccessEnabler/headers/api/`
 
 
 Associated documentation:
 
-*   For a description of the basic Adobe Pass authentication entitlement flow, see [Entitlement Flow](/help/authentication/entitlement-flow.md).
+*   For a description of the basic Adobe Pass Authentication entitlement flow, see [Entitlement Flow](/help/authentication/entitlement-flow.md).
 *   For a step-by-step walkthough of how to implement the Adobe Pass
   authentication entitlement flow using this API, see the [iOS Integration Cookbook](/help/authentication/iostvos-sdk-cookbook.md).
 *   For the latest iOS AccessEnabler SDK, see [iOS Native Access Enabler Library](https://tve.zendesk.com/hc/en-us/articles/204963209-iOS-Native-AccessEnabler-Library).
 
 >[!NOTE]
 >
->Adobe encourages you to use only the Adobe Pass authentication *public* APIs:
+>Adobe encourages you to use only the Adobe Pass Authentication *public* APIs:
 >
 >* Public APIs are available and fully tested on all supported client types. For any public feature, we make sure that each client type has a corresponding version of the associated method(s).
->* Public APIs are required to be as stable as possible, to support backwards compatibility and ensure that partner integrations do not break. However, for non-public APIs, we reserve the right to change their signature at any future point. If you encounter a particular flow that cannot be supported through a combination of the current public Adobe Pass authentication API calls, the best approach is to let us know. Taking into account your needs, we can modify the public APIs and provide a stable solution moving forward.
+>* Public APIs are required to be as stable as possible, to support backwards compatibility and ensure that partner integrations do not break. However, for non-public APIs, we reserve the right to change their signature at any future point. If you encounter a particular flow that cannot be supported through a combination of the current public Adobe Pass Authentication API calls, the best approach is to let us know. Taking into account your needs, we can modify the public APIs and provide a stable solution moving forward.
 
 </br>
 
@@ -169,7 +169,7 @@ Associated documentation:
 
 **File:** AccessEnabler/headers/AccessEnabler.h
 
-**Description:** Establishes the identity of the Programmer. Each Programmer is assigned a unique ID upon registering with Adobe for the Adobe Pass authentication system. When dealing with SSO and remote tokens, the authentication state can change when the application is in the background, setRequestor can be called again when the application is brought into the foreground in order to synchronize with the system state (fetch a remote token if SSO is enabled or delete the local token if a logout happened in the meantime).
+**Description:** Establishes the identity of the Programmer. Each Programmer is assigned a unique ID upon registering with Adobe for the Adobe Pass Authentication system. When dealing with SSO and remote tokens, the authentication state can change when the application is in the background, setRequestor can be called again when the application is brought into the foreground in order to synchronize with the system state (fetch a remote token if SSO is enabled or delete the local token if a logout happened in the meantime).
 
 The server response contains a list of MVPDs together with some configuration information that is attached to the identity of the Programmer. The server response is used internally by the AccessEnabler code. Only the status of the operation (i.e., SUCCESS/FAIL) is presented to your application via the `setRequestorComplete:` callback.  
 
@@ -195,7 +195,7 @@ If a value is provided for the `urls` parameter, the resulting network call targ
 **Parameters:**
 
 * *requestorID*: The unique ID associated with the Programmer. Pass the unique ID assigned by Adobe to your site when you first register  with the Adobe Pass Authentication service.
-* *urls*: Optional parameter; by default, the Adobe service provider is used (http://sp.auth.adobe.com/). This array allows you to specify endpoints for authentication and authorization services provided by Adobe (different instances might be used for debugging purposes). You can use this to specify multiple Adobe Pass authentication service provider instances. When doing so, the MVPD list is composed of the endpoints from all the service providers. Each MVPD is associated with the fastest service provider; that is, the provider that responded first and that supports that MVPD.
+* *urls*: Optional parameter; by default, the Adobe service provider is used (http://sp.auth.adobe.com/). This array allows you to specify endpoints for authentication and authorization services provided by Adobe (different instances might be used for debugging purposes). You can use this to specify multiple Adobe Pass Authentication service provider instances. When doing so, the MVPD list is composed of the endpoints from all the service providers. Each MVPD is associated with the fastest service provider; that is, the provider that responded first and that supports that MVPD.
 
 >[!NOTE]
 >
@@ -211,7 +211,7 @@ If a value is provided for the `urls` parameter, the resulting network call targ
 
 **File:** AccessEnabler/headers/AccessEnabler.h
 
-**Description:** Establishes the identity of the Programmer. Each Programmer is assigned a unique ID upon registering with Adobe for the Adobe Pass authentication system. When dealing with SSO and remote tokens the authentication state can change when the application is in the background, setRequestor can be called again when the application is brought into foreground in order to synchronize with the system state (fetch a remote token if SSO is enabled or delete the local token if a logout happened in the meantime).
+**Description:** Establishes the identity of the Programmer. Each Programmer is assigned a unique ID upon registering with Adobe for the Adobe Pass Authentication system. When dealing with SSO and remote tokens the authentication state can change when the application is in the background, setRequestor can be called again when the application is brought into foreground in order to synchronize with the system state (fetch a remote token if SSO is enabled or delete the local token if a logout happened in the meantime).
 
 The server response contains a list of MVPDs together with some configuration information that is attached to the identity of the Programmer. The server response is used internally by the AccessEnabler code. Only the status of the operation (i.e., SUCCESS/FAIL) is presented to your application via the `setRequestorComplete:` callback.  
 
@@ -233,9 +233,9 @@ If a value is provided for the `urls` parameter, the resulting network call targ
 
 **Parameters:**
 
-* *requestorID*: The unique ID associated with the Programmer. Pass the unique ID assigned by Adobe to your site when you first registered with the Adobe Pass authentication service. 
+* *requestorID*: The unique ID associated with the Programmer. Pass the unique ID assigned by Adobe to your site when you first registered with the Adobe Pass Authentication service. 
 * *signedRequestorID*: **This parameter exists in iOS AccessEnabler versions 1.2 and later.** A copy of the requestor ID that is digitally signed with your private key. <!--For more details, see [Registering Native Clients](https://tve.helpdocsonline.com/registering-native-clients)-->.
-* *urls*: Optional parameter; by default, the Adobe service provider is used (http://sp.auth.adobe.com/). This array allows you to specify endpoints for authentication and authorization services provided by Adobe (different instances might be used for debugging purposes). You can use this to specify multiple Adobe Pass authentication service provider instances. When doing so, the MVPD list is composed of the endpoints from all the service providers. Each MVPD is associated with the fastest service provider; that is, the provider that responded first and that supports that MVPD.
+* *urls*: Optional parameter; by default, the Adobe service provider is used (http://sp.auth.adobe.com/). This array allows you to specify endpoints for authentication and authorization services provided by Adobe (different instances might be used for debugging purposes). You can use this to specify multiple Adobe Pass Authentication service provider instances. When doing so, the MVPD list is composed of the endpoints from all the service providers. Each MVPD is associated with the fastest service provider; that is, the provider that responded first and that supports that MVPD.
 
 **Notes:** If called without the `serviceProviders` parameter, the library will retrieve the configuration from the default service provider (that is,`https://sp.auth.adobe.com` for the production profile or `https://sp.auth-staging.adobe.com` for the staging profile). If the `serviceProviders` parameter is provided, it must be an array of URL's. The configuration information is retrieved from all specified endpoints and is merged. If duplicate information exists in different service provider responses, the conflict is resolved in favor of the fastest responding server (i.e., the server with the shortest response time takes precedence).
 
@@ -248,7 +248,7 @@ If a value is provided for the `urls` parameter, the resulting network call targ
 
 **File:** AccessEnabler/headers/AccessEnabler.h
 
-**Description:** Establishes the identity of the Programmer. Each Programmer is assigned a unique ID upon registering with Adobe for the Adobe Pass authentication system. This setting should be performed only once during the application's life cycle.
+**Description:** Establishes the identity of the Programmer. Each Programmer is assigned a unique ID upon registering with Adobe for the Adobe Pass Authentication system. This setting should be performed only once during the application's life cycle.
 
 The server response contains a list of MVPDs together with some configuration information that is attached to the identity of the Programmer. The server response is used internally by the AccessEnabler code. Only the status of the operation (i.e., SUCCESS/FAIL) is presented to your application via the `setRequestorComplete:` callback.  
 
@@ -304,9 +304,9 @@ If a value is provided for the `urls` parameter, the resulting network call targ
 
 **Parameters:**
 
-* *requestorID*: The unique ID associated with the Programmer. Pass the unique ID assigned by Adobe to your site when you first   registered with the Adobe Pass authentication service. 
+* *requestorID*: The unique ID associated with the Programmer. Pass the unique ID assigned by Adobe to your site when you first   registered with the Adobe Pass Authentication service. 
 * *signedRequestorID*: **This parameter exists in iOS AccessEnabler   versions 1.2 and later.** A copy of the requestor ID that is digitally signed with your private key. <!--For more details, see [Registering Native Clients](https://tve.helpdocsonline.com/registering-native-clients)-->.
-* *urls*: Optional parameter; by default, the Adobe service provider   is used (http://sp.auth.adobe.com/). This array allows you to specify endpoints for authentication and authorization services provided by Adobe (different instances might be used for debugging purposes). You can use this to specify multiple Adobe Pass authentication service provider instances. When doing so, the MVPD list is composed of the endpoints from all the service providers. Each MVPD is associated with the fastest service provider; that is, the provider that responded first and that supports that MVPD.
+* *urls*: Optional parameter; by default, the Adobe service provider   is used (http://sp.auth.adobe.com/). This array allows you to specify endpoints for authentication and authorization services provided by Adobe (different instances might be used for debugging purposes). You can use this to specify multiple Adobe Pass Authentication service provider instances. When doing so, the MVPD list is composed of the endpoints from all the service providers. Each MVPD is associated with the fastest service provider; that is, the provider that responded first and that supports that MVPD.
 * secret and publicKey: The secret and public key used to sign the second screen calls. For more information see the [Clienteless documentation](#create_dev).
 
 If called without the `serviceProviders` parameter, the library will retrieve the configuration from the default service provider (i.e., `https://sp.auth.adobe.com` for the production profile or https://sp.auth-staging.adobe.com for the staging profile). If the `serviceProviders` parameter is provided, it must be an array of URL's. The configuration information is retrieved from all specified endpoints and is merged. If duplicate information exists in different service provider responses, the conflict is resolved in favor of the fastest responding server (i.e., the server with the shortest response time takes precedence).
@@ -1149,8 +1149,8 @@ This method can also trigger the following callbacks (if the authentication flow
 * *code*: The error code associated with the failure scenario. Possible values:
     * `USER_NOT_AUTHORIZED_ERROR` - the user was not able to authorize
       for the given resource
-* *description*: Additional details about the failure scenario. If this descriptive string is not available for any reason, Adobe Pass authentication sends an empty string **("")**.   
-  This string can be used by an MVPD to pass custom error messages or sales-related messages. For example, if a subscriber is denied authorization for a resource, the MVPD could send a message such as: "You currently do not have access to this channel in your package. If you would like to upgrade your package click **here**." The message is passed by Adobe Pass authentication through this callback to the Programmer, who has the option to display or ignore it. Adobe Pass authentication can also use this parameter to provide notification of the condition that might have led to an error. For example, "A network error occurred when communicating with the provider's authorization service".
+* *description*: Additional details about the failure scenario. If this descriptive string is not available for any reason, Adobe Pass Authentication sends an empty string **("")**.   
+  This string can be used by an MVPD to pass custom error messages or sales-related messages. For example, if a subscriber is denied authorization for a resource, the MVPD could send a message such as: "You currently do not have access to this channel in your package. If you would like to upgrade your package click **here**." The message is passed by Adobe Pass Authentication through this callback to the Programmer, who has the option to display or ignore it. Adobe Pass Authentication can also use this parameter to provide notification of the condition that might have led to an error. For example, "A network error occurred when communicating with the provider's authorization service".
 
 **Triggered by:** ` checkAuthorization:, `[checkAuthorization:withData:](#checkAuthZ), `getAuthorization:, `[getAuthorization:withData:](#getAuthZ)
 
@@ -1315,7 +1315,7 @@ There are two types of metadata available to Programmers:
 
   >[!NOTE]
   >
-  >The actual User Metadata available to a Programmer depends on what an MVPD makes available. This list will be expanded as new metadata is made available and added into the Adobe Pass authentication system.
+  >The actual User Metadata available to a Programmer depends on what an MVPD makes available. This list will be expanded as new metadata is made available and added into the Adobe Pass Authentication system.
 
 **Callbacks triggered:** [`setMetadataStatus:encrypted:forKey:andArguments:`](#setMetaStatus)
 
@@ -1491,7 +1491,7 @@ The AccessEnabler triggers an additional callback that is not necessarily relate
 
 **File:** AccessEnabler/headers/EntitlementDelegate.h
 
-**Description** Callback triggered by the AccessEnabler signaling to the application the occurrence of various events such as the completion/failure of authentication/authorization flows. With Adobe Pass authentication 1.6, the device type, AccessEnabler client type, and operating system are reported by [`sendTrackingData()`](#sendTracking). The [`sendTrackingData()`](#sendTracking) callback remains backwards compatible.
+**Description** Callback triggered by the AccessEnabler signaling to the application the occurrence of various events such as the completion/failure of authentication/authorization flows. With Adobe Pass Authentication 1.6, the device type, AccessEnabler client type, and operating system are reported by [`sendTrackingData()`](#sendTracking). The [`sendTrackingData()`](#sendTracking) callback remains backwards compatible.
 
 **Callback: tracking events**
 

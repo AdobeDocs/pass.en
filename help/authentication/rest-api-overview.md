@@ -12,13 +12,13 @@ exl-id: 5533d852-f644-417e-bf80-6f7aa1edd6b2
 
 ## Overview {#over}
 
-The Adobe Pass authentication REST API provides direct access to the TV Everywhere (TVE) authentication and authorization services. This API supports two primary architectures: Server-to-Server or Connected Devices (e.g. game consoles, Smart TVs, set-top boxes, etc.) applications that do not have web browsing capabilities. 
+The Adobe Pass Authentication REST API provides direct access to the TV Everywhere (TVE) authentication and authorization services. This API supports two primary architectures: Server-to-Server or Connected Devices (e.g. game consoles, Smart TVs, set-top boxes, etc.) applications that do not have web browsing capabilities. 
 
  
 
 ### Server-to-Server
 
-Server-to-Server solutions involve Programmer client applications that integrate with Programmer services that connect with Adobe Pass authentication services for TVE flows. This approach shifts most of TVE implementation from the client to the server where a single, unified authorization module can be built and maintained. The primary remaining responsibility of the client applications is the management of a web view for user authentication.
+Server-to-Server solutions involve Programmer client applications that integrate with Programmer services that connect with Adobe Pass Authentication services for TVE flows. This approach shifts most of TVE implementation from the client to the server where a single, unified authorization module can be built and maintained. The primary remaining responsibility of the client applications is the management of a web view for user authentication.
 
  
 
@@ -30,7 +30,7 @@ Connected Devices apps communicate directly with Adobe Pass Authentication throu
 
 ### Other Architectures
 
-In addition to the two primary REST API based architectures, Server-to-server and Direct client solutions for smart devices, there are other architectures.  Primary among them is the SDK architecture, which uses a client component called the Access Enabler that Adobe Pass authentication provides to Programmers.  The app uses Access Enabler APIs to handle startup, authentication, authorization, and logout.  All communication between the Programmer's app and the Adobe Pass authentication servers occurs through the Access Enabler.  A different flavor of Access Enabler is available for the following platforms: JavaScript, iOS, tvOS, Android and FireTV.
+In addition to the two primary REST API based architectures, Server-to-server and Direct client solutions for smart devices, there are other architectures.  Primary among them is the SDK architecture, which uses a client component called the Access Enabler that Adobe Pass Authentication provides to Programmers.  The app uses Access Enabler APIs to handle startup, authentication, authorization, and logout.  All communication between the Programmer's app and the Adobe Pass Authentication servers occurs through the Access Enabler.  A different flavor of Access Enabler is available for the following platforms: JavaScript, iOS, tvOS, Android and FireTV.
 
 Although it is possible to use the REST API directly on client platforms that support native SDKs outside of a Server-to-Server solution, this approach is not recommended.
 
@@ -92,4 +92,4 @@ The following apply to both Server-to-Server and Connected Device applications.
 
 ## Minimum Device Requirements {#min_reqs}
 
-In order to use the Adobe Pass authentication REST API, devices must meet or exceed the minimum technical requirements listed in the REST API section of the [Adobe Pass authentication Platform / Device / Tools Requirements document](#general_clientless_reqs).
+In order to use the Adobe Pass Authentication REST API, devices must meet or exceed the minimum technical requirements listed in the REST API section of the [Adobe Pass Authentication Platform / Device / Tools Requirements document](#general_clientless_reqs).

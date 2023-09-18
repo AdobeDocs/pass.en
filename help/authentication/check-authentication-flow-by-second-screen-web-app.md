@@ -25,7 +25,7 @@ exl-id: 5807f372-a520-4069-b837-67ae41b7f79b
 
 ## Description {#description}
 
-This API should be consumed by the second screen login web app to confirm that Adobe Pass authentication has acknowledged successful login from MVPD. We recommend calling this API before showing a success message to the end user that instructs him/her to proceed to the device console to continue with the workflows.
+This API should be consumed by the second screen login web app to confirm that Adobe Pass Authentication has acknowledged successful login from MVPD. We recommend calling this API before showing a success message to the end user that instructs him/her to proceed to the device console to continue with the workflows.
 
   
 | Endpoint | Called  </br>By | Input   </br>Params | HTTP  </br>Method | Response | HTTP  </br>Response |

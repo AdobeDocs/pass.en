@@ -25,7 +25,7 @@ You can find a more detailed explanation on what software statements are and how
 
 The software statement should be deployed with the application on the user's device.
 
-Prior to this update, we had two mechanisms for allowing applications to perform calls to Adobe Pass authentication:
+Prior to this update, we had two mechanisms for allowing applications to perform calls to Adobe Pass Authentication:
 
 * browser-based clients are registered via allowed [domain listing](/help/authentication/programmer-overview.md#reg-and-init)
 * native application clients, such as iOS and Android applications are  registered through **signed requestor** mechanism  

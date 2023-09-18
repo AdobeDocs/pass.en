@@ -70,7 +70,7 @@ description: Glossary of terms in Concurrency Monitoring
 * Needs to support the MVPD in collecting subscriber activity and enforcing the limiting rules when on their properties.
 * May also be interested in limiting concurrent access to their content across all destination portals, as a separate rule.
 
-    *Q: Why Programmer and not Requestor ID like in the rest of Adobe Pass authentication?*
+    *Q: Why Programmer and not Requestor ID like in the rest of Adobe Pass Authentication?*
 
     *A: The reason is to allow Programmers to use this parameter flexibly to pass or isolate data between their properties depending on their use cases.*
 

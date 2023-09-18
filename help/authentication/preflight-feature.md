@@ -9,7 +9,7 @@ exl-id: 9e4ec343-371f-4116-915f-191e5f42cb47
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
-There has been a change in the way Adobe Pass authentication computes preAuthorizeResources. The PreAuthorization API has a new implementation. This implementation replaces the old solution which comprises making multiple authorization calls only.
+There has been a change in the way Adobe Pass Authentication computes preAuthorizeResources. The PreAuthorization API has a new implementation. This implementation replaces the old solution which comprises making multiple authorization calls only.
 The external interface for the PreAuthorization API is unchanged, no updates are required in the Programmer's application.
 
 There are three ways the Preflight resources are computed:

@@ -250,7 +250,7 @@ Please follow the steps below to enable / disable Single Sign On for a specific 
 *   toggle the **Enforce Platform Permission** flag to the desired value (Yes / No)
 
     >[!IMPORTANT]
-    >It is important to note that the **Enforce Platform Permission** flag controls if the user's decision to Allow or Deny platform access to his/her TV Provider subscription will be enforced or not. Considering the scenario when **Enable Single Sign On** flag is set to "Yes", **Enforce Platform Permission** flag is also set to "Yes" and the user chooses to Deny platform access to his/her TV Provider subscription, then the respective application (channel) won't be able to use the Adobe Pass authentication token obtained by another application (channel). 
+    >It is important to note that the **Enforce Platform Permission** flag controls if the user's decision to Allow or Deny platform access to his/her TV Provider subscription will be enforced or not. Considering the scenario when **Enable Single Sign On** flag is set to "Yes", **Enforce Platform Permission** flag is also set to "Yes" and the user chooses to Deny platform access to his/her TV Provider subscription, then the respective application (channel) won't be able to use the Adobe Pass Authentication token obtained by another application (channel). 
 
  
 #### Enable Home-Based Authentication {#enable-hba}

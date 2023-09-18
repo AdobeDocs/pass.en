@@ -13,7 +13,7 @@ exl-id: 77b154bc-c09f-49d4-b1af-cc33bc6dd22b
 
 This document describes the information needed to take advantage of Single Sign On capability on Roku devices. Adobe Pass Authentication collaborates with Roku to improve the login user experience and to facilitate Single Sign On across TV Everywhere applications for TV subscribers. 
 
-The solution is based on the Adobe Pass authentication's Clientless REST API, so most Programmers won't need to update their applications to benefit from Single Sign On.
+The solution is based on the Adobe Pass Authentication's Clientless REST API, so most Programmers won't need to update their applications to benefit from Single Sign On.
 
 ## Enabling Roku SSO {#enable-roku-sso}
 
@@ -37,7 +37,7 @@ Programmers should check that their current implementations based on Adobe's Cli
 
 | Problem | Possible cause | Possible solutions |
 |-|-|-|
-|No Roku SSO header sent to Adobe|Using HTTP instead of HTTPS for calls to Adobe Pass authentication domains|Use HTTPS|
+|No Roku SSO header sent to Adobe|Using HTTP instead of HTTPS for calls to Adobe Pass Authentication domains|Use HTTPS|
 |MVPD logo not shown / not updated for SSO tokens|UI relies on local storage|Applications should update UI (and local storage, if needed) after checking authentication|
 |Logout triggered on no AuthZ|Application design|Application should be updated to never perform logout behind the scenes|
 
@@ -45,7 +45,7 @@ Programmers should check that their current implementations based on Adobe's Cli
 
 * **How will the SSO work?**
 
-  SSO will work across all Programmer applications powered by Adobe Pass authentication on all Roku devices associated with the same Roku user.
+  SSO will work across all Programmer applications powered by Adobe Pass Authentication on all Roku devices associated with the same Roku user.
 Not all MVPDs will allow Roku SSO. 
 
 * **Will there be any change to the authentication TTLs?**
@@ -54,7 +54,7 @@ Not all MVPDs will allow Roku SSO.
 
 * **Will other Adobe functionality work as before?**
 
-  All Adobe Pass authentication functionality will work as before.
+  All Adobe Pass Authentication functionality will work as before.
 
 * **Is there a Programmer opt-in / opt-out process benefiting from SSO on the Roku platform?**
 

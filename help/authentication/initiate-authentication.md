@@ -26,7 +26,7 @@ exl-id: 55dddd29-68d6-4aae-8744-307fea285e29
 
 ## Description {#description}
 
-Initiates the authentication process by informing of an MVPD selection event. Creates a record on the Adobe Pass authentication database, which is reconciled when a successful response is received from the MVPD. 
+Initiates the authentication process by informing of an MVPD selection event. Creates a record on the Adobe Pass Authentication database, which is reconciled when a successful response is received from the MVPD. 
 
 
   
@@ -81,7 +81,7 @@ Initiates the authentication process by informing of an MVPD selection event. Cr
 
 ### **Notes** {#notes}
 
-* The value of the `domain_name` parameter must be set to one of the domain names registered with Adobe Pass authentication. For more details, refer to [Registration and Initialization](/help/authentication/programmer-overview.md).
+* The value of the `domain_name` parameter must be set to one of the domain names registered with Adobe Pass Authentication. For more details, refer to [Registration and Initialization](/help/authentication/programmer-overview.md).
 
 * [Avoid using '&'reg\_code in /authenticate request (Tech Note)](/help/authentication/clientless-avoid-using-reg-code-in-authenticate-request.md)
 

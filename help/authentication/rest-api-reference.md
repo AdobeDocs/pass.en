@@ -45,13 +45,13 @@ The table below lists the available web services for the clientless approach. Cl
 | Sr  | Web Service Endpoint | Description | <!--[Diag.  </br>Ref](http://tve.helpdocsonline.com/api-reference-v2-test#illustration)-->. | Hosted At | Called By |
 | --- | --- | --- | --- | --- | --- |
 | 1.  | [<REGGIE_FQDN>/reggie/v1/  </br>  {requestorId}/regcode](/help/authentication/registration-code-request.md) | Returns randomly generated registration Code and login Page URI | 2   | Adobe  </br>Reg Code Service | Smart Device |
-| 2.  | [<REGGIE_FQDN>/reggie/v1/  </br>  {requestorId}/regcode/  </br>  {registrationCode}](/help/authentication/return-registration-record.md) | Returns registration code record containing registration code UUID, registration code, and hashed device ID | 8   | Adobe  </br>Reg Code Service | Adobe Pass authentication |
+| 2.  | [<REGGIE_FQDN>/reggie/v1/  </br>  {requestorId}/regcode/  </br>  {registrationCode}](/help/authentication/return-registration-record.md) | Returns registration code record containing registration code UUID, registration code, and hashed device ID | 8   | Adobe  </br>Reg Code Service | Adobe Pass Authentication |
 | 3.  | [<SP_FQDN>/api/v1/config/  </br>  {requestorId}](/help/authentication/provide-mvpd-list.md) | Returns list of configured MVPDs for the requestor | 5   | Adobe  </br>Adobe Pass  </br>authentication  </br>Service | Login  </br>Web  </br>App |
 | 4.  | [<SP_FQDN>/api/v1/authenticate](/help/authentication/initiate-authentication.md) | Initiates the AuthN process by informing MVPD selection event. Creates a record on authentication database, which is reconciled when a successful response is received from MVPD (Step 13) | 7   | Adobe  </br>Adobe Pass  </br>authentication  </br>Service | Login  </br>Web  </br>App |
-| 5.  | SAML Assertion Consumer | Existing SAML workflow between Adobe Pass authentication and MVPD | 13  | Adobe Pass  </br>authentication  </br>Service | Adobe Pass authentication |
+| 5.  | SAML Assertion Consumer | Existing SAML workflow between Adobe Pass Authentication and MVPD | 13  | Adobe Pass  </br>authentication  </br>Service | Adobe Pass Authentication |
 | 6.  | [<SP_FQDN>/api/v1/checkauthn/  </br>  {registrationCode}](/help/authentication/check-authentication-flow-by-second-screen-web-app.md) | The Login Web App can check if the attempted login flow was successful |     | Adobe Pass  </br>authentication   </br>Service | Login   </br>Web   </br>App |
 | 7.  | [<SP_FQDN>/api/v1/tokens/authn](/help/authentication/retrieve-authentication-token.md) | Gets AuthN token related metadata | 15  | Adobe Pass  </br>authentication  </br>Service | Smart Device |
-| 8.  | [<REGGIE_FQDN>/reggie/v1/  </br>  {requestorId}/regcode/  </br>  {registrationCode}](/help/authentication/delete-registration-record.md) | Deletes the reg code record and releases the reg code for reuse | 16  | Adobe  </br>Reg Code Service | Adobe Pass authentication |
+| 8.  | [<REGGIE_FQDN>/reggie/v1/  </br>  {requestorId}/regcode/  </br>  {registrationCode}](/help/authentication/delete-registration-record.md) | Deletes the reg code record and releases the reg code for reuse | 16  | Adobe  </br>Reg Code Service | Adobe Pass Authentication |
 | 9.  | [<SP_FQDN>/api/v1/authorize](/help/authentication/initiate-authorization.md) | Obtains authorization response. | 17  | Adobe Pass  </br>authentication  </br>Service | Smart Device |
 | 10. | [<SP_FQDN>/api/v1/checkauthn](/help/authentication/check-authentication-token.md) | Indicates whether the device has an unexpired AuthN token. |     | Adobe Pass  </br>authentication  </br>Service | Smart Device |
 | 11. | [<SP_FQDN>/api/v1/tokens/authn](/help/authentication/retrieve-authentication-token.md) | Returns the AuthN token if found. |     | Adobe Pass  </br>authentication  </br>Service | Smart Device |
@@ -67,4 +67,4 @@ The table below lists the available web services for the clientless approach. Cl
 
 ## REST API Security {#security}
 
-All Adobe Pass authentication clientless APIs must be called using the HTTPS protocol for secure communication. In addition, most of the APIs called should contain an access token provided by [Dynamic Client Registration](/help/authentication/dynamic-client-registration.md).
+All Adobe Pass Authentication clientless APIs must be called using the HTTPS protocol for secure communication. In addition, most of the APIs called should contain an access token provided by [Dynamic Client Registration](/help/authentication/dynamic-client-registration.md).

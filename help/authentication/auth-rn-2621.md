@@ -1,6 +1,6 @@
 ---
-title: Adobe Pass authentication 2.62.1 Release Notes
-description: Adobe Pass authentication 2.62.1 Release Notes
+title: Adobe Pass Authentication 2.62.1 Release Notes
+description: Adobe Pass Authentication 2.62.1 Release Notes
 exl-id: 7a43cb64-27c7-41ec-b02a-64cf7f476c5d
 ---
 # Adobe Pass Authentication 2.62.1 Release Notes {#pt-authn-2621-rn}
@@ -18,7 +18,7 @@ This page describes new features, changes, and known issues with this release:
 
 ### Build Number {#build-number-2621}
 
-Adobe Pass authentication: adobe-pass-**2.62.1**
+Adobe Pass Authentication: adobe-pass-**2.62.1**
 Release Date: **08/02/2022 - 08/04/2022** 
 
 ### New Features {#new-features-2621}

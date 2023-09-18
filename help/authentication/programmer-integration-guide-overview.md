@@ -46,5 +46,5 @@ These are intended for software engineers who will handle the technical side of 
 >* Temp Pass
 >* Integrating the Media Token Verifier
 >* User Metadata
->* Tracking Data in Adobe Pass authentication
+>* Tracking Data in Adobe Pass Authentication
 -->

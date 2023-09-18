@@ -16,7 +16,7 @@ exl-id: 1982c485-f0ed-4df3-9a20-9c6a928500c2
 
 This document describes the entitlement workflows that a Programmer's upper-level application can implement through the APIs exposed by the Amazon FireOS AccessEnabler library.
 
-The Adobe Pass authentication entitlement solution for Amazon FireOS is ultimately divided into two domains:
+The Adobe Pass Authentication entitlement solution for Amazon FireOS is ultimately divided into two domains:
 
 - The UI domain - this is the upper-level application layer which implements the UI and uses the services provided by the AccessEnabler library to provide access to restricted content.
 - The AccessEnabler domain - this is where the entitlement workflows are implemented in the form of:
@@ -105,14 +105,15 @@ The AccessEnabler's network activity takes place in a different thread so the UI
 ### B. Startup Flow {#startup_flow}
 
 1.  Start the upper-level application.
-1.  Initiate Adobe Pass authentication
-    1.  Call [`getInstance`](#$getInstance) to create a single instance of the Adobe Pass authentication AccessEnabler.
+1.  Initiate Adobe Pass Authentication.
+
+    1. Call [`getInstance`](#$getInstance) to create a single instance of the Adobe Pass Authentication AccessEnabler.
         
-          - **Dependency:** Adobe Pass authentication Native Amazon FireOS Library (AccessEnabler)
+          - **Dependency:** Adobe Pass Authentication Native Amazon FireOS Library (AccessEnabler)
     
-    2.  Call` setRequestor()` to establish the identify of the Programmer; pass in the Programmer's `requestorID` and (optionally) an array of Adobe Pass authentication endpoints.
+    1. Call` setRequestor()` to establish the identify of the Programmer; pass in the Programmer's `requestorID` and (optionally) an array of Adobe Pass Authentication endpoints.
         
-          - **Dependency:** Valid Adobe Pass authentication RequestorID (Work with your Adobe Pass authentication Account Manager to arrange this.)
+          - **Dependency:** Valid Adobe Pass Authentication RequestorID (Work with your Adobe Pass Authentication Account Manager to arrange this.)
         
           - **Triggers:** setRequestorComplete() callback
 
@@ -121,9 +122,7 @@ The AccessEnabler's network activity takes place in a different thread so the UI
     You have two implementation options: Once the requestor identification information is sent to the backend server, the UI application layer may choose one of the two following approaches:</p>
 
     1. Wait for the triggering of the `setRequestorComplete()` callback (part of the AccessEnabler delegate).  This option provides the most certainty that `setRequestor()` completed, so it is recommended for most implementations.
-
     1. Continue without waiting for the triggering of the `setRequestorComplete()` callback, and start issuing entitlement requests. These calls (checkAuthentication, checkAuthorization, getAuthentication, getAuthorization, checkPreauthorizedResource, getMetadata, logout) are queued by the AccessEnabler library, which will make the actual network calls after the `setRequestor()`. This option can occasionally be disrupted if for example, the network connection is unstable.
-
 
 1.  Call [checkAuthentication()](#$checkAuthN) to check for an existing authentication without initiating the full Authentication flow.  If this call succeeds, you can proceed directly to the Authorization flow.  If not, proceed to the Authentication flow.
 
@@ -141,22 +140,21 @@ The AccessEnabler's network activity takes place in a different thread so the UI
     - The displayProviderDialog() callback, if the user is not yet authenticated.  
 
 1.  Present the user with the list of providers sent to `displayProviderDialog()`.
-
 1.  After the user selects a provider, a WebView will open the provider page for user to login
     
-    **Note:** At this point, the user has the opportunity to cancel the authentication flow. If this occurs, the AccessEnabler will clean up it's internal state and reset the Authentication Flow.
+    >[!NOTE]
+    >
+    >At this point, the user has the opportunity to cancel the authentication flow. If this occurs, the AccessEnabler will clean up it's internal state and reset the Authentication Flow.
 
 1.  Upon a succesful login by the user, the WebView will close.
-
 1.  call `getAuthenticationToken(),` which instructs the AccessEnabler to retrieve the authentication token from the backend server. 
-
 1.  [Optional] Call [`checkPreauthorizedResources(resources)`](#$checkPreauth) to check which resources the user is authorized to view. The `resources` parameter is an array of protected resources that is associated with the user's authentication token.  
+
     **Triggers:** `preAuthorizedResources()` callback  
     **Execution point:** After the completed Authentication Flow
 
 1.  If authentication was successful, proceed to the Authorization Flow.
 
- 
 
 ### D. Authorization Flow {#authz_flow}
 
@@ -176,7 +174,7 @@ The AccessEnabler's network activity takes place in a different thread so the UI
 
 1.  Validate the Short Media Token.  
     
-    Use the Adobe Pass authentication Media Token Verifier library to verify the short-lived media token returned from the `getAuthorization()` call above:
+    Use the Adobe Pass Authentication Media Token Verifier library to verify the short-lived media token returned from the `getAuthorization()` call above:
 
     - If the validation succeeds: Play the requested media for the user.
     - If the validation fails: The AuthZ token was invalid, the media request should be refused, and an error message should be displayed to the user.

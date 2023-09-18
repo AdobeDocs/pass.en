@@ -16,13 +16,13 @@ Currently, there are two ways in which Adobe Pass Authentication identifies and 
 * browser-based clients are registered via allowed [domain listing](/help/authentication/programmer-overview.md)
 * native application clients, such as iOS and Android applications are registered through signed requestor mechanism.
 
-Adobe Pass authentication proposes a new mechanism for registering applications. This mechanism is described in the following paragraphs.
+Adobe Pass Authentication proposes a new mechanism for registering applications. This mechanism is described in the following paragraphs.
 
 ## The Application Registration Mechanism {#appRegistrationMechanism}
 
 ### Technical Reasons {#reasons}
 
-The authentication mechanism in Adobe Pass authentication was relying on session cookies, but because of [Android Chrome Custom Tabs](https://developer.chrome.com/multidevice/android/customtabs){target=_blank} and [Apple Safari View Controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller){target=_blank}, this goal cannot be achieved anymore.
+The authentication mechanism in Adobe Pass Authentication was relying on session cookies, but because of [Android Chrome Custom Tabs](https://developer.chrome.com/multidevice/android/customtabs){target=_blank} and [Apple Safari View Controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller){target=_blank}, this goal cannot be achieved anymore.
 
 Given these limitations, Adobe introduces a new registration mechanism for all its clients. It is based on the OAuth 2.0 RFC and consists
 of the following steps:
@@ -147,7 +147,7 @@ Pragma: no-cache
 
 ### Obtaining Access Token {#accessToken}
 
-After retrieving the unique client identifier (client id and client secret) for your application, you need to obtain an access token. The access token is a mandatory OAuth 2.0 token, used to call the Adobe Pass authentication APIs.
+After retrieving the unique client identifier (client id and client secret) for your application, you need to obtain an access token. The access token is a mandatory OAuth 2.0 token, used to call the Adobe Pass Authentication APIs.
 
 >[!NOTE]
 >

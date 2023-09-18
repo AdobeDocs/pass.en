@@ -13,9 +13,9 @@ exl-id: 8756c804-a4c1-4ee3-b2b9-be45f38bdf94
 
 Adobe highly recommends that you migrate to the latest JS v4.x of the AccessEnabler library.
 
-The Adobe Pass authentication JavaScript integration offers Programmers a TV-Everywhere solution in the familiar JS web application development environment. The main components of the integration are your "high-level" application (user interaction, video presentation), and the Adobe-provided "low-level" AccessEnabler library that provides your entry to the entitlement flows, and handles communication with Adobe Pass authentication servers.
+The Adobe Pass Authentication JavaScript integration offers Programmers a TV-Everywhere solution in the familiar JS web application development environment. The main components of the integration are your "high-level" application (user interaction, video presentation), and the Adobe-provided "low-level" AccessEnabler library that provides your entry to the entitlement flows, and handles communication with Adobe Pass Authentication servers.
 
-The general Adobe Pass authentication entitlement flow is covered in [Programmer Entitlement Flow](/help/authentication/entitlement-flow.md), and the JavaScript Integration Cookbook walks you through the implementation. The following sections provide descriptions and samples specific to the JavaScript AccessEnabler integration.
+The general Adobe Pass Authentication entitlement flow is covered in [Programmer Entitlement Flow](/help/authentication/entitlement-flow.md), and the JavaScript Integration Cookbook walks you through the implementation. The following sections provide descriptions and samples specific to the JavaScript AccessEnabler integration.
 
 >[!IMPORTANT]
 >
@@ -198,11 +198,11 @@ There are some cases where your player is not responsible for handling user logo
 
  
 
-- **When the logout is initiated from a site that isn't integrated with Adobe Pass authentication.** In this case the MVPD can invoke the Adobe Pass authentication Single Logout service through a browser redirect. (Invoking SLO via a backchannel call is not currently supported.)
+- **When the logout is initiated from a site that isn't integrated with Adobe Pass Authentication.** In this case the MVPD can invoke the Adobe Pass Authentication Single Logout service through a browser redirect. (Invoking SLO via a backchannel call is not currently supported.)
 
 >[!NOTE]
 >
->If the user leaves their machine idle long enough that their tokens expire, they can still return to their session and successfully initiate logout. Adobe Pass authentication ensures that all tokens are deleted and notifies the MVPD to delete their session, as well.
+>If the user leaves their machine idle long enough that their tokens expire, they can still return to their session and successfully initiate logout. Adobe Pass Authentication ensures that all tokens are deleted and notifies the MVPD to delete their session, as well.
 
 The following JavaScript code demonstrates logging out (deauthenticating) a currently authenticated user:
 

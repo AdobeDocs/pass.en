@@ -13,7 +13,7 @@ This page describes new features, changes, and known issues with this release:
 
 ## Build Number {#build-no-ios-tvos-sdk-381}
 
-Adobe Pass authentication: iOS / tvOS 3.8.1
+Adobe Pass Authentication: iOS / tvOS 3.8.1
 
 Release Date: 26/05/2023
 

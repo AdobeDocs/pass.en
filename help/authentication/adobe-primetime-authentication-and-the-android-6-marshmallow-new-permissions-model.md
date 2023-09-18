@@ -11,7 +11,7 @@ exl-id: 3c96769e-b25b-48ab-bb74-40f13d4e5a84
 
 </br>
 
-The new Android 6 Marshmallow release introduces some updates to the permissions model, which can affect the behavior of apps that use the existing Adobe Pass authentication SDK version 1.8 and older. 
+The new Android 6 Marshmallow release introduces some updates to the permissions model, which can affect the behavior of apps that use the existing Adobe Pass Authentication SDK version 1.8 and older. 
 
 As a new feature, the new Android OS offers [granular control over the permissions that apps require at the time of installation and at runtime](https://developer.android.com/about/versions/marshmallow/android-6.0-changes.html).
 
@@ -58,13 +58,13 @@ if (ContextCompat.checkSelfPermission(thisActivity,
 
 **From the users' perspective**, upon installation, users are greeted by a window prompting them to confirm read/write permissions for files (see figure 2 below). This leads to one of the following two outcomes:
 
-1.  If the user **confirms** the permissions, the regular authentication flow will be kept and tokens will be stored in the global storage. Users will stay authenticated in the app and across apps using Adobe Pass authentication for as long as the tokens are valid.
+1.  If the user **confirms** the permissions, the regular authentication flow will be kept and tokens will be stored in the global storage. Users will stay authenticated in the app and across apps using Adobe Pass Authentication for as long as the tokens are valid.
 1.  If the user **denies** the permissions, write actions in the storage will fail and the users will only be authenticated until they exit the app. Please note that some applications reinitialize when switching between foreground and background, so that the users will be logged out when performing this action. Tokens are NOT stored and the users will need to authenticate every time they use the app. 
 
 
 >[!TIP]
 >
->A feature which introduces storage resilience is currently in development for the Adobe Pass authentication SDK 1.9. The new SDK is targeted for **release in the last week of October**. The application will fallback to writing in the application's sandbox storage whenever the general storage cannot be used. This covers the case in which, for applications developed in API level 23, users do NOT accept read/write permissions in the global storage. The tokens are stored individually per app which means that Single-Sign-On between apps using Adobe Pass authentication will be disabled.
+>A feature which introduces storage resilience is currently in development for the Adobe Pass Authentication SDK 1.9. The new SDK is targeted for **release in the last week of October**. The application will fallback to writing in the application's sandbox storage whenever the general storage cannot be used. This covers the case in which, for applications developed in API level 23, users do NOT accept read/write permissions in the global storage. The tokens are stored individually per app which means that Single-Sign-On between apps using Adobe Pass Authentication will be disabled.
 
 
 ![](assets/android-permissions-request.png)

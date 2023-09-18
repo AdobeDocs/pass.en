@@ -1,9 +1,9 @@
 ---
-title: SSO on iOS when using the Adobe Pass authentication Access Enabler
-description: SSO on iOS when using the Adobe Pass authentication Access Enabler
+title: SSO on iOS when using the Adobe Pass Authentication Access Enabler
+description: SSO on iOS when using the Adobe Pass Authentication Access Enabler
 exl-id: 882f0abb-2e6e-461d-a375-3ab410991935
 ---
-# SSO on iOS when using the Adobe Pass authentication Access Enabler {#sso-on-ios-when-using-the-primetime-authentication-access-enabler}
+# SSO on iOS when using the Adobe Pass Authentication Access Enabler {#sso-on-ios-when-using-the-primetime-authentication-access-enabler}
 
 >[!NOTE]
 >
@@ -13,11 +13,11 @@ exl-id: 882f0abb-2e6e-461d-a375-3ab410991935
 
 ## Overview
 
-Single Sign-On (SSO) between Adobe Pass authentication powered apps works in different manners depending on the underlying operating system.
+Single Sign-On (SSO) between Adobe Pass Authentication powered apps works in different manners depending on the underlying operating system.
 
-This document addresses **SSO on iOS**, when using the Adobe Pass authentication **Access Enabler**.
+This document addresses **SSO on iOS**, when using the Adobe Pass Authentication **Access Enabler**.
 
-**Access Enabler** **1.10** is the latest version of the Adobe Pass authentication iOS native SDK. Adobe strongly recommends that you move to this version rather than staying with an older version. If you are using an older version of the Access Enabler, you can download the latest version [here](https://tve.zendesk.com/hc/en-us/articles/204963209-iOS-Native-AccessEnabler-Library).
+**Access Enabler** **1.10** is the latest version of the Adobe Pass Authentication iOS native SDK. Adobe strongly recommends that you move to this version rather than staying with an older version. If you are using an older version of the Access Enabler, you can download the latest version [here](https://tve.zendesk.com/hc/en-us/articles/204963209-iOS-Native-AccessEnabler-Library).
 
 SSO on iOS is dictated by the following conditions:
 

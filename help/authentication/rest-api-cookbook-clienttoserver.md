@@ -12,7 +12,7 @@ exl-id: f54a1eda-47d5-4f02-b343-8cdbc99a73c0
 
 ## Overview {#overview}
 
-This document provides step-by-step instructions for a Programmer's engineering team to integrate a "smart device" (game console, smart TV app, set top box, etc.) with Adobe Pass authentication using REST API services. This Client-to-Server approach, which uses REST APIs rather than a client SDK, allows for broader support of different platforms for which developing a significant number of unique SDKs would not be feasible. For a broad technical overview of how the Clientless solution works, see the [Clientless Technical Overview](/help/authentication/rest-api-overview.md).
+This document provides step-by-step instructions for a Programmer's engineering team to integrate a "smart device" (game console, smart TV app, set top box, etc.) with Adobe Pass Authentication using REST API services. This Client-to-Server approach, which uses REST APIs rather than a client SDK, allows for broader support of different platforms for which developing a significant number of unique SDKs would not be feasible. For a broad technical overview of how the Clientless solution works, see the [Clientless Technical Overview](/help/authentication/rest-api-overview.md).
 
 
 This approach requires two components (streaming app and AuthN app) to complete the required flows: start-up, registration, authorization, and view-media flows in the streaming app, and the authentication flow in your AuthN app.
@@ -73,9 +73,9 @@ Adobe Pass uses DCR to secure client communications between a programmer applica
 
 #### Authorization Flow
 
-1.  The user returns from the 2nd screen app and presses the "Continue" button on your device. Alternatively, you could implement a polling mechanism to check the authentication status, but the Adobe Pass authentication recommends the Continue button method over polling. <!--(For information on employing a "Continue" button versus polling the Adobe Pass authentication backend server, see the Clientless Technical Overview: Managing 2nd-Screen Workflow Transition.)--> For example: [\<SP\_FQDN\>/api/v1/tokens/authn](/help/authentication/retrieve-authentication-token.md)
+1.  The user returns from the 2nd screen app and presses the "Continue" button on your device. Alternatively, you could implement a polling mechanism to check the authentication status, but the Adobe Pass Authentication recommends the Continue button method over polling. <!--(For information on employing a "Continue" button versus polling the Adobe Pass Authentication backend server, see the Clientless Technical Overview: Managing 2nd-Screen Workflow Transition.)--> For example: [\<SP\_FQDN\>/api/v1/tokens/authn](/help/authentication/retrieve-authentication-token.md)
 
-2.  Send a GET request to the Adobe Pass authentication authorization service to initiate authorization. For example: `<SP_FQDN>/api/v1/authorize [device ID, Requestor ID, Resource ID]`
+2.  Send a GET request to the Adobe Pass Authentication authorization service to initiate authorization. For example: `<SP_FQDN>/api/v1/authorize [device ID, Requestor ID, Resource ID]`
 
 <!-- end list -->
 

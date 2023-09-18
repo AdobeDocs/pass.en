@@ -11,7 +11,7 @@ exl-id: 8bce6acc-cd33-476c-af5e-27eb2239cad1
 
 ## Introduction {#intro-user-metadata-exchange}
 
-MVPDs maintain user-specific metadata about their customers that in some cases is shared with Programmers. The aim of Adobe Pass authentication is to broker an exchange of this "user metadata", but not to enforce any kind of rules regarding the exchange. The exchange rules are for MVPDs to work out with their Programmer partners. 
+MVPDs maintain user-specific metadata about their customers that in some cases is shared with Programmers. The aim of Adobe Pass Authentication is to broker an exchange of this "user metadata", but not to enforce any kind of rules regarding the exchange. The exchange rules are for MVPDs to work out with their Programmer partners. 
 
 User metadata types available for exchange currently include the following:
 
@@ -26,14 +26,14 @@ Using this feature, MVPDs and Programmers can implement special use cases such a
 User Metadata Key Points:
 
 * The MVPD passes user metadata to the Programmer's application during the authentication and authorization flows
-* Adobe Pass authentication saves the metadata values in the AuthN and AuthZ tokens
-* Adobe Pass authentication can normalize values for MVPDs that provide user metadata in different formats
+* Adobe Pass Authentication saves the metadata values in the AuthN and AuthZ tokens
+* Adobe Pass Authentication can normalize values for MVPDs that provide user metadata in different formats
 * Some parameters can be encrypted using the Programmer's key
 * Specific values are made available by Adobe, via a configuration change
  
 >[!NOTE]
 >
->User metadata is an extension to the static metadata (Authentication token TTL, Authorization token TTL, and Device ID) previously available in Adobe Pass authentication.
+>User metadata is an extension to the static metadata (Authentication token TTL, Authorization token TTL, and Device ID) previously available in Adobe Pass Authentication.
 
 ## Examples {#example-mvpd-user-metadata-exch}
 
@@ -47,7 +47,7 @@ This example shows the exhange of the following:
 
 ### Programmer to MVPD Metadata Exchange {#progr-mvpd-metadata-exch}
 
-Currently the Programmer API, Adobe Pass authentication, and MVPD Authorizers all support only channel-level authorization. The channel is specified as a plain text string in the Programmer's getAuthorization() API call. This string is propagated all the way to the MVPD's authorizing backend:
+Currently the Programmer API, Adobe Pass Authentication, and MVPD Authorizers all support only channel-level authorization. The channel is specified as a plain text string in the Programmer's getAuthorization() API call. This string is propagated all the way to the MVPD's authorizing backend:
 
 From the Programmer's app or site, the user chooses an XACML capable MVPD (in this example, "TNT"). For information on XACML, see [eXtensible Access Control Markup Language](https://en.wikipedia.org/wiki/XACML){target=_blank}.
 The Programmer's app forms an AuthZ request that includes the resource and its metadata.  This example includes an MPAA rating of "pg" in the media attribute of the channel element:
@@ -62,19 +62,19 @@ var resource = '<rss version="2.0" xmlns:media="http://video.search.yahoo.com/mr
 getAuthorization(resource);
 ```
 
-Adobe Pass authentication actually supports more granular authorization, down to the asset level, when supported by both the MVPD and the Programmer. The resource and its metadata are opaque to Adobe; the intent is to establish a standard format for specifying the resource ID and metadata in a normalized way, to send resource IDs to different MVPDs. 
+Adobe Pass Authentication actually supports more granular authorization, down to the asset level, when supported by both the MVPD and the Programmer. The resource and its metadata are opaque to Adobe; the intent is to establish a standard format for specifying the resource ID and metadata in a normalized way, to send resource IDs to different MVPDs. 
 
 >[!NOTE]
 >
->If the user chooses a channel-only capable MVPD, then Adobe Pass authentication extracts ONLY the channel title ("TNT" in the example above) and passes only the title to the MVPD. 
+>If the user chooses a channel-only capable MVPD, then Adobe Pass Authentication extracts ONLY the channel title ("TNT" in the example above) and passes only the title to the MVPD. 
 
 ### MVPD to Programmer Metadata Exchange Flow {#mvpd-progr-exchange-flow}
 
-Adobe Pass authentication makes the following assumptions:
+Adobe Pass Authentication makes the following assumptions:
 
 * The MVPD sends the max rating as part of the SAML response
 * This information is saved as part of the authentication token
-* An API is provided by Adobe Pass authentication to enable Programmers to retrieve this information
+* An API is provided by Adobe Pass Authentication to enable Programmers to retrieve this information
 * Programmers implement this feature on their site or app (for example, to hide videos that are over the max rating for the user)
 
 ```XML
@@ -101,11 +101,11 @@ Adobe Pass authentication makes the following assumptions:
 
 **Resource Normalization and Validation.** Resource IDs can be passed as a plain string or an MRSS string. A Programmer can decide to use either the plain string format or the MRSS, but will need a prior agreement with the MVPD so that the MVPD knows how to treat that resource. 
 
-**Resource ID and Metadata Specification.** Adobe Pass authentication uses the RSS standard with the Media RSS extension to specify a resource and its metadata. In conjunction with the Media RSS extension, Adobe Pass authentication supports a wide variety of metadata, such as parental controls (via `<media:rating>`) or geolocation (`<media:location>`). 
+**Resource ID and Metadata Specification.** Adobe Pass Authentication uses the RSS standard with the Media RSS extension to specify a resource and its metadata. In conjunction with the Media RSS extension, Adobe Pass Authentication supports a wide variety of metadata, such as parental controls (via `<media:rating>`) or geolocation (`<media:location>`). 
 
-Adobe Pass authentication can also support transparent conversion from the legacy channel string to the corresponding RSS resource for MVPDs that require RSS. In the other direction, Adobe Pass authentication supports conversion from RSS+MRSS to plain channel title, for channel-only MVPDs. 
+Adobe Pass Authentication can also support transparent conversion from the legacy channel string to the corresponding RSS resource for MVPDs that require RSS. In the other direction, Adobe Pass Authentication supports conversion from RSS+MRSS to plain channel title, for channel-only MVPDs. 
 
-**Adobe Pass authentication ensures full backwards compatibility with existing integrations.** That is, for Programmers using channel-level authentication, Adobe Pass authentication takes care to package the channel ID in the necessary format prior to sending it to an MVPD that understands that format. The reverse also applies: if a Programmer specifies all of its resources in a new format, Adobe Pass authentication translates the new format to a simple channel string if authorizing against an MVPD that only does channel level authorization. 
+**Adobe Pass Authentication ensures full backwards compatibility with existing integrations.** That is, for Programmers using channel-level authentication, Adobe Pass Authentication takes care to package the channel ID in the necessary format prior to sending it to an MVPD that understands that format. The reverse also applies: if a Programmer specifies all of its resources in a new format, Adobe Pass Authentication translates the new format to a simple channel string if authorizing against an MVPD that only does channel level authorization. 
 
 ## User Metadata Use Cases {#user-metadata-use-cases}
 

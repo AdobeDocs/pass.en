@@ -11,7 +11,7 @@ exl-id: dedade15-c451-4757-b684-d3728e11dd87
 
 ## Overview
 
-Single Sign-On (SSO) between Adobe Pass authentication powered apps is available on devices using Android OS through the means of Access Enabler Android SDK. In order to offer Single Sign-On (SSO) on Android devices, the Access Enabler Android SDK version 3.2.1 (latest) and previous versions use a shared database file saved in an Android storage implementation, accessible by all Adobe Pass authentication powered apps.
+Single Sign-On (SSO) between Adobe Pass Authentication powered apps is available on devices using Android OS through the means of Access Enabler Android SDK. In order to offer Single Sign-On (SSO) on Android devices, the Access Enabler Android SDK version 3.2.1 (latest) and previous versions use a shared database file saved in an Android storage implementation, accessible by all Adobe Pass Authentication powered apps.
 
 However, Google in latest Android 10 release produced some changes "to give users more control over their files and to limit file clutter, apps targeting Android 10 (API level 29) and higher are given scoped access into an external storage device, or scoped storage, by default. Such apps can see only their app-specific directory `\[...\]`". More details related to these Android 10 storage changes are presented in [Data and file storage documentation for Android](https://developer.android.com/training/data-storage/files/external-scoped).
 
@@ -30,4 +30,4 @@ Depending on your app's **target SDK level** or the usage of **android:requestLe
 
 >[!TIP]
 >
-> Before Adobe Pass authentication Access Enabler Android SDK is fully compatible with scoped storage, you can temporarily opt out based on your app's target SDK level or the requestLegacyExternalStorage manifest attribute as explained in public [Android documentation](https://developer.android.com/training/data-storage/files/external-scoped#opt-out-of-scoped-storage).
+> Before Adobe Pass Authentication Access Enabler Android SDK is fully compatible with scoped storage, you can temporarily opt out based on your app's target SDK level or the requestLegacyExternalStorage manifest attribute as explained in public [Android documentation](https://developer.android.com/training/data-storage/files/external-scoped#opt-out-of-scoped-storage).

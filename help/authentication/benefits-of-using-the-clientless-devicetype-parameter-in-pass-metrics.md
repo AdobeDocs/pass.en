@@ -1,9 +1,9 @@
 ---
-title: Benefits of using the Clientless deviceType parameter in Adobe Pass authentication metrics
-description: Benefits of using the Clientless deviceType parameter in Adobe Pass authentication metrics
+title: Benefits of using the Clientless deviceType parameter in Adobe Pass Authentication metrics
+description: Benefits of using the Clientless deviceType parameter in Adobe Pass Authentication metrics
 exl-id: a5004887-d5fa-468e-971b-10806519175b
 ---
-# Benefits of using the Clientless deviceType parameter in Adobe Pass authentication metrics {#benefits-of-using-the-clientless-devicetype-parameter-in-primetime-authentication-metrics}
+# Benefits of using the Clientless deviceType parameter in Adobe Pass Authentication metrics {#benefits-of-using-the-clientless-devicetype-parameter-in-primetime-authentication-metrics}
 
 >[!NOTE]
 >
@@ -13,13 +13,13 @@ exl-id: a5004887-d5fa-468e-971b-10806519175b
 
 ## Context
 
-Although optional, the parameter `deviceType` from the Clientless API, when present, is used in Adobe Pass authentication metrics that are being exposed through [Entitlement Service Monitoring](/help/authentication/entitlement-service-monitoring-overview.md).
+Although optional, the parameter `deviceType` from the Clientless API, when present, is used in Adobe Pass Authentication metrics that are being exposed through [Entitlement Service Monitoring](/help/authentication/entitlement-service-monitoring-overview.md).
 
-Considering that the connection between the `deviceType` parameter and its **benefits** on Adobe Pass authentication metrics wasn't initially stated, the scope of this tech note is to add more information about them.
+Considering that the connection between the `deviceType` parameter and its **benefits** on Adobe Pass Authentication metrics wasn't initially stated, the scope of this tech note is to add more information about them.
 
 ## Explanation
 
-The `deviceType` parameter was present in the Clientless API since the first version, but its implications on Adobe Pass authentication metrics were added in a more recent release.
+The `deviceType` parameter was present in the Clientless API since the first version, but its implications on Adobe Pass Authentication metrics were added in a more recent release.
 
 
 
@@ -39,7 +39,7 @@ For more information on the Entitlement Service Monitoring API, please refer to 
 
 ## Implementation
 
-To fully benefit from the Adobe Pass authentication metrics, there are 2 types of [Clientless APIs](#web_srvs_summary) that are currently being used and that need to have the correct `deviceType` set:
+To fully benefit from the Adobe Pass Authentication metrics, there are 2 types of [Clientless APIs](#web_srvs_summary) that are currently being used and that need to have the correct `deviceType` set:
 
 1.  APIs that have `regcode` as a required parameter and will use the `deviceType` parameter which was set when creating the `regcode`, with the following API call:
       - [\<REGGIE\_FQDN\>/reggie/v1/{requestorId}/regcode](#reg_serv)

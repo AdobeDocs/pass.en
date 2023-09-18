@@ -23,7 +23,7 @@ Each authorization request (or request to check authorization) must contain a un
 
 ## Media RSS Format {#media_rss}
 
-Resources can be identified by a simple string (a unique identifier for a channel), or can be represented in Media RSS format (MRSS), as agreed between Adobe (or an Adobe Pass authentication authorized partner) and the participating MVPDs and Programmers. The RSS string used as a resource specifier can include additional information, such as ratings and parental-control metadata.  
+Resources can be identified by a simple string (a unique identifier for a channel), or can be represented in Media RSS format (MRSS), as agreed between Adobe (or an Adobe Pass Authentication authorized partner) and the participating MVPDs and Programmers. The RSS string used as a resource specifier can include additional information, such as ratings and parental-control metadata.  
  
 
 If you use a simple resource identifier, such as "TNT", it is assumed to represent a channel, and is translated into this RSS resource specifier:
@@ -50,7 +50,7 @@ A more complex specifier might include, for example, additional rating informati
     getAuthorization(resource);
 ```
 
-Resource specifiers are opaque to Adobe Pass authentication; they are simply passed through to the MVPD. If the MVPD does not recognize or cannot parse your resource specifier, it returns an error to Adobe Pass authentication, which passes the error back to your `tokenRequestFailed()` callback.
+Resource specifiers are opaque to Adobe Pass Authentication; they are simply passed through to the MVPD. If the MVPD does not recognize or cannot parse your resource specifier, it returns an error to Adobe Pass Authentication, which passes the error back to your `tokenRequestFailed()` callback.
 
 <!--
 ## Related Information {#related}

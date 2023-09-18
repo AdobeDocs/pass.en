@@ -11,9 +11,9 @@ exl-id: edc3719e-c627-464c-9b10-367a425698c6
 
 ## Overview {#overview-sso-support}
 
-This document describes the types of Single Sign On supported and powered by Adobe Pass authentication on different platforms. The scope of this document is to shed light into what's supported and what's not, what is the MVPD coverage for each SSO method and what is required from the Programmers to be able to benefit from SSO on each platform.
+This document describes the types of Single Sign On supported and powered by Adobe Pass Authentication on different platforms. The scope of this document is to shed light into what's supported and what's not, what is the MVPD coverage for each SSO method and what is required from the Programmers to be able to benefit from SSO on each platform.
 
-After a user logs in with their MVPD credentials, Adobe Pass authentication generates a secure token that represents the MVPD's Authentication session, and binds that token to the user's device using a Device ID. Adobe Pass authentication stores the token / Device ID either on a server or on the device. This allows users to enter their credentials less frequently while keeping transactions secure.
+After a user logs in with their MVPD credentials, Adobe Pass Authentication generates a secure token that represents the MVPD's Authentication session, and binds that token to the user's device using a Device ID. Adobe Pass Authentication stores the token / Device ID either on a server or on the device. This allows users to enter their credentials less frequently while keeping transactions secure.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ After a user logs in with their MVPD credentials, Adobe Pass authentication gene
 
 In certain situations some apps or sites will want to disable SSO to satisfy advanced business cases.  
 
-* **For JS and native SDKs** - The Adobe Pass authentication support team can disable SSO for a Requestor ID / MVPD pair. No work is needed on sites or in native apps.  Once SSO is disabled by the Adobe Pass authentication support team, authentications performed using the specified RequestorId / MVPD pair will not be shared with sites or apps using different Requestor IDs. In addition, existing authentications with different Requestor IDs will not be valid for the Requestor ID / MVPD combination in which SSO was disabled. Technically, SSO disabling is accomplished by binding the AuthN token to the specific Requestor ID / MVPD combination.
+* **For JS and native SDKs** - The Adobe Pass Authentication support team can disable SSO for a Requestor ID / MVPD pair. No work is needed on sites or in native apps.  Once SSO is disabled by the Adobe Pass Authentication support team, authentications performed using the specified RequestorId / MVPD pair will not be shared with sites or apps using different Requestor IDs. In addition, existing authentications with different Requestor IDs will not be valid for the Requestor ID / MVPD combination in which SSO was disabled. Technically, SSO disabling is accomplished by binding the AuthN token to the specific Requestor ID / MVPD combination.
 * **For Clientless API** - You can disable SSO in the Clientless authentication flow by specifying a non-empty appId parameter in the REST calls. You can use any string as the value, as long as that string is unique for the Requestor ID. Note that for the Clientless API, the programmer / impementor must change the site or app to add this requestor-specific parameter.
 
 >[!IMPORTANT]

@@ -47,17 +47,17 @@ From our data, collected 6 months before and 6 months after enabling HBA, we saw
 
 ![](assets/user-engagement-increase.png)
 
-## Adobe Pass authentication HBA Support {#auth-hba-support}
+## Adobe Pass Authentication HBA Support {#auth-hba-support}
 
-This section describes the HBA support provided by Adobe Pass authentication, the behavior of Adobe Pass authentication platforms in HBA flows and also offers technical details useful for implementing HBA. 
+This section describes the HBA support provided by Adobe Pass Authentication, the behavior of Adobe Pass Authentication platforms in HBA flows and also offers technical details useful for implementing HBA. 
 
-Adobe Pass authentication features supporting HBA
+Adobe Pass Authentication features supporting HBA
 
 * Ability to set different authentication TTLs for HBA versus non-HBA authentications (also requires MVPD support)
 * Ability to automatically select an MVPD (skip MVPD picker) if the authentication expired. This is usefull especially when HBA TTLs are small.
 * Ability to expose to the Programmers if the authentication was HBA or not (also requires MVPD support)
  
-### HBA User Experience on Adobe Pass authentication platforms {#hba-user-exp}
+### HBA User Experience on Adobe Pass Authentication platforms {#hba-user-exp}
 
 The following tables provide information about the user experience for the supported platforms when HBA is enabled and when HBA is not enabled:
 

@@ -1,9 +1,9 @@
 ---
-title: Adobe Pass authentication 2.64 Release Notes
-description: Adobe Pass authentication 2.64 Release Notes
+title: Adobe Pass Authentication 2.64 Release Notes
+description: Adobe Pass Authentication 2.64 Release Notes
 exl-id: 4db21026-a0c2-4e33-b01f-4ccae824a110
 ---
-# Adobe Pass authentication 2.64 Release Notes {#authn-264-rn}
+# Adobe Pass Authentication 2.64 Release Notes {#authn-264-rn}
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ This page describes new features, changes, and known issues with this release:
 
 ### Build Number {#build-no-264}
 
-Adobe Pass authentication: adobe-pass-**2.64**
+Adobe Pass Authentication: adobe-pass-**2.64**
 
 Release Date: **11/08/2022 - 11/10/2022**
 

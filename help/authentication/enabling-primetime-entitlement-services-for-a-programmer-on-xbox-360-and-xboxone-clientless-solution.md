@@ -12,7 +12,7 @@ exl-id: ff7254de-9ea4-4c27-a186-d1c2eea12222
 
 
 
-1.  The Programmer creates a Zendesk ticket for enabling Xbox 360/One for Adobe Pass authentication clientless solution by providing the following information:
+1.  The Programmer creates a Zendesk ticket for enabling Xbox 360/One for Adobe Pass Authentication clientless solution by providing the following information:
     
     1.  Platform: e.g. Xbox 360, Xbox One
     

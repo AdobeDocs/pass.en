@@ -109,7 +109,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
   + [MVPD allow IP addresses](mvpd-listing-ip-addres.md)
 + Adobe Pass Authentication features {#auth-features}
   + Adobe Analytics integration {#analytics-int}
-    + [Integrating Adobe Pass authentication server side data into Adobe Analytics](integrate-authn-servr-data-analytics.md)
+    + [Integrating Adobe Pass Authentication server side data into Adobe Analytics](integrate-authn-servr-data-analytics.md)
     + [Using Experience Cloud ID in Adobe Pass Authentication](exp-cloud-id-authn.md)
   + Entitlement service monitoring {#entitlement-service-monitoring}
     + [Entitlement service monitoring overview](entitlement-service-monitoring-overview.md)
@@ -169,7 +169,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + iOS/tvOS SDK {#iostvos}
       + [WKWebView support on iOS SDK 3.1+](wkwebview-support-on-ios-sdk-31.md)
       + [SFSafariViewController support on iOS SDK 3.2+](sfsafariviewcontroller-support-on-ios-sdk-32.md)
-      + [SSO on iOS when using the Adobe Pass authentication Access Enabler](sso-on-ios-when-using-the-primetime-authentication-access-enabler.md)
+      + [SSO on iOS when using the Adobe Pass Authentication Access Enabler](sso-on-ios-when-using-the-primetime-authentication-access-enabler.md)
       + [iOS Authentication Error - adobepass.ios.app Cannot Be Found](ios-authentication-error-adobepassiosapp-cannot-be-found.md)
       + [Reset Temp Pass on iOS](reset-temp-pass-on-ios.md)
       + [Debugging the AccessEnabler iOS/tvOS SDK using Console app logs](debugging-the-accessenabler-iostvos-sdk-using-console-app-logs.md)

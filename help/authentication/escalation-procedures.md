@@ -15,7 +15,7 @@ exl-id: 1d754e5a-d5fa-4411-8932-2a36294da6eb
 
 ## Introduction {#introduction}
 
-This document describes the support procedures for major incidents(**SEVERITY 1** level) affecting Adobe Pass authentication, Adobe Pass Concurrency Monitoring and its partners.  
+This document describes the support procedures for major incidents(**SEVERITY 1** level) affecting Adobe Pass Authentication, Adobe Pass Concurrency Monitoring and its partners.  
  
 
 ## Definition of a SEVERITY 1 Level Incident {#definition-of-a-severity-1-level-incident}
@@ -40,7 +40,7 @@ A **SEVERITY 1** level incident is a **LIVE** situation, **happening in the prod
 
 ## Severity 1 Escalation Flows {#severity-1-escalation-flows}
 
-Severity 1 incidents may be initiated by either Adobe or an Adobe Pass authentication partner. The steps for each are presented below.
+Severity 1 incidents may be initiated by either Adobe or an Adobe Pass Authentication partner. The steps for each are presented below.
 
 ### Partner-initiated Flow {#partner-initiated-flow}
 
@@ -61,7 +61,7 @@ Severity 1 incidents may be initiated by either Adobe or an Adobe Pass authentic
 
 ### Adobe-initiated Flow {#adobe-initiated-flow}
 
-#### ...for an Adobe Pass authentication issue {#adobe-initiated-flow-authn-issue}
+#### ...for an Adobe Pass Authentication issue {#adobe-initiated-flow-authn-issue}
 
 1.  Adobe identifies an internal issue and opens a ticket with our tracking system.
 

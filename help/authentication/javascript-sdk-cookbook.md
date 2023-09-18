@@ -33,8 +33,8 @@ link to a set of JavaScript code samples.
 
 **Dependencies:**
 
-- Adobe Pass authentication Library (AccessEnabler), work with your Adobe Pass authentication Account Manager to arrange this.
-- Valid Adobe Pass authentication requestorId, work with your Adobe Pass authentication Account Manager to arrange this.
+- Adobe Pass Authentication Library (AccessEnabler), work with your Adobe Pass Authentication Account Manager to arrange this.
+- Valid Adobe Pass Authentication requestorId, work with your Adobe Pass Authentication Account Manager to arrange this.
 
 Create your callback functions:
 
@@ -115,7 +115,7 @@ authentication calls your `entitlementLoaded()` callback function. This is the e
  
 **II.** Call `setRequestor()`to establish the
 identity of the Programmer; pass in the Programmer's `requestorID` and
-(optionally) an array of Adobe Pass authentication endpoints.
+(optionally) an array of Adobe Pass Authentication endpoints.
 
 **Triggers:** None, but enables `displayProviderDialog()` to be called when needed.
 

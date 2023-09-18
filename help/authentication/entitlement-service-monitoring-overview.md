@@ -13,7 +13,7 @@ exl-id: ebd5d650-0a32-4583-9045-5156356494e2
 
 TVE sites and apps need to be available 24/7, so customers require real-time insight into entitlement events in order to detect and correct problems as quickly as possible. They also need to analyze monthly data in order to determine which platforms are providing the bulk of the traffic, and which platforms might have a bad implementation and poor conversion rates.
 
-Entitlement Service Monitoring (ESM) provides Programmers and MVPDs wit a data feed that offers real-time visibility into their Authentication and Authorization events. The data is collected from the Adobe Pass authentication systems, and provided through a RESTful API.  Customers can consume the data in a direct fashion, or from within their own custom-built operational dashboards.
+Entitlement Service Monitoring (ESM) provides Programmers and MVPDs wit a data feed that offers real-time visibility into their Authentication and Authorization events. The data is collected from the Adobe Pass Authentication systems, and provided through a RESTful API.  Customers can consume the data in a direct fashion, or from within their own custom-built operational dashboards.
 
 The core elements of the ESM system are its metrics and dimensions. ESM generates reports that contain aggregated metrics according to the dimension selection. As Adobe Pass events are logged in PST timezone, the ESM reports are also available in PST timezone. 
 
@@ -39,7 +39,7 @@ The ESM API is not generally available.  Contact your Adobe representative for a
 | authz-latency | Total number of milliseconds spent on the MVPD's endpoint | 
 | media-tokens | Number of short media tokens generated (which assimilate with the number of play requests) | 
 |unique-accounts | Number of unique users who performed entitlement (AuthN / AuthZ) actions in the selected time interval. (This metric will only show if daily values are requested.) </br> This is computed for each individual Data Center. When "dc" dimension is not requested, this metric will not be displayed. | 
-| unique-sessions | Number of unique sessions that performed authentication flow calls to the Adobe Pass authentication service within the selected time interval. (This metric will only show if daily values are requested.) </br> This is computed for each individual Data Center. When "dc" dimension is not requested, this metric will not be displayed. | 
+| unique-sessions | Number of unique sessions that performed authentication flow calls to the Adobe Pass Authentication service within the selected time interval. (This metric will only show if daily values are requested.) </br> This is computed for each individual Data Center. When "dc" dimension is not requested, this metric will not be displayed. | 
 | count | A simple counter used in the event-oriented reports | 
 
 </br>
@@ -62,17 +62,17 @@ The ESM API is not generally available.  Contact your Adobe representative for a
 | channel |  The channel website, extracted from the resource field (extracted from the MRSS payload as the channel/title if provided, or mapped to the resource value if it's not in RSS format). | 
 | resource-id |  The actual resource title involved in the authorization request (extracted from the MRSS payload as the item/title if provided) |
 | device |  The device platform (PC, mobile, console, etc.) |
-| eap | The external authentication provider when authentication flow is performed through an external system. </br> The values can be: </br> - N/A - the authentication was provided by Adobe Pass authentication </br> - Apple - the external system that provided the authentication is Apple | 
+| eap | The external authentication provider when authentication flow is performed through an external system. </br> The values can be: </br> - N/A - the authentication was provided by Adobe Pass Authentication </br> - Apple - the external system that provided the authentication is Apple | 
 | os-family | Operating system running on the device | 
-| browser-family | User agent used for accessing Adobe Pass authentication | 
+| browser-family | User agent used for accessing Adobe Pass Authentication | 
 |cdt | The device platform (alternative), currently used for Clientless. </br>  The values can be: </br> - N/A - the event did not originate from a Clientless SDK </br> - Unknown - Since the deviceType parameter from a Clientless API is optional, there are calls that do not contain any value. </br> - any other value that was sent through the Clientless API, e.g. xbox, appletv, roku etc. </br> |
 | platform-version | The version of the Clientless SDK | 
 | os-type | Operating system running on the device, alternative (not currently used) | 
 | browser-version | User agent version | 
 | sdk-type | The client SDK used (Flash, HTML5, Android native, iOS, Clientless etc.) |
-| sdk-version |  The version of the Adobe Pass authentication client SDK | 
-| event | The Adobe Pass authentication event name | 
-| reason | The reason for failures, as reported by Adobe Pass authentication | 
+| sdk-version |  The version of the Adobe Pass Authentication client SDK | 
+| event | The Adobe Pass Authentication event name | 
+| reason | The reason for failures, as reported by Adobe Pass Authentication | 
 | sso-type |   The underlying SSO mechanism: platform/passive/adobe. Indicates that the authorization token was emitted by reusing the AuthN in a different application | 
 
 ## ESM for MVPDs {#esm-for-mvpds}
@@ -101,7 +101,7 @@ The ESM API is not generally available.  Contact your Adobe representative for a
 |hour |  The hour of the day | 
 | minute | The minute of the hour | 
 | requestor-id | The requestor ID used to perform the entitlement request | 
-| eap | The external authentication provider when authentication flow is performed through an external system. </br> The values can be: </br> - N/A - the authentication was provided by Adobe Pass authentication </br> - Apple - the external system that provided the authentication is Apple | 
+| eap | The external authentication provider when authentication flow is performed through an external system. </br> The values can be: </br> - N/A - the authentication was provided by Adobe Pass Authentication </br> - Apple - the external system that provided the authentication is Apple | 
 |cdt | The device platform (alternative), currently used for Clientless. </br>  The values can be: </br> - N/A - the event did not originate from a Clientless SDK </br> - Unknown - Since the deviceType parameter from a Clientless API is optional, there are calls that do not contain any value. </br> - any other value that was sent through the Clientless API, e.g. xbox, appletv, roku etc. </br> |
 | sdk-type | The client SDK used (Flash, HTML5, Android native, iOS, Clientless etc.) |
 
@@ -110,7 +110,7 @@ The ESM API is not generally available.  Contact your Adobe representative for a
 
 You can use the ESM data for the following use cases:
 
-- **Monitoring** - Ops or monitoring teams can create a dashboard or chart that calls the API every minute. Using the information displayed they can detect a problem (with Adobe Pass authentication, or with an MVPD) the minute it appears.  
+- **Monitoring** - Ops or monitoring teams can create a dashboard or chart that calls the API every minute. Using the information displayed they can detect a problem (with Adobe Pass Authentication, or with an MVPD) the minute it appears.  
 
 - **Debugging/Quality Testing** - Because data is also broken down by platform, device, browser, and OS, analyzing usage patterns can pinpoint problems on specific combinations (e.g., Safari on OSX).  
 
