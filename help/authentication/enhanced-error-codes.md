@@ -97,7 +97,7 @@ Adobe Pass APIs which handle multiple items (Preauthorization API,etc) might ind
 Each error object has the following parameters:
 
 |Name|Type|Example|Restricted|Description|
-|---|---|----|-:-|---|
+|---|---|----|:---:|---|
 |*status*|*integer*|*403*|&check;| The response HTTP status code as documented in RFC 7231 (<https://tools.ietf.org/html/rfc7231#section-6>) <ul><li>400 Bad Request</li><li>401 Unauthorized</li><li>403 Forbidden</li><li>404 Not found</li><li>405 Method not allowed</li><li>409 Conflict</li><li>410 Gone</li><li>412 Precondition failed</li><li>429 Too many requests</li><li>500 Interval server error</li><li>503 Service unavailable</li></ul> |
 |*code*|*string*|*network_connection_failure*|&check;|The standard Adobe Pass Authentication error code. The complete list of error codes is included below.|
 |*message*|*string*|*Unable to contact your TV provider services*| |Human readable message which can be displayed to the end user.|
