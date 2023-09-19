@@ -37,7 +37,7 @@ exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
 
    **Answer.** AIQ uses powerful analytics to provide insights. However, those insights can drive unlimited actions through integrations with Adobe products, such as Concurrency Monitoring, or your enterprise tools.
 
-1. How effective is Concurrency Monitoring in mitigating sharing in industry?
+1. How effective is Concurrency Monitoring in mitigating sharing in industry? 
 
    **Answer.** Account IQ and Concurrency Monitoring (CM) detect different modes of sharing and are complimentary. CM is excellent at preventing sharing that occurs simultaneously. It's therefore most effective during primetime viewing or for live events, such as sports. On the other hand, Account IQ looks at a broad set of historical data and therefore detects sharing that is not necessarily simultaneous. These two services can be combined for even more effective solution.  
 
@@ -55,7 +55,7 @@ exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
 
 1. Do we need to work with internal technology groups and distribution partners to implement measures like smart CM (Concurrency Monitoring)?
 
-   **Answer.** Not necessarily. Adobe Pass Support can work to create your own CM rules based on your AIQ data.
+   **Answer.** Not necessarily. [!DNL Adobe Pass] Support can work to create your own CM rules based on your AIQ data.
 
 1. Can I see how segments trend over time?
 

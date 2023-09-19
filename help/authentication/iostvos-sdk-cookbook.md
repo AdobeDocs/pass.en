@@ -36,9 +36,9 @@ The AccessEnabler's network activity takes place in its own thread, so the UI th
 * The UI application layer sends messages to the AccessEnabler domain via the API calls exposed by the AccessEnabler library.
 * The AccessEnabler responds to the UI layer through the callback methods included in the AccessEnabler protocol which the UI layer registers with the AccessEnabler library.
 
-## Configuring the Visitor ID {#visitorIDSetup}
+## Configuring the Experience Cloud ID Service (Visitor ID) {#visitorIDSetup}
 
-Configuring a [Marketing Cloud visitorID](https://experienceleague.adobe.com/docs/id-service/using/home.html) value is very important from the analytics point of view. Once a visitorID value is set, the SDK will send this information along with every netwrok calls and the Adobe Pass Authentication server will collect this information. In the future you will be able to correlate the analytics from Adobe Pass Authentication service with any other anayltics reports that you may have from other applications or websites. Information on how to setup visitorID can be found [here](#setOptions).
+Configuring the [Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html) value is important from the [!DNL Analytics] point of view. Once a `visitorID` value is set, the SDK sends this information along with every netwrok call and the [!DNL Adobe Pass] Authentication server collects this information. You can correlate the analytics from Adobe Pass Authentication service with any other anayltics reports that you may have from other applications or websites. Information on how to setup visitorID can be found [here](#setOptions).
 
 ## Entitlement Flows {#entitlement}
 
