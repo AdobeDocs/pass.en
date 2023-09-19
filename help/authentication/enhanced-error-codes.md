@@ -29,12 +29,39 @@ The Adobe Pass Authentication API returns HTTP Status codes in the range 400-500
 
 The additional error information is included in the "error" field within the response body. 
 
+<table>
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Example</th>
+    <th>Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>error</td>
+    <td><i>object</i></td>
+    <td><strong>JSON</strong>
+    <p>
+    <pre><code>{<br>&nbsp;&nbsp;&nbsp;&nbsp;"status" : 403,<br>&nbsp;&nbsp;&nbsp;&nbsp;"code" : "network_connection_failure",<br>&nbsp;&nbsp;&nbsp;&nbsp;"message" : "Unable to contact your TV provider<br>&nbsp;&nbsp;&nbsp;&nbsp;services",<br>&nbsp;&nbsp;&nbsp;&nbsp;"helpUrl" : "https://tve.helpdocsonline.com/errors<br>&nbsp;&nbsp;&nbsp;&nbsp;/network_connection_failure",<br>&nbsp;&nbsp;&nbsp;&nbsp;"trace" : "12f6fef9-d2e0-422b-a9d7-60d799abe353",<br>&nbsp;&nbsp;&nbsp;&nbsp;"action" : "retry"<br>}
+    </code></pre>
+    <p>
+    <strong>XML</strong>
+    <p>
+    <pre><code>&lt;error&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;status&gt;403&lt;/status&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&gt;network_connection_failure&lt;/code&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;message&gt;Unable to contact your TV provider services&lt;/message&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;helpUrl&gt;https://tve.helpdocsonline.com/errors/network_connection_failure&lt;/helpUrl&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;trace>12f6fef9-d2e0-422b-a9d7-60d799abe353&lt;/trace&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;action>retry&lt;/action&gt;<br>&lt;/error&gt;
+    </code></pre>
+    </td>
+    <td>A collection or error objects collected while trying to complete the request.</td>
+  </tr>
+</tbody>
+</table>
 
-
+OLD
 
 | Name | Type | Example | Description |
 | --- | --- | --- | --- |
-| **error** | _object_ | JSON <br>    {<br>        "status" : 403,<br>        "code" : "network_connection_failure",<br>        "message" : "Unable to contact your TV provider services",<br>        "helpUrl" : "",<br>        "trace" : "12f6fef9-d2e0-422b-a9d7-60d799abe353",<br>        "action" : "retry"<br>    }<br><br>----------------------------------------------------------------------------<br><br>XML<br><br>`<``error``>`<br><br>`<``status``>403</``status``>`<br><br>`<``code``>network_connection_failure</``code``>`<br><br>`<``message``>Unable to contact your TV provider services</``message``>   <``helpUrl``></``helpUrl``>`<br><br>`<``trace``>12f6fef9-d2e0-422b-a9d7-60d799abe353</``trace``>`<br><br>`<``action``>retry</``action``>`<br><br>`</``error``> ` | A collection or error objects collected while trying to complete the request. |
+| **error** | _object_ | JSON <br>    {<br>        "status" : 403,<br>        "code" : "network_connection_failure",<br>        "message" : "Unable to contact your TV provider services",<br>        "helpUrl" : "",<br>        "trace" : "12f6fef9-d2e0-422b-a9d7-60d799abe353",<br>        "action" : "retry"<br>    }<br><br>----------------------------------------------------------------------------<br><br>XML<br><br>`<``error``>`<br><br>`<``status``>403</``status``>`<br><br>`<``code``>network_connection_failure</``code``>`<br><br>`<``message``>Unable to contact your TV provider services</``message``>   <``helpUrl``></``helpUrl``>`<br><br>`<``trace``>12f6fef9-d2e0-422b-a9d7-60d799abe353</``trace``>`<br><br>`<``action``>retry</``action``>`<br><br>`</``error``> ` |  |
 
 </br>
 
