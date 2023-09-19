@@ -97,7 +97,7 @@ Adobe Pass APIs which handle multiple items (Preauthorization API,etc) might ind
 Each error object has the following parameters:
 
 |Name|Type|Example|Restricted|Description|
-|----|----|----|----|--------------|
+|---|---|----|-:-|---|
 |*status*|*integer*|*403*|&check;| The response HTTP status code as documented in RFC 7231 (<https://tools.ietf.org/html/rfc7231#section-6>) <ul><li>400 Bad Request</li><li>401 Unauthorized</li><li>403 Forbidden</li><li>404 Not found</li><li>405 Method not allowed</li><li>409 Conflict</li><li>410 Gone</li><li>412 Precondition failed</li><li>429 Too many requests</li><li>500 Interval server error</li><li>503 Service unavailable</li></ul> |
 |*code*|*string*|*network_connection_failure*|&check;|The standard Adobe Pass Authentication error code. The complete list of error codes is included below.|
 |*message*|*string*|*Unable to contact your TV provider services*| |Human readable message which can be displayed to the end user.|
@@ -131,8 +131,7 @@ For most of the error codes, multiple actions could be eligible as paths toward 
 
 For the 1st category (retry and retry-after), simply retrying the same request might be enough to solve the issue. In cases of APIs which handle multiple items, the application should repeat the request and include only those items with "retry" or "retry-after" action. For "*retry-after*" action, a "<u>Retry-After</u>" header will indicate how many seconds the application should wait before repeating the request.
 
-For the 2nd and 3rd category, the actual action implementation is highly dependent to the application features. For example, "*degradation*" ca be implemented either as "switch to 15 minutes temporary passes to allow users playback of the content" or either as "automatic tool to apply AUTHN-ALL or AUTHZ-ALL degradation for its integration with the specified MVPD". Similar an "*authentication*" action can trigger a
-passive authentication (back-channel authentication) on a tablet and a full 2nd screen authentication flow on connected TVs. That's why we did opt for providing fully fledged URLs with schema and all parameters. 
+For the 2nd and 3rd category, the actual action implementation is highly dependent to the application features. For example, "*degradation*" ca be implemented either as "switch to 15 minutes temporary passes to allow users playback of the content" or either as "automatic tool to apply AUTHN-ALL or AUTHZ-ALL degradation for its integration with the specified MVPD". Similar an "*authentication*" action can trigger a passive authentication (back-channel authentication) on a tablet and a full 2nd screen authentication flow on connected TVs. That's why we did opt for providing fully fledged URLs with schema and all parameters. 
 
 ## Error Codes {#error-codes}
 
