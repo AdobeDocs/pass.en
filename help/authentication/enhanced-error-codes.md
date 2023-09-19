@@ -52,16 +52,10 @@ The additional error information is included in the "error" field within the res
     <code>&lt;error&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;status&gt;403&lt;/status&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&gt;network_connection_failure&lt;/code&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;message&gt;Unable to contact your TV provider services&lt;/message&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;helpUrl&gt;https://tve.helpdocsonline.com/errors/network_connection_failure&lt;/helpUrl&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;trace>12f6fef9-d2e0-422b-a9d7-60d799abe353&lt;/trace&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;action>retry&lt;/action&gt;<br>&lt;/error&gt;
     </code>
     </td>
-    <td>A collection or error objects collected while trying to complete the request.</td>
+    <td>Refers to collection or error objects collected while trying to complete the request.</td>
   </tr>
 </tbody>
 </table>
-
-OLD
-
-| Name | Type | Example | Description |
-| --- | --- | --- | --- |
-| **error** | _object_ | JSON <br>    {<br>        "status" : 403,<br>        "code" : "network_connection_failure",<br>        "message" : "Unable to contact your TV provider services",<br>        "helpUrl" : "",<br>        "trace" : "12f6fef9-d2e0-422b-a9d7-60d799abe353",<br>        "action" : "retry"<br>    }<br><br>----------------------------------------------------------------------------<br><br>XML<br><br>`<``error``>`<br><br>`<``status``>403</``status``>`<br><br>`<``code``>network_connection_failure</``code``>`<br><br>`<``message``>Unable to contact your TV provider services</``message``>   <``helpUrl``></``helpUrl``>`<br><br>`<``trace``>12f6fef9-d2e0-422b-a9d7-60d799abe353</``trace``>`<br><br>`<``action``>retry</``action``>`<br><br>`</``error``> ` |  |
 
 </br>
 
@@ -69,9 +63,33 @@ Adobe Pass APIs which handle multiple items (Preauthorization API,etc) might ind
 
 </br>
 
-| Example with partial success and item-level error  | 
-| ---------------------- |
-| <pre lang="json">JSON <br>{<br>  "id" : "TestStream1",<br>  "authorized" : true <br>}, </br>{ </br>  "id" : "TestStream2", <br>   "authorized" : false, </br>   "error" : { <br> </br>      "status" : 403,<br>      "code" : "network_connection_failure",<br>      "message" : "Unable to contact your TV provider services",<br>      "details" : "",<br>      "helpUrl" : "",<br>      "trace" : "8bcb17f9-b172-47d2-86d9-3eb146eba85e",<br>      "action" : "retry"</br>    }<br> </br>   }<br> ] </br>} </pre>|
+**Example with partial success and item-level error**
+
+```json
+{
+   "resources" : [
+        {
+            "id" : "TestStream1",
+            "authorized" : true
+        },
+        {
+            "id" : "TestStream2",
+            "authorized" : false,
+            "error" : {
+ 
+               "status" : 403,
+               "code" : "network_connection_failure",
+               "message" : "Unable to contact your TV provider services",
+               "details" : "",
+               "helpUrl" : "https://tve.helpdocsonline.com/errors/network_connection_failure",
+               "trace" : "8bcb17f9-b172-47d2-86d9-3eb146eba85e",
+               "action" : "retry"
+            }
+ 
+        }
+    ]
+}
+```
 
 </br>
 
@@ -79,13 +97,13 @@ Each error object has the following parameters:
 
 |Name|Type|Example|Restricted|Description|
 |----|----|----|----|--------------|
-|Status|*integer*|403|♦| The response HTTP status code as documented in RFC 7231 (https://tools.ietf.org/html/rfc7231#section-6) <br> -  400 Bad Request <br> - 400 Bad Request <br> - 400 Bad Request <br> - 401 Unauthorized <br> - 403 Forbidden <br> - 404 Not found <br> - 405 Method not allowed <br> - 409 Conflict <br> - 410 Gone <br> -  412 Precondition failed <br> - 429 Too many requests <br> -  500 Interval server error <br> - 503 Service unavailable |
-|Code|*string*|network_connection_failure|♦|The standard Adobe Pass Authentication error code. The complete list of error codes is included below.|
-|message|*string*|Unable to contact your TV provider services| |Human readable message which can be displayed to the end user.|
-|details|*string*|Your subscription package does not include the "Live" channel| |In some cases a detailed message is provided by the MVPD authorization endpoints or by the Programmer through degradation rules. <br> <br> Note that If no custom message was received from the partner services then this field might not be present in the error fields.|
-|helpUrl|*url*| ""  | |A URL that links to more information about why this error occurred and possible solutions. <br> <br>  The URI represents an absolute URL and should not be inferred from error code. Depending on the error context, a different url can be provided. For example, same bad_request error code will yield different urls for authentication and authorization services.|
-|trace|*string*| 12f6fef9-d2e0-422b-a9d7-60d799abe353| |A unique identifier for this response which can be used when contacting support to identify specific issues in more complex scenarios.|
-|action|*string*| retry |♦|*Recommended action to remediate the situation:* </br><br> -none - Unfortunately there is no predefined action to remediate this issue. This might indicate an improper invocation of the public API </br><br>-configuration - A configuration change is needed through TVE dashboard or by contacting support. </br><br>-application-registration - The application must register itself again. </br><br>-authentication - The user must authenticate or re-authenticate. </br><br>-authorization - The user must obtain authorization for the specific resource. </br><br>-degradation - Some form of degradation should be applied. </br><br>-retry - Retrying the request might solve the issue</br><br>-retry-after - Retrying the request after the indicated period of time might solve the issue.|
+|*status*|*integer*|*403*|&check;| The response HTTP status code as documented in RFC 7231 (<https://tools.ietf.org/html/rfc7231#section-6>) <ul><li>400 Bad Request</li><li>401 Unauthorized</li><li>403 Forbidden</li><li>404 Not found</li><li>405 Method not allowed</li><li>409 Conflict</li><li>410 Gone</li><li>412 Precondition failed</li><li>429 Too many requests</li><li>500 Interval server error</li><li>503 Service unavailable</li></ul> |
+|*code*|*string*|*network_connection_failure*|&check;|The standard Adobe Pass Authentication error code. The complete list of error codes is included below.|
+|*message*|*string*|*Unable to contact your TV provider services*| |Human readable message which can be displayed to the end user.|
+|*details*|*string*|*Your subscription package does not include the "Live" channel*| |In some cases a detailed message is provided by the MVPD authorization endpoints or by the Programmer through degradation rules. <p> Note that If no custom message was received from the partner services then this field might not be present in the error fields.|
+|*helpUrl*|*url*| "`http://`" | |A URL that links to more information about why this error occurred and possible solutions. <p>The URI represents an absolute URL and should not be inferred from error code. Depending on the error context, a different url can be provided. For example, same bad_request error code will yield different urls for authentication and authorization services.|
+|*trace*|*string*| *12f6fef9-d2e0-422b-a9d7-60d799abe353*| |A unique identifier for this response which can be used when contacting support to identify specific issues in more complex scenarios.|
+|*action*|*string*| *retry* |&check;|Recommended action to remediate the situation: <ul><li> *none* - Unfortunately there is no predefined action to remediate this issue. This might indicate an improper invocation of the public API</li><li>*configuration* - A configuration change is needed through TVE dashboard or by contacting support. </li><li>*application-registration* - The application must register itself again. </li><li>*authentication* - The user must authenticate or re-authenticate. </li><li>*authorization* - The user must obtain authorization for the specific resource. </li><li>*degradation* - Some form of degradation should be applied. </li><li>*retry* - Retrying the request might solve the issue</li><li>*retry-after* - Retrying the request after the indicated period of time might solve the issue.</li></ul>|
 
 </br>
 
@@ -120,8 +138,8 @@ passive authentication (back-channel authentication) on a tablet and a full 2nd 
 The table of errors below lists the possible error codes, associated messages and possible actions.
 
 |Action|Error Code |HTTP Status Code| Description |
-|---|---|---|--------------|
-|configuration|*authorization_denied_by_mvpd*| 403 |The MVPD has returned a "Deny" decision when requesting authorization for the specified resource.|
+|---|---|---|---|
+|**none**|*authorization_denied_by_mvpd*| 403 |The MVPD has returned a "Deny" decision when requesting authorization for the specified resource.|
 ||*authorization_denied_by_parental_controls* |  403  | The MVPD has returned a "Deny" decision due parental controls settings for the specified resource.|
 ||*authorization_denied_by_programmer*|  403  | The degradation rule applied by the Programmer enforces a "Deny" decision for the current user.|
 ||*bad_request* | 400  | The API request is invalid or improperly formed. Review the API documentation to determine the request requirements.|
@@ -144,27 +162,27 @@ The table of errors below lists the possible error codes, associated messages an
 ||*service_unavailable | 503  |  The request failed due to the fact that authentication or authorization service is not available.|
 ||*access_token_unavailable*| 400 | The request failed due to an unexpected error while retrieving the access token. Please check the TVE dashboard configuration for available software statements and registered custom schemes.|
 ||*unsupported_client_version* | 400 |  This version of Adobe Pass Authentication SDK is too old and is no longer supported. Please check the API documentation for the steps needed to upgrade to the latest version.|
-||*network_required_ssl* | 403 | There is an SSL connection issue for target partner service. Please contact support team.|
+|**configuration**|*network_required_ssl* | 403 | There is an SSL connection issue for target partner service. Please contact support team.|
 ||*too_many_resources*|  403  |  The authorization or preauthorization request failed because too many resources were queried. Please contact support team to properly configure the authorization and preauthorization limitations.|
 ||*unknown_programmer |  400 | The programmer or service provider is not recognized. Use the TVE Dashboard to register the specified programmer.|
 ||*unknown_application*|   400  |  The application is not recognized. Use the TVE Dashboard to register the specified application.|
 ||*unknown_integration* | 400 |  The integration between the specified programmer and identity provider does not exist. Use the TVE Dashboard to create the required integration.|
 ||*unknown_software_statement* |401 |  The software statement associated with the access token is not recognized. Contact support team in order to clarify the status of the software statement.|
-|appllication-registration|*access_token_expired* |401 |  The access token has expired. The application should refresh the access token as indicated in the API documentation. |
+|**application-registration**|*access_token_expired* |401 |  The access token has expired. The application should refresh the access token as indicated in the API documentation. |
 ||*invalid_access_token_signature*|  401 | The access token signature is no longer valid. The application should refresh the access token as indicated in the API documentation.|
 ||*invalid_client_id*|  401 | The associated client identifier is not recognized. The application should follow the application registration process as indicated in the API documentation.|
-|authentication | *authentication_session_expired* | 410 | The current authentication session has expired. The user must re-authenticate with a supported MVPD in order to continue.|
+|**authentication** | *authentication_session_expired* | 410 | The current authentication session has expired. The user must re-authenticate with a supported MVPD in order to continue.|
 ||*authentication_session_missing* |401 | The authentication session associated with this request could not be retrieved. The user must re-authenticate with a supported MVPD in order to continue.|
 ||*authentication_session_invalidated*|  401 |  The authentication session was invalidated by the identity provider. The user must re-authenticate with a supported MVPD in order to continue.|
 ||*authentication_session_issuer_mismatch | 400|   The authorization request failed due to the fact that the indicated MVPD for the authorization flow is different from the one who issued the authentication session. The user must re-authenticate with the desired MVPD in order to continue.|
 ||*authorization_denied_by_hba_policies*| 403   |The MVPD has returned a "Deny" decision due home-based authentication policies. The current authentication was obtained using a home-based authentication flow (HBA) but the device is no longer at-home when requesting authorization for the specified resource. The user must re-authenticate with a supported MVPD in order to continue.|
 ||*identity_not_recognized_by_mvpd* |  403 |  The authorization request failed due to the fact that user identity was not recognized by the MVPD.|
-|authorization |*authorization_expired*|  410 | The previous authorization for the specified resource has expired. The user must obtain a new authorization in order to continue.| 
+|**authorization** |*authorization_expired*|  410 | The previous authorization for the specified resource has expired. The user must obtain a new authorization in order to continue.| 
 ||*authorization_not_found* |404 | No authorization was found for the specified resource. The user must obtain a new authorization in order to continue.|
 ||*device_identifier_mismatch* | 403 | The specified device identifier doesn't match the authorization device identification. The user must obtain a new authorization in order to continue.|
-|retry|**network_connection_failure** | 403 |  There was a connection failure with the associated partner service. Retrying the request might solve the issue.|
+|**retry**|*network_connection_failure* | 403 |  There was a connection failure with the associated partner service. Retrying the request might solve the issue.|
 ||*network_connection_timeout* | 403 | There was a connection timeout with the associated partner service. Retrying the request might solve the issue.|
 ||*network_received_error* | 403 |  There was a read error while retrieving the response from the associated partner service. Retrying the request might solve the issue.|
 ||*maximum_execution_time_exceeded*|  403  | The request did not complete in the maximum allowed time. Retrying the request might solve the issue.|
-|retry-after|*too_many_requests* |  429 |  Too many requests have been sent within a given interval. The application can retry the request after the suggested period of time.|
+|**retry-after**|*too_many_requests* |  429 |  Too many requests have been sent within a given interval. The application can retry the request after the suggested period of time.|
 ||*user_rate_limit_exceeded*| 429 |  Too many request have been issued by a particular user within a given interval. The application can retry the request after the suggested period of time.|
