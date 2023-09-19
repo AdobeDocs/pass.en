@@ -43,12 +43,13 @@ The additional error information is included in the "error" field within the res
     <td>error</td>
     <td><i>object</i></td>
     <td><strong>JSON</strong>
-    <p>
+    <br>
     <code>{<br>&nbsp;&nbsp;&nbsp;&nbsp;"status" : 403,<br>&nbsp;&nbsp;&nbsp;&nbsp;"code" : "network_connection_failure",<br>&nbsp;&nbsp;&nbsp;&nbsp;"message" : "Unable to contact your TV provider<br>&nbsp;&nbsp;&nbsp;&nbsp;services",<br>&nbsp;&nbsp;&nbsp;&nbsp;"helpUrl" : "https://tve.helpdocsonline.com/errors<br>&nbsp;&nbsp;&nbsp;&nbsp;/network_connection_failure",<br>&nbsp;&nbsp;&nbsp;&nbsp;"trace" : "12f6fef9-d2e0-422b-a9d7-60d799abe353",<br>&nbsp;&nbsp;&nbsp;&nbsp;"action" : "retry"<br>}
     </code>
     <p>
-    <strong>XML</strong>
     <p>
+    <strong>XML</strong>
+    <br>
     <code>&lt;error&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;status&gt;403&lt;/status&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&gt;network_connection_failure&lt;/code&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;message&gt;Unable to contact your TV provider services&lt;/message&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;helpUrl&gt;https://tve.helpdocsonline.com/errors/network_connection_failure&lt;/helpUrl&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;trace>12f6fef9-d2e0-422b-a9d7-60d799abe353&lt;/trace&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;action>retry&lt;/action&gt;<br>&lt;/error&gt;
     </code>
     </td>
@@ -152,19 +153,19 @@ The table of errors below lists the possible error codes, associated messages an
 ||*invalid_http_method* | 405 |  The HTTP method associated with the request is not supported. Review the API documentation to determine the supported HTTP methods for your request.|
 ||*invalid_parameter_value* |  400 | The request failed because it contained an invalid parameter or parameter value. Review the API documentation to determine which parameters are valid for your request and if there are any limitations for their value.|
 ||*invalid_resource_value*|  400  | The request failed because an invalid or a malformed resource was used. Review the API documentation to determine how complex resources must be encoded for your request and if there are any limitations for their value and/or size.|
-||*invalid_registration_code|   404  | The specified registration code is not longer valid or has expired.|
+||*invalid_registration_code*|   404  | The specified registration code is not longer valid or has expired.|
 ||*invalid_service_configuration*| 500 | The request failed due incorrect service configuration.|
 ||*missing_authentication_header*| 400 | The request failed because it doesn't contain the required authentication header for the specific API.|
 ||*missing_resource_mapping*| 400 | There is no corresponding mapping for the specified resource. Contact support to fix the required mapping.|
 ||*preauthorization_denied_by_mvpd*| 403 | The MVPD has returned a "Deny" decision when requesting pre-authorization for the specified resource.|
 ||*preauthorization_denied_by_programmer*| 403 |  The degradation rules applied by the Programmer enforce a "Deny" decision for the current user.|
 ||*registration_code_service_unavailable* | 503 | The request failed because the registration code service is not available.|
-||*service_unavailable | 503  |  The request failed due to the fact that authentication or authorization service is not available.|
+||*service_unavailable* | 503  |  The request failed due to the fact that authentication or authorization service is not available.|
 ||*access_token_unavailable*| 400 | The request failed due to an unexpected error while retrieving the access token. Please check the TVE dashboard configuration for available software statements and registered custom schemes.|
 ||*unsupported_client_version* | 400 |  This version of Adobe Pass Authentication SDK is too old and is no longer supported. Please check the API documentation for the steps needed to upgrade to the latest version.|
 |**configuration**|*network_required_ssl* | 403 | There is an SSL connection issue for target partner service. Please contact support team.|
 ||*too_many_resources*|  403  |  The authorization or preauthorization request failed because too many resources were queried. Please contact support team to properly configure the authorization and preauthorization limitations.|
-||*unknown_programmer |  400 | The programmer or service provider is not recognized. Use the TVE Dashboard to register the specified programmer.|
+||*unknown_programmer* |  400 | The programmer or service provider is not recognized. Use the TVE Dashboard to register the specified programmer.|
 ||*unknown_application*|   400  |  The application is not recognized. Use the TVE Dashboard to register the specified application.|
 ||*unknown_integration* | 400 |  The integration between the specified programmer and identity provider does not exist. Use the TVE Dashboard to create the required integration.|
 ||*unknown_software_statement* |401 |  The software statement associated with the access token is not recognized. Contact support team in order to clarify the status of the software statement.|
@@ -174,7 +175,7 @@ The table of errors below lists the possible error codes, associated messages an
 |**authentication** | *authentication_session_expired* | 410 | The current authentication session has expired. The user must re-authenticate with a supported MVPD in order to continue.|
 ||*authentication_session_missing* |401 | The authentication session associated with this request could not be retrieved. The user must re-authenticate with a supported MVPD in order to continue.|
 ||*authentication_session_invalidated*|  401 |  The authentication session was invalidated by the identity provider. The user must re-authenticate with a supported MVPD in order to continue.|
-||*authentication_session_issuer_mismatch | 400|   The authorization request failed due to the fact that the indicated MVPD for the authorization flow is different from the one who issued the authentication session. The user must re-authenticate with the desired MVPD in order to continue.|
+||*authentication_session_issuer_mismatch* | 400|   The authorization request failed due to the fact that the indicated MVPD for the authorization flow is different from the one who issued the authentication session. The user must re-authenticate with the desired MVPD in order to continue.|
 ||*authorization_denied_by_hba_policies*| 403   |The MVPD has returned a "Deny" decision due home-based authentication policies. The current authentication was obtained using a home-based authentication flow (HBA) but the device is no longer at-home when requesting authorization for the specified resource. The user must re-authenticate with a supported MVPD in order to continue.|
 ||*identity_not_recognized_by_mvpd* |  403 |  The authorization request failed due to the fact that user identity was not recognized by the MVPD.|
 |**authorization** |*authorization_expired*|  410 | The previous authorization for the specified resource has expired. The user must obtain a new authorization in order to continue.| 
