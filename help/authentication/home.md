@@ -1,9 +1,9 @@
 ---
-title: Welcome to Adobe&reg; Adobe Pass Authentication!
-description: Welcome to Adobe&reg; Adobe Pass Authentication overview
+title: Welcome to Adobe&reg; Pass Authentication!
+description: Welcome to Adobe&reg; Pass Authentication overview
 exl-id: a8b01469-3d5f-4a44-9ae8-06a68c29d56d
 ---
-# Welcome to Adobe&reg; Adobe Pass Authentication {#pt-auth-overview}
+# Welcome to Adobe&reg; Pass Authentication {#pt-auth-overview}
 
 >[!NOTE]
 >
