@@ -5,7 +5,7 @@ exl-id: 129f3ae3-09ff-4b40-98a1-157dbd14f13e
 ---
 # Export metrics for a programmer and selected MVPDs in a segment {#export-metric}
 
-The Dashboard in Account IQ displays tables and graphs for credential sharing statistics of the subscriber accounts in the selected segment. Apart from viewing the sharing patterns and scores, you can also export the account usage metrics and sharing scores for the subscribers of the MVPDs and channels in the selected segment from these tables.
+The Dashboard in [!UICONTROL Account IQ] displays tables and graphs for credential sharing statistics of the subscriber accounts in the selected segment. Apart from viewing the sharing patterns and scores, you can also export the account usage metrics and sharing scores for the subscribers of the MVPDs and channels in the selected segment from these tables.
 
 To export metrics for specific programmers and the MVPDs selected in the segment, once you are logged in as an authorized programmer user:
 

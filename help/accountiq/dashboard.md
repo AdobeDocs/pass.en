@@ -5,12 +5,12 @@ exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
 ---
 # The dashboard {#dashboard}
 
-The Dashboard summarizes and aggregates data in a collection of graphs and reports designed to give a high level overview of the scope and impact of account sharing. It provides a single page containing the major reports and metrics from Account IQ.
+The Dashboard summarizes and aggregates data in a collection of graphs and reports designed to give a high level overview of the scope and impact of account sharing. It provides a single page containing the major reports and metrics from [!UICONTROL Account IQ].
 
 
 +++Programmer- dashboard
 
-![dashboard of Account IQ for programmer users](assets/dashboard-programr.png)
+![dashboard of [!UICONTROL Account IQ] for programmer users](assets/dashboard-programr.png)
 
 
 Figure: The dashboard for programmer users
@@ -21,7 +21,7 @@ Figure: The dashboard for programmer users
 
 The dashboard for MVPD users is slightly different from those of the programmer users.
 
-![dashboard of Account IQ for programmer users](assets/dashboard-mvpd.png)
+![dashboard of [!UICONTROL Account IQ] for programmer users](assets/dashboard-mvpd.png)
 
 Figure: The dashboard for MVPD users
 

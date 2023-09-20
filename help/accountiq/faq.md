@@ -5,9 +5,9 @@ exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
 ---
 # Frequently asked questions {#faqs}
 
-1. Who is Account IQ designed for?
+1. Who is [!UICONTROL Account IQ] designed for?
 
-   **Answer.** Account IQ is designed to serve Programmers, MVPDs, and D2C services, however there are minor differences between these versions. There are limitations and restrictions on what data can be showed to each group.
+   **Answer.** [!UICONTROL Account IQ] is designed to serve Programmers, MVPDs, and D2C services, however there are minor differences between these versions. There are limitations and restrictions on what data can be showed to each group.
 
 1. How far back does the data go?
 
@@ -15,7 +15,7 @@ exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
 
 1. How often is the data updated?
 
-   **Answer.** The data in Account IQ is updated on weekly and monthly basis.
+   **Answer.** The data in [!UICONTROL Account IQ] is updated on weekly and monthly basis.
 
 1. Is it possible to filter out the test accounts?
 
@@ -39,17 +39,17 @@ exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
 
 1. How effective is Concurrency Monitoring in mitigating sharing in industry? 
 
-   **Answer.** Account IQ and Concurrency Monitoring (CM) detect different modes of sharing and are complimentary. CM is excellent at preventing sharing that occurs simultaneously. It's therefore most effective during primetime viewing or for live events, such as sports. On the other hand, Account IQ looks at a broad set of historical data and therefore detects sharing that is not necessarily simultaneous. These two services can be combined for even more effective solution.  
+   **Answer.** [!UICONTROL Account IQ] and Concurrency Monitoring (CM) detect different modes of sharing and are complimentary. CM is excellent at preventing sharing that occurs simultaneously. It's therefore most effective during primetime viewing or for live events, such as sports. On the other hand, [!UICONTROL Account IQ] looks at a broad set of historical data and therefore detects sharing that is not necessarily simultaneous. These two services can be combined for even more effective solution.  
 
 1. Can we identify particular accounts?
 
    **Answer.** Yes, we can provide the list of Accounts from any segment along with their sharing metrics and characteristics.
 
-1. How similar are Account IQ's results compared to in-house solutions?
+1. How similar are [!UICONTROL Account IQ]'s results compared to in-house solutions?
 
-   **Answer.** Account IQ has access to more data than any single streaming service and has a detection model based on over a decade of processing, which results in the most accurate results available.
+   **Answer.** [!UICONTROL Account IQ] has access to more data than any single streaming service and has a detection model based on over a decade of processing, which results in the most accurate results available.
 
-1. How can I use the insights provided by Account IQ?
+1. How can I use the insights provided by [!UICONTROL Account IQ]?
 
    **Answer.** To Understand the scale and nature of sharing is the first step in our recommended best practices. Taking targeted action with specific accounts such as upselling or limiting streams is the step. The full recommendation is to start small, measure the results of the action, and refine and scale the process.
 

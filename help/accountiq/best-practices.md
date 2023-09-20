@@ -1,15 +1,15 @@
 ---
-title: Best Practices
-description: Read on to understand how to better use Account IQ tool.
+title: Account IQ best practices
+description: Learn about [!UICONTROL Account IQ] in Adobe Pass.
 exl-id: 55901f5d-d9c1-4ee5-9349-afa28445b324
 ---
 # Best Practices {#aiq-best-practices}
 
-Account IQ enables you to identify credential sharing, measure its scope and impact, segment relevant cohorts, and track the effect of targeted actions. It offers a variety of tools, charts and reports used to understand and manage shared accounts that can be used in any number of ways. Each streaming service approaches this behavior and develops processes that match their unique goals, and the product is designed to flexibly meet those needs.  However, there are some rules of general practices that can be applied to a broad set of scenarios.
+[!UICONTROL Account IQ] enables you to identify credential sharing, measure its scope and impact, segment relevant cohorts, and track the effect of targeted actions. It offers a variety of tools, charts and reports used to understand and manage shared accounts that can be used in any number of ways. Each streaming service approaches this behavior and develops processes that match their unique goals, and the product is designed to flexibly meet those needs.  However, there are some rules of general practices that can be applied to a broad set of scenarios.
 
 ## Analyze and understand {#analyze-understand}
 
-Account IQ tools assist in understanding the nature and breadth of credential sharing on your business, from the highest-level charts that display the percentage of shared accounts to the lowest level exports that report the characteristics of individual accounts. Especially at the outset, use these tools to explore the data and identify unusual or interesting cohorts or behavioral patterns – indicating high levels of sharing for example. Then, segments representing a particular opportunity or objective can be identified.
+[!UICONTROL Account IQ] tools assist in understanding the nature and breadth of credential sharing on your business, from the highest-level charts that display the percentage of shared accounts to the lowest level exports that report the characteristics of individual accounts. Especially at the outset, use these tools to explore the data and identify unusual or interesting cohorts or behavioral patterns – indicating high levels of sharing for example. Then, segments representing a particular opportunity or objective can be identified.
 
 To understand nature and impact of sharing on your business:
 
@@ -51,14 +51,14 @@ Based on the outcomes of your experiments and targeted actions a set of users, y
 <!--
 
 Best Practices
-Account IQ enables you to maximize your business ROI, and eventually grow your subscribers and revenue by understanding subscriber usage patterns and password sharing. Read on to know how you can make the best use of Account IQ to manage credential sharing.
+[!UICONTROL Account IQ] enables you to maximize your business ROI, and eventually grow your subscribers and revenue by understanding subscriber usage patterns and password sharing. Read on to know how you can make the best use of [!UICONTROL Account IQ] to manage credential sharing.
 
 Analyze and understand
-Authorized access of streaming services generates vast sums of data representing user activity. Use Account IQ analytics tools to explore the data and identify interesting cohorts or behavioral patterns that indicate sharing. Then, segments representing a particular opportunity or objective can be identified.
+Authorized access of streaming services generates vast sums of data representing user activity. Use [!UICONTROL Account IQ] analytics tools to explore the data and identify interesting cohorts or behavioral patterns that indicate sharing. Then, segments representing a particular opportunity or objective can be identified.
 
 To understand nature and impact of sharing on your business:
 
-Use Account IQ to access all relevant data.
+Use [!UICONTROL Account IQ] to access all relevant data.
 
 Identify and analyze sharing in the context of your objectives.
 
@@ -92,7 +92,7 @@ How many additional ads were viewed?
 
 Did the number of borrowers decrease?
 
-Account IQ's sophisticated machine learning based models help you analyze and measure the impacts of your experiments (or actions).
+[!UICONTROL Account IQ]'s sophisticated machine learning based models help you analyze and measure the impacts of your experiments (or actions).
 
 Improve and repeat
 Based on the outcomes of your experiments and targeted actions on small groups of users, you can expand the reach of your strategies to rest of the user segment or reset the strategy and audience to act on.
