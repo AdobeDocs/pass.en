@@ -11,13 +11,13 @@ Like the other pages in the app, the analytics and reports here are based on the
 
 ## Usage patterns distribution {#usage-pattern-dis}
 
-The bar graph in **Usage patterns distribution- Users in segment vs total** depicts number and percentages of subscribers for each social behavior, or usage pattern. In addition to comparing each usage pattern in the current segment to the entire industry, it also compares them to a segment containing all of your channels.
+The bar graph in *[!UICONTROL *Usage patterns distribution- Users in segment vs total]** depicts number and percentages of subscribers for each social behavior, or usage pattern. In addition to comparing each usage pattern in the current segment to the entire industry, it also compares them to a segment containing all of your channels.
 
 ![](assets/segment-users-industry.png)
 
 ## Usage pattern distribution in segment (#usage-pattern-dis-segment)
 
-The **Usage patterns distribution in segment** panel tabulates the following information for each user pattern:
+The **[!UICONTROL Usage patterns distribution in segment]** panel tabulates the following information for each user pattern:
 
 * Sharing probability range that the individual accounts fall into
 * Number and percentage of accounts in that pattern
@@ -37,7 +37,7 @@ For example, in the above image:
 
 +++Programmer- Usage pattern distribution for total segments and segment partners 
 
-The **Usage pattern distribution** table provides a comparison of usage pattern distribution for the MVPDs in the current segment.
+The **[!UICONTROL Usage pattern distribution]** table provides a comparison of usage pattern distribution for the MVPDs in the current segment.
 
 ![](assets/usage-patterns-mvpdwise.png)
 
@@ -45,7 +45,7 @@ The **Usage pattern distribution** table provides a comparison of usage pattern 
 
 +++MVPD- Usage pattern distribution for total segments and segment partners 
 
-The **Usage pattern distribution** table provides a comparison of usage pattern distribution for the programmer channels in the current segment.
+The **[!UICONTROL Usage pattern distribution]** table provides a comparison of usage pattern distribution for the programmer channels in the current segment.
 
 ![](assets/usage-patterns-programmerwise.png)
 

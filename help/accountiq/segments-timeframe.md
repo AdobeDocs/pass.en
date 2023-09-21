@@ -18,9 +18,9 @@ When you log into Account IQ, there is a panel at the top that lets you define t
 
 The following dropdown options are used to define segments:
 
-**MVPDs in segment**
+**[!UICONTROL MVPDs in segment]**
 
-The **MVPDs in segment** selector lets you choose the [MVPDs](/help/accountiq/product-concepts.md#mvpd-def) (individuals or group) for whose subscriber you want to view the account sharing reports.
+The **[!UICONTROL MVPDs in segment]** selector lets you choose the [MVPDs](/help/accountiq/product-concepts.md#mvpd-def) (individuals or group) for whose subscriber you want to view the account sharing reports.
 
 In this selector, apart from selecting the individual MVPDs you can also select the following groups:
 
@@ -32,9 +32,9 @@ In this selector, apart from selecting the individual MVPDs you can also select 
 
 *   [Isolation mode](/help/accountiq/isolation-mode.md)
 
-**Channels in segment**
+**[!UICONTROL Channels in segment]**
 
-When you are logged in as a programmer user then you can select your channels to view their account sharing analytics. Use the **Channels in segment** dropdown option to select individual or multiple channels in your organization.
+When you are logged in as a programmer user then you can select your channels to view their account sharing analytics. Use the **[!UICONTROL Channels in segment]** dropdown option to select individual or multiple channels in your organization.
 
 +++
 
@@ -44,9 +44,9 @@ When you are logged in as a programmer user then you can select your channels to
 
 The following dropdown options are used to define segments:
 
-**Channels in segment**
+**[!UICONTROL Channels in segment]**
 
-The **Channels in segment** selector lets you further narrow down your filter to select channels corresponding to the selected MVPDs.
+The **[!UICONTROL Channels in segment]** selector lets you further narrow down your filter to select channels corresponding to the selected MVPDs.
 
 *   [Top 10 programmers by sharing score](/help/accountiq/product-concepts.md#top-mvpds-def)
 
@@ -56,7 +56,7 @@ The **Channels in segment** selector lets you further narrow down your filter to
 
 **MVPD(s) in segment**
 
-When you are logged in as an MVPD user, then your name is displayed in the field for **MVPDs in segment**.
+When you are logged in as an MVPD user, then your name is displayed in the field for **[!UICONTROL MVPDs in segment]**.
 
 +++
 
@@ -67,11 +67,11 @@ When you are logged in as an MVPD user, then your name is displayed in the field
 
   
 
-## Granularity and time frame {#granularity-timeframe}
+## [!UICONTROL Granularity and time frame] {#granularity-timeframe}
   
-  The **Granularity and time frame** selector lets you specify the dates and the duration, or size of time for which you want to view the subscriber sharing behavior.
+  The **[!UICONTROL Granularity and time frame]** selector lets you specify the dates and the duration, or size of time for which you want to view the subscriber sharing behavior.
 
-  ![Granularity and timeframe](assets/granularity-timeframe-weekwise.png)
+  ![[!UICONTROL Granularity and timeframe]](assets/granularity-timeframe-weekwise.png)
   
 So, with these controls you can define your problem statement as "subscribers of the MVPD A that watched the channels X, Y, and Z in the month of May".
 

@@ -5,7 +5,7 @@ exl-id: 16c5ded1-2a95-4373-8b90-b445131f333a
 ---
 # Shared Accounts Reports {#shared-accounts-reports}
 
-The Shared Accounts Reports break down the metrics such as number of devices and device types by the selected range of sharing probability, for example **Over Moderate Probability** and **Over Low Probability** for the current segment.
+The Shared Accounts Reports break down the metrics such as number of devices and device types by the selected range of sharing probability, for example **[!UICONTROL Over Moderate Probability]** and **[!UICONTROL Over Low Probability]** for the current segment.
 
 These ranges can then serve as user defined thresholds and the graphs are updated based on the selected thresholds.
 

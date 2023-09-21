@@ -5,21 +5,21 @@ exl-id: 86fe010d-3202-4ce2-b803-ff44f5538d7e
 ---
 # Define a segment and time frame {#define-segment}
 
-All analysis or viewing reports in Account IQ begin with defining segment and selecting time frame for evaluation. [Segment](/help/accountiq/product-concepts.md#segmet-def) refers to all the subscribers or viewers that meet your criteria (subscribing to an MVPD and viewing sepcific channels) of evaluation.
+All analysis or viewing reports in [!UICONTROL Account IQ] begin with defining segment and selecting time frame for evaluation. [Segment](/help/accountiq/product-concepts.md#segmet-def) refers to all the subscribers or viewers that meet your criteria (subscribing to an MVPD and viewing sepcific channels) of evaluation.
 
 ![](assets/segment-panel.png)
 
 *Figure: Segment and time frame selection*
 
-At the top of all the reports pages in Account IQ, there is a panel to define segment by selecting MVPDs, channel programmers, and granularity and time frame.
+At the top of all the reports pages in [!UICONTROL Account IQ], there is a panel to define segment by selecting MVPDs, channel programmers, and granularity and time frame.
 
 ## Segment selection {#select-segment}
 
 ### Select MVPDs in segment {#select-segment-mvpds}
 
-To select MVPDs from **MVPDs in segment** option:
+To select MVPDs from **[!UICONTROL MVPDs in segment]** option:
 
-1. Click or tap the **MVPDs in segment** dropdown option.
+1. Click or tap the **[!UICONTROL MVPDs in segment]** dropdown option.
 
    >[!NOTE]
    >
@@ -29,7 +29,7 @@ To select MVPDs from **MVPDs in segment** option:
 
     You can remove an MVPD from the selection by deselecting it.
 
-1. Click or tap **Apply selection** for your selection to take effect. Otherwise, you will loose the selection you made.
+1. Click or tap **[!UICONTROL Apply selection]** for your selection to take effect. Otherwise, you will loose the selection you made.
 
    >[!NOTE]
    >
@@ -37,9 +37,9 @@ To select MVPDs from **MVPDs in segment** option:
 
 ### Select channels in segment {#select-segment-channels}
 
-To select the desired programmer channels from the **Channels in segment** option:
+To select the desired programmer channels from the **[!UICONTROL Channels in segment]** option:
 
-1. Click or tap the **Channels in segment** dropdown option.
+1. Click or tap the **[!UICONTROL Channels in segment]** dropdown option.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ To select the desired programmer channels from the **Channels in segment** optio
 
 1. Click or tap the desired channels or programmers.
 
-   The top level list items in the **Channels in segment** are [programmer](/help/accountiq/product-concepts.md#programmer-def) companies and the list items under programmer names are their [channels](/help/accountiq/product-concepts.md#channel-def). You can either select individual channels under programmers, or select programmers and all the activities of the channels under that programmer are included in report and graph results.
+   The top level list items in the **[!UICONTROL Channels in segment]** are [programmer](/help/accountiq/product-concepts.md#programmer-def) companies and the list items under programmer names are their [channels](/help/accountiq/product-concepts.md#channel-def). You can either select individual channels under programmers, or select programmers and all the activities of the channels under that programmer are included in report and graph results.
 
    ![](assets/programmer-channels.png)
 
@@ -61,7 +61,7 @@ To select the desired programmer channels from the **Channels in segment** optio
    >
    >When you select individual channels, activities of those channels are broken down individually in some reports. However, when you select the parent programmer of all those channels, all of the activity of those channels are included but are not broken down individually in reports.
 
-1. Click or tap **Apply selection** for your selection to take effect.
+1. Click or tap **[!UICONTROL Apply selection]** for your selection to take effect.
 
 >[!NOTE]
 >
@@ -69,11 +69,11 @@ To select the desired programmer channels from the **Channels in segment** optio
 
 ### Deselect MVPDs and channels {#deselect-segment-mvpds-channels}
 
-In addition to changing your selection in the **MVPDs in segment** and **Channels in segment** segment selectors, you can deselect the previously selected MVPDs and channels by:
+In addition to changing your selection in the **[!UICONTROL MVPDs in segment]** and **[!UICONTROL Channels in segment]** segment selectors, you can deselect the previously selected MVPDs and channels by:
 
-* Selecting the **Remove** icon (![remove icon](assets/remove-icon.png)) on the names of these selected MVPDs and channels displayed below segment selector.
+* Selecting the **[!UICONTROL Remove]** icon (![remove icon](assets/remove-icon.png)) on the names of these selected MVPDs and channels displayed below segment selector.
 
-* You can also use **Clear Selection** to remove all the previously selected MVPDs or channels.
+* You can also use **[!UICONTROL Clear Selection]** to remove all the previously selected MVPDs or channels.
 
 ![](assets/segment-panel-selection.png)
 
@@ -83,9 +83,9 @@ In addition to changing your selection in the **MVPDs in segment** and **Channel
 
 To select a time period of evaluation:
 
-1. Select the **Granularity and time frame** date picker.
+1. Select the **[!UICONTROL Granularity and time frame]** date picker.
 
-1. Select either **Week** or **Month** from **Aggregate By** option to set granularity for your evaluation.
+1. Select either **[!UICONTROL Week]** or **[!UICONTROL Month]** from **[!UICONTROL Aggregate By]** option to set granularity for your evaluation.
 
    ![](assets/granularity-timeframe-weekwise.png)
    
@@ -96,4 +96,4 @@ To select a time period of evaluation:
 
 1. Specify a time period in past (in month or week based on selected granularity)  for evaluation.
 
-1. Select **Apply Selection** to make sure your selection takes effect.
+1. Select **[!UICONTROL Apply Selection]** to make sure your selection takes effect.

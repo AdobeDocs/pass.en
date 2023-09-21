@@ -156,7 +156,7 @@ Associated documentation:
 
 * *options*: An NSDictionary containing global SDK options. Currently, the following options are available:
   * **applicationProfile** - It can be used to make server configurations based on this value.
-  * **visitorID** - The Marketing Cloud visitorID. This value can be later used for advanced analytics reports.
+  * **visitorID** - The Experience Cloud ID Service. This value can be later used for advanced analytics reports.
   * **handleSVC** - Boolean indicating if the programmer will handle the SFSafariViewControllers. Please see [SFSafariViewController support on iOS SDK 3.2+](/help/authentication/sfsafariviewcontroller-support-on-ios-sdk-32.md) for more details.
     * If set to **false,** the SDK will automatically present the end user with an SFSafariViewController. The SDK will further navigate to the MVPDs login page URL.
     * If set to **true,** the SDK will **NOT** automatically present the end user with an SFSafariViewController. The SDK will further trigger **navigate(toUrl:{url}, useSVC:YES)**.

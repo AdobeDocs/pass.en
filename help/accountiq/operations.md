@@ -5,7 +5,7 @@ exl-id: ba6bceca-221c-42db-b207-804e4b9f6d54
 ---
 # Operations {#operations-tab-next-steps}
 
-Once you have understood your subscribers' usage patterns and identified password sharing for selected segment (using reports and analytics in Account IQ), you can take targeted actions towards an objective to mitigate password sharing.
+Once you have understood your subscribers' usage patterns and identified password sharing for selected segment (using [!DNL Analytics] in Account IQ), you can take targeted actions towards an objective to mitigate password sharing.
 
 The Operations functionality in Account IQ help you effectively tackle and manage credential sharing through focused procedures called operations. It gives you options to design an objective, tailor targeted actions (based on the objective) for a specific groups of subscriber accounts, and automate their execution for a future duration. Through Operations functionality, you can not only create and execute operations, but also gauge their impacts. So, by gauging the impacts you can adjust your strategy to optimize the effect, whether converting borrowers or mitigating credential sharing.
 

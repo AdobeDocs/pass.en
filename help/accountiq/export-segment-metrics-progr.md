@@ -5,7 +5,7 @@ exl-id: 129f3ae3-09ff-4b40-98a1-157dbd14f13e
 ---
 # Export metrics for a programmer and selected MVPDs in a segment {#export-metric}
 
-The Dashboard in Account IQ displays tables and graphs for credential sharing statistics of the subscriber accounts in the selected segment. Apart from viewing the sharing patterns and scores, you can also export the account usage metrics and sharing scores for the subscribers of the MVPDs and channels in the selected segment from these tables.
+The Dashboard in [!UICONTROL Account IQ] displays tables and graphs for credential sharing statistics of the subscriber accounts in the selected segment. Apart from viewing the sharing patterns and scores, you can also export the account usage metrics and sharing scores for the subscribers of the MVPDs and channels in the selected segment from these tables.
 
 To export metrics for specific programmers and the MVPDs selected in the segment, once you are logged in as an authorized programmer user:
 
@@ -13,18 +13,18 @@ To export metrics for specific programmers and the MVPDs selected in the segment
 
 1. Go to one of the following panels:
 
-    * Industrywideoverall sharing scores, for selected MVPDs
+    * [!UICONTROL Industrywide overall sharing scores, for selected MVPDs]
     ![](assets/ind-sharpanel-export-option.png)
 
-    * Sharing Score by channels and MVPDs
+    * [!UICONTROL Sharing Score by channels and MVPDs]
 
       ![](assets/sharscorepanel-export-option.png)
 
-    * Number of accounts and usage by sharing probability level
+    * [!UICONTROL Number of accounts and usage by sharing probability level]
 
       ![](assets/usage-panel-export-option.png)
 
-1. Select **Export** option available in the upper-right corner of the panel.
+1. Select **[!UICONTROL Export]** option available in the upper-right corner of the panel.
 
 The data is exported in CSV format, and the file is downloaded locally on your device. You can use desired CSV viewer and editor to open the exported reports.
 

@@ -165,7 +165,7 @@ The values will be passed to the server independent of the current flow (authent
 
 - *options*: A Map\<String, String\> containing global SDK options. Currently the following options are available:
     - **applicationProfile** - It can be used to make server configurations based on this value.
-    - **ap\_vi** - The Marketing Cloud visitorID. This value can be later used for advanced analytics reports.
+    - **ap\_vi** - The Experience Cloud ID Service. This value can be later used for advanced analytics reports.
     - **device\_info** - Device Information as described in **Passing device information cookbook**
 
 </br>

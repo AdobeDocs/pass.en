@@ -3,11 +3,11 @@ title: General Usage reports
 description: General Usage reports
 exl-id: 1272073a-61fe-47ec-aced-2e8055b6b11e
 ---
-# General Usage reports {#general-usage-reports}
+# [!UICONTROL General Usage] reports {#general-usage-reports}
 
-Account IQ reports are basic analytic tools and reports that let you drill into your data to isolate [cohorts](/help/accountiq/product-concepts.md#segmet-def), identify anomalies, and build an understanding of your account characteristics.
+[!UICONTROL Account IQ] reports are basic analytic tools and reports that let you drill into your data to isolate [cohorts](/help/accountiq/product-concepts.md#segmet-def), identify anomalies, and build an understanding of your account characteristics.
 
-General Usage reports page provides tools to carve out subgroups metrics based on the number of account devices in use, IPs detected, and respective zip codes.
+[!UICONTROL General Usage] reports page provides tools to carve out subgroups metrics based on the number of account devices in use, IPs detected, and respective zip codes.
 
 <!--Divide the content in cohorts.
 

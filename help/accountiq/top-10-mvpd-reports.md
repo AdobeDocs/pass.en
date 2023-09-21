@@ -35,9 +35,11 @@ When you use the selection **top 10 MVPDs by sharing score** to define your segm
 
 To view the list and reports for top ten MVPDs by sharing score for your channel:
 
-1. Use the [segment and timeframe panel](/help/accountiq/segments-timeframe.md), to define a segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation. For this evaluation, select **top 10 MVPDs by sharing score** option from the list of MVPDs.
+1. Use the [[!UICONTROL segment and timeframe panel]](/help/accountiq/segments-timeframe.md), to define a segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation. 
 
-1. Select a reports page from either of the [General Usage](/help/accountiq/general-usage-reports.md), [Shared Accounts](/help/accountiq/shared-acc-reports.md), [Usage Patterns](/help/accountiq/usage-patterns.md), or [Dashboard](/help/accountiq/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
+    For this evaluation, select **[!UICONTROL top 10 MVPDs by sharing score]** option from the list of MVPDs.
+
+1. Select a reports page from either of the [[!UICONTROL General Usage]](/help/accountiq/general-usage-reports.md), [[!UICONTROL Shared Accounts]](/help/accountiq/shared-acc-reports.md), [[!UICONTROL Usage Patterns]](/help/accountiq/usage-patterns.md), or [[!UICONTROL Dashboard]](/help/accountiq/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
 
 Each of these pages will reflect the activity.
 
@@ -45,27 +47,27 @@ Each of these pages will reflect the activity.
 
 ## Top 10 MVPDs by usage {#top-10mvpds-usage}
 
-When you use the selection **top 10 MVPDs by usage** to define your segment, then Account IQ system identifies 10 MVPDs from across the industry to list at most ten MVPDs (along with their corresponding metrics) in the descending order of their [usage from shared accounts](/help/accountiq/product-concepts.md)
+When you use the selection **[!UICONTROL top 10 MVPDs by usage]** to define your segment, then Account IQ system identifies 10 MVPDs from across the industry to list at most ten MVPDs (along with their corresponding metrics) in the descending order of their [usage from shared accounts](/help/accountiq/product-concepts.md)
 
 To view the list and reports for top ten MVPDs by sharing score for your channel:
 
-1. Use the [segment and timeframe panel](/help/accountiq/segments-timeframe.md), to define a segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation. For this evaluation, select **top 10 MVPDs by usage** option from the list of MVPDs.
+1. Use the [[!UICONTROL segment and timeframe panel]](/help/accountiq/segments-timeframe.md), to define a segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation. For this evaluation, select **[!UICONTROL top 10 MVPDs by usage]** option from the list of MVPDs.
 
-1. Select a reports page from either of the [General Usage](/help/accountiq/general-usage-reports.md), [Shared Accounts](/help/accountiq/shared-acc-reports.md), [Usage Patterns](/help/accountiq/usage-patterns.md), or [Dashboard](/help/accountiq/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
+1. Select a reports page from either of the [[!UICONTROL General Usage]](/help/accountiq/general-usage-reports.md), [[!UICONTROL Shared Accounts]](/help/accountiq/shared-acc-reports.md), [[!UICONTROL Usage Patterns]](/help/accountiq/usage-patterns.md), or [[!UICONTROL Dashboard]](/help/accountiq/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
 
 Each of these pages will reflect the activity.
 
 ![](assets/top-ten-mvpds-usage.png)
 
-## Top 10 MVPDs by accounts {#top-10mvpds-accounts}
+## [!UICONTROL Top 10 MVPDs by accounts] {#top-10mvpds-accounts}
 
-When you use the selection **top 10 MVPDs by accounts** to define your segment, then Account IQ system identifies 10 MVPDs from across the industry to a list of at most ten MVPDs (along with their corresponding metrics) in the descending order of their [sharing level](/help/accountiq/product-concepts.md)
+When you use the selection **[!UICONTROL top 10 MVPDs by accounts]** to define your segment, then Account IQ system identifies 10 MVPDs from across the industry to a list of at most ten MVPDs (along with their corresponding metrics) in the descending order of their [sharing level](/help/accountiq/product-concepts.md)
 
 To view the list and reports for top ten MVPDs by number of accounts that are shared for your channel:
 
-1. Use the [segment and timeframe panel](/help/accountiq/segments-timeframe.md), to define a segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation. For this evaluation, select **top 10 MVPDs by account** option from the list of MVPDs.
+1. Use the [[!UICONTROL segment and timeframe panel]](/help/accountiq/segments-timeframe.md), to define a segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation. For this evaluation, select **[!UICONTROL top 10 MVPDs by account]** option from the list of MVPDs.
 
-1. Select a reports page from either of the [General Usage](/help/accountiq/general-usage-reports.md), [Shared Accounts](/help/accountiq/shared-acc-reports.md), [Usage Patterns](/help/accountiq/usage-patterns.md), or [Dashboard](/help/accountiq/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
+1. Select a reports page from either of the [[!UICONTROL General Usage]](/help/accountiq/general-usage-reports.md), [[!UICONTROL Shared Accounts]](/help/accountiq/shared-acc-reports.md), [[!UICONTROL Usage Patterns]](/help/accountiq/usage-patterns.md), or [[!UICONTROL Dashboard]](/help/accountiq/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
 
 Each of these pages will reflect the activity.
 
