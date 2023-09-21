@@ -3,7 +3,7 @@ title: Account IQ Overview
 description: Account IQ helps MVPDs and programmers understand the risks to their revenue and business operations, and determine the most effective actions to take to mitigate the impacts of credential fraud.
 exl-id: c0d85fc8-b5ab-4284-802e-82f52eff401f
 ---
-# Account IQ overview {#account-iq-overview}
+# [!UICONTROL Account IQ] overview {#account-iq-overview}
 
 Credential sharing by streaming service subscribers is a major and growing problem for the industry. To add to it, understanding, identifying, and acting on credential sharing is a complex process. There is complexity involved in understanding the subscriber usage behavior and in developing a holistic view of their activity—for example, distinguishing sharing among members within the same household and outside. Due to this challenge, streaming service providers may have inhibitions in acting against credential sharing.
 
@@ -15,11 +15,11 @@ Generally, video streaming service providers understand the risk and cost of sha
 
 *Figure: Account IQ information flow*
 
-Adobe Pass Account IQ enables video streaming services to understand the subscriber usage patterns and identify credential sharing. By deeply analyzing the long trail of data left behind by each subscriber using Adobe's proprietary multi-layer machine learning model, streaming services can understand usage behavior and identify credential sharing with a greater degree of certainty. Moreover, it enables action to be taken through integrations with other systems such as limiting concurrent streams or customizing offers, and validates the impact of those actions—whether encouraging legitimate viewing behavior or growing subscribers and revenue.
+Adobe Pass [!UICONTROL Account IQ] enables video streaming services to understand the subscriber usage patterns and identify credential sharing. By deeply analyzing the long trail of data left behind by each subscriber using Adobe's proprietary multi-layer machine learning model, streaming services can understand usage behavior and identify credential sharing with a greater degree of certainty. Moreover, it enables action to be taken through integrations with other systems such as limiting concurrent streams or customizing offers, and validates the impact of those actions—whether encouraging legitimate viewing behavior or growing subscribers and revenue.
 
-Account IQ provides the tools and features to measure, manage, and monetize credential sharing. Reports, analytics, and dashboards enable exploration of the data to identify patterns. Direct action is supported through exports and integrations with Adobe and 3rd party systems such as campaign management, currency limiting or subscriber registration. And dedicated tracking tools measure the success of those actions so they can be updated or expanded.
+[!UICONTROL Account IQ] provides the tools and features to measure, manage, and monetize credential sharing. Reports, analytics, and dashboards enable exploration of the data to identify patterns. Direct action is supported through exports and integrations with Adobe and 3rd party systems such as campaign management, currency limiting or subscriber registration. And dedicated tracking tools measure the success of those actions so they can be updated or expanded.
 
-Account IQ application tools and features are explained in the following sections:
+[!UICONTROL Account IQ] application tools and features are explained in the following sections:
 
 * [Dashboard](/help/accountiq/dashboard.md)
 * [General Usage reports](/help/accountiq/general-usage-reports.md)

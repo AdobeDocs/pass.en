@@ -24,13 +24,15 @@ The sharing scores and probabilities are calculated only using the stream that s
 
 To view metrics in isolation mode:
 
-1. Select **isolation mode** from the **MVPDs in segment** drop-down option, and select **Apply Selection**.
+1. Select **[!UICONTROL isolation mode]** from the **[!UICONTROL MVPDs in segment]** drop-down option, and select **[!UICONTROL Apply Selection]**.
 
    ![](assets/xfinity-in-segment.gif)
 
    *Figure: MVPD selection in Isolation mode*
 
-1. Select the desired channels from the **Channels in segment** drop-down option, and select **Apply Selection**. Also, select a [time frame](/help/accountiq/product-concepts.md#granularity-def).
+1. Select the desired channels from the **[!UICONTROL Channels in segment]** drop-down option, and select **[!UICONTROL Apply Selection]**. 
+
+   Also, select a [time frame](/help/accountiq/product-concepts.md#granularity-def).
 
    >[!IMPORTANT]
    >

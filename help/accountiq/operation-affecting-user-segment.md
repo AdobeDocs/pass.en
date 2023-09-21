@@ -11,12 +11,14 @@ To create an operation:
 
 1. Define your segment (cohort) for analysis on any of the reports or dashboards page, using the steps in [Defining segments and timeframe](/help/accountiq/howto-select-segment-timeframe.md).
 
-1. Select **Create new operation** option available on any of the reports or dashboards pages. The **Create new operation** page is displayed.
+1. Select **[!UICONTROL Create new operation]** option available on any of the reports or dashboards pages. 
+
+    The **[!UICONTROL Create new operation]** page is displayed.
 
     ![Page to create a new operation](assets/create-new-operations.png)
     *Figure: Page to create new operation*
 
-1. On the **Create new operation** page, fill in the details in the form fields for:
+1. On the **[!UICONTROL Create new operation]** page, fill in the details in the form fields for:
   
    * [Operation name](#operation-details) in Operation details
    * Segment to run the operation on under [Target segment](#segment) and refine the segment using [Additional segmentation](#additional-segmentation)
@@ -30,13 +32,13 @@ To create an operation:
 
 +++Programmer- operation details
 
-Name the new operation in **Operation name** field under Operation details. For example, "*Test the effect of multifactor authentication on MVPD X's subscribers" or "Limit the number of streams in Concurrency Monitoring" or "Limit MVPD D's subscribers viewing channel 'N' from 20 plus devices*".
+Name the new operation in **[!UICONTROL Operation name]** field under Operation details. For example, "*Test the effect of multifactor authentication on MVPD X's subscribers" or "Limit the number of streams in Concurrency Monitoring" or "Limit MVPD D's subscribers viewing channel 'N' from 20 plus devices*".
 
 +++
 
 +++MVPD- operation details
 
-Name the new operation in **Operation name** field under Operation details. For example, "*Test the effect of multifactor authentication on channel N's viewers" or "Limit the number of streams in Concurrency Monitoring" or "Limit the subscribers viewing channel 'N' from 20 plus devices*".
+Name the new operation in **[!UICONTROL Operation name]** field under Operation details. For example, "*Test the effect of multifactor authentication on channel N's viewers" or "Limit the number of streams in Concurrency Monitoring" or "Limit the subscribers viewing channel 'N' from 20 plus devices*".
 
 +++
 
@@ -44,7 +46,7 @@ Name the new operation in **Operation name** field under Operation details. For 
 
 +++Programmer- Target segment
 
-The **Segment** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **segment** you selected using [segment and timeframe panel](/help/accountiq/howto-select-segment-timeframe.md) on main reports or dashboards page in step 1 above.
+The **[!UICONTROL Segment]** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **[!UICONTROL segment]** you selected using [segment and timeframe panel](/help/accountiq/howto-select-segment-timeframe.md) on main reports or dashboards page in step 1 above.
 
 <!--* The first segment entry in the **Segment** section, by default, shows the **segment** you selected in the step 1.
 
@@ -71,7 +73,7 @@ This segment defines your subscribers (who are viewers of specific channels) tha
 
 ### Additional segmentation {#additional-segmentation}
 
-Additionally, you can refine your target segment by adding more metrics. For example, you can add Sharing Probability that is greater than 90% as another metric. So, now the problem statement reads *"create an operation for subscriber accounts of MVPD named 'C' who are viewing the channel 'N Sports' that have a sharing probability greater 90%"*.
+Additionally, you can refine your target segment by adding more metrics. For example, you can add [!UICONTROL Sharing Probability] that is greater than 90% as another metric. So, now the problem statement reads *"create an operation for subscriber accounts of MVPD named 'C' who are viewing the channel 'N Sports' that have a sharing probability greater 90%"*.
 
 ![](assets/additional-segment.gif)
 
@@ -85,9 +87,9 @@ Further, if you refine the operation by adding another metric for number of devi
 
 By doing this, the user group becomes more refined. So, by adding more metrics and conditions, you are further qualifying the segment to define the accounts to operate on.
 
-### Segment type {#segment-type}
+### [!UICONTROL Segment Type] {#segment-type}
 
-Segment Type is the way in which a segment is treated throughout the operation's evaluation period.
+[!UICONTROL Segment Type] is the way in which a segment is treated throughout the operation's evaluation period.
 
 ![](assets/segment-type.png)
 
@@ -107,7 +109,7 @@ When you select **Variable number of accounts** segment type, you do not limit t
 
 >[!IMPORTANT]
 >
->You can only use **Fixed number of accounts** option, as of now. The option to select **Variable number of accounts** will be available in upcoming releases.
+>You can only use **[!UICONTROL Fixed number of accounts]** option, as of now. The option to select **[!UICONTROL Variable number of accounts]** will be available in upcoming releases.
 
 <!--
 
@@ -134,13 +136,13 @@ the......will vary from period to period.
 
 if not fixed segment, then I won't initially evaluate or have initial set of 5000, instead at every period during an operation and the.-->
 
-## Action {#action}
+## [!UICONTROL Action] {#action}
 
-The **Action** defines what operation you will perform on the defined segment.
+The **[!UICONTROL Action]** defines what operation you will perform on the defined segment.
 
 There are two types of actions you can take:
 
-*   Actions using systems integrated with Account IQ; such as **Concurrency Monitoring** <!--[Concurrency Monitoring](https://tve.helpdocsonline.com/concurrency-monitoring-introduction), or Adobe Target-->.
+*   Actions using systems integrated with Account IQ; such as **[!UICONTROL Concurrency Monitoring]** <!--[Concurrency Monitoring](https://tve.helpdocsonline.com/concurrency-monitoring-introduction), or Adobe Target-->.
 
 *   Actions to create and process workflows that are external to Account IQ and not integrated with Account IQ system. For example, an action for channel programmer 'N' to send bulk emails to all the subscribers of MVPD 'C'.
 
@@ -154,7 +156,7 @@ You can schedule the activation for the operation by setting start and end dates
 
 >[!NOTE]
 >
->The start date and end date have a granularity same as the granularity you selected for the evaluation when defining segment using **segment and timeframe panel**, in step 1.
+>The start date and end date have a granularity same as the granularity you selected for the evaluation when defining segment using **[!UICONTROL segment and timeframe panel]**, in step 1.
 >
 >
 >So if you selected the granularity as Week then the start and end dates are in terms of week (for example Week 14); if you select granularity as Month, then the start and end dates are in terms of months.

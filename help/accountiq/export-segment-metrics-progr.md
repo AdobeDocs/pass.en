@@ -13,18 +13,18 @@ To export metrics for specific programmers and the MVPDs selected in the segment
 
 1. Go to one of the following panels:
 
-    * Industrywideoverall sharing scores, for selected MVPDs
+    * [!UICONTROL Industrywide overall sharing scores, for selected MVPDs]
     ![](assets/ind-sharpanel-export-option.png)
 
-    * Sharing Score by channels and MVPDs
+    * [!UICONTROL Sharing Score by channels and MVPDs]
 
       ![](assets/sharscorepanel-export-option.png)
 
-    * Number of accounts and usage by sharing probability level
+    * [!UICONTROL Number of accounts and usage by sharing probability level]
 
       ![](assets/usage-panel-export-option.png)
 
-1. Select **Export** option available in the upper-right corner of the panel.
+1. Select **[!UICONTROL Export]** option available in the upper-right corner of the panel.
 
 The data is exported in CSV format, and the file is downloaded locally on your device. You can use desired CSV viewer and editor to open the exported reports.
 
