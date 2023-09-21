@@ -34,7 +34,7 @@ These functions initiate requests for interaction with an MVPD. All calls are as
 
 - *endpoints* - This parameter is optional. It can be one of the following values:
 
-  - An array that allows you to specify endpoints for authentication and authorization services provided by Adobe(different instances might be used for debugging purposes). In case that multiple URLs are provided, the MVPD list is composed of the endpoints from all the service providers. Each MVPD is associated with the fastest service provider; that is, the provider that responded first and that supports that MVPD. By default (if no value is specified), the Adobe service provider is used (<http://sp.auth.adobe.com/>).
+  - An array that allows you to specify endpoints for authentication and authorization services provided by Adobe (different instances might be used for debugging purposes). In case that multiple URLs are provided, the MVPD list is composed of the endpoints from all the service providers. Each MVPD is associated with the fastest service provider; that is, the provider that responded first and that supports that MVPD. By default (if no value is specified), the Adobe service provider is used (<http://sp.auth.adobe.com/>).
   
   Example:
   - `setRequestor("IFC", ["http://sp.auth-dev.adobe.com/adobe-services"])`

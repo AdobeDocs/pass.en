@@ -53,7 +53,7 @@ Beyond entitlement are a host of related technical and integration challenges, i
 These challenges make performing and maintaining complex, direct integrations between Programmers and the authentication systems of multiple Pay TV providers highly resource intensive, requiring time and technical sophistication.
  
 
-The solution? **Adobe&reg; Adobe Pass Authentication**.
+The solution? **Adobe&reg; Pass Authentication**.
 
 ## Introduction to Adobe Pass Authentication {#authentication-intro}
 
