@@ -27,25 +27,37 @@ A Software Statement is a JWT token that contains information about your applica
 
 ### If you have access to Adobe's TVE Dashboard:
 
-- Open your browser and navigate to <https://console.auth.adobe.com>
-- Navigate to `Channels` section and select your channel.
-- Navigate to `Registered Applications` Tab.
-- Click on `Add new application`.
-- Provide a name and a version for your application and select the platforms on which it will be available (e.g. Android in our case).
-- Provide a Domain Name by choosing from a list of domains already configured for your Programmer.
-- Push your changes to the server and then navigate back to you Channel's Registered Applications tab.
-- You should see a list with all registred applications. Click the `Download` button on the application that you've just created. Note: You may need to wait a few minutes before your Software Statement is ready for download.
-- A text file will be downloaded. Use it's contents as your Software Statement.
+1. Open your browser and navigate to `https://console.auth.adobe.com`.
+
+1. Navigate to the **[!UICONTROL Channels]** section, then select your channel.
+
+1. Navigate to the **[!UICONTROL Registered Applications]** tab.
+
+1. Click **[!UICONTROL Add new application]**.
+
+1. Provide a name and a version for your application and select the platforms on which it will be available (such as Android).
+
+1. Provide a **[!UICONTROL Domain Name]** by choosing from a list of domains already configured for your Programmer.
+
+1. Push your changes to the server, then navigate back to you channel's **[!UICONTROL Registered Applications]** tab.
+
+    You should see a list with all registered applications. 
+
+1. Click **[!UICONTROL Download]** on the application that you've just created. 
+
+    You may need to wait a few minutes before your Software Statement is ready for download.
+
+    A text file downloads. Use its contents as your Software Statement.
 
 More information, see [Dynamic Client Registration Management](/help/authentication/dynamic-client-registration-management.md)
 
 ### If you don't have access to Adobe's TVE Dashboard:
 
-Submit a ticket to <tve-support@adobe.com>. Please include all the necesary information, including channel, application name, version and platforms and someone from our support team will create a software statement for you.
+Submit a ticket to [tve-support@adobe.com](mailto:tve-support@adobe.com). Include all the necessary information, including channel, application name, version and platforms and someone from our support team will create a software statement for you.
 
-## How to use the Software Statement? {#use}
+## How to use the Software Statement {#use}
 
-After you obtain your Software Statement you need to pass it as a paramenter in the Access Enabler constructor. We recommend hosting the Software Statement on a remote location. This way, you can easily revoke and change the Software Statement without releasing a new version of your application.
+After you obtain your Software Statement, you need to pass it as a parameter in the Access Enabler constructor. Adobe recommends hosting the Software Statement on a remote location. This way, you can easily revoke and change the Software Statement without releasing a new version of your application.
 
 ## How to use the Software Statement {#use-both}
 

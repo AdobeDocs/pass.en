@@ -14,27 +14,27 @@ exl-id: 1982c485-f0ed-4df3-9a20-9c6a928500c2
 
 ## Introduction {#intro}
 
-This document describes the entitlement workflows that a Programmer's upper-level application can implement through the APIs exposed by the Amazon FireOS AccessEnabler library.
+This document describes the entitlement workflows that a Programmer's upper-level application can implement through the APIs exposed by the Amazon FireOS `AccessEnabler` library.
 
 The Adobe Pass Authentication entitlement solution for Amazon FireOS is ultimately divided into two domains:
 
-- The UI domain - this is the upper-level application layer which implements the UI and uses the services provided by the AccessEnabler library to provide access to restricted content.
-- The AccessEnabler domain - this is where the entitlement workflows are implemented in the form of:
-    - Network calls made to Adobe's backend servers
-    - Business-logic rules related to the authentication and authorization workflows
-    - Management of various resources and processing of workflow state (such as the token cache)
+- The UI domain - this is the upper-level application layer which implements the UI and uses the services provided by the `AccessEnabler` library to provide access to restricted content.
+- The `AccessEnabler` domain - this is where the entitlement workflows are implemented in the form of:
+  - Network calls made to Adobe's backend servers
+  - Business-logic rules related to the authentication and authorization workflows
+  - Management of various resources and processing of workflow state (such as the token cache)
 
-The goal of the AccessEnabler domain is to hide all the complexities of the entitlement workflows, and provide to the upper-layer application (through the AccessEnabler library) a set of simple entitlement primitives with which you implement the entitlement workflows:
+The goal of the `AccessEnabler` domain is to hide all the complexities of the entitlement workflows, and to provide to the upper-layer application (through the `AccessEnabler` library) a set of simple entitlement primitives. This process lets you implement the entitlement workflows:
 
-1.  Set the requestor identity
-1.  Check and get authentication against a particular identity provider
-1.  Check and get authorization for a particular resource
-1.  Logout
+1.  Set the requestor identity.
+1.  Check and get authentication against a particular identity provider.
+1.  Check and get authorization for a particular resource.
+1.  Logout.
 
-The AccessEnabler's network activity takes place in a different thread so the UI thread is never blocked. As a result, the two-way communication channel between the two application domains must follow a fully asynchronous pattern:
+The `AccessEnabler`'s network activity takes place in a different thread so the UI thread is never blocked. As a result, the two-way communication channel between the two application domains must follow a fully asynchronous pattern:
 
-- The UI application layer sends messages to the AccessEnabler domain via the API calls exposed by the AccessEnabler library.
-- The AccessEnabler responds to the UI layer through the callback methods included in the AccessEnabler protocol which the UI layer registers with the AccessEnabler library.
+- The UI application layer sends messages to the `AccessEnabler` domain via the API calls exposed by the `AccessEnabler` library.
+- The `AccessEnabler` responds to the UI layer through the callback methods included in the `AccessEnabler` protocol which the UI layer registers with the `AccessEnabler` library.
 
 ## Entitlement Flows {#entitlement}
 
@@ -44,8 +44,6 @@ The AccessEnabler's network activity takes place in a different thread so the UI
 1.  [Authorization Flow](#authz_flow)
 1.  [View Media Flow](#media_flow)
 1.  [Logout Flow](#logout_flow)
-
- 
 
 ### A. Prerequisites {#prereqs}
 
@@ -107,9 +105,9 @@ The AccessEnabler's network activity takes place in a different thread so the UI
 1.  Start the upper-level application.
 1.  Initiate Adobe Pass Authentication.
 
-    1. Call [`getInstance`](#$getInstance) to create a single instance of the Adobe Pass Authentication AccessEnabler.
+    1. Call [`getInstance`](#$getInstance) to create a single instance of the Adobe Pass Authentication `AccessEnabler`.
         
-          - **Dependency:** Adobe Pass Authentication Native Amazon FireOS Library (AccessEnabler)
+          - **Dependency:** Adobe Pass Authentication Native Amazon FireOS Library (`AccessEnabler`)
     
     1. Call` setRequestor()` to establish the identify of the Programmer; pass in the Programmer's `requestorID` and (optionally) an array of Adobe Pass Authentication endpoints.
         
@@ -121,8 +119,8 @@ The AccessEnabler's network activity takes place in a different thread so the UI
 
     You have two implementation options: Once the requestor identification information is sent to the backend server, the UI application layer may choose one of the two following approaches:</p>
 
-    1. Wait for the triggering of the `setRequestorComplete()` callback (part of the AccessEnabler delegate).  This option provides the most certainty that `setRequestor()` completed, so it is recommended for most implementations.
-    1. Continue without waiting for the triggering of the `setRequestorComplete()` callback, and start issuing entitlement requests. These calls (checkAuthentication, checkAuthorization, getAuthentication, getAuthorization, checkPreauthorizedResource, getMetadata, logout) are queued by the AccessEnabler library, which will make the actual network calls after the `setRequestor()`. This option can occasionally be disrupted if for example, the network connection is unstable.
+    1. Wait for the triggering of the `setRequestorComplete()` callback (part of the `AccessEnabler` delegate).  This option provides the most certainty that `setRequestor()` completed, so it is recommended for most implementations.
+    1. Continue without waiting for the triggering of the `setRequestorComplete()` callback, and start issuing entitlement requests. These calls (checkAuthentication, checkAuthorization, getAuthentication, getAuthorization, checkPreauthorizedResource, getMetadata, logout) are queued by the `AccessEnabler` library, which will make the actual network calls after the `setRequestor()`. This option can occasionally be disrupted if for example, the network connection is unstable.
 
 1.  Call [checkAuthentication()](#$checkAuthN) to check for an existing authentication without initiating the full Authentication flow.  If this call succeeds, you can proceed directly to the Authorization flow.  If not, proceed to the Authentication flow.
 
@@ -144,10 +142,10 @@ The AccessEnabler's network activity takes place in a different thread so the UI
     
     >[!NOTE]
     >
-    >At this point, the user has the opportunity to cancel the authentication flow. If this occurs, the AccessEnabler will clean up it's internal state and reset the Authentication Flow.
+    >At this point, the user has the opportunity to cancel the authentication flow. If this occurs, the `AccessEnabler` will clean up it's internal state and reset the Authentication Flow.
 
-1.  Upon a succesful login by the user, the WebView will close.
-1.  call `getAuthenticationToken(),` which instructs the AccessEnabler to retrieve the authentication token from the backend server. 
+1.  Upon a successful login by the user, the WebView will close.
+1.  call `getAuthenticationToken(),` which instructs the `AccessEnabler` to retrieve the authentication token from the backend server. 
 1.  [Optional] Call [`checkPreauthorizedResources(resources)`](#$checkPreauth) to check which resources the user is authorized to view. The `resources` parameter is an array of protected resources that is associated with the user's authentication token.  
 
     **Triggers:** `preAuthorizedResources()` callback  
@@ -190,6 +188,6 @@ The AccessEnabler's network activity takes place in a different thread so the UI
 
 ### F. Logout Flow {#logout_flow}
 
-1.  Call [`logout()`](#$logout) to log the user out. The AccessEnabler clears out all cached values and tokens obtained by the user for the current MVPD on all requestors sharing the login thru Single Sign On. After clearing out the cache, the AccessEnabler makes a server call to clean the server-side sessions.  Note that since the server call could result in a SAML redirect to the IdP (this allows for the session clean-up on the IdP side), this call must follow all redirects. For this reason, this call will be handled inside a WebView control, invisible for the user.
+1.  Call [`logout()`](#$logout) to log the user out. The `AccessEnabler` clears out all cached values and tokens obtained by the user for the current MVPD on all requestors sharing the login thru Single Sign On. After clearing out the cache, the `AccessEnabler` makes a server call to clean the server-side sessions.  Note that since the server call could result in a SAML redirect to the IdP (this allows for the session clean-up on the IdP side), this call must follow all redirects. For this reason, this call will be handled inside a WebView control, invisible for the user.
 
     **Note:** The logout flow differs from the authentication flow in that the user is not required to interact with the WebView in any way. Thus it is possible (and recommended) to make the WebView control invisible (i.e.: hidden) during the logout process.
