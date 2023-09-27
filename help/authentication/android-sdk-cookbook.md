@@ -26,10 +26,13 @@ The Adobe Pass Authentication entitlement solution for Android is ultimately div
 
 The goal of the AccessEnabler domain is to hide all the complexities of the entitlement workflows, and provide to the upper-layer application (through the AccessEnabler library) a set of simple entitlement primitives with which you implement the entitlement workflows:
 
-1.  Set the requestor identity
-1.  Check and get authentication against a particular identity provider
-1.  Check and get authorization for a particular resource
-1.  Logout
+1.  Set the requestor identity.
+
+1.  Check and get authentication against a particular identity provider.
+
+1.  Check and get authorization for a particular resource.
+
+1.  Logout.
 
 The AccessEnabler's network activity takes place in a different thread so the UI thread is never blocked. As a result, the two-way communication channel between the two application domains must follow a fully asynchronous pattern:
 
@@ -44,8 +47,6 @@ The AccessEnabler's network activity takes place in a different thread so the UI
 1.  [Authorization Flow](#authz_flow)
 1.  [View Media Flow](#media_flow)
 1.  [Logout Flow](#logout_flow)
-
- 
 
 ### A. Prerequisites {#prereqs}
 
@@ -132,8 +133,6 @@ The AccessEnabler's network activity takes place in a different thread so the UI
 
     - **Triggers:** setAuthenticationStatus() callback
 
- 
-
 ### C. Authentication Flow {#authn_flow}
 
 1.  Call [`getAuthentication()`](#$getAuthN) to initiate the authentication flow, or to get confirmation that the user is already authenticated.   
@@ -147,7 +146,6 @@ The AccessEnabler's network activity takes place in a different thread so the UI
 
 1.  Through the WebView instantiated in the previous step, the user lands on the MVPD's login page and inputs login credentials. Several redirect operations take place within the WebView.  
      
-    
     **Note:** At this point, the user has the opportunity to cancel the authentication flow. If this occurs, your UI layer is responsible for informing the AccessEnabler about this event by calling `setSelectedProvider()` with `null` as a parameter. This allows the AccessEnabler to clean up it's internal state and reset the Authentication Flow.
 
 1.  Upon a succesful login by the user, your application layer detects the loading of a "custom redirect URL" (i.e.: `http://adobepass.android.app`). This custom URL is actually an invalid URL that is not intended for the WebView to load. It is a signal that the Authentication Flow has completed, and that the WebView needs to be closed.

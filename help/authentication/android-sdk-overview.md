@@ -9,9 +9,6 @@ exl-id: a1d98325-32a1-4881-8635-9a3c38169422
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
-</br>
-
-
 ## Introduction {#intro}
 
 Android AccessEnabler is a Java Android library that enables mobile apps to use Adobe Pass Authentication for TV Everywhere's entitlement services. An Android implementation consists of the AccessEnabler interface that defines the entitlement API, and an EntitlementDelegate protocol that describes the callbacks that the library triggers. The interface together with the protocol is referred to under one common name: the AccessEnabler Android library.
@@ -28,8 +25,6 @@ Native client workflows are typically the same as, or very similar to, those of 
 - [Generic Initial Authentication Workflow](#generic)
 - [Logout Workflow](#logout)
 
-
-
 ### Post-initialization Workflow {#post-init}
 
 All of the entitlement workflows supported by the AccessEnabler assume that you have previously called [`setRequestor()`](#setRequestor) to establish your identity. You make this call to provide your Requestor ID only once, usually during your application's initialization/setup phase.
@@ -44,8 +39,6 @@ With the native clients (e.g., Android), after your initial call to [`setRequest
 - Or, do both.
 
 It is up to you as to whether to wait for notification of the success of [`setRequestor()`](#setRequestor) or to rely on the AccessEnabler's call queue mechanism. Since all subsequent authorization and authentication requests need the requestor ID and the associated configuration information, the [`setRequestor()`](#setRequestor) method effectively blocks all authentication and authorization API calls until initialization is complete.
-
- 
 
 ### Generic Initial Authentication Workflow {#generic}
 

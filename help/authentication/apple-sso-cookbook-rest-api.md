@@ -15,13 +15,9 @@ The Adobe Pass Authentication REST API can support platform Single Sign-On (SSO)
 
 Please note that this document acts as an extension to the existing REST API documentation, which can be found [here](/help/authentication/rest-api-reference.md).
 
-</br>
-
 ## Cookbooks {#Cookbooks}
 
 In order to benefit from the Apple SSO user experience, one application would need to integrate the [Video Subscriber Account](https://developer.apple.com/documentation/videosubscriberaccount) framework developed by Apple, while regarding the Adobe Pass Authentication REST API communication, it would have to follow the sequence of tips presented below.
-
-</br>
 
 ### Authentication {#Authentication}
 
@@ -38,10 +34,8 @@ In order to benefit from the Apple SSO user experience, one application would ne
 - [Proceed with authorization flows](#Proceed_with_authorization_flows)
 
  
-
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/qu/platform-sso.jpeg)
 
-</br>
 
 #### Step: "Is there a valid Adobe authentication token?" {#Is_there_a_valid_Adobe_authentication_token}
 
@@ -49,7 +43,6 @@ In order to benefit from the Apple SSO user experience, one application would ne
 >
 > **<u>Tip:</u>** Implement this through the medium of [Adobe Pass Authentication](/help/authentication/check-authentication-token.md) service.
 
-</br>
 
 #### Step: "Is the user logged in via Platform SSO?" {#Is_the_user_logged_in_via_Platform_SSO}
 
@@ -121,8 +114,6 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 ...  
 ```
 
-</br>
-
 #### Step: "Fetch Adobe configuration" {#Fetch_Adobe_configuration}
 
 >[!TIP]
@@ -133,8 +124,6 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 >[!TIP]
 >
 > **<u>Pro Tip:</u>** Please be aware of the MVPD properties: *`enablePlatformServices`*, *`boardingStatus`*, *`displayInPlatformPicker`*, *`platformMappingId`*, *`requiredMetadataFields`* and pay extra attention to the comments presented in code snippets from other steps.
-
-</br>
 
 #### Step "Initiate Platform SSO workflow with Adobe config" {#Initiate_Platform_SSO_workflow_with_Adobe_config}
 
@@ -257,8 +246,6 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 >
 > **<u>Pro Tip:</u>** Please be aware of the code snippet from the ["Initiate Platform SSO workflow with Adobe config"](#Initiate_Platform_SSO_workflow_with_Adobe_config) step. The user login is successful in case the *`vsaMetadata!.accountProviderIdentifier`* contains a valid value and the current date has not passed the *`vsaMetadata!.authenticationExpirationDate`* value.
 
-</br>
-
 #### Step "Obtain a profile request from Adobe for the selected MVPD" {#Obtain_a_profile_request_from_Adobe_for_the_selected_MVPD}
 
 >[!TIP]
@@ -268,8 +255,6 @@ videoSubscriberAccountManager.checkAccessStatus(options: [VSCheckAccessOption.pr
 >[!TIP]
 >
 > **<u>Pro Tip:</u>** Please be aware that the provider identifier obtained from the Video Subscriber Account framework represents the *`platformMappingId`* in terms of Adobe Pass Authentication configuration. Therefore, the application must determine the MVPD id property value, using the *`platformMappingId`* value, through the medium of Adobe Pass Authentication [Provide MVPD List](/help/authentication/provide-mvpd-list.md) service.
-
-</br>
 
 #### Step: "Forward the Adobe request to Platform SSO to obtain the profile" {#Forward_the_Adobe_request_to_Platform_SSO_to_obtain_the_profile}
 

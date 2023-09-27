@@ -21,7 +21,7 @@ See [Roku SSO Overview](/help/authentication/roku-sso-overview.md).
 
 ## Behavior
 
-Depending on your app's **target SDK level** or the usage of **android:requestLegacyExternalStorage** manifest attribute the Single Sign-On (SSO) offered by Access Enabler Android version 3.2.1 SDK (latest) and previous versions will currently behave as follows:
+Depending on your app's **[!UICONTROL target SDK level]** or the usage of **android:requestLegacyExternalStorage** manifest attribute the Single Sign-On (SSO) offered by Access Enabler Android version 3.2.1 SDK (latest) and previous versions will currently behave as follows:
 
 - Your app targets **Android 9 (API level 28)** or lower **-\>** Single Sign-On (SSO) **will work**  
 - Your app targets **Android 10** **(API level 29)** and does **set** the value of **requestLegacyExternalStorage to true** in your app's manifest file **-\>** Single Sign-On (SSO) **will work**  
