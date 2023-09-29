@@ -5,7 +5,7 @@ product: adobe primetime
 solution: Pass
 feature-set: Pass
 git-repo: https://github.com/AdobeDocs/pass.en
-hide: yes
+index: yes
 ---
 
 # Metadata for internal use
