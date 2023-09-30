@@ -1,8 +1,8 @@
 ---
 title: Use cases
 description: Use cases in Concurrency Monitoring.
+exl-id: 6cc30bb6-e985-4d9a-9f99-a7f04ae8deb7
 ---
-
 # Use Cases {#use-cases}
 
 The main use case of the Stream Counting Service is counting the number of concurrent video streams watched by a user and provide a decision regarding its concurrent usage for the same account id.

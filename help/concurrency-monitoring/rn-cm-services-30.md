@@ -1,8 +1,8 @@
 ---
 title: Concurrency Monitoring Services 3.0 Release Notes
 description: Concurrency Monitoring Services 3.0 Release Notes
+exl-id: 247e310f-35a2-4078-a3d7-53b44ef08ad9
 ---
-
 # Concurrency Monitoring Services 3.0 Release Notes {#cms-rn-30}
 
 This page describes new features, changes, and known issues with this release.

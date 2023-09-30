@@ -1,8 +1,8 @@
 ---
 title: Policy decision point
 description: Policy decision point
+exl-id: 94bc638c-bef8-45ea-b20a-9b7038adecdd
 ---
-
 # Policy decision point {#policy-desc-pt}
 
 ## Domain model {#domain-model}
@@ -83,4 +83,3 @@ Now, let's see what would happen if the user tries to create a new stream using 
 ![](assets/new-stream-with-app1.png)
 
 The application app1 is in no way related to the policy **P2**, so it will only apply the policy **P1**: which allows the new stream to start and denies the older one (**s3** in this case).
-

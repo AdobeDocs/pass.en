@@ -1,7 +1,7 @@
 ---
 title: Authentication iOS / tvOS 3.8.1 Release Notes
 description: Authentication iOS / tvOS 3.8.1 Release Notes
-exl-id: c403a80b-717c-4274-8d86-d96b7e81e624
+exl-id: e1e24b47-e5b7-4706-8690-ad71dee35cb8
 ---
 # Authentication iOS / tvOS 3.8.1 Release Notes {#ios-tvos-sdk-381-release-notes}
 

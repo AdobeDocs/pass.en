@@ -1,8 +1,8 @@
 ---
-title: Concurrency Monitoring Introduction 
+title: Concurrency Monitoring Introduction
 description: Concurrency Monitoring Introduction
+exl-id: 725cc64b-6b03-46e3-a038-41e9b1341c6b
 ---
-
 # Concurrency Monitoring Introduction {#intro}
 
 To know about [Escalation procedures](/help/concurrency-monitoring/cm-escalation-procedures.md) regarding Concurrency Monitoring, see the escalation procedures article. 

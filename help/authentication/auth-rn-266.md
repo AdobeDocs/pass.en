@@ -1,6 +1,7 @@
 ---
 title: Adobe Pass Authentication 2.66 Release Notes
 description: Adobe Pass Authentication 2.66 Release Notes
+exl-id: 7c3cd007-ed2b-455f-8f70-6ec5d0a6552a
 ---
 # Adobe Pass Authentication 2.66 Release Notes {#authn-266-rn}
 
@@ -28,4 +29,4 @@ With this release we continued internal updates for the new REST API.
 
 * Fixed the logout flow for SAML based MVPDs, where RelayState parameter was missing from the logout request. We'll target configuration updates after the release to restore the logout flow for affected MVPDs.
 * Added the capability to update SSL certificates in our configuration for SOAP authorization endpoints.
-* Fixed a corner case where incorrect data was logged in the Programmer field in some ESM reports. 
+* Fixed a corner case where incorrect data was logged in the Programmer field in some ESM reports.

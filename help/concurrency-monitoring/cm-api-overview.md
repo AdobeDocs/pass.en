@@ -1,8 +1,8 @@
 ---
 title: API overview
 description: API overview of Concurrency Monitoring
+exl-id: eb232926-9c68-4874-b76d-4c458d059f0d
 ---
-
 # API Overview {#api-overview}
 
 View the [online API documentation](http://docs.adobeptime.io/cm-api-v2/) for more details.
@@ -151,4 +151,3 @@ In order to break the rule that we have in the policy assigned to this applicati
 If we use different values for the channel metadata each time we create a new session all calls will succeed because the threshold of 2 is scoped to each value individually.
 
 Like in the first example, we can use the termination code in order to remotely stop conflicting streams or we can wait for one of the streams to expire, assuming that no heartbeat will be operated on them.
-

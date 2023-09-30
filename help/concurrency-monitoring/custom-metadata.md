@@ -1,9 +1,8 @@
 ---
 title: Custom metadata
 description: Custom metadata
+exl-id: 0cfd1158-8c6c-47c2-b838-5490ff4bf0ce
 ---
-
-
 # Custom metadata {#cm}
 
 >[!NOTE]
@@ -40,4 +39,3 @@ Based on these key/values being sent, different rules can be established. This c
     * `GROUP by type HAVING COUNT(streamID) < 4) IF type=KIDS`
     * `GROUP by type HAVING COUNT(streamID) < 2) IF type=SPORTS`
 1. This would basically mean that when a user is watching sports, he/she cannot do it on more than 1 device, however when the user watches kids content, viewing is allowed on max 3 devices.
- 

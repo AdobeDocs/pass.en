@@ -1,8 +1,8 @@
 ---
 title: Standard metadata attributes
 description: Standard metadata attributes
+exl-id: 99ffa98c-213f-47a5-a6e7-fbacb77875d0
 ---
-
 # Standard metadata attributes {#std-metadata-attributes}
 
 This page aims to provide an exhaustive list of metadata attributes that the Concurrency Monitoring service can process and which can be used as basis for policies that can be implemented. The standard metadata attributes can be categorized as follows:

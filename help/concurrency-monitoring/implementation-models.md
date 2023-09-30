@@ -1,10 +1,8 @@
 ---
 title: Implementation models
-
 description: Implementation models
-
+exl-id: 3bcb63ba-9b4a-4df4-8d24-e520b8830a10
 ---
-
 # Implementation models {#imp-models}
 
 ## Server-side policies {#ss-policies}

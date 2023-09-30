@@ -1,8 +1,8 @@
 ---
 title: Concurrency Monitoring 2.9.6 Release Notes
 description: Concurrency Monitoring 2.9.6 Release Notes
+exl-id: 904ae21b-34cb-4005-a12d-c534d406d1e8
 ---
-
 # Concurrency Monitoring 2.9.6 Release Notes {#cm-296-rn}
 
 This page describes new features, changes, and known issues with this release.

@@ -1,8 +1,8 @@
 ---
 title: Data retention policy
 description: Data retention policy
+exl-id: aa7d2d5e-9a8b-404b-874c-9e5923417784
 ---
-
 # Data retention policy {#data-retention-policy}
 
 >[!WARNING]
@@ -43,4 +43,3 @@ A terminated customer is a customer who has ended the relationship with Adobe an
 ## Data deletion {#data-deletion} 
 
 Adobe retains the right to delete data for dates beyond the data retention period with no option for recovery. Data for current customers should be deleted on a rolling monthly basis.
-

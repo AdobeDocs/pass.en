@@ -1,8 +1,8 @@
 ---
 title: How to distinguish between VOD and Live Content in Concurrency Monitoring
 description: How to distinguish between VOD and Live Content in Concurrency Monitoring
+exl-id: 51ba686a-7c1f-4403-9e8e-cd247bf9e345
 ---
-
 # How to: Distinguish between VOD and Live Content in Concurrency Monitoring {#dist-vod-live}
 
 **Q:** Can the Concurrency Monitoring service distinguish between the type of content that is being played (Live content vs. Video on demand)?

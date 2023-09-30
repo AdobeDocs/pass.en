@@ -1,8 +1,8 @@
 ---
-title: Implementing CM for a Single Tenant/Policy and Multiple Applications 
+title: Implementing CM for a Single Tenant/Policy and Multiple Applications
 description: Implementing CM for a Single Tenant/Policy and Multiple Applications
+exl-id: 5c579c7d-f235-4dba-95c2-8485021d9065
 ---
-
 # Implementing CM for a Single Tenant/Policy and Multiple Applications {#imp-cm}
  
 
@@ -465,4 +465,4 @@ Related Information
 Introduction - Adobe Concurrency Monitoring
 API Console - Adobe Concurrency Monitoring
 User Metadata - Adobe Pass Authentication
----> 
+--->

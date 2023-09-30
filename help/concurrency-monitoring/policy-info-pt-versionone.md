@@ -1,9 +1,8 @@
 ---
 title: Policy Information Point
 description: Policy Information Point
+exl-id: 964bb28d-cfef-4a37-b6c4-10cc59be0b47
 ---
-
-
 # Policy Information Point {#pip}
 
 >[!NOTE]
@@ -27,4 +26,3 @@ In a nutshell, the usual message flow is as follows:
 1. During video playback, the instrumented application makes heartbeat calls to the Concurrency Monitoring Service, showing that the user is currently consuming a video.
 1. At any other point, other instrumented applications can make Status query calls to the Concurrency Monitoring Service, which will return the current user activity. 
 1. At video playback end, the instrumented application can make a heartbeat call with "event=stop", signifying that the video has stopped, and that the current stream should not be counted as an active stream anymore.
- 
