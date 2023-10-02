@@ -361,8 +361,8 @@ If called without the `serviceProviders` parameter, the library will retrieve th
 
 **Description:** Checks the authentication status of the current user.
 It does this by searching for a valid authentication token in the local
-token storage space. Calling this method performs no network calls. It
-is used by the application to query the user's authentication status and
+token storage space. This method performs no network calls and we recommend calling it on the main thread.
+It is used by the application to query the user's authentication status and
 update the UI accordingly (i.e., update the login/logout UI). The
 authentication status is communicated to the application via
 the [`setAuthenticationStatus:errorCode:`](#setAuthNStatus) callback.  
