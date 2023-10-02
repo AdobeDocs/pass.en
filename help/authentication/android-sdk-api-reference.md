@@ -159,7 +159,7 @@ The values will be passed to the server independent of the current flow (authent
 
 ### checkAuthentication {#checkAuthN}
 
-**Description:** Checks the authentication status. It does this by searching for a valid authentication token in the local token storage space. Calling this method performs no network calls. It is used by the application to query the user's authentication status and update the UI accordingly (i.e. update the login / logout UI). The authentication status is communicated to the application via the [*setAuthenticationStatus()*](#setAuthNStatus) callback.
+**Description:** Checks the authentication status. It does this by searching for a valid authentication token in the local token storage space. This method performs no network calls and we recommend calling it on the main thread. It is used by the application to query the user's authentication status and update the UI accordingly (i.e. update the login / logout UI). The authentication status is communicated to the application via the [*setAuthenticationStatus()*](#setAuthNStatus) callback.
 
 If an MVPD supports the "Authentication per Requestor" feature, then multiple authentication tokens can be stored on a device.  For details on this feature, see the [Caching Guidelines](#$caching) section in the Android Technical Overview.
 
