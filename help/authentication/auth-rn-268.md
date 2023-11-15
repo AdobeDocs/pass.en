@@ -14,7 +14,6 @@ This page describes new features, changes, and known issues with this release:
 
 * [Build Number](#build-number-268)
 * [New Features](#new-features-268)
-* [MVPD Updates](#mvpd-updates-268)
 * [Bug Fixes](#bug-fixes-268)
 
 ### Build Number {#build-number-268}
