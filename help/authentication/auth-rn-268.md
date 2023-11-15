@@ -24,13 +24,9 @@ Release Date: **11/21/2023 - 11/23/2023**
 
 ### New Features {#new-features-268}
 
-* Continued internal updates for the new REST API.
+* Updates for our new REST APIs.  The new endpoints are not yet available, but we are working on updating documentation that details the use of these new APIs.
 * Continued internal architectural improvements.
 * Updated Device Atlas library in order to improve device identification.
-
-### MVPD Updates {#mvpd-updates-268}
-
-* A new MVPD added: **MAX**. Please contact your TAM for more details.
  
 #### Bug Fixes {#bug-fixes-268}
 
