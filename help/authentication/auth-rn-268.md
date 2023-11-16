@@ -23,9 +23,9 @@ Release Date: **11/21/2023 - 11/23/2023**
 
 ### New Features {#new-features-268}
 
-* Updates for our new REST APIs.  The new endpoints are not yet available, but we are working on updating documentation that details the use of these new APIs.
+* Ongoing development to new REST APIs. The new endpoints and flows planned to become available in an upcoming dedicated release. Updating documentation for use of these new APIS is in progress.
 * Continued internal architectural improvements.
-* Updated Device Atlas library in order to improve device identification.
+* Updated Device Atlas library to the latest version in order to improve device identification.
  
 #### Bug Fixes {#bug-fixes-268}
 
