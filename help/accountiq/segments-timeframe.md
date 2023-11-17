@@ -27,7 +27,7 @@ For programmer or MVPD users, navigate to the **Open segment** option. Choose a 
 
 Use the **Eye** icon to view the detailed segment summary, presenting the information on the number of subscriber accounts and playback requests by them within the chosen time frame.
 
-+++Segment selection panel for Programmer
++++Segment selection panel for programmer
 
 ![](assets/segment-panel-programmer.png)
 
@@ -43,16 +43,17 @@ Use the **Eye** icon to view the detailed segment summary, presenting the inform
 
 The segment summary is used to define the following parameters:
 
-**[!UICONTROL Programmers in segment]**
+**[!UICONTROL programmers in segment]**
 
-**[!UICONTROL Channels in segment]**
+**[!UICONTROL channels in segment]**
 
 **[!UICONTROL MVPDs in segment]**
 
-**[!UICONTROL Metrics in segment]**
+**[!UICONTROL metrics in segment]**
 
 <!-- The definitions of these parameters will be defined in the glossary article-->
   
++++
 
 ## [!UICONTROL Granularity and time frame] {#granularity-timeframe}
   
