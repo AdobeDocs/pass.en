@@ -1,6 +1,7 @@
 ---
 title: Reset Temp Pass
 description: Reset Temp Pass
+exl-id: ab39e444-eab2-4338-8d09-352a1d5135b6
 ---
 # Reset Temp Pass {#reset-temp-pass}
 
