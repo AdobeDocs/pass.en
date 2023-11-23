@@ -19,7 +19,7 @@ When you log into Account IQ, the segment launcher panel at the top allows you t
 
 ![](assets/new-segment-selector-collapsed.png){width="650" align="left"}
 
- *Figue: Segment launcher with collapsed segment summary*
+ *Figure: Segment launcher with collapsed segment summary*
 
 ## Segment selection {#segment-selection}
 
@@ -61,5 +61,7 @@ The segment summary is used to define the following parameters:
 
   ![[!UICONTROL Granularity and timeframe]](assets/granularity-timeframe-weekwise.png){width="350" align="left"}
   
+  *Figure: Granularity and time frame dialog box*
+
 Applying these controls you can define your problem statement as "subscribers of the MVPD A that watched the channels X, Y, and Z in the month of October".
 
