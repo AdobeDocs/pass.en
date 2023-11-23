@@ -118,6 +118,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
   + Temp pass {#temp-pass}
     + [Temp pass](temp-pass.md)
     + [Promotional temp pass](promotional-temp-pass.md)
+    + [Reset Temp Pass](reset-temp-pass.md)    
   + Single sign-On {#sso}
     + [Single sign-on support](sso-support.md)
     + [SSO via passive authentication](sso-passive-authn.md)
