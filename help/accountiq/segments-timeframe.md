@@ -17,7 +17,7 @@ When you log into Account IQ, the segment launcher panel at the top allows you t
 **G** Edit segment option<br/>
 **H** Create new segment option<br/>
 
-![](assets/new-segment-selector-collapsed.png)
+![](assets/new-segment-selector-collapsed.png){width="550" align="left"}
 
  *Figue: Segment launcher with collapsed segment summary*
 
@@ -29,7 +29,7 @@ Use the **Eye** icon to view the detailed segment summary, presenting the inform
 
 +++Segment selection panel for programmer
 
-![](assets/segment-panel-programmer.png)
+![](assets/segment-panel-programmer.png){width="650" align="left"}
 
 *Figure: Segment panel for programmers*
 
@@ -37,7 +37,7 @@ Use the **Eye** icon to view the detailed segment summary, presenting the inform
 
 +++Segment selection panel for MVPDs
 
-![](assets/segment-panel-mvpd.png)
+![](assets/segment-panel-mvpd.png){width="650" align="left"}
 
 *Figure: Segment panel for MVPDs*
 
@@ -61,5 +61,5 @@ The segment summary is used to define the following parameters:
 
   ![[!UICONTROL Granularity and timeframe]](assets/granularity-timeframe-weekwise.png)
   
-With these controls you can define your problem statement as "subscribers of the MVPD A that watched the channels X, Y, and Z in the month of May".
+Applying these controls you can define your problem statement as "subscribers of the MVPD A that watched the channels X, Y, and Z in the month of October".
 
