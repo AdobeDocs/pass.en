@@ -62,6 +62,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             + [iOS/tvOS Application Registration](iostvos-application-registration.md)
             + Migration guidelines {#migration-guidelines}  
               + [iOS/tvOS v3.x Migration Guide](iostvos-v3x-migration-guide.md)
+            + [iOS/tvOS Storage Integrity Checks](iostvos-sdk-storage-integrity-checks.md)
           + iOS/tvOS API {#ios-tvos-api}
             + [Preauthorize](preauthorize.md)    
       + Android SDK {#androidsdk}
