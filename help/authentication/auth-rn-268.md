@@ -20,11 +20,11 @@ This page describes new features, changes, and known issues with this release:
 ### Build Number {#build-number-268}
 
 Adobe Pass Authentication: adobe-pass-**2.68.0.5**
-Release Date: **11/21/2023 - 11/23/2023** 
+Release Date: **12/05/2023 - 12/07/2023** 
 
 ### New Features {#new-features-268}
 
-* Ongoing development to new REST APIs. The new endpoints and flows planned to become available in an upcoming dedicated release. Updating documentation for use of these new APIS is in progress.
+* Ongoing development to new REST APIS. The new end-points and flows planned to become available in an upcoming dedicated release. Updating documentation for use of these new APIS is in progress.
 * Continued internal architectural improvements.
 * Updated Device Atlas library to the latest version in order to improve device identification.
  
