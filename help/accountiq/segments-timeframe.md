@@ -1,66 +1,77 @@
 ---
-title: Subscriber segments and time interval
+title: Subscriber segments and time frame
 description: Define cohorts or select subscriber segments to gauge the account sharing possibilities and patterns of your channel viewers to use graphical tools and reports in Account IQ.
 exl-id: c38cde37-70d9-486d-b8d0-7c1cbd2baf2e
 ---
 
-# Subscriber segments and time interval {#cohorts-segments}
+# Subscriber segments and time frame {#cohorts-segments}
 
+When you log into Account IQ, there is a panel at the top that lets you define the subscriber [segment](/help/accountiq/product-concepts.md#segment-segmet-def) to filter your results for viewing reports for subscriber sharing behavior and patterns.
 
-When you log into Account IQ, the segment launcher panel at the top allows you to specify the subscriber [segment](/help/accountiq/product-concepts.md#segment-segmet-def). This helps in filtering results when viewing reports on subscriber sharing behavior and patterns. A default segment named-All accounts in your properties is already selected, and you see the following options in the segment launcher:
+<!--![](assets/segment-timeframe-panel.png)-->
 
-![](assets/new-segment-selector-collapsed.png){width="800" align="left"}
++++Segment selection panel for Programmer
 
- *Figure: Segment launcher with collapsed segment summary*
+![](assets/segment-panel-programmer.png)
 
-**A** Currently selected segment name<br/>
-**B** Time interval and granularity selector<br/>
-**C** Segment summary collapsed<br/>
-**D** Option to expand segment summary<br/>
-**E** Segment data (in terms of number of subscriber accounts in the segment for a time duration)<br/>
-**F** Open segment list option<br/>
-**G** Edit segment option<br/>
-**H** Create new segment option<br/>
+<!--![](assets/filter-panel.png)-->
 
-## Segment selection {#segment-selection}
+The following dropdown options are used to define segments:
 
-For programmer or MVPD users, navigate to the **Open segment** option. Choose a segment from the list and select **Open segment** to view the account sharing reports.
+**[!UICONTROL MVPDs in segment]**
 
-Use the **Eye** icon to view the detailed segment summary, presenting the information on the number of subscriber accounts and playback requests by them within the chosen time interval.
+The **[!UICONTROL MVPDs in segment]** selector lets you choose the [MVPDs](/help/accountiq/product-concepts.md#mvpd-def) (individuals or group) for whose subscriber you want to view the account sharing reports.
 
-+++Segment selection panel for programmers/MVPDs
+In this selector, apart from selecting the individual MVPDs you can also select the following groups:
 
-![](assets/segment-panel-programmers-mvpds.png) {width="800" align="left"}
+*   [Top 10 MVPDs by sharing score](/help/accountiq/product-concepts.md#top-mvpds-def)
 
-*Figure: Segment panel for programmers/MVPDs*
+*   [Top 10 MVPDs by usage](/help/accountiq/product-concepts.md#top-mvpds-def)
 
-+++
+*   [Top 10 MVPDs by accounts](/help/accountiq/product-concepts.md#top-mvpds-def)
 
-The segment summary is used to define the following parameters:
-
-**[!UICONTROL Programmers in segment]**
+*   [Isolation mode](/help/accountiq/isolation-mode.md)
 
 **[!UICONTROL Channels in segment]**
 
-**[!UICONTROL MVPD in segment]**
+When you are logged in as a programmer user then you can select your channels to view their account sharing analytics. Use the **[!UICONTROL Channels in segment]** dropdown option to select individual or multiple channels in your organization.
 
-**[!UICONTROL Metrics in segment]**
++++
 
-<!-- The definitions of these parameters will be defined in the glossary article-->
++++Segment selection panel for MVPDs
 
-## [!UICONTROL Granularity and time interval] {#granularity-timeinterval}
+![](assets/segment-panel-mvpd.png)
+
+The following dropdown options are used to define segments:
+
+**[!UICONTROL Channels in segment]**
+
+The **[!UICONTROL Channels in segment]** selector lets you further narrow down your filter to select channels corresponding to the selected MVPDs.
+
+*   [Top 10 programmers by sharing score](/help/accountiq/product-concepts.md#top-mvpds-def)
+
+*   [Top 10 programmers by usage](/help/accountiq/product-concepts.md#top-mvpds-def)
+
+*   [Top 10 programmers by accounts](/help/accountiq/product-concepts.md#top-mvpds-def)
+
+**MVPD(s) in segment**
+
+When you are logged in as an MVPD user, then your name is displayed in the field for **[!UICONTROL MVPDs in segment]**.
+
++++
+
+
+
+
+  <!--For example, you can define your segment as the "subscribers of the MVPD A that watched the channels X, Y, and Z".-->
+
   
-  The **[!UICONTROL Granularity and time interval]** selector lets you specify the dates and duration aggregated on a weekly/monthly basis for observing subscriber account sharing behavior. The default selection of the time interval is the current week, but you can modify the duration using the options shown in the image.
 
- ![[!UICONTROL Granularity and timeinterval]](assets/granularity-timeinterval-weekwise.png){width="350" align="left"}
+## [!UICONTROL Granularity and time frame] {#granularity-timeframe}
+  
+  The **[!UICONTROL Granularity and time frame]** selector lets you specify the dates and the duration, or size of time for which you want to view the subscriber sharing behavior.
 
- *Figure: Granularity and time interval dialog box*
-
-**A** Pick a date from the date picker<br/>
-**B** Select the left arrow to move backward<br/>
-**C** Select the right arrow to move forward<br/>
-**D** Select the granularity by week/month<br/>
-**E** Selected time interval<br/>
-
-Applying these controls you can define your problem statement as "subscribers of the MVPD A that watched the channels X, Y, and Z in the month of October".
+  ![[!UICONTROL Granularity and timeframe]](assets/granularity-timeframe-weekwise.png)
+  
+So, with these controls you can define your problem statement as "subscribers of the MVPD A that watched the channels X, Y, and Z in the month of May".
 
