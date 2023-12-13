@@ -1,17 +1,17 @@
 ---
-title: Define a segment and time frame
-description: Define a segment and time frame
+title: Define a segment and time interval
+description: Define a segment and time interval
 exl-id: 86fe010d-3202-4ce2-b803-ff44f5538d7e
 ---
-# Define a segment and time frame {#define-segment}
+# Define a segment and time interval {#define-segment}
 
-All analysis or viewing reports in [!UICONTROL Account IQ] begin with defining segment and selecting time frame for evaluation. [Segment](/help/accountiq/product-concepts.md#segmet-def) refers to all the subscribers or viewers that meet your criteria (subscribing to an MVPD and viewing sepcific channels) of evaluation.
+All analysis or viewing reports in [!UICONTROL Account IQ] begin with defining segment and selecting time interval for evaluation. [Segment](/help/accountiq/product-concepts.md#segmet-def) refers to all the subscribers or viewers that meet your criteria (subscribing to an MVPD and viewing sepcific channels) of evaluation.
 
 ![](assets/segment-panel.png)
 
-*Figure: Segment and time frame selection*
+*Figure: Segment and time interval selection*
 
-At the top of all the reports pages in [!UICONTROL Account IQ], there is a panel to define segment by selecting MVPDs, channel programmers, and granularity and time frame.
+At the top of all the reports pages in [!UICONTROL Account IQ], there is a panel to define segment by selecting MVPDs, channel programmers, and granularity and time interval.
 
 ## Segment selection {#select-segment}
 
@@ -77,20 +77,20 @@ In addition to changing your selection in the **[!UICONTROL MVPDs in segment]** 
 
 ![](assets/segment-panel-selection.png)
 
-*Figure: Selected MVPDs and channels in segment and timeframe panel*
+*Figure: Selected MVPDs and channels in segment and timeinterval panel*
 
-## Granularity and time frame selection {#granularity-timeframe}
+## Granularity and time interval selection {#granularity-timeinterval}
 
 To select a time period of evaluation:
 
-1. Select the **[!UICONTROL Granularity and time frame]** date picker.
+1. Select the **[!UICONTROL Granularity and time ]** date picker.
 
 1. Select either **[!UICONTROL Week]** or **[!UICONTROL Month]** from **[!UICONTROL Aggregate By]** option to set granularity for your evaluation.
 
-   ![](assets/granularity-timeframe-weekwise.png)
+   ![](assets/granularity-timeinterval-weekwise.png)
    
    
-   *Figure: Date picker to select Granularity and time frame*
+   *Figure: Date picker to select Granularity and time interval*
 
 1. Once you have selected granularity, you can use forward or backward arrows to move forward or backward in time.
 

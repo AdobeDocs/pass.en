@@ -45,7 +45,7 @@ The segment summary defines the following parameters:
 
 **[!UICONTROL Metrics in segment]**
 
-<!-- The definitions of these parameters will be defined in the glossary? or the parameters are different for a programmer/mvpd?-->
+<!-- The definitions of these parameters will be defined in the glossary? or the parameters are different for a programmer/mvpd segment?-->
 
 ## [!UICONTROL Granularity and time interval] {#granularity-timeinterval}
 
