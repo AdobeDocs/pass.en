@@ -23,17 +23,15 @@ When you log into Account IQ, the segment launcher panel at the top allows you t
 
 ## Segment selection {#segment-selection}
 
-For programmer or MVPD users, navigate to the **Open segment** option. Choose a segment from the list and select **Open segment** to view the account sharing reports.
-
 +++Segment selection panel for programmers/MVPDs
 
 ![](assets/segment-panel-programmers-mvpd.png){width="800" align="left"}
 
 *Figure: Segment panel for programmers/MVPDs*
 
-Use the **Eye** icon to view the detailed segment summary. It presents information on the number of subscriber accounts and their playback requests within the chosen time interval.
+For programmer or MVPD users, navigate to the **Open segment** option. Choose a segment from the list and select **Open segment** to view the account sharing reports.
 
-+++
+Use the **Eye** icon to view the detailed segment summary. It presents information on the number of subscriber accounts and their playback requests within the chosen time interval.
 
 The segment summary defines the following parameters:
 
@@ -46,6 +44,8 @@ The segment summary defines the following parameters:
 **[!UICONTROL Metrics in segment]**
 
 <!-- The definitions of these parameters will be defined in the glossary? or the parameters are different for a programmer/mvpd segment?-->
+
++++
 
 ## [!UICONTROL Granularity and time interval] {#granularity-timeinterval}
 
