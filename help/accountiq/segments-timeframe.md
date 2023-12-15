@@ -35,7 +35,7 @@ Use the eye icon to view the detailed [!UICONTROL Segment Summary]. It presents 
 
 The [!UICONTROL Segment Summary] is used to define the following components:
 
-[!UICONTROL [Programmers](product-concepts.md#uicontrol-programmer-programmer-def)] [ !UICONTROL in segment]  are the selected content providers within a segment whose subscriber account sharing reports you intend to access.
+[Programmers](product-concepts.md#uicontrol-programmer-programmer-def) [!UICONTROL in segment]  are the selected content providers within a segment whose subscriber account sharing reports you intend to access.
 
 [Channels](product-concepts.md#uicontrol-channel-channel-def) [!UICONTROL in segment] indicate the selected channels for observing their account sharing analytics, aligned with the chosen MVPDs in a segment.
 
