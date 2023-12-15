@@ -29,21 +29,19 @@ When you log into Account IQ, the segment launcher panel at the top allows you t
 
 *Figure: Segment panel for programmers/MVPDs*
 
-For programmer or MVPD users, navigate to the **Open segment** option. Choose a segment from the list and select **Open segment** to view the account sharing reports.
+For programmer or MVPD users, navigate to the **[!UICONTROL Open segment]** option. Choose a segment from the list and select **[!UICONTROL Open segment]** to view the account sharing reports.
 
-Use the **Eye** icon to view the detailed segment summary. It presents information on the number of subscriber accounts and their playback requests within the chosen time interval.
+Use the **Eye** icon to view the detailed **[!UICONTROL Segment Summary]**. It presents information on the number of subscriber accounts and their playback requests within the chosen time interval.
 
-The segment summary defines the following parameters:
+The **[!UICONTROL Segment Summary]** is used to define the following components:
 
-**[!UICONTROL Programmers in segment]**
+**[!UICONTROL [Programmers](/help/accountiq/product-concepts.md#Programmers-programmer-def) in segment]**  are the selected content providers within a segment whose subscriber account sharing reports you intend to access.
 
-**[!UICONTROL Channels in segment]**
+**[!UICONTROL [Channels](/help/accountiq/product-concepts.md#Channels-channel-def) in segment]** indicate the selected channels for observing their account sharing analytics, aligned with the chosen MVPDs in a segment.
 
-**[!UICONTROL MVPDs in segment]**
+**[!UICONTROL [MVPDs](/help/accountiq/product-concepts.md#MVPDs-mvpd-def) in segment]** represent the the specific individual or group of selected MVPDs within a segment, for which you aim to access the subscriber account sharing reports.
 
-**[!UICONTROL Metrics in segment]**
-
-<!-- The definitions of these parameters will be defined in the glossary? or the parameters are different for a programmer/mvpd segment?-->
+**[!UICONTROL [Metrics](/help/accountiq/product-concepts.md#Metrics-metric) in segment]** refer to the chosen attributes or criteria for a segment to access a subscriber's account sharing report.
 
 +++
 
