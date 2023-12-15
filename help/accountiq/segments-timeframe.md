@@ -35,13 +35,13 @@ Use the **Eye** icon to view the detailed **[!UICONTROL Segment Summary]**. It p
 
 The **[!UICONTROL Segment Summary]** is used to define the following components:
 
-**[!UICONTROL [Programmers](product-concepts.md#uicontrol-programmer-programmer-def)] [ !UICONTROL in segment]**  are the selected content providers within a segment whose subscriber account sharing reports you intend to access.
+**[Programmers](product-concepts.md#uicontrol-programmer-programmer-def) [!UICONTROL in segment]**  are the selected content providers within a segment whose subscriber account sharing reports you intend to access.
 
 **[Channels](product-concepts.md#uicontrol-channel-channel-def) [!UICONTROL in segment]** indicate the selected channels for observing their account sharing analytics, aligned with the chosen MVPDs in a segment.
 
-**[!UICONTROL [MVPDs](product-concepts.md#uicontrol-mvpd-mvpd-def) in segment]** represent the the specific individual or group of selected MVPDs within a segment, for which you aim to access the subscriber account sharing reports.
+**[MVPDs](product-concepts.md#uicontrol-mvpd-mvpd-def) [!UICONTROL in segment]** represent the the specific individual or group of selected MVPDs within a segment, for which you aim to access the subscriber account sharing reports.
 
-**[!UICONTROL [Metrics](product-concepts.md#uicontrol-metric-metric) in segment]** refer to the chosen attributes or criteria for a segment to access a subscriber's account sharing report.
+**[Metrics](product-concepts.md#uicontrol-metric-metric) [!UICONTROL in segment]** refer to the chosen attributes or criteria for a segment to access a subscriber's account sharing report.
 
 +++
 
