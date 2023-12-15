@@ -6,7 +6,7 @@ exl-id: c38cde37-70d9-486d-b8d0-7c1cbd2baf2e
 
 # Subscriber segments and time interval {#cohorts-segments}
 
-When you log into Account IQ, the segment launcher panel at the top allows you to specify the subscriber [segment](product-concepts.md#uicontrol-segment-segmet-def). This helps in filtering results when viewing reports on subscriber sharing behavior and patterns. A default segment named-All accounts in your properties is already selected, and you see the following options in the segment launcher:
+When you log into Account IQ, the segment launcher panel at the top allows you to specify the subscriber [segment](product-concepts.md#segmet-def). This helps in filtering results when viewing reports on subscriber sharing behavior and patterns. A default segment named-All accounts in your properties is already selected, and you see the following options in the segment launcher:
 
 ![](assets/new-segment-selector-collapsed.png){width="800" align="left"}
 
@@ -35,13 +35,13 @@ Use the eye icon to view the detailed [!UICONTROL Segment Summary]. It presents 
 
 The [!UICONTROL Segment Summary] is used to define the following components:
 
-[Programmers](product-concepts.md#uicontrol-programmer-programmer-def) [!UICONTROL in segment]  are the selected content providers within a segment whose subscriber account sharing reports you intend to access.
+[Programmers](product-concepts.md#programmer-def) [!UICONTROL in segment]  are the selected content providers within a segment whose subscriber account sharing reports you intend to access.
 
-[Channels](product-concepts.md#uicontrol-channel-channel-def) [!UICONTROL in segment] indicate the selected channels for observing their account sharing analytics, aligned with the chosen MVPDs in a segment.
+[Channels](product-concepts.md#channel-def) [!UICONTROL in segment] indicate the selected channels for observing their account sharing analytics, aligned with the chosen MVPDs in a segment.
 
-[MVPDs](product-concepts.md#uicontrol-mvpd-mvpd-def) [!UICONTROL in segment] represent the the specific individual or group of selected MVPDs within a segment, for which you aim to access the subscriber account sharing reports.
+[MVPDs](product-concepts.md#mvpd-def) [!UICONTROL in segment] represent the the specific individual or group of selected MVPDs within a segment, for which you aim to access the subscriber account sharing reports.
 
-[Metrics](product-concepts.md#uicontrol-metric-metric) [!UICONTROL in segment] refer to the chosen attributes or criteria for a segment to access a subscriber's account sharing report.
+[Metrics](product-concepts.md#metric) [!UICONTROL in segment] refer to the chosen attributes or criteria for a segment to access a subscriber's account sharing report.
 
 +++
 
