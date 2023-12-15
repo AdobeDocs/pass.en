@@ -6,16 +6,16 @@ exl-id: c38cde37-70d9-486d-b8d0-7c1cbd2baf2e
 
 # Subscriber segments and time interval {#cohorts-segments}
 
-When you log into Account IQ, the segment launcher panel at the top allows you to specify the subscriber [segment](/help/accountiq/product-concepts.md#segment-segmet-def). This helps in filtering results when viewing reports on subscriber sharing behavior and patterns. A default segment named-All accounts in your properties is already selected, and you see the following options in the segment launcher:
+When you log into Account IQ, the segment launcher panel at the top allows you to specify the subscriber [segment](product-concepts.md#uicontrol-segment-segmet-def). This helps in filtering results when viewing reports on subscriber sharing behavior and patterns. A default segment named-All accounts in your properties is already selected, and you see the following options in the segment launcher:
 
 ![](assets/new-segment-selector-collapsed.png){width="800" align="left"}
 
- *Figure: Segment launcher with collapsed segment summary*
+ *Figure: Segment launcher with collapsed Segment Summary*
  
 **A** Currently selected segment name<br/>
 **B** Time interval and granularity selector<br/>
-**C** Segment summary collapsed<br/>
-**D** Option to expand segment summary<br/>
+**C** Segment Summary collapsed<br/>
+**D** Option to expand Segment Summary<br/>
 **E** Segment data (in terms of number of subscriber accounts in the segment for a time duration)<br/>
 **F** Open segment list option<br/>
 **G** Edit segment option<br/>
@@ -35,13 +35,13 @@ Use the **Eye** icon to view the detailed **[!UICONTROL Segment Summary]**. It p
 
 The **[!UICONTROL Segment Summary]** is used to define the following components:
 
-**[!UICONTROL [Programmers](/help/accountiq/product-concepts.md#Programmers-programmer-def) in segment]**  are the selected content providers within a segment whose subscriber account sharing reports you intend to access.
+**[!UICONTROL [Programmers](product-concepts.md#uicontrol-programmer-programmer-def) in segment]**  are the selected content providers within a segment whose subscriber account sharing reports you intend to access.
 
-**[!UICONTROL [Channels](/help/accountiq/product-concepts.md#Channels-channel-def) in segment]** indicate the selected channels for observing their account sharing analytics, aligned with the chosen MVPDs in a segment.
+**[!UICONTROL [Channels](product-concepts.md#uicontrol-channel-channel-def) in segment]** indicate the selected channels for observing their account sharing analytics, aligned with the chosen MVPDs in a segment.
 
-**[!UICONTROL [MVPDs](/help/accountiq/product-concepts.md#MVPDs-mvpd-def) in segment]** represent the the specific individual or group of selected MVPDs within a segment, for which you aim to access the subscriber account sharing reports.
+**[!UICONTROL [MVPDs](product-concepts.md#uicontrol-mvpd-mvpd-def) in segment]** represent the the specific individual or group of selected MVPDs within a segment, for which you aim to access the subscriber account sharing reports.
 
-**[!UICONTROL [Metrics](/help/accountiq/product-concepts.md#Metrics-metric) in segment]** refer to the chosen attributes or criteria for a segment to access a subscriber's account sharing report.
+**[!UICONTROL [Metrics](product-concepts.md#uicontrol-metric-metric) in segment]** refer to the chosen attributes or criteria for a segment to access a subscriber's account sharing report.
 
 +++
 
