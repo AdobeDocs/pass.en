@@ -31,23 +31,23 @@ When you log into Account IQ, the segment launcher panel at the top allows you t
 
 For programmer or MVPD users, navigate to the **[!UICONTROL Open segment]** option. Choose a segment from the list and select **[!UICONTROL Open segment]** to view the account sharing reports.
 
-Use the **Eye** icon to view the detailed **[!UICONTROL Segment Summary]**. It presents information on the number of subscriber accounts and their playback requests within the chosen time interval.
+Use the eye icon to view the detailed [!UICONTROL Segment Summary]. It presents information on the number of subscriber accounts and their playback requests within the chosen time interval.
 
-The **[!UICONTROL Segment Summary]** is used to define the following components:
+The [!UICONTROL Segment Summary] is used to define the following components:
 
-**[Programmers](product-concepts.md#uicontrol-programmer-programmer-def) [!UICONTROL in segment]**  are the selected content providers within a segment whose subscriber account sharing reports you intend to access.
+[!UICONTROL [Programmers](product-concepts.md#uicontrol-programmer-programmer-def)] [ !UICONTROL in segment]  are the selected content providers within a segment whose subscriber account sharing reports you intend to access.
 
-**[Channels](product-concepts.md#uicontrol-channel-channel-def) [!UICONTROL in segment]** indicate the selected channels for observing their account sharing analytics, aligned with the chosen MVPDs in a segment.
+[Channels](product-concepts.md#uicontrol-channel-channel-def) [!UICONTROL in segment] indicate the selected channels for observing their account sharing analytics, aligned with the chosen MVPDs in a segment.
 
-**[MVPDs](product-concepts.md#uicontrol-mvpd-mvpd-def) [!UICONTROL in segment]** represent the the specific individual or group of selected MVPDs within a segment, for which you aim to access the subscriber account sharing reports.
+[MVPDs](product-concepts.md#uicontrol-mvpd-mvpd-def) [!UICONTROL in segment] represent the the specific individual or group of selected MVPDs within a segment, for which you aim to access the subscriber account sharing reports.
 
-**[Metrics](product-concepts.md#uicontrol-metric-metric) [!UICONTROL in segment]** refer to the chosen attributes or criteria for a segment to access a subscriber's account sharing report.
+[Metrics](product-concepts.md#uicontrol-metric-metric) [!UICONTROL in segment] refer to the chosen attributes or criteria for a segment to access a subscriber's account sharing report.
 
 +++
 
 ## [!UICONTROL Granularity and time interval] {#granularity-timeinterval}
 
-  The **[!UICONTROL Granularity and time interval]** selector lets you specify the dates and duration aggregated on a weekly/monthly basis for observing subscriber sharing behavior. The default selection is the current week and you can modify the duration using the options shown in the image.
+  The [!UICONTROL Granularity and time interval] selector lets you specify the dates and duration aggregated on a weekly/monthly basis for observing subscriber sharing behavior. The default selection is the current week and you can modify the duration using the options shown in the image.
 
   ![[!UICONTROL Granularity and timeinterval]](assets/granularity-timeinterval-weekwise.png){width="350" align="left"}
 
