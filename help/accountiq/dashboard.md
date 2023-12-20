@@ -5,15 +5,21 @@ exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
 ---
 # The dashboard {#dashboard}
 
-The Dashboard summarizes and aggregates data in a collection of graphs and reports designed to give a high level overview of the scope and impact of account sharing. It provides a single page containing the major reports and metrics from [!UICONTROL Account IQ].
+The Dashboard summarizes and aggregates data in a collection of graphs and reports designed to provide a high-level overview of the scope and impact of account sharing. It provides a single page containing the major reports and metrics from [!UICONTROL Account IQ].
 
 
 +++Programmer- dashboard
 
-![dashboard of [!UICONTROL Account IQ] for programmer users](assets/dashboard-programr.png)
+![dashboard of [!UICONTROL Account IQ] for programmer users](assets/dashboard-programr.png){align="left"}
 
 
 Figure: The dashboard for programmer users
+
+The dashboard for programmer users includes:
+
+**A** Segment and time interval panel<br/>
+**B** Page navigation<br/>
+**C** Data panels<br/>
 
 +++
 
@@ -21,9 +27,15 @@ Figure: The dashboard for programmer users
 
 The dashboard for MVPD users is slightly different from those of the programmer users.
 
-![dashboard of [!UICONTROL Account IQ] for programmer users](assets/dashboard-mvpd.png)
+![dashboard of [!UICONTROL Account IQ] for MVPD users](assets/dashboard-mvpd.png){align="left"}
 
 Figure: The dashboard for MVPD users
+
+The dashboard for MVPD users includes:
+
+**A** Segment and time interval panel<br/>
+**B** Page navigation<br/>
+**C** Data panels<br/>
 
 +++
 
@@ -94,7 +106,7 @@ This table provides a comparative view of the different Aggregated Sharing Score
 
 *Figure: Top MVPDs in segment by overall score*
 
-## Sharing score by channels and MVPDs {#sharin-score-by-channels-and-mvpds}
+## Sharing score by channels and MVPDs (Only for programmers) {#sharin-score-by-channels-and-mvpds}
 
 This table provides a comparative view of sharing scores of the selected channels for the MVPDs in the current segment.
 

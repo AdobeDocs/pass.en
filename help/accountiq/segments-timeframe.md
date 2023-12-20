@@ -6,36 +6,36 @@ exl-id: c38cde37-70d9-486d-b8d0-7c1cbd2baf2e
 
 # Subscriber segments and time interval {#cohorts-segments}
 
-When you log into Account IQ, the segment launcher panel at the top allows you to specify the subscriber [segment](product-concepts.md#segmet-def). This helps in filtering results when viewing reports on subscriber sharing behavior and patterns. A default segment named-All accounts in your properties is already selected, and you see the following options in the segment launcher:
+When you log into Account IQ, the segment panel at the top allows you to specify the subscriber [segment](product-concepts.md#segmet-def). This helps in filtering results when viewing reports on subscriber sharing behavior and patterns. A default segment named-[!UICONTROL ALL ACCOUNTS IN YOUR PROPERTIES] is already selected, and you see the following options in the segment panel:
 
-![](assets/new-segment-selector-collapsed.png){width="800" align="left"}
+![](assets/new-segment-selector-collapsed.png){align="left"}
 
- *Figure: Segment launcher with collapsed Segment Summary*
+ *Figure: Segment panel with collapsed [!UICONTROL SEGMENT SUMMARY]
  
 **A** Currently selected segment name<br/>
-**B** Time interval and granularity selector<br/>
-**C** Segment Summary collapsed<br/>
-**D** Option to expand Segment Summary<br/>
-**E** Segment data (in terms of number of subscriber accounts in the segment for a time duration)<br/>
-**F** Open segment list option<br/>
-**G** Edit segment option<br/>
-**H** Create new segment option<br/>
+**B** [!UICONTROL Open segment] list option<br/>
+**C** Edit segment option<br/>
+**D** Create new segment option<br/>
+**E** [!UICONTROL GRANULARITY AND TIME INTERVAL] selector<br/>
+**F** Option to expand [!UICONTROL SEGMENT SUMMARY]<br/>
+**G** [!UICONTROL SEGMENT SUMMARY] collapsed<br/>
+**H** Segment data of subscriber accounts in the segment for a selected time interval<br/>
 
 ## Segment selection {#segment-selection}
 
 +++Segment selection panel for programmers/MVPDs
 
-![](assets/segment-panel-programmers-mvpd.png){width="800" align="left"}
+![](assets/segment-panel-programmers-mvpd.png){align="left"}
 
 *Figure: Segment panel for programmers/MVPDs*
 
-For programmer or MVPD users, navigate to the **[!UICONTROL Open segment]** option. Choose a segment from the list and select **[!UICONTROL Open segment]** to view the account sharing reports.
+For programmer or MVPD users, navigate to the **[!UICONTROL Open segment]** option. Choose a segment from the list and click **[!UICONTROL Open segment]** to view the account sharing reports.
 
-Use the eye icon to view the detailed [!UICONTROL Segment Summary]. It presents information on the number of subscriber accounts and their playback requests within the chosen time interval.
+Click on <img alt= "expand [!UICONTROL segment summary]" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed [!UICONTROL SEGMENT SUMMARY]. It also presents information on the number of subscriber accounts and their playback requests within the chosen time interval.
 
-The [!UICONTROL Segment Summary] is used to define the following components:
+The [!UICONTROL SEGMENT SUMMARY] is used to define the following components:
 
-[Programmers](product-concepts.md#programmer-def) [!UICONTROL in segment]  are the selected content providers within a segment whose subscriber account sharing reports you intend to access.
+[!UICONTROL [Programmers](product-concepts.md#programmer-def) in segment] are the selected content providers within a segment whose subscriber account sharing reports you intend to access.
 
 [Channels](product-concepts.md#channel-def) [!UICONTROL in segment] indicate the selected channels for observing their account sharing analytics, aligned with the chosen MVPDs in a segment.
 
@@ -45,19 +45,19 @@ The [!UICONTROL Segment Summary] is used to define the following components:
 
 +++
 
-## [!UICONTROL Granularity and time interval] {#granularity-timeinterval}
+## [!UICONTROL GRANULARITY AND TIME INTERVAL] {#granularity-timeinterval}
 
-  The [!UICONTROL Granularity and time interval] selector lets you specify the dates and duration aggregated on a weekly/monthly basis for observing subscriber sharing behavior. The default selection is the current week and you can modify the duration using the options shown in the image.
+  The **[!UICONTROL GRANULARITY AND TIME INTERVAL]** selector lets you specify the dates and duration aggregated on a weekly/monthly basis for observing subscriber sharing behavior. The default selection is the current week and you can modify the duration using the options shown in the image.
 
-  ![[!UICONTROL Granularity and timeinterval]](assets/granularity-timeinterval-weekwise.png){width="350" align="left"}
+  ![[!UICONTROL GRANULARITY AND TIME INTERVAL]](assets/granularity-timeinterval-weekwise.png){align="left"}
 
-  *Figure: Granularity and time interval dialog box*
+  *Figure: [!UICONTROL GRANULARITY AND TIME INTERVAL] dialog box*
 
 **A** Pick a date from the date picker<br/>
-**B** Select left arrow to move backward<br/>
-**C** Select right arrow to move forward<br/>
-**D** Option to choose Granularity by week/month<br/>
-**E** Selected time interval<br/>
+**B** Click right arrow to move forward in time<br/>
+**C** Option to choose [!UICONTROL GRANULARITY] by [!UICONTROL Week/Month]<br/>
+**D** Curently selected [!UICONTROL TIME INTERVAL]<br/>
+**E** Click left arrow to move backward in time<br/>
 
-Applying these controls you can define your problem statement as "subscribers of the MVPD A that watched the channels X, Y, and Z in the month of October".
+Click **Apply** to implement these controls. This allows you to define your problem statement as "subscribers of MVPD A who watched channels X, Y, and Z during the choosen Week of December.
 
