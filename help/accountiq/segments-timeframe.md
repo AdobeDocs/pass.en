@@ -47,7 +47,7 @@ The [!UICONTROL SEGMENT SUMMARY] is used to define the following components:
 
 ## [!UICONTROL GRANULARITY AND TIME INTERVAL] {#granularity-timeinterval}
 
-  The **[!UICONTROL GRANULARITY AND TIME INTERVAL]** selector lets you specify the dates and duration aggregated on a weekly/monthly basis for observing subscriber sharing behavior. The default selection is the current week and you can modify the duration using the options shown in the image.
+  The [!UICONTROL GRANULARITY AND TIME INTERVAL] selector lets you specify the dates and duration aggregated on a weekly/monthly basis for observing subscriber sharing behavior. The default selection is the current week and you can modify the duration using the options shown in the image.
 
   ![[!UICONTROL GRANULARITY AND TIME INTERVAL]](assets/granularity-timeinterval-weekwise.png){align="left"}
 
@@ -59,5 +59,5 @@ The [!UICONTROL SEGMENT SUMMARY] is used to define the following components:
 **D** Curently selected [!UICONTROL TIME INTERVAL]<br/>
 **E** Click left arrow to move backward in time<br/>
 
-Click **Apply** to implement these controls. This allows you to define your problem statement as "subscribers of MVPD A who watched channels X, Y, and Z during the choosen Week of December.
+Click **Apply** to implement these controls. This allows you to define your problem statement as "Subscribers of MVPD A who watched channels X, Y, and Z during the choosen week of December".
 

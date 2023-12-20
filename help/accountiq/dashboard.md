@@ -106,7 +106,11 @@ This table provides a comparative view of the different Aggregated Sharing Score
 
 *Figure: Top MVPDs in segment by overall score*
 
-## Sharing score by channels and MVPDs (Only for programmers) {#sharin-score-by-channels-and-mvpds}
+## Sharing score by channels and MVPDs  {#sharin-score-by-channels-and-mvpds}
+
+>[!NOTE]
+>
+>You will view this report only if you are a programmer user. 
 
 This table provides a comparative view of sharing scores of the selected channels for the MVPDs in the current segment.
 
