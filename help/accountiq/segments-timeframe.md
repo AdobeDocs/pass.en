@@ -6,7 +6,7 @@ exl-id: c38cde37-70d9-486d-b8d0-7c1cbd2baf2e
 
 # Subscriber segments and time interval {#cohorts-segments}
 
-When you log into Account IQ, the segment panel at the top allows you to specify the subscriber [segment](product-concepts.md#segmet-def). This helps in filtering results when viewing reports on subscriber sharing behavior and patterns. A default segment named-**[!UICONTROL ALL ACCOUNTS IN YOUR PROPERTIES]** is already selected, and you see the following options in the segment panel:
+When you log into Account IQ, the segment panel at the top allows you to specify the subscriber [segment](product-concepts.md#segmet-def). This helps in filtering results when viewing reports on subscriber sharing behavior and patterns. A default segment named-[!UICONTROL ALL ACCOUNTS IN YOUR PROPERTIES] is already selected, and you see the following options in the segment panel:
 
 ![](assets/new-segment-selector-collapsed.png){align="left"}
 
@@ -24,7 +24,7 @@ When you log into Account IQ, the segment panel at the top allows you to specify
 **E** [!UICONTROL GRANULARITY AND TIME INTERVAL] selector<br/>
 **F** Option to expand [!UICONTROL SEGMENT SUMMARY]<br/>
 **G** [!UICONTROL SEGMENT SUMMARY] collapsed<br/>
-**H** Segment data of subscriber accounts in the segment for a selected time interval<br/>
+**H** Segment data of subscriber accounts in the segment for a selected [!UICONTROL TIME INTERVAL]<br/>
 
 ## Segment selection {#segment-selection}
 
