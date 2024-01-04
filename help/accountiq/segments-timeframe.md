@@ -13,7 +13,7 @@ When you log into Account IQ, the segment panel at the top allows you to specify
  *Figure: Segment panel with collapsed [!UICONTROL SEGMENT SUMMARY]
 
  
-![](assets/test-image-ps.png){width="800" align="left"}
+![](assets/test-image-ps.png){align="left"}
 
  *Figure: Test image from Ps Segment panel with collapsed [!UICONTROL SEGMENT SUMMARY]
  
