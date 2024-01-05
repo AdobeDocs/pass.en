@@ -24,11 +24,11 @@ To understand nature and impact of sharing on your business:
 With a defined target segment, take action. By starting small with a well-defined segment, you lower your risk of unintentional consequences and can better understand the outcome. No matter where you are along your path, you can always refine or expand the target of your operation.
 To start small and ramp up is a prudent approach. Use previously identified segments and take actions (as experiments) with specific objectives.
 
-Use the Operation tool to define the target segment and an operational time frame. This will allow you to track effects in the next phase.
+Use the Operation tool to define the target segment and an operational time interval. This will allow you to track effects in the next phase.
 
 * Identify a well-defined, representative set (or subset) of users to act on.
 
-* Create an operation that defines the target segment and operation timeframe.
+* Create an operation that defines the target segment and operation time interval.
 
 * Depending on objectives such as upselling, increasing ad load, or mitigating access to fraudulent accounts, take relevant actions on the defined user set, such as: in app offers, extra ads, or requiring multi-factor authentication.
 
@@ -36,7 +36,7 @@ Use the Operation tool to define the target segment and an operational time fram
 
 ## Track and measure the impact of actions {#track-measure-impact}
 
-Actions require time to take effect. Use the operation and associated charts to track the operation state and segment characteristics throughout subsequent weeks or months of the operation time frame. Combine this information with any other analytics to answer or understand the outcome. For example: What percentage of borrowers converted to subscribers? How many additional ads were viewed? Did the number of borrowers decrease?
+Actions require time to take effect. Use the operation and associated charts to track the operation state and segment characteristics throughout subsequent weeks or months of the operation time interval. Combine this information with any other analytics to answer or understand the outcome. For example: What percentage of borrowers converted to subscribers? How many additional ads were viewed? Did the number of borrowers decrease?
 
 * Use operation charts and other analytics to track and measure the effect of actions.
 

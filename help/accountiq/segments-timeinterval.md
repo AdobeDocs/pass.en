@@ -13,18 +13,14 @@ When you log into Account IQ, the segment panel at the top allows you to specify
  *Figure: Segment panel with collapsed [!UICONTROL SEGMENT SUMMARY]
 
  
-![](assets/test-image-ps.png){align="left"}
-
- *Figure: Test image from Ps Segment panel with collapsed [!UICONTROL SEGMENT SUMMARY]
- 
-**A** Currently selected segment name<br/>
-**B** [!UICONTROL Open segment] list option<br/>
-**C** Edit segment option<br/>
-**D** Create new segment option<br/>
-**E** [!UICONTROL GRANULARITY AND TIME INTERVAL] selector<br/>
-**F** Option to expand [!UICONTROL SEGMENT SUMMARY]<br/>
-**G** [!UICONTROL SEGMENT SUMMARY] collapsed<br/>
-**H** Segment data of subscriber accounts in the segment for a selected [!UICONTROL TIME INTERVAL]<br/>
+**A.** Currently selected segment name<br/>
+**B.** [!UICONTROL Open segment] list option<br/> 
+**C.** Edit segment option<br/>
+**D.** Create new segment option<br/>
+**E.** [!UICONTROL GRANULARITY AND TIME INTERVAL] selector<br/>
+**F.** Option to expand [!UICONTROL SEGMENT SUMMARY]<br/>
+**G.** [!UICONTROL SEGMENT SUMMARY] collapsed<br/>
+**H.** Segment data of subscriber accounts in the segment for a selected time duration<br/>
 
 ## Segment selection {#segment-selection}
 
@@ -36,7 +32,7 @@ When you log into Account IQ, the segment panel at the top allows you to specify
 
 For programmer or MVPD users, navigate to the **[!UICONTROL Open segment]** option. Choose a segment from the list and click **[!UICONTROL Open segment]** to view the account sharing reports.
 
-Click on <img alt= "expand [!UICONTROL segment summary]" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed [!UICONTROL SEGMENT SUMMARY]. It also presents information on the number of subscriber accounts and their playback requests within the chosen time interval.
+Click on <img alt= "expand [!UICONTROL segment summary]" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed [!UICONTROL SEGMENT SUMMARY]. It also presents information on the number of subscriber accounts and their playback requests within the chosen time duration.
 
 The [!UICONTROL SEGMENT SUMMARY] is used to define the following components:
 
@@ -58,11 +54,11 @@ The [!UICONTROL SEGMENT SUMMARY] is used to define the following components:
 
   *Figure: [!UICONTROL GRANULARITY AND TIME INTERVAL] dialog box*
 
-**A** Pick a date from the date picker<br/>
-**B** Click right arrow to move forward in time<br/>
-**C** Option to choose [!UICONTROL GRANULARITY] by [!UICONTROL Week/Month]<br/>
-**D** Curently selected [!UICONTROL TIME INTERVAL]<br/>
-**E** Click left arrow to move backward in time<br/>
+**A.** Pick a date from the date picker<br/>
+**B.** Click right arrow to move forward in time<br/>
+**C.** Option to choose [!UICONTROL GRANULARITY] by [!UICONTROL Week/Month]<br/>
+**D.** Curently selected time duration<br/>
+**E.** Click left arrow to move backward in time<br/>
 
 Click **Apply** to implement these controls. This allows you to define your problem statement as "Subscribers of MVPD A who watched channels X, Y, and Z during the choosen week of December".
 

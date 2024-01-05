@@ -29,8 +29,8 @@ Adobe strives to offer robust functionality and seamless user experiences throug
 
 * Because of the more limited set of data used, Isolation mode does not truly reflect the amount of sharing. Therefore, MVPD in Isolation mode cannot be compared to any other MVPD. <!--do we need to separate out this limitation, which is from a different persona i.e. only for Programmer persona?-->
 
-* When you are defining a new [segment](/help/accountiq/segments-timeframe.md) for an operation you can add metrics. But if you select a saved segment then you cannot add more metrics to refine the segment.
+* When you are defining a new [segment](/help/accountiq/segments-timeinterval.md) for an operation you can add metrics. But if you select a saved segment then you cannot add more metrics to refine the segment.
 
-* Granularity and timeframe selector is limited to one week or one month, which means data can be evaluated on a single week or a single month only.
+* Granularity and timeinterval selector is limited to one week or one month, which means data can be evaluated on a single week or a single month only.
 
-* Predefined intervals are currently disabled in granularity and timeframe selector, and will be available in a future version.
+* Predefined intervals are currently disabled in granularity and timeinterval selector, and will be available in a future version.

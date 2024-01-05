@@ -7,7 +7,7 @@ exl-id: 2faa7e75-b3a1-491b-bb7d-bd3a149cbe79
 
 Account IQ classifies users of subscriber accounts into various categories in terms of their social behavior, such as traveler or commuter, Large family and Community sharing. The **Usage Patterns** page shows several different analytics and reports for these user typologies. For example, **Usage patterns distribution - Users in segment vs total** report compares the usage behavior for the current segment versus the entire industry.
 
-Like the other pages in the app, the analytics and reports here are based on the current segment as defined in the [segment panel](/help/accountiq/segments-timeframe.md).
+Like the other pages in the app, the analytics and reports here are based on the current segment as defined in the [segment panel](/help/accountiq/segments-timeinterval.md).
 
 ## Usage patterns distribution {#usage-pattern-dis}
 

@@ -67,7 +67,7 @@ The bar chart shows average number of devices of each device type in use by subs
 
 ## Segment - Zip codes per Period per Account {#zip-codes-period-account}
 
-This graph informs you about the number of subscribers that are consuming content from different locations in a time frame.
+This graph informs you about the number of subscribers that are consuming content from different locations in a time interval.
 
 ![](assets/zip-period-account.png)
 
@@ -77,7 +77,7 @@ You can zoom in to narrow down and view specifics of a bar in the graph that plo
 
 ## Segment - Geographical Span / Period / Account {#geo-span-period-account}
 
-This bar graph plots number of subscriber accounts with respect to different ranges of geographical ranges in miles. The range is based on the maximum distance between the locations from which a subscriber has streamed during the time frame.
+This bar graph plots number of subscriber accounts with respect to different ranges of geographical ranges in miles. The range is based on the maximum distance between the locations from which a subscriber has streamed during the time interval.
 
 <!--Total number of users ...
 

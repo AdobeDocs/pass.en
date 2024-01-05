@@ -37,7 +37,7 @@ When you use the selection **top 10 programmers by sharing score** to define you
 
 To view the list and reports for top ten MVPDs by sharing score for your channel:
 
-1. Use the [segment and timeframe panel](/help/accountiq/segments-timeframe.md), to define a segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation. For this evaluation, select **top 10 programmers by sharing score** option from the list of MVPDs.
+1. Use the [segment and timeinterval panel](/help/accountiq/segments-timeinterval.md), to define a segment following the steps in [How to define segment and select timeinterval](/help/accountiq/howto-select-segment-timeinterval.md) for evaluation. For this evaluation, select **top 10 programmers by sharing score** option from the list of MVPDs.
 
 1. Select a reports page from either of the [General Usage](/help/accountiq/general-usage-reports.md), [Shared Accounts](/help/accountiq/shared-acc-reports.md), [Usage Patterns](/help/accountiq/usage-patterns.md), or [Dashboard](/help/accountiq/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
 
@@ -51,7 +51,7 @@ When you use the selection **[!UICONTROL top 10 programmers by usage]** to defin
 
 To view the list and reports for top ten MVPDs by sharing score for your channel:
 
-1. Use the [[!UICONTROL segment and timeframe panel]](/help/accountiq/segments-timeframe.md), to define a segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation. For this evaluation, select **[!UICONTROL top 10 programmers by usage]** option from the list of MVPDs.
+1. Use the [[!UICONTROL segment and timeinterval panel]](/help/accountiq/segments-timeinterval.md), to define a segment following the steps in [How to define segment and select timeinterval](/help/accountiq/howto-select-segment-timeinterval.md) for evaluation. For this evaluation, select **[!UICONTROL top 10 programmers by usage]** option from the list of MVPDs.
 
 1. Select a reports page from either of the [[!UICONTROL General Usage]](/help/accountiq/general-usage-reports.md), [[!UICONTROL Shared Accounts]](/help/accountiq/shared-acc-reports.md), [[!UICONTROL Usage Patterns]](/help/accountiq/usage-patterns.md), or [[!UICONTROL Dashboard]](/help/accountiq/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
 
@@ -65,7 +65,7 @@ When you use the selection **[!UICONTROL top 10 progrmmers by accounts]** to def
 
 To view the list and reports for top ten MVPDs by number of accounts that are shared for your channel:
 
-1. Use the [segment and timeframe panel](/help/accountiq/segments-timeframe.md), to define a segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation. For this evaluation, select **[!UICONTROL top 10 programmers by account]** option from the list of MVPDs.
+1. Use the [segment and timeinterval panel](/help/accountiq/segments-timeinterval.md), to define a segment following the steps in [How to define segment and select timeinterval](/help/accountiq/howto-select-segment-timeinterval.md) for evaluation. For this evaluation, select **[!UICONTROL top 10 programmers by account]** option from the list of MVPDs.
 
 1. Select a reports page from either of the [[!UICONTROL General Usage]](/help/accountiq/general-usage-reports.md), [[!UICONTROL Shared Accounts]](/help/accountiq/shared-acc-reports.md), [[!UICONTROL Usage Patterns]](/help/accountiq/usage-patterns.md), or [[!UICONTROL Dashboard]](/help/accountiq/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
 

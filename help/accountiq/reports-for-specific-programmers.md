@@ -7,7 +7,7 @@ exl-id: 34b198e1-dbb9-4486-b688-92780eec0a56
 
 To view reports in Account IQ, once you have successfully logged in to the application as an MVPD:
 
-1. Select the specific programmer as you define your subscriber segment for analysis and viewing reports using steps in [How to define segment](/help/accountiq/howto-select-segment-timeframe.md). 
+1. Select the specific programmer as you define your subscriber segment for analysis and viewing reports using steps in [How to define segment](/help/accountiq/howto-select-segment-timeinterval.md). 
 
    ![select channels](assets/programmer-selection.png)
 

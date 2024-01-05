@@ -17,7 +17,7 @@ device filters
 segment and definition replicate to cohorts. Number of people and number of account that ......
 content consumption.....-->
 
-The reports are all based on the current segment selected using [Segments and time frame](/help/accountiq/howto-select-segment-timeframe.md) panel. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in [Snapshot Overview - Accounts above thresholds](#snapshot-overview) panel.
+The reports are all based on the current segment selected using [Segments and time interval](/help/accountiq/howto-select-segment-timeinterval.md) panel. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in [Snapshot Overview - Accounts above thresholds](#snapshot-overview) panel.
 
 <!--To view General Usage Reports:
 
@@ -25,7 +25,7 @@ The reports are all based on the current segment selected using [Segments and ti
 
 2. Select the desired programmer channels from the **Channels in Segment** Option.
 
-3. Select an appropriate time frame from the **Granularity and time frame** option.
+3. Select an appropriate time interval from the **GRANULARITY AND TIME INTERVAL** option.
 
    Using the above options you have defined segments for your analysis. Based on your segment selection, following graphs and reports are displayed.
 
@@ -33,7 +33,7 @@ The reports are all based on the current segment selected using [Segments and ti
 
 ## AuthN OK / AuthZ OK / Play Requests / Unique Subscribers {#authn-authz-playreq-uniquesubs}
 
-The line graphs here gives you a view of the changes over time in values of AuthN OK, AuthZ OK, Play Requests, and Unique Subscribers in a selected time frame for the defined segment.
+The line graphs here gives you a view of the changes over time in values of AuthN OK, AuthZ OK, Play Requests, and Unique Subscribers in a selected time interval for the defined segment.
 
 +++Programmer- **AuthN OK / AuthZ OK / Play Requests / Unique Subscribers**
 
@@ -56,7 +56,7 @@ The line graphs here gives you a view of the changes over time in values of Auth
 
 +++
 
-The x-axis presents the units within the current time frame and the y-axis represents basic subscriber activity metrics during that period. The line graphs lets you compare the following values for the subscribers of MVPDs and channels you selected in the segment selection panel:
+The x-axis presents the units within the current time interval and the y-axis represents basic subscriber activity metrics during that period. The line graphs lets you compare the following values for the subscribers of MVPDs and channels you selected in the segment selection panel:
 
 * **AuthN OK**
 
@@ -117,7 +117,7 @@ The graph shows you the:
 
 * percentage out of the total subscriber accounts in that segment,
 
-  that are using X number of devices, Y number of IPs, and Z number of Zip codes to consume content from your channel for the (defined segment of) MVPDs, for a time frame.
+  that are using X number of devices, Y number of IPs, and Z number of Zip codes to consume content from your channel for the (defined segment of) MVPDs, for a time interval.
 
 ![](assets/select-thresholds.png)
 
@@ -141,7 +141,7 @@ You can compare the level of threshold with weekly average of number of differen
 
 The graph also gives a glimpse of the percentage of subscriber accounts that are using more number of devices than the set threshold.
 
-The donut chart helps you judge the magnitude of subscriber accounts consuming channel content using devices more than the set threshold (in a timeframe) at a glance.
+The donut chart helps you judge the magnitude of subscriber accounts consuming channel content using devices more than the set threshold (in a timeinterval) at a glance.
 
 ![](assets/donut-devices-w-acc.png)
 
@@ -179,17 +179,17 @@ Once you have defined a segment (by selecting MVPDs and channels) and set the th
 
 ## Accounts Segment - Historical View {#account-segment-historical-view}
 
-The Historical View bar graph helps you compare the usage metrics across different time frames. Also, it collectively plots the various usage metrics, such as [Devices per week (or month) per Account](#devices-week-account), [Locations per week (or month) per Account](#locations-week-account), and [IPs per week (or month) per Account](#ip-week-account).
+The Historical View bar graph helps you compare the usage metrics across different time intervals. Also, it collectively plots the various usage metrics, such as [Devices per week (or month) per Account](#devices-week-account), [Locations per week (or month) per Account](#locations-week-account), and [IPs per week (or month) per Account](#ip-week-account).
 
-* The x-axis plots the time frame, and y- axis plots number of subscriber accounts, devices, locations and IP's.
+* The x-axis plots the time interval, and y- axis plots number of subscriber accounts, devices, locations and IP's.
 
-* The orange colored bars signify segments in various time frames.
+* The orange colored bars signify segments in various time intervals.
 
-* The line graph plots the changes in [Devices per week (or month) per Account](#devices-week-account), [Locations per week (or month) per Account](#locations-week-account), and [IPs per week (or month) per Account](#ip-week-account) values across the time frame based on the threshold.
+* The line graph plots the changes in [Devices per week (or month) per Account](#devices-week-account), [Locations per week (or month) per Account](#locations-week-account), and [IPs per week (or month) per Account](#ip-week-account) values across the time interval based on the threshold.
 
 ![](assets/historical-view.png)
 
-* The blue bars signify the total number of active subscribers across the industry for a time frame.
+* The blue bars signify the total number of active subscribers across the industry for a time interval.
 
 * You can select specific legends, and they help you scale the graph.
 

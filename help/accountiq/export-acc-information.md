@@ -5,7 +5,7 @@ exl-id: df41ddd2-fde3-4861-abd4-6e32f0be9ea5
 ---
 # Export information for accounts with high sharing score {#export-account-info-high-score}
 
-[!UICONTROL Account IQ] gives you the option to export account sharing details for top 1000 subscriber accounts based on their [sharing probabilities](/help/accountiq/product-concepts.md#account-sharing-probability-def). The data in the exported CSV file is sorted in the decreasing order of the sharing probabilities of the subscriber accounts—of the selected MVPDs in the [segment](/help/accountiq/product-concepts.md#segment-def), for a [specified time frame](/help/accountiq/product-concepts.md#time-frame-def).
+[!UICONTROL Account IQ] gives you the option to export account sharing details for top 1000 subscriber accounts based on their [sharing probabilities](/help/accountiq/product-concepts.md#account-sharing-probability-def). The data in the exported CSV file is sorted in the decreasing order of the sharing probabilities of the subscriber accounts—of the selected MVPDs in the [segment](/help/accountiq/product-concepts.md#segment-def), for a [specified time interval](/help/accountiq/product-concepts.md#time-interval-def).
 
 The option to export the account sharing information is available on [General Usage Reports](/help/accountiq/general-usage-reports.md) and [Shared Accounts Reports](/help/accountiq/shared-acc-reports.md) pages.
 
@@ -17,11 +17,11 @@ The option to export the account sharing information is available on [General Us
 
 To export the account sharing information of subscribers:
 
-1. Define a desired segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation from [segment and timeframe](/help/accountiq/segments-timeframe.md) panel.
+1. Define a desired segment following the steps in [How to define segment and select timeinterval](/help/accountiq/howto-select-segment-timeinterval.md) for evaluation from [segment and timeinterval](/help/accountiq/segments-timeinterval.md) panel.
 
 1. Select the **[!UICONTROL Export top 1000 accounts]** option to export the account information for 1000 subscribers with highest sharing probability.
 
-When you use the export option, the statistics for 1000 accounts with the highest sharing probabilities (for a defined time frame) are downloaded to the Downloads folder of your local machine.
+When you use the export option, the statistics for 1000 accounts with the highest sharing probabilities (for a defined time interval) are downloaded to the Downloads folder of your local machine.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ When you use the export option, the statistics for 1000 accounts with the highes
 
 **Week/ Month**
 
-The week or the month, which you selected on the **[!UICONTROL Granularity and Time Frame]** option in the segment selector, for which the sharing statistics are sought.
+The week or the month, which you selected on the **[!UICONTROL GRANULARITY AND TIME INTERVAL]** option in the segment selector, for which the sharing statistics are sought.
 
 **MVPD**
 

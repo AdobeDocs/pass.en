@@ -35,7 +35,7 @@ When you use the selection **top 10 MVPDs by sharing score** to define your segm
 
 To view the list and reports for top ten MVPDs by sharing score for your channel:
 
-1. Use the [[!UICONTROL segment and timeframe panel]](/help/accountiq/segments-timeframe.md), to define a segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation. 
+1. Use the [[!UICONTROL segment and timeinterval panel]](/help/accountiq/segments-timeinterval.md), to define a segment following the steps in [How to define segment and select timeinterval](/help/accountiq/howto-select-segment-timeinterval.md) for evaluation. 
 
     For this evaluation, select **[!UICONTROL top 10 MVPDs by sharing score]** option from the list of MVPDs.
 
@@ -51,7 +51,7 @@ When you use the selection **[!UICONTROL top 10 MVPDs by usage]** to define your
 
 To view the list and reports for top ten MVPDs by sharing score for your channel:
 
-1. Use the [[!UICONTROL segment and timeframe panel]](/help/accountiq/segments-timeframe.md), to define a segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation. For this evaluation, select **[!UICONTROL top 10 MVPDs by usage]** option from the list of MVPDs.
+1. Use the [[!UICONTROL segment and timeinterval panel]](/help/accountiq/segments-timeinterval.md), to define a segment following the steps in [How to define segment and select timeinterval](/help/accountiq/howto-select-segment-timeinterval.md) for evaluation. For this evaluation, select **[!UICONTROL top 10 MVPDs by usage]** option from the list of MVPDs.
 
 1. Select a reports page from either of the [[!UICONTROL General Usage]](/help/accountiq/general-usage-reports.md), [[!UICONTROL Shared Accounts]](/help/accountiq/shared-acc-reports.md), [[!UICONTROL Usage Patterns]](/help/accountiq/usage-patterns.md), or [[!UICONTROL Dashboard]](/help/accountiq/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
 
@@ -65,7 +65,7 @@ When you use the selection **[!UICONTROL top 10 MVPDs by accounts]** to define y
 
 To view the list and reports for top ten MVPDs by number of accounts that are shared for your channel:
 
-1. Use the [[!UICONTROL segment and timeframe panel]](/help/accountiq/segments-timeframe.md), to define a segment following the steps in [How to define segment and select timeframe](/help/accountiq/howto-select-segment-timeframe.md) for evaluation. For this evaluation, select **[!UICONTROL top 10 MVPDs by account]** option from the list of MVPDs.
+1. Use the [[!UICONTROL segment and timeinterval panel]](/help/accountiq/segments-timeinterval.md), to define a segment following the steps in [How to define segment and select timeinterval](/help/accountiq/howto-select-segment-timeinterval.md) for evaluation. For this evaluation, select **[!UICONTROL top 10 MVPDs by account]** option from the list of MVPDs.
 
 1. Select a reports page from either of the [[!UICONTROL General Usage]](/help/accountiq/general-usage-reports.md), [[!UICONTROL Shared Accounts]](/help/accountiq/shared-acc-reports.md), [[!UICONTROL Usage Patterns]](/help/accountiq/usage-patterns.md), or [[!UICONTROL Dashboard]](/help/accountiq/dashboard.md) (dashboard gives a glimpse of the selected graphs from different reports pages).
 

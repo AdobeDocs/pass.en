@@ -9,7 +9,7 @@ If you are logged in to Account IQ application as a [programmer](/help/accountiq
 
 To view reports in Account IQ, once you have successfully logged in to the application as a programmer:
 
-1. Select the specific MVPD as you define your subscriber segment for analysis and viewing reports using steps in [How to define segment](/help/accountiq/howto-select-segment-timeframe.md). 
+1. Select the specific MVPD as you define your subscriber segment for analysis and viewing reports using steps in [How to define segment](/help/accountiq/howto-select-segment-timeinterval.md). 
 
 
    >[!NOTE]
@@ -17,7 +17,7 @@ To view reports in Account IQ, once you have successfully logged in to the appli
    >You can select one, two, or multiple channels, or even default selection of top 10 channels (by sharing score, usage, or accounts).
    >
    >
-   >However, you can select [at most 10 channels](/help/accountiq/limitations.md) from the channels selector in the [segment and time frame panel](/help/accountiq/segments-timeframe.md).
+   >However, you can select [at most 10 channels](/help/accountiq/limitations.md) from the channels selector in the [segment and time interval panel](/help/accountiq/segments-timeinterval.md).
 
 1. Select a desired reports page from the left navigation:
 

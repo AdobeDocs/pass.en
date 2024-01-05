@@ -66,11 +66,11 @@ The distance between the farthest points in a set of locations.
 
 ## [!UICONTROL Granularity] {#granularity-def}
 
-In reference to time frame, the size of the period; such as one week or one month.
+In reference to time interval, the size of the period; such as one week or one month.
 
 ## [!UICONTROL Industry Average Index] {#industry-avg-index-def}
 
-A value computed for each of the Risk Indices (Accounts, Usage, Overall) across all Programmers and MVPDs during the selected time frame.
+A value computed for each of the Risk Indices (Accounts, Usage, Overall) across all Programmers and MVPDs during the selected time interval.
 
 ## [!UICONTROL IP] {#ip-def}
 
@@ -144,13 +144,13 @@ Segment is a set of accounts that meet the user defined conditions specified by 
 
 ## [!UICONTROL Sharing level] {#sharing-level-def}
 
-Also known as Risk Index - Accounts or Shared Accounts Risk Index, it is a value calculated based on an average of the sharing probability computed for every account in the set of selected MVPDs that has streamed from a one of the selected Programmer Channels during the selected time frame.
+Also known as Risk Index - Accounts or Shared Accounts Risk Index, it is a value calculated based on an average of the sharing probability computed for every account in the set of selected MVPDs that has streamed from a one of the selected Programmer Channels during the selected time interval.
 
 ## [!UICONTROL Static device] {#static-device-def}
 
 A device that has very low mobility. For example, game console, set top box, and television set.
 
-## [!UICONTROL Time frame] {#time-frame-def}
+## [!UICONTROL Time interval] {#time-interval-def}
 
 Also known as Period or Time Slot, it is the window of time that contains the play request activity represented in the user interface and tables from start to finish.
 

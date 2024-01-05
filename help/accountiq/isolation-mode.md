@@ -32,7 +32,7 @@ To view metrics in isolation mode:
 
 1. Select the desired channels from the **[!UICONTROL Channels in segment]** drop-down option, and select **[!UICONTROL Apply Selection]**. 
 
-   Also, select a [time frame](/help/accountiq/product-concepts.md#granularity-def).
+   Also, select a [time interval](/help/accountiq/product-concepts.md#granularity-def).
 
    >[!IMPORTANT]
    >

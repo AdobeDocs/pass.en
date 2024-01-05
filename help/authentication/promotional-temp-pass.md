@@ -56,7 +56,7 @@ Based on device Id and the information the user provided and following the logic
 
 * User-provided information key (for example, e-mail)
 * Number of resources which the user is entitled to consume
-* TTL - the time frame in which the user is entitled to consume the configured number of resources
+* TTL - the time interval in which the user is entitled to consume the configured number of resources
 
 ### User metadata {#user-metadata}
 
@@ -68,7 +68,7 @@ To facilitate the implementation of the Programmer's application, the following 
 
 ### How viewing time is computed? {#compute-viewing-time}
 
-The amount of time that a Temp Pass remains valid does not correlate to the amount of time a user spends viewing content on the Programmer's application. Upon the initial user request for authorization via Promotional Temp Pass, an expiration time is computed by adding the initial current request time to the TTL (duration time frame) specified by the Programmer. 
+The amount of time that a Temp Pass remains valid does not correlate to the amount of time a user spends viewing content on the Programmer's application. Upon the initial user request for authorization via Promotional Temp Pass, an expiration time is computed by adding the initial current request time to the TTL (duration time interval) specified by the Programmer. 
 
 ### Authentication and authorization {#authn-authz}
 

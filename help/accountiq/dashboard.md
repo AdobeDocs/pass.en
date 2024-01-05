@@ -54,22 +54,22 @@ The following three metrics are components of the Average Sharing Score.
 
 ### Sharing level {#sharing-level}
 
-The sharing level gauge shows the percentage of all your subscriber accounts (in the defined segment) that are shared, during the selected time frame.  
+The sharing level gauge shows the percentage of all your subscriber accounts (in the defined segment) that are shared, during the selected time interval.  
 
-A value calculated based on an average of the sharing probability computed for every account in the set of selected MVPDs that has streamed from a one of the selected programmer channels during the selected time frame.
+A value calculated based on an average of the sharing probability computed for every account in the set of selected MVPDs that has streamed from a one of the selected programmer channels during the selected time interval.
 
 ![](assets/sharing-level.png)
 
 
 *Figure: Sharing level*
 
-The Trend indicator shows the percentage change in the value of the metric in from the previous time frame.
+The Trend indicator shows the percentage change in the value of the metric in from the previous time interval.
 
 ### Usage from shared accounts {#usage-from-shared-accounts}
 
 This gauge indicates what percent of the usage of all the subscriber accounts is from the shared accounts for the defined segment and time period. The gauge marks the ranges of usage (from shared accounts) on the scale of 0 to 100%. These ranges—named Low, Medium, High, and Abnormal—are based on the industry average.
 
-You can also see the Trend indicator, which depicts a rise or fall in the usage from shared accounts as compared to the previous time frame.
+You can also see the Trend indicator, which depicts a rise or fall in the usage from shared accounts as compared to the previous time interval.
 
 ![](assets/usage-4mshared-accounts.png)
 
@@ -166,22 +166,22 @@ The following three metrics are components of the Average Sharing Score.
 
 ### Sharing level {#sharing-level}
 
-The sharing level gauge shows the percentage of all your subscriber accounts (in the defined segment) that are shared, during the selected time frame.  
+The sharing level gauge shows the percentage of all your subscriber accounts (in the defined segment) that are shared, during the selected time interval.  
 
-A value calculated based on an average of the sharing probability computed for every account for the selected MVPD(s) that has streamed from a one of the selected programmer channels during the selected time frame.
+A value calculated based on an average of the sharing probability computed for every account for the selected MVPD(s) that has streamed from a one of the selected programmer channels during the selected time interval.
 
 ![](assets/sharing-level.png)
 
 
 *Figure: Sharing level*
 
-The Trend indicator shows the percentage change in the value of the metric in from the previous time frame.
+The Trend indicator shows the percentage change in the value of the metric in from the previous time interval.
 
 ### Usage from shared accounts {#usage-from-shared-accounts}
 
 This gauge indicates what percent of the usage of all the subscriber accounts is from the shared accounts for the defined segment and time period. The gauge marks the ranges of usage (from shared accounts) on the scale of 0 to 100%. These ranges (named Low, Medium, High, and Abnormal) are based on the industry average.
 
-You can also see the Trend indicator, which depicts a rise or fall in the usage from shared accounts as compared to the previous time frame.
+You can also see the Trend indicator, which depicts a rise or fall in the usage from shared accounts as compared to the previous time interval.
 
 ![](assets/usage-4mshared-accounts.png)
 
