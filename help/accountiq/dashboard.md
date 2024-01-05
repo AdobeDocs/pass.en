@@ -17,9 +17,9 @@ Figure: The dashboard for programmer users
 
 The dashboard for programmer users includes:
 
-**A** Segment and time interval panel<br/>
-**B** Page navigation<br/>
-**C** Data panels<br/>
+**A.** Segment and time interval panel<br/>
+**B.** Page navigation<br/>
+**C.** Data panels<br/>
 
 +++
 
@@ -33,9 +33,9 @@ Figure: The dashboard for MVPD users
 
 The dashboard for MVPD users includes:
 
-**A** Segment and time interval panel<br/>
-**B** Page navigation<br/>
-**C** Data panels<br/>
+**A.** Segment and time interval panel<br/>
+**B.** Page navigation<br/>
+**C.** Data panels<br/>
 
 +++
 
