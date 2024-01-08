@@ -31,6 +31,6 @@ Adobe strives to offer robust functionality and seamless user experiences throug
 
 * When you are defining a new [segment](/help/accountiq/segments-timeinterval.md) for an operation you can add metrics. But if you select a saved segment then you cannot add more metrics to refine the segment.
 
-* Granularity and timeinterval selector is limited to one week or one month, which means data can be evaluated on a single week or a single month only.
+* Granularity and Time Interval selector is limited to one week or one month, which means data can be evaluated on a single week or a single month only.
 
-* Predefined intervals are currently disabled in granularity and timeinterval selector, and will be available in a future version.
+* Predefined intervals are currently disabled in Granularity and Time Interval selector, and will be available in a future version.

@@ -25,7 +25,7 @@ The reports are all based on the current segment selected using [Segments and ti
 
 2. Select the desired programmer channels from the **Channels in Segment** Option.
 
-3. Select an appropriate time interval from the **GRANULARITY AND TIME INTERVAL** option.
+3. Select an appropriate time interval from the **[!UICONTROL Granularity and Time Interval]** option.
 
    Using the above options you have defined segments for your analysis. Based on your segment selection, following graphs and reports are displayed.
 
@@ -141,7 +141,7 @@ You can compare the level of threshold with weekly average of number of differen
 
 The graph also gives a glimpse of the percentage of subscriber accounts that are using more number of devices than the set threshold.
 
-The donut chart helps you judge the magnitude of subscriber accounts consuming channel content using devices more than the set threshold (in a timeinterval) at a glance.
+The donut chart helps you judge the magnitude of subscriber accounts consuming channel content using devices more than the set threshold (in a time interval) at a glance.
 
 ![](assets/donut-devices-w-acc.png)
 

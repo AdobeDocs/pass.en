@@ -13,7 +13,7 @@ Account IQ being a robust and scalable analytics tool enables you to view, analy
 
 To view subscriber account sharing statistics for multiple channels:
 
-1. Define a desired segment following the steps in [How to define segment and select timeinterval](/help/accountiq/howto-select-segment-timeinterval.md) for evaluation from [segment and timeinterval panel](/help/accountiq/segments-timeinterval.md).
+1. Define a desired segment following the steps in [How to define segment and select time interval](/help/accountiq/howto-select-segment-timeinterval.md) for evaluation from [segment and time interval panel](/help/accountiq/segments-timeinterval.md).
 
 1. Select a desired reports page from the left navigation:
 

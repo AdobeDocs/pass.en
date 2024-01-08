@@ -9,7 +9,7 @@ Each reports page on Account IQ has a **Create new operation** option to help yo
 
 To create an operation:
 
-1. Define your segment (cohort) for analysis on any of the reports or dashboards page, using the steps in [Defining segments and timeinterval](/help/accountiq/howto-select-segment-timeinterval.md).
+1. Define your segment (cohort) for analysis on any of the reports or dashboards page, using the steps in [Defining segments and time interval](/help/accountiq/howto-select-segment-timeinterval.md).
 
 1. Select **[!UICONTROL Create new operation]** option available on any of the reports or dashboards pages. 
 
@@ -46,13 +46,13 @@ Name the new operation in **[!UICONTROL Operation name]** field under Operation 
 
 +++Programmer- Target segment
 
-The **[!UICONTROL Segment]** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **[!UICONTROL segment]** you selected using [segment and timeinterval panel](/help/accountiq/howto-select-segment-timeinterval.md) on main reports or dashboards page in step 1 above.
+The **[!UICONTROL Segment]** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **[!UICONTROL segment]** you selected using [segment and time interval panel](/help/accountiq/howto-select-segment-timeinterval.md) on main reports or dashboards page in step 1 above.
 
 <!--* The first segment entry in the **Segment** section, by default, shows the **segment** you selected in the step 1.
 
-* The **segment evaluation period** is the time period of analysis you selected in step 1 from **Granularity and timeinterval** option.
+* The **segment evaluation period** is the time period of analysis you selected in step 1 from **Granularity and Time Interval** option.
 ![](assets/operations-segment-selection.png)
-*Figure: Segment and timeinterval selection on the main page*-->
+*Figure: Segment and time interval selection on the main page*-->
 
 This segment defines the subscribers that will be impacted by the operation being created. For example, your selected segment might specify *all the subscriber accounts of MVPD named 'C' who view the channel 'N Sports'*.
 
@@ -60,13 +60,13 @@ This segment defines the subscribers that will be impacted by the operation bein
 
 +++MVPD- Target segment
 
-The **Segment** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **segment** you selected using [segment and timeinterval panel](/help/accountiq/howto-select-segment-timeinterval.md) on main reports or dashboards page in step 1 above.
+The **Segment** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **segment** you selected using [segment and time interval panel](/help/accountiq/howto-select-segment-timeinterval.md) on main reports or dashboards page in step 1 above.
 
 <!--* The first segment entry in the **Segment** section, by default, shows the **segment** you selected in the step 1.
 
-* The **segment evaluation period** is the time period of analysis you selected in step 1 from **Granularity and timeinterval** option.
+* The **segment evaluation period** is the time period of analysis you selected in step 1 from **Granularity and Time Interval** option.
 ![](assets/operations-segment-selection.png)
-*Figure: Segment and timeinterval selection on the main page*-->
+*Figure: Segment and time interval selection on the main page*-->
 
 This segment defines your subscribers (who are viewers of specific channels) that will be impacted by the operation being created. For example, your (default) segment includes *all the subscriber accounts who view the channel 'N Sports'*.
 +++
@@ -156,7 +156,7 @@ You can schedule the activation for the operation by setting start and end dates
 
 >[!NOTE]
 >
->The start date and end date have a granularity same as the granularity you selected for the evaluation when defining segment using **[!UICONTROL segment and timeinterval panel]**, in step 1.
+>The start date and end date have a granularity same as the granularity you selected for the evaluation when defining segment using **[!UICONTROL segment and time interval panel]**, in step 1.
 >
 >
 >So if you selected the granularity as Week then the start and end dates are in terms of week (for example Week 14); if you select granularity as Month, then the start and end dates are in terms of months.

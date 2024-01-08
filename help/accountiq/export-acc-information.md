@@ -17,7 +17,7 @@ The option to export the account sharing information is available on [General Us
 
 To export the account sharing information of subscribers:
 
-1. Define a desired segment following the steps in [How to define segment and select timeinterval](/help/accountiq/howto-select-segment-timeinterval.md) for evaluation from [segment and timeinterval](/help/accountiq/segments-timeinterval.md) panel.
+1. Define a desired segment following the steps in [How to define segment and select time interval](/help/accountiq/howto-select-segment-timeinterval.md) for evaluation from [segment and time interval](/help/accountiq/segments-timeinterval.md) panel.
 
 1. Select the **[!UICONTROL Export top 1000 accounts]** option to export the account information for 1000 subscribers with highest sharing probability.
 
@@ -35,7 +35,7 @@ When you use the export option, the statistics for 1000 accounts with the highes
 
 **Week/ Month**
 
-The week or the month, which you selected on the **[!UICONTROL GRANULARITY AND TIME INTERVAL]** option in the segment selector, for which the sharing statistics are sought.
+The week or the month, which you selected on the **[!UICONTROL Granularity and Time Interval]** option in the segment selector, for which the sharing statistics are sought.
 
 **MVPD**
 

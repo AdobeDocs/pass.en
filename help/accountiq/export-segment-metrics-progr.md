@@ -9,7 +9,7 @@ The Dashboard in [!UICONTROL Account IQ] displays tables and graphs for credenti
 
 To export metrics for specific programmers and the MVPDs selected in the segment, once you are logged in as an authorized programmer user:
 
-1. Define a desired segment following the steps in [How to define segment and select timeinterval](/help/accountiq/howto-select-segment-timeinterval.md) for evaluation from [segment and timeinterval](/help/accountiq/segments-timeinterval.md) panel.
+1. Define a desired segment following the steps in [How to define segment and select time interval](/help/accountiq/howto-select-segment-timeinterval.md) for evaluation from [segment and time interval](/help/accountiq/segments-timeinterval.md) panel.
 
 1. Go to one of the following panels:
 

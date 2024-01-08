@@ -20,7 +20,7 @@ user-guide-description: Adobe Pass Account IQ help gives informtion about the Ac
       + [Operations](/help/accountiq/operations.md)
 +   How tos {#use-aiq}
     + [Build segments](/help/accountiq/build-segment.md)
-    + [Select segment and timeinterval](/help/accountiq/howto-select-segment-timeinterval.md)
+    + [Select segment and time interval](/help/accountiq/howto-select-segment-timeinterval.md)
     + Export reports {#export-reports}
       + [Programmer - Export reports](/help/accountiq/export-segment-metrics-progr.md)
       + [MVPD - Export reports](/help/accountiq/export-segment-metrics-mvpd.md)

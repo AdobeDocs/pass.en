@@ -11,7 +11,7 @@ All analysis or viewing reports in [!UICONTROL Account IQ] begin with defining s
 
 *Figure: Segment and time interval selection*
 
-At the top of all the reports pages in [!UICONTROL Account IQ], there is a panel to define segment by selecting MVPDs, channel programmers, and GRANULARITY AND TIME INTERVAL.
+At the top of all the reports pages in [!UICONTROL Account IQ], there is a panel to define segment by selecting MVPDs, channel programmers, and [!UICONTROL Granularity and Time Interval].
 
 ## Segment selection {#select-segment}
 
@@ -77,20 +77,20 @@ In addition to changing your selection in the **[!UICONTROL MVPDs in segment]** 
 
 ![](assets/segment-panel-selection.png)
 
-*Figure: Selected MVPDs and channels in segment and timeinterval panel*
+*Figure: Selected MVPDs and channels in segment and time interval panel*
 
-## GRANULARITY AND TIME INTERVAL selection {#granularity-timeinterval}
+## Granularity and Time Interval selection {#granularity-timeinterval}
 
 To select a time period of evaluation:
 
-1. Select the **[!UICONTROL Granularity and time ]** date picker.
+1. Select the **[!UICONTROL Granularity and Time Interval ]** from the date picker.
 
 1. Select either **[!UICONTROL Week]** or **[!UICONTROL Month]** from **[!UICONTROL Aggregate By]** option to set granularity for your evaluation.
 
    ![](assets/granularity-timeinterval-weekwise.png)
    
    
-   *Figure: Date picker to select GRANULARITY AND TIME INTERVAL*
+   *Figure: Date picker to select Granularity and Time Interval*
 
 1. Once you have selected granularity, you can use forward or backward arrows to move forward or backward in time.
 
