@@ -96,7 +96,7 @@ It is a table of risk indices and accounts totals for the top MVPDs ranked by ov
 
 ![](assets/mvpds-in-segment.png)-->
 
-## MVPDs and Programmers in segment
+## MVPDs and Programmers in segment {#mvpds-programmers-segment}
 
 +++Programmer- MVPDs in segment
 
