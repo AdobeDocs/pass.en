@@ -41,7 +41,7 @@ The dashboard for MVPD users includes:
 
 <br>
 
-When you log in as a Programmer and MVPD, you'll view the Average sharing score - aggregated for the current segment. 
+When you log in as a Programmer and MVPD user, you'll view the Average sharing score - aggregated for the current segment. 
 
 ## Average sharing score - aggregated for the current segment {#aggregated-sharing}
 
@@ -101,7 +101,7 @@ It is a table of risk indices and accounts totals for the top MVPDs ranked by ov
 
 +++Programmer- MVPDs in segment
 
-When you log in as a Programmer, this table provides a comparative view of the different Aggregated Sharing Scores for the MVPDs in the current segment.
+When you log in as a Programmer user, this table provides a comparative view of the different Aggregated Sharing Scores for the MVPDs in the current segment.
 
 Select the column headings to view the data in ascending and descending order.
 
@@ -113,7 +113,7 @@ Select the column headings to view the data in ascending and descending order.
 
 +++MVPD- Programmers in segment
 
-When you log in as a MVPD, this table provides a comparative view of the different Aggregated Sharing Scores for the Programmers in the current segment.
+When you log in as a MVPD user, this table provides a comparative view of the different Aggregated Sharing Scores for the Programmers in the current segment.
 
 Select the column headings to view the data in ascending and descending order.
 
@@ -126,7 +126,7 @@ Select the column headings to view the data in ascending and descending order.
 
 ## Sharing score by channels and MVPDs  {#sharin-score-by-channels-and-mvpds}
 
-When you log in as a Programmer, this table provides a comparative view of sharing scores of the selected channels for the MVPDs in the current segment.
+When you log in as a Programmer user, this table provides a comparative view of sharing scores of the selected channels for the MVPDs in the current segment.
 
 Select the column headings to view the data in ascending and descending order.
 
@@ -137,7 +137,7 @@ Select the column headings to view the data in ascending and descending order.
 
 <br>
 
-When you log in as a Programmer and MVPD, you'll view the Accounts sharing probability, Number of accounts and usage by sharing probability level.
+When you log in as a Programmer and MVPD user, you'll view the Accounts sharing probability, Number of accounts and usage by sharing probability level.
 
 ## Accounts sharing probability {#accounts-sharing-probability}
 
