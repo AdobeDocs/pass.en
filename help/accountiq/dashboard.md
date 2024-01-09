@@ -39,6 +39,9 @@ The dashboard for MVPD users includes:
 
 +++
 
+<br/>
+When you log in as a Programmer and MVPD, you'll view the Average sharing score - aggregated for the current segment. 
+
 ## Average sharing score - aggregated for the current segment {#aggregated-sharing}
 
 The Aggregated Sharing Score panel provides a top line readout summarizing the quantity and impact of sharing in terms of accounts and streaming volume.
@@ -93,31 +96,47 @@ It is a table of risk indices and accounts totals for the top MVPDs ranked by ov
 
 ![](assets/mvpds-in-segment.png)-->
 
-## Industrywide overall sharing scores for MVPDs {#top-mvpds}
+## MVPDs and Programmers in segment
 
-This table provides a comparative view of the different Aggregated Sharing Scores for the MVPDs in the segment.
++++Programmer- MVPDs in segment
 
->[!NOTE]
->
->This table uses overall industry data for comparative purposes, not the data represented by those MVPDs in the segment.
+When you log in as a Programmer, this table provides a comparative view of the different Aggregated Sharing Scores for the MVPDs in the current segment.
 
-![](assets/top-mvpds.png)
+Select the column headings to view the data in ascending and descending order.
 
+![](assets/sharing-scores-by-mvpds-in-segment.png)
 
-*Figure: Top MVPDs in segment by overall score*
+*Figure: Sharing Score by MVPDs in segment*
+
++++
+
++++MVPD- Programmers in segment
+
+When you log in as a MVPD, this table provides a comparative view of the different Aggregated Sharing Scores for the Programmers in the current segment.
+
+Select the column headings to view the data in ascending and descending order.
+
+![](assets/sharing-scores-by-programmers-in-segment.png)
+
+*Figure: Sharing Score by Programmers in segment*
+
++++
+
 
 ## Sharing score by channels and MVPDs  {#sharin-score-by-channels-and-mvpds}
 
->[!NOTE]
->
->You will view this report only if you are a programmer user. 
+When you log in as a Programmer, this table provides a comparative view of sharing scores of the selected channels for the MVPDs in the current segment.
 
-This table provides a comparative view of sharing scores of the selected channels for the MVPDs in the current segment.
+Select the column headings to view the data in ascending and descending order.
 
 ![](assets/sharing-scores-by-channels-mvpds.png)
 
 
 *Figure: Sharing scores by channels and MVPDs*
+
+<br>
+
+When you log in as a Programmer and MVPD, you'll view the Accounts sharing probability, Number of accounts and usage by sharing probability level.
 
 ## Accounts sharing probability {#accounts-sharing-probability}
 
