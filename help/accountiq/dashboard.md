@@ -39,7 +39,8 @@ The dashboard for MVPD users includes:
 
 +++
 
-<br/>
+<br>
+
 When you log in as a Programmer and MVPD, you'll view the Average sharing score - aggregated for the current segment. 
 
 ## Average sharing score - aggregated for the current segment {#aggregated-sharing}
