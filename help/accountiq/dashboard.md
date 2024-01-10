@@ -9,7 +9,7 @@ The Dashboard summarizes and aggregates data in a collection of graphs and repor
 
 >[!NOTE]
 >
->The majority of data panels on the Programmers and MVPD dashboards are identical. However, certain data panels may vary in availability or slightly different for each user type. 
+>The majority of data panels on the Programmers and MVPD dashboards are identical. However, certain data panels may vary in availability or appear slight differently for each user type. 
 
 +++Programmer- dashboard
 
