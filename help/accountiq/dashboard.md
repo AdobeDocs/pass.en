@@ -7,6 +7,9 @@ exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
 
 The Dashboard summarizes and aggregates data in a collection of graphs and reports designed to provide a high-level overview of the scope and impact of account sharing. It provides a single page containing the major reports and metrics from [!UICONTROL Account IQ].
 
+>[!NOTE]
+>
+>The majority of data panels on the Programmers and MVPD dashboards are identical. However, certain data panels may vary in availability or slightly different for each user type. 
 
 +++Programmer- dashboard
 
@@ -41,7 +44,8 @@ The dashboard for MVPD users includes:
 
 <br>
 
-When you log in as a Programmer and MVPD user, you'll view the Average sharing score - aggregated for the current segment. 
+The Average sharing score - aggregated for the current segment remains the same for both Programmer and MVPD users.
+
 
 ## Average sharing score - aggregated for the current segment {#aggregated-sharing}
 
@@ -123,6 +127,9 @@ Select the column headings to view the data in ascending and descending order.
 
 +++
 
+<br/>
+
+Sharing score by channels and MVPDs is only available for Programmers and doesn't exist for MVPD users. 
 
 ## Sharing score by channels and MVPDs  {#sharin-score-by-channels-and-mvpds}
 
@@ -135,9 +142,7 @@ Select the column headings to view the data in ascending and descending order.
 
 *Figure: Sharing scores by channels and MVPDs*
 
-<br>
-
-When you log in as a Programmer and MVPD user, you'll view the Accounts sharing probability, Number of accounts and usage by sharing probability level.
+The Accounts sharing probability remains the same for both Programmer and MVPD users.
 
 ## Accounts sharing probability {#accounts-sharing-probability}
 
@@ -152,6 +157,10 @@ This chart partitions accounts into ranges of sharing probability quintiles from
 
 
 *Figure: Numbers and percentages of subscriber accounts in different sharing probability ranges*
+
+<br/>
+
+The Number of accounts and usage by sharing probability level remains the same for both Programmer and MVPD users.
 
 ## Number of accounts and usage by sharing probability level {#number-of-accounts-usage-sharing-probability}
 
