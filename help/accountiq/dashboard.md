@@ -9,7 +9,7 @@ The Dashboard summarizes and aggregates data in a collection of graphs and repor
 
 >[!NOTE]
 >
->The majority of data panels on the Programmers and MVPD dashboards are identical. However, certain data panels may vary in availability or appear slight differently for each user type. 
+>The majority of data panels on the Programmers and MVPD dashboards are identical. However, certain data panels may vary in availability or appear slightly different for each user type. 
 
 +++Programmer- dashboard
 
@@ -45,7 +45,6 @@ The dashboard for MVPD users includes:
 <br>
 
 The Average sharing score - aggregated for the current segment remains the same for both Programmer and MVPD users.
-
 
 ## Average sharing score - aggregated for the current segment {#aggregated-sharing}
 
