@@ -158,6 +158,14 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
   + [Adobe Pass Authentication 2.64 release notes](auth-rn-264.md)
   + [Adobe Pass Authentication 2.63 release notes](auth-rn-263.md)
   + [Adobe Pass Authentication 2.62.1 release notes](auth-rn-2621.md)
+  + JavaScript SDK Release Notes  {#release-notes-javascript}
+    + [Adobe Pass Authentication JavaScript 3.5.0 Release Notes](authn-rn-javascript-350.md)
+    + [Adobe Pass Authentication JavaScript 4.0.0 Release Notes](authn-rn-javascript-400.md)
+    + [Adobe Pass Authentication JavaScript 4.1.0 Release Notes](authn-rn-javascript-410.md)
+    + [Adobe Pass Authentication JavaScript 4.1.1 Release Notes](authn-rn-javascript-411.md)
+    + [Adobe Pass Authentication JavaScript 4.2.0 Release Notes](authn-rn-javascript-420.md)
+    + [Adobe Pass Authentication JavaScript 4.4.0 Release Notes](authn-rn-javascript-440.md)
+    + [Adobe Pass Authentication JavaScript 4.6.0 Release Notes](authn-rn-javascript-460.md)
   + iOS/tvOS SDK Release Notes  {#release-notes-ios}
     + [Adobe Pass Authentication iOS / tvOS 3.8.3 Release Notes](authn-rn-ios-tvos-383.md)
     + [Adobe Pass Authentication iOS / tvOS 3.8.2 Release Notes](authn-rn-ios-tvos-382.md)
