@@ -44,7 +44,7 @@ The dashboard for MVPD users includes:
 
 <br>
 
-The Average sharing score - aggregated for the current segment remains the same for both Programmer and MVPD users.
+The Average sharing score - aggregated for the current segment is available for both Programmer and MVPD users.
 
 ## Average sharing score - aggregated for the current segment {#aggregated-sharing}
 
@@ -141,7 +141,7 @@ Select the column headings to view the data in ascending and descending order.
 
 *Figure: Sharing scores by channels and MVPDs*
 
-The Accounts sharing probability remains the same for both Programmer and MVPD users.
+The Accounts sharing probability is available for both Programmer and MVPD users.
 
 ## Accounts sharing probability {#accounts-sharing-probability}
 
@@ -159,7 +159,7 @@ This chart partitions accounts into ranges of sharing probability quintiles from
 
 <br/>
 
-The Number of accounts and usage by sharing probability level remains the same for both Programmer and MVPD users.
+The Number of accounts and usage by sharing probability level is available for both Programmer and MVPD users.
 
 ## Number of accounts and usage by sharing probability level {#number-of-accounts-usage-sharing-probability}
 
