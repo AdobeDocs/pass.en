@@ -31,32 +31,34 @@ The reports are all based on the current segment selected using [Segments and ti
 
 4. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in [Snapshot Overview - Accounts above thresholds](#snapshot-overview) widget/panel.-->
 
-## AuthN OK / AuthZ OK / Play Requests / Unique Subscribers {#authn-authz-playreq-uniquesubs}
+## Play Requests / Unique Subscribers {#playreq-uniquesubs}
 
 The line graphs here gives you a view of the changes over time in values of AuthN OK, AuthZ OK, Play Requests, and Unique Subscribers in a selected time interval for the defined segment.
 
-+++Programmer- **AuthN OK / AuthZ OK / Play Requests / Unique Subscribers**
++++Programmer- **Play Requests / Unique Subscribers**
 
 ![](assets/progr-line-graph-gu.png)
 
 
-*Figure: AuthN OK / AuthZ OK / Play Requests / Unique Subscribers for programmer user*
+*Figure: Play Requests / Unique Subscribers for programmer user*
 
 
 +++
 
 
-+++MVPD- **AuthN OK / AuthZ OK / Unique Subscribers**
++++MVPD- **Play Requests / Unique Subscribers**
 
 ![](assets/mvpd-line-graph-gu.png)
 
 
-*Figure: AuthN OK / AuthZ OK / Unique Subscribers for MVPD user*
+*Figure: Play Requests / Unique Subscribers for MVPD user* 
 
 
 +++
 
-The x-axis presents the units within the current time interval and the y-axis represents basic subscriber activity metrics during that period. The line graphs lets you compare the following values for the subscribers of MVPDs and channels you selected in the segment selection panel:
+<br/>
+
+The x-axis presents the units within the current time interval and the y-axis represents basic subscriber activity metrics during that period. The line graphs lets you compare the following values for the subscribers of MVPDs, programmers and channels you selected in the segment selection panel:
 
 * **AuthN OK**
 
@@ -69,11 +71,6 @@ The x-axis presents the units within the current time interval and the y-axis re
 * **Play Requests**
 
     Play requests are the number of Play Requests. For more information and definition see [Product concepts: Play requests](/help/accountiq/product-concepts.md#play-requests-def)
-
-    >[!NOTE]
-    >
-    >The play requests line graph is not available for MVPD users.
-
 
 * **Unique Subscribers**
 
@@ -194,7 +191,3 @@ The Historical View bar graph helps you compare the usage metrics across differe
 * You can select specific legends, and they help you scale the graph.
 
 ![](assets/historical-view-total.png)
-
->[!MORELIKETHIS]
->
->* Know how to export reports for top 1000 subscribers in the selected segment using filters in General Usage Report using [Export top 1000 accounts](/help/accountiq/export-acc-information.md) option.

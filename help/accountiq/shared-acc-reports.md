@@ -90,3 +90,7 @@ Based on points on the map.-->
 When you select a bar representing a range of geographical distance, it expands the range to show you more details.
 
 <!--![](assets/geo-span-period-acc.gif)-->
+
+>[!MORELIKETHIS]
+>
+>* Know how to export reports for top 1000 subscribers in the selected segment using filters in Shared Accounts Reports using [Export top 1000 accounts](/help/accountiq/export-acc-information.md) option.
