@@ -71,6 +71,10 @@ The x-axis presents the units within the current time interval and the y-axis re
 * **Play Requests**
 
     Play requests are the number of Play Requests. For more information and definition see [Product concepts: Play requests](/help/accountiq/product-concepts.md#play-requests-def)
+    
+    >[!NOTE]
+    >
+    >The play requests line graph is not available for MVPD users.
 
 * **Unique Subscribers**
 
