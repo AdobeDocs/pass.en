@@ -11,11 +11,13 @@ Like the other pages in the app, the analytics and reports here are based on the
 
 ## Usage patterns distribution {#usage-pattern-dis}
 
-The bar graph in *[!UICONTROL *Usage patterns distribution- Users in segment vs total]** depicts number and percentages of subscribers for each social behavior, or usage pattern. In addition to comparing each usage pattern in the current segment to the entire industry, it also compares them to a segment containing all of your channels.
+The bar graph in *[!UICONTROL *Usage patterns distribution- Users in segment vs Industry]** depicts number and percentages of subscribers for each social behavior, or usage pattern. In addition to comparing each usage pattern in the current segment to the entire industry, it also compares them to a segment containing all of your channels.
 
 ![](assets/segment-users-industry.png)
 
-## Usage pattern distribution in segment (#usage-pattern-dis-segment)
+*Figure: Usage patterns distribution- Users in segment vs Industry* 
+
+## Usage pattern distribution in segment {#usage-pattern-dis-segment}
 
 The **[!UICONTROL Usage patterns distribution in segment]** panel tabulates the following information for each user pattern:
 
@@ -25,28 +27,34 @@ The **[!UICONTROL Usage patterns distribution in segment]** panel tabulates the 
 
 ![](assets/usage-pattern-segmentwise.png)
 
+*Figure: Usage patterns distribution in segment* 
+
 For example, in the above image:
 
-* A regular user (one to a few people with a limited number of devices in only one location) in the defined segment has the account sharing probability between 0 to 5%.
+* A regular user (one to a few people with a limited number of devices in only one location) in the defined segment has the account sharing probability between 5 to 13%.
 
-* And 36.8% (2,201,935) of the total subscriber accounts (5,981,648) are regular users.
+* And 70.2% (376,615) of the total subscriber accounts (536,640) are regular users.
 
-* And 15.7% (24,073,311) of the total play requests (153,076,350) are made by regular users.
+* And 44.5% (2,896,346) of the total play requests (6,512,593) are made by regular users.
 
-## Usage pattern distribution by segment partner {#usage-pattern-dis-mvpd}
+## Usage pattern distribution for MVPDs and Programmers {#usage-pattern-dis-mvpds-programmers}
 
-+++Programmer- Usage pattern distribution for total segments and segment partners 
++++Programmer- Usage pattern distribution for MVPDs 
 
 The **[!UICONTROL Usage pattern distribution]** table provides a comparison of usage pattern distribution for the MVPDs in the current segment.
 
 ![](assets/usage-patterns-mvpdwise.png)
 
+*Figure: Usage patterns distribution for programmer user* 
+
 +++
 
-+++MVPD- Usage pattern distribution for total segments and segment partners 
++++MVPD- Usage pattern distribution for Programmers 
 
-The **[!UICONTROL Usage pattern distribution]** table provides a comparison of usage pattern distribution for the programmer channels in the current segment.
+The **[!UICONTROL Usage pattern distribution]** table provides a comparison of usage pattern distribution for the programmers or channels in the current segment.
 
 ![](assets/usage-patterns-programmerwise.png)
+
+*Figure: Usage patterns distribution for MVPD user* 
 
 +++
