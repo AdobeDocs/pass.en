@@ -58,6 +58,7 @@ The **New segment** page has the following components:
     >[!NOTE]
     >
     >All the metrics you drop in the segment builder panel are accompanied by appropriate operators to constrain/assign values to respective metrics.  
+    
     * **Calculated metrics panel**: is used to drop one or more calculated metrics from the segment components panel in the lower-left to build segments for reporting.
 
     >[!NOTE]
