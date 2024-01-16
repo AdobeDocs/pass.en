@@ -56,7 +56,7 @@ The [!UICONTROL Segment Summary] is used to define the following components:
 
 **A.** Pick a date from the date picker<br/>
 **B.** Click right arrow to move forward in time<br/>
-**C.** Option to choose [!UICONTROL GRANULARITY] by [!UICONTROL Week/Month]<br/>
+**C.** Option to choose [!UICONTROL Granularity] by [!UICONTROL Week/Month]<br/>
 **D.** Curently selected time interval<br/>
 **E.** Click left arrow to move backward in time<br/>
 

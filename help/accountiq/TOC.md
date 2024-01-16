@@ -6,19 +6,20 @@ user-guide-description: Adobe Pass Account IQ help gives informtion about the Ac
 ---
 # Account IQ Help {#aiq-help}
 
-+   [Account IQ Overview](/help/accountiq/home.md)
-+   [Get started with Account IQ](/help/accountiq/get-started.md)
-+   Account IQ components {#account-iq-components}
-    +   [Segments and time interval](/help/accountiq/segments-timeinterval.md)
-    +   [Dashboard](/help/accountiq/dashboard.md)
-    +   Reports {#reports-account-iq}
-      +   [General Usage reports](/help/accountiq/general-usage-reports.md)
-      + [Shared Accounts reports](/help/accountiq/shared-acc-reports.md)
-    + Sharing Components {#sharing-components}
-      + [Usage patterns](/help/accountiq/usage-patterns.md)
-    + Actions {#further-next-steps-actions}
-      + [Operations](/help/accountiq/operations.md)
-+   How tos {#use-aiq}
++ [Account IQ Overview](/help/accountiq/home.md)
++ [Get started with Account IQ](/help/accountiq/get-started.md)
++ Account IQ components {#account-iq-components}
+    + [Segments and time interval](/help/accountiq/segments-timeinterval.md)
+    + [Dashboard](/help/accountiq/dashboard.md)
++ Reports {#reports-account-iq}
+    + [General Usage reports](/help/accountiq/general-usage-reports.md)
+    + [Shared Accounts reports](/help/accountiq/shared-acc-reports.md)
++ Sharing Components {#sharing-components}
+    + [Usage patterns](/help/accountiq/usage-patterns.md)
++ Actions {#further-next-steps-actions}
+    + [Segments](/help/accountiq/segments.md)
+    + [Operations](/help/accountiq/operations.md)
++ How tos {#use-aiq}
     + [Build segments](/help/accountiq/build-segment.md)
     + [Select segment and time interval](/help/accountiq/howto-select-segment-timeinterval.md)
     + Export reports {#export-reports}
