@@ -30,12 +30,12 @@ Both these limits are configurable and we will update them in case they will be 
 
 Here it is a scenario for session level throttling:
 
-| Time      | Request send to CM                      | Number of requests | Response received from CM                                                    | Explanation                                                                         |
-|-----------|-----------------------------------------|--------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Second 10 | POST /sessions/idp1/subject1/session1   | 50                 | All calls receive ‘202 Accepted’                                             | 50 calls consumed from the limit                                                    |
-| Second 50 | POST /sessions/idp1/subject1/session1   | 151                | 150 calls receive ‘202 Accepted’ and 1 call receives ‘429 Too many requests’ | 200 calls consumed from the limit and 1 call will receive 429 response              |
-| Second 61 | DELETE /sessions/idp1/subject1/session1 | 1                  | 1 call receives ‘429 Too many requests’                                      | No calls in the limit available yet                                                 |
-| Second 70 | DELETE /sessions/idp1/subject1/session1 | 1                  | 1 call receives ‘202 Accepted’                                               | Limit set to 200git  available calls because 60 seconds have passed since second 10 |
+| Time      | Request send to CM                      | Number of requests | Response received from CM                                                    | Explanation                                                                     |
+|-----------|-----------------------------------------|--------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| Second 10 | POST /sessions/idp1/subject1/session1   | 50                 | All calls receive ‘202 Accepted’                                             | 50 calls consumed from the limit                                                |
+| Second 50 | POST /sessions/idp1/subject1/session1   | 151                | 150 calls receive ‘202 Accepted’ and 1 call receives ‘429 Too many requests’ | 200 calls consumed from the limit and 1 call will receive 429 response          |
+| Second 61 | DELETE /sessions/idp1/subject1/session1 | 1                  | 1 call receives ‘429 Too many requests’                                      | No calls in the limit available yet                                             |
+| Second 70 | DELETE /sessions/idp1/subject1/session1 | 1                  | 1 call receives ‘202 Accepted’                                               | Limit set to 200 available calls because 60 seconds have passed since second 10 |
 
 and a scenario for user level throttling:
 
