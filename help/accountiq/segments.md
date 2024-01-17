@@ -23,17 +23,19 @@ You can also [manage the segments](#manage-segments) in the list. Select the seg
 
 ## Create new segment {#create-segment}
 
-To build a segment and analyze your subscriber sharing behavior, select **[!UICONTROL Create new segment]** on the **Segments** list page. 
-
-![Create new segment](assets/new-segment-dialog.png)
-
-*Figure: create new segment*
+To build a segment and analyze your subscriber sharing behavior, select **[!UICONTROL Create new segment]** on the segments list page. 
 
 The **New segment** page has the following components:
 
 * **[Segment components](#segment-components)** refers to the list of Programmers and channels, MVPDs, Metrics, and Calculated Metrics used to define your segment.
 * **[Segment builder panel](#segment-building-panel)** serves as a canvas where you can drag and drop the various segment components for building your segment. 
 * **[Segment summary](#segment-summary)** gives a brief to the segment you created.
+
+![Create new segment](assets/new-segment-dialog.png)
+
+*Figure: create new segment*
+
+Use the highlighted panels to drag and drop segment components and create a new segment.
 
 ### Segment components {#segment-components}
 
@@ -58,7 +60,7 @@ The **New segment** page has the following components:
     >[!NOTE]
     >
     >All the metrics you drop in the segment builder panel are accompanied by appropriate operators to constrain/assign values to respective metrics.  
-    
+
     * **Calculated metrics panel**: is used to drop one or more calculated metrics from the segment components panel in the lower-left to build segments for reporting.
 
     >[!NOTE]
@@ -88,11 +90,23 @@ You can select a segment from the segments list and can perform either of the fo
 
 *Figure: select a segment to edit, duplicate, or delete*
 
+>[!NOTE]
+>
+>You cannot edit, duplicate, or delete **All accounts in your TVE properties**.
+
 When you select more than one segment, then you can delete multiple segments.
+
+>[!NOTE]
+>
+>You cannot delete a segment if it's used by one or more operations.
 
 ![Delete more than one segments](assets/delete-multiple-segments.png)
 
 
 *Figure: Select more than one segment to delete*
 
-Use the minus button to select all the segments at once.
+Use the box on the left of the segment name to select and delete all segments at once.
+
+>[!NOTE]
+>
+> This is only possible If none of the segments are used by operations.
