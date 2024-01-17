@@ -35,12 +35,12 @@ The **New segment** page has the following components:
 
 *Figure: create new segment*
 
-Use the highlighted panels to drag and drop segment components and create a new segment.
+Use the Programmers/channels, Mvpds, Metrics, Calculated Metrics panels to drag and drop segment components and create a new segment.
 
 ### Segment components {#segment-components}
 
 * **Programmers and channels**: includes the complete list of Programmers and channels associated with them.
-* **MVPDs**: a list of the MVPDs you are integrated with.
+* **Mvpds**: a list of the Mvpds you are integrated with.
 * **Metrics**: characteristics of the accounts of interest.
 * **Calculated metrics**: additional characteristics of the accounts of interest, including usage patterns and sharing probability.
 
@@ -54,7 +54,7 @@ Use the highlighted panels to drag and drop segment components and create a new 
 * **Segment description**: gives a detailed description of your segment.
 * **Segment definition**: serves as a canvas to craft your segments for studying subscriber behavior based on:
     * **Programmers/channels panel**: drag and drop the desired programmers or individual channels selected from the segment components panel in the upper-left.
-    * **MVPDs panel**: is used to drag and drop the desired MVPDs selected from the segment components panel in middle-left.
+    * **Mvpds panel**: is used to drag and drop the desired Mvpds selected from the segment components panel in middle-left.
     * **Metrics panel**: is used to drag and drop one or more metrics from the segment components panel in the lower-left to build segments for reporting.
 
     >[!NOTE]
@@ -105,7 +105,7 @@ When you select more than one segment, then you can delete multiple segments.
 
 *Figure: Select more than one segment to delete*
 
-Use the box on the left of the segment name to select and delete all segments at once.
+Use the box at the left of the segment name to select and delete all segments simultaneously.
 
 >[!NOTE]
 >
