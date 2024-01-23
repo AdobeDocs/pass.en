@@ -1,6 +1,6 @@
 ---
 title: Segments
-description: Get to know segments list. Learn about creating new segment and manage them along with segment components, segment builder panel, and segment summary. 
+description: Learn about segments and their management. Understand how segment components, segment builder, and segment summary contribute to creating a new segment.  
 ---
 # Segments {#segment-list}
 
@@ -27,19 +27,19 @@ You can also [manage segments](#manage-segments) in the list. Select a segment a
 >
 >A segment can be created by both Programmer and MVPD users.
 
-To build a segment and analyze subscriber's sharing behavior, select **[!UICONTROL Create new segment]** on the segments list page. 
+To build a segment and analyze subscriber's sharing behavior, select **[!UICONTROL Create new segment]** on **Segments** page. 
 
 The **New segment** page has the following components:
 
 * **[Segment components](#segment-components)** refers to the list of programmers and channels, MVPDs, metrics, and calculated metrics used to define a segment.
-* **[Segment builder panel](#segment-building-panel)** serves as a canvas where you can drag and drop the various segment components for building a segment. 
+* **[Segment builder](#segment-builder)** serves as a canvas where you can drag and drop the various segment components for building a segment. 
 * **[Segment summary](#segment-summary)** estimates the qualified accounts based on the evaluation period and gives a brief about the current segment.
 
 ![Create new segment](assets/new-segment-dialog.png)
 
 *Figure: Create new segment*
 
-Use **Programmers/channels, MVPDs, Metrics, Calculated Metrics** panels to drag and drop segment components to create a new segment.
+Use **Programmers/channels, MVPDs, Metrics, Calculated Metrics** sections to drag and drop segment components to create a new segment.
 
 ### Segment components {#segment-components}
 
@@ -52,24 +52,24 @@ Use **Programmers/channels, MVPDs, Metrics, Calculated Metrics** panels to drag 
 >
 >Use the **[!UICONTROL Show all]** option to expand the list of segment components.
 
-### Segment builder panel {#segment-building-panel}
+### Segment builder {#segment-builder}
 
-* **Segment name** refers to the segment name , which will be visible in the segments list page.
+* **Segment name** refers to the segment name , which will be visible in the segments list or while segment selection.
 * **Segment description** includes a detailed description of the segment.
 * **Segment definition** serves as a canvas to craft your segments for studying subscriber behavior based on:
-    * **Programmers/channels panel** is used to drag and drop specific programmers or channels from the upper-left segment components panel.
-    * **MVPDs panel** is used to drag and drop the MVPDs from the middle-left segment components panel.
-    * **Metrics panel** is used to drag and drop one or more metrics from the lower-left segment components panel.
+    * **Programmers/channels** section is used to drag and drop specific programmers or channels from the segment components.
+    * **MVPDs** section is used to drag and drop the MVPDs from the segment components.
+    * **Metrics** section is used to drag and drop one or more metrics from the segment components.
 
     >[!NOTE]
     >
-    >All the metrics you drop under the segment builder panel are accompanied by appropriate operators to constrain/assign values to respective metrics.  
+    >All the metrics you drop under the segment builder are accompanied by appropriate operators to constrain/assign values to respective metrics.  
 
-    * **Calculated metrics panel** is used to drag and drop one or more calculated metrics from the lower-left segment components panel.
+    * **Calculated metrics** section is used to drag and drop one or more calculated metrics from the segment components.
 
     >[!NOTE]
     >
-    >All the calculated metrics you drop under the segment builder panel are accompanied by appropriate operators to constrain/assign values to respective calculated metrics.   
+    >All the calculated metrics you drop under the segment builder are accompanied by appropriate operators to constrain/assign values to respective calculated metrics.   
 
 ### Segment summary {#segment-summary}
 
