@@ -76,10 +76,6 @@ Use **Programmers/channels, MVPDs, Metrics, Calculated Metrics** sections to dra
 * **Evaluation period** estimates summary values from the last week or month. 
 * **[!UICONTROL Update estimation]** allows you to calculate the number of estimated qualified accounts in the current segment based on the evaluation period.
 
->[!NOTE]
->
->You can only **Update estimation** when you are editing a segment. The results will be based on the current items in the segment and selected evaluation period.
-
 You can review the segment details to decide on the changes you wish to implement across the entire segment.
 
 

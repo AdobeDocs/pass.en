@@ -37,6 +37,11 @@ To build a new segment for account sharing analysis:
    Select **As its channels** to add individual channels of a programmer or alternatively, drag a programmer and drop it to the **Programmers/Channels** section to add all of its channels. 
 
 1. Drag **MVPDs** from the segment components at the left and drop into the **MVPDs** section within the segment definition.
+
+   >[!NOTE]
+   >
+   >MVPDs named **xfinity** appears as a standalone option in **MVPDs** section. You cannot combine it with any other MVPD.
+
 1. Drag **Metrics** from the segment components at the left and drop into the **Metrics** section within the segment definition.
 
    When a metric is added in the segment definition, you have the option to  choose an operator and assign a value to the respective metric.
