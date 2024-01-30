@@ -9,6 +9,7 @@ user-guide-description: Adobe Pass Account IQ help gives informtion about the Ac
 + [Account IQ Overview](/help/accountiq/home.md)
 + [Get started with Account IQ](/help/accountiq/get-started.md)
 + Account IQ components {#account-iq-components}
+    + [Work with segments](/help/accountiq/work-with-segments.md)
     + [Segments and time interval](/help/accountiq/segments-timeinterval.md)
     + [Dashboard](/help/accountiq/dashboard.md)
 + Reports {#reports-account-iq}
