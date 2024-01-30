@@ -59,13 +59,13 @@ Perform the following steps to create a segment:
 
    Select **[!UICONTROL As its channels]** to add all channels of a programmer.
 
-1. Drag **MVPDs** from the segment components on the upper-left and drop them into the **MVPDs** section within the **Segment definition**.
+1. Drag **MVPDs** from the segment components on the middle-left and drop them into the **MVPDs** section within the **Segment definition**.
 
    >[!NOTE]
    >
    >MVPD named **xfinity** appears as a standalone option in **MVPDs** section. You cannot combine it with any other MVPD.
 
-1. Drag **Metrics** from the segment components on the upper-left and drop them into the **Metrics** section within the **Segment definition**.
+1. Drag **Metrics** from the segment components on the bottom-left and drop them into the **Metrics** section within the **Segment definition**.
 
     After adding metrics in the segment definition, **Select an operator** from the dropdown menu and assign a value using **Select an option**. 
     
@@ -75,7 +75,7 @@ Perform the following steps to create a segment:
    
    *Figure: Select an operator and assign a value for the added metric*
 
-1. Drag **Calculated Metrics** from the segment components on the upper-left and drop them into the **Calculated Metrics** section within the **Segment definition**.
+1. Drag **Calculated Metrics** from the segment components on the bottom-left and drop them into the **Calculated Metrics** section within the **Segment definition**.
    
    After adding calculated metrics in the segment definition, **Select an operator** from the dropdown menu and assign a value using **Select an option**.
 
