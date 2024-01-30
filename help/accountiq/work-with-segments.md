@@ -110,8 +110,8 @@ You can select a segment from the segments list and then perform the following o
 
 ### Edit a segment {#edit-segment}
 
-1. Go to the **Segments** tab and select a segment you want to edit.
-1. Navigate to **Edit**.
+1. Navigate to the **Segments** tab and select a segment you want to edit.
+1. Select **Edit**.
 1. Modify segment details, such as the segment name, description, or components in the **Segment definition**.
 
    >[!NOTE]
@@ -126,7 +126,7 @@ You can select a segment from the segments list and then perform the following o
 
 ### Duplicate a segment {#duplicate-segment}
 
-1. Navigate to the **Segments** tab and select a segment you want to duplicate.
+1. Go to the **Segments** tab and select a segment you want to duplicate.
 1. Select **Duplicate**. A copy of the duplicated segment will be generated and placed at the end of the list.
 
 You can edit the necessary details in the duplicated segment and then either update the duplicate segment or save it as a new segment.
