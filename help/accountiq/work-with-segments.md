@@ -127,9 +127,9 @@ You can select a segment from the segments list and then perform the following o
 ### Duplicate a segment {#duplicate-segment}
 
 1. Go to the **Segments** tab and select a segment you want to duplicate.
-1. Select **Duplicate**. A copy of the duplicated segment will be generated and placed at the end of the list.
+1. Select **Duplicate**. 
 
-You can edit the necessary details in the duplicated segment and then either update the duplicate segment or save it as a new segment.
+A copy of the duplicated segment will be generated and placed at the end of the list. You can edit the necessary details in the duplicated segment and then either update the duplicate segment or save it as a new segment.
 
 ### Delete a segment {#delete-segment}
 
