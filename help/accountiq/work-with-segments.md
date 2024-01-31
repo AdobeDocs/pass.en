@@ -116,7 +116,7 @@ You can select a segment from the segments list and then perform the following o
 
    >[!NOTE]
    >
-   >Use **[!UICONTROL clear all]** to clear the entire list of segment components in the segment definition. Alternatively, select the cross button to remove individual items.
+   >Use **[!UICONTROL Clear all]** to clear the entire list of segment components in the segment definition. Alternatively, select the cross button to remove individual items.
 
 1. Select either **[!UICONTROL Update segment]** to update the existing segment or select **[!UICONTROL Save as new segment]** to create a new segment with the changes.
 
