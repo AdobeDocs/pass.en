@@ -135,9 +135,15 @@ A copy of the duplicated segment will be generated and placed at the end of the 
 
 1. Locate to the **Segments** tab and select a segment you require to remove.
 
+   Select multiple segments to delete more than one segment. You can also select a checkbox at the left of the segment name to delete all segments at once.
+
    >[!NOTE]
    >
-   >You cannot delete a segment if it's used by one or more operations.
+   > You cannot delete a segment if it's currently used by one or more operations. Deleting all segments is only possible when none of the segments are in use by operations.
+
+   ![Delete more than one segments](assets/delete-more-than-one-segment.png)
+
+   *Figure: Select multiple segments to delete more than one segment*
 
 1. Select **Delete**.
 1. Confirm to **Delete** in the dialog to remove the segment permanently.
@@ -146,14 +152,4 @@ A copy of the duplicated segment will be generated and placed at the end of the 
    >
    >The segment is permanently deleted from the system, and you cannot undo this action.
 
-   Select multiple segments to delete more than one segment. You can also select the checkbox at the left of the segment name to delete all segments at once.
-
-   >[!NOTE]
-   >
-   > This is only possible if none of the segments are used by operations.
-
-   ![Delete more than one segments](assets/delete-more-than-one-segment.png)
-
-   *Figure: Select multiple segments to delete more than one segment*
-
-
+  
