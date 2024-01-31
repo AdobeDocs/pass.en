@@ -46,7 +46,7 @@ To build a new segment for account sharing analysis:
 
    When a metric is added in the segment definition, you have the option to  choose an operator and assign a value to the respective metric.
 
-   ![Select an operator and set a value for the added metric](assets/segment-metrics.png)
+   ![Select an operator and set a value for the added metric](assets/component-metrics.png)
    
    *Figure: Select an operator and set a value for the added metric*
 
