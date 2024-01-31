@@ -146,7 +146,7 @@ A copy of the duplicated segment will be generated and placed at the end of the 
    >
    >The segment is permanently deleted from the system, and you cannot undo this action.
 
-   You can select multiple segments to delete more than one segment. Also, select the checkbox at the left of the segment name to delete all segments at once.
+   Select multiple segments to delete more than one segment. You can also select the checkbox at the left of the segment name to delete all segments at once.
 
    >[!NOTE]
    >
