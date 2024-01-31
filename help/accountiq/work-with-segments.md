@@ -6,7 +6,7 @@ description: Understanding and using segments. Learn how to create and manage a 
 
 [Segments](product-concepts.md#segmet-def) are a collection of subscriber accounts that enables the analysis of account sharing behavior under defined conditions. Use segments to examine different sets of subscriber accounts and generate corresponding data reports.
 
-When you select the **[!UICONTROL Segments]** tab under **Actions** in the left panel, a list of segments available in the system is displayed. The segments page lets you quickly assess key details about each segment in a tabular format. The details include the segment name, the number of MVPDs and programmers, associated channels, metrics, ongoing operations using the current segment, last modified date and time, as well as the name of the segment creator.
+When you go to the **Actions** and select the **[!UICONTROL Segments]** tab in the left panel, a list of segments available in the system is displayed. The segments page lets you quickly assess key details about each segment in a tabular format. The details include the segment name, the number of MVPDs and programmers, associated channels, metrics, ongoing operations using the current segment, last modified date and time, as well as the name of the segment creator.
 
 As a programmer or MVPD user, you can perform various operations with segments.
 
