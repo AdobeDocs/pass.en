@@ -67,7 +67,7 @@ Perform the following steps to create a segment:
 
 1. Drag **Metrics** from the segment components on the bottom-left and drop them into the **Metrics** section within the **Segment definition**.
 
-    After adding metrics in the segment definition, **Select an operator** from the dropdown menu and assign a value using **Select an option**. 
+    After adding metrics in the segment definition, **[!UICONTROL Select an operator]** from the dropdown menu and assign a value using **[!UICONTROL Select an option]**. 
     
     Adjust values for certain metrics by using the upward arrow to increase and the downward arrow to decrease. 
 
@@ -77,16 +77,16 @@ Perform the following steps to create a segment:
 
 1. Drag **Calculated Metrics** from the segment components on the bottom-left and drop them into the **Calculated Metrics** section within the **Segment definition**.
    
-   After adding calculated metrics in the segment definition, **Select an operator** from the dropdown menu and assign a value using **Select an option**.
+   After adding calculated metrics in the segment definition, **[!UICONTROL Select an operator]** from the dropdown menu and assign a value using **[!UICONTROL Select an option]**.
 
     >[!NOTE]
     >
     >All the metrics and calculated metrics you drop under the segment definition are accompanied by appropriate operators to assign values to respective metrics and calculated metrics. 
 
 1. Review the segment details in the **Segment summary** to decide the changes you want to implement across the segment.
-1. Select **Last week** or **Last month** from the **Evaluation period** dropdown menu to estimate summary values for the past week or month. 
+1. Select **[!UICONTROL Last week]** or **[!UICONTROL Last month]** from the **Evaluation period** dropdown menu to estimate summary values for the past week or month. 
 1. Select **[!UICONTROL Update estimation]** to calculate the number of estimated qualified accounts in the current segment based on the selected evaluation period.
-1. Select **Save segment**.
+1. Select **[!UICONTROL Save segment]**.
 
 The segment you've created is now visible in the segment list.
 
@@ -110,15 +110,15 @@ You can select a segment from the segments list and then perform the following o
 
 ### Edit a segment {#edit-segment}
 
-1. Navigate to the **Segments** tab and select a segment you want to edit.
-1. Select **Edit**.
+1. Navigate to the **[!UICONTROL Segments]** tab and select a segment you want to edit.
+1. Select **[!UICONTROL Edit]**.
 1. Modify segment details, such as the segment name, description, or components in the **Segment definition**.
 
    >[!NOTE]
    >
    >Use **[!UICONTROL clear all]** to clear the entire list of segment components in the segment definition. Alternatively, select the cross button to remove individual items.
 
-1. Select either **Update segment** to update the existing segment or select **Save as new segment** to create a new segment with the changes.
+1. Select either **[!UICONTROL Update segment]** to update the existing segment or select **[!UICONTROL Save as new segment]** to create a new segment with the changes.
 
    >[!NOTE]
    >
@@ -126,14 +126,14 @@ You can select a segment from the segments list and then perform the following o
 
 ### Duplicate a segment {#duplicate-segment}
 
-1. Go to the **Segments** tab and select a segment you want to duplicate.
-1. Select **Duplicate**. 
+1. Go to the **[!UICONTROL Segments]** tab and select a segment you want to duplicate.
+1. Select **[!UICONTROL Duplicate]**. 
 
 A copy of the duplicated segment will be generated and placed at the end of the list. You can edit the necessary details in the duplicated segment and then either update the duplicate segment or save it as a new segment.
 
 ### Delete a segment {#delete-segment}
 
-1. Locate to the **Segments** tab and select a segment you require to remove.
+1. Locate to the **[!UICONTROL Segments]** tab and select a segment you require to remove.
 
    Select multiple segments to delete more than one segment. You can also select a checkbox at the left of the segment name to delete all segments at once.
 
@@ -145,8 +145,8 @@ A copy of the duplicated segment will be generated and placed at the end of the 
 
    *Figure: Select multiple segments to delete more than one segment*
 
-1. Select **Delete**.
-1. Confirm to **Delete** in the dialog to remove the segment permanently.
+1. Select **[!UICONTROL Delete]**.
+1. Confirm to **[!UICONTROL Delete]** in the dialog to remove the segment permanently.
 
    >[!NOTE]
    >
