@@ -4,9 +4,11 @@ description: Understanding and using segments. Learn how to create and manage a 
 ---
 # Work with segments {#work-with-segments}
 
-On the [!UICONTROL Segments] tab in the left panel, you have a list of all created and saved [segments](product-concepts.md#segmet-def). The segments page lets you quickly assess key details about each segment in a tabular format. The details include the segment name, the number of MVPDs and programmers, associated channels, metrics, ongoing operations using the current segment, last modified date and time, as well as the name of the segment creator.
+[Segments](product-concepts.md#segmet-def) are a collection of subscriber accounts that enables the analysis of account sharing behavior under defined conditions. They are used to examine different sets of subscriber accounts and generate corresponding data reports.
 
-As a programmer and MVPD user, you can perform various operations with segments.
+When you select the **[!UICONTROL Segments]** tab under **Actions** in the left panel, a list of segments available in the system is displayed. The segments page lets you quickly assess key details about each segment in a tabular format. The details include the segment name, the number of MVPDs and programmers, associated channels, metrics, ongoing operations using the current segment, last modified date and time, as well as the name of the segment creator.
+
+As a programmer or MVPD user, you can perform various operations with segments.
 
 * [Create new segment](#create-new-segment)
 * [Manage segments](#manage-segments)
@@ -20,26 +22,26 @@ To build a segment and analyze subscriber's sharing behavior, select **[!UICONTR
 
    *Figure: Create new segment*
 
-It leads to **New segment** page, which includes the following elements:
+It opens a **New segment** page, which includes the following elements:
 
-* **Segment components**: An inventory of programmers and channels, MVPDs, metrics, and calculated metrics used to describe a segment.
+   ![New segment page](assets/new-segment-dialog.png)
+
+   *Figure: New segment page*
+
+* **Segment components**: An inventory of programmers and channels, MVPDs, metrics, and calculated metrics used to define a segment.
 
    >[!NOTE]
    >
    >Use **[!UICONTROL Show all]** to expand the list of segment components.
 
 * **Segment definition**: A canvas where you can drag and drop various segment components to build a segment. 
-* **Segment summary**: A summary that estimates the qualified accounts based on the evaluation period and provides a brief overview of the current segment.
-
-   ![New segment dialog](assets/new-segment-dialog.png)
-
-   *Figure: New segment dialog*
+* **Segment summary**: A summary that estimates the qualified accounts based on the components in the segment definition and provides a brief overview of the segment during the evaluation period.
 
 Perform the following steps to create a segment:
 
 1. Add a name of your segment in **Segment name** that will be visible in the list of segments and during segment selection.
 1. Add a detailed description of your segment in **Segment description**.
-1. Drag **Programmers and Channels** from the segment components on the upper-left and drop them into the **Programmers/Channels** section within the **Segment definition**.
+1. Drag **Programmers and Channels** from the segment components on the left panel and drop them into the **Programmers/Channels** section within the **Segment definition**.
 
    >[!NOTE]
    >
@@ -47,11 +49,11 @@ Perform the following steps to create a segment:
    
    If you start by adding a **Channel** in the **Programmers/Channels** section, you can only add channels as subsequent components.
 
-   If you start by adding a **Programmer** in the **Programmers/Channels** section, a decision dialog box will appear.
+   If you start by adding a **Programmer** in the **Programmers/Channels** section, a decision dialog box is displayed.
 
     ![Add segment component as a programmer or its channels ](assets/segment-basis-selector.png)
     
-    *Figure: Add segment component as a programmer or its channels Dialog* 
+    *Figure: Add segment component as a programmer or its channels dialog* 
 
    Decide whether you want to compare specific programmers or a segment based on the channels associated with a programmer.
 
@@ -59,23 +61,27 @@ Perform the following steps to create a segment:
 
    Select **[!UICONTROL As its channels]** to add all channels of a programmer.
 
-1. Drag **MVPDs** from the segment components on the middle-left and drop them into the **MVPDs** section within the **Segment definition**.
+1. Drag **MVPDs** from the segment components on the left panel and drop them into the **MVPDs** section within the **Segment definition**.
 
    >[!NOTE]
    >
-   >MVPD named **xfinity** appears as a standalone option in **MVPDs** section. You cannot combine it with any other MVPD.
+   >MVPD named **xfinity** appears as a standalone option in the **MVPDs** section. You cannot combine it with any other MVPD.
 
-1. Drag **Metrics** from the segment components on the bottom-left and drop them into the **Metrics** section within the **Segment definition**.
+1. Drag **Metrics** from the segment components on the left panel and drop them into the **Metrics** section within the **Segment definition**.
+
+   ![Select an operator and set a value for the added metric](assets/component-metrics.png)
+   
+   *Figure: Select an operator and assign a value for the added metric*
 
     After adding metrics in the segment definition, **[!UICONTROL Select an operator]** from the dropdown menu and assign a value using **[!UICONTROL Select an option]**. 
     
     Adjust values for certain metrics by using the upward arrow to increase and the downward arrow to decrease. 
 
-   ![Select an operator and set a value for the added metric](assets/segment-metrics.png)
-   
-   *Figure: Select an operator and assign a value for the added metric*
+1. Drag **Calculated Metrics** from the segment components on the left panel and drop them into the **Calculated Metrics** section within the **Segment definition**.
 
-1. Drag **Calculated Metrics** from the segment components on the bottom-left and drop them into the **Calculated Metrics** section within the **Segment definition**.
+   ![Select an operator and set a value for the added calculated metric](assets/component-calculated-metrics.png)
+   
+   *Figure: Select an operator and assign a value for the added calculated metric*
    
    After adding calculated metrics in the segment definition, **[!UICONTROL Select an operator]** from the dropdown menu and assign a value using **[!UICONTROL Select an option]**.
 
@@ -110,36 +116,40 @@ You can select a segment from the segments list and then perform the following o
 
 ### Edit a segment {#edit-segment}
 
-1. Navigate to the **[!UICONTROL Segments]** tab and select a segment you want to edit.
+1. Navigate to the **[!UICONTROL Segments]** tab under **Actions** in the left panel and select a segment you want to edit.
 1. Select **[!UICONTROL Edit]**.
 1. Modify segment details, such as the segment name, description, or components in the **Segment definition**.
 
    >[!NOTE]
    >
-   >Use **[!UICONTROL Clear all]** to clear the entire list of segment components in the segment definition. Alternatively, select the cross button to remove individual items.
+   >Use **[!UICONTROL Clear all]** to remove all segment components within each section under segment definition at once. Alternatively, select the cross button to remove individual items.
+
+   ![Clear all segment components in each section under segment definition ](assets/clear-all-components.png)
+   
+   *Figure: Select Clear all to remove all segment components at once*
 
 1. Select either **[!UICONTROL Update segment]** to update the existing segment or select **[!UICONTROL Save as new segment]** to create a new segment with the changes.
 
    >[!NOTE]
    >
-   >You cannot update segments that are used by operations. Saving changes as a new segment is the only option for segments with ongoing operations.
+   >Updating segments that are currently undergoing operations is not allowed. Saving changes as a new segment is the only option for segments with ongoing operations.
 
 ### Duplicate a segment {#duplicate-segment}
 
-1. Go to the **[!UICONTROL Segments]** tab and select a segment you want to duplicate.
+1. Navigate to the **[!UICONTROL Segments]** tab under **Actions** in the left panel and select a segment you want to duplicate.
 1. Select **[!UICONTROL Duplicate]**. 
 
-A copy of the duplicated segment will be generated and placed at the end of the list. You can edit the necessary details in the duplicated segment and then either update the duplicate segment or save it as a new segment.
+A copy of the selected segment is generated and placed at the end of the segment list. You can edit the necessary details in the duplicated segment and then either update the duplicate segment or save it as a new segment.
 
 ### Delete a segment {#delete-segment}
 
-1. Locate to the **[!UICONTROL Segments]** tab and select a segment you require to remove.
+1. Navigate to the **[!UICONTROL Segments]** tab under **Actions** in the left panel and select a segment you want to remove.
 
-   Select multiple segments to delete more than one segment. You can also select a checkbox at the left of the segment name to delete all segments at once.
+   Select multiple segments to delete them in a single operation. You can also select a checkbox at the left of the **Segment Name** to delete all segments at once.
 
    >[!NOTE]
    >
-   > You cannot delete a segment if it's currently used by one or more operations. Deleting all segments is only possible when none of the segments are in use by operations.
+   > You can only delete more than one segment or all segments if none of the segments are used by operations. Moreover, deleting the default segment named **All accounts in your TVE properties** is not allowed. It will remain unselected when you attempt to delete all segments at once.
 
    ![Delete more than one segments](assets/delete-more-than-one-segment.png)
 
