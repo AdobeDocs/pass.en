@@ -116,7 +116,8 @@ You can select a segment from the segments list and then perform the following a
 
 ### Edit a segment {#edit-segment}
 
-1. Navigate to the **[!UICONTROL Segments]** tab under **Actions** in the left panel and select a segment you want to edit.
+1. Navigate to the **[!UICONTROL Segments]** tab under **Actions** in the left panel to view a list of segments.
+1. Select a segment you want to edit.
 1. Select **[!UICONTROL Edit]**.
 1. Modify segment details, such as the segment name, description, or components in the **Segment definition**.
 
@@ -136,14 +137,16 @@ You can select a segment from the segments list and then perform the following a
 
 ### Duplicate a segment {#duplicate-segment}
 
-1. Navigate to the **[!UICONTROL Segments]** tab under **Actions** in the left panel and select a segment you want to duplicate.
+1. Navigate to the **[!UICONTROL Segments]** tab under **Actions** in the left panel to view a list of segments. 
+1. Select a segment you want to duplicate.
 1. Select **[!UICONTROL Duplicate]**. 
 
 A copy of the selected segment is generated and placed at the end of the segment list. You can edit the necessary details in the duplicated segment and then either update the duplicate segment or save it as a new segment.
 
 ### Delete a segment {#delete-segment}
 
-1. Navigate to the **[!UICONTROL Segments]** tab under **Actions** in the left panel and select a segment you want to remove.
+1. Navigate to the **[!UICONTROL Segments]** tab under **Actions** in the left panel to view a list of segments. 
+1. Select a segment you want to remove.
 
    Select multiple segments to delete them in a single operation. You can also select a checkbox at the left of the **Segment Name** to delete all segments at once.
 
