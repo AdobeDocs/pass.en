@@ -4,11 +4,11 @@ description: Understanding and using segments. Learn how to create and manage a 
 ---
 # Work with segments {#work-with-segments}
 
-[Segments](product-concepts.md#segmet-def) are a collection of subscriber accounts that allows you to analyze credential sharing under pre-defined conditions. You can use segments to examine different sets of subscriber accounts and generate corresponding data reports.
+[Segments](product-concepts.md#segmet-def) are a collection of subscriber accounts that allows you to analyze credential sharing under user-defined conditions. You can use segments to examine different sets of subscriber accounts and generate corresponding data reports.
 
-When you go to the **Actions** and select the **[!UICONTROL Segments]** tab in the left panel, a list of segments available in the system is displayed. The segments page lets you quickly assess key details about each segment in a tabular format. The details include the segment name, the number of MVPDs and programmers, associated channels, metrics, ongoing operations using the current segment, last modified date and time, as well as the name of the segment creator.
+When you go to the **Actions** and select the **[!UICONTROL Segments]** tab in the left panel, a list of segments available in the system is displayed. The segments page lets you quickly assess key details about each segment in a tabular format. The details include the segment name, the number of MVPDs and programmers, associated channels, metrics, [operations](product-concepts.md#operation-def) using the current segment, last modified date and time, as well as the name of the segment creator.
 
-As a programmer or MVPD user, you can perform various operations with segments.
+As a programmer or MVPD user, you can perform various functions with segments.
 
 * [Create new segment](#create-new-segment)
 * [Manage segments](#manage-segments)
@@ -32,7 +32,7 @@ It opens a **New segment** page, which includes the following elements:
 
    >[!NOTE]
    >
-   >Use **[!UICONTROL Show all]** to expand the list of segment components.
+   >Use **[!UICONTROL Show all]** to expand the list of segment components. To find a component quickly, search its name in **search segment components** rather than scrolling through the entire list.
 
 * **Segment definition**: A canvas where you can drag and drop various segment components to build a segment. 
 * **Segment summary**: A summary that estimates the qualified accounts based on the components in the segment definition and provides a brief overview of the segment during the evaluation period.
@@ -99,7 +99,7 @@ The segment you've created is now visible in the segment list.
 
 ## Manage segments {#manage-segments}
 
-You can select a segment from the segments list and then perform the following operations:
+You can select a segment from the segments list and then perform the following actions:
 
 * [Edit a segment](#edit-segment)
 * [Duplicate a segment](#duplicate-segment)
