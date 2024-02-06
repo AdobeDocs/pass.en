@@ -28,6 +28,8 @@ It opens a **New segment** page, which includes the following elements:
 
    *Figure: New segment page*
 
+**A.** Segment components **B.** Segment definition **C**. Segment summary
+
 * **Segment components**: An inventory of programmers and channels, MVPDs, metrics, and calculated metrics used to define a segment.
 
    >[!NOTE]
@@ -35,6 +37,7 @@ It opens a **New segment** page, which includes the following elements:
    >Use **[!UICONTROL Show all]** to expand the list of segment components. To find a component quickly, search its name in **search segment components** rather than scrolling through the entire list.
 
 * **Segment definition**: A canvas where you can drag and drop various segment components to build a segment. 
+
 * **Segment summary**: A summary that estimates the qualified accounts based on the components in the segment definition and provides a brief overview of the segment during the evaluation period.
 
 Perform the following steps to create a segment:
@@ -65,7 +68,7 @@ Perform the following steps to create a segment:
 
    >[!NOTE]
    >
-   >MVPD named **xfinity** appears as a standalone option in the **MVPDs** section. You cannot combine it with any other MVPD.
+   >When you log in as a programmer, MVPD named **xfinity** appears as a standalone option in the **MVPDs** section. You cannot combine it with any other MVPD.
 
 1. Drag **Metrics** from the segment components on the left panel and drop them into the **Metrics** section within the **Segment definition**.
 
@@ -121,7 +124,7 @@ You can select a segment from the segments list and then perform the following a
 1. Select **[!UICONTROL Edit]**.
 1. Modify segment details, such as the segment name, description, or components in the **Segment definition**.
 
-   >[!NOTE]
+   >[!TIP]
    >
    >Use **[!UICONTROL Clear all]** to remove all segment components within each section under segment definition at once. Alternatively, select the cross button to remove individual items.
 
