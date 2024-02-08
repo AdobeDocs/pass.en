@@ -51,8 +51,3 @@ and a scenario for user level throttling:
 
 With a correct implementation the customers will not receive “429 Too Many Requests” response.\
 Still, Adobe recommends that each customer handles “429 Too Many Requests” response appropriately using the technical details presented above.
-
-## Questions and answers
-
-_Is there any possibility to get the 429  response code again after a 1 minute timeout?_ – After reaching a 429 status, there is a 60 seconds cool down period, after which you can resume normal operations.
-
