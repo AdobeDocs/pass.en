@@ -2,7 +2,7 @@
 product: adobe primetime
 audience: end-user
 feature: Account IQ
-user-guide-description: Adobe Pass Account IQ help gives informtion about the Account IQ components and walks you through user journeys to use the various components. 
+user-guide-description: Adobe Pass Account IQ helps give information about the Account IQ components and walks you through user journeys to use the various components. 
 ---
 # Account IQ Help {#aiq-help}
 
