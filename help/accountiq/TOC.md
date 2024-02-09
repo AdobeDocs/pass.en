@@ -13,7 +13,7 @@ user-guide-description: Adobe Pass Account IQ help gives informtion about the Ac
     + [Introduction to dashboard](/help/accountiq/introduction-dashboard.md)
     + [Segments and time interval](/help/accountiq/segments-timeinterval.md)
     + [Data panels](/help/accountiq/data-panels.md)
-    + [Export data panels](help/accountiq/export-data-panels.md)
+    + [Dashboard](/help/accountiq/dashboard.md)
 + Reports {#reports-account-iq}
     + [General Usage reports](/help/accountiq/general-usage-reports.md)
     + [Shared Accounts reports](/help/accountiq/shared-acc-reports.md)
