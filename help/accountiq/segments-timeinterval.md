@@ -39,7 +39,7 @@ You can also [create](work-with-segments.md#create-new-segment) and [edit](work-
 
   *Figure: Granularity and time interval dialog box*
 
-   **A.** Granularity and time interval selector **B.** Right arrow to move forward in time **C.** Option to choose granularity by week/month **D.** Curently selected time interval **E.** Left arrow to move backward in time
+   **A.** Granularity and time interval selector **B.** Right arrow to move forward in time **C.** Option to choose granularity by week/month **D.** Currently selected time interval **E.** Left arrow to move backward in time
 
   1. Select the **[!UICONTROL Granularity and Time Interval]** from the date picker.
 
