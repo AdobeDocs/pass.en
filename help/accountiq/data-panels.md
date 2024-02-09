@@ -3,7 +3,7 @@ title: Data panels on Dashboard
 description: The Dashboard helps to pinpoint the instances of password sharing by analyzing a wide array of subscriber data.
 exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
 ---
-# Data panels on Dashboard {data-panels}
+# Data panels on Dashboard {#data-panels}
 
 Once you've selected segment, granularity and time interval, the dashboard displays the following tables and graphs for credential sharing statistics of the subscriber accounts in the selected segment:
 
