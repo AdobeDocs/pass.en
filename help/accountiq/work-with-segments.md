@@ -8,7 +8,7 @@ description: Understanding and using segments. Learn how to create and manage a 
 
 1. **Default segment**: **All accounts in your TVE properties** refer to a pre-selected segment in your system, including subscriber accounts from all programmers and MVPDs without specific conditions.
 
-   Using default segment may restricts access to certain tables like [MVPDs and Programmers in segment](data-panels.md#mvpds-programmers-segment), [Sharing score by channels and MVPDs](data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](usage-patterns.md#usage-pattern-dis-mvpds-programmers). These tables can only accomodate and display data for up to 20 MVPDs at a time. 
+   Using default segment may restrict access to certain tables like [MVPDs and Programmers in segment](data-panels.md#mvpds-programmers-segment), [Sharing score by channels and MVPDs](data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](usage-patterns.md#usage-pattern-dis-mvpds-programmers). These tables can only accommodate and display data for up to 20 MVPDs at a time. 
 
    >[!NOTE]
    >

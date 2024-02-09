@@ -35,15 +35,17 @@ You can also [create](work-with-segments.md#create-new-segment) and [edit](work-
   
   You can modify the duration using the following steps:
 
-  1. Select the **[!UICONTROL Granularity and Time Interval]** from the date picker.
-
-  1. Select either **[!UICONTROL Week]** or **[!UICONTROL Month]** from **[!UICONTROL Aggregate By]** option to set granularity for your evaluation.
-
   ![Granularity and time interval](assets/granularity-timeinterval-weekwise.png){align="left"}
 
   *Figure: Granularity and time interval dialog box*
 
-   1. Once you have selected granularity, you can use forward or backward arrows to move forward or backward in time.
+   **A.** Granularity and time interval selector **B.** Right arrow to move forward in time **C.** Option to choose granularity by week/month **D.** Curently selected time interval **E.** Left arrow to move backward in time
+
+  1. Select the **[!UICONTROL Granularity and Time Interval]** from the date picker.
+
+  1. Select either **[!UICONTROL Week]** or **[!UICONTROL Month]** from **[!UICONTROL Aggregate By]** option to set granularity for your evaluation.
+
+   1. Once you have selected granularity, you can use forward or backward arrows to navigate through time.
 
    1. Select a specific time period for evaluation.
 
