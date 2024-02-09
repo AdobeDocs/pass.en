@@ -4,7 +4,21 @@ description: Understanding and using segments. Learn how to create and manage a 
 ---
 # Work with segments {#work-with-segments}
 
-[Segments](product-concepts.md#segmet-def) are a collection of subscriber accounts that allows you to analyze credential sharing under user-defined conditions. You can use segments to examine different sets of subscriber accounts and generate corresponding data reports.
+[Segments](product-concepts.md#segmet-def) are a collection of subscriber accounts that allows you to analyze credential sharing under user-defined conditions. You can use segments to examine different sets of subscriber accounts and generate corresponding data reports in tables and graphs. There are two types of segments in Account IQ: 
+
+1. **Default segment**: **All accounts in your TVE properties** refer to a pre-selected segment in your system, including subscriber accounts from all programmers and MVPDs without specific conditions.
+
+   Using default segment may restricts access to certain tables like [MVPDs and Programmers in segment](data-panels.md#mvpds-programmers-segment), [Sharing score by channels and MVPDs](data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](usage-patterns.md#usage-pattern-dis-mvpds-programmers). These tables can only accomodate and display data for up to 20 MVPDs at a time. 
+
+   >[!NOTE]
+   >
+   >The remaining tables and graphs are identical for both default and custom segments.
+
+1. **Custom segments**: These are tailored segments that enable you to group subscriber accounts from specific programmers, channels, and MVPDs for analyzing credential sharing under user-defined conditions. Learn more about how to [create a custom segment](#create-new-segment).
+
+   >[!IMPORTANT]
+   >
+   >All the defined procedures are based on custom segments. However, the concepts remain the same for both default and custom segments.
 
 When you go to the **Actions** and select the **[!UICONTROL Segments]** tab in the left panel, a list of segments available in the system is displayed. The segments page lets you quickly assess key details about each segment in a tabular format. The details include the segment name, the number of MVPDs and programmers, associated channels, metrics, [operations](product-concepts.md#operation-def) using the current segment, last modified date and time, as well as the name of the segment creator.
 
