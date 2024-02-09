@@ -1,7 +1,6 @@
 ---
 title: Account IQ dashboard
 description: The Dashboard helps to pinpoint the instances of password sharing by analyzing a wide array of subscriber data.
-exl-id: 616da2a5-c9fe-40ea-90cf-f565bc13e764
 ---
 # Introduction to dashboard {#introduction-dashboard}
 
