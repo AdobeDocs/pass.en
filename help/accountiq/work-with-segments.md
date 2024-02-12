@@ -6,7 +6,7 @@ description: Understanding and using segments. Learn how to create and manage a 
 
 [Segments](product-concepts.md#segmet-def) are a collection of subscriber accounts that allows you to analyze credential sharing under user-defined conditions. You can use segments to examine different sets of subscriber accounts and generate corresponding data reports in tables and graphs. There are two types of segments in Account IQ: 
 
-1. **Default segment**: **All accounts in your TVE properties** refer to a pre-selected segment in the system that includes subscriber accounts from all programmers and MVPDs without specific conditions applied.
+1. **Default segment**: **All accounts in your TVE properties** is an out-of-the-box segment in the system that includes subscriber accounts from all programmers and MVPDs without specific conditions applied.
 
    >[!NOTE]
    >
@@ -16,7 +16,7 @@ description: Understanding and using segments. Learn how to create and manage a 
 
    >[!IMPORTANT]
    >
-   >All the defined procedures are based on custom segments. However, the concepts remain the same for both default and custom segments.
+   >All procedures described in this guide are based on custom segments. However, the concepts remain the same for both default and custom segments.
 
 When you go to the **Actions** and select the **[!UICONTROL Segments]** tab in the left panel, a list of segments available in the system is displayed. The segments page lets you quickly assess key details about each segment in a tabular format. The details include the segment name, the number of MVPDs and programmers, associated channels, metrics, [operations](product-concepts.md#operation-def) using the current segment, last modified date and time, as well as the name of the segment creator.
 
