@@ -31,25 +31,25 @@ You can also [create](work-with-segments.md#create-new-segment) and [edit](work-
 
 ## Granularity and Time Interval selection {#granularity-timeinterval}
 
-  The **Granularity and Time Interval** selector lets you specify the dates and duration aggregated on a weekly/monthly basis for observing subscriber sharing behavior. The default selection is the current week. 
+The **Granularity and Time Interval** selector lets you specify the dates and duration aggregated on a weekly/monthly basis for observing subscriber sharing behavior. The default selection is the current week. 
   
-  You can modify the duration using the following steps:
+You can modify the duration using the following steps:
 
-  ![Granularity and time interval](assets/granularity-timeinterval-weekwise.png){align="left"}
+![Granularity and time interval](assets/granularity-timeinterval-weekwise.png){align="left"}
 
-  *Figure: Granularity and time interval dialog box*
+*Figure: Granularity and time interval dialog box*
 
-   **A.** Granularity and time interval selector **B.** Right arrow to move forward in time **C.** Option to choose granularity by week/month **D.** Currently selected time interval **E.** Left arrow to move backward in time
+**A.** Granularity and time interval selector **B.** Right arrow to move forward in time **C.** Option to choose granularity by week/month **D.** Currently selected time interval **E.** Left arrow to move backward in time
 
-  1. Select the **[!UICONTROL Granularity and Time Interval]** from the date picker.
+1. Select the **[!UICONTROL Granularity and Time Interval]** from the date picker.
 
-  1. Select either **[!UICONTROL Week]** or **[!UICONTROL Month]** from **[!UICONTROL Aggregate By]** option to set granularity for your evaluation.
+1. Select either **[!UICONTROL Week]** or **[!UICONTROL Month]** from **[!UICONTROL Aggregate By]** option to set granularity for your evaluation.
 
-   1. Once you have selected granularity, you can use forward or backward arrows to navigate through time.
+1. Once you have selected granularity, you can use forward or backward arrows to navigate through time.
 
-   1. Select a specific time period for evaluation.
+1. Select a specific time period for evaluation.
 
-   1. Select **[!UICONTROL Apply]** to make sure your selection takes effect.
+1. Select **[!UICONTROL Apply]** to make sure your selection takes effect.
 
 This allows you to define your problem statement as "Subscribers of MVPD A who watched channels X, Y, and Z during the choosen week of December".
 
