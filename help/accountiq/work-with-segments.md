@@ -10,7 +10,7 @@ description: Understanding and using segments. Learn how to create and manage a 
 
    >[!NOTE]
    >
-   >Using default segment may restrict access to certain tables like [MVPDs and Programmers in segment](data-panels.md#mvpds-programmers-segment), [Sharing score by channels and MVPDs](data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](usage-patterns.md#usage-pattern-dis-mvpds-programmers). These tables can only accommodate and display data for up to 20 MVPDs at a time. The remaining tables and graphs are identical for both default and custom segments.
+   >Using default segment may restrict access to certain tables like [MVPDs and Programmers in segment](data-panels.md#mvpds-programmers-segment), [Sharing score by channels and MVPDs](data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](usage-patterns.md#usage-pattern-dis-mvpds-programmers). These tables can only accommodate and display data for up to 20 MVPDs at a time. The remaining tables, graphs, and reports are identical for both default and custom segments.
 
 1. **Custom segments**: These are tailored segments that enable you to group subscriber accounts from specific programmers, channels, and MVPDs for analyzing credential sharing under user-defined conditions. Learn more about how to [create a custom segment](#create-new-segment).
 
