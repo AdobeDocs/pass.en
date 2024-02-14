@@ -21,7 +21,7 @@ Adobe Pass [!UICONTROL Account IQ] enables video streaming services to understan
 
 [!UICONTROL Account IQ] application tools and features are explained in the following sections:
 
-* [Dashboard](/help/accountiq/dashboard.md)
+* [Dashboard](/help/accountiq/introduction-dashboard.md)
 * [General Usage reports](/help/accountiq/general-usage-reports.md)
 * [Shared Accounts reports](/help/accountiq/shared-acc-reports.md)
 * [Usage Patterns](/help/accountiq/usage-patterns.md)
@@ -32,7 +32,7 @@ Let's take a deep dive into the graphs and reports in each of these sections.
 >[!MORELIKETHIS]
 >
 >* [How to get started with Account IQ](/help/accountiq/get-started.md)
->* [Dashboard](/help/accountiq/dashboard.md)
+>* [Dashboard](/help/accountiq/introduction-dashboard.md)
 >* [General usage reports](/help/accountiq/general-usage-reports.md)
 >* [Shared accounts reports](/help/accountiq/shared-acc-reports.md)
 >* [Usage patterns](/help/accountiq/usage-patterns.md)

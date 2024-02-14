@@ -11,7 +11,7 @@ Adobe strives to offer robust functionality and seamless user experiences throug
 
 * When estimating sharing scores for individual accounts, Account IQ takes a conservative approach that enables companies to act on sharing with great degree of confidence. However, this approach tends to underestimate the total amount of sharing when aggregated across many accounts.
 
-* The [Overall Sharing Score](/help/accountiq/dashboard.md#overall-sharing-score) currently only factors in [Sharing Level](/help/accountiq/dashboard.md#sharing-level) and [Usage from Shared Accounts](/help/accountiq/dashboard.md#usage-from-shared-accounts). Future versions will factor in additional metrics.
+* The [Overall Sharing Score](/help/accountiq/data-panels.md#overall-sharing-score) currently only factors in [Sharing Level](/help/accountiq/data-panels.md#sharing-level) and [Usage from Shared Accounts](/help/accountiq/data-panels.md#usage-from-shared-accounts). Future versions will factor in additional metrics.
 
 * When defining cohorts in the dashboard or reports pages, the selectors for MVPDs and channels lack the search mechanism, as of now.
 
