@@ -27,8 +27,7 @@ The throttling is configured on two levels:
 
 The limit for session level throttling is set to 200 requests within one minute.\
 The limit for user level throttling is set to 200 requests within one minute.\
-Both these limits (session level throttling and user level throttling) are configurable and we will update them in case they will be reached through valid integration scenarios.
-If you consider that you have valid integration scenarios which will exceeds the above throttling limits, please contact our support team. 
+Both these limits (session level throttling and user level throttling) are configurable and we will update them in case they will be reached through valid integration scenarios. For this we recommend support team to be contacted. 
 
 Here it is a scenario for session level throttling:
 
