@@ -15,13 +15,9 @@ The Dashboard summarizes and aggregates data in a collection of graphs and repor
 ![dashboard of Account IQ for programmer users](assets/dashboard-programr.png){align="left"}
 
 
-Figure: The dashboard for programmer users
+*Figure: The dashboard for programmer users*
 
-The dashboard for programmer users includes:
-
-**A.** Segment and time interval panel<br/>
-**B.** Page navigation<br/>
-**C.** Data panels<br/>
+**A.** Segment and time interval panel **B.** Page navigation **C.** Data panels
 
 +++
 
@@ -31,12 +27,14 @@ The dashboard for MVPD users is slightly different from those of the programmer 
 
 ![dashboard of [!UICONTROL Account IQ] for MVPD users](assets/dashboard-mvpd.png){align="left"}
 
-Figure: The dashboard for MVPD users
+*Figure: The dashboard for MVPD users*
 
-The dashboard for MVPD users includes:
-
-**A.** Segment and time interval panel<br/>
-**B.** Page navigation<br/>
-**C.** Data panels<br/>
+**A.** Segment and time interval panel **B.** Page navigation **C.** Data panels
 
 +++
+
+The dashboard for programmer and MVPD users includes:
+
+* **Segments and time interval panel**: This panel enables you to select segments and time intervals to generate account sharing reports, providing a summary of the selected segment.
+* **Page navigation**: These tabs allows you to navigate and explore across various sections and pages of Account IQ.
+* **Data panels**: The panels display account sharing reports in a form of tables and graphs and offer to export data on your local machine. 

@@ -14,7 +14,9 @@ When you log into Account IQ, the segment and time interval panel at the top of 
  
 **A.** Currently selected segment name **B.** Open segment list option **C.** Edit segment option **D.** Create new segment option **E.** Granularity and time interval selector **F.** Option to expand segment summary **G.** Segment summary collapsed **H.** Segment data of subscriber accounts in the segment for a selected time interval
 
-You can also [create](work-with-segments.md#create-new-segment) and [edit](work-with-segments.md#edit-segment) a segment from the **Segments** tab under **Actions**.
+>[!NOTE]
+>
+>You can also [create](work-with-segments.md#create-new-segment) and [edit](work-with-segments.md#edit-segment) segments from the **Segments** tab under **Actions**.
 
 ## Segment selection {#segment-selection}
 
@@ -32,14 +34,14 @@ You can also [create](work-with-segments.md#create-new-segment) and [edit](work-
 ## Granularity and Time Interval selection {#granularity-timeinterval}
 
 The **Granularity and Time Interval** selector lets you specify the dates and duration aggregated on a weekly/monthly basis for observing subscriber sharing behavior. The default selection is the current week. 
-  
-You can modify the duration using the following steps:
 
 ![Granularity and time interval](assets/granularity-timeinterval-weekwise.png){align="left"}
 
 *Figure: Granularity and time interval dialog box*
 
 **A.** Granularity and time interval selector **B.** Right arrow to move forward in time **C.** Option to choose granularity by week/month **D.** Currently selected time interval **E.** Left arrow to move backward in time
+
+You can modify the duration using the following steps:
 
 1. Select the **[!UICONTROL Granularity and Time Interval]** from the date picker.
 
@@ -61,13 +63,13 @@ Use <img alt= "expand [!UICONTROL Segment Summary]" src="./assets/expand-segment
 
 *Figure: Segment Summary for programmers/MVPDs*
 
-The **Segment Summary** is used to define the following components:
+The **Segment Summary** includes the following conditions that define a segment:
 
-**[Programmers](product-concepts.md#programmer-def) in segment** are the number of content providers within a segment whose subscriber account sharing reports you intend to access.
+**[Programmers](product-concepts.md#programmer-def) in segment**  refer to content providers whose video streams got watched by shared accounts to be identified in account sharing reports.
 
-**[Channels](product-concepts.md#channel-def) in segment** indicate the number of channels aligned with the chosen MVPDs in a segment for observing their account sharing analytics. 
+**[Channels](product-concepts.md#channel-def) in segment** represent channels whose video streams got watched by shared accounts to be identified in account sharing reports.
 
-**[MVPDs](product-concepts.md#mvpd-def) in segment** represent the number of specific individual or group of MVPDs within a segment, for which you aim to access the subscriber account sharing reports.
+**[MVPDs](product-concepts.md#mvpd-def) in segment** indicate MVPDs to which the subscribers are associated in order to be identified in account sharing reports.
 
-**[Metrics](product-concepts.md#metric) in segment** refer to the number of chosen attributes or criteria for a segment to access a subscriber's account sharing report.
+**[Metrics](product-concepts.md#metric) in segment** refer to attributes or criteria that subscribers must have fulfilled to be identified in account sharing reports.
 

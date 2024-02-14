@@ -4,7 +4,7 @@ description: The Dashboard helps to pinpoint the instances of password sharing b
 ---
 # Data panels on Dashboard {#data-panels}
 
-Once you've selected segment, granularity and time interval, the dashboard displays the following tables and graphs for credential sharing statistics of the subscriber accounts in the selected segment:
+Once you've selected segment and time interval, the dashboard displays the following data panels in a form of tables and graphs for analyzing credential sharing statistics of the subscriber accounts in the selected segment:
 
 * [Average sharing score - aggregated for the current segment](#aggregated-sharing)
 * [MVPDs and Programmers in segment](#mvpds-programmers-segment) 
