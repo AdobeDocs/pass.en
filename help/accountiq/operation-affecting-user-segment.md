@@ -9,7 +9,7 @@ Each reports page on Account IQ has a **Create new operation** option to help yo
 
 To create an operation:
 
-1. Define your segment (cohort) for analysis on any of the reports or dashboards page, using the steps in [Defining segments and time interval](/help/accountiq/howto-select-segment-timeinterval.md).
+1. Define your segment (cohort) for analysis on any of the reports or dashboards page, using the steps in [Defining segments and time interval](/help/accountiq/segments-timeinterval.md).
 
 1. Select **[!UICONTROL Create new operation]** option available on any of the reports or dashboards pages. 
 
@@ -46,7 +46,7 @@ Name the new operation in **[!UICONTROL Operation name]** field under Operation 
 
 +++Programmer- Target segment
 
-The **[!UICONTROL Segment]** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **[!UICONTROL segment]** you selected using [segment and time interval panel](/help/accountiq/howto-select-segment-timeinterval.md) on main reports or dashboards page in step 1 above.
+The **[!UICONTROL Segment]** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **[!UICONTROL segment]** you selected using [segment and time interval panel](/help/accountiq/segments-timeinterval.md) on main reports or dashboards page in step 1 above.
 
 <!--* The first segment entry in the **Segment** section, by default, shows the **segment** you selected in the step 1.
 
@@ -60,7 +60,7 @@ This segment defines the subscribers that will be impacted by the operation bein
 
 +++MVPD- Target segment
 
-The **Segment** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **segment** you selected using [segment and time interval panel](/help/accountiq/howto-select-segment-timeinterval.md) on main reports or dashboards page in step 1 above.
+The **Segment** here defines the users who will be operated on by this operation; or the sample group for your operation. The default segment is the **segment** you selected using [segment and time interval panel](/help/accountiq/segments-timeinterval.md) on main reports or dashboards page in step 1 above.
 
 <!--* The first segment entry in the **Segment** section, by default, shows the **segment** you selected in the step 1.
 

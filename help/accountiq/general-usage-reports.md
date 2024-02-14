@@ -17,7 +17,7 @@ device filters
 segment and definition replicate to cohorts. Number of people and number of account that ......
 content consumption.....-->
 
-The reports are all based on the current segment selected using [Segments and time interval](/help/accountiq/howto-select-segment-timeinterval.md) panel. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in [Snapshot Overview - Accounts above thresholds](#snapshot-overview) panel.
+The reports are all based on the current segment selected using [Segments and time interval](/help/accountiq/segments-timeinterval.md) panel. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in [Snapshot Overview - Accounts above thresholds](#snapshot-overview) panel.
 
 <!--To view General Usage Reports:
 
