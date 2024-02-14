@@ -16,11 +16,11 @@ user-guide-description: Adobe Pass Account IQ help gives informtion about the Ac
     + [Export reports](/help/accountiq/export-reports.md)
 + [General Usage reports](/help/accountiq/general-usage-reports.md)
 + [Shared Accounts reports](/help/accountiq/shared-acc-reports.md)
-    + [Export high sharing accounts](/help/accountiq/export-acc-information.md)
++ [Export high sharing accounts](/help/accountiq/export-acc-information.md)
 + [Usage patterns](/help/accountiq/usage-patterns.md)
 + [Operations](/help/accountiq/operations.md)
-    + [Create an operation on a user segment](/help/accountiq/operation-affecting-user-segment.md)
-    + View account sharing reports {#view-account-sharing-reports} 
++ [Create an operation on a user segment](/help/accountiq/operation-affecting-user-segment.md)
++ View account sharing reports {#view-account-sharing-reports} 
 + [Best practices](/help/accountiq/best-practices.md)
 + Limitations {#limitations}
     + [General limitations](/help/accountiq/limitations.md)
