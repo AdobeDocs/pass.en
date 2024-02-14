@@ -129,4 +129,4 @@ Sharing probability is the probability that the specific account is sharing its 
 
 >[!NOTE]
 >
-> The average of the sharing probability of all the accounts (in the selected segment) is used to compute the [sharing level](/help/accountiq/dashboard.md#sharing-level) of the [Aggregated sharing score](/help/accountiq/dashboard.md#aggregated-sharing).
+> The average of the sharing probability of all the accounts (in the selected segment) is used to compute the [sharing level](/help/accountiq/data-panels.md#sharing-level) of the [Aggregated sharing score](/help/accountiq/data-panels.md#aggregated-sharing).
