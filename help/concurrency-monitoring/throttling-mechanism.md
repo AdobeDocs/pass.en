@@ -12,6 +12,7 @@ One Concurrency Monitoring application can be used by multiple users and one use
 When the limit has been reached,  the requests will be marked with a specific response status (HTTP 429 Too Many Requests). Any subsequent call done after a “429 Too Many Requests” response is received should be done with at least 1 minute cooldown period to ensure it will obtain a valid business response.
 
 ## Mechanism overview {#mechanism-overview}
+
 The mechanism determines the maximum number of accepted calls for each Concurrency Monitoring endpoint within a specific time interval. 
 Once this maximum number of calls have been reached, our service will respond with '429 Too many requests'. The service needs another 60 seconds to initialise the limit again to its maximum value. 
 
