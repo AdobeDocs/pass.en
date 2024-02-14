@@ -1,17 +1,17 @@
 ---
-title: Export reports from data panels
-description: Learn how to export reports from the data panels on dashboard.
+title: Export data panel reports
+description: Learn how to export data panel reports on dashboard.
 ---
-# Export reports from data panels {#export-reports}
+# Export data panel reports {#export-reports}
 
-The Dashboard in [!UICONTROL Account IQ] displays tables and graphs for analyzing credential sharing statistics of the subscriber accounts in the selected segment. Apart from viewing the sharing patterns, scores, and account usage metrics, you can also export them from these tables.
+The Dashboard in [!UICONTROL Account IQ] displays tables and graphs for analyzing credential sharing statistics of the subscriber accounts in the selected segment. Apart from viewing the sharing patterns, scores, and account usage metrics, you can also export reports from these tables.
 
-As Programmers and MVPDs, you can export the following data panels:
+As Programmers and MVPDs, you can export the following data panel reports:
 
 * [MVPDs and Programmers in segment](data-panels.md#mvpds-programmers-segment) 
 * [Number of accounts and usage by sharing probability level](data-panels.md#number-of-accounts-usage-sharing-probability)
 
-To export reports for a specific segment, follow these steps:
+To export data panel reports for a specific segment, follow these steps:
 
 1. Log in with your authorized programmer or MVPD credentials.
 1. Select a desired segment and time interval from segment and time interval panel. Know [how to select segment and time interval](segments-timeinterval.md).

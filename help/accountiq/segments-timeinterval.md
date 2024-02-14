@@ -65,9 +65,9 @@ Use <img alt= "expand [!UICONTROL Segment Summary]" src="./assets/expand-segment
 
 The **Segment Summary** includes the following conditions that define a segment:
 
-**[Programmers](product-concepts.md#programmer-def) in segment**  refer to content providers whose video streams got watched by shared accounts to be identified in account sharing reports.
+**[Programmers](product-concepts.md#programmer-def) in segment**  refer to content providers whose video streams were watched by shared accounts represented in account sharing reports.
 
-**[Channels](product-concepts.md#channel-def) in segment** represent channels whose video streams got watched by shared accounts to be identified in account sharing reports.
+**[Channels](product-concepts.md#channel-def) in segment** refer to channels whose video streams were watched by shared accounts represented in account sharing reports.
 
 **[MVPDs](product-concepts.md#mvpd-def) in segment** indicate MVPDs to which the subscribers are associated in order to be identified in account sharing reports.
 

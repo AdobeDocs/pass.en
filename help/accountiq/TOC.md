@@ -14,9 +14,10 @@ user-guide-description: Adobe Pass Account IQ help gives informtion about the Ac
     + [Segments and time interval](/help/accountiq/segments-timeinterval.md)
     + [Data panels](/help/accountiq/data-panels.md)
     + [Export reports](/help/accountiq/export-reports.md)
-+ [General Usage reports](/help/accountiq/general-usage-reports.md)
-+ [Shared Accounts reports](/help/accountiq/shared-acc-reports.md)
-+ [Export high sharing accounts](/help/accountiq/export-acc-information.md)
++ Reports {#reports}
+    + [General Usage reports](/help/accountiq/general-usage-reports.md)
+    + [Shared Accounts reports](/help/accountiq/shared-acc-reports.md)
+    + [Export high sharing accounts](/help/accountiq/export-acc-information.md)
 + [Usage patterns](/help/accountiq/usage-patterns.md)
 + [Operations](/help/accountiq/operations.md)
 + [Create an operation on a user segment](/help/accountiq/operation-affecting-user-segment.md)
