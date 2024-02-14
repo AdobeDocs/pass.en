@@ -6,11 +6,11 @@ description: Understanding and using segments. Learn how to create and manage a 
 
 [Segments](product-concepts.md#segmet-def) are a collection of subscriber accounts that allows you to analyze credential sharing under user-defined conditions. You can use segments to examine different sets of subscriber accounts and generate corresponding data reports in tables and graphs. There are two types of segments in Account IQ: 
 
-1. **Default segment**: **All accounts in your TVE properties** is an out-of-the-box segment in the system that includes subscriber accounts from all programmers and MVPDs without specific conditions applied.
+1. **Default segment**: **All accounts in your properties** is an out-of-the-box segment in the system that includes subscriber accounts from all programmers and MVPDs without specific conditions applied.
 
    >[!NOTE]
    >
-   >Using default segment may restrict access to certain tables like [MVPDs and Programmers in segment](data-panels.md#mvpds-programmers-segment), [Sharing score by channels and MVPDs](data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](usage-patterns.md#usage-pattern-dis-mvpds-programmers). These tables can only accommodate and display data for up to 20 MVPDs at a time. The remaining tables, graphs, and reports are identical for both default and custom segments.
+   >Using default segment may prevent the display of certain tables like [MVPDs and Programmers in segment](data-panels.md#mvpds-programmers-segment), [Sharing score by channels and MVPDs](data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](usage-patterns.md#usage-pattern-dis-mvpds-programmers). These tables can only accommodate and display data for up to 20 MVPDs at a time. The remaining tables, graphs, and reports are identical for both default and custom segments.
 
 1. **Custom segments**: These are tailored segments that enable you to group subscriber accounts from specific programmers, channels, and MVPDs for analyzing credential sharing under user-defined conditions. Learn more about how to [create a custom segment](#create-new-segment).
 
