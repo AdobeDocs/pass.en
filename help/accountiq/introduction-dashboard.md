@@ -37,4 +37,4 @@ The dashboard for programmer and MVPD users includes:
 
 * **Segments and time interval panel**: This panel enables you to select segments and time intervals to generate account sharing reports, providing a summary of the selected segment.
 * **Page navigation**: These tabs allows you to navigate and explore across various sections and pages of Account IQ.
-* **Data panels**: The panels display account sharing reports in a form of tables and graphs and offer to export data on your local machine. 
+* **Data panels**: The panels display account sharing reports in a form of tables and graphs and offer to export them as reports on your local machine. 
