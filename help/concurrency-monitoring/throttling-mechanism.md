@@ -9,7 +9,7 @@ description: Throttling mechanism
 
 Adobe, in its role as your data processor, must take appropriate measures to ensure that our customers' users equitably use resources and the service is not flooded with unnecessary API requests. For this we have put in place a throttling mechanism.
 One Concurrency Monitoring application can be used by multiple users and one user can have multiple sessions. Therefore, the service will have limits configured for the number of accepted calls per user/session within a specific time interval.
-When the limit has been reached,  the requests will be marked with a specific response status (HTTP 429 Too Many Requests). Any subsequent call done after a “429 Too Many Requests” response is received should be done with at least 1 minute cooldown period to ensure it will obtain a valid business response.
+When the limit has been reached,  the requests will be marked with a specific response status (HTTP 429 Too Many Requests). Any subsequent call done after a “429 Too Many Requests” response is received should be done with at least one minute cool down period to ensure it will obtain a valid business response.
 
 ## Mechanism overview {#mechanism-overview}
 
@@ -27,7 +27,7 @@ The throttling is configured on two levels:
 
 The limit for session level throttling is set to 200 requests within one minute.\
 The limit for user level throttling is set to 200 requests within one minute.\
-Both these limits (session level throttling and user level throttling) are configurable and we will update them in case they will be reached through valid integration scenarios. For this we recommend support team to be contacted. 
+Both these limits (session level throttling and user level throttling) are configurable, and we will update them in case they will be reached through valid integration scenarios. For this we recommend support team to be contacted. 
 
 **Scenario for session level throttling:**
 
@@ -48,6 +48,7 @@ Both these limits (session level throttling and user level throttling) are confi
 | Second 70 | POST /sessions/idp1/subject1 | 1                  | 1 call receives ‘202 Accepted’                                               | Limit set to 200 available calls because 60 seconds have passed since second 10 |
 
 **429 Response example:**
+
 ```
 HTTP/2 429
 date: Thu, 15 Feb 2024 07:54:20 GMT
