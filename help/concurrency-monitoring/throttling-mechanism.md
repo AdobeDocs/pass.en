@@ -14,7 +14,7 @@ When the limit has been reached,  the requests will be marked with a specific re
 ## Mechanism overview {#mechanism-overview}
 
 The mechanism determines the maximum number of accepted calls for each Concurrency Monitoring endpoint within a specific time interval. 
-Once this maximum number of calls have been reached, our service will respond with '429 Too many requests'. The 429 response "Expires" header includes the timestamp when the next call would be considered valid, or when the throttling expires. Right now, throttling expires after minute from the first 429 response.
+Once this maximum number of calls have been reached, our service will respond with '429 Too many requests'. The 429 response "Expires" header includes the timestamp when the next call would be considered valid, or when the throttling expires. Right now, the throttling expires after one   minute from the first 429 response.
 
 The endpoints configured with throttling are:
 1. Create a new session: POST /sessions/{idp}/{subject}
@@ -67,4 +67,4 @@ x-content-type-options: nosniff
 ## Customer integration recommendations {#customer-integration-recommendations}
 
 With a correct implementation, the customers will not receive “429 Too Many Requests” response.
-Still, Adobe recommends that each customer handles “429 Too Many Requests” response appropriately using the technical details presented above. When handling the response, "Expires" header is best to be used to determine when to send the next valid request. 
+Still, Adobe recommends that each customer handles “429 Too Many Requests” response appropriately using the technical details presented above. When handling the response, "Expires" header should be used to determine when to send the next valid request. 
