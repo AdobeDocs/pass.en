@@ -29,7 +29,7 @@ The limit for session level throttling is set to 200 requests within one minute.
 The limit for user level throttling is set to 200 requests within one minute.\
 Both these limits (session level throttling and user level throttling) are configurable and we will update them in case they will be reached through valid integration scenarios. For this we recommend support team to be contacted. 
 
-Scenario for session level throttling:
+**Scenario for session level throttling:**
 
 | Time      | Request send to CM                      | Number of requests | Response received from CM                                                    | Explanation                                                                     |
 |-----------|-----------------------------------------|--------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -38,7 +38,7 @@ Scenario for session level throttling:
 | Second 61 | DELETE /sessions/idp1/subject1/session1 | 1                  | 1 call receives ‘429 Too many requests’                                      | No calls in the limit available yet                                             |
 | Second 70 | DELETE /sessions/idp1/subject1/session1 | 1                  | 1 call receives ‘202 Accepted’                                               | Limit set to 200 available calls because 60 seconds have passed since second 10 |
 
-Scenario for user level throttling:
+**Scenario for user level throttling:**
 
 | Time      | Request send to CM           | Number of requests | Response received from CM                                                    | Explanation                                                                     |
 |-----------|------------------------------|--------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -47,7 +47,7 @@ Scenario for user level throttling:
 | Second 61 | POST /sessions/idp1/subject1 | 1                  | 1 call receives ‘429 Too many requests’                                      | No calls in the limit available yet                                             |
 | Second 70 | POST /sessions/idp1/subject1 | 1                  | 1 call receives ‘202 Accepted’                                               | Limit set to 200 available calls because 60 seconds have passed since second 10 |
 
-429 Response example:
+**429 Response example:**
 ```
 HTTP/2 429
 date: Thu, 15 Feb 2024 07:54:20 GMT
