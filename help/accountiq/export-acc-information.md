@@ -5,9 +5,7 @@ exl-id: df41ddd2-fde3-4861-abd4-6e32f0be9ea5
 ---
 # Export information for accounts with high sharing score {#export-account-info-high-score}
 
-[!UICONTROL Account IQ] allows you to export account sharing details for top 1000 subscriber accounts based on their [sharing probabilities](/help/accountiq/product-concepts.md#account-sharing-probability-def).
-
-As a programmer and MVPD user, you can export the account sharing information for [Shared Accounts Reports](/help/accountiq/shared-acc-reports.md).
+[!UICONTROL Account IQ] allows you to export account sharing details for top 1000 subscriber accounts based on their [sharing probabilities](/help/accountiq/product-concepts.md#account-sharing-probability-def). As a programmer and MVPD user, you can export the account sharing information for [Shared Accounts Reports](/help/accountiq/shared-acc-reports.md).
 
 To export the account sharing information of subscriber accounts for a specific segment, follow these steps:
 
