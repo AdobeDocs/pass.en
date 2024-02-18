@@ -139,7 +139,7 @@ The values within these columns serve as identifiers corresponding to one of the
 
 **Sharing Probability**
 
-Sharing probability is the probability that the specific account is sharing its credentials.
+The likelihood that as specific account is sharing its credentials.
 
 >[!NOTE]
 >
