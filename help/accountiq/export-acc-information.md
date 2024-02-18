@@ -5,77 +5,89 @@ exl-id: df41ddd2-fde3-4861-abd4-6e32f0be9ea5
 ---
 # Export information for accounts with high sharing score {#export-account-info-high-score}
 
-[!UICONTROL Account IQ] gives you the option to export account sharing details for top 1000 subscriber accounts based on their [sharing probabilities](/help/accountiq/product-concepts.md#account-sharing-probability-def). The data in the exported CSV file is sorted in the decreasing order of the sharing probabilities of the subscriber accounts—of the selected MVPDs in the [segment](/help/accountiq/product-concepts.md#segment-def), for a [specified time interval](/help/accountiq/product-concepts.md#time-interval-def).
+[!UICONTROL Account IQ] allows you to export account sharing details for top 1000 subscriber accounts based on their [sharing probabilities](/help/accountiq/product-concepts.md#account-sharing-probability-def).
 
-The option to export the account sharing information is available on [General Usage Reports](/help/accountiq/general-usage-reports.md) and [Shared Accounts Reports](/help/accountiq/shared-acc-reports.md) pages.
+As a programmer and MVPD user, you can export the account sharing information for [Shared Accounts Reports](/help/accountiq/shared-acc-reports.md).
+
+To export the account sharing information of subscriber accounts for a specific segment, follow these steps:
+
+1. Log in with your authorized programmer or MVPD credentials.
+1. Navigate to the **Shared Accounts** tab under **Reports** section.
+1. Select a desired segment and time interval from segment and time interval panel. Know [how to select segment and time interval](segments-timeinterval.md).
+
+   If required, refer to the instructions for [creating a new segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#create-new-segment).
+
+1. Select **[!UICONTROL Export top 1000 accounts]** option located in the upper-right corner of the segment and time interval panel.
+
+   ![Export top 1000 accounts](assets/export-top-1000-accounts.png)
+
+   *Figure: Select Export top 1000 accounts option*
+
+1. Choose the location to save the file on your local machine.
+
+   You can rename your file in the **File name**.
+
+1. Select **[!UICONTROL Save]** to begin the export procedure.
+
+   The system saves the statistical information for 1000 accounts with the highest sharing probabilities for a [specified time interval](/help/accountiq/product-concepts.md#time-interval-def) to the chosen location on your local machine.
+
+1. Find the saved file on your local device to open and access the data.
 
 >[!NOTE]
 >
->The numbers in the downloaded CSV file are different for General Usage and Shared Accounts reports pages. This is because the General Usage Reports page has additional filters for the programmers to select Threshold for number of devices, IPs and Zip codes. So the data exported from General Usage reports is based on the additional threshold filter applied.
-
-   ![Export option in General usage](assets/export.png)
-
-To export the account sharing information of subscribers:
-
-1. Define a desired segment following the steps in [How to define segment and select time interval](/help/accountiq/segments-timeinterval.md) for evaluation from [segment and time interval](/help/accountiq/segments-timeinterval.md) panel.
-
-1. Select the **[!UICONTROL Export top 1000 accounts]** option to export the account information for 1000 subscribers with highest sharing probability.
-
-When you use the export option, the statistics for 1000 accounts with the highest sharing probabilities (for a defined time interval) are downloaded to the Downloads folder of your local machine.
-
->[!NOTE]
->
->The downloaded CSV file can be opened using any application that reads CSV file, for example Microsoft Excel.
+>The report saves in CSV format. You can open the exported file using a preferred CSV viewer or editor like Microsoft Excel.
 
 ![exported data in csv format](assets/exported-csv.png)
 
-*Figure: Exported shared account data in CSV format*
+*Figure: Exported data in CSV format*
+
+The exported CSV file sorts the data in decreasing order based on the sharing probabilities of the subscriber accounts in the [segment](/help/accountiq/product-concepts.md#segment-def). 
 
 ## Columns in the exported report {#columns-in-export}
 
-**Week/ Month**
+**Week/Month**
 
-The week or the month, which you selected on the **[!UICONTROL Granularity and Time Interval]** option in the segment selector, for which the sharing statistics are sought.
+The selected week or month within the **[!UICONTROL Granularity and Time Interval]** option in the segment selector for which the sharing statistics are sought.
 
 **MVPD**
 
-If you are a programmer user, the column shows which MVPD does the subscriber account belong to.
+If you are a programmer user, the column shows which MVPD the subscriber account belongs to.
 
 **Subscriber Id**
 
-Specific account which we are talking about in a row.
+The unique identifier for the specific account that is discussed within a row.
 
 **Minimum # Devices**
 
-The actual number of devices (that stream content) is almost certainly greater than the minimum number of devices, specified for a particular account.
+The bare minimum number of devices from which users are actively streaming content.
 
 >[!NOTE]
 >
->The actual number of devices (that stream content) is certainly greater than the Minimum # of devices, specified for a particular account.
+>The actual number of devices streaming content is certainly greater than the minimum number of devices specified for a particular account.
 
 **Minimum # Persons**
 
-The absolute minimum number of people that were active streaming content using those devices.
+The bare minimum number of individuals actively streamed content using those devices.
 
 >[!NOTE]
 >
->The actual number of persons (that stream content) is almost certainly much greater than the Minimum # of persons, specified for a particular account.
+>The actual number of individuals streaming content is certainly greater than the minimum number of persons assigned to a particular account.
 
 **[!UICONTROL # IPs]**
 
-Number of IP addresses from which content is streamed.
+The number of IP addresses from which content is streamed.
 
 **[!UICONTROL # Locations]**
 
-Number of locations (based on zip code) from which content is streamed.
+The number of locations (based on zip code) from which content is streamed.
 
 **[!UICONTROL # Cities]**
 
-Number of cities where the streaming has taken place.
+The number of cities where the streaming activity has taken place.
 
 **[!UICONTROL # States]**
 
-Number of states where the streaming has taken place.
+The number of states where the streaming activity has taken place.
 
 **[!UICONTROL # Clusters]**
 
@@ -87,35 +99,37 @@ The maximum distance between the streaming locations associated with the account
 
 **[!UICONTROL # AuthN OK]**
 
-The number of times that the users have logged-in during the period, using that account.
+The number of logins users make during the specified period using that account.
 
 **[!UICONTROL # AuthZ OK]**
 
-Number of times an MVPD has authorized a stream, or granted access (to content), to that account.
+The number of times an MVPD has authorized a stream or granted access to content for that account.
 
 >[!NOTE]
 >
->The **[!UICONTROL # AuthZ OK]** is related to the **[!UICONTROL # Play Requests]**; it is smaller than the **[!UICONTROL # Play Requests]** because Adobe caches the authorizations that come for MVPDs typically for 24 hours.
+>The **[!UICONTROL # AuthZ OK]** is linked to **[!UICONTROL # Play Requests]**. It's smaller than **[!UICONTROL # Play Requests]** because Adobe typically caches the authorizations from MVPDs for approximately 24 hours.
 
 **[!UICONTROL # Play Requests]**
 
-The actual number of streams during the time period.
+The actual number of streams occurred during a specified time period.
+
+   >[!NOTE]
+   >
+   >The play requests column is'nt available for MVPD users.
 
 **[!UICONTROL # Channels]**
 
-Total number of different channels that the account has watched over the time period.
+The overall number of channels that the account has watched over a specified period.
 
 >[!NOTE]
 >
->**[!UICONTROL # Channels]** includes the channels that not necessarily belonged to the logged-in programmer.
+>**[!UICONTROL # Channels]** include the channels that may not belong to the logged-in programmer.
 >
->This number for the account showed up because the account watched your channel, but it also accessed other channels during that time period.
+>This number for the account includes your channel and other channels accessed during the specified period.
 
 **Usage Pattern**
 
-The numbers in this column are identifiers that map to one of the 14 patterns that we identify all the user accounts as.
-
-*Table: Usage pattern identifiers in exported CSV mapping with usage patterns*
+The values within these columns serve as identifiers corresponding to one of the 14 patterns we use to categorize all user accounts.
 
  | ID | 1 | 2 | 3 | 4 | 5 and 8 | 6 | 7 | 9 | 10 and 11 | 12 | 13 | 14 |
  |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -123,10 +137,12 @@ The numbers in this column are identifiers that map to one of the 14 patterns th
 
 {style="table-layout:auto"}
 
+*Table: Usage pattern identifiers in exported CSV mapping with usage patterns*
+
 **Sharing Probability**
 
 Sharing probability is the probability that the specific account is sharing its credentials.
 
 >[!NOTE]
 >
-> The average of the sharing probability of all the accounts (in the selected segment) is used to compute the [sharing level](/help/accountiq/data-panels.md#sharing-level) of the [Aggregated sharing score](/help/accountiq/data-panels.md#aggregated-sharing).
+> The average of the sharing probability of all the accounts in the selected segment is used to compute the [sharing level](/help/accountiq/data-panels.md#sharing-level) of the [Aggregated sharing score](/help/accountiq/data-panels.md#aggregated-sharing).
