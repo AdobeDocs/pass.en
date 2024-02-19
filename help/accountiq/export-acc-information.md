@@ -35,11 +35,11 @@ To export the account sharing information of subscriber accounts for a specific 
 >
 >The report saves in CSV format. You can open the exported file using a preferred CSV viewer or editor like Microsoft Excel.
 
+The exported CSV file sorts the data in decreasing order based on the sharing probabilities of the subscriber accounts in the [segment](/help/accountiq/product-concepts.md#segment-def). 
+
 ![exported data in csv format](assets/exported-csv.png)
 
 *Figure: Exported data in CSV format*
-
-The exported CSV file sorts the data in decreasing order based on the sharing probabilities of the subscriber accounts in the [segment](/help/accountiq/product-concepts.md#segment-def). 
 
 ## Columns in the exported report {#columns-in-export}
 
