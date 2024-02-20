@@ -181,7 +181,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + [Certificates Q&A](certificates-qa.md)
     + JavaScript SDK {#javascript}
       + [JS SDK limitations for Safari browser](js-sdk-limitations-for-safari-browser.md)
-      + [Cookies Updates - SameSite and Secure flags](cookies-updates--samesite-and-secure-flags.md)
+      + [Cookies Updates - SameSite and Secure flags](cookies-updates-samesite-and-secure-flags.md)
     + Android SDK {#android}
       + [Access Enabler Android SDK Single Sign-On (SSO) on Android 10 apps](access-enabler-android-sdk-single-signon-sso-on-android-10-devices.md)
       + [Adobe Pass Authentication and the Android 6 "Marshmallow" New Permissions Model](adobe-primetime-authentication-and-the-android-6-marshmallow-new-permissions-model.md)
@@ -198,7 +198,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + [Setting up Your Environment and Testing in Pre-Qual](setting-up-your-environment-and-testing-in-prequal.md)
     + [How to test Authentication and Authorization flows using Adobe API test site](test-authn-authz-flows-using-adobes-api-test-site.md)
   + Clientless API {#clientless-api}
-    + [Clientless API Implementation - Error codes / Messages With Probable Reason / Cause](clientless-api-implementation-error-codes--messages-with-probable-reason--cause.md)
+    + [Clientless API Implementation - Error codes / Messages With Probable Reason / Cause](clientless-api-implementation-error-codes-messages-with-probable-reason-cause.md)
     + [Clientless API Flow in the Absence of Device ID](clientless-api-flow-in-the-absence-of-device-id.md)
     + [Clientless: Avoid Using '&'reg_code in /authenticate Request](clientless-avoid-using-reg-code-in-authenticate-request.md)
     + [Enabling Adobe Pass Entitlement Services for a Programer on Xbox 360 and XboxOne Clientless](enabling-primetime-entitlement-services-for-a-programmer-on-xbox-360-and-xboxone-clientless-solution.md)
