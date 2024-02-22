@@ -27,11 +27,7 @@ To export data panel reports for a specific segment, follow these steps:
    *Figure: Export Number of accounts and usage by sharing probability level*
 
 1. Select **[!UICONTROL Export]** option located in the upper-right corner of the data panel.
-1. Choose the location to save the file on your local machine.
-
-   You can rename your file in the **File name**.
-
-1. Select **[!UICONTROL Save]** to initiate the export process.
+1. If given the option, choose the location to save the file on your local machine, optionally rename your file in the **File name**, and select **[!UICONTROL Save]**. Alternatively, the file will automatically be saved to the download folder designated by your browser.
 
    The system saves the data for **Number of accounts and usage by sharing probability level** to the specified location on your local machine.
 

@@ -48,8 +48,6 @@ The line graphs here gives you a view of the changes over time in values of Auth
 
 +++MVPD- **Unique Subscribers**
 
-The line graph for MVPD users is slightly different from those of the programmer users.
-
 ![](assets/mvpd-line-graph-gu.png)
 
 

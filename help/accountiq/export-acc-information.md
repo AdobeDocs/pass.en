@@ -5,7 +5,7 @@ exl-id: df41ddd2-fde3-4861-abd4-6e32f0be9ea5
 ---
 # Export information for accounts with high sharing score {#export-account-info-high-score}
 
-[!UICONTROL Account IQ] allows you to export account sharing details for top 1000 subscriber accounts based on their [sharing probabilities](/help/accountiq/product-concepts.md#account-sharing-probability-def). As a programmer and MVPD user, you can export the account sharing information for [Shared Accounts Reports](/help/accountiq/shared-acc-reports.md).
+[!UICONTROL Account IQ] allows you to export account sharing details for top 1000 subscriber accounts based on their [sharing probabilities](/help/accountiq/product-concepts.md#account-sharing-probability-def). As a programmer and MVPD user, you can export the account sharing information for the current [segment](/help/accountiq/product-concepts.md#segment-def) and [specified time interval](/help/accountiq/product-concepts.md#time-interval-def) on the [Shared Accounts Reports](/help/accountiq/shared-acc-reports.md).
 
 To export the account sharing information of subscriber accounts for a specific segment, follow these steps:
 
@@ -21,13 +21,9 @@ To export the account sharing information of subscriber accounts for a specific 
 
    *Figure: Select Export top 1000 accounts option*
 
-1. Choose the location to save the file on your local machine.
+1. If given the option, choose the location to save the file on your local machine, optionally rename your file in the **File name**, and select **[!UICONTROL Save]**. Alternatively, the file will automatically be saved to the download folder designated by your browser.
 
-   You can rename your file in the **File name**.
-
-1. Select **[!UICONTROL Save]** to begin the export procedure.
-
-   The system saves the statistical information for 1000 accounts with the highest sharing probabilities for a [specified time interval](/help/accountiq/product-concepts.md#time-interval-def) to the chosen location on your local machine.
+   The system saves the statistical information for 1000 accounts with the highest sharing probabilities for current segment and specified time interval to the chosen location on your local machine.
 
 1. Find the saved file on your local device to open and access the data.
 
@@ -35,7 +31,7 @@ To export the account sharing information of subscriber accounts for a specific 
 >
 >The report saves in CSV format. You can open the exported file using a preferred CSV viewer or editor like Microsoft Excel.
 
-The exported CSV file sorts the data in decreasing order based on the sharing probabilities of the subscriber accounts in the [segment](/help/accountiq/product-concepts.md#segment-def). 
+The exported CSV file sorts the data in decreasing order based on the sharing probabilities of the subscriber accounts in the current segment for a specified time interval. 
 
 ![exported data in csv format](assets/exported-csv.png)
 
