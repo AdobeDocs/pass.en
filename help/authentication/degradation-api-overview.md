@@ -8,6 +8,17 @@ exl-id: c7d6685b-a235-42eb-9c9c-0ffa1747f614
 >[!NOTE]
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+>In order to use the Degradation API, you will need to: 
+>- ask the support team for a software  statement for your registered application
+>- obtain an access token based on [Dynamic Client Registration](dynamic-client-registration.md)
+> 
+
+>[!NOTE]
+>
+>In order to use the Degradation API, you will need to: 
+>- ask the support team for a software  statement for your registered application
+>- obtain an access token based on [Dynamic Client Registration](dynamic-client-registration.md)
+> 
 
 ## General Information {#general_info}
 
@@ -23,9 +34,9 @@ A degradation rule is applied only for a fixed period of time. Although the prim
 
 Degradation Notes:
 
-* This feature is designed to be used together with the usage monitoring API, which provides realtime information about the number of authentications and authorizations per MVPD, average authorization latency, and other metrics needed for a complete service overview.
-* This feature does not allow bypassing of the Adobe Primetim authentication service. If Adobe Pass Authentication is down there is no mechanism within the service that can be used to allow users to see content. The sites or apps could, however, route around Adobe Pass Authentication by themselves.
-* Adobe will not currently trigger degradation directly-the decision must always reside with a specific Programmer that has agreed to such conditions with MVPDs. In the future, Adobe Pass Authentication might be proactive in triggering degradation rules if agreements (SLA protection) can be reached with MVPDs.
+– This feature is designed to be used together with the usage monitoring API, which provides realtime information about the number of authentications and authorizations per MVPD, average authorization latency, and other metrics needed for a complete service overview.
+– This feature does not allow bypassing of the Adobe Primetim authentication service. If Adobe Pass Authentication is down there is no mechanism within the service that can be used to allow users to see content. The sites or apps could, however, route around Adobe Pass Authentication by themselves.
+– Adobe will not currently trigger degradation directly-the decision must always reside with a specific Programmer that has agreed to such conditions with MVPDs. In the future, Adobe Pass Authentication might be proactive in triggering degradation rules if agreements (SLA protection) can be reached with MVPDs.
 
 <!--
 ## Related Information {#related}
