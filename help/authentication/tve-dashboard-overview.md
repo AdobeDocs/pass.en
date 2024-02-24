@@ -29,9 +29,9 @@ Before deep diving into this user guide, we recommend looking through the follow
 
 The following sections explain the tools and features of TVE Dashboard:
 
-* [Environments](work-with-environments.md)
-* [Dashboard](dashboard.md)
-* [Channels](channels.md)
+* [Environments](/help/authentication/work-with-environments.md)
+* Dashboard
+* Channels
 * Programmers
 * MVPDs
 * Integrations
