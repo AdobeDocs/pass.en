@@ -1,6 +1,6 @@
 ---
 title: TVE Dashboard overview
-description: Know about TVE Dashboard
+description: Know about TVE Dashboard.
 ---
 
 # TVE Dashboard overview {#tve-db-overview}

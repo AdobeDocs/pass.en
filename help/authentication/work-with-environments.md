@@ -1,6 +1,6 @@
 ---
-Title: Work with environment
-Description: Understand the use and working with different environments of TVE dashboard.
+title: Work with environment
+description: Understand the use and working with different environments of TVE dashboard.
 ---
 # Work with environments {#work-with-authn-environments}
 
