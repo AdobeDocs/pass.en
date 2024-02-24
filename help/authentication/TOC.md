@@ -197,10 +197,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + [Using Charles Proxy](using-charles-proxy.md)
   + Concepts {#concepts}
     + [Understanding User IDs](understanding-user-ids.md) 
-+ [TVE Dashboard user guide](tve-dashboard-user-guide.md)
++ [TVE Dashboard user guide] {#user-guide}
   + [TVE Dashboard overview](tve-dashboard-overview.md)
-  + [Get started with TVE Dashboard](get-started.md)
   + [Work with Environments](Work-with-environments.md)
-  + [Dashboard](dashboard.md)
-  + [Channels](channels.md)
 + [Glossary](glossary.md)
