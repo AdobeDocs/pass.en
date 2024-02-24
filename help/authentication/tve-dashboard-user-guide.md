@@ -54,6 +54,7 @@ To switch between environments, the user can click on the desired environment re
 *Figure 2: The Adobe Pass TVE Dashboard environments drop-down* 
 
 >[!IMPORTANT]
+>
 >It is very important to note that when making administrative changes to your Adobe Pass Authentication configuration through the TVE Dashboard, we strongly advise you to follow the sequence below in order to ensure proper functionality.
 
 To make administrative changes to your Adobe Pass Authentication configuration through the TVE Dashboard:
@@ -63,6 +64,7 @@ To make administrative changes to your Adobe Pass Authentication configuration t
 * Perform the changes in [Release Production and validate them](http://sp.auth-staging.adobe.com/apitest/api.html). 
 
 >[!IMPORTANT]
+>
 >For the administrative changes to go live, users must navigate to the "Review and Push Changes" section by selecting the button, which will show up in the bottom-left part of the sidebar, in order to review changes, add a description for the newly created changes and confirm the configuration update by selecting the "Push Configuration".
 
 ![Tve Dashboard review an push notification](assets/tve-review-push-notifications.png)

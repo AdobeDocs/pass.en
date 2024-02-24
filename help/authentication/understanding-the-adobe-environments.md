@@ -15,9 +15,9 @@ The Adobe environments, summed up in a few words:
 
 Adobe has two environments: **Pre-Qualification** and **Release**.
 
-*   On the Pre-qualification environment we're preparing the new build to be released.
+* On the Pre-qualification environment we're preparing the new build to be released.
 
-*   The current release build is on the Release environment.
+* The current release build is on the Release environment.
 
 Each environment has two profiles : **staging** and **production**.
 
