@@ -16,7 +16,7 @@ To export data panel reports for a specific segment, follow these steps:
 1. Log in with your authorized programmer or MVPD credentials.
 1. Select a desired segment and time interval from segment and time interval panel. Know [how to select segment and time interval](segments-timeinterval.md).
 
-   If required, refer to the instructions for [creating a new segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#create-new-segment).
+   If required, refer to the instructions for [creating a new segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#edit-segment).
 
 1. Navigate to the data panel you want to export. 
 

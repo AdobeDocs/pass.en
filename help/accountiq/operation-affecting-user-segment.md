@@ -142,9 +142,13 @@ The **[!UICONTROL Action]** defines what operation you will perform on the defin
 
 There are two types of actions you can take:
 
-*   Actions using systems integrated with Account IQ; such as **[!UICONTROL Concurrency Monitoring]** <!--[Concurrency Monitoring](https://tve.helpdocsonline.com/concurrency-monitoring-introduction), or Adobe Target-->.
+* **CM Policy** actions using systems integrated with Account IQ; such as **[!UICONTROL Concurrency Monitoring]** <!--[Concurrency Monitoring](https://tve.helpdocsonline.com/concurrency-monitoring-introduction), or Adobe Target-->.
 
-*   Actions to create and process workflows that are external to Account IQ and not integrated with Account IQ system. For example, an action for channel programmer 'N' to send bulk emails to all the subscribers of MVPD 'C'.
+* **External actions** to create and process workflows that are external to Account IQ and not integrated with Account IQ system. For example, an action for channel programmer 'N' to send bulk emails to all the subscribers of MVPD 'C'.
+
+>[!NOTE]
+>
+>External actions may not always directly relate to password sharing but can still impact it, such as the launch of a new season.
 
 >[!NOTE]
 >

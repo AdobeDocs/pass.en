@@ -13,7 +13,7 @@ To export the account sharing information of subscriber accounts for a specific 
 1. Navigate to the **Shared Accounts** tab under **Reports** section.
 1. Select a desired segment and time interval from segment and time interval panel. Know [how to select segment and time interval](segments-timeinterval.md).
 
-   If required, refer to the instructions for [creating a new segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#create-new-segment).
+   If required, refer to the instructions for [creating a new segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#edit-segment).
 
 1. Select **[!UICONTROL Export top 1000 accounts]** option located in the upper-right corner of the segment and time interval panel.
 

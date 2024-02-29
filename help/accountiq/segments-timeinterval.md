@@ -57,7 +57,7 @@ This allows you to define your problem statement as "Subscribers of MVPD A who w
 
 ## Segment summary {#segment-summary}
 
-Use <img alt= "expand [!UICONTROL Segment Summary]" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. It also presents information on the number of subscriber accounts and their playback requests within the chosen time period.
+Use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. It also presents information on the number of subscriber accounts and their playback requests within the chosen time period.
 
 ![](assets/segment-panel-programmers-mvpd.png){align="left"}
 
