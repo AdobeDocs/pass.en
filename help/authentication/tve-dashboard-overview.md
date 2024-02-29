@@ -22,7 +22,7 @@ The [[!DNL Adobe] Pass TVE Dashboard](https://console.auth.adobe.com/) is a prim
 Adobe Pass Authentication provides the following tools and features in **TVE Dashboard**:
 
 * [Environments](/help/authentication/work-with-environments.md)
-* Dashboard
+* [Dashboard](/help/authentication/dashboard.md)
 * [Channels](/help/authentication/channels.md)
 * [Programmers](/help/authentication/programmers.md)
 * MVPDs
