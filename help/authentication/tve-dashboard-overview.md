@@ -23,8 +23,8 @@ Adobe Pass Authentication provides the following tools and features in **TVE Das
 
 * [Environments](/help/authentication/work-with-environments.md)
 * Dashboard
-* Channels
-* Programmers
+* [Channels](/help/authentication/channels.md)
+* [Programmers](/help/authentication/programmers.md)
 * MVPDs
 * Integrations
 * Review and push changes
