@@ -1,35 +1,28 @@
 ---
-title: JS SDK limitations for Safari browser
-description: JS SDK limitations for Safari browser
-exl-id: 5e5c3b36-ee09-49e0-b5b7-83b24854d69d
+title: Tracking Prevention Assessment Apple Safari
+description: Tracking Prevention Assessment Apple Safari
 ---
-# JS SDK limitations for Safari browser {#js-sdk-limitations-for-safari-browser}
+# Tracking Prevention Assessment - Apple Safari {#tracking-prevention-assessment-apple-safari}
 
 >[!NOTE]
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
-<!--
->[!IMPORTANT] 
->
->We are strongly recommending [migration to AccessEnabler JavaScript SDK versions 4.x](http://tve.helpdocsonline.com/accessenabler-js-v4-migration-guide) in order to have a stable and predictable behavior on Safari browser.-->
-
-
 ## Safari 10 {#safari10}
 
 **Details**
 
-* Starting with Safari 10, the default browser privacy settings will cause the Single Sign-On (SSO), Single Logout (SLO) and passive authentication features to stop working. The Single Sign-On (SSO) and passive authentication will not work even in
+Starting with Safari 10, the default browser privacy settings will cause the Single Sign-On (SSO), Single Logout (SLO) and passive authentication features to stop working. The Single Sign-On (SSO) and passive authentication will not work even in
 the same session between multiple tabs or browser windows.
 
-* These changes affects and are having an impact on Adobe Pass Authentication processes
+These changes affects and are having an impact on Adobe Pass Authentication processes
 for the following versions of the AccessEnabler JavaScript SDK: v2 (versions 2.x), v3 (versions 3.x), v4 (versions 4.x).
 
 ### Mitigation {#mitigation-safari10}
 
-* In order to mitigate these limitations you can instruct the user to change the Safari 10 browser privacy settings, and use the "**Always allow**" option for the "**Cookies and website data**" entry in the browser's Privacy tab from Preferences, as depicted in bellow image.
+In order to mitigate these limitations you can instruct the user to change the Safari 10 browser privacy settings, and use the "**Always allow**" option for the "**Cookies and website data**" entry in the browser's Privacy tab from Preferences, as depicted in bellow image.
 
-    ![](assets/always-allow-safari10.png) 
+![](assets/always-allow-safari10.png) 
 
 
 ## Safari 11 {#safari11}
@@ -40,27 +33,28 @@ for the following versions of the AccessEnabler JavaScript SDK: v2 (versions 2.x
 >
 >All above details from section Safari 10 still apply in case of Safari 11.
 
-* Starting with Safari 11, the browser introduces [Intelligent Tracking Prevention](https://webkit.org/blog/7675/intelligent-tracking-prevention/)(ITP) mechanism, a technology that uses heuristics in order to prevent cross-site tracking. These heuristics impact the way 3rd party cookies are stored and replayed on network calls, meaning that depending on the ITP mechanism activation the Safari browser will block 3rd party cookies in the client - server model communication.  
+Starting with Safari 11, the browser introduces [Intelligent Tracking Prevention](https://webkit.org/blog/7675/intelligent-tracking-prevention/)(ITP) mechanism, a technology that uses heuristics in order to prevent cross-site tracking. These heuristics impact the way 3rd party cookies are stored and replayed on network calls, meaning that depending on the ITP mechanism activation the Safari browser will block 3rd party cookies in the client - server model communication.  
 
-* Adobe Pass Authentication service uses and relies on cookies as part of the authentication process **in order to function**. In situations where the authentication process takes place automatically (e.g. Temp Pass) or in implementations that use iFrames or "refressless" functionality, Adobe's cookies are considered 3rd party cookies and blocked by default. For any other cases, Safari uses a machine learning algorithm that might flag all Adobe's Primetime Authentication service cookies as tracking cookies, therefore being subject for ITP's blocking.  
+Adobe Pass Authentication service uses and relies on cookies as part of the authentication process **in order to function**. In situations where the authentication process takes place automatically (e.g. Temp Pass) or in implementations that use iFrames or "refressless" functionality, Adobe's cookies are considered 3rd party cookies and blocked by default. For any other cases, Safari uses a machine learning algorithm that might flag all Adobe's Pass Authentication service cookies as tracking cookies, therefore being subject for ITP's blocking.  
 
-* In conclusion, a user of Safari 11 browser might be unable to authenticate on an Adobe Pass Authentication enabled website after the activation of the Intelligent Tracking Prevention (ITP) mechanism, especially when the users is using multiple Adobe Primethime Authentication enabled websites. Therefore, the user's authentication experience might be unexpected and undefined, ranging from inability to log in, to shorter than expected authentication duration.
+In conclusion, a user of Safari 11 browser might be unable to authenticate on an Adobe Pass Authentication enabled website after the activation of the Intelligent Tracking Prevention (ITP) mechanism, especially when the user is using multiple Adobe Pass Authentication enabled websites. Therefore, the user's authentication experience might be unexpected and undefined, ranging from inability to log in, to shorter than expected authentication duration.
 
-* These changes affects and are having an impact on Adobe Pass Authentication processes fo the following versions of the AccessEnabler JavaScript SDK: v2 (versions 2.x), v3 (versions 3.x).
+These changes affects and are having an impact on Adobe Pass Authentication processes fo the following versions of the AccessEnabler JavaScript SDK: v2 (versions 2.x), v3 (versions 3.x).
 
 ### Mitigation {#mitigation-safari11}
 
-* For both AccessEnabler JavaScript SDK v3 (versions 3.x) and AccessEnabler JavaScript SDK v4 (versions 4.x), the library contains a mechanism capable to identify the situations wher user's authentication was blocked due to missing required cookies. In these situations the library triggers a specific error callback [N130](/help/authentication/error-reporting.md#advanced-error-codes-reference), which is passed back to the Adobe Pass Authentication enabled website in order to be used as a signal to instruct the user to take actions which can mitigate the issue. In order to benefit from this mechanism the website must implement the [Error Reporting](/help/authentication/error-reporting.md) specification.
+For both AccessEnabler JavaScript SDK v3 (versions 3.x) and AccessEnabler JavaScript SDK v4 (versions 4.x), the library contains a mechanism capable to identify the situations where user's authentication was blocked due to missing required cookies. In these situations the library triggers a specific error callback [N130](/help/authentication/error-reporting.md#advanced-error-codes-reference), which is passed back to the Adobe Pass Authentication enabled website in order to be used as a signal to instruct the user to take actions which can mitigate the issue. In order to benefit from this mechanism the website must implement the [Error Reporting](/help/authentication/error-reporting.md) specification.
 
-* For AccessEnabler JavaScript SDK v2 (versions 2.x), the library does not offer the above described mechanism, therefore the Adobe Pass Authentication enabled website can not be signaled when to instruct the user to take actions to mitigate the issue.  
+For AccessEnabler JavaScript SDK v2 (versions 2.x), the library does not offer the above described mechanism, therefore the Adobe Pass Authentication enabled website can not be signaled when to instruct the user to take actions to mitigate the issue.  
 
-* The list of actions which can mitigate the aforementioned issues **applies for all three versions** of AccessEnabler JavaScript SDK. 
+The list of actions which can mitigate the aforementioned issues **applies for all three versions** of AccessEnabler JavaScript SDK. 
 
-* When [N130](/help/authentication/error-reporting.md#advanced-error-codes-reference) error callback is received by the implementor's website, the user should be instructed to disable Intelligent Tracking Prevention (ITP) and enble 3rd party cookies by:
+When [N130](/help/authentication/error-reporting.md#advanced-error-codes-reference) error callback is received by the implementor's website, the user should be instructed to disable Intelligent Tracking Prevention (ITP) and enble 3rd party cookies by:
 
 * In case of Mac OS X High Sierra and later: Unchecking the "**Prevent cross-site tracking**" option for "**Website tracking**" entry in the browser's Privacy tab from Preferences, as depicted in bellow image.
 
   ![](assets/uncheck-prvnt-cr-st-tr-safari11.png)
+
 
 * In case of Mac OS X Sierra and previous: Checking the "**Always allow**" option for the "**Cookies and website data**" entry in the browser's Privacy tab from Preferences, as depicted in bellow image. 
 
@@ -83,13 +77,13 @@ This section details the compatibility issues of **AccessEnabler JavaScript SDK 
 
 ### Certified functionality of AccessEnabler JavaScript SDK v4 (versions 4.x) on Safari 12 {#certified-functionality-of-accessenabler-javacscript=sdk-v4}
 
-* **Authentication** flows that make use of user interaction will always work, even if the user's browser have 3rd party cookies disabled, because starting with version 4.0 the AccessEnabler JavaScript SDK does not use 3rd party cookies anymore for the authentication processes.
+**Authentication** flows that make use of user interaction will always work, even if the user's browser have 3rd party cookies disabled, because starting with version 4.0 the AccessEnabler JavaScript SDK does not use 3rd party cookies anymore for the authentication processes.
 
 >[!NOTE] 
 >
 >The user MUST interact with the site in order to open login popups and/or interact with the MVPD login page.
 
-* **Authorization/Preflight/User Metadata** operations are fully functional, provided the user is already authenticated.
+**Authorization/Preflight/User Metadata** operations are fully functional, provided the user is already authenticated.
 
 ### Known issues of AccessEnabler JavaScript SDK v4 (versions 4.x) on Safari 12 {#known-issues-of-accessenabler-javascript-sdk-4}
 

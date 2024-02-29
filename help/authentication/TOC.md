@@ -180,7 +180,8 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
   + Adobe Pass Authentication SDKs {#primetime-authentication-sdks}
     + [Certificates Q&A](certificates-qa.md)
     + JavaScript SDK {#javascript}
-      + [JS SDK limitations for Safari browser](js-sdk-limitations-for-safari-browser.md)
+      + [Tracking Prevention Assessment - Apple Safari](tracking-prevention-assessment-apple-safari.md)
+      + [Tracking Prevention Assessment - Google Chrome](tracking-prevention-assessment-google-chrome.md)
       + [Cookies Updates - SameSite and Secure flags](cookies-updates-samesite-and-secure-flags.md)
     + Android SDK {#android}
       + [Access Enabler Android SDK Single Sign-On (SSO) on Android 10 apps](access-enabler-android-sdk-single-signon-sso-on-android-10-devices.md)
