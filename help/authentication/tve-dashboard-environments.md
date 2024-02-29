@@ -1,8 +1,8 @@
 ---
-title: Work with environment
+title: TVE Dashboard environments
 description: Understand the use and working of different environments in TVE dashboard.
 ---
-# Work with environments {#work-with-authn-environments}
+# TVE Dashboard environments {#tve-dashboard-environments}
 
 TVE Dashboard environments include the different conditions where a program or system operates, customized to fulfill specific purposes. The TVE Dashboard has two primary environments:
 

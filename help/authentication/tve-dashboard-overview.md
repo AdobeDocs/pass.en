@@ -21,7 +21,7 @@ The [[!DNL Adobe] Pass TVE Dashboard](https://console.auth.adobe.com/) is a prim
 
 Adobe Pass Authentication provides the following tools and features in **TVE Dashboard**:
 
-* [Environments](/help/authentication/tve-dashboard-overview.md)
+* [Environments](/help/authentication/tve-dashboard-environments.md)
 * Dashboard
 * [Channels](/help/authentication/tve-dashboard-channels.md)
 * Programmers
@@ -39,3 +39,8 @@ It is recommended to go through the following resources to gain a comprehensive 
 * [Programmer Kickstart Guide](/help/authentication/programmer-kickstart-guide.md)
 * [Entitlement Flow](/help/authentication/entitlement-flow.md)
 * [Glossary](/help/authentication/glossary.md)
+
+To gain access, reach out to your Technical Account Manager (TAM). This access requires configuration of two new user groups within your Adobe Marketing Cloud Organization:
+
+* **TVE Dashboard Read-Write**: Members of this group have full editing rights across all sections of the dashboard.
+* **TVE Dashboard Read-Only**: Members of this group have viewing rights only across the entire dashboard.
