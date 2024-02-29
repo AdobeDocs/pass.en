@@ -1,6 +1,6 @@
 ---
-Title: Dashboard
-Description: Dashboard
+title: Dashboard
+description: Dashboard
 ---
 # Dashboard {#dashboard}
 

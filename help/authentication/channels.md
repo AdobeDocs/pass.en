@@ -1,6 +1,6 @@
 ---
-Title: Channels
-Description: Learn about channels and its configurations within TVE dashboard.
+title: Channels
+description: Learn about channels and its configurations within TVE dashboard.
 ---
 
 # Channels {#channels}
