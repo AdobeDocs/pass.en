@@ -19,7 +19,7 @@ As a programmer or MVPD user, you can perform various functions with operations:
 
 * [View operation reports](#operation-reports)
 * [Create new operation](#create-new-operation)
-* [Stop an operation](#stop-operation)
+* [Stop operation](#stop-operation)
 
 ## View operation reports {#operation-reports}
 
@@ -136,5 +136,14 @@ To create new operation, follow these steps:
    >Verify that the **Start date** is set later than the evaluation period and the current date, and the **End date** is set later than the Start date and the current date to schedule and execute operation in future period.
 
 1. Select **Save operation** at the top of the **Operations** page to process a new operation.
+
+## Stop operation {#stop-operation}
+
+You can only stop the operations that are currently in **Running** status. To stop an existing operation, follow these steps:
+
+1. Navigate to the **Operations** tab under **Actions** in  the left navigation of Account IQ application.
+1. Select **Options** menu of the operation you want to stop.
+1. Select **Stop operation**.
+
 
 
