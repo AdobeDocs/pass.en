@@ -135,4 +135,6 @@ To create new operation, follow these steps:
    >
    >Verify that the **Start date** is set later than the evaluation period and the current date, and the **End date** is set later than the Start date and the current date to schedule and execute operation in future period.
 
+1. Select **Save operation** at the top of the **Operations** page to process a new operation.
+
 
