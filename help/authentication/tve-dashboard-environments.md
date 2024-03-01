@@ -40,8 +40,6 @@ The environments and profiles in the TVE Dashboard serve various use cases throu
 * Represents the live environment with the latest Adobe Pass release build available to programmers.
 * Maintains stability in code and configuration by immediately reflecting changes on the programmer's application.
 
-For detailed information on the Adobe Pass Authentication environments, view [Understanding the Adobe Pass Authentication environments](/help/authentication/understanding-the-adobe-environments.md).
-
 ## Switch environments {#switch-environments}
 
 To switch between Adobe Pass Authentication environments:
