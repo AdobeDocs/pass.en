@@ -9,6 +9,10 @@ exl-id: 67e4639e-db0b-4400-bb81-e214263e8395
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+## Throttling mechanism
+
+The Adobe Pass Authentication REST API is governed by a [Throttling mechanism](/help/authentication/throttling-mechanism.md).
+
 ## Response Formats {#response-formats}
 
 

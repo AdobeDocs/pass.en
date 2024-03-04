@@ -9,6 +9,10 @@ exl-id: 5807f372-a520-4069-b837-67ae41b7f79b
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!NOTE]
+>
+> REST API implementation is bounded by [Throttling mechanism](/help/authentication/throttling-mechanism.md)
+
 ## REST API Endpoints {#clientless-endpoints}
 
 <REGGIE_FQDN>:

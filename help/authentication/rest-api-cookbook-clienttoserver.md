@@ -17,6 +17,10 @@ This document provides step-by-step instructions for a Programmer's engineering 
 
 This approach requires two components (streaming app and AuthN app) to complete the required flows: start-up, registration, authorization, and view-media flows in the streaming app, and the authentication flow in your AuthN app.
 
+### Throttling mechanism
+
+The Adobe Pass Authentication REST API is governed by a [Throttling mechanism](/help/authentication/throttling-mechanism.md).
+
 ## Components {#components}
 
 In a working Client-to-Server solution the following components are involved:

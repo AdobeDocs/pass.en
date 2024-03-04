@@ -14,6 +14,9 @@ exl-id: 5533d852-f644-417e-bf80-6f7aa1edd6b2
 
 The Adobe Pass Authentication REST API provides direct access to the TV Everywhere (TVE) authentication and authorization services. This API supports two primary architectures: Server-to-Server or Connected Devices (e.g. game consoles, Smart TVs, set-top boxes, etc.) applications that do not have web browsing capabilities. 
 
+### Throttling mechanism
+
+The Adobe Pass Authentication REST API is governed by a [Throttling mechanism](/help/authentication/throttling-mechanism.md).  
  
 
 ### Server-to-Server

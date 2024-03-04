@@ -21,6 +21,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + [The programmer entitlement flow](entitlement-flow.md)
     + [Programmer use cases](programmer-use-cases.md)
     + [Passing client information (device, connection, and application)](passing-client-information-device-connection-and-application.md)
+    + [Throttling mechanism](throttling-mechanism.md)
     + REST API {#restapi}
         + [REST API Overview](rest-api-overview.md)
         + [REST API Cookbook (Server-to-Server)](rest-api-cookbook-servertoserver.md)
