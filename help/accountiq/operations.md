@@ -39,30 +39,67 @@ You can review the effects of an operation through operation reports. To view op
 
    *Figure: List and details of existing operations in Account IQ*
 
+Select the desired **Operation Name** from the list of operations. The following reports are displayed:
 
-1. Select the desired **Operation Name** from the list of operations.
+### Operation performance {#operation-performance}
 
-   The report is displayed in the form of a stacked column graph.
+The operation performance provides a top line readout summarizing the number of accounts impacted, operation progress and the overall sharing score during the evaluation period of an operation.
 
-   ![](assets/operation-impact-report.png)
+#### Impacted accounts {#impacted-accounts}
 
-   *Figure: Operations report to view the impacts of the operations*
+This number displays the count of subscriber accounts that are affected by the action taken during the evaluation period of an operation.
 
-   X-axis represents the evaluation period and y-axis depicts the impact of the operation (in terms of number of accounts in a segment during evaluation period). Each bar is divided into three parts.
+#### Operation progress {#operation-progress}
 
-   * One part represents the number of accounts which still meet the operation segment's criteria.
+This gauge shows the number of days and the percentage of the operation completed out of the planned schedule.
 
-   * Another part represents the number of active accounts for that period which were originally in the segment, but no longer meet the operation segment's criteria.
+#### Overall sharing score {#overall-sharing-score}
 
-   * The third part represents the accounts that were not actve in that period.
+This line graph represents the [overall sharing score](/help/accountiq/data-panels.md#overall-sharing-score) that includes the sharing level and usage from shared accounts for each week or month throughout the evaluation period of an operation.
 
-   >[!NOTE]
-   >
-   >The First bar represents the number of accounts which meet the operation segment's conditions in the beginning of the evaluation period.
+### Operation impact: Accounts in segment {#impact-accounts}
+   
+This report is displayed in the form of a stacked column graph that illustrates the impact of an operation over time. 
 
-   Over time the graph shows effect of your action (through the operation) by indicating the number of accounts that have changed their behavior relative to the original criteria (for example, having sharing probability more than 90 and using more than 5 devices), or have become inactive.
+![](assets/operation-impact-report.png)
 
-1. To close the report and go back to the main Operations page, select **Operations** option under **Actions** in left navigation.
+*Figure: Operations report to view the impacts of the operations*
+
+The x-axis represents the evaluation period, while the y-axis indicates the number of accounts in a specific segment. Each bar in the graph is divided in three colors:
+
+* Pink color represents the number of accounts meeting the segment's conditions used in this operation.
+
+* Blue color represents the number of active accounts that were originally in the segment but not meeting the the segment's conditions during the operation period.
+
+* Grey color represents the inactive accounts during the operation period.
+
+>[!NOTE]
+>
+>The first pink bar represents the number of accounts meeting the operation segment's conditions in the beginning of the evaluation period.
+
+Over time, the graph illustrates changes in account behavior or inactivity due to the operation. For example, having sharing probability more than 90 and using more than 5 devices have become inactive.
+
+### Operation impact: Shared accounts metrics {#impact-shared-accounts}
+
+#### Sharing level {#shar-level}
+
+This line graph represents [sharing level](/help/accountiq/data-panels.md#sharing-level) in each week or month over the course of the evaluation period for an operation.
+
+#### Number of play requests {#play-requests}
+
+This line graph represents [play requests](/help/accountiq/general-usage-reports.md#playreq-uniquesubs) for each week or month throughout the evaluation period of an operation.
+
+### Operation impact: General usage metrics {#impact-general-usage}
+
+#### Number of devices {#devices}
+
+This line graph represents the average [number of devices](/help/accountiq/general-usage-reports.md#devices-week-account) for every week or month in the evaluation period of an operation.
+
+#### Number of IPs and locations {#IPs-locations}
+
+This line graph represents the average [number of IPs](help/accountiq/general-usage-reports.md#ip-week-account) and [locations](/help/accountiq/general-usage-reports.md#locations-week-account) for each week or month in the evaluation period of an operation.
+
+To close the report and go back to the main **Operations** page, select **Operations** tab under **Actions** in left navigation.
 
 ## Create new operation {#create-new-operation}
 
