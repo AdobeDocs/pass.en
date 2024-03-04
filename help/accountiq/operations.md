@@ -97,7 +97,7 @@ This line graph represents the average [number of devices](/help/accountiq/gener
 
 #### Number of IPs and locations {#IPs-locations}
 
-This line graph represents the average [number of IPs](help/accountiq/general-usage-reports.md#ip-week-account) and [locations](/help/accountiq/general-usage-reports.md#locations-week-account) for each week or month in the evaluation period of an operation.
+This line graph represents the average [number of IPs](/help/accountiq/general-usage-reports.md#ip-week-account) and [locations](/help/accountiq/general-usage-reports.md#locations-week-account) for each week or month in the evaluation period of an operation.
 
 To close the report and go back to the main **Operations** page, select **Operations** tab under **Actions** in left navigation.
 
