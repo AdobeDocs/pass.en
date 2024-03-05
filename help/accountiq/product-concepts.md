@@ -60,6 +60,10 @@ Concurrent usage is calculated using the maximum speed(miles/hour) between 2 dif
 
 A digital video hardware product capable of playing TV Everywhere content and supported by Adobe Pass. For example, smart phones, laptop and desktop computers, game consoles, and smart televisions.
 
+## [!UICONTROL Evaluation period] {#evaluation-period-def}
+
+Evaluation period is the time from the beginning of the action associated with Operation until the  end of the action or it's measurement.
+
 ## [!UICONTROL Geographical Span] {#geographical-span-def}
 
 The distance between the farthest points in a set of locations.

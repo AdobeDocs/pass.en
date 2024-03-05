@@ -40,7 +40,7 @@ It opens a **New segment** page, which includes the following elements:
 
    *Figure: New segment page*
 
-**A.** Segment components **B.** Segment definition **C**. Segment summary
+**A.** Segment components **B.** Segment definition **C.** Segment summary
 
 * **Segment components**: An inventory of programmers and channels, MVPDs, metrics, and calculated metrics used to define a segment.
 
