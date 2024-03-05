@@ -43,7 +43,7 @@ Select the desired **Operation Name** from the list of operations. The following
 
 ### Operation performance {#operation-performance}
 
-The operation performance provides a top line readout summarizing the number of accounts impacted, operation progress, and the overall sharing score of the accounts in the segment during the opertion's [evaluation period](/help/accountiq/product-conecpts.md#evaluation-period-def) of an operation.
+The operation performance provides a top line readout summarizing the number of accounts impacted, operation progress, and the overall sharing score of the accounts in the segment during the opertion's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def) of an operation.
 
 ![Operation performance report](assets/operation-performance.png)
 
@@ -71,7 +71,7 @@ This report is displayed as a stacked column graph that illustrates the impact o
 
 *Figure: Operation impact on accounts in segment graph*
 
-The x-axis represents the operation's [evaluation period](/help/accountiq/product-conecpts.md#evaluation-period-def), while the y-axis indicates the status of accounts in the operation's segment. Each bar in the graph is divided into three colors:
+The x-axis represents the operation's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def), while the y-axis indicates the status of accounts in the operation's segment. Each bar in the graph is divided into three colors:
 
 * Pink represents the number of accounts meeting the segment's conditions used in this operation.
 
@@ -87,7 +87,7 @@ Over time, the graph illustrates changes in account behavior or inactivity due t
 
 ### Operation impact: Shared accounts metrics {#impact-shared-accounts}
 
-The shared accounts metrics provide an overview of sharing level and play requests by the subscriber accounts in the operation's segment during the operation's [evaluation period](/help/accountiq/product-conecpts.md#evaluation-period-def).
+The shared accounts metrics provide an overview of sharing level and play requests by the subscriber accounts in the operation's segment during the operation's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def).
 
 #### Sharing level {#share-level}
 
@@ -107,7 +107,7 @@ This line graph represents [play requests](/help/accountiq/general-usage-reports
 
 ### Operation impact: General usage metrics {#impact-general-usage}
 
-The general usage metrics provide an overview of average number of devices, IPs and locations in the operation's segment during the operation's [evaluation period](/help/accountiq/product-conecpts.md#evaluation-period-def). 
+The general usage metrics provide an overview of average number of devices, IPs and locations in the operation's segment during the operation's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def). 
 
 #### Number of devices {#devices}
 
