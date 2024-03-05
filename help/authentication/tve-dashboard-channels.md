@@ -68,7 +68,7 @@ This tab displays a list of available certificates and inherited available certi
 
 #### Available Certificates {#available-certificates}
 
-These certificates serve as private or public keys and and play a crucial role in validation purposes.
+These certificates serve as private or public keys and play a crucial role in validation purposes.
 
 #### Inherited Available Certificates {#inherited-avail-certificates}
 
