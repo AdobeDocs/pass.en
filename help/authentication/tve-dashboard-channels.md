@@ -13,9 +13,9 @@ To configure channels in the TVE Dashboard, navigate to the **Channels** tab und
 
 A list of linked channels with key details is displayed. The details include:
 
-   * **Display Name**: The brand name of the channel used for commercial purposes.
-   * **Channel Id**: A unique system address, also referred to as requestor Id.
-   * **Integrations**: The number of connections established with MVPDs.
+* **Display Name**: The brand name of the channel used for commercial purposes.
+* **Channel Id**: A unique system address, also referred to as requestor Id.
+* **Integrations**: The number of connections established with MVPDs.
 
 To quickly locate a channel, you can enter the display name in **Search**.
 
