@@ -1,6 +1,6 @@
 ---
 title: Programmers
-Description: Learn about programmers and its configurations within TVE dashboard.
+description: Learn about programmers and its configurations within TVE dashboard.
 ---
 # Programmers {#programmers}
 
