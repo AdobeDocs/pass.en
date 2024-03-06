@@ -14,7 +14,7 @@ Within each environment, there are two different profiles:
 
 * **Staging**: The staging profile connects to MVPD's staging server for testing and validation of integrations before going live.
 
-* **Production**: The production profile connects to MVPD's production server for actual production activities and provides authentication services to programmers.
+* **Production**: The production profile connects to MVPD's production server for actual production activities.
 
 ## Uses cases
 
@@ -22,7 +22,7 @@ The environments and profiles in the TVE Dashboard serve various use cases throu
 
 ### Prequal Staging
 
-* Validate new, unreleased features of the Adobe Authentication server using MVPD's staging endpoints.
+* Validate new, unreleased features of the Adobe Pass Authentication server using MVPD's staging endpoints.
 * Primarily used by Adobe Authentication product team for adding and validating new MVPD integrations.
 
 ### Prequal Production
@@ -57,20 +57,3 @@ To switch between Adobe Pass Authentication environments:
 >
 > The configurations may vary in each environment based on your settings.
 
-<!--Remove this section
->[!IMPORTANT]
->
->When making administrative changes to your Adobe Pass Authentication configuration through the TVE Dashboard, we strongly advise you to follow the sequence below in order to ensure proper functionality.
-
-To make administrative changes to your Adobe Pass Authentication configuration through the TVE Dashboard:
-
-* Perform the changes in [Release Staging and validate them](http://sp.auth-staging.adobe.com/apitest/api.html).
-* Perform the changes in [Prequal Production and validate them](http://sp.auth-staging.adobe.com/apitest/api.html).
-* Perform the changes in [Release Production and validate them](http://sp.auth-staging.adobe.com/apitest/api.html). -->
-
-<!--Remove this section
-For the administrative changes to go live, navigate to **Review and Push Changes** section by selecting the button, which will show up in the bottom-left part of the sidebar, in order to review changes, add a description for the newly created changes and confirm the configuration update by selecting the "Push Configuration".
-
-![Tve Dashboard review an push notification](assets/tve-review-push-notifications.png)
-
-*Figure: The Adobe Primetime TVE Dashboard Review and Push Changes notification*-->

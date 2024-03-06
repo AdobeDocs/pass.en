@@ -5,22 +5,21 @@ description: Learn about channels and its configurations within TVE dashboard.
 
 # Channels {#channels}
 
-TVE Dashboard channels are the primary sources of video content provided by Multichannel Video Programming Distributors (MVPDs). These channels are characterized by their unique addresses and provide subscribers with continuous access to a specific range of content through Set-Top Box (STB).
+TVE Dashboard channels are the primary sources of video content provided by Multichannel Video Programming Distributors (MVPDs). These channels are characterized by their unique addresses and provide subscribers with continuous access to a specific range of content through Set-Top Box (STB). 
 
-When you are logged in to TVE Dashboard, you can modify the settings of the associated channels. To configure channels in TVE Dashboard, follow these steps:
+When you log in to the TVE Dashboard, you can customize the settings for channels associated with a specific programmer. 
 
-1. Log in with your authorized programmer credentials.
-1. Select **Channels** tab under **Configurations** in the left panel. 
+To configure channels in the TVE Dashboard, navigate to the **Channels** tab under **Configurations** in the left panel. 
 
-   A list of available channels for a particular programmer is displayed. This list presents key details about each channel as follows:
+A list of linked channels with key details is displayed. The details include:
 
-* **Display Name**: The brand name of the channel used for commercial purposes.
-* **Channel Id**: A unique address within the system, also known as requestor Id that serves as a reference for internal processes and identification.
-* **Integrations**: The number of connections established with MVPDs.
+   * **Display Name**: The brand name of the channel used for commercial purposes.
+   * **Channel Id**: A unique system address, also referred to as requestor Id.
+   * **Integrations**: The number of connections established with MVPDs.
 
-   To quickly locate a channel, you can enter its display name in **Search**.
+To quickly locate a channel, you can enter the display name in **Search**.
 
-You can perform the following operations with channels:
+Select a desired channel from the list to perform the following actions:
 
 * [Manage channel configurations](#manage-channel-conf)
 * [Add new channel](#add-new-channel)
@@ -64,7 +63,7 @@ This tab displays a list of available integrations of channels with MVPDs, inclu
 
 ### Certificates {#certificates}
 
-This tab displays a list of available certificates and inherited available certificates used in the authentication flow, providing key details about each certificate. The details include the status (whether enabled for usage or not), serial number, the name of issuer organization and subject organization, activation date, expiry date, and a drop-down option to encrypt user metadata dropdown (If selected as **Yes**, the certificate will encrypt sensitive user information, such as zip code values).
+This tab displays a list of [available certificates](#available-certificates) and [inherited available certificates](#inherited-avail-certificates) used in the authentication flow, providing key details about each certificate. The details include the status (whether enabled for usage or not), serial number, the name of issuer organization and subject organization, activation date, expiry date, and a drop-down option to encrypt user metadata dropdown (If selected as **Yes**, the certificate will encrypt sensitive user information, such as zip code values).
 
 #### Available Certificates {#available-certificates}
 
@@ -106,7 +105,7 @@ This tab displays a list of available domains through which the respective chann
 1. Select **Remove**.
 1. Select **Delete** from the **Delete domain** dialog box.
 
-The selected domain will no longer be available for use, and the application associated with this domain will lose access to the Adobe Pass authentication services.
+The deleted domain will no longer be available for use, and the application associated with this domain will lose access to the Adobe Pass authentication services.
 
 ### Registered Applications {#registered-applications}
 
@@ -115,3 +114,16 @@ This tab provides a list of application registrations. For more details, view [D
 ### Custom Schemes {#custom-schemes}
 
 This tab displays a list of custom schemes. For more details, view [iOS/tvOS application registration](/help/authentication/iostvos-application-registration.md) and [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md)
+
+## Add new channel {#add-new-channel}
+
+To add new channel, follow these steps:
+
+1. Go to the **Channels** tab under **Configurations** in the left panel.
+1. Select **Add new channel** at the top of the list.
+1. In the **New channel** dialog box, select **Programmer Id** from the drop-down menu.
+1. Enter a unique system address in **Channel Id**.
+1. Enter a commercial brand name in **Display name**. 
+1. Select **Add channel**.
+
+A new configuration is created and ready to be pushed to the server. The new channel will be added to the list on the **Channels** page only after review and push changes. For more details, view [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).

@@ -13,9 +13,9 @@ The [[!DNL Adobe] Pass TVE Dashboard](https://console.auth.adobe.com/) is a prim
 
 * **Integration management**: Add new integrations between the associated channels and Multichannel Video Programming Distributor (MVPD) in the Adobe Pass ecosystem.
 
-* **Property configuration**: Configure multiple properties for each integration to implement granular business rules customized to specific needs.
+* **Property configuration**: Configure multiple properties for each integration to implement granular business rules customized to specific platform needs.
 
-* **Report generation**: Access and export detailed reports on configuration setups across MVPDs and platforms such as desktop, mobile, TV, etc. These reports provide insights into Single Sign-On (SSO) support and duration for subscriber sessions at MVPD and platform levels.
+* **Report generation**: Access and export detailed reports on configuration setups across MVPDs, including various platform categories like desktop, mobile, TV connected devices, and platforms such as iOS, Android, tvOS, Roku, and FireTV. These reports provide insights into Single Sign-On (SSO) support and duration for subscriber sessions at MVPD and platform levels.
 
 * **Traffic visualization**: Visualize high-level authentication and authorization traffic data for the properties of a programmer.
 
@@ -24,7 +24,7 @@ Adobe Pass Authentication provides the following tools and features in **TVE Das
 * [Environments](/help/authentication/tve-dashboard-environments.md)
 * Dashboard
 * [Channels](/help/authentication/tve-dashboard-channels.md)
-* Programmers
+* [Programmers](/help/authentication/tve-dashboard-programmers.md)
 * MVPDs
 * Integrations
 * Review and push changes
