@@ -33,7 +33,7 @@ You can review the effects of an operation through operation reports. To view op
 * Start date of the operation
 * End date of the operation
 * Date the operation was created
-* Date of the last modification made to the operation
+* Last modification date of the operation
 
 ![](assets/operations-page.png)
 
@@ -43,7 +43,7 @@ Select the desired **Operation Name** from the list of operations. The following
 
 ### Operation performance {#operation-performance}
 
-The operation performance provides a top line readout summarizing the number of accounts impacted, operation progress, and the overall sharing score of the accounts in the segment during the opertion's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def) of an operation.
+The operation performance provides a top line readout summarizing the number of accounts impacted, operation progress, and the overall sharing score of the accounts in the segment during the opertion's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def).
 
 ![Operation performance report](assets/operation-performance.png)
 
@@ -75,7 +75,7 @@ The x-axis represents the operation's [evaluation period](/help/accountiq/produc
 
 * Pink represents the number of accounts meeting the segment's conditions used in this operation.
 
-* Blue represents the number of active accounts that were originally in the segment but did not meet the segment's conditions during the evaluation period.
+* Blue represents the number of active accounts that were originally in the segment but did not meet the segment's conditions during each week or month in the operation's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def).
 
 * Grey represents the accounts that were inactive during the evaluation period.
 
@@ -83,7 +83,7 @@ The x-axis represents the operation's [evaluation period](/help/accountiq/produc
 >
 >The first pink bar represents the number of accounts meeting the operation segment's conditions at the beginning of the evaluation period.
 
-Over time, the graph illustrates changes in account behavior or inactivity due to the operation's action. For example, having a sharing probability of more than 90 and using more than 5 devices have become inactive.
+Over time, the graph illustrates changes in account behavior relative to the original criteria (for example, having a sharing probability of more than 90 and using more than 5 devices have become inactive), or have become inactive.
 
 ### Operation impact: Shared accounts metrics {#impact-shared-accounts}
 
@@ -167,7 +167,7 @@ To create new operation, follow these steps:
 
    There are two options available:
 
-   * Select **CM Policy** for systems integrated with Account IQ, such as concurrency monitoring.
+   * Select **CM Policy** for the concurrency monitoring system integrated with Account IQ.
 
    * Select **External actions** to create and process workflows external to Account IQ and not integrated with Account IQ system.
 
@@ -179,7 +179,7 @@ To create new operation, follow these steps:
 
    >[!IMPORTANT]
    >
-   >Currently, the default activation option is set to **On date**. The option to select **When a condition is met** and **Manually** will be available in upcoming releases.
+   >Currently, the default activation **Start date** and **End date** are set to **On date**. The option to select **When a condition is met** and **Manually** will be available in upcoming releases.
    
    >[!NOTE]
    >
@@ -194,9 +194,9 @@ To create new operation, follow these steps:
 
       **A.** Start date picker **B.** End date picker
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >Verify that the **Start date** is set later than the evaluation period and the current date, and the **End date** is set later than the Start date and the current date to schedule and execute operation in future period.
+   >The **Start date** must be later than both the evaluation period and the current date, while the **End date** must be later than the Start date and the current date in order to schedule and execute operations in the future period.
 
 1. Select **Save operation** at the top of the **Operations** page to process a new operation.
 
