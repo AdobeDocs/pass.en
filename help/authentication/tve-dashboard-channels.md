@@ -129,7 +129,7 @@ This tab displays a list of available domains through which the respective chann
 
 >[!NOTE]
 >
->A new configuration is created and ready to be pushed to the server. The domain will be deleted only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+>A new local configuration change is pending and ready to be pushed to the server. The domain will be deleted only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
 The deleted domain will no longer be available for use, and the application associated with this domain will lose access to the Adobe Pass authentication services.
 

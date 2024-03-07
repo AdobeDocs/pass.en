@@ -4,22 +4,20 @@ description: Learn about programmers and its configurations within TVE dashboard
 ---
 # Programmers {#programmers}
 
-Programmers in the TVE Dashboard, also known as networks, are subsidiary companies of a larger corporation that owns and manages one or more channels within their domain.
-
-When you log in to the TVE Dashboard, you can customize the settings for a [programmer](/help/authentication/glossary.md#programmer).
+When you log in to the TVE Dashboard, you can customize the settings for a specific [programmer](/help/authentication/glossary.md#programmer).
 
 >[!NOTE]
 >
-> You can only adjust settings for one programmer at a time based on your current login credentials.
+>Settings can only be adjusted for one programmer at a time based on the current login credentials.
 
 To configure programmers in TVE Dashboard, navigate to the **Programmers** tab under **Configurations** in the left panel.
 
 The details for a programmer is displayed as follows:
 
-* **Programmer ID**: A reference ID within the system that helps in identifying a specific programmer.
-* **Channels**: The number of associated channels linked to the programmer.
+* **Programmer ID**: A media company identifier within the system.
+* **Channels**: The number of associated channels linked to a programmer.
 
-Select programmer to perform the following actions:
+You can perform the following actions with programmers:
 
 * [Manage programmer configurations](#manage-programmer-conf)
 * [Add new programmer](#add-new-programmer)
@@ -35,35 +33,48 @@ Navigate to the **Programmers** tab under **Configurations** in the left panel a
 
 >[!IMPORTANT]
 >
-> To activate the configuration changes for all tabs mentioned above, view [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md). 
+> To activate the configuration changes for all these tabs, view [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md). 
 
 ### Channels {#channels}
 
-This tab a list of channels linked with a logged in programmer. Select a specific **Channel** from the list to directly access the **Channels** tab in the left panel. To know more, refer to the intructions for [Channels](/help/authentication/tve-dashboard-channels.md).
+This tab displays a list of channels linked with the logged in programmer. Select a specific **Channel** from this list to directly access channel properties page located under the **Channels** tab in the left panel. For more details, refer to the intructions for [Channels](/help/authentication/tve-dashboard-channels.md).
 
 ### Certificates {#certificates}
 
-This tab displays a list of [available certificates](#available-certificates) used in the authentication flow, providing key details about each certificate. The details include the status (whether enabled for usage or not), serial number, the name of issuer organization and subject organization, activation date, expiry date, and a drop-down option to encrypt user metadata dropdown (If selected as **Yes**, the certificate will encrypt sensitive user information, such as zip code values).
+This tab displays a list of [available certificates](#available-certificates) used in the authentication flow, providing key details about each certificate. The details include the status (whether enabled for usage or not), serial number, the name of issuer organization and subject organization, activation date, expiry date, and a dropdown menu to encrypt user metadata (If selected as **Yes**, the certificate will be used to encrypt sensitive user information, such as zip code values).
 
 #### Available Certificates {#available-certificates}
 
-These certificates serve as private or public keys and play a crucial role in validation purposes.#### Add new certificate {#add-new-certificate}
+These certificates serve as private or public keys and play a crucial role in validation purposes. Each certificate defined in  this section can be used by any channel that belong to the same media company.
+
+You can make the following changes to available certificates:
+
+* [Add new certificate](#add-new-certificate)
+* [Delete certificate](#delete-certificate)
 
 #### Add new certificate {#add-new-certificate}
 
-1. Select **Add new certificate** at the top of the channels page.
+1. Select **Add new certificate** at the top of the **Programmers** page.
 1. Paste the public key of your certificate in the **New certificate** dialog box.
 1. Select **Add certificate**.
 
-A new configuration is created and ready to be pushed to the server. The certificate will be added only after review and push changes. For more details, view [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+To activate a new certificate, select **Yes** from ***Used to encrypted user metadata** dropdown menu in the list of available certificates.
 
-#### Remove certificate {#remove-certificate}
+>[!NOTE]
+>
+>A new local configuration change is pending and ready to be pushed to the server. The new certificate will be added only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+
+#### Delete certificate {#delete-certificate}
 
 1. Hover over the desired certificate you want to delete from the list of **Available certificates**.
 1. Select **Remove**.
 1. Select **Delete** from the **Delete certificate** dialog box.
 
-The deleted certificated will no longer be available for use.
+>[!NOTE]
+>
+>A new local configuration change is pending and ready to be pushed to the server. The certificate will be deleted only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+
+The deleted certificate will no longer be available for use.
 
 ### Registered Applications {#registered-applications}
 
@@ -80,8 +91,10 @@ To add new programmer entity, follow these steps:
 1. Go to the **Programmers** tab under **Configurations** in the left panel.
 1. Select **Add new programmer** at the top of the list.
 1. In the **New programmer** dialog box, enter a media company identifier in **Programmer Id**.
-1. Enter a commercial brand name you want to display in console in **Display name**. 
+1. Enter a commercial brand name you want to be displayed in the console under **Display name**. 
 1. Select **Add programmer**.
 
-A new configuration is created and ready to be pushed to the server. The new programmer will be added to the list on the **Programmers** page only after review and push changes. For more details, view [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+>[!NOTE]
+>
+>A new local configuration change is pending and ready to be pushed to the server. The new programmer will be added only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
