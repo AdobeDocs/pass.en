@@ -5,8 +5,6 @@ description: Learn about channels and its configurations within TVE dashboard.
 
 # Channels {#channels}
 
-TVE Dashboard channels are the primary sources of video content provided by Multichannel Video Programming Distributors (MVPDs). These channels are characterized by their unique addresses and provide subscribers with continuous access to a specific range of content through Set-Top Box (STB). 
-
 When you log in to the TVE Dashboard, you can customize the settings for channels associated with a specific programmer. 
 
 To configure channels in the TVE Dashboard, navigate to the **Channels** tab under **Configurations** in the left panel. 
@@ -14,12 +12,12 @@ To configure channels in the TVE Dashboard, navigate to the **Channels** tab und
 A list of linked channels with key details is displayed. The details include:
 
 * **Display Name**: The brand name of the channel used for commercial purposes.
-* **Channel Id**: A unique system address, also referred to as requestor Id.
+* **Channel Id**: A unique identifier, also referred to as *requestor Id*.
 * **Integrations**: The number of connections established with MVPDs.
 
 To quickly locate a channel, you can enter the display name in **Search**.
 
-Select a desired channel from the list to perform the following actions:
+You can perform the following actions with channels:
 
 * [Manage channel configurations](#manage-channel-conf)
 * [Add new channel](#add-new-channel)
@@ -37,7 +35,7 @@ Navigate to the **Channels** tab under **Configurations** in the left panel and 
 
 >[!IMPORTANT]
 >
-> To activate the configuration changes for all tabs mentioned above, view [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md). 
+> To activate the configuration changes for all these tabs, view [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md). 
 
 ### General settings {#general-settings}
 
@@ -45,7 +43,7 @@ You can edit the following sections within this tab:
 
 #### Channel information {#channel-information}
 
-* **Display Name**: The Channel's commercial name.
+* **Display Name**: The brand name of the channel used for commercial purposes.
 
 * **Default Redirect URL**: The backup redirect URL for authentication and logout.
 
@@ -59,11 +57,11 @@ To enable **Analytics Configuration**, kindly contact Technical Account Manager 
 
 ### Integrations {#integrations}
 
-This tab displays a list of available integrations of channels with MVPDs, including the status of each integration, whether it's enabled or not. Select a specific **Integration** from the list to directly access the **Integrations** tab in the left panel. To know more, view [Integrations](/help/authentication/tve-dashboard-integrations.md).
+This tab displays a list of available integrations of current selected channel with MVPDs, including the status of each integration, whether it's enabled or not. Select a specific entry from this list to directly access integration properties page located under the **Integrations** tab in the left panel. To know more, view [Integrations](/help/authentication/tve-dashboard-integrations.md).
 
 ### Certificates {#certificates}
 
-This tab displays a list of [available certificates](#available-certificates) and [inherited available certificates](#inherited-avail-certificates) used in the authentication flow, providing key details about each certificate. The details include the status (whether enabled for usage or not), serial number, the name of issuer organization and subject organization, activation date, expiry date, and a drop-down option to encrypt user metadata dropdown (If selected as **Yes**, the certificate will encrypt sensitive user information, such as zip code values).
+This tab displays a list of [available certificates](#available-certificates) and [inherited available certificates](#inherited-avail-certificates) used in the authentication and user metadata flows, providing key details about each certificate. The details include the status (whether enabled for usage or not), serial number, the name of issuer organization and subject organization, activation date, expiry date, and a dropdown menu to encrypt user metadata (If selected as **Yes**, the certificate will be used to encrypt sensitive user information, such as zip code values).
 
 #### Available Certificates {#available-certificates}
 
@@ -73,17 +71,45 @@ These certificates serve as private or public keys and play a crucial role in va
 
 These certificates are defined at the media company level. All channels associated with the same media company can use these certificates.
 
+You can make the following changes to available certificates:
+
+* [Add new certificate](#add-new-certificate)
+* [Delete certificate](#delete-certificate)
+
 #### Add new certificate {#add-new-certificate}
 
 1. Select **Add new certificate** at the top of the channels page.
 1. Paste the public key of your certificate in the **New certificate** dialog box.
 1. Select **Add certificate**.
 
-A new configuration is created and ready to be pushed to the server. The certificate will be added only after review and push changes. For more details, view [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+To activate a new certificate, select **Yes** from ***Used to encrypted user metadata** dropdown menu in the list of available certificates.
+
+>[!NOTE]
+>
+>A new local configuration change is pending and ready to be pushed to the server. The new certificate will be added and activated only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+
+#### Delete certificate {#delete-certificate}
+
+1. Hover over the desired certificate you want to delete from the list of **Available certificates**.
+1. Select **Remove**.
+1. Select **Delete** from the **Delete certificate** dialog box.
+
+>[!NOTE]
+>
+>A new local configuration change is pending and ready to be pushed to the server. The certificate will be deleted only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+
+The deleted certificate will no longer be available for use.
 
 ### Domains {#domains}
 
-This tab displays a list of available domains through which the respective channel communicates with Adobe Pass Authentication. You can perform the following actions with domains:
+This tab displays a list of available domains through which the respective channel communicates with Adobe Pass Authentication. You can make the following changes to domains:
+
+* [Add new domain](#add-domains)
+* [Delete domain](#delete-domain)
+
+>[!TIP]
+>
+> If more general domain already exists in the list, avoid adding a new subdomain.
 
 #### Add new domain {#add-domains}
 
@@ -91,19 +117,19 @@ This tab displays a list of available domains through which the respective chann
 1. Add a name of your domain in **New domain** dialog box. 
 1. Select **Add domain** to initiate the process of adding a new domain for the selected channel.
 
->[!TIP]
+>[!NOTE]
 >
-> If more general domain already exists in the list, avoid adding a new subdomain.
+>A new local configuration change is pending and ready to be pushed to the server. The new domain will be added only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
-![Add a new domain to a selected channel section](assets/add-domain-to-channel-sec.png)
-
-*Figure: Domains tab in channels*
-
-#### Delete Domain {#delete-domain}
+#### Delete domain {#delete-domain}
 
 1. Hover over the desired domain you want to delete from the list of **Available Domains**.
 1. Select **Remove**.
 1. Select **Delete** from the **Delete domain** dialog box.
+
+>[!NOTE]
+>
+>A new configuration is created and ready to be pushed to the server. The domain will be deleted only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
 The deleted domain will no longer be available for use, and the application associated with this domain will lose access to the Adobe Pass authentication services.
 
@@ -121,9 +147,16 @@ To add new channel, follow these steps:
 
 1. Go to the **Channels** tab under **Configurations** in the left panel.
 1. Select **Add new channel** at the top of the list.
-1. In the **New channel** dialog box, select **Programmer Id** from the drop-down menu.
-1. Enter a unique system address in **Channel Id**.
-1. Enter a commercial brand name in **Display name**. 
+1. In the **New channel** dialog box, select **Programmer Id** from the dropdown menu.
+1. Enter a unique identifier in **Channel Id**.
+
+   >[!NOTE]
+   >
+   >It's essential to coordinate and confirm the **Channel Id** value in advance with your Technical Account Manager (TAM).
+
+1. Enter the brand name of the channel used for commercial purposes in **Display name**. 
 1. Select **Add channel**.
 
-A new configuration is created and ready to be pushed to the server. The new channel will be added to the list on the **Channels** page only after review and push changes. For more details, view [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+>[!NOTE]
+>
+>A new local configuration change is pending and ready to be pushed to the server. The new channel will be added to the list on the **Channels** page only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).

@@ -11,15 +11,15 @@ description: Know about tools and features of TVE Dashboard.
 
 The [[!DNL Adobe] Pass TVE Dashboard](https://console.auth.adobe.com/) is a primary tool for Adobe Pass Authentication customers (Programmers) to manage their configurations and data. This self-service dashboard is designed to enable a range of functionalities as follows:
 
-* **Integration management**: Add new integrations between the associated channels and Multichannel Video Programming Distributor (MVPD) in the Adobe Pass ecosystem.
+* **Integration management**: Add new integrations between the associated channels and Multichannel Video Programming Distributors (MVPDs) in the Adobe Pass Authentication ecosystem.
 
 * **Property configuration**: Configure multiple properties for each integration to implement granular business rules customized to specific platform needs.
 
-* **Report generation**: Access and export detailed reports on configuration setups across MVPDs, including various platform categories like desktop, mobile, TV connected devices, and platforms such as iOS, Android, tvOS, Roku, and FireTV. These reports provide insights into Single Sign-On (SSO) support and duration for subscriber sessions at MVPD and platform levels.
+* **Report generation**: Access and export detailed reports on configuration setups across MVPDs, including various platform categories like *Desktop, Mobile, TV Connected Devices*, and platforms such as *iOS, Android, tvOS, Roku, and FireTV*. These reports provide insights into Single Sign-On (SSO) support and duration for subscriber authentication or authorization sessions at MVPD and platform levels.
 
 * **Traffic visualization**: Visualize high-level authentication and authorization traffic data for the properties of a programmer.
 
-Adobe Pass Authentication provides the following tools and features in **TVE Dashboard**:
+Adobe Pass Authentication provides the following sections in **TVE Dashboard**:
 
 * [Environments](/help/authentication/tve-dashboard-environments.md)
 * Dashboard
@@ -28,7 +28,7 @@ Adobe Pass Authentication provides the following tools and features in **TVE Das
 * MVPDs
 * Integrations
 * Review and push changes
-* Reports
+* [Reports](/help/authentication/tve-dashboard-reports.md)
 * Changes log
 
 ## Resources {#resources-tve-dashboard}

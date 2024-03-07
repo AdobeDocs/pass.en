@@ -4,7 +4,7 @@ description: Understand the use and working of different environments in TVE das
 ---
 # Environments {#environments}
 
-TVE Dashboard environments include the different conditions where a program or system operates, customized to fulfill specific purposes. The TVE Dashboard has two primary environments:
+TVE Dashboard environments include the different conditions where a program or system operates. The TVE Dashboard provides access to two primary environments, customized to fulfill specific purposes, within the Adobe Pass Authentication offering:
 
 * **Prequal**: The Pre-qualification environment serves as a testing ground for preparing and testing new builds before deployment to the live environment.
 
@@ -45,7 +45,7 @@ The environments and profiles in the TVE Dashboard serve various use cases throu
 To switch between Adobe Pass Authentication environments:
 
 1. Log in with your authorized programmer credentials.
-1. **Select an option** from the **Environment** tab at the top of the left panel.
+1. **Select an option** from the **Environment** dropdown at the top of the left panel.
 1. Choose the desired environment from the drop-down menu.
 
    ![TVE Dashboard environments dropdown](assets/tve-dashboard-env.png)
