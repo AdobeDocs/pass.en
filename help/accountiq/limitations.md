@@ -23,9 +23,9 @@ Adobe strives to offer robust functionality and seamless user experiences throug
 
 * The Benchmarking, Detection Models, Segments, Snapshots, and Rules sections in the left navigation are currently disabled and will be available in a forthcoming version.
 
-* When creating [Operations](/help/accountiq/operation-affecting-user-segment.md), you can identify only two kinds of [Actions](/help/accountiq/operation-affecting-user-segment.md) as of now — Concurrency Monitory rules and External Actions.
+* When [creating Operations](/help/accountiq/operations.md#create-new-operation), you can identify only two kinds of [Actions](/help/accountiq/operations.md#action) as of now — Concurrency Monitory rules and External Actions.
 
-* Currently, Operations can only be created and [scheduled](/help/accountiq/operation-affecting-user-segment.md#action). Future versions will allow you to pause, resume, and fully manage them.
+* Currently, Operations can only be created and [scheduled](/help/accountiq/operations.md#schedule). Future versions will allow you to pause, resume, and fully manage them.
 
 * Because of the more limited set of data used, Isolation mode does not truly reflect the amount of sharing. Therefore, MVPD in Isolation mode cannot be compared to any other MVPD. <!--do we need to separate out this limitation, which is from a different persona i.e. only for Programmer persona?-->
 

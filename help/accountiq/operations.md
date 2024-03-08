@@ -129,11 +129,18 @@ To close the report and go back to the main **Operations** page, select **Operat
 
 ## Create new operation {#create-new-operation}
 
-To create new operation, follow these steps:
+When you go to the **Operations** tab under **Actions** in the left panel, select **Create new operation** at the top of the **Operations** page.
 
-1. Navigate to the **Operations** tab under **Actions** in the left panel of Account IQ application.
-1. Select **Create new operation** at the top of the **Operations** page.
-1. Add a name for the operation in **Operation name** within **Operation details**.
+To create new operation, follow the instructions in the following sections:
+
+* [Operation details](#operation-details)
+* [Segment](#segment)
+* [Action](#action)
+* [Schedule](#schedule)
+
+### Operation details {#operation-details}
+
+In this section, add a name for the operation in **Operation name**.
 
    >[!TIP]
    >
@@ -143,7 +150,9 @@ To create new operation, follow these steps:
 
    *Figure: Add Operation name in Operation details*
 
-1. In the **Segment** section, **Select segment** to which you want to use this operation. Know more about [how to select a segment](/help/accountiq/segments-timeinterval.md#segment-selection). 
+### Segment {#segment}
+
+In this section, click on **Select segment** and choose a segment to which you want to use this operation. Know more about [how to select a segment](/help/accountiq/segments-timeinterval.md#segment-selection). 
 
    Once you've selected a segment, use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. Know more about [segment summary](segments-timeinterval.md#segment-summary).
 
@@ -159,7 +168,9 @@ To create new operation, follow these steps:
 
    Select **Granularity and time interval** to monitor the operation during a specific period. Know more about how to select [Granularity and time interval](/help/accountiq/segments-timeinterval.md#granularity-timeinterval).
 
-1. In the **[!UICONTROL Action]** section, choose an **Action** you want to perform on the selected segment from the drop-down.
+### Action {#action}
+
+In this section, choose an **Action** you want to perform on the selected segment from the dropdown menu.
 
    ![Select the type of Action](assets/apply-actions.png)
 
@@ -175,7 +186,9 @@ To create new operation, follow these steps:
    >
    >External actions may not always directly relate to password sharing but can still impact it, such as launching of a new season.
 
-1. In the **Schedule** section, select the **Start date** and **End date** from the date-picker to set the activation for the operation.
+### Schedule {#schedule}
+
+In this section, select the **Start date** and **End date** from the date-picker to set the activation for the operation.
 
    >[!IMPORTANT]
    >
@@ -198,7 +211,7 @@ To create new operation, follow these steps:
    >
    >The **Start date** must be later than both the evaluation period and the current date, while the **End date** must be later than the Start date and the current date in order to schedule and execute operations in the future period.
 
-1. Select **Save operation** at the top of the **Operations** page to process a new operation.
+Select **Save operation** at the top of the **Operations** page to process a new operation.
 
 ## Stop operation {#stop-operation}
 
@@ -206,7 +219,12 @@ You can only stop the operations that are currently in **Running** status. To st
 
 1. Navigate to the **Operations** tab under **Actions** in  the left navigation of Account IQ application.
 1. Select **Options** menu of the operation you want to stop.
-1. Select **Stop operation**.
+
+   ![Select options menu to stop the operation](assets/stop-operation.png)
+
+   *Figure: Select Options menu to stop the operation*
+   
+1. Select **Stop**.
 
 
 
