@@ -116,7 +116,7 @@ The [AuthN TTL Reports](#authn-ttl-reports), [AuthZ TTL Reports](#authz-ttl-repo
 
 To export data, select **Export report** at the upper-right corner of the desired report.
  
-Depending on the respective report you've exported, a file named **Adobe Pass - Reports - AuthN TTL.csv**, **Adobe Pass - Reports - AuthZ TTL.csv** or **Adobe Pass - Reports - SSO.csv** will be downloaded automatically to your computer.
+Depending on the respective report you've exported, a file named **Adobe Pass - Reports - AuthN TTL.csv**, **Adobe Pass - Reports - AuthZ TTL.csv**, or **Adobe Pass - Reports - SSO.csv** will be downloaded automatically to your computer.
 
 >[!NOTE] 
 >
