@@ -148,68 +148,68 @@ In this section, add a name for the operation in **Operation name**.
 
    ![Add operation name in operation details](assets/operation-details.png)
 
-   *Figure: Add Operation name in Operation details*
+   *Figure: Add Operation name*
 
 ### Segment {#segment}
 
 In this section, click on **Select segment** and choose a segment to which you want to use this operation. Know more about [how to select a segment](/help/accountiq/segments-timeinterval.md#segment-selection). 
 
-   Once you've selected a segment, use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. Know more about [segment summary](segments-timeinterval.md#segment-summary).
+Once you've selected a segment, use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. Know more about [segment summary](segments-timeinterval.md#segment-summary).
 
-   ![Select segment and time interval](assets/select-segment-timeinterval.png)
+![Select segment and time interval](assets/select-segment-timeinterval.png)
 
-   *Figure: Select segment and time interval*
+*Figure: Select segment and time interval*
 
-   If required, use <img alt= "edit segment" src="./assets/edit-segment.svg" width="25"> icon to edit the selected segment or  <img alt= "create new segment" src="./assets/create-new-segment.svg" width="25"> icon to create new segment. For more details, refer to the instructions for [creating a new segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#edit-segment).
+If required, use <img alt= "edit segment" src="./assets/edit-segment.svg" width="25"> icon to edit the selected segment or  <img alt= "create new segment" src="./assets/create-new-segment.svg" width="25"> icon to create new segment. For more details, refer to the instructions for [creating a new segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#edit-segment).
 
-   >[!IMPORTANT]
-   >
-   >**Segment type** named **[!UICONTROL Fixed number of accounts]** is currently selected by default. The option to select **[!UICONTROL Variable number of accounts]** will be available in upcoming releases.
+>[!IMPORTANT]
+>
+>**Segment type** named **[!UICONTROL Fixed number of accounts]** is currently selected by default. The option to select **[!UICONTROL Variable number of accounts]** will be available in upcoming releases.
 
-   Select **Granularity and time interval** to monitor the operation during a specific period. Know more about how to select [Granularity and time interval](/help/accountiq/segments-timeinterval.md#granularity-timeinterval).
+Select **Granularity and time interval** to monitor the operation during a specific period. Know more about how to select [Granularity and time interval](/help/accountiq/segments-timeinterval.md#granularity-timeinterval).
 
 ### Action {#action}
 
 In this section, choose an **Action** you want to perform on the selected segment from the dropdown menu.
 
-   ![Select the type of Action](assets/apply-actions.png)
+![Select the type of Action](assets/apply-actions.png)
 
-   *Figure: Select the type of Action*
+*Figure: Select the type of Action*
 
-   There are two options available:
+There are two options available:
 
-   * Select **CM Policy** for the concurrency monitoring system integrated with Account IQ.
+* Select **CM Policy** for the concurrency monitoring system integrated with Account IQ.
 
-   * Select **External actions** to create and process workflows external to Account IQ and not integrated with Account IQ system.
+* Select **External actions** to create and process workflows external to Account IQ and not integrated with Account IQ system.
 
-   >[!NOTE]
-   >
-   >External actions may not always directly relate to password sharing but can still impact it, such as launching of a new season.
+>[!NOTE]
+>
+>External actions may not always directly relate to password sharing but can still impact it, such as launching of a new season.
 
 ### Schedule {#schedule}
 
 In this section, select the **Start date** and **End date** from the date-picker to set the activation for the operation.
 
-   >[!IMPORTANT]
-   >
-   >Currently, the default activation **Start date** and **End date** are set to **On date**. The option to select **When a condition is met** and **Manually** will be available in upcoming releases.
+>[!IMPORTANT]
+>
+>Currently, the default activation **Start date** and **End date** are set to **On date**. The option to select **When a condition is met** and **Manually** will be available in upcoming releases.
    
-   >[!NOTE]
-   >
-   >Ensure that both the start date and end date align with the granularity selected for evaluation in **Step 4**. 
+>[!NOTE]
+>
+>Ensure that both the start date and end date align with the granularity selected for evaluation in **Step 4**. 
 
-   * If you've opted for granularity aggregated by weeks, select the start and end dates in weeks (for example, Week 10).
-   * If you've opted for granularity aggregated by months, select the start and end dates in months.
+* If you've opted for granularity aggregated by weeks, select the start and end dates in weeks (for example, Week 10).
+* If you've opted for granularity aggregated by months, select the start and end dates in months.
    
-     ![Select start date and End date from the date-picker](assets/add-schedule.png)
+![Select start date and End date from the date-picker](assets/add-schedule.png)
 
-      *Figure: Select start date and End date from the date-picker*
+*Figure: Select start date and End date from the date-picker*
 
-      **A.** Start date picker **B.** End date picker
+**A.** Start date picker **B.** End date picker
 
-   >[!NOTE]
-   >
-   >The **Start date** must be later than both the evaluation period and the current date, while the **End date** must be later than the Start date and the current date in order to schedule and execute operations in the future period.
+>[!NOTE]
+>
+>The **Start date** must be later than both the evaluation period and the current date, while the **End date** must be later than the Start date and the current date in order to schedule and execute operations in the future period.
 
 Select **Save operation** at the top of the **Operations** page to process a new operation.
 
