@@ -5,26 +5,19 @@ description: Learn about channels and its configurations within TVE dashboard.
 
 # Channels {#channels}
 
-When you log in to the TVE Dashboard, you can customize the settings for Channels associated with a specific programmer. 
+The Channels section of the TVE Dashboard allows you to access and manage settings for Channels associated with a specific programmer. You can also [add new channel](#add-new-channel).
 
-To configure channels in the TVE Dashboard, navigate to the **Channels** tab under **Configurations** in the left panel. 
-
-A list of linked channels with key details is displayed. The details include:
+When you go to the **Channels** section under **Configurations** in the left panel. A list of linked channels with key details is displayed that includes:
 
 * **Display Name**: The brand name of the channel used for commercial purposes.
 * **Channel Id**: A unique identifier, also referred to as *requestor Id*.
 * **Integrations**: The number of connections established with MVPDs.
 
-To quickly locate a channel, you can enter the display name in **Search**.
-
-You can perform the following actions with channels:
-
-* [Manage channel configurations](#manage-channel-conf)
-* [Add new channel](#add-new-channel)
+To quickly locate Channel details for a specific Channel, enter the display name in **Search** at the top of the list.
 
 ## Manage channel configurations {#manage-channel-conf}
 
-Navigate to the **Channels** tab under **Configurations** in the left panel and select the desired channel from the list to view and edit different settings in the following tabs:
+Navigate to the **Channels** section under **Configurations** in the left panel and select a desired channel from the list. You can then select the following tabs at the top to view and edit various settings:
 
 * [General Settings](#general-settings)
 * [Integrations](#integrations)
@@ -39,9 +32,9 @@ Navigate to the **Channels** tab under **Configurations** in the left panel and 
 
 ### General settings {#general-settings}
 
-You can edit the following sections within this tab:
+This tab presents Channel Information and Analytics Configuration sections.
 
-#### Channel information {#channel-information}
+#### Channel Information {#channel-information}
 
 * **Display Name**: The brand name of the channel used for commercial purposes.
 
@@ -57,7 +50,7 @@ To enable **Analytics Configuration**, kindly contact Technical Account Manager 
 
 ### Integrations {#integrations}
 
-This tab displays a list of available integrations of current selected channel with MVPDs, including the status of each integration, whether it's enabled or not. Select a specific entry from this list to directly access integration properties page located under the **Integrations** tab in the left panel. To know more, view [Integrations](/help/authentication/tve-dashboard-integrations.md).
+This tab displays a list of available integrations of current selected channel with MVPDs, including the status of each integration, whether it's enabled or not. Select a specific entry from this list to directly access integration properties located under the **Integrations** tab in the left panel. To know more, view [Integrations](/help/authentication/tve-dashboard-integrations.md).
 
 ### Certificates {#certificates}
 
@@ -78,7 +71,7 @@ You can make the following changes to available certificates:
 
 #### Add new certificate {#add-new-certificate}
 
-1. Select **Add new certificate** at the top of the channels page.
+1. Select **Add new certificate** at the top of the channels section.
 1. Paste the public key of your certificate in the **New certificate** dialog box.
 1. Select **Add certificate**.
 
@@ -145,7 +138,7 @@ This tab displays a list of custom schemes. For more details, view [iOS/tvOS app
 
 To add new channel, follow these steps:
 
-1. Go to the **Channels** tab under **Configurations** in the left panel.
+1. Go to the **Channels** section under **Configurations** in the left panel.
 1. Select **Add new channel** at the top of the list.
 1. In the **New channel** dialog box, select **Programmer Id** from the dropdown menu.
 1. Enter a unique identifier in **Channel Id**.
@@ -159,4 +152,4 @@ To add new channel, follow these steps:
 
 >[!NOTE]
 >
->A new local configuration change is pending and ready to be pushed to the server. The new channel will be added to the list on the **Channels** page only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+>A new local configuration change is pending and ready to be pushed to the server. The new channel will be added only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).

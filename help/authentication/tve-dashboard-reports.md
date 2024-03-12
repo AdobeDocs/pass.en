@@ -10,7 +10,7 @@ These reports allows you to filter data and gather insights across [specific Cha
 
 ## Types of reports {#view-reports}
 
-Log in to the TVE Dashboard and navigate to the **Reports** under **Stats** in the left panel. The following reports are available:
+Log in to the TVE Dashboard and navigate to the **Reports** section under **Stats** in the left panel. The following reports are available:
 
 * [AuthN TTL Reports](#authn-ttl-reports)
 * [AuthZ TTL Reports](#authz-ttl-reports)
@@ -18,7 +18,7 @@ Log in to the TVE Dashboard and navigate to the **Reports** under **Stats** in t
 
 ### AuthN TTL reports {#authn-ttl-reports}
 
-To access this report, select the **AuthN TTL Reports** tab at the top of the **Reports**. 
+To access this report, select the **AuthN TTL Reports** tab at the top of the **Reports** section. 
 
 The AuthN TTL reports, also referred as authentication token time-to-live (TTL), displays the duration of the authentication token configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to visually inspect the amount of time a user remains authenticated for a specific MVPD and platform, with values presented in user-friendly formats like **days**, **hours**, **minutes**, and **seconds**. The AuthN TTL Reports table is designed with scrollable horizontal and vertical pages to accommodate various screen sizes.
 
@@ -30,7 +30,7 @@ To know how to export AuthN reports, view [export report](#export-reports) secti
 
 ### AuthZ TTL reports {#authz-ttl-reports}
 
-To access this report, select the **AuthZ TTL Reports** tab at the top of the **Reports**.
+To access this report, select the **AuthZ TTL Reports** tab at the top of the **Reports** section.
 
 The AuthZ TTL reports, also referred to as authorization token time-to-live (TTL), displays the duration of the authorization token configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to visually inspect the amount of time a user remains authorized to watch content for a specific MVPD and platform, with values presented in user-friendly formats like **days**, **hours**, **minutes**, and **seconds**. The AuthZ TTL Reports table is designed with scrollable horizontal and vertical pages to accommodate various screen sizes.
 
@@ -42,7 +42,7 @@ To know how to export AuthZ reports, view [export report](#export-reports) secti
 
 ### SSO Reports {#sso-reports}
 
-To access this report, select the **SSO Reports** tab at the top of the **Reports**.
+To access this report, select the **SSO Reports** tab at the top of the **Reports** section.
 
 The SSO reports, also referred as single sign-on status (SSO), displays the single sign-on status configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to visually inspect the expected user authentication SSO experience for a specific MVPD and platform, with values presented as a tri-state like **SSO Disabled**, **SSO Enabled**, and **SSO Uncertain**. The SSO Reports table is designed with scrollable horizontal and vertical pages to accommodate various screen sizes.
 
@@ -58,7 +58,7 @@ To know how to export SSO reports, view [export report](#export-reports) section
 
 ## Platforms {#platforms}
 
-When you go to the **Reports** under **Stats** in the left panel, the [AuthN TTL Reports](#authn-ttl-reports), [AuthZ TTL Reports](#authz-ttl-reports), and [SSO Reports](#sso-reports) tabs on the top present data across various platforms in a tabular format. These platforms include:
+When you go to the **Reports** section under **Stats** in the left panel, the [AuthN TTL Reports](#authn-ttl-reports), [AuthZ TTL Reports](#authz-ttl-reports), and [SSO Reports](#sso-reports) tabs on the top present data across various platforms in a tabular format. These platforms include:
 
 * **DESKTOP**: Displays values that will be applied to the Programmer implementations over Adobe Pass Authentication JavaScript SDK.
 
@@ -86,7 +86,7 @@ To learn more about how to share the desired device type, such as **Roku** with 
 
 ## Selecting specific Channels and MVPDs {#selecting-specific-channels-mvpds} 
 
-Navigate to the **Reports** under **Stats** in the left panel, the [AuthN TTL Reports](#authn-ttl-reports), [AuthZ TTL Reports](#authz-ttl-reports), and [SSO Reports](#sso-reports) tabs present data for **All Channels** integrations with **All MVPDs** by default.
+Navigate to the **Reports** section under **Stats** in the left panel, the [AuthN TTL Reports](#authn-ttl-reports), [AuthZ TTL Reports](#authz-ttl-reports), and [SSO Reports](#sso-reports) tabs present data for **All Channels** integrations with **All MVPDs** by default.
 
 To generate data for one or multiple channels:
 
@@ -104,7 +104,7 @@ To generate data for one or multiple MVPDs:
 
 ## Export reports {#export-reports}
 
-To export data, navigate to the **Reports** under **Stats** in the left panel and select **Export report** at the upper-right corner of the desired report.
+To export data, navigate to the **Reports** section under **Stats** in the left panel and select **Export report** at the upper-right corner of the desired report.
  
 Depending on the respective report you've exported, a file named **Adobe Pass - Reports - AuthN TTL.csv**, **Adobe Pass - Reports - AuthZ TTL.csv**, or **Adobe Pass - Reports - SSO.csv** will be downloaded automatically to your computer.
 
