@@ -58,11 +58,11 @@ You can make the following changes to available certificates:
 1. Paste the public key of your certificate in the **New certificate** dialog box.
 1. Select **Add certificate**.
 
-To activate a new certificate, select **Yes** from ***Used to encrypted user metadata** dropdown menu in the list of available certificates.
-
 >[!NOTE]
 >
 >A new local configuration change is pending and ready to be pushed to the server. The new certificate will be added only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+
+To activate a new certificate, navigate it in the list of **Available certificates** and select **Yes** from **Used to encrypted user metadata** dropdown menu.
 
 #### Delete certificate {#delete-certificate}
 
