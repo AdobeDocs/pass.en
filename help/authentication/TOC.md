@@ -216,7 +216,10 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
   + [Environments](/help/authentication/tve-dashboard-environments.md)
   + [Channels](/help/authentication/tve-dashboard-channels.md)
   + [Programmers](/help/authentication/tve-dashboard-programmers.md)
+  + [MVPDs](/help/authentication/mvpds.md)
   + [Integrations](/help/authentication/tve-dashboard-integrations.md)
   + [Reports](/help/authentication/tve-dashboard-reports.md)
+  + [Changes log](/help/authentication/tve-dashboard-changes-log.md)
   + [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md)
 + [Glossary](glossary.md)
+
