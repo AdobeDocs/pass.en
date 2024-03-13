@@ -30,7 +30,7 @@ Adobe Pass Authentication provides the following sections in TVE Dashboard:
 * Dashboard
 * [Channels](/help/authentication/tve-dashboard-channels.md)
 * [Programmers](/help/authentication/tve-dashboard-programmers.md)
-* [MVPDs](/help/authentication/mvpds.md)
+* [MVPDs](/help/authentication/tve-dashboard-mvpds.md)
 * Integrations
 * Review and push changes
 * [Reports](/help/authentication/tve-dashboard-reports.md)
