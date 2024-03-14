@@ -21,12 +21,7 @@ To compare changes, follow these steps:
 1. Select any two configuration changes from the list you want to compare.
 1. Select **Compare** at the upper-right of the screen.
 
-The **Configuration Changes** section presents a detailed list of all changed configuration entities that include:
-
-* **Entity type**:
-* **Entity id**:
-* **Property**:
-* **Change operation**:
+The **Configuration Changes** section presents a list of all changed configuration entities.
 
 To inspect a specific change, you can hover over the entity and select **view** to access the old and new values.  
 

@@ -4,20 +4,18 @@ description: Learn about programmers and its configurations within TVE dashboard
 ---
 # Programmers {#programmers}
 
-The Programmers section of the TVE Dashboard allows you to access and manage settings for a specific [programmer](/help/authentication/glossary.md#programmer). You can also [add new programmer](#add-new-programmer).
-
->[!NOTE]
->
->You can only access and manage settings for one programmer at a time based on your current login credentials.
+The Programmers section of the TVE Dashboard allows you to access and manage settings for [programmers](/help/authentication/glossary.md#programmer) associated your account entitlements. You can also [add new programmer](#add-new-programmer).
 
 The **Programmers** section under **Configurations** in the left panel displays the following details of a programmer:
 
 * **Programmer Id**: A media company identifier within the system.
 * **Channels**: The number of associated channels linked to a programmer.
 
+To quickly locate a specific programmer, enter the display name in **Search** at the top of the list.
+
 ## Manage programmer configurations {#manage-programmer-conf}
 
-Navigate to the **Programmers** section under **Configurations** in the left panel and select your details. You can then select the following tabs at the top to view and edit various settings: 
+Navigate to the **Programmers** section under **Configurations** in the left panel and select a desired programmer. You can then select the following tabs at the top to view and edit various settings: 
 
 * [Channels](#channels)
 * [Certificates](#certificates)

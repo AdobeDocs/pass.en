@@ -5,7 +5,7 @@ description: Learn about MVPDs and its configurations within TVE dashboard.
 
 # MVPDs
 
-The MVPDs section of the TVE Dashboard allows you to view the list of available MVPDs within the Adobe Pass Authentication ecosystem.
+The MVPDs section of the TVE Dashboard allows you to view a list of integrations with MVPDs in the Adobe Pass Authentication ecosystem.
 
 The **MVPDs** section under **Configurations** in the left panel displays a list of MVPDs with the key details that include:
 

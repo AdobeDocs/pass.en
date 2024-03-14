@@ -13,7 +13,7 @@ The **Channels** section under **Configurations** in the left panel displays a l
 * **Channel Id**: A unique identifier, also referred to as *requestor Id*.
 * **Integrations**: The number of connections established with MVPDs.
 
-To quickly locate details for a specific channel, enter the display name in **Search** at the top of the list.
+To quickly locate a specific channel, enter the display name in **Search** at the top of the list.
 
 ## Manage channel configurations {#manage-channel-conf}
 
