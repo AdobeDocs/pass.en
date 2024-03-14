@@ -46,7 +46,7 @@ This tab presents Channel Information and Analytics Configuration.
 
 This section allows you to configure forwarding of Adobe Pass Authentication events to Adobe Analytics.
 
-To enable **Analytics Configuration**, kindly contact the Technical Account Manager (TAM) for more details on how to configure the Report Suite ID (RSID).
+To enable **Analytics Configuration**, kindly contact your Technical Account Manager (TAM) for more details on how to configure the Report Suite ID (RSID).
 
 ### Integrations {#integrations}
 
@@ -56,7 +56,7 @@ This tab displays a list of available integrations of the currently selected cha
 
 This tab displays a list of [available certificates](#available-certificates) and [inherited available certificates](#inherited-avail-certificates) used in the authentication and user metadata flows, providing key details about each certificate. The details include:
 
-* The status (enabled for usage or not) 
+* The status (whether enabled for *user metadata encryption* usage or not) 
 * Serial number
 * Name of the issuer organization 
 * Name of the subject organization
@@ -158,11 +158,6 @@ To add new channel, follow these steps:
 1. Select **Add new channel** at the top of the list.
 1. Select **Programmer Id** from the dropdown menu in the **New channel** dialog box.
 1. Enter a unique identifier in **Channel Id**.
-
-   >[!NOTE]
-   >
-   >Make sure the **Channel Id** value in advance with your Technical Account Manager (TAM).
-
 1. Enter the brand name of the channel used for commercial purposes in **Display name**. 
 1. Select **Add channel**.
 

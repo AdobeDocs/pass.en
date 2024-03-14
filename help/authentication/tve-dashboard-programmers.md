@@ -34,7 +34,7 @@ This tab displays a list of channels linked with a current programmer. Select a 
 
 This tab displays a list of [available certificates](#available-certificates) used in the authentication flow, providing key details about each certificate. The details include:
 
-* The status (enabled for usage or not) 
+* The status (whether enabled for *user metadata encryption* usage or not) 
 * Serial number
 * Name of the issuer organization 
 * Name of the subject organization

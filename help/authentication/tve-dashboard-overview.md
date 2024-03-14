@@ -27,12 +27,12 @@ To access TVE Dashboard, reach out to your Technical Account Manager (TAM). This
 Adobe Pass Authentication provides the following sections in TVE Dashboard:
 
 * [Environments](/help/authentication/tve-dashboard-environments.md)
+* [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md)
 * Dashboard
 * [Channels](/help/authentication/tve-dashboard-channels.md)
 * [Programmers](/help/authentication/tve-dashboard-programmers.md)
 * [MVPDs](/help/authentication/tve-dashboard-mvpds.md)
 * Integrations
-* Review and push changes
 * [Reports](/help/authentication/tve-dashboard-reports.md)
 * [Changes log](/help/authentication/tve-dashboard-changes-log.md)
 
