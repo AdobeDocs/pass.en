@@ -93,7 +93,7 @@ The shared accounts metrics provide an overview of sharing level and play reques
 
 This line graph represents [sharing level](/help/accountiq/data-panels.md#sharing-level) each week over the operation's evaluation period.
 
-![Sharing level line graph](assets/share-level.png)
+![Sharing level line graph](assets/share-level.png){width="550" align="left"}
 
 *Figure: Sharing level line graph*
 
@@ -101,7 +101,7 @@ This line graph represents [sharing level](/help/accountiq/data-panels.md#sharin
 
 This line graph represents [play requests](/help/accountiq/general-usage-reports.md#playreq-uniquesubs) each week in the operation's evaluation period.
 
-![Number of play requests line graph](assets/number-play-requests.png)
+![Number of play requests line graph](assets/number-play-requests.png){width="550" align="left"}
 
 *Figure: Number of play requests line graph*
 
@@ -113,7 +113,7 @@ The general usage metrics provide an overview of average number of devices, IPs 
 
 This line graph represents the average [number of devices](/help/accountiq/general-usage-reports.md#devices-week-account) each week in the operation's evaluation period.
 
-![Number of devices line graph](assets/number-devices.png)
+![Number of devices line graph](assets/number-devices.png){width="550" align="left"}
 
 *Figure: Number of devices line graph*
 
@@ -121,7 +121,7 @@ This line graph represents the average [number of devices](/help/accountiq/gener
 
 This line graph represents the average [number of IPs](/help/accountiq/general-usage-reports.md#ip-week-account) and [locations](/help/accountiq/general-usage-reports.md#locations-week-account) each week in the operation's evaluation period.
 
-![Number of IPs and locations line graph](assets/number-ips-locations.png)
+![Number of IPs and locations line graph](assets/number-ips-locations.png){width="550" align="left"}
 
 *Figure: Number of IPs and locations line graph*
 

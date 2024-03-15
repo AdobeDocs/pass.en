@@ -7,7 +7,6 @@ exl-id: c0d85fc8-b5ab-4284-802e-82f52eff401f
 
 Credential sharing by streaming service subscribers is a major and growing problem for the industry. To add to it, understanding, identifying, and acting on credential sharing is a complex process. There is complexity involved in understanding the subscriber usage behavior and in developing a holistic view of their activity—for example, distinguishing sharing among members within the same household and outside. Due to this challenge, streaming service providers may have inhibitions in acting against credential sharing.
 
-
 <div class "preview">
 Generally, video streaming service providers understand the risk and cost of sharing to their business but have limited remedies, such as blocking the sharers or making offers. However, an informed and targeted approach is recommended—one that enables services to understand sharing accurately and to adopt strategies that reward good viewing behavior and simultaneously target business growth. </span>
 
@@ -25,6 +24,7 @@ Adobe Pass [!UICONTROL Account IQ] enables video streaming services to understan
 * [General Usage reports](/help/accountiq/general-usage-reports.md)
 * [Shared Accounts reports](/help/accountiq/shared-acc-reports.md)
 * [Usage Patterns](/help/accountiq/usage-patterns.md)
+* [Work with segments](/help/accountiq/work-with-segments.md)
 * [Operations](/help/accountiq/operations.md)
 
 Let's take a deep dive into the graphs and reports in each of these sections.

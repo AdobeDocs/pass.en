@@ -21,9 +21,7 @@ user-guide-description: Adobe Pass Account IQ help gives informtion about the Ac
 + [Usage patterns](/help/accountiq/usage-patterns.md)
 + [Operations](/help/accountiq/operations.md) 
 + [Best practices](/help/accountiq/best-practices.md)
-+ Limitations {#limitations}
-    + [General limitations](/help/accountiq/limitations.md)
-    + [Isolation Mode and sharing behavior](/help/accountiq/isolation-mode.md)
++ [Limitations](/help/accountiq/limitations.md)
 + [Troubleshoot](/help/accountiq/troubleshoot.md)
 + [Frequently asked questions](/help/accountiq/faq.md)
 + [Glossary of product concepts](/help/accountiq/product-concepts.md)
