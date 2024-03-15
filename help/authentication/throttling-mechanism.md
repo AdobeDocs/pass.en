@@ -5,39 +5,30 @@ description: Know about the Throttling mechanism used in Adobe Pass Authenticati
 
 # Throttling mechanism {#throttling-mechanism}
 
-All Pass Authentication customers need to be able to access Pass Authentication API for each of their users, according
-to instructions and their business case.
+All Pass Authentication customers need to be able to access Pass Authentication API for each of their users, according to instructions and their business case.
 
-Pass Authentication introduces a Throttling mechanism to ensure equitable distribution of resources among our customers'
-users.
+Pass Authentication introduces a Throttling mechanism to ensure equitable distribution of resources among our customers' users.
 
 This mechanism is important for a few reasons:
 
 - One of the golden rules of multi-tenant architecture is that one user's behavior shouldn't affect someone else.
-- Rate limiting is important for APIs as it's easy to make mistakes when integrating with an API. Because APIs are
-  programmatically, it's relatively easy to accidentally send more requests than intended.
+- Rate limiting is important for APIs as it's easy to make mistakes when integrating with an API. Because APIs are programmatically, it's relatively easy to accidentally send more requests than intended.
 
 ## Mechanism overview {#mechanism-overview}
 
 ### Client implementations
 
-Pass Authentication provides guidelines and SDK for interacting with the API but does not control how the customer uses
-it. Some implementations may have a rudimentary implementation and could flood the service with unnecessary API
-requests, be it accidentally or not, could mean other users experience slowdowns or capacity issues.
+Pass Authentication provides guidelines and SDK for interacting with the API but does not control how the customer uses it. Some implementations may have a rudimentary implementation and could flood the service with unnecessary API requests, be it accidentally or not, could mean other users experience slowdowns or capacity issues.
 
-The service itself should be able to handle any reasonable capacity. But no matter how scalable or performant
-a service is, there are always limits. As such, the service must have limits configured for the number of accepted calls
-within a specific time interval.
+The service itself should be able to handle any reasonable capacity. But no matter how scalable or performant a service is, there are always limits. As such, the service must have limits configured for the number of accepted calls within a specific time interval.
 
 ### Introducing throttling
 
-Pass Authentication is based on user identification and a token bucket rate limiting algorithm with predefined values to
-control each user's device access to our API.
+Pass Authentication is based on user identification and a token bucket rate limiting algorithm with predefined values to control each user's device access to our API.
 
 ### Device identification mechanism
 
-The proposed throttling mechanism uses the identified devices individually, with the help of “X-Forwarded-For” header.
-Limits will be applied in the same way for each device.
+The proposed throttling mechanism uses the identified devices individually, with the help of “X-Forwarded-For” header. Limits will be applied in the same way for each device.
 
 ### Required Updates
 
@@ -47,9 +38,7 @@ You can find more details on how to pass the X-Forwarded-For header [here](rest-
 
 ### Actual limits and endpoints
 
-Currently, the default limit allows a maximum of 1 request per second., with an initial burst of 3 requests (one-time
-allowance on the first interaction of the identified client, which should allow initialization to finish successfully).
-This should not affect any regular business case across all our customers.
+Currently, the default limit allows a maximum of 1 request per second., with an initial burst of 3 requests (one-time allowance on the first interaction of the identified client, which should allow initialization to finish successfully). This should not affect any regular business case across all our customers.
 
 The throttling mechanism will be enabled on the following endpoints:
 
@@ -77,29 +66,23 @@ The throttling mechanism will be enabled on the following endpoints:
 
 ### SDK implementation disambiguation
 
-Since clients using the Adobe Pass Authentication provided SDKs are not explicitly interacting with any endpoints, this
-section will present the known functions, how they behave when encountering a throttle response, and the actions that
-should be taken.
+Since clients using the Adobe Pass Authentication provided SDKs are not explicitly interacting with any endpoints, this section will present the known functions, how they behave when encountering a throttle response, and the actions that should be taken.
 
 #### setRequestor
 
-Upon reaching the throttle limit using `setRequestor` function from the SDK, the SDK will return a CFG429 error code
-through `errorHandler` callback.
+Upon reaching the throttle limit using `setRequestor` function from the SDK, the SDK will return a CFG429 error code through `errorHandler` callback.
 
 #### getAuthorization
 
-Upon reaching the throttle limit using `getAuthorization` function from the SDK, the SDK will return a Z100 error code
-through `errorHandler` callback.
+Upon reaching the throttle limit using `getAuthorization` function from the SDK, the SDK will return a Z100 error code through `errorHandler` callback.
 
 #### checkPreauthorizedResources
 
-Upon reaching the throttle limit using `checkPreauthorizedResources` function from the SDK, the SDK will return a P100
-error code through `errorHandler` callback.
+Upon reaching the throttle limit using `checkPreauthorizedResources` function from the SDK, the SDK will return a P100 error code through `errorHandler` callback.
 
 #### getMetadata
 
-Upon reaching the throttle limit using `getMetadata` function from the SDK, the SDK will return an empty response
-through `setMetadataStatus` callback.
+Upon reaching the throttle limit using `getMetadata` function from the SDK, the SDK will return an empty response through `setMetadataStatus` callback.
 
 For each specific implementation detail, please refer to the specific SDK documentation.
 
@@ -109,12 +92,9 @@ For each specific implementation detail, please refer to the specific SDK docume
 
 ### API response changes and response
 
-When we identify that the limit is breached, we will mark this request with a specific response status (HTTP 429 Too
-Many Requests), instructing that you have consumed all the tokens assigned to the user device (IP address) for the
-time interval.
+When we identify that the limit is breached, we will mark this request with a specific response status (HTTP 429 Too Many Requests), instructing that you have consumed all the tokens assigned to the user device (IP address) for the time interval.
 
-The throttling expires after one second of the first 429 responses. Each application that receives a 429 response must
-wait for at least 1 second before generating a new request.
+The throttling expires after one second of the first 429 responses. Each application that receives a 429 response must wait for at least 1 second before generating a new request.
 
 All customer applications should appropriately handle the “429 Too Many Requests” response.
 
@@ -147,18 +127,13 @@ p3p: CP="NOI DSP COR CURa ADMa DEVa OUR BUS IND UNI COM NAV STA"
 
 ### Passing X-Forwarded-For header
 
-Customers using a custom implementation (including server-to-server ones) to interact with Pass Authentication
-API should ensure that they can capture their user IP address and forward it correctly, using X-Forwarded-For header
-further to Pass Authentication API.
+Customers using a custom implementation (including server-to-server ones) to interact with Pass Authentication API should ensure that they can capture their user IP address and forward it correctly, using X-Forwarded-For header further to Pass Authentication API.
 
 See [here](rest-api-cookbook-servertoserver.md) for more details.
 
 ### Reacting to new response code
 
-Customers using a custom implementation (including server-to-server ones) to interact with Pass Authentication
-API should ensure that any subsequent call made after receiving a 429 Too Many Requests includes a minimum 1-second
-waiting period. This waiting period ensures an opportunity to change this mechanism and obtain a valid business
-response.
+Customers using a custom implementation (including server-to-server ones) to interact with Pass Authentication API should ensure that any subsequent call made after receiving a 429 Too Many Requests includes a minimum 1-second waiting period. This waiting period ensures an opportunity to change this mechanism and obtain a valid business response.
 
 ## Scenario example for throttling
 
