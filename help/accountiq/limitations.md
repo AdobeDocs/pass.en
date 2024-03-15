@@ -56,26 +56,23 @@ The system automatically operates in Isolation Mode when the selected segment co
 >
 > The behavior in Isolation Mode is incompatible with the standard mode, Isolation Mode MVPD cannot be mixed with other MVPDs and vice versa.
 
-To create a segment that is analyzed in Isolation Mode:
+To create a segment that is analyzed in Isolation Mode, drag Isolation Mode MVPD, such as **Xfinity**, to the MVPDs section of the segment definition. 
 
-1. Drag **Xfinity** to the MVPDs section of the segment definition. 
+>[!NOTE]
+>
+> Since Isolation Mode MVPD cannot be mixed with other MVPDs, the MVPD section of the segment definition will not allow another MVPD to be dragged there.
 
-   >[!NOTE]
-   >
-   > Since Isolation Mode MVPD cannot be mixed with other MVPDs, the MVPD section of the segment definition will not allow another MVPD to be dragged there.
+![](assets/xfinity-in-segment.png)
 
-   ![](assets/xfinity-in-segment.png)
+*Figure: Xfinity selection in Isolation mode*
 
-   *Figure: Xfinity selection in Isolation mode*
+>[!IMPORTANT]
+>
+> Account sharing is more relevant when measured for streaming across all Programmer's applications, expect lower **Sharing Scores** and some variation in the metrics when in Isolation Mode.
 
+![](assets/aggregate-sharing-isolation.png)
 
-   >[!IMPORTANT]
-   >
-   > Account sharing is more relevant when measured for streaming across all Programmer's applications, expect lower **Sharing Scores** and some variation in the metrics when in Isolation Mode.
+*Figure: Sharing probability gauges in Isolation mode*
 
-   ![](assets/aggregate-sharing-isolation.png)
-
-   *Figure: Sharing probability gauges in Isolation mode*
-
-  The above gauges show that only 9% of all the accounts are shared, and only 11% of the content is consumed by those 9%. Because of the naturally lower scores, the results in Isolation Mode should be interpreted differently from the results in standard mode.
+The above gauges show that only 9% of all the accounts are shared, and only 11% of the content is consumed by those 9%. Because of the naturally lower scores, the results in Isolation Mode should be interpreted differently from the results in standard mode.
 

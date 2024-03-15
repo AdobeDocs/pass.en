@@ -32,10 +32,6 @@ Let's take a deep dive into the graphs and reports in each of these sections.
 >[!MORELIKETHIS]
 >
 >* [How to get started with Account IQ](/help/accountiq/get-started.md)
->* [Dashboard](/help/accountiq/introduction-dashboard.md)
->* [General usage reports](/help/accountiq/general-usage-reports.md)
->* [Shared accounts reports](/help/accountiq/shared-acc-reports.md)
->* [Usage patterns](/help/accountiq/usage-patterns.md)
 >* [Glossary of product terms](/help/accountiq/product-concepts.md)
 >* [Account IQ whitepaper](https://www.adobe.com/content/dam/dx/us/en/products/primetime/resources/primetime-account-iq-whitepaper.pdf)
 
