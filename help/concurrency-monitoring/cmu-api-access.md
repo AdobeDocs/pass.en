@@ -11,7 +11,7 @@ description: CMU API access
 ## Access procedure overview {#api-access-procedure-overview}
 
 We have updated CMU reports access to be compatible with OAuth 2.0 Dynamic Client Registration Protocol. 
-A custom OAuth 2.0 authorization server is deployed to address the needs of Adobe Pass Authentication and Concurrency Monitoring applications. \
+A custom OAuth 2.0 authorization server is deployed to address the needs of Concurrency Monitoring application. \
 In order for the Client applications to utilize the OAuth 2.0 authorization, the server must dynamically register to obtain specific information (client credentials) to be able to interact with it. As part of the registration process, the client must present a set of built-in metadata to the client registration endpoint.
 This metadata is communicated as a software statement, which contains a "software_id" to allow our authorization server to correlate different instances of an application using the same software statement.
 A software statement is a JSON Web Token (JWT) that asserts metadata values about the client software as a bundle. When presented to the authorization server as part of a client registration request, the software statement must be digitally signed or MACed using JSON Web Signature (JWS). \
