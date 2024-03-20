@@ -11,7 +11,7 @@ To export the account sharing information of subscriber accounts for a specific 
 
 1. Log in with your authorized programmer or MVPD credentials.
 1. Navigate to the **Shared Accounts** tab under **Reports** section.
-1. Select a desired segment and time interval from segment and time interval panel. Know [how to select segment and time interval](segments-timeinterval.md).
+1. Select the required segment and time interval from segment and time interval panel. View [segments and time interval](segments-timeinterval.md) for more information on selecting a segment and time interval.
 
    If required, refer to the instructions for [creating a new segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#edit-segment).
 
@@ -21,17 +21,13 @@ To export the account sharing information of subscriber accounts for a specific 
 
    *Figure: Select Export top 1000 accounts option*
 
-1. If given the option, choose the location to save the file on your local machine, optionally rename your file in the **File name**, and select **[!UICONTROL Save]**. Alternatively, the file will automatically be saved to the download folder designated by your browser.
+1. The file will automatically download to your local machine.
 
-   The system saves the statistical information for 1000 accounts with the highest sharing probabilities for current segment and specified time interval to the chosen location on your local machine.
+   The system saves the statistical information for 1000 accounts with the highest sharing probabilities in a CSV file.
 
-1. Find the saved file on your local device to open and access the data.
+1. Find the file on your local machine to open and access the data.
 
->[!NOTE]
->
->The report saves in CSV format. You can open the exported file using a preferred CSV viewer or editor like Microsoft Excel.
-
-The exported CSV file sorts the data in decreasing order based on the sharing probabilities of the subscriber accounts in the current segment for a specified time interval. 
+The CSV file sorts the data in decreasing order based on the sharing probabilities of the subscriber accounts in the current segment for a specified time interval. 
 
 ![exported data in csv format](assets/exported-csv.png)
 
@@ -39,41 +35,41 @@ The exported CSV file sorts the data in decreasing order based on the sharing pr
 
 ## Columns in the exported report {#columns-in-export}
 
-**Week/Month**
+**Week/Month**  
 
-The selected week or month within the **[!UICONTROL Granularity and Time Interval]** option in the segment selector for which the sharing statistics are sought.
+The selected week or month within the **[!UICONTROL Granularity and Time Interval]** option in the segment selector. 
 
-**MVPD**
+**MVPD** 
 
-If you are a programmer user, the column shows which MVPD the subscriber account belongs to.
+If you are a programmer user, the column shows which MVPD the subscriber account belongs to. 
 
-**Subscriber Id**
+**Subscriber Id** 
 
-The unique identifier for the specific account that is discussed within a row.
+The unique identifier for the specific account that is discussed within a row. 
 
-**Minimum # Devices**
+**Minimum # Devices** 
 
-The bare minimum number of devices from which users are actively streaming content.
-
->[!NOTE]
->
->The actual number of devices streaming content is certainly greater than the minimum number of devices specified for a particular account.
-
-**Minimum # Persons**
-
-The bare minimum number of individuals actively streamed content using those devices.
+The minimum number of devices from which users are actively streaming content. 
 
 >[!NOTE]
 >
->The actual number of individuals streaming content is certainly greater than the minimum number of persons assigned to a particular account.
+>The actual number of devices streaming content is certainly greater than the minimum number of devices specified for a particular account. 
 
-**[!UICONTROL # IPs]**
+**Minimum # Persons**  
 
-The number of IP addresses from which content is streamed.
+The minimum number of individuals actively streamed content using those devices.
 
-**[!UICONTROL # Locations]**
+>[!NOTE]
+>
+>The actual number of individuals streaming content is certainly greater than the minimum number of persons assigned to a particular account. 
 
-The number of locations (based on zip code) from which content is streamed.
+**[!UICONTROL # IPs]** 
+
+The number of IP addresses from which content is streamed. 
+
+**[!UICONTROL # Locations]** 
+
+The number of locations (based on zip code) from which content is streamed. 
 
 **[!UICONTROL # Cities]**
 
@@ -101,7 +97,7 @@ The number of times an MVPD has authorized a stream or granted access to content
 
 >[!NOTE]
 >
->The **[!UICONTROL # AuthZ OK]** is linked to **[!UICONTROL # Play Requests]**. It's smaller than **[!UICONTROL # Play Requests]** because Adobe typically caches the authorizations from MVPDs for approximately 24 hours.
+>The **[!UICONTROL # AuthZ OK]** is linked to **[!UICONTROL # Play Requests]**. It's fewer than **[!UICONTROL # Play Requests]** because Adobe typically caches the authorizations from MVPDs for approximately 24 hours.
 
 **[!UICONTROL # Play Requests]**
 
@@ -109,7 +105,7 @@ The actual number of streams occurred during a specified time period.
 
    >[!NOTE]
    >
-   >The play requests column is'nt available for MVPD users.
+   >The play requests column isn't available for MVPD users.
 
 **[!UICONTROL # Channels]**
 

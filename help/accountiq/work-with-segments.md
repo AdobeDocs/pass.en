@@ -6,21 +6,21 @@ description: Understanding and using segments. Learn how to create and manage a 
 
 [Segments](product-concepts.md#segmet-def) are a collection of subscriber accounts that allows you to analyze credential sharing under user-defined conditions. You can use segments to examine different sets of subscriber accounts and generate corresponding data reports in tables and graphs. There are two types of segments in Account IQ: 
 
-1. **Default segment**: **All accounts in your properties** is an out-of-the-box segment in the system that includes subscriber accounts from all programmers and MVPDs without specific conditions applied.
+1. **Default segment**: **All accounts in your properties** is an out-of-the-box segment in the system that includes all active subscriber accounts without specific conditions applied.
 
    >[!NOTE]
    >
-   >Using default segment may prevent the display of certain tables like [MVPDs and Programmers in segment](data-panels.md#mvpds-programmers-segment), [Sharing score by channels and MVPDs](data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](usage-patterns.md#usage-pattern-dis-mvpds-programmers). These tables can only accommodate and display data for up to 20 MVPDs at a time. The remaining tables, graphs, and reports are identical for both default and custom segments.
+   >Using the default segment may prevent the display of certain tables like [MVPDs and Programmers in segment](data-panels.md#mvpds-programmers-segment), [Sharing score by channels and MVPDs](data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](usage-patterns.md#usage-pattern-dis-mvpds-programmers). These tables can only accommodate and display data for up to 20 rows at a time. The remaining tables, graphs, and reports are the same for both default and custom segments.
 
-1. **Custom segments**: These are tailored segments that enable you to group subscriber accounts from specific programmers, channels, and MVPDs for analyzing credential sharing under user-defined conditions. Learn more about how to [create a custom segment](#create-new-segment).
+1. **Custom segments**: These are tailored segments that enable you to group subscriber accounts from specific categories, such as, D2C content types, programmers, channels, and MVPDs for analyzing credential sharing under user-defined conditions. Learn more about how to [create a custom segment](#create-new-segment).
 
    >[!IMPORTANT]
    >
    >All procedures described in this guide are based on custom segments. However, the concepts remain the same for both default and custom segments.
 
-When you go to the **Actions** and select the **[!UICONTROL Segments]** tab in the left panel, a list of segments available in the system is displayed. The segments page lets you quickly assess key details about each segment in a tabular format. The details include the segment name, the number of MVPDs and programmers, associated channels, metrics, [operations](product-concepts.md#operation-def) using the current segment, last modified date and time, as well as the name of the segment creator.
+When you go to the **Actions** and select the **[!UICONTROL Segments]** tab in the left panel, a list of segments available in the system is displayed. The segments page lets you quickly assess key details about each segment in a tabular format. The details include the segment name, the number of [video categories](product-concepts.md##video-category-def), metrics, [operations](product-concepts.md#operation-def) using the current segment, last modified date and time, as well as the name of the segment creator. 
 
-As a programmer or MVPD user, you can perform various functions with segments.
+You can perform the following functions with segments:
 
 * [Create new segment](#create-new-segment)
 * [Manage segments](#manage-segments)

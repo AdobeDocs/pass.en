@@ -188,6 +188,16 @@ From 9 to 37 play requests per month.
 
 One of a finite set of category labels applied to an account that best characterizes the users of the account in terms of social groups or behaviors (e.g., a small family, a traveler or commuter, social sharing, etc.).
 
+## [!UICONTROL Video category] {#video-category-def}
+
+### [!UICONTROL For D2C service] {#d2c-service}
+
+A video category is a specific label that qualifies the nature of the video. For example, region of the source, content types, such as VOD or live, event, or specific labels such as team.
+
+### [!UICONTROL For TV Everywhere] {#tv-everywhere}
+
+A video category is defined by the combination of Programmer, channel, and MVPD associated with the stream.
+
 ## [!UICONTROL Zip Code] {#zip-code-def}
 
 The U.S. Postal code associated with locations within the U.S.
