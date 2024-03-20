@@ -2,7 +2,7 @@
 title: Personas in Account IQ
 description: Learn about different user types in Account IQ.
 ---
-# Account IQ personas {#aiq-personas}
+# Personas in Account IQ {#aiq-personas}
 
 Account IQ is designed to automatically identify password sharing, particularly in the video streaming industry. In this industry, there are two major categories of services: Direct-to-Consumer (D2C) and TV Everywhere (TVE).
 
