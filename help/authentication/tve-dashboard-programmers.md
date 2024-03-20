@@ -11,7 +11,7 @@ The **Programmers** section under **Configurations** in the left panel displays 
 * **Programmer Id**: A media company identifier within the system.
 * **Channels**: The number of associated channels linked to a programmer.
 
-To quickly locate a specific programmer, enter the display name in **Search** at the top of the list.
+To quickly locate a specific programmer, enter the **Display name** in **Search** at the top of the list.
 
 ## Manage programmer configurations {#manage-programmer-conf}
 
@@ -44,7 +44,7 @@ This tab displays a list of [available certificates](#available-certificates) us
 
 #### Available certificates {#available-certificates}
 
-These certificates serve as private or public keys and play a crucial role in validation purposes. All channels associated with the same media company can use these certificates.
+These certificates serve as Private/Public Keys and are used for validation purposes. All channels associated with the same media company can use these certificates.
 
 You can make the following changes to available certificates:
 

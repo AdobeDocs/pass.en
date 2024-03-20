@@ -14,7 +14,7 @@ Within each environment, there are two different profiles:
 
 * **Staging**: The staging profile connects to MVPD's staging server for testing and validation of integrations before going live.
 
-* **Production**: The production profile connects to MVPD's production server for actual production activities.
+* **Production**: The production profile connects to MVPD's production profile for actual production activities.
 
 ## Uses cases
 
@@ -28,6 +28,7 @@ The environments and profiles in the TVE Dashboard serve various use cases throu
 ### Prequal Production
 
 * Validate new, unreleased features or configurations of the Adobe Authentication server using MVPD's production endpoints.
+* Validate new application versions for each channel using MVPD's production endpoints.
 * Acts as the environment to validate every configuration change before pushing it to release production.
 
 ### Release Staging
@@ -37,8 +38,8 @@ The environments and profiles in the TVE Dashboard serve various use cases throu
 
 ### Release Production
 
-* Represents the live environment with the latest Adobe Pass release build available to programmers.
-* Maintains stability in code and configuration by immediately reflecting changes on the programmer's application.
+* Represents the live environment with the latest Adobe Pass release build available to all end-users.
+* Maintains stability in code and configuration, and immediately reflects every configuration change on end user's application.
 
 ## Switch environments {#switch-environments}
 

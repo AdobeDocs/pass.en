@@ -13,7 +13,7 @@ The **Channels** section under **Configurations** in the left panel displays a l
 * **Channel Id**: A unique identifier, also referred to as *requestor Id*.
 * **Integrations**: The number of connections established with MVPDs.
 
-To quickly locate a specific channel, enter the display name in **Search** at the top of the list.
+To quickly locate a specific channel, enter the **Display name** in **Search** at the top of the list.
 
 ## Manage channel configurations {#manage-channel-conf}
 
@@ -66,8 +66,7 @@ This tab displays a list of [available certificates](#available-certificates) an
 
 #### Available certificates {#available-certificates}
 
-These certificates serve as private or public keys and play a crucial role in validation purposes.
-
+These certificates serve as Private/Public Keys and are used for validation purposes.
 You can make the following changes to available certificates:
 
 * [Add new certificate](#add-new-certificate)
