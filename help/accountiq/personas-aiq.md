@@ -19,9 +19,9 @@ D2C refers to video streaming services sold directly from a content provider to 
 
 TV Everywhere refers to the online component of a customer's traditional TV subscription. It includes subscribers to cable or satellite TV services, such as Comcast or DirecTV, who can access content from those providers online through various streaming platforms. 
 
-In TV Everywhere, organizations are either [Programmers](/help/AccountIQ/product-concepts.md#programmer-def) or [MVPDs](/help/AccountIQ/product-concepts.md#mvpd-def). 
+In TV Everywhere, organizations are either [Programmers](/help/accountiq/product-concepts.md#programmer-def) or [MVPDs](/help/accountiq/product-concepts.md#mvpd-def). 
 
-When you [onboard](/help/AccountIQ/get-started.md) your organization to Account IQ, it is assigned either a Programmer or MVPD persona. 
+When you [onboard](/help/accountiq/get-started.md) your organization to Account IQ, it is assigned either a Programmer or MVPD persona. 
 
 ### Programmers {#programmers}
 
