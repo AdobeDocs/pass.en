@@ -15,7 +15,7 @@ The Dashboard summarizes and aggregates data in a collection of graphs and repor
 ![dashboard of Account IQ for programmer users](assets/dashboard-programr.png){align="left"}
 
 
-*Figure: The dashboard for programmer users*
+*The dashboard for programmer users*
 
 **A.** Segment and time interval panel **B.** Page navigation **C.** Data panels
 
@@ -27,7 +27,7 @@ The dashboard for MVPD users is slightly different from those of the programmer 
 
 ![dashboard of [!UICONTROL Account IQ] for MVPD users](assets/dashboard-mvpd.png){align="left"}
 
-*Figure: The dashboard for MVPD users*
+*The dashboard for MVPD users*
 
 **A.** Segment and time interval panel **B.** Page navigation **C.** Data panels
 
@@ -35,9 +35,9 @@ The dashboard for MVPD users is slightly different from those of the programmer 
 
 The dashboard for programmer and MVPD users includes:
 
-* **Segments and time interval panel**: This panel enables you to select segment and time interval to generate account sharing reports, providing a summary of the selected segment. Know how to select [segments and time interval](/help/accountiq/segments-timeinterval.md).
+* **Segments and time interval panel**: This panel enables you to select segment and time interval to generate account sharing reports, and provide a summary of the selected segment. Know how to select [segments and time interval](/help/accountiq/segments-timeinterval.md).
 
-* **Page navigation**: These tabs allows you to navigate and explore across various sections and pages of Account IQ.
+* **Page navigation**: These tabs enable you to navigate and explore various sections and pages of Account IQ.
 
-* **Data panels**: The panels display account sharing reports in a form of tables and graphs and offer to export them as reports on your local machine. Know more about [data panels](/help/accountiq/data-panels.md) and how to [export data panel reports](/help/accountiq/export-reports.md).
+* **Data panels**: The panels display account sharing reports through tables and graphs, providing the option to export them as reports directly to your local device. View [data panels](/help/accountiq/data-panels.md) and [export data panel reports](/help/accountiq/export-reports.md) for more information.
 

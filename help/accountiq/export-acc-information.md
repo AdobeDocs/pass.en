@@ -19,7 +19,7 @@ To export the account sharing information of subscriber accounts for a specific 
 
    ![Export top 1000 accounts](assets/export-top-1000-accounts.png)
 
-   *Figure: Select Export top 1000 accounts option*
+   *Select Export top 1000 accounts option*
 
 1. The file will automatically download to your local machine.
 
@@ -31,7 +31,7 @@ The CSV file sorts the data in decreasing order based on the sharing probabiliti
 
 ![exported data in csv format](assets/exported-csv.png)
 
-*Figure: Exported data in CSV format*
+*Exported data in CSV format*
 
 ## Columns in the exported report {#columns-in-export}
 

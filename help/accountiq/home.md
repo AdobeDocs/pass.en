@@ -12,7 +12,7 @@ Generally, video streaming service providers are aware of the risk and cost of s
 
 ![Account IQ flow diagram](assets/aiq-intro.png)
 
-*Figure: Account IQ information flow*
+*Account IQ information flow*
 
 Adobe Pass [!UICONTROL Account IQ] enables video streaming services to understand the subscriber usage patterns and identify credential sharing. By deeply analyzing each subscriber's activity using Adobe's proprietary multi-layer machine learning model, streaming services can understand usage behavior and identify credential sharing with a greater degree of certainty. Moreover, it enables action to be taken through integrations with other systems such as limiting concurrent streams or customizing offers, and validates the impact of those actions—whether encouraging legitimate viewing behavior or growing subscribers and revenue.
 
@@ -42,7 +42,7 @@ Generally, video streaming service providers consider password sharing as fatal 
 
 ![Account IQ flow diagram](assets/aiq-intro.png)
 
-*Figure: Account IQ information flow*
+*Account IQ information flow*
 
 Adobe Pass Account IQ enables video streaming services understand the subscriber usage patterns and identify password sharing by analyzing usage behavior. Moreover, it validates the impact of applying actions to encourage legitimate viewing behavior while maximizing business ROI, eventually growing subscribers and revenue.
 

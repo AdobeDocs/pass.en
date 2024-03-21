@@ -4,19 +4,19 @@ description: Understanding and using segments. Learn how to create and manage a 
 ---
 # Work with segments {#work-with-segments}
 
-[Segments](product-concepts.md#segmet-def) are a collection of subscriber accounts that allows you to analyze credential sharing under user-defined conditions. You can use segments to examine different sets of subscriber accounts and generate corresponding data reports in tables and graphs. There are two types of segments in Account IQ: 
+[Segments](product-concepts.md#segmet-def) are a collection of subscriber accounts that allow you to analyze credential sharing under user-defined conditions. You can use segments to examine different sets of subscriber accounts and generate corresponding data reports in tables and graphs. There are two types of segments in Account IQ: 
 
 1. **Default segment**: **All accounts in your properties** is an out-of-the-box segment in the system that includes all active subscriber accounts without specific conditions applied.
 
    >[!NOTE]
    >
-   >Using the default segment may prevent the display of certain tables like [MVPDs and Programmers in segment](data-panels.md#mvpds-programmers-segment), [Sharing score by channels and MVPDs](data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](usage-patterns.md#usage-pattern-dis-mvpds-programmers). These tables can only accommodate and display data for up to 20 rows at a time. The remaining tables, graphs, and reports are the same for both default and custom segments.
+   >Using the default segment may prevent the display of certain tables like [MVPDs and Programmers in segment](data-panels.md#mvpds-programmers-segment), [Sharing score by channels and MVPDs](data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](usage-patterns.md#usage-pattern-dis-mvpds-programmers). These tables can only accommodate and display data for up to 20 rows at a time. The remaining tables, graphs, and reports are the same for default and custom segments.
 
-1. **Custom segments**: These are tailored segments that enable you to group subscriber accounts from specific categories, such as, D2C content types, programmers, channels, and MVPDs for analyzing credential sharing under user-defined conditions. Learn more about how to [create a custom segment](#create-new-segment).
+1. **Custom segments**: These are tailored segments that enable you to group subscriber accounts from specific categories, such as D2C content types, programmers, channels, and MVPDs for analyzing credential sharing under user-defined conditions. Learn more about how to [create a custom segment](#create-new-segment).
 
    >[!IMPORTANT]
    >
-   >All procedures described in this guide are based on custom segments. However, the concepts remain the same for both default and custom segments.
+   >All procedures described in this guide are based on custom segments. However, the concepts remain the same for default and custom segments.
 
 When you go to the **Actions** and select the **[!UICONTROL Segments]** tab in the left panel, a list of segments available in the system is displayed. The segments page lets you quickly assess key details about each segment in a tabular format. The details include the segment name, the number of [video categories](product-concepts.md##video-category-def), metrics, [operations](product-concepts.md#operation-def) using the current segment, last modified date and time, as well as the name of the segment creator. 
 
@@ -32,13 +32,13 @@ To build a segment and analyze subscriber's sharing behavior, select **[!UICONTR
 
    ![Create new segment](assets/create-new-segment.png)
 
-   *Figure: Create new segment*
+   *Create new segment*
 
 It opens a **New segment** page, which includes the following elements:
 
    ![New segment page](assets/new-segment-dialog.png)
 
-   *Figure: New segment page*
+   *New segment page*
 
 **A.** Segment components **B.** Segment definition **C.** Segment summary
 
@@ -68,7 +68,7 @@ Perform the following steps to create a segment:
 
     ![Add segment component as a programmer or its channels ](assets/segment-basis-selector.png)
     
-    *Figure: Add segment component as a programmer or its channels dialog* 
+    *Add segment component as a programmer or its channels dialog* 
 
    Decide whether you want to compare specific programmers or a segment based on the channels associated with a programmer.
 
@@ -80,15 +80,15 @@ Perform the following steps to create a segment:
 
    >[!NOTE]
    >
-   >When you log in as a programmer, MVPD named **xfinity** appears as a standalone option in the **MVPDs** section. You cannot combine it with any other MVPD.
+   >When you log in as a programmer, an MVPD named **xfinity** appears as a standalone option in the **MVPDs** section. You cannot combine it with any other MVPD.
 
 1. Drag **Metrics** from the segment components on the left panel and drop them into the **Metrics** section within the **Segment definition**.
 
    ![Select an operator and set a value for the added metric](assets/component-metrics.png)
    
-   *Figure: Select an operator and assign a value for the added metric*
+   *Select an operator and assign a value for the added metric*
 
-    After adding metrics in the segment definition, **[!UICONTROL Select an operator]** from the dropdown menu and assign a value using **[!UICONTROL Select an option]**. 
+    After adding metrics in the segment definition, choose an operator from **[!UICONTROL Select an operator]** dropdown menu and assign a value using **[!UICONTROL Select an option]**. 
     
     Adjust values for certain metrics by using the upward arrow to increase and the downward arrow to decrease. 
 
@@ -96,13 +96,13 @@ Perform the following steps to create a segment:
 
    ![Select an operator and set a value for the added calculated metric](assets/component-calculated-metrics.png)
    
-   *Figure: Select an operator and assign a value for the added calculated metric*
+   *Select an operator and assign a value for the added calculated metric*
    
    After adding calculated metrics in the segment definition, **[!UICONTROL Select an operator]** from the dropdown menu and assign a value using **[!UICONTROL Select an option]**.
 
     >[!NOTE]
     >
-    >All the metrics and calculated metrics you drop under the segment definition are accompanied by appropriate operators to assign values to respective metrics and calculated metrics. 
+    >All the metrics and calculated metrics you drop under the segment definition are accompanied by appropriate operators to assign values to the respective metrics and calculated metrics. 
 
 1. Review the segment details in the **Segment summary** to decide the changes you want to implement across the segment.
 1. Select **[!UICONTROL Last week]** or **[!UICONTROL Last month]** from the **Evaluation period** dropdown menu to estimate summary values for the past week or month. 
@@ -123,7 +123,7 @@ You can select a segment from the segments list and then perform the following a
 ![Edit, duplicate, or delete a segment](assets/manage-segments-list.png)
 
 
-*Figure: Select a segment to edit, duplicate, or delete*
+*Select a segment to edit, duplicate, or delete*
 
    >[!NOTE]
    >
@@ -142,9 +142,9 @@ You can select a segment from the segments list and then perform the following a
 
    ![Clear all segment components in each section under segment definition ](assets/clear-all-components.png)
    
-   *Figure: Select Clear all to remove all segment components at once*
+   *Select Clear all to remove all segment components at once*
 
-1. Select either **[!UICONTROL Update segment]** to update the existing segment or select **[!UICONTROL Save as new segment]** to create a new segment with the changes.
+1. Select either **[!UICONTROL Update segment]** to update the existing segment or **[!UICONTROL Save as new segment]** to create a new segment with the changes.
 
    >[!NOTE]
    >
@@ -171,7 +171,7 @@ A copy of the selected segment is generated and placed at the end of the segment
 
    ![Delete more than one segments](assets/delete-more-than-one-segment.png)
 
-   *Figure: Select multiple segments to delete more than one segment*
+   *Select multiple segments to delete more than one segment*
 
 1. Select **[!UICONTROL Delete]**.
 1. Confirm to **[!UICONTROL Delete]** in the dialog to remove the segment permanently.

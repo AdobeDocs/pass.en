@@ -26,7 +26,7 @@ The metrics help you understand the magnitude (ranging from low, medium, high to
 ![](assets/aggregate-sharing-score.png)
 
 
-*Figure: Average sharing score panel - aggregated for the current segment*
+*Average sharing score panel - aggregated for the current segment*
 
 The following metrics are components of the Average Sharing Score.
 
@@ -39,7 +39,7 @@ The number of percentage is calculated based on an average of the sharing probab
 ![](assets/sharing-level.png)
 
 
-*Figure: Sharing level*
+*Sharing level*
 
 The Trend indicator shows the percentage change in the value of the metric from the previous time interval.
 
@@ -52,7 +52,7 @@ You can also see the Trend indicator, which depicts a rise or fall in the usage 
 ![](assets/usage-4mshared-accounts.png)
 
 
-*Figure: Usage from shared accounts*
+*Usage from shared accounts*
 
 ### Overall sharing score {#overall-sharing-score}
 
@@ -63,7 +63,7 @@ It provides a percentage that reflects the comparative impact of sharing in rela
 ![](assets/overall-sharing-score.png)
 
 
-*Figure: Overall sharing score*
+*Overall sharing score*
 
 ## MVPDs and Programmers in segment {#mvpds-programmers-segment}
 
@@ -75,7 +75,7 @@ Select the column headings to sort the data.
 
 ![](assets/sharing-scores-by-mvpds-in-segment.png)
 
-*Figure: Sharing Score by MVPDs in segment*
+*Sharing Score by MVPDs in segment*
 
 Use **Export** to download the data in a csv file. View [export data panel reports](/help/accountiq/export-reports.md) for more information
 
@@ -89,7 +89,7 @@ Select the column headings to sort the data.
 
 ![](assets/sharing-scores-by-programmers-in-segment.png)
 
-*Figure: Sharing Score by Programmers in segment*
+*Sharing Score by Programmers in segment*
 
 Use **Export** to download the data in a csv file. View [export data panel reports](/help/accountiq/export-reports.md) for more information.
 
@@ -104,7 +104,7 @@ Select the column headings to sort the data.
 ![](assets/sharing-scores-by-channels-mvpds.png)
 
 
-*Figure: Sharing scores by channels and MVPDs*
+*Sharing scores by channels and MVPDs*
 
 ## Accounts sharing probability {#accounts-sharing-probability}
 
@@ -118,7 +118,7 @@ This chart partitions accounts into ranges of sharing probability quintiles from
 ![](assets/dashboard-ac-sharing-prob.png)
 
 
-*Figure: Numbers and percentages of subscriber accounts in different sharing probability ranges*
+*Numbers and percentages of subscriber accounts in different sharing probability ranges*
 
 
 ## Number of accounts and usage by sharing probability level {#number-of-accounts-usage-sharing-probability}
@@ -128,6 +128,6 @@ This panel provides a tabular view of  accounts partitioned into ranges of shari
 ![](assets/no-acc-usage-prob-level.png)
 
 
-*Figure: Number of accounts, trends, and usages falling in various probability ranges*
+*Number of accounts, trends, and usages falling in various probability ranges*
 
 Use **Export** to download the data in a csv file. View [export data panel reports](/help/accountiq/export-reports.md) for more information.

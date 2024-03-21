@@ -14,17 +14,17 @@ As a programmer and MVPD user, you can export the following data panel reports:
 To export data panel reports for a specific segment, follow these steps:
 
 1. Log in with your authorized programmer or MVPD credentials.
-1. Select a desired segment and time interval from segment and time interval panel. Know [how to select segment and time interval](segments-timeinterval.md).
+1. Select a required segment and time interval from segment and time interval panel. View [segments and time interval](segments-timeinterval.md#segment-selection) for more information.
 
    If required, refer to the instructions for [creating a new segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#edit-segment).
 
 1. Navigate to the data panel you want to export. 
 
-   For example, below we refer to **Number of accounts and usage by sharing probability level**.
+   For example, consider the **Number of accounts and usage by sharing probability level** panel as shown below.
 
    ![Export Number of accounts and usage by sharing probability level](assets/export-report.png){align="left"}
 
-   *Figure: Export Number of accounts and usage by sharing probability level*
+   *Export Number of accounts and usage by sharing probability level*
 
 1. Select **[!UICONTROL Export]** option located in the upper-right corner of the data panel.
 
@@ -38,4 +38,4 @@ The columns in the exported report are displayed below.
 
    ![Exported report](assets/exported-report.png){align="left"}
 
-   *Figure: Exported report*
+   *Exported report*

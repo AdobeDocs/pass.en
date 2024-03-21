@@ -15,7 +15,7 @@ The cluster bar graph in *[!UICONTROL *Usage patterns distribution- Users in seg
 
 ![](assets/segment-users-industry.png)
 
-*Figure: Usage patterns distribution- Users in segment vs Industry* 
+*Usage patterns distribution- Users in segment vs Industry* 
 
 ## Usage pattern distribution in segment {#usage-pattern-dis-segment}
 
@@ -27,7 +27,7 @@ The **[!UICONTROL Usage patterns distribution in segment]** panel tabulates the 
 
 ![](assets/usage-pattern-segmentwise.png)
 
-*Figure: Usage patterns distribution in segment* 
+*Usage patterns distribution in segment* 
 
 For example, in the above visualization:
 
@@ -45,7 +45,7 @@ The **[!UICONTROL Usage pattern distribution]** table provides a comparison of u
 
 ![](assets/usage-patterns-mvpdwise.png)
 
-*Figure: Usage patterns distribution for programmer user* 
+*Usage patterns distribution for programmer user* 
 
 +++
 
@@ -55,6 +55,6 @@ The **[!UICONTROL Usage pattern distribution]** table provides a comparison of u
 
 ![](assets/usage-patterns-programmerwise.png)
 
-*Figure: Usage patterns distribution for MVPD user* 
+*Usage patterns distribution for MVPD user* 
 
 +++

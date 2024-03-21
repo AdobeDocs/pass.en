@@ -5,15 +5,15 @@ exl-id: 08d65716-8b6a-4300-acda-fec63e1e6815
 ---
 # General limitations {#general-limitations}
 
-Adobe strives to offer robust functionality and seamless user experiences through its offerings. The current version (version 1.2) of Account IQ provides usage and subscription sharing analytics to streaming providers with high degree of confidence. However, following limitations will be addressed in upcoming release versions.
+Adobe strives to offer robust functionality and seamless user experiences through its offerings. The current version (version 1.2) of Account IQ provides usage and subscription sharing analytics to streaming providers with high degree of confidence. However, following limitations will be addressed in upcoming release versions:
 
-* When estimating sharing scores for individual accounts, Account IQ takes a conservative approach that enables companies to act on sharing with great degree of confidence. However, this approach tends to underestimate the total amount of sharing when aggregated across many accounts.
+* When estimating sharing scores for individual accounts, Account IQ takes a conservative approach that enables companies to act on sharing with a great degree of confidence. However, this approach tends to underestimate the total amount of sharing when aggregated across many accounts.
 
 * The [Overall Sharing Score](/help/accountiq/data-panels.md#overall-sharing-score) currently only factors in [Sharing Level](/help/accountiq/data-panels.md#sharing-level) and [Usage from Shared Accounts](/help/accountiq/data-panels.md#usage-from-shared-accounts). Future versions will factor in additional metrics.
 
 * When defining cohorts in the dashboard or usage patterns, the [MVPDs and Programmers in segment](/help/accountiq/data-panels.md#mvpds-programmers-segment), [Sharing score by channels and MVPDs](/help/accountiq/data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](/help/accountiq/usage-patterns.md#usage-pattern-dis-mvpds-programmers) reports have a limit of 20 categories (MVPDs, channels, etc). Segments exceeding this limit will not display data in these reports.
 
-* The option to export account statistics is limited to export 1000 accounts, as of now.
+* Currently, the option to export account statistics is restricted to exporting 1000 accounts.
 
 * The option to select [Segment Type](#segment-type) when defining Operations is limited to **Fixed number of accounts**. The **Variable number of accounts** option will be available in a forthcoming version.
 
@@ -29,16 +29,17 @@ Adobe strives to offer robust functionality and seamless user experiences throug
 
 In Isolation Mode, MVPDs (such as, Xfinity) consistently identify subscribers across devices based on the programmers they interact with. In the standard mode, MVPDs consistently identify subscribers across devices irrespective of the programmers.
 
-For example, in the following image:
-
-* If a Subscriber B of an Isolation Mode MVPD (such as, Xfinity) accesses the content offered by two different programmers using the same device, then the MVPD will associate different identifiers with the two different access attempts. It appears that there are two different subscribers accessing the content for the programmers (L and M in the figure).
-* For Standard MVPD, if Subscriber B accesses content offered by two different programmers, then the MVPD will associate a single access identifier for both access attempts. 
-
-MVPDs (such as, Xfinity) in Isolation Mode don't consistently identify a subscriber, even if the subscriber uses the same device across different programmers.
+Here is an example:
 
 ![](assets/isolation-diff-new.png)
 
-*Figure: Isolation Mode MVPD identifies four different subscribers instead of two*
+*Isolation Mode MVPD identifies four different subscribers instead of two*
+
+* If a Subscriber B of an Isolation Mode MVPD (such as, Xfinity) accesses the content offered by two different programmers using the same device, then the MVPD will associate different identifiers with the two different access attempts. It appears that there are two different subscribers accessing the content for the programmers (L and M in the figure).
+
+* For Standard MVPD, if Subscriber B accesses content offered by two different programmers, then the MVPD will associate a single access identifier for both access attempts. 
+
+* MVPDs (such as, Xfinity) in Isolation Mode don't consistently identify a subscriber, even if the subscriber uses the same device across different programmers.
 
 To manage the distortion of data (due to identifying a single subscriber as multiple subscribers based on accessing different programmers), Isolation Mode limits the activity reported about a programmer to the activity only on that programmer's applications. 
 
@@ -48,7 +49,7 @@ To manage the distortion of data (due to identifying a single subscriber as mult
 >
 > The downside is that Programmer L is deprived of sharing information gathered about Subscribers A and B due to activity with any Programmer other than L.
 
-In isolation mode, all the computations made to obtain the sharing scores and all the associated metrics are made using only the activity of the devices streaming from applications belonging to the selected programmer and channels. The sharing scores and probabilities are calculated only using stream starts from the currently selected channels.
+In Isolation mode, all the computations made to obtain the sharing scores and all the associated metrics are made using only the activity of the devices streaming from applications belonging to the selected programmer and channels. The sharing scores and probabilities are calculated only using stream starts from the currently selected channels.
 
 The system automatically operates in Isolation Mode when the selected segment contains an Isolation Mode MVPD which identifies single subscribers as multiple subscribers when streaming from different programmers. All graphs and charts for these segments will reflect the results of this altered behavior.
 
@@ -64,15 +65,15 @@ To create a segment that is analyzed in Isolation Mode, drag Isolation Mode MVPD
 
 ![](assets/xfinity-in-segment.png)
 
-*Figure: Xfinity selection in Isolation mode*
+*Xfinity selection in Isolation mode*
 
 >[!IMPORTANT]
 >
-> Account sharing is more relevant when measured for streaming across all Programmer's applications, expect lower **Sharing Scores** and some variation in the metrics when in Isolation Mode.
+> Account sharing is more relevant when measured for streaming across all Programmer's applications. Expect lower **Sharing Scores** and some variation in the metrics when in Isolation Mode.
 
 ![](assets/aggregate-sharing-isolation.png)
 
-*Figure: Sharing probability gauges in Isolation mode*
+*Sharing probability gauges in Isolation mode*
 
-The above gauges show that only 9% of all the accounts are shared, and only 11% of the content is consumed by those 9%. Because of the naturally lower scores, the results in Isolation Mode should be interpreted differently from the results in standard mode.
+The above gauges shows only 9% of all accounts are shared, and among those, only 11% of the content is consumed. Because of the naturally lower scores, the results in Isolation Mode should be interpreted differently from the results in standard mode.
 

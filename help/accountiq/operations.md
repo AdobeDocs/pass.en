@@ -7,7 +7,7 @@ exl-id: ba6bceca-221c-42db-b207-804e4b9f6d54
 
 Once you've analyzed your subscriber's usage patterns and identified instances of password sharing for a selected segment using [!DNL Account IQ] analytics, you can take targeted actions through focused procedures called operations in [!DNL Account IQ]. 
 
-**Operations** allow you to effectively track and manage credential sharing toward a group of accounts to mitigate password sharing and enhance the experience for valued subscribers. 
+**Operations** allow you to effectively track and manage credential sharing towards a group of accounts to mitigate password sharing and enhance the experience for valued subscribers. 
 
 You can apply actions to a defined [segment](/help/accountiq/product-concepts.md#segment-def) to address password sharing within a specific [time interval](/help/accountiq/product-concepts.md#time-interval-def), and schedule the operation to execute at a future date. These actions include restrictions to minimize password sharing or ease constraints on non-sharing accounts.
 
@@ -37,17 +37,17 @@ You can review the effects of an operation through operation reports. To view op
 
 ![](assets/operations-page.png)
 
-*Figure: List and details of existing operations in Account IQ*
+*List and details of existing operations in Account IQ*
 
 Select the desired **Operation Name** from the list of operations. The following reports are displayed:
 
 ### Operation performance {#operation-performance}
 
-The operation performance provides a top line readout summarizing the number of accounts impacted, operation progress, and the overall sharing score of the accounts in the segment during the opertion's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def).
+The operation performance provides a top line readout summarizing the number of accounts impacted, operation progress, and the overall sharing score of the accounts in the segment during the operation's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def).
 
 ![Operation performance report](assets/operation-performance.png)
 
-*Figure: Operation performance report*
+*Operation performance report*
 
 **A.** Impacted accounts **B.** Operation progress **C.** Overall sharing score
 
@@ -69,7 +69,7 @@ This report is displayed as a stacked column graph that illustrates the impact o
 
 ![Operation impact on accounts in segment graph](assets/accounts-in-segment.png)
 
-*Figure: Operation impact on accounts in segment graph*
+*Operation impact on accounts in segment graph*
 
 The x-axis represents the operation's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def), while the y-axis indicates the status of accounts in the operation's segment. Each bar in the graph is divided into three colors:
 
@@ -83,7 +83,7 @@ The x-axis represents the operation's [evaluation period](/help/accountiq/produc
 >
 >The first pink bar represents the number of accounts meeting the operation segment's conditions at the beginning of the evaluation period.
 
-Over time, the graph illustrates changes in account behavior relative to the original criteria (for example, having a sharing probability of more than 90 and using more than 5 devices have become inactive), or have become inactive.
+Over time, the graph illustrates changes in account behavior relative to the original criteria (for example, having a sharing probability of more than 90 and using more than 5 devices have become inactive).
 
 ### Operation impact: Shared accounts metrics {#impact-shared-accounts}
 
@@ -95,7 +95,7 @@ This line graph represents [sharing level](/help/accountiq/data-panels.md#sharin
 
 ![Sharing level line graph](assets/share-level.png){width="550" align="left"}
 
-*Figure: Sharing level line graph*
+*Sharing level line graph*
 
 #### Number of play requests {#play-requests}
 
@@ -103,11 +103,11 @@ This line graph represents [play requests](/help/accountiq/general-usage-reports
 
 ![Number of play requests line graph](assets/number-play-requests.png){width="550" align="left"}
 
-*Figure: Number of play requests line graph*
+*Number of play requests line graph*
 
 ### Operation impact: General usage metrics {#impact-general-usage}
 
-The general usage metrics provide an overview of average number of devices, IPs and locations in the operation's segment during the operation's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def). 
+The general usage metrics provide an overview of average number of devices, IPs, and locations in the operation's segment during the operation's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def). 
 
 #### Number of devices {#devices}
 
@@ -115,7 +115,7 @@ This line graph represents the average [number of devices](/help/accountiq/gener
 
 ![Number of devices line graph](assets/number-devices.png){width="550" align="left"}
 
-*Figure: Number of devices line graph*
+*Number of devices line graph*
 
 #### Number of IPs and locations {#IPs-locations}
 
@@ -123,7 +123,7 @@ This line graph represents the average [number of IPs](/help/accountiq/general-u
 
 ![Number of IPs and locations line graph](assets/number-ips-locations.png){width="550" align="left"}
 
-*Figure: Number of IPs and locations line graph*
+*Number of IPs and locations line graph*
 
 To close the report and go back to the main **Operations** page, select **Operations** tab under **Actions** in left navigation.
 
@@ -148,17 +148,17 @@ In this section, add a name for the operation in **Operation name**.
 
    ![Add operation name in operation details](assets/operation-details.png)
 
-   *Figure: Add Operation name*
+   *Add Operation name*
 
 ### Segment {#segment}
 
-In this section, click on **Select segment** and choose a segment to which you want to use this operation. Know more about [how to select a segment](/help/accountiq/segments-timeinterval.md#segment-selection). 
+In this section, click on **Select segment** and choose a segment to which you want to use this operation. View [segments and time interval](/help/accountiq/segments-timeinterval.md#segment-selection) to know more. 
 
-Once you've selected a segment, use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. Know more about [segment summary](segments-timeinterval.md#segment-summary).
+Once you've selected a segment, use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. View [segment summary](segments-timeinterval.md#segment-summary) for more information.
 
 ![Select segment and time interval](assets/select-segment-timeinterval.png)
 
-*Figure: Select segment and time interval*
+*Select segment and time interval*
 
 If required, use <img alt= "edit segment" src="./assets/edit-segment.svg" width="25"> icon to edit the selected segment or  <img alt= "create new segment" src="./assets/create-new-segment.svg" width="25"> icon to create new segment. For more details, refer to the instructions for [creating a new segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#edit-segment).
 
@@ -174,7 +174,7 @@ In this section, choose an **Action** you want to perform on the selected segmen
 
 ![Select the type of Action](assets/apply-actions.png)
 
-*Figure: Select the type of Action*
+*Select the type of Action*
 
 There are two options available:
 
@@ -203,7 +203,7 @@ In this section, select the **Start date** and **End date** from the date-picker
    
 ![Select start date and End date from the date-picker](assets/add-schedule.png)
 
-*Figure: Select start date and End date from the date-picker*
+*Select start date and End date from the date-picker*
 
 **A.** Start date picker **B.** End date picker
 
@@ -222,7 +222,7 @@ You can only stop the operations that are currently in **Running** status. To st
 
    ![Select options menu to stop the operation](assets/stop-operation.png)
 
-   *Figure: Select Options menu to stop the operation*
+   *Select Options menu to stop the operation*
    
 1. Select **Stop**.
 
