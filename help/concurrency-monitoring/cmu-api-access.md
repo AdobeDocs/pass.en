@@ -16,11 +16,11 @@ In order for the Client applications to utilize the OAuth 2.0 authorization, the
 This metadata is communicated as a software statement, which contains a "software_id" to allow our authorization server to correlate different instances of an application using the same software statement.
 A software statement is a JSON Web Token (JWT) that asserts metadata values about the client software as a bundle. When presented to the authorization server as part of a client registration request, the software statement must be digitally signed or MACed using JSON Web Signature (JWS). \
 You can find a more detailed explanation on what software statements are and how they work in the official documentation  <a href="https://datatracker.ietf.org/doc/html/rfc7591" target="_blank">[RFC7591]</a>.
-Follow the steps in the sections below to gain access. These steps are applicable only for programmers. For MVPDs, please contact our support team. 
+Follow the steps in the sections below to gain access. 
 
 ## Access procedure steps {#access-procedure-steps}
 
-1. Have a registered application at programmer level in Adobe Pass DCR server. For this step please contact our [Support Team](mailto:tve-support@adobe.com).
+1. Have a registered application in Adobe Pass DCR server. For this step please contact our [Support Team](mailto:tve-support@adobe.com).
 2. Get the software statement
    1. Go to TVE Dashboard <a href="https://console-preprod.auth.adobe.com/#!/" target="_blank"> Pre-Prod </a> or <a href="https://console.auth.adobe.com/" target="_blank">PROD</a>
    2. Select programmer
