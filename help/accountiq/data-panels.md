@@ -6,15 +6,15 @@ description: The Dashboard helps to pinpoint the instances of password sharing b
 
 Once you've selected segment and time interval, the dashboard displays various data panels in a form of tables and graphs. These panels provides the analysis of credential sharing statistics of the subscriber accounts in the selected segment.
 
-The table below outlines the availability of data panels for different [personas](/help/accountiq/personas-aiq.md): 
+The table below outlines the availability and differences among data panels in various [personas](/help/accountiq/personas-aiq.md) in Account IQ: 
 
 |Data panels|D2C services|TVE Programmers|TVE MVPDs|
 |---|---|---|---|
-|[Average sharing score - aggregated for the current segment](#aggregated-sharing)|Available|Available|Available|
-|[MVPDs and Programmers in segment](#mvpds-programmers-segment)|Available|Available|Available|
+|[Average sharing score - aggregated for the current segment](#aggregated-sharing)|Available and consistent|Available and consistent|Available and consistent|
+|[Video categories in segment](#video-categories-segment)|Available with slight variations|Available with slight variations|Available with slight variations|
 |[Sharing score by channels and MVPDs](#sharin-score-by-channels-and-mvpds)|Unavailable|Available|Unavailable|
-|[Accounts sharing probability](#accounts-sharing-probability)|Available|Available|Available|
-|[Number of accounts and usage by sharing probability level](#number-of-accounts-usage-sharing-probability)|Available|Available|Available|
+|[Accounts sharing probability](#accounts-sharing-probability)|Available and consistent|Available and consistent|Available and consistent|
+|[Number of accounts and usage by sharing probability level](#number-of-accounts-usage-sharing-probability)|Available and consistent|Available and consistent|Available and consistent|
 
 
 ## Average sharing score - aggregated for the current segment {#aggregated-sharing}
@@ -56,7 +56,7 @@ You can also see the Trend indicator, which depicts a rise or fall in the usage 
 
 ### Overall sharing score {#overall-sharing-score}
 
-Overall sharing score is combination of sharing scores including "Sharing level" and "z Usage from shared accounts".
+Overall sharing score is combination of sharing scores including "Sharing level" and "Usage from shared accounts".
 
 It provides a percentage that reflects the comparative impact of sharing in relation to the industry. It's purpose is similar to that of a credit score, summarizing the situation with a single number. But in this case, the higher the number, the greater the potential harm.
 
@@ -65,7 +65,23 @@ It provides a percentage that reflects the comparative impact of sharing in rela
 
 *Overall sharing score*
 
-## MVPDs and Programmers in segment {#mvpds-programmers-segment}
+## Video categories in segment {#video-categories-segment}
+
++++D2C- Regions in segment
+
+When you log in as a **D2C** service, this table provides a comparative view of the different Aggregated Sharing Scores for the [video categories](/help/accountiq/product-concepts.md#video-category-def) in the current segment.
+
+>[!NOTE]
+>
+> The video category shown in the image, such as **Regions** is just an example. When you log in to Account IQ, this panel will display your company's specific video category.
+
+![](assets/sharing-scores-by-regions-in-segment.png)
+
+*Sharing Score by Regions in segment*
+
+Use **Export** to download the data in a csv file. View [export data panel reports](/help/accountiq/export-reports.md) for more information.
+
++++
 
 +++Programmer- MVPDs in segment
 
@@ -77,7 +93,7 @@ Select the column headings to sort the data.
 
 *Sharing Score by MVPDs in segment*
 
-Use **Export** to download the data in a csv file. View [export data panel reports](/help/accountiq/export-reports.md) for more information
+Use **Export** to download the data in a csv file. View [export data panel reports](/help/accountiq/export-reports.md) for more information.
 
 +++
 

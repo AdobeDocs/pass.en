@@ -8,7 +8,7 @@ The Dashboard in [!UICONTROL Account IQ] displays tables and graphs for analyzin
 
 As a programmer and MVPD user, you can export the following data panel reports:
 
-* [MVPDs and Programmers in segment](data-panels.md#mvpds-programmers-segment) 
+* [Video categories in segment](data-panels.md#video-categories-segment) 
 * [Number of accounts and usage by sharing probability level](data-panels.md#number-of-accounts-usage-sharing-probability)
 
 To export data panel reports for a specific segment, follow these steps:

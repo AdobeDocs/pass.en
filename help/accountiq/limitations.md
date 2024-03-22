@@ -11,7 +11,7 @@ Adobe strives to offer robust functionality and seamless user experiences throug
 
 * The [Overall Sharing Score](/help/accountiq/data-panels.md#overall-sharing-score) currently only factors in [Sharing Level](/help/accountiq/data-panels.md#sharing-level) and [Usage from Shared Accounts](/help/accountiq/data-panels.md#usage-from-shared-accounts). Future versions will factor in additional metrics.
 
-* When defining cohorts in the dashboard or usage patterns, the [MVPDs and Programmers in segment](/help/accountiq/data-panels.md#mvpds-programmers-segment), [Sharing score by channels and MVPDs](/help/accountiq/data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](/help/accountiq/usage-patterns.md#usage-pattern-dis-mvpds-programmers) reports have a limit of 20 categories (MVPDs, channels, etc). Segments exceeding this limit will not display data in these reports.
+* When defining cohorts in the dashboard or usage patterns, the [Video categories in segment](/help/accountiq/data-panels.md#video-categories-segment), [Sharing score by channels and MVPDs](/help/accountiq/data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](/help/accountiq/usage-patterns.md#usage-pattern-dis-mvpds-programmers) reports have a limit of 20 categories (MVPDs, channels, etc). Segments exceeding this limit will not display data in these reports.
 
 * Currently, the option to export account statistics is restricted to exporting 1000 accounts.
 
