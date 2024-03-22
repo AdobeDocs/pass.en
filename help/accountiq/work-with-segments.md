@@ -74,7 +74,7 @@ Perform the following steps to create a segment:
 
    If you start by adding a **Region** in the **Regions/Content types** section, a decision dialog box is displayed.
 
-    ![Add segment component as a region or its content types ](assets/d2c-segment-basis-selector.png)
+    ![Add segment component as a region or its content types ](assets/d2c-segment-basis-selector.png){width="350" align="left"}
     
     *Add segment component as a region or its content types dialog* 
 
@@ -155,7 +155,8 @@ Perform the following steps to create a segment:
 
    If you start by adding a **Programmer** in the **Programmers/Channels** section, a decision dialog box is displayed.
 
-    ![Add segment component as a programmer or its channels ](assets/segment-basis-selector.png)
+    ![Add segment component as a programmer or its channels ](assets/segment-basis-selector.png){width="350" align="left"}
+    
     
     *Add segment component as a programmer or its channels dialog* 
 
