@@ -1,8 +1,8 @@
 ---
 title: Throttling mechanism
 description: Throttling mechanism
+exl-id: 15236570-1a75-42fb-9bba-0e2d7a59c9f6
 ---
-
 # Throttling mechanism {#throttling-mechanism}
 
 ## Introduction {#introduction}
@@ -67,4 +67,4 @@ x-content-type-options: nosniff
 ## Customer integration recommendations {#customer-integration-recommendations}
 
 With a correct implementation, the customers will not receive “429 Too Many Requests” response.
-Still, Adobe recommends that each customer handles “429 Too Many Requests” response appropriately using the technical details presented above. When handling the response, "Expires" header should be used to determine when to send the next valid request. 
+Still, Adobe recommends that each customer handles “429 Too Many Requests” response appropriately using the technical details presented above. When handling the response, "Expires" header should be used to determine when to send the next valid request.

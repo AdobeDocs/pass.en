@@ -1,6 +1,7 @@
 ---
 title: Tracking Prevention Assessment Apple Safari
 description: Tracking Prevention Assessment Apple Safari
+exl-id: a3362020-92ff-4232-b923-e462868730d5
 ---
 # Tracking Prevention Assessment - Apple Safari {#tracking-prevention-assessment-apple-safari}
 

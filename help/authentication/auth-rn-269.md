@@ -1,6 +1,7 @@
 ---
 title: Adobe Pass Authentication 2.69 Release Notes
 description: Adobe Pass Authentication 2.69 Release Notes
+exl-id: d031c4c5-dbd5-4a77-b298-a53b992cc4c5
 ---
 # Adobe Pass Authentication 2.69 Release Notes {#pt-authn-269-rn}
 
@@ -44,4 +45,4 @@ Release Date: **02/27/2024 - 02/29/2024**
 #### JavaScript SDK 4.7.0 {#js-sdk}
 
 * Removed deprecated version 2.0.1 of Access Enabler JavaScript SDK due to security vulnerabilities.
-  * Follow the link for more details: [Adobe Pass Authentication JavaScript 4.7.0 Release Notes](authn-rn-javascript-470.md) 
+  * Follow the link for more details: [Adobe Pass Authentication JavaScript 4.7.0 Release Notes](authn-rn-javascript-470.md)

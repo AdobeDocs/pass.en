@@ -1,6 +1,7 @@
 ---
 title: Adobe Pass Authentication JavaScript 4.1.1 Release Notes
 description: Adobe Pass Authentication JavaScript 4.1.1 Release Notes
+exl-id: 00d017b3-700d-48b6-a43f-c0d7b8b67c3d
 ---
 # Adobe Pass Authentication JavaScript 4.1.1 Release Notes {#javascript-sdk-411-release-notes}
 

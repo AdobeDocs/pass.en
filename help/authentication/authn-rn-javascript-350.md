@@ -1,6 +1,7 @@
 ---
 title: Adobe Pass Authentication JavaScript 3.5.0 Release Notes
 description: Adobe Pass Authentication JavaScript 3.5.0 Release Notes
+exl-id: 580839ef-4265-422f-8508-339bb8cdd636
 ---
 # Adobe Pass Authentication JavaScript 3.5.0 Release Notes {#javascript-sdk-350-release-notes}
 

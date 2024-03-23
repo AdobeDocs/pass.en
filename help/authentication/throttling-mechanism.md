@@ -1,8 +1,8 @@
 ---
 title: Throttling mechanism
 description: Know about the Throttling mechanism used in Adobe Pass Authentication. Explore an overview of this mechanism in this page.
+exl-id: f00f6c8e-2281-45f3-b592-5bbc004897f7
 ---
-
 # Throttling mechanism {#throttling-mechanism}
 
 All Pass Authentication customers need to be able to access Pass Authentication API for each of their users, according to instructions and their business case.
