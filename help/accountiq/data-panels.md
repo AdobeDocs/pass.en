@@ -23,14 +23,14 @@ The Aggregated Sharing Score panel provides a top line readout summarizing the q
 
 The metrics help you understand the magnitude (ranging from low, medium, high to abnormal) of credential sharing by your subscribers, hence providing a measure of the need to act upon it.
 
->[!NOTE]
->
-> The blue indicator in the **Average sharing score - aggregated for the current segment** serves different purposes for D2C services compared to TV Everywhere. For D2C, it represents the **Service Average Index** as shown below. If you log in as a Programmer or MVPD, this label changes to **Industry Average Index**.  
-
 ![](assets/aggregate-sharing-score.png)
 
 
 *Average sharing score panel - aggregated for the current segment*
+
+>[!NOTE]
+>
+> The blue indicator in the **Average sharing score - aggregated for the current segment** serves different purposes for D2C services compared to TV Everywhere. For D2C, it represents the **Service Average Index** as shown below. If you log in as a Programmer or MVPD, this label changes to **Industry Average Index**.  
 
 The following metrics are components of the Average Sharing Score.
 

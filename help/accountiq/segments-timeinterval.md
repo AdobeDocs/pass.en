@@ -57,6 +57,13 @@ This allows you to define your problem statement as "Subscribers of MVPD A who w
 
 ## Segment summary {#segment-summary}
 
+
+[Regions and content types](product-concepts.md#video-category-def) in segment refer to the metadata labels associated with the video streams watched by shared accounts represented in account sharing reports. 
+
+>[!NOTE]
+>
+>The video categories shown in the image, such as **regions** and **content types** are just examples. When you log in to Account IQ, the labels will display your company's specific video categories.
+
 Use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. It also presents information on the number of subscriber accounts and their playback requests within the chosen time period.
 
 ![](assets/segment-panel-programmers-mvpd.png){align="left"}
