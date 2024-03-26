@@ -23,6 +23,10 @@ The Aggregated Sharing Score panel provides a top line readout summarizing the q
 
 The metrics help you understand the magnitude (ranging from low, medium, high to abnormal) of credential sharing by your subscribers, hence providing a measure of the need to act upon it.
 
+>[!NOTE]
+>
+> The blue indicator in the **Average sharing score - aggregated for the current segment** serves different purposes for D2C services compared to TV Everywhere. For D2C, it represents the **Service Average Index** as shown below. If you log in as a Programmer or MVPD, this label changes to **Industry Average Index**.  
+
 ![](assets/aggregate-sharing-score.png)
 
 
@@ -36,7 +40,7 @@ The sharing level gauge shows the percentage of all your shared subscriber accou
 
 The number of percentage is calculated based on an average of the sharing probability computed for every account in the set of selected MVPDs that has streamed from a one of the selected programmer channels during the selected time interval.
 
-![](assets/sharing-level.png)
+![](assets/sharing-level.png){width="350" align="left"}
 
 
 *Sharing level*
@@ -49,7 +53,7 @@ The gauge indicates the percent of usage by the shared accounts among all subscr
 
 You can also see the Trend indicator, which depicts a rise or fall in the usage from shared accounts compared to the previous time interval.
 
-![](assets/usage-4mshared-accounts.png)
+![](assets/usage-4mshared-accounts.png){width="350" align="left"}
 
 
 *Usage from shared accounts*
@@ -60,7 +64,7 @@ Overall sharing score is combination of sharing scores including "Sharing level"
 
 It provides a percentage that reflects the comparative impact of sharing in relation to the industry. It's purpose is similar to that of a credit score, summarizing the situation with a single number. But in this case, the higher the number, the greater the potential harm.
 
-![](assets/overall-sharing-score.png)
+![](assets/overall-sharing-score.png){width="350" align="left"}
 
 
 *Overall sharing score*
