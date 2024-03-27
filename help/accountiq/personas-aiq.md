@@ -11,7 +11,7 @@ Account IQ is designed to automatically identify password sharing, particularly 
 >This guide addresses the needs of D2C subscribers, TV Everywhere programmers, and TV Everywhere MVPDs personas within the video streaming industry.
 
 
-## Direct to consumer (D2C) {#d-to-c}
+## Direct to consumer (D2C) services {#d-to-c}
 
 D2C refers to video streaming services sold directly from a content provider to customers. Examples of D2C services include Netflix, Disney+, and HBO Max. These platforms typically require users to subscribe directly with the services to access their content.
 

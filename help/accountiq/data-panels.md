@@ -71,7 +71,7 @@ It provides a percentage that reflects the comparative impact of sharing in rela
 
 ## Video categories in segment {#video-categories-segment}
 
-+++D2C- Regions in segment
++++D2C services- Regions in segment
 
 When you log in as a **D2C** service, this table provides a comparative view of the different Aggregated Sharing Scores for the [video categories](/help/accountiq/product-concepts.md#video-category-def) in the current segment.
 

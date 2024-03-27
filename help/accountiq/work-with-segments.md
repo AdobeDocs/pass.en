@@ -40,7 +40,7 @@ To build a segment and analyze subscriber's sharing behavior, select **[!UICONTR
 
    >[!NOTE]
    >
-   >The video categories shown in the image, such as **Regions** and **Content Types** are just examples. When you log in to Account IQ, the labels will display your company's specific video categories.
+   >The video categories shown in the previous image, such as **Regions** and **Content Types** are just examples. When you log in to Account IQ, the labels will display your company's specific video categories.
 
 It opens a **New segment** page, which includes the following elements:
 
@@ -214,7 +214,7 @@ You can select a segment from the segments list and then perform the following a
 
 *Select a segment to edit, duplicate, or delete*
 
-**A.** [Video categories](product-concepts.md#video-category-def) **B.** Default segment
+**A.** [Video categories](product-concepts.md#video-category-def) **B.** [Default segment](#work-with-segments)
 
 >[!NOTE]
 >

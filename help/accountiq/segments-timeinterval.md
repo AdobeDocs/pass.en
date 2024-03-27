@@ -12,15 +12,17 @@ When you log into Account IQ, the segment and time interval panel at the top of 
 
  *Segment and time interval panel with collapsed segment summary*
  
-**A.** Currently selected segment name **B.** Open segment list option **C.** Edit segment option **D.** Create new segment option **E.** Granularity and time interval selector **F.** Option to expand segment summary **G.** Segment summary collapsed **H.** Segment data of subscriber accounts in the segment for a selected time interval
+**A.** Currently selected segment name **B.** Open segment list option **C.** Edit segment option **D.** Create new segment option **E.** Granularity and time interval selector **F.** Option to expand segment summary **G.** Collapsed segment summary **H.** Segment data of subscriber accounts in the segment for a selected time interval
 
 >[!NOTE]
 >
->You can also [create](work-with-segments.md#create-new-segment) and [edit](work-with-segments.md#edit-segment) segments from the **Segments** tab under **Actions**.
+> The collapsed segment summary represented with **G** in previous image shows the [Video categories](product-concepts.md#video-category-def) used in the TV Everywhere version of Account IQ. If you're logged in as a D2C service, the labels will display your company's specific video categories.
+
+Read more about how to [create](work-with-segments.md#create-new-segment) and [manage](work-with-segments.md#manage-segment) segments from the **Segments** tab in the left panel.
 
 ## Segment selection {#segment-selection}
 
-### Segment selection for programmers/MVPDs
+To select a specific segment, follow these steps:
 
 1. Navigate to the **[!UICONTROL Open segment]** option.
 1. Select **Segment Name** for which you want to view account sharing reports.
@@ -29,7 +31,12 @@ When you log into Account IQ, the segment and time interval panel at the top of 
 
    *Select Segment Name*
 
+   >[!NOTE]
+   >
+   > The video categories shown in the previous image, such as **MVPDs**, **Programmers**, and **Channels** represent the labels used in the TV Everywhere version of Account IQ. If you're logged in as a D2C service, the labels will display your company's specific video categories.
+
 1. Select **[!UICONTROL Open segment]**.
+
 
 ## Granularity and Time Interval selection {#granularity-timeinterval}
 
@@ -57,12 +64,29 @@ This allows you to define your problem statement as "Subscribers of MVPD A who w
 
 ## Segment summary {#segment-summary}
 
+The Segment Summary is similar for D2C and TV Everywhere. The video categories will be different for each respective persona.
 
-[Regions and content types](product-concepts.md#video-category-def) in segment refer to the metadata labels associated with the video streams watched by shared accounts represented in account sharing reports. 
++++ D2C Services
+
+Use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. It also presents information on the number of subscriber accounts and their playback requests within the chosen time period.
+
+![](assets/segment-panel-d2c.png){align="left"}
+
+*Segment Summary for D2C services*
 
 >[!NOTE]
 >
->The video categories shown in the image, such as **regions** and **content types** are just examples. When you log in to Account IQ, the labels will display your company's specific video categories.
+>The video categories shown in the previous image, such as **regions** and **content types** are just examples. When you log in to Account IQ, the labels will display your company's specific video categories.
+
+The **Segment Summary** includes the following conditions that define a segment:
+
+**[Regions and content types](product-concepts.md#video-category-def) in segment** refer to the metadata labels associated with the video streams watched by shared accounts represented in account sharing reports. 
+
+**[Metrics](product-concepts.md#metric) in segment** refer to attributes or criteria that subscribers must have fulfilled to be identified in account sharing reports.
+
++++
+
++++ TV Everywhere
 
 Use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. It also presents information on the number of subscriber accounts and their playback requests within the chosen time period.
 
@@ -80,3 +104,4 @@ The **Segment Summary** includes the following conditions that define a segment:
 
 **[Metrics](product-concepts.md#metric) in segment** refer to attributes or criteria that subscribers must have fulfilled to be identified in account sharing reports.
 
++++

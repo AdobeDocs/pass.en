@@ -10,7 +10,7 @@ The Dashboard summarizes and aggregates data in a collection of graphs and repor
 >
 >The majority of data panels on the D2C, Programmers and MVPD dashboards are identical. However, certain data panels may vary in availability or appear slightly different for each user type. 
 
-+++D2C- dashboard
++++D2C services- dashboard
 
 ![dashboard of Account IQ for D2C services](assets/dashboard-d2c.png){align="left"}
 

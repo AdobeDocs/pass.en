@@ -9,74 +9,57 @@ exl-id: 1272073a-61fe-47ec-aced-2e8055b6b11e
 
 [!UICONTROL General Usage] reports page provides tools to carve out subgroup metrics based on the number of account devices in use, IPs detected, and respective zip codes.
 
-<!--Divide the content in cohorts.
-
-Content filters
-device filters
-
-segment and definition replicate to cohorts. Number of people and number of account that ......
-content consumption.....-->
-
 The reports are all based on the current segment selected using [Segments and time interval](/help/accountiq/segments-timeinterval.md) panel. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in [Snapshot Overview - Accounts above thresholds](#snapshot-overview) panel.
 
-<!--To view General Usage Reports:
+## Play Requests/Unique Subscribers {#playreq-uniquesubs}
 
-1. Select the desired MVPDs from the **MVPDs in Segment** option.
+The line graphs here gives you a view of the changes over time of values, such as Play Requests and Unique Subscribers in a selected time interval for the defined segment.
 
-2. Select the desired programmer channels from the **Channels in Segment** Option.
++++ D2C services- Play Requests/Unique Subscribers
 
-3. Select an appropriate time interval from the **[!UICONTROL Granularity and Time Interval]** option.
+![](assets/d2c-line-graph-gu.png)
 
-   Using the above options you have defined segments for your analysis. Based on your segment selection, following graphs and reports are displayed.
 
-4. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in [Snapshot Overview - Accounts above thresholds](#snapshot-overview) widget/panel.-->
+*Play Requests/Unique Subscribers for D2C services*
 
-## Play Requests / Unique Subscribers {#playreq-uniquesubs}
++++
 
-The line graphs here gives you a view of the changes over time in values of AuthN OK, AuthZ OK, Play Requests, and Unique Subscribers in a selected time interval for the defined segment.
-
-+++Programmer- **Play Requests / Unique Subscribers**
++++Programmer- Play Requests/Unique Subscribers
 
 ![](assets/progr-line-graph-gu.png)
 
 
-*Play Requests / Unique Subscribers for programmer user*
-
+*Play Requests/Unique Subscribers for programmer user*
 
 +++
 
-
-+++MVPD- **Unique Subscribers**
++++MVPD- Unique Subscribers
 
 ![](assets/mvpd-line-graph-gu.png)
 
-
 *Unique Subscribers for MVPD user* 
-
 
 +++
 
 <br/>
 
-The x-axis represents the time based on the current interval and the y-axis represents basic subscriber activity metrics during that period. The line graphs help you visualize and compare the values of the MVPDs, programmers, and channels subscribers you selected in the segment selection panel:
+The x-axis represents the time based on the current interval and the y-axis represents basic subscriber activity metrics during that period. The line graphs help you visualize and compare activity of the subscribers in the current segment. Depending on the persona the metrics include:
 
-* **AuthN OK**: Number of successful authentications. For more information and definition see [Product concepts: AuthN OK](/help/accountiq/product-concepts.md#authn-ok-def).
+* **AuthN OK**: Number of successful authentications. View [AuthN OK](/help/accountiq/product-concepts.md#authn-ok-def) for more information .
 
-* **AuthZ OK**: Number of successful authorizations. For more information and definition see [Product concepts: AuthZ OK](/help/accountiq/product-concepts.md#authz-ok-def).
+* **AuthZ OK**: Number of successful authorizations. View [AuthZ OK](/help/accountiq/product-concepts.md#authz-ok-def) for more information.
 
-* **Play Requests**: Number of Play Requests. For more information and definition see [Product concepts: Play requests](/help/accountiq/product-concepts.md#play-requests-def)
-    
-    >[!NOTE]
-    >
-    >The play requests line graph is not available for MVPD users.
+* **Play Requests**: Number of Play Requests. View [Play requests](/help/accountiq/product-concepts.md#play-requests-def) for more information.
 
-* **Unique Subscribers**: Number of successful unique subscribers. For more information and definition see [Product concepts: Unique subscribers](/help/accountiq/product-concepts.md#unique-subscriber-def)
+* **Unique Subscribers**: Number of successful unique subscribers. View [Unique subscribers](/help/accountiq/product-concepts.md#unique-subscriber-def) for more information.
 
-The total number of unique subscribers also include the number of unique devices if a programmer's use of Adobe TempPass (that is free preview) is part of the segment.
+>[!NOTE]
+>
+>The availability of metrics varies depending on the persona.
 
 ## Snapshot Overview - Accounts above thresholds {#snapshot-overview}
 
-Fine tune your analytics and reports using this additional filter to set various usage thresholds. Once you define your segment (or cohort) for analysis by selecting the desired MVPD(s) and channels, you can also use following filters to analyze subscriber behavior:
+Fine tune your analytics and reports using this additional filter to set various usage thresholds. Once you have selected a segment, you can also use following filters to further analyze subscriber behavior:
 
 * Number of Devices Threshold
 
@@ -96,7 +79,7 @@ When you update threshold values in [Accounts Segment - based on selected thresh
 
 >[!NOTE]
 >
->The default value for each of the thresholds is 4. Which means, the General Usage page shows analysis for MVPDs with subscribers using four (and more than four) devices, consuming content from four (and more) different geographical locations and four (and more) different zip codes.
+>The default value for each of the thresholds is 4. Which means, the General Usage page shows analysis for subscribers using four or more devices, consuming content from four or more different IP addresses, *and* four or more different zip codes.
 
 ### Accounts Segment - based on selected thresholds {#account-segments-basedon-segments}
 
@@ -106,7 +89,7 @@ The graph shows you the:
 
 * Absolute number of subscriber accounts.
 
-* Percentage out of the total subscriber accounts in that segment that are using X number of devices, Y number of IPs, and Z number of Zip codes to consume content from your channel for the defined segment of MVPDs, for a time interval.
+* Percentage out of the total subscriber accounts in the segment that are using the number of devices, from the number of IPs, in the number of Zip codes as specified by the thresholds.
 
 ![](assets/select-thresholds.png)
 
@@ -158,7 +141,7 @@ The x-axis plots Number of Accounts, and y-axis plots Number of IPs.
 
 ![](assets/graph-ip-week-acc.png)
 
-Once you have defined a segment (by selecting MVPDs and channels) and set the threshold for the number of IPs, you can use the graph to identify the following:
+Once you have defined a segment and set the threshold for the number of IPs, you can use the graph to identify the following:
 
 * Number (and percentage) of subscribers that are consuming content from a specific number of IP in a week.
 

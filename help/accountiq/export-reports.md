@@ -6,7 +6,7 @@ description: Learn how to export data panel reports on dashboard.
 
 The Dashboard in [!UICONTROL Account IQ] displays tables and graphs for analyzing credential sharing statistics of the subscriber accounts in the selected segment. Apart from viewing the sharing patterns, scores, and account usage metrics, you can also export reports from these tables.
 
-As a programmer and MVPD user, you can export the following data panel reports:
+You can export the following data panel reports:
 
 * [Video categories in segment](data-panels.md#video-categories-segment) 
 * [Number of accounts and usage by sharing probability level](data-panels.md#number-of-accounts-usage-sharing-probability)
