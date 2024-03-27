@@ -30,7 +30,7 @@ The metrics help you understand the magnitude (ranging from low, medium, high to
 
 >[!NOTE]
 >
-> The blue indicator in the **Average sharing score - aggregated for the current segment** serves different purposes for D2C services compared to TV Everywhere. For D2C, it represents the **Service Average Index** as shown below. If you log in as a Programmer or MVPD, this label changes to **Industry Average Index**.  
+> The blue indicator in the **Average sharing score - aggregated for the current segment** serves different purposes for D2C services compared to TV Everywhere. For D2C services, it represents the **Service Average Index** as shown below. If you log in as a Programmer or MVPD, this label changes to **Industry Average Index**.  
 
 The following metrics are components of the Average Sharing Score.
 
@@ -87,7 +87,7 @@ Use **Export** to download the data in a csv file. View [export data panel repor
 
 +++
 
-+++Programmer- MVPDs in segment
++++Programmers- MVPDs in segment
 
 When you log in as a **Programmer** user, this table provides a comparative view of the different Aggregated Sharing Scores for the MVPDs in the current segment.
 
@@ -101,7 +101,7 @@ Use **Export** to download the data in a csv file. View [export data panel repor
 
 +++
 
-+++MVPD- Programmers in segment
++++MVPDs- Programmers in segment
 
 When you log in as an **MVPD** user, this table provides a comparative view of the different Aggregated Sharing Scores for the Programmers in the current segment.
 

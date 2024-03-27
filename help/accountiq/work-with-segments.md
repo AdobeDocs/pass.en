@@ -36,7 +36,7 @@ To build a segment and analyze subscriber's sharing behavior, select **[!UICONTR
 
    ![Create new segment](assets/d2c-create-new-segment.png)
 
-   *Create new segment*
+   *Create new segment for D2C services*
 
    >[!NOTE]
    >

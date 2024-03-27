@@ -24,7 +24,7 @@ The line graphs here gives you a view of the changes over time of values, such a
 
 +++
 
-+++Programmer- Play Requests/Unique Subscribers
++++Programmers- Play Requests/Unique Subscribers
 
 ![](assets/progr-line-graph-gu.png)
 
@@ -33,7 +33,7 @@ The line graphs here gives you a view of the changes over time of values, such a
 
 +++
 
-+++MVPD- Unique Subscribers
++++MVPDs- Unique Subscribers
 
 ![](assets/mvpd-line-graph-gu.png)
 
