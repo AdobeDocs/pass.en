@@ -8,8 +8,7 @@ Account IQ is designed to automatically identify password sharing, particularly 
 
 >[!NOTE]
 >
->This guide addresses the needs of D2C subscribers, TV Everywhere programmers, and TV Everywhere MVPDs personas within the video streaming industry.
-
+>This guide addresses the needs of D2C subscribers, TV Everywhere programmers, and TV Everywhere MVPDs persona within the video streaming industry.
 
 ## Direct to consumer (D2C) services {#d-to-c}
 
@@ -33,8 +32,6 @@ MVPDs deliver multiple television channels to subscribers through various distri
 
 >[!NOTE]
 >
-> Logging in as a specific persona will affect some of the views of the Account IQ application.
-
-
+> When you log in to a specific persona will affect the appearance of the Account IQ application. Certain labels will change and some views may not be available depending on the persona.
 
 

@@ -5,11 +5,11 @@ exl-id: df41ddd2-fde3-4861-abd4-6e32f0be9ea5
 ---
 # Export information for accounts with high sharing score {#export-account-info-high-score}
 
-[!UICONTROL Account IQ] allows you to export account sharing details for top 1000 subscriber accounts based on their [sharing probabilities](/help/accountiq/product-concepts.md#account-sharing-probability-def). As a programmer and MVPD user, you can export the account sharing information for the current [segment](/help/accountiq/product-concepts.md#segment-def) and [specified time interval](/help/accountiq/product-concepts.md#time-interval-def) on the [Shared Accounts Reports](/help/accountiq/shared-acc-reports.md).
+[!UICONTROL Account IQ] allows you to export account sharing details for top 1000 subscriber accounts based on their [sharing probabilities](/help/accountiq/product-concepts.md#account-sharing-probability-def). You can export the account sharing information for the current [segment](/help/accountiq/product-concepts.md#segment-def) and [specified time interval](/help/accountiq/product-concepts.md#time-interval-def) on the [Shared Accounts Reports](/help/accountiq/shared-acc-reports.md) page.
 
 To export the account sharing information of subscriber accounts for a specific segment, follow these steps:
 
-1. Log in with your authorized programmer or MVPD credentials.
+1. Log in with your authorized credentials.
 1. Navigate to the **Shared Accounts** tab under **Reports** section.
 1. Select the required segment and time interval from segment and time interval panel. View [segments and time interval](segments-timeinterval.md) for more information on selecting a segment and time interval.
 
@@ -27,7 +27,7 @@ To export the account sharing information of subscriber accounts for a specific 
 
 1. Find the file on your local machine to open and access the data.
 
-The CSV file sorts the data in decreasing order based on the sharing probabilities of the subscriber accounts in the current segment for a specified time interval. 
+The CSV file contains the data for top 1000 accounts based on the sharing probabilities of the subscriber accounts in the current segment sorted in decreasing order.
 
 ![exported data in csv format](assets/exported-csv.png)
 
@@ -41,11 +41,15 @@ The selected week or month within the **[!UICONTROL Granularity and Time Interva
 
 **MVPD** 
 
-If you are a programmer user, the column shows which MVPD the subscriber account belongs to. 
+If you are a programmer user, the column shows the distributor with whom the account is subscribed.
+
+>[!NOTE]
+>
+> The **MVPD** column is only available for TV Everywhere personas. 
 
 **Subscriber Id** 
 
-The unique identifier for the specific account that is discussed within a row. 
+The unique identifier for the specific account.
 
 **Minimum # Devices** 
 
@@ -91,13 +95,22 @@ The maximum distance between the streaming locations associated with the account
 
 The number of logins users make during the specified period using that account.
 
+>[!NOTE]
+>
+> **[!UICONTROL # AuthN OK]** may not be available for specific D2C services.
+
 **[!UICONTROL # AuthZ OK]**
 
 The number of times an MVPD has authorized a stream or granted access to content for that account.
 
 >[!NOTE]
 >
->The **[!UICONTROL # AuthZ OK]** is linked to **[!UICONTROL # Play Requests]**. It's fewer than **[!UICONTROL # Play Requests]** because Adobe typically caches the authorizations from MVPDs for approximately 24 hours.
+>**[!UICONTROL # AuthZ OK]** is not available for D2C services. 
+
+>[!NOTE]
+>
+>For TV Everywhere, **[!UICONTROL # AuthZ OK]** related to **[!UICONTROL # Play Requests]**. It will always be less than **[!UICONTROL # Play Requests]** because Adobe typically caches the authorizations from MVPDs for approximately 24 hours.
+
 
 **[!UICONTROL # Play Requests]**
 
@@ -113,9 +126,12 @@ The overall number of channels that the account has watched over a specified per
 
 >[!NOTE]
 >
->**[!UICONTROL # Channels]** include the channels that may not belong to the logged-in programmer.
+> For D2C services **[!UICONTROL # Channels]** is equivalent to number of **[!UICONTROL # Video categories]**. 
+
+>[!NOTE]
 >
->This number for the account includes your channel and other channels accessed during the specified period.
+>For TV Everywhere, they include the channels that may not belong to the logged-in programmer. This number for the account includes your channel and other channels accessed during the specified period.
+
 
 **Usage Pattern**
 
