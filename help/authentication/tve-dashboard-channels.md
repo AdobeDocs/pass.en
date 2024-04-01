@@ -5,9 +5,9 @@ description: Learn about channels and its configurations within TVE dashboard.
 
 # Channels {#channels}
 
-The Channels section of the TVE Dashboard allows you to access and manage settings for channels associated with a specific programmer. You can also [add a new channel](#add-new-channel).
+The Channels section of the TVE Dashboard allows you to view and manage settings for channels associated with a specific programmer. You can also [add a new channel](#add-new-channel).
 
-The **Channels** section under **Configurations** in the left panel displays a list of linked channels with key details that include:
+The **Channels** tab in the left panel displays a list of linked channels with key details that include:
 
 * **Display name**: The brand name of the channel used for commercial purposes.
 * **Channel Id**: A unique identifier, also referred to as *requestor Id*.
@@ -17,14 +17,20 @@ To quickly locate a specific channel, enter the **Display name** in **Search** a
 
 ## Manage channel configurations {#manage-channel-conf}
 
-Navigate to the **Channels** section under **Configurations** in the left panel and select a desired channel from the list. You can then select the following tabs at the top to view and edit various settings:
+To manage various settings of a specific Channel:
 
-* [General Settings](#general-settings)
-* [Integrations](#integrations)
-* [Certificates](#certificates)
-* [Domains](#domains)
-* [Registered Applications](#registered-applications)
-* [Custom Schemes](#custom-schemes) 
+1. Navigate to the **Channels** tab in the left panel.
+1. Select the required Channel from the available list. 
+1. At the top of the **Channels** section, you'll find the following tabs: 
+
+   * [General Settings](#general-settings)
+   * [Integrations](#integrations)
+   * [Certificates](#certificates)
+   * [Domains](#domains)
+   * [Registered Applications](#registered-applications)
+   * [Custom Schemes](#custom-schemes) 
+
+   Select the respective tab to view and edit corresponding settings of the selected channel.
 
 >[!IMPORTANT]
 >
@@ -35,6 +41,8 @@ Navigate to the **Channels** section under **Configurations** in the left panel 
 This tab presents Channel Information and Analytics Configuration.
 
 #### Channel information {#channel-information}
+
+In this section, you can edit the following details:
 
 * **Display name**: The brand name of the channel used for commercial purposes.
 
@@ -50,7 +58,7 @@ To enable **Analytics Configuration**, kindly contact your Technical Account Man
 
 ### Integrations {#integrations}
 
-This tab displays a list of available integrations of the currently selected channel with MVPDs, including the status of each integration, whether enabled or not. Select a specific entry from this list to access integration properties directly in the **Integrations** tab on the left panel. To know more, view [Integrations](/help/authentication/tve-dashboard-integrations.md).
+This tab displays a list of available integrations between the currently selected channel and MVPDs. It lists each integration along with its status, indicating whether it's enabled or not. You can select a specific entry from this list to access integration properties directly in the **Integrations** tab located on the left panel. Learn more about [Integrations](/help/authentication/tve-dashboard-integrations.md).
 
 ### Certificates {#certificates}
 
@@ -153,8 +161,8 @@ This tab displays a list of custom schemes. For more details, view [iOS/tvOS app
 
 To add new channel, follow these steps:
 
-1. Go to the **Channels** section under **Configurations** in the left panel.
-1. Select **Add new channel** at the top of the list.
+1. Go to the **Channels** tab in the left panel.
+1. Select **Add new channel** at the top of the **Channels** section.
 1. Select **Programmer Id** from the dropdown menu in the **New channel** dialog box.
 1. Enter a unique identifier in **Channel Id**.
 1. Enter the brand name of the channel used for commercial purposes in **Display name**. 

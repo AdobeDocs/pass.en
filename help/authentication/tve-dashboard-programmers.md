@@ -4,9 +4,9 @@ description: Learn about programmers and its configurations within TVE dashboard
 ---
 # Programmers {#programmers}
 
-The Programmers section of the TVE Dashboard allows you to access and manage settings for [programmers](/help/authentication/glossary.md#programmer) associated your account entitlements. You can also [add new programmer](#add-new-programmer).
+The Programmers section of the TVE Dashboard allows you to view and manage settings for [programmers](/help/authentication/glossary.md#programmer) associated with your account entitlements. You can also [add a new programmer](#add-new-programmer).
 
-The **Programmers** section under **Configurations** in the left panel displays the following details of a programmer:
+The **Programmers** tab in the left panel displays a list of associated programmers with key details that include:
 
 * **Programmer Id**: A media company identifier within the system.
 * **Channels**: The number of associated channels linked to a programmer.
@@ -15,12 +15,18 @@ To quickly locate a specific programmer, enter the **Display name** in **Search*
 
 ## Manage programmer configurations {#manage-programmer-conf}
 
-Navigate to the **Programmers** section under **Configurations** in the left panel and select a desired programmer. You can then select the following tabs at the top to view and edit various settings: 
+To manage various settings of a specific Programmer:
 
-* [Channels](#channels)
-* [Certificates](#certificates)
-* [Registered Applications](#registered-applications)
-* [Custom Schemes](#custom-schemes) 
+1. Navigate to the **Programmers** tab in the left panel.
+1. Select a required Programmer from the list. 
+1. At the top of the **Programmers** section, you'll find the following tabs: 
+
+   * [Channels](#channels)
+   * [Certificates](#certificates)
+   * [Registered Applications](#registered-applications)
+   * [Custom Schemes](#custom-schemes) 
+
+   Select the respective tab to view and edit corresponding settings of the selected programmer.
 
 >[!IMPORTANT]
 >
@@ -28,7 +34,7 @@ Navigate to the **Programmers** section under **Configurations** in the left pan
 
 ### Channels {#channels}
 
-This tab displays a list of channels linked with a current programmer. Select a specific **Channel** from this list to access channel properties directly in **Channels** section on the left panel. For more details, refer to the intructions for [Channels](/help/authentication/tve-dashboard-channels.md).
+This tab displays a list of channels linked with a current programmer. Select a specific **Channel** from this list to access channel properties directly in **Channels** tab on the left panel. Read more about [Channels](/help/authentication/tve-dashboard-channels.md).
 
 ### Certificates {#certificates}
 
@@ -91,8 +97,8 @@ This tab displays a list of custom schemes. For more details, view [iOS/tvOS app
 
 To add new programmer entity, follow these steps:
 
-1. Go to the **Programmers** section under **Configurations** in the left panel.
-1. Select **Add new programmer** at the top of the list.
+1. Go to the **Programmers** tab in the left panel.
+1. Select **Add new programmer** at the top of the **Programmers** section.
 1. Enter a media company identifier in **Programmer Id** in the **New programmer** dialog box.
 1. Enter a commercial brand name you want to be shown in the console under **Display name**. 
 1. Select **Add programmer**.
