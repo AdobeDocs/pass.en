@@ -71,7 +71,7 @@ It provides a percentage that reflects the comparative impact of sharing in rela
 
 ## Video categories in segment {#video-categories-segment}
 
-+++D2C services- Regions in segment
++++D2C services: Regions in segment
 
 When you log in as a **D2C** service, this table provides a comparative view of the different Aggregated Sharing Scores for the [video categories](/help/accountiq/product-concepts.md#video-category-def) in the current segment.
 
@@ -87,7 +87,7 @@ Use **Export** to download the data in a csv file. View [export data panel repor
 
 +++
 
-+++Programmers- MVPDs in segment
++++Programmers: MVPDs in segment
 
 When you log in as a **Programmer** user, this table provides a comparative view of the different Aggregated Sharing Scores for the MVPDs in the current segment.
 
@@ -101,7 +101,7 @@ Use **Export** to download the data in a csv file. View [export data panel repor
 
 +++
 
-+++MVPDs- Programmers in segment
++++MVPDs: Programmers in segment
 
 When you log in as an **MVPD** user, this table provides a comparative view of the different Aggregated Sharing Scores for the Programmers in the current segment.
 

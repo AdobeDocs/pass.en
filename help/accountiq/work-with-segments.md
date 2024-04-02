@@ -10,7 +10,7 @@ description: Understanding and using segments. Learn how to create and manage a 
 
    >[!NOTE]
    >
-   >Using the default segment may prevent the display of certain tables like [Video categories in segment](data-panels.md#video-categories-segment), [Sharing score by channels and MVPDs](data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for MVPDs and Programmers](usage-patterns.md#usage-pattern-dis-mvpds-programmers). These tables can only accommodate and display data for up to 20 rows at a time. The remaining tables, graphs, and reports are the same for default and custom segments.
+   >Using the default segment may prevent the display of certain tables like [Video categories in segment](data-panels.md#video-categories-segment), [Sharing score by channels and MVPDs](data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for video categories](usage-patterns.md#usage-pattern-dis-video-categories). These tables can only accommodate and display data for up to 20 rows at a time. The remaining tables, graphs, and reports are the same for default and custom segments.
 
 1. **Custom segments**: These are tailored segments that enable you to group subscriber accounts from specific categories, such as D2C content types, programmers, channels, and MVPDs for analyzing credential sharing under user-defined conditions. Learn more about how to [create a custom segment](#create-new-segment).
 
@@ -30,7 +30,7 @@ You can perform the following functions with segments:
 
 The process of creating a new segment are similar for D2C services and TV Everywhere. The video categories will be different for each respective persona.
 
-+++D2C Services
++++D2C services
 
 To build a segment and analyze subscriber's sharing behavior, select **[!UICONTROL Create new segment]** at the upper-right.
 

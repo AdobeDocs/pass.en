@@ -15,7 +15,7 @@ The reports are all based on the current segment selected using [Segments and ti
 
 The line graphs here gives you a view of the changes over time of values, such as Play Requests and Unique Subscribers in a selected time interval for the defined segment.
 
-+++ D2C services- Play Requests/Unique Subscribers
++++ D2C services: Play Requests/Unique Subscribers
 
 ![](assets/d2c-line-graph-gu.png)
 
@@ -24,7 +24,7 @@ The line graphs here gives you a view of the changes over time of values, such a
 
 +++
 
-+++Programmers- Play Requests/Unique Subscribers
++++Programmers: Play Requests/Unique Subscribers
 
 ![](assets/progr-line-graph-gu.png)
 
@@ -33,7 +33,7 @@ The line graphs here gives you a view of the changes over time of values, such a
 
 +++
 
-+++MVPDs- Unique Subscribers
++++MVPDs: Unique Subscribers
 
 ![](assets/mvpd-line-graph-gu.png)
 

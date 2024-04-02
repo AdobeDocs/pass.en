@@ -66,7 +66,7 @@ This allows you to define your problem statement as "Subscribers of MVPD A who w
 
 The Segment Summary is similar for D2C services and TV Everywhere. The video categories will be different for each respective persona.
 
-+++ D2C Services
++++ D2C services
 
 Use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. It also presents information on the number of subscriber accounts and their playback requests within the chosen time period.
 
