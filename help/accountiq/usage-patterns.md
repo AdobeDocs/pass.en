@@ -13,7 +13,7 @@ Like the other pages in the app, the analytics and reports here are based on the
 
 The cluster bar graph in depicts the number and percentages of subscribers for each social behavior, or usage pattern. 
 
-+++D2C services: Usage patterns distribution- Users in segment
++++D2C services: Usage patterns distribution - Users in segment
 
 It also compares them to a segment containing all of your accounts.
 
@@ -23,7 +23,7 @@ It also compares them to a segment containing all of your accounts.
 
 +++
 
-+++TV Everywhere: Usage patterns distribution- Users in segment vs Industry
++++TV Everywhere: Usage patterns distribution - Users in segment vs Industry
 
 In addition to comparing each usage pattern in the current segment to the entire industry, it also compares them to a segment containing all of your accounts.
 
