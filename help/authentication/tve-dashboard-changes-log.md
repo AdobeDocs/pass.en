@@ -5,9 +5,9 @@ description: Know how an admin can monitor the configuration changes in TVE Dash
 
 # Changes log {#change-log}
 
-The Changes Log section of the TVE Dashboard allows you to monitor the configuration changes pushed to the Adobe Pass Authentication environment through TVE Dashboard. You can also compare two different configuration changes.
+The Changes Log section of the TVE Dashboard allows you to view the configuration changes pushed to the Adobe Pass Authentication environment through TVE Dashboard. You can also compare two different configuration changes.
 
-The **Changes Log** tab in the left panel displays a list of configuration changes made through the TVE Dashboard. Each entry in this list provides the following details:
+The **Changes Log** tab in the left panel displays a list of all the configuration changes made through the TVE Dashboard. Each entry in this list provides the following details:
 
 * **Change description**: A short description on the scope of configuration change.
 * **Pushed by**: An email Id of the user responsible for making the change. 

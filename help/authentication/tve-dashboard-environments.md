@@ -51,7 +51,7 @@ To switch between Adobe Pass Authentication environments:
 
    ![TVE Dashboard environments dropdown](assets/tve-dashboard-env.png)
 
-   *Figure: The Adobe Pass TVE Dashboard environments drop-down*
+   *The Adobe Pass TVE Dashboard environments drop-down*
 
 
 >[!NOTE]

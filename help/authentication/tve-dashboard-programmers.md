@@ -4,7 +4,7 @@ description: Learn about programmers and its configurations within TVE dashboard
 ---
 # Programmers {#programmers}
 
-The Programmers section of the TVE Dashboard allows you to view and manage settings for [programmers](/help/authentication/glossary.md#programmer) associated with your account entitlements. You can also [add a new programmer](#add-new-programmer).
+The Programmers section of the TVE Dashboard allows you to view and manage settings for the existing [programmers](/help/authentication/glossary.md#programmer) associated with your account entitlements. You can also [add a new programmer](#add-new-programmer) as per your requirement.
 
 The **Programmers** tab in the left panel displays a list of associated programmers with key details that include:
 
@@ -18,15 +18,14 @@ To quickly locate a specific programmer, enter the **Display name** in **Search*
 To manage various settings of a specific Programmer:
 
 1. Navigate to the **Programmers** tab in the left panel.
-1. Select a required Programmer from the list. 
-1. At the top of the **Programmers** section, you'll find the following tabs: 
+1. Select a required Programmer from the list. At the top of the **Programmers** section, you'll find the following tabs: 
 
    * [Channels](#channels)
    * [Certificates](#certificates)
    * [Registered Applications](#registered-applications)
    * [Custom Schemes](#custom-schemes) 
 
-   Select the respective tab to view and edit corresponding settings of the selected programmer.
+1. Select the respective tab to view and edit corresponding settings of the selected programmer.
 
 >[!IMPORTANT]
 >

@@ -5,7 +5,7 @@ description: Learn about channels and its configurations within TVE dashboard.
 
 # Channels {#channels}
 
-The Channels section of the TVE Dashboard allows you to view and manage settings for channels associated with a specific programmer. You can also [add a new channel](#add-new-channel).
+The Channels section of the TVE Dashboard allows you to view and manage settings for the existing channels associated with a specific programmer. You can also [add a new channel](#add-new-channel) as per your requirement.
 
 The **Channels** tab in the left panel displays a list of linked channels with key details that include:
 
@@ -20,8 +20,7 @@ To quickly locate a specific channel, enter the **Display name** in **Search** a
 To manage various settings of a specific Channel:
 
 1. Navigate to the **Channels** tab in the left panel.
-1. Select the required Channel from the available list. 
-1. At the top of the **Channels** section, you'll find the following tabs: 
+1. Select the required Channel from the available list. At the top of the **Channels** section, you'll find the following tabs: 
 
    * [General Settings](#general-settings)
    * [Integrations](#integrations)
@@ -30,7 +29,7 @@ To manage various settings of a specific Channel:
    * [Registered Applications](#registered-applications)
    * [Custom Schemes](#custom-schemes) 
 
-   Select the respective tab to view and edit corresponding settings of the selected channel.
+1. Select the respective tab to view and edit corresponding settings of the selected channel.
 
 >[!IMPORTANT]
 >
@@ -171,3 +170,4 @@ To add new channel, follow these steps:
 >[!NOTE]
 >
 >A new local configuration change is pending and ready to be pushed to the server. The **Channels** section will display the added channel only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+
