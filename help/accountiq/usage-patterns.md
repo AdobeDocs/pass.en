@@ -15,7 +15,7 @@ The cluster bar graph in depicts the number and percentages of subscribers for e
 
 +++D2C services: Usage patterns distribution - Users in segment
 
-It also compares them to a segment containing all of your accounts.
+The cluster bar graph below compares the usage pattern distribution of the current segment to a segment containing all of your accounts.
 
 ![](assets/d2c-segment-users-industry.png)
 

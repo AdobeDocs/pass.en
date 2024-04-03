@@ -15,7 +15,7 @@ Using operations, you not only specify actions and their scope, but also gauge t
 
 By evaluating the outcomes, you can refine your strategy to optimize effects, whether by converting borrowers, mitigating credential sharing, or reducing churn.
 
-As a programmer or MVPD user, you can perform various functions with operations:
+You can perform various functions with operations:
 
 * [View operation reports](#operation-reports)
 * [Create new operation](#create-new-operation)
@@ -159,6 +159,10 @@ Once you've selected a segment, use <img alt= "expand segment summary" src="./as
 ![Select segment and time interval](assets/select-segment-timeinterval.png)
 
 *Select segment and time interval*
+
+>[!NOTE]
+>
+>The [video categories](product-concepts.md#video-category-def) shown in the previous image, such as **MVPDs**, **Programmers**, and **Channels** represent the labels used in the TV Everywhere version of Account IQ. If you're logged in as a D2C service, the labels will display your company's specific video categories.
 
 If required, use <img alt= "edit segment" src="./assets/edit-segment.svg" width="25"> icon to edit the selected segment or  <img alt= "create new segment" src="./assets/create-new-segment.svg" width="25"> icon to create new segment. For more details, refer to the instructions for [creating a new segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#edit-segment).
 

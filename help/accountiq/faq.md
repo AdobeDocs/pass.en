@@ -7,7 +7,7 @@ exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
 
 1. Who is [!UICONTROL Account IQ] designed for?
 
-   **Answer.** [!UICONTROL Account IQ] is designed to serve Programmers, MVPDs, and D2C services, however there are minor differences between these versions. There are limitations and restrictions on what data can be showed to each group.
+   **Answer.** [!UICONTROL Account IQ] is designed to serve D2C services, and TV Everywhere Programmers and MVPDs. However there are minor differences between these versions. There are limitations and restrictions on what data can be showed to each group.
 
 1. How far back does the data go?
 
@@ -21,17 +21,17 @@ exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
 
    **Answer.** The functionality to filter out the test accounts is not available in this version, but the feature will be available in a future release.
 
-1. Can I see the account sharing for each of my channels? <!--shall we separate out this question for the persona of programmer?-->
+1. Can I see the account sharing for different video categories?
 
-   **Answer.** Yes, you can see account sharing for individual channels, a group of channels, or entire networks (for example, programmers).
+   **Answer.** Yes, you can see account sharing for specific category, or a group of categories. For example, a D2C service set of regions, or a TV Everywhere collection of channels.
 
 1. What is the data source used to identify credential sharing?
 
-   **Answer.** The service examines all of the subscriber streaming activity and enhances it with proprietary data sources. For TV Everywhere this includes all transactions between programmers and MVPDs. From there, higher level analytics data of account sharing scores is synthesized.
+   **Answer.** The service examines all of the subscriber streaming activity and enhances it with proprietary data sources. For D2C services, subscriber activity typically comes from repositories, such as Adobe Analytics or third-party data warehouses. For TV Everywhere this includes all transactions between programmers and MVPDs processed by Adobe Pass.
 
-1. What is the industry average?
+1. What is the service or industry average?
 
-   **Answer.** Industry average is reflected in the three primary sharing indicators—Sharing level, Usage from shared accounts, and Overall sharing score. These values represent the averages of all subscribers for all services.
+   **Answer.** For D2C services, service reflects the baseline activity across all accounts. For TV Everywhere,  the industry average reflects the total for all Programmers and MVPDs. In both cases, these values are displayed in the primary sharing indicators—Sharing level, Usage from shared accounts, and Overall sharing score. 
 
 1. Is AccountIQ an enforcement tool? If not, how do we use it to stop sharing?
 
