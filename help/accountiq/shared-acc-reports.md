@@ -73,23 +73,13 @@ This graph informs you about the number of subscribers that are consuming conten
 
 You can zoom in to narrow down and view specifics of a bar in the graph that plots a range of locations.
 
-<!--![](assets/zip-code-period.gif)-->
-
 ## Segment - Geographical Span / Period / Account {#geo-span-period-account}
 
 This bar graph plots number of subscriber accounts with respect to different geographical ranges in miles. The range is based on the maximum distance between the locations from which a subscriber has streamed during the time interval.
 
-<!--Total number of users ...
-
-How many accounts are within 99 miles of each other.....and how many are apart. 
-
-Based on points on the map.-->
-
 ![](assets/geogr-span-account.png)
 
 When you select a bar representing a range of geographical distance, it expands the range to show you more details.
-
-<!--![](assets/geo-span-period-acc.gif)-->
 
 >[!MORELIKETHIS]
 >

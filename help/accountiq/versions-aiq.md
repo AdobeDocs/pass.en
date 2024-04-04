@@ -2,13 +2,13 @@
 title: Personas in Account IQ
 description: Learn about different user types in Account IQ.
 ---
-# Personas in Account IQ {#aiq-personas}
+# Versions of Account IQ {#aiq-versions}
 
 Account IQ is designed to automatically identify password sharing, particularly in the video streaming industry. In this industry, there are two major categories of services: Direct-to-Consumer (D2C) and TV Everywhere (TVE).
 
->[!NOTE]
->
->This guide addresses the needs of D2C subscribers, TV Everywhere programmers, and TV Everywhere MVPDs persona within the video streaming industry.
+This guide addresses the needs of D2C subscribers, TV Everywhere programmers, and TV Everywhere MVPDs companies within the video streaming industry.
+
+Because of slight differences between these industries, there are slightly different versions of Account IQ. Each type of video streaming company interacts with their own specific version of Account IQ: 
 
 ## Direct to consumer (D2C) services {#d-to-c}
 
@@ -32,6 +32,8 @@ MVPDs deliver multiple television channels to subscribers through various distri
 
 >[!NOTE]
 >
-> When you log in to a specific persona will affect the appearance of the Account IQ application. Certain labels will change and some views may not be available depending on the persona.
+> Depending on which version of Account IQ you log into, certain labels will change and some views may not be available.
+
+
 
 

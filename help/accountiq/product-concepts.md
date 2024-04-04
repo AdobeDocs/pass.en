@@ -5,7 +5,7 @@ exl-id: 2ee54442-9538-4c30-b999-265310b3935f
 ---
 # Product concepts and glossary {#glossary}
 
-Refer the following product terminologies and their definitions.
+The following product terminologies and their definitions are common to all versions of Account IQ.
 
 ## [!UICONTROL Accounts Sharing Probability] {#account-sharing-probability-def}
 
@@ -21,23 +21,11 @@ A dashboard panel with charts that divides the current segments sharing scores i
 
 ## [!UICONTROL AuthN] {#authn-def}
 
-Authentication, or the number of authentication attempts. An authentication attempt is the process whereby a user without a currently valid authentication state is redirected to their chosen MVPD, where they identify themselves to the MVPD - typically with a username and password.
+The number of authentication attempts. An authentication attempt is the process whereby a user attempts to login with D2C service or MVPD. For TV Everywhere users, the user is redirected to their chosen MVPD, where they identify themselves to the MVPD - typically with a username and password.
 
 ## [!UICONTROL AuthN OK] {#authn-ok-def}
 
-The number of successful authentications. A successful authentication occurs when a users identify is confirmed by an MVPD and results in the user being redirected back to the programmer app or site.
-
-## [!UICONTROL AuthZ] {#authz-def}
-
-Authorization, or the number of authorization request. An authorization request is the process whereby a programmer requests permission from an MVPD through Adobe to begin streaming a user's requested content. The MVPD typically grants the request based on the content rights associated with the user's MVPD subscription (for example whether the channel associated with the content is in the user's subscription). Some authorization request responses are cached by Adobe, which allows Adobe to respond immediately without passing the request on to the MVPD.
-
-## [!UICONTROL AuthZ OK] {#authz-ok-def}
-
-The number of successful authorizations.
-
-## [!UICONTROL Channel] {#channel-def}
-
-Channel, also knows as Property, is a thematically related source of video content. Traditionally representing a distinct, numerically addressable continuous video feed from an MVPD. The channel directly maps to an accessible channel of content available to the subscribers through their Set Top Box (STB).
+The number of successful authentications. A successful authentication occurs when a users identify is confirmed by a D2C service or MVPD. For TV Everywhere users, this results in the user being redirected back to the programmer app or site.
 
 ## [!UICONTROL Cluster] {#cluster-def}
 
@@ -58,7 +46,7 @@ Concurrent usage is calculated using the maximum speed(miles/hour) between 2 dif
 
 ## [!UICONTROL Device] {#device-def}
 
-A digital video hardware product capable of playing TV Everywhere content and supported by Adobe Pass. For example, smart phones, laptop and desktop computers, game consoles, and smart televisions.
+A digital video hardware product capable of playing upstreaming content. For example, smart phones, laptop and desktop computers, game consoles, and smart televisions.
 
 ## [!UICONTROL Evaluation period] {#evaluation-period-def}
 
@@ -72,25 +60,13 @@ The distance between the farthest points in a set of locations.
 
 In reference to time interval, the size of the period; such as one week or one month.
 
-## [!UICONTROL Industry Average Index] {#industry-avg-index-def}
-
-A value computed for each of the Risk Indices (Accounts, Usage, Overall) across all Programmers and MVPDs during the selected time interval.
-
 ## [!UICONTROL IP] {#ip-def}
 
 The Internet Protocol address assigned to a device by an Internet Service Provider. For example, cable service provider, and cell service provider.
 
-## [!UICONTROL Isolation Mode] {#isolation-mode-def}
-
-A type of sharing analysis where the evaluation of an account is limited to events that occurred directly on the programmers in the selected segment.  Normally, all account events are evaluated, which provides a much more accurate estimate of sharing.  Some MVPD data is structured in a way that only allows for Isolation Mode analysis.
-
 ## [!UICONTROL Location] {#location-def}
 
-A unique point on earth. It is also refered to as the geolocation for a specific play request, detected using the Pass data, with a precision of 1000mx1000m (one square km).
-
-<!-- ### Home location {#home-location-def}
-
-the precision is 0.01 ~ 2000mx2000m (4 square km) - at this moment the home location is detected using an ML algo, based on data provided by two mvpds. The probability is ~ 80%. We are not using the zip code for the majority of the users. Currently, this information is not used in assessing the sharing probability. -->
+A unique point on earth. It is also refered to as the geolocation for a specific play request with a precision of 1000m x 1000m (one square km).
 
 ## [!UICONTROL Media Company] {#media-company-def}
 
@@ -104,39 +80,17 @@ Metric is an attribute of subscriber account (for example, their MVPD, the progr
 
 A device that has high mobility. For example, mobile phone, and tablet.
 
-## [!UICONTROL MVPD] {#mvpd-def}
-
-MVPD, also known as Distributor, is aggregator, reseller, and distributor of Media Company video content.
-
 ## Operation {#operation-def}
 
 Operation is a record created to track the effect of a particular [action](#action-def) on an associated segment. An example of an action can be a limit placed on the number of concurrent streams allowed for accounts identified by the segment.
 
 ## [!UICONTROL Overall sharing score] {#overall-sharing-score}
 
-A value that helps users understand the magnitude of password sharing on Programmer properties or by MVPD subscribers and provide them a sense of urgency to act upon it.
-
-<!--**Aggregated Risk Index**
-Also known as Risk Index and Sharing Risk Index, it is a value that helps users understand the magnitude of password sharing on Programmer properties or by MVPD subscribers and provides them a sense of urgency to act upon it.-->
-
-<!--**Risk Index - Overall**
-A value computed as an average of "Risk Index - Accounts" and the "Risk Index - Usage". Overall Sharing Risk Index-->
+A value that helps users understand the magnitude of password sharing and provide them a sense of urgency to act upon it.
 
 ## [!UICONTROL Play Request] {#play-requests-def}
 
-A request made by a client app or site to Adobe to request a media token to record and secure a stream start.
-
-## [!UICONTROL Programmer] {#programmer-def}
-
-Programmer, also known as Network, is a company that is subsidiary of a larger company (corporation) that owns and manages one or more channels.
-
-## [!UICONTROL requestorID] {#requestorid-def}
-
-The ID a Media Company Uses to identify themselves or a subsidiary to an MVPD.  Depending on Programmer implementation, this could map to a Media Company, Programmer or Channel.  The most common The ID a Media Company Uses to identify themselves or a subsidiary to an MVPD.  Depending on Programmer implementation, this could map to a Media Company, Programmer or Channel.  Traditionally, this mapped to a Channel.  With the creation of pseudo-Channels like MML (March Madness Live) and technically driven moves to address MVPD-driven data limitations, requestorID is beginning to become more associated with the Media Company.
-
-## [!UICONTROL resourceID] {#resource-id-def}
-
-The content requested by the end user.  Traditionally, this has identified the Channel associate with the content the user has requested.  System enhancements allow that ID to represent specific programs (e.g. with specific ratings), the ID continues to identify the associated Channel.
+Equivalent to a stream start. This event marks the beginning of a user streaming content.
 
 ## [!UICONTROL Risk Index - Usage] {#risk-index-usage}
 
@@ -144,11 +98,11 @@ Also known as Usage from Shared Accounts, it is a value calculated based on the 
 
 ## [!UICONTROL Segment] {#segmet-def}
 
-Segment is a set of accounts that meet the user defined conditions specified by the selected metrics (for example "users of MVPD A, B, C, D or E that have watched channels X, Y or Z").
+Segment is a set of accounts that meet the user defined conditions specified by the selected metrics. For example, "users in region A, B, C, D or E that have more than three devices".
 
 ## [!UICONTROL Sharing level] {#sharing-level-def}
 
-Also known as Risk Index - Accounts or Shared Accounts Risk Index, it is a value calculated based on an average of the sharing probability computed for every account in the set of selected MVPDs that has streamed from a one of the selected Programmer Channels during the selected time interval.
+Also known as Risk Index - Accounts or Shared Accounts Risk Index, it is a value calculated based on an average of the sharing probability computed for every account in the current segment that has streamed at least once during the selected time interval.
 
 ## [!UICONTROL Static device] {#static-device-def}
 
@@ -156,11 +110,7 @@ A device that has very low mobility. For example, game console, set top box, and
 
 ## [!UICONTROL Time interval] {#time-interval-def}
 
-Also known as Period or Time Slot, it is the window of time that contains the play request activity represented in the user interface and tables from start to finish.
-
-## [!UICONTROL Top MVPDs in segment] {#top-mvpds-def}
-
-The top (at most 10) MVPDs in the selected segment as measure by either Sharing level, Usage from shared accounts, or Overall sharing score.
+Also known as period, it is the window of time that contains the play request activity represented in the user interface and tables from start to finish.
 
 ## [!UICONTROL Trend] {#trend-def}
 
@@ -168,7 +118,7 @@ The percentage difference in the associated metric (for example, percentage of t
 
 ## [!UICONTROL Unique Subscribers] {#unique-subscriber-def}
 
-The number of unique MVPD accounts for a given period that have interacted with programmer TV Everywhere apps or sites involving Adobe Pass for a given period.  That interaction includes any activity on the programmer app or site that results in a call to an Adobe Pass service. For example, checking authN or authZ state, authenticating, and authorizing. The total number of unique subscribers will also include the number of unique devices if a programmers' use of Adobe TempPass (that is free preview) is part of the segment.
+The number of unique accounts that have streamed at least once during a given period. 
 
 ## [!UICONTROL Usage] {#usage-defs}
 
@@ -202,3 +152,46 @@ A video category is defined by the combination of Programmer, channel, and MVPD 
 
 The U.S. Postal code associated with locations within the U.S.
 <!--calculated metrics-->
+
+</br>
+
+
+## TV Everywhere specific terminology
+
+### [!UICONTROL AuthZ] {#authz-def}
+
+Authorization, or the number of authorization request. An authorization request is the process whereby a programmer requests permission from an MVPD through Adobe to begin streaming a user's requested content. The MVPD typically grants the request based on the content rights associated with the user's MVPD subscription (for example whether the channel associated with the content is in the user's subscription). Some authorization request responses are cached by Adobe, which allows Adobe to respond immediately without passing the request on to the MVPD.
+
+### [!UICONTROL AuthZ OK] {#authz-ok-def}
+
+The number of successful authorizations.
+
+### [!UICONTROL Channel] {#channel-def}
+
+Channel, also knows as Property, is a thematically related source of video content. Traditionally representing a distinct, numerically addressable continuous video feed from an MVPD. The channel directly maps to an accessible channel of content available to the subscribers through their Set Top Box (STB).
+
+### [!UICONTROL Industry Average Index] {#industry-avg-index-def}
+
+A value computed for each of the Risk Indices (Accounts, Usage, Overall) across all Programmers and MVPDs during the selected time interval.
+
+### [!UICONTROL Isolation Mode] {#isolation-mode-def}
+
+A type of sharing analysis where the evaluation of an account is limited to events that occurred directly on the programmers in the selected segment.  Normally, all account events are evaluated, which provides a much more accurate estimate of sharing.  Some MVPD data is structured in a way that only allows for Isolation Mode analysis.
+
+### [!UICONTROL MVPD] {#mvpd-def}
+
+MVPD, also known as Distributor, is aggregator, reseller, and distributor of Media Company video content.
+
+### [!UICONTROL Programmer] {#programmer-def}
+
+Programmer, also known as Network, is a company that is subsidiary of a larger company (corporation) that owns and manages one or more channels.
+
+### [!UICONTROL requestorID] {#requestorid-def}
+
+The ID a Media Company Uses to identify themselves or a subsidiary to an MVPD.  Depending on Programmer implementation, this could map to a Media Company, Programmer or Channel.  The most common The ID a Media Company Uses to identify themselves or a subsidiary to an MVPD.  Depending on Programmer implementation, this could map to a Media Company, Programmer or Channel.  Traditionally, this mapped to a Channel.  With the creation of pseudo-Channels like MML (March Madness Live) and technically driven moves to address MVPD-driven data limitations, requestorID is beginning to become more associated with the Media Company.
+
+### [!UICONTROL resourceID] {#resource-id-def}
+
+The content requested by the end user. Traditionally, this has identified the Channel associate with the content the user has requested.  System enhancements allow that ID to represent specific programs (e.g. with specific ratings), the ID continues to identify the associated Channel.
+
+

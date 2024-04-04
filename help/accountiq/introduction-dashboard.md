@@ -8,7 +8,7 @@ The Dashboard summarizes and aggregates data in a collection of graphs and repor
 
 >[!NOTE]
 >
->The majority of data panels on the D2C services, Programmers and MVPD dashboards are identical. However, certain data panels may vary in availability or appear slightly different for each user type. 
+>The majority of data panels on the D2C services, Programmers and MVPD dashboards are identical. However, certain data panels may vary in availability or appear slightly different for each version. 
 
 +++D2C services: Dashboard
 
@@ -23,10 +23,10 @@ The Dashboard summarizes and aggregates data in a collection of graphs and repor
 
 +++Programmers: Dashboard
 
-![dashboard of Account IQ for programmer users](assets/dashboard-programr.png){align="left"}
+![dashboard of Account IQ for programmer](assets/dashboard-programr.png){align="left"}
 
 
-*The dashboard for programmer users*
+*The dashboard for programmers*
 
 **A.** Segment and time interval panel **B.** Page navigation **C.** Data panels
 
@@ -34,17 +34,17 @@ The Dashboard summarizes and aggregates data in a collection of graphs and repor
 
 +++MVPDs: Dashboard
 
-The Dashboard for MVPD users is slightly different from those of the programmer users.
+The Dashboard for MVPDs is slightly different from those of the programmers.
 
-![dashboard of [!UICONTROL Account IQ] for MVPD users](assets/dashboard-mvpd.png){align="left"}
+![dashboard of [!UICONTROL Account IQ] for MVPDs](assets/dashboard-mvpd.png){align="left"}
 
-*The dashboard for MVPD users*
+*The dashboard for MVPDs*
 
 **A.** Segment and time interval panel **B.** Page navigation **C.** Data panels
 
 +++
 
-The Dashboard for D2C services, programmer, and MVPD users includes:
+The Dashboard for D2C services, programmers, and MVPDs includes:
 
 * **Segments and time interval panel**: This panel enables you to select segment and time interval to generate account sharing reports, and provide a summary of the selected segment. Know how to select [segments and time interval](/help/accountiq/segments-timeinterval.md).
 

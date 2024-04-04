@@ -41,11 +41,11 @@ The selected week or month within the **[!UICONTROL Granularity and Time Interva
 
 **MVPD** 
 
-If you are a programmer user, the column shows the distributor with whom the account is subscribed.
+If you are a programmer, the column shows the distributor with whom the account is subscribed.
 
 >[!NOTE]
 >
-> The **MVPD** column is only available for TV Everywhere personas. 
+> The **MVPD** column is only available for TV Everywhere versions. 
 
 **Subscriber Id** 
 
@@ -118,7 +118,7 @@ The actual number of streams occurred during a specified time period.
 
    >[!NOTE]
    >
-   >The play requests column isn't available for MVPD users.
+   >The play requests column isn't available in the MVPD version.
 
 **[!UICONTROL # Channels]**
 

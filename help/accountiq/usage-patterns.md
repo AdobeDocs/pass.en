@@ -75,7 +75,7 @@ The **[!UICONTROL Usage pattern distribution]** table provides a comparison of u
 
 ![](assets/usage-patterns-mvpdwise.png)
 
-*Usage patterns distribution for programmer user* 
+*Usage patterns distribution for programmers* 
 
 +++
 
@@ -85,6 +85,6 @@ The **[!UICONTROL Usage pattern distribution]** table provides a comparison of u
 
 ![](assets/usage-patterns-programmerwise.png)
 
-*Usage patterns distribution for MVPD user* 
+*Usage patterns distribution for MVPDs* 
 
 +++

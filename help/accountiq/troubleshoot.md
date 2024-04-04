@@ -7,7 +7,7 @@ exl-id: 2c3f22c4-5534-424c-b321-b57045bcb7a6
 
 Are you facing issues with data and charts taking too long to load, or reports not getting exported, or any other issues related to metrics and graphs? Read on to get quick help.
 
-* If a page or individual panels take too long to load, then try refreshing the page. For the current version, depending on the selection of MVPDs and programmers, a page can take up to a minute to load.
+* If a page or individual panels take too long to load, then try refreshing the page. For the current release, depending on the current segment, a page can take up to a minute to load.
 
   ![](assets/troubleshoot.png)
 

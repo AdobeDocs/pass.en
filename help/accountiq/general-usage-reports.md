@@ -29,7 +29,7 @@ The line graphs here gives you a view of the changes over time of values, such a
 ![](assets/progr-line-graph-gu.png)
 
 
-*Play Requests/Unique Subscribers for programmer user*
+*Play Requests/Unique Subscribers for programmers*
 
 +++
 
@@ -37,13 +37,13 @@ The line graphs here gives you a view of the changes over time of values, such a
 
 ![](assets/mvpd-line-graph-gu.png)
 
-*Unique Subscribers for MVPD user* 
+*Unique Subscribers for MVPDs* 
 
 +++
 
 <br/>
 
-The x-axis represents the time based on the current interval and the y-axis represents basic subscriber activity metrics during that period. The line graphs help you visualize and compare activity of the subscribers in the current segment. Depending on the persona the metrics include:
+The x-axis represents the time based on the current interval and the y-axis represents basic subscriber activity metrics during that period. The line graphs help you visualize and compare activity of the subscribers in the current segment. Depending on the version of Account IQ the metrics include:
 
 * **AuthN OK**: Number of successful authentications. View [AuthN OK](/help/accountiq/product-concepts.md#authn-ok-def) for more information .
 
@@ -55,7 +55,7 @@ The x-axis represents the time based on the current interval and the y-axis repr
 
 >[!NOTE]
 >
->The availability of metrics varies depending on the persona.
+>The availability of metrics varies depending on the version of Account IQ.
 
 ## Snapshot Overview - Accounts above thresholds {#snapshot-overview}
 

@@ -64,7 +64,7 @@ This allows you to define your problem statement as "Subscribers of MVPD A who w
 
 ## Segment summary {#segment-summary}
 
-The Segment Summary is similar for D2C services and TV Everywhere. The video categories will be different for each respective persona.
+The Segment Summary is similar for D2C services and TV Everywhere. The video categories will be different for each respective version of Account IQ.
 
 +++ D2C services
 

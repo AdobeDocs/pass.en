@@ -19,7 +19,7 @@ exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
 
 1. Is it possible to filter out the test accounts?
 
-   **Answer.** The functionality to filter out the test accounts is not available in this version, but the feature will be available in a future release.
+   **Answer.** The functionality to filter out the test accounts is not currently available, but the feature will be available in a future release.
 
 1. Can I see the account sharing for different video categories?
 

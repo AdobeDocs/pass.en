@@ -6,7 +6,7 @@ description: The Dashboard helps to pinpoint the instances of password sharing b
 
 Once you've selected segment and time interval, the dashboard displays various data panels in a form of tables and graphs. These panels provides the analysis of credential sharing statistics of the subscriber accounts in the selected segment.
 
-The table below outlines the availability and differences among data panels in various [personas](/help/accountiq/personas-aiq.md) in Account IQ: 
+The table below outlines the availability and differences among data panels in various [versions](/help/accountiq/versions-aiq.md) of Account IQ: 
 
 |Data panels|D2C services|TVE Programmers|TVE MVPDs|
 |---|---|---|---|
@@ -89,7 +89,7 @@ Use **Export** to download the data in a csv file. View [export data panel repor
 
 +++Programmers: MVPDs in segment
 
-When you log in as a **Programmer** user, this table provides a comparative view of the different Aggregated Sharing Scores for the MVPDs in the current segment.
+When you log in as a **Programmer**, this table provides a comparative view of the different Aggregated Sharing Scores for the MVPDs in the current segment.
 
 Select the column headings to sort the data.
 
@@ -103,7 +103,7 @@ Use **Export** to download the data in a csv file. View [export data panel repor
 
 +++MVPDs: Programmers in segment
 
-When you log in as an **MVPD** user, this table provides a comparative view of the different Aggregated Sharing Scores for the Programmers in the current segment.
+When you log in as an **MVPD**, this table provides a comparative view of the different Aggregated Sharing Scores for the Programmers in the current segment.
 
 Select the column headings to sort the data.
 
@@ -117,7 +117,7 @@ Use **Export** to download the data in a csv file. View [export data panel repor
 
 ## Sharing score by channels and MVPDs  {#sharin-score-by-channels-and-mvpds}
 
-When you log in as a Programmer user, this table provides a comparative view of sharing scores of the selected channels for the MVPDs in the current segment.
+When you log in as a Programmer, this table provides a comparative view of sharing scores of the selected channels for the MVPDs in the current segment.
 
 Select the column headings to sort the data.
 

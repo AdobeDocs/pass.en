@@ -21,7 +21,7 @@ exl-id: 840ab081-0073-492f-86b2-ba174ae93256
 
 1. Assign organization users to **[!UICONTROL TVE Dashboard Read-Write]** or **[!UICONTROL TVE Dashboard Read Only]** profiles in [Adobe Admin Console](https://adminconsole.adobe.com/).
 
-   The Admin users in your organization can create users and grant them access to [!UICONTROL Account IQ Dashboard and Reports]. To grant organization users access to [!UICONTROL Account I]Q, organization Admins need to:
+   The Admin users in your organization can create users and grant them access to [!UICONTROL Account IQ Dashboard and Reports]. To grant organization users access to [!UICONTROL Account IQ], organization Admins need to:
 
     1. Log in to [Adobe Admin Console](https://adminconsole.adobe.com/).
 

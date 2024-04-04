@@ -28,7 +28,7 @@ You can perform the following functions with segments:
 
 ## Create new segment {#create-new-segment}
 
-The process of creating a new segment are similar for D2C services and TV Everywhere. The video categories will be different for each respective persona.
+The process of creating a new segment are similar for D2C services and TV Everywhere. The video categories will be different for each respective version of Account IQ.
 
 +++D2C services
 
