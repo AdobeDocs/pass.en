@@ -31,7 +31,7 @@ Let's take a deep dive into the graphs and reports in each of these sections.
 
 >[!MORELIKETHIS]
 >
->* [Versions of Account IQ](/help/accountiq/verions-aiq.md)
+>* [Versions of Account IQ](/help/accountiq/versions-aiq.md)
 >* [How to get started with Account IQ](/help/accountiq/get-started.md)
 >* [Glossary of product terms](/help/accountiq/product-concepts.md)
 >* [Account IQ whitepaper](https://www.adobe.com/content/dam/dx/us/en/products/primetime/resources/primetime-account-iq-whitepaper.pdf)
