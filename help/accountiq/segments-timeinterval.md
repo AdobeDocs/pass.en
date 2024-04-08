@@ -76,7 +76,7 @@ Use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg"
 
 >[!NOTE]
 >
->The video categories shown in the previous image, such as **regions** and **content types** are just examples. When you log in to Account IQ, the labels will display your company's specific video categories.
+>The [video categories](product-concepts.md#video-category-def) shown in the previous image, such as **regions** and **content types** are just examples. When you log in to Account IQ, the labels will display your company's specific video categories.
 
 The **Segment Summary** includes the following conditions that define a segment:
 
