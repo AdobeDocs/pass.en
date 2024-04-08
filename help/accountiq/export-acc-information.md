@@ -11,7 +11,7 @@ To export the account sharing information of subscriber accounts for a specific 
 
 1. Log in with your authorized credentials.
 1. Navigate to the **Shared Accounts** tab under **Reports** section.
-1. Select the required segment and time interval from segment and time interval panel. View [segments and time interval](segments-timeinterval.md) for more information on selecting a segment and time interval.
+1. Select the required segment and time interval from segment and time interval panel. Learn [how to select segments and time interval](segments-timeinterval.md).
 
    If required, refer to the instructions for [creating a new segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#edit-segment).
 
