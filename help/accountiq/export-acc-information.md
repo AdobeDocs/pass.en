@@ -47,7 +47,7 @@ If you are a programmer, the column shows the distributor with whom the account 
 >
 > The **MVPD** column is only available for TV Everywhere versions. 
 
-**Subscriber Id** 
+**Subscriber ID** 
 
 The unique identifier for the specific account.
 

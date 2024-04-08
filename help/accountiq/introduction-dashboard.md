@@ -15,7 +15,7 @@ The Dashboard summarizes and aggregates data in a collection of graphs and repor
 ![dashboard of Account IQ for D2C services](assets/dashboard-d2c.png){align="left"}
 
 
-*The dashboard for D2C services*
+*Dashboard for D2C services*
 
 **A.** Segment and time interval panel **B.** Page navigation **C.** Data panels
 
@@ -26,7 +26,7 @@ The Dashboard summarizes and aggregates data in a collection of graphs and repor
 ![dashboard of Account IQ for programmer](assets/dashboard-programr.png){align="left"}
 
 
-*The dashboard for programmers*
+*Dashboard for programmers*
 
 **A.** Segment and time interval panel **B.** Page navigation **C.** Data panels
 
@@ -38,7 +38,7 @@ The Dashboard for MVPDs is slightly different from those of the programmers.
 
 ![dashboard of [!UICONTROL Account IQ] for MVPDs](assets/dashboard-mvpd.png){align="left"}
 
-*The dashboard for MVPDs*
+*Dashboard for MVPDs*
 
 **A.** Segment and time interval panel **B.** Page navigation **C.** Data panels
 

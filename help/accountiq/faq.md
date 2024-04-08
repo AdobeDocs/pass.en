@@ -1,5 +1,5 @@
 ---
-title: Account IQ FAQs
+title: Account IQ frequently asked questions
 description: Answers to frequently asked customer questions.
 exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
 ---

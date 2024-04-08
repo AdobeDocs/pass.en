@@ -4,9 +4,9 @@ description: The Dashboard helps to pinpoint the instances of password sharing b
 ---
 # Data panels on Dashboard {#data-panels}
 
-Once you've selected segment and time interval, the dashboard displays various data panels in a form of tables and graphs. These panels provides the analysis of credential sharing statistics of the subscriber accounts in the selected segment.
+Once you've selected a segment and time interval, the dashboard will display various data panels, tables, and graphs that reflect an high level view sharing for the segment.
 
-The table below outlines the availability and differences among data panels in various [versions](/help/accountiq/versions-aiq.md) of Account IQ: 
+The table below outlines the availability and differences among the data panels in various [versions](/help/accountiq/versions-aiq.md) of Account IQ: 
 
 |Data panels|D2C services|TVE Programmers|TVE MVPDs|
 |---|---|---|---|
@@ -17,20 +17,20 @@ The table below outlines the availability and differences among data panels in v
 |[Number of accounts and usage by sharing probability level](#number-of-accounts-usage-sharing-probability)|Available and consistent|Available and consistent|Available and consistent|
 
 
-## Average sharing score - aggregated for the current segment {#aggregated-sharing}
+## Average sharing score-aggregated for the current segment {#aggregated-sharing}
 
 The Aggregated Sharing Score panel provides a top line readout summarizing the quantity and impact of sharing in terms of accounts and streaming volume.
 
-The metrics help you understand the magnitude (ranging from low, medium, high to abnormal) of credential sharing by your subscribers, hence providing a measure of the need to act upon it.
+The metrics help you understand the magnitude (ranging from low, medium, high to abnormal) of credential sharing by your subscribers, measured in terms of accounts and consumption.
 
 ![](assets/aggregate-sharing-score.png)
 
 
-*Average sharing score panel - aggregated for the current segment*
+*Average sharing score panel-aggregated for the current segment*
 
 >[!NOTE]
 >
-> The blue indicator in the **Average sharing score - aggregated for the current segment** serves different purposes for D2C services compared to TV Everywhere. For D2C services, it represents the **Service Average Index** as shown below. If you log in as a Programmer or MVPD, this label changes to **Industry Average Index**.  
+> The blue indicator in the **Average sharing score-aggregated for the current segment** serves different purposes for D2C services compared to TV Everywhere. For D2C services, it represents the **Service Average Index** as shown below. If you log in as a Programmer or MVPD, this label changes to **Industry Average Index**.  
 
 The following metrics are components of the Average Sharing Score.
 
@@ -38,20 +38,20 @@ The following metrics are components of the Average Sharing Score.
 
 The sharing level gauge shows the percentage of all your shared subscriber accounts in the defined segment during the selected time interval.  
 
-The number of percentage is calculated based on an average of the sharing probability computed for every account in the set of selected MVPDs that has streamed from a one of the selected programmer channels during the selected time interval.
+The percentage is calculated based on an average of the sharing probability computed for every account in the segment that has streamed at least once during the selected time interval.
+
+The Trend indicator shows the percentage change in the value of the metric from the previous time interval.
 
 ![](assets/sharing-level.png){width="350" align="left"}
 
 
 *Sharing level*
 
-The Trend indicator shows the percentage change in the value of the metric from the previous time interval.
-
 ### Usage from shared accounts {#usage-from-shared-accounts}
 
-The gauge indicates the percent of usage by the shared accounts among all subscriber accounts for the defined segment and time period. These ranges—named Low, Medium, High, and Abnormal—are based on the industry average.
+The gauge indicates the percent of usage by the shared accounts among all subscriber accounts for the defined segment and time period. These ranges named Low, Medium, High, and Abnormal are based on an industry average.
 
-You can also see the Trend indicator, which depicts a rise or fall in the usage from shared accounts compared to the previous time interval.
+The Trend indicator, which depicts a rise or fall in the usage from shared accounts compared to the previous time interval.
 
 ![](assets/usage-4mshared-accounts.png){width="350" align="left"}
 
@@ -62,7 +62,7 @@ You can also see the Trend indicator, which depicts a rise or fall in the usage 
 
 Overall sharing score is combination of sharing scores including "Sharing level" and "Usage from shared accounts".
 
-It provides a percentage that reflects the comparative impact of sharing in relation to the industry. It's purpose is similar to that of a credit score, summarizing the situation with a single number. But in this case, the higher the number, the greater the potential harm.
+It provides a score that reflects the overall impact of sharing. Its purpose is similar to that of a credit score, summarizing the situation with a single number. But in this case, the higher the number, the greater the sharing level.
 
 ![](assets/overall-sharing-score.png){width="350" align="left"}
 
@@ -128,7 +128,7 @@ Select the column headings to sort the data.
 
 ## Accounts sharing probability {#accounts-sharing-probability}
 
-This chart partitions accounts into ranges of sharing probability quintiles from very low (0-20%) to very high (80-100%).
+This chart partitions accounts into ranges of sharing probability quintiles from very low (0-20%) to very high (80-100%). Read more about the ranges of [Account sharing probability](#accounts-sharing-probability).
 
 >[!NOTE]
 >
@@ -143,11 +143,12 @@ This chart partitions accounts into ranges of sharing probability quintiles from
 
 ## Number of accounts and usage by sharing probability level {#number-of-accounts-usage-sharing-probability}
 
-This panel provides a tabular view of  accounts partitioned into ranges of sharing probability quintiles from very low (0-20%) to very high (80-100%) with each quintile's associated usage from shared accounts.
+This panel provides a tabular view of  accounts partitioned into ranges of sharing probability quintiles from very low (0-20%) to very high (80-100%) with each quintile's associated usage from shared accounts. Read more about the ranges of [Account sharing probability](#accounts-sharing-probability).
 
 ![](assets/no-acc-usage-prob-level.png)
 
 
 *Number of accounts, trends, and usages falling in various probability ranges*
 
-Use **Export** to download the data in a csv file. View [export data panel reports](/help/accountiq/export-reports.md) for more information.
+Use **Export** to download the data in a csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md)
+

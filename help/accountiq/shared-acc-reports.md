@@ -1,13 +1,13 @@
 ---
-title: Shared Accounts reports
+title: Shared accounts reports
 description: Shared accounts reports
 exl-id: 16c5ded1-2a95-4373-8b90-b445131f333a
 ---
-# Shared Accounts Reports {#shared-accounts-reports}
+# Shared accounts reports {#shared-accounts-reports}
 
 The Shared Accounts Reports provides another group of graphs and charts that reflect the sharing behavior and consumption for the current segment. For example, **[!UICONTROL Over Moderate Probability]** and **[!UICONTROL Over Low Probability]** for the current segment.
 
-## Accounts Sharing Probability {#accounts-sharing-probability}
+## Accounts sharing probability {#accounts-sharing-probability}
 
 This donut and bar charts shows the percentages (and absolute numbers) of the subscriber accounts that fall into specific ranges of sharing probability. These ranges are defined as:
 
@@ -47,7 +47,7 @@ This panel lets you select the threshold range for the donut and bar graphs abov
 
 Once you select the threshold, the panel shows the percentage (and number) of accounts out of all the subscriber accounts in the selected segment.
 
-## Segment - Play requests out of total {#play-request-out-total}
+## Segment-play requests out of total {#play-request-out-total}
 
 The donut chart shows the percentage (and number) of play requests made by subscribers in the segment; and lets you compare the play requests made by subscribers not in the defined segment.
 
@@ -57,13 +57,13 @@ When you move cursor over the donut chart, it also shows subscriber percentages 
 
 <!--![](assets/play-request-total.gif)-->
 
-## Segment-Average Number of Devices Per Account{#avg-devices-account}
+## Segment-average number of devices per account{#avg-devices-account}
 
 The bar chart shows the average number of devices of each type that are currently in use by subscribers in the current segment and of those not in the current segment.
 
 ![](assets/avg-devices-per-acc.png)
 
-## Segment - Zip codes per Period per Account {#zip-codes-period-account}
+## Segment-zip codes per period per account {#zip-codes-period-account}
 
 This graph informs you about the number of subscribers in the current segment that are consuming content from different locations (as measured by zip code) for the given time interval.
 
@@ -74,7 +74,7 @@ This graph informs you about the number of subscribers in the current segment th
 >You can zoom into the bars that represent more than one set of zip codes, represented with a **+** (plus) sign (e.g., 10+), by double-clicking them.
 
 
-## Segment - Geographical Span / Period / Account {#geo-span-period-account}
+## Segment-geographical span per period per account {#geo-span-period-account}
 
 This bar graph plots number of subscriber accounts that consume content from locations that fall into different geographical ranges in miles. The range is based on the maximum distance between the locations from which a subscriber has streamed during the time interval.
 

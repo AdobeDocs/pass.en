@@ -3,7 +3,7 @@ title: Account IQ best practices
 description: Learn about [!UICONTROL Account IQ] in Adobe Pass.
 exl-id: 55901f5d-d9c1-4ee5-9349-afa28445b324
 ---
-# Best Practices {#aiq-best-practices}
+# Best practices {#aiq-best-practices}
 
 [!UICONTROL Account IQ] enables you to identify credential sharing, measure its scope and impact, segment relevant cohorts, and track the effect of targeted actions. It offers a variety of tools, charts and reports used to understand and manage shared accounts that can be used in any number of ways. Each streaming service approaches this behavior and develops processes that match their unique goals, and the product is designed to flexibly meet those needs.  However, there are some rules of general practices that can be applied to a broad set of scenarios.
 

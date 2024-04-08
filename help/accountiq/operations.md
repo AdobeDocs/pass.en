@@ -63,7 +63,7 @@ This gauge shows the number of days and the percentage of the operation complete
 
 This line graph represents the [overall sharing score](/help/accountiq/data-panels.md#overall-sharing-score) that includes the sharing level and usage from shared accounts in each week during the operation's evaluation period.
 
-### Operation impact: Accounts in segment {#impact-accounts}
+### Operation impact: accounts in segment {#impact-accounts}
    
 This report is displayed as a stacked column graph that illustrates the impact of an operation over time. 
 
@@ -85,7 +85,7 @@ The x-axis represents the operation's [evaluation period](/help/accountiq/produc
 
 Over time, the graph illustrates changes in account behavior relative to the original criteria (for example, having a sharing probability of more than 90 and using more than 5 devices have become inactive).
 
-### Operation impact: Shared accounts metrics {#impact-shared-accounts}
+### Operation impact: shared accounts metrics {#impact-shared-accounts}
 
 The shared accounts metrics provide an overview of sharing level and play requests by the subscriber accounts in the operation's segment during the operation's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def).
 
@@ -105,7 +105,7 @@ This line graph represents [play requests](/help/accountiq/general-usage-reports
 
 *Number of play requests line graph*
 
-### Operation impact: General usage metrics {#impact-general-usage}
+### Operation impact: general usage metrics {#impact-general-usage}
 
 The general usage metrics provide an overview of average number of devices, IPs, and locations in the operation's segment during the operation's [evaluation period](/help/accountiq/product-concepts.md#evaluation-period-def). 
 
@@ -152,9 +152,9 @@ In this section, add a name for the operation in **Operation name**.
 
 ### Segment {#segment}
 
-In this section, click on **Select segment** and choose a segment to which you want to use this operation. View [segments and time interval](/help/accountiq/segments-timeinterval.md#segment-selection) to know more. 
+In this section, click on **Select segment** and choose a segment to which you want to use this operation. Learn [how to select a segment](/help/accountiq/segments-timeinterval.md#segment-selection).
 
-Once you've selected a segment, use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. View [segment summary](segments-timeinterval.md#segment-summary) for more information.
+Once you've selected a segment, use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. Read more about [segment summary](segments-timeinterval.md#segment-summary).
 
 ![Select segment and time interval](assets/select-segment-timeinterval.png)
 
@@ -170,7 +170,7 @@ If required, use <img alt= "edit segment" src="./assets/edit-segment.svg" width=
 >
 >**Segment type** named **[!UICONTROL Fixed number of accounts]** is currently selected by default. The option to select **[!UICONTROL Variable number of accounts]** will be available in upcoming releases.
 
-Select **Granularity and time interval** to monitor the operation during a specific period. Know more about how to select [Granularity and time interval](/help/accountiq/segments-timeinterval.md#granularity-timeinterval).
+Select **Granularity and time interval** to monitor the operation during a specific period. Know more about [how to select granularity and time interval](/help/accountiq/segments-timeinterval.md#granularity-timeinterval).
 
 ### Action {#action}
 

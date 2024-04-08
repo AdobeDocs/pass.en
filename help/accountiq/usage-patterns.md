@@ -3,7 +3,7 @@ title: Usage patterns
 description: View account sharing behavior for different user typologies.
 exl-id: 2faa7e75-b3a1-491b-bb7d-bd3a149cbe79
 ---
-# Usage Patterns {#usage-patterns}
+# Usage patterns {#usage-patterns}
 
 Account IQ classifies users of subscriber accounts into various categories in terms of their social behavior, such as traveler or commuter, Large family, and Community sharing. The **Usage Patterns** page shows several different analytics and reports for these user typologies. For example, **Usage patterns distribution** reports compare the usage behavior for the current segment versus all of your accounts.
 
@@ -13,23 +13,23 @@ Like the other pages in the app, the analytics and reports here are based on the
 
 The cluster bar graph in depicts the number and percentages of subscribers for each social behavior, or usage pattern. 
 
-+++D2C services: Usage patterns distribution - Users in segment
++++D2C services: Usage patterns distribution-Users in segment
 
 The cluster bar graph below compares the usage pattern distribution of the current segment to a segment containing all of your accounts.
 
 ![](assets/d2c-segment-users-industry.png)
 
-*Usage patterns distribution- Users in segment*
+*Usage patterns distribution-Users in segment*
 
 +++
 
-+++TV Everywhere: Usage patterns distribution - Users in segment vs Industry
++++TV Everywhere: Usage patterns distribution-Users in segment vs Industry
 
 In addition to comparing each usage pattern in the current segment to the entire industry, it also compares them to a segment containing all of your accounts.
 
 ![](assets/segment-users-industry.png)
 
-*Usage patterns distribution- Users in segment vs Industry* 
+*Usage patterns distribution-Users in segment vs Industry* 
 
 +++
 

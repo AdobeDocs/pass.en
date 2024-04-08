@@ -5,158 +5,158 @@ exl-id: 2ee54442-9538-4c30-b999-265310b3935f
 ---
 # Product concepts and glossary {#glossary}
 
-The following product terminologies and their definitions are common to all versions of Account IQ.
+## Common terminologies across D2C and TV Everywhere 
 
-## [!UICONTROL Accounts Sharing Probability] {#account-sharing-probability-def}
+The following product terminologies and their definitions are common to all [versions of Account IQ](versions-aiq.md).
+
+### [!UICONTROL Accounts Sharing Probability] {#account-sharing-probability-def}
 
 A dashboard panel with charts that divides the current segments sharing scores into sharing range categories of Very Low, Low, Moderate, High, and Very High.
 
-## [!UICONTROL Action] {#action-def}
+### [!UICONTROL Action] {#action-def}
 
 A direct or indirect event associated with an [Operation](#operation-def) that affects the characteristics (for example, Sharing score or number of devices in use) of a related operation segment (or cohort).
 
-## [!UICONTROL Aggregated sharing score] {#sharing-probability-level-def}
+### [!UICONTROL Aggregated sharing score] {#sharing-probability-level-def}
 
 A dashboard panel with charts that divides the current segments sharing scores into sharing range categories of Very Low, Low, Moderate, High, and Very High, along with each categories percentage of the total amount of streaming for the segment.
 
-## [!UICONTROL AuthN] {#authn-def}
+### [!UICONTROL AuthN] {#authn-def}
 
 The number of authentication attempts. An authentication attempt is the process whereby a user attempts to login with D2C service or MVPD. For TV Everywhere users, the user is redirected to their chosen MVPD, where they identify themselves to the MVPD - typically with a username and password.
 
-## [!UICONTROL AuthN OK] {#authn-ok-def}
+### [!UICONTROL AuthN OK] {#authn-ok-def}
 
 The number of successful authentications. A successful authentication occurs when a users identify is confirmed by a D2C service or MVPD. For TV Everywhere users, this results in the user being redirected back to the programmer app or site.
 
-## [!UICONTROL Cluster] {#cluster-def}
+### [!UICONTROL Cluster] {#cluster-def}
 
 A cluster is a collection of locations and devices. The clusters are created by finding common locations between devices. The devices that have been seen in a common location will be considered to belong in the same cluster. Two devices can be in the same cluster even though they do not have common locations but can be connected through the locations of other devices.
 
-### [!UICONTROL Mobile cluster] {#mobile-cluster-def}
+#### [!UICONTROL Mobile cluster] {#mobile-cluster-def}
 
 A cluster that has no static devices.
 
-### [!UICONTROL Static cluster] {#static-cluster-def}
+#### [!UICONTROL Static cluster] {#static-cluster-def}
 
 A cluster that has at least one static device.
 
-## [!UICONTROL Concurrency] {#consurrency-def}
+### [!UICONTROL Concurrency] {#consurrency-def}
 
 The concurrent is defined by two (or more) streams played at the same time or very close in time so that the interval between them cannot be justified by traveling at a normal speed.
 Concurrent usage is calculated using the maximum speed(miles/hour) between 2 different clusters. A user is considered to have concurrent usage if he has a speed greater than 124 m/h on a distance lesser than 124 miles or if he has a speed greater than 400 m/h on a distance greater than 124 miles. The distance is calculated between locations from different clusters. Concurrent usage is allowed in the same cluster.
 
-## [!UICONTROL Device] {#device-def}
+### [!UICONTROL Device] {#device-def}
 
 A digital video hardware product capable of playing upstreaming content. For example, smart phones, laptop and desktop computers, game consoles, and smart televisions.
 
-## [!UICONTROL Evaluation period] {#evaluation-period-def}
+### [!UICONTROL Evaluation period] {#evaluation-period-def}
 
 Evaluation period is the time from the beginning of the action associated with Operation until the  end of the action or it's measurement.
 
-## [!UICONTROL Geographical Span] {#geographical-span-def}
+### [!UICONTROL Geographical Span] {#geographical-span-def}
 
 The distance between the farthest points in a set of locations.
 
-## [!UICONTROL Granularity] {#granularity-def}
+### [!UICONTROL Granularity] {#granularity-def}
 
 In reference to time interval, the size of the period; such as one week or one month.
 
-## [!UICONTROL IP] {#ip-def}
+### [!UICONTROL IP] {#ip-def}
 
 The Internet Protocol address assigned to a device by an Internet Service Provider. For example, cable service provider, and cell service provider.
 
-## [!UICONTROL Location] {#location-def}
+### [!UICONTROL Location] {#location-def}
 
 A unique point on earth. It is also refered to as the geolocation for a specific play request with a precision of 1000m x 1000m (one square km).
 
-## [!UICONTROL Media Company] {#media-company-def}
+### [!UICONTROL Media Company] {#media-company-def}
 
 Media Company is a company that owns a group of media networks.
 
-## [!UICONTROL Metric] {#metric}
+### [!UICONTROL Metric] {#metric}
 
 Metric is an attribute of subscriber account (for example, their MVPD, the programmers and channels of the content they stream, the number of devices they use).
 
-## [!UICONTROL Mobile device] {#mobile-device-def}
+### [!UICONTROL Mobile device] {#mobile-device-def}
 
 A device that has high mobility. For example, mobile phone, and tablet.
 
-## Operation {#operation-def}
+### Operation {#operation-def}
 
 Operation is a record created to track the effect of a particular [action](#action-def) on an associated segment. An example of an action can be a limit placed on the number of concurrent streams allowed for accounts identified by the segment.
 
-## [!UICONTROL Overall sharing score] {#overall-sharing-score}
+### [!UICONTROL Overall sharing score] {#overall-sharing-score}
 
 A value that helps users understand the magnitude of password sharing and provide them a sense of urgency to act upon it.
 
-## [!UICONTROL Play Request] {#play-requests-def}
+### [!UICONTROL Play Request] {#play-requests-def}
 
 Equivalent to a stream start. This event marks the beginning of a user streaming content.
 
-## [!UICONTROL Risk Index - Usage] {#risk-index-usage}
+### [!UICONTROL Risk Index-Usage] {#risk-index-usage}
 
 Also known as Usage from Shared Accounts, it is a value calculated based on the number of play requests made by the each account weighted by each account's sharing probability. It is also known as Usage by Shared Accounts Risk Index.
 
-## [!UICONTROL Segment] {#segmet-def}
+### [!UICONTROL Segment] {#segmet-def}
 
 Segment is a set of accounts that meet the user defined conditions specified by the selected metrics. For example, "users in region A, B, C, D or E that have more than three devices".
 
-## [!UICONTROL Sharing level] {#sharing-level-def}
+### [!UICONTROL Sharing level] {#sharing-level-def}
 
 Also known as Risk Index - Accounts or Shared Accounts Risk Index, it is a value calculated based on an average of the sharing probability computed for every account in the current segment that has streamed at least once during the selected time interval.
 
-## [!UICONTROL Static device] {#static-device-def}
+### [!UICONTROL Static device] {#static-device-def}
 
 A device that has very low mobility. For example, game console, set top box, and television set.
 
-## [!UICONTROL Time interval] {#time-interval-def}
+### [!UICONTROL Time interval] {#time-interval-def}
 
 Also known as period, it is the window of time that contains the play request activity represented in the user interface and tables from start to finish.
 
-## [!UICONTROL Trend] {#trend-def}
+### [!UICONTROL Trend] {#trend-def}
 
 The percentage difference in the associated metric (for example, percentage of total play requests) between the current and previous period.
 
-## [!UICONTROL Unique Subscribers] {#unique-subscriber-def}
+### [!UICONTROL Unique Subscribers] {#unique-subscriber-def}
 
 The number of unique accounts that have streamed at least once during a given period. 
 
-## [!UICONTROL Usage] {#usage-defs}
+### [!UICONTROL Usage] {#usage-defs}
 
-### [!UICONTROL Avid user] {#avid-user-def}
+#### [!UICONTROL Avid user] {#avid-user-def}
 
 More than 37 play request per month.
 
-### [!UICONTROL Infrequent user] {#infrequent-users-def}
+#### [!UICONTROL Infrequent user] {#infrequent-users-def}
 
 Less than 9 play requests per month.
 
-### [!UICONTROL Regular user] {#regular-user-def}
+#### [!UICONTROL Regular user] {#regular-user-def}
 
 From 9 to 37 play requests per month.
 
-## [!UICONTROL Usage Pattern] {#usage-patern-def}
+### [!UICONTROL Usage Pattern] {#usage-patern-def}
 
 One of a finite set of category labels applied to an account that best characterizes the users of the account in terms of social groups or behaviors (e.g., a small family, a traveler or commuter, social sharing, etc.).
 
-## [!UICONTROL Video category] {#video-category-def}
+### [!UICONTROL Video category] {#video-category-def}
 
-### [!UICONTROL For D2C service] {#d2c-service}
+#### [!UICONTROL For D2C service] {#d2c-service}
 
 A video category is a specific label that qualifies the nature of the video. For example, region of the source, content types, such as VOD or live, event, or specific labels such as team.
 
-### [!UICONTROL For TV Everywhere] {#tv-everywhere}
+#### [!UICONTROL For TV Everywhere] {#tv-everywhere}
 
 A video category is defined by the combination of Programmer, channel, and MVPD associated with the stream.
 
-## [!UICONTROL Zip Code] {#zip-code-def}
+### [!UICONTROL Zip Code] {#zip-code-def}
 
 The U.S. Postal code associated with locations within the U.S.
 <!--calculated metrics-->
 
-</br>
 
-
-## TV Everywhere specific terminology
+## TV Everywhere specific terminologies
 
 ### [!UICONTROL AuthZ] {#authz-def}
 

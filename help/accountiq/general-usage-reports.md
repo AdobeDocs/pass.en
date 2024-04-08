@@ -1,17 +1,17 @@
 ---
-title: General Usage reports
-description: General Usage reports
+title: General usage reports
+description: Learn about general usage reports
 exl-id: 1272073a-61fe-47ec-aced-2e8055b6b11e
 ---
-# [!UICONTROL General Usage] reports {#general-usage-reports}
+# [!UICONTROL General usage] reports {#general-usage-reports}
 
 [!UICONTROL Account IQ] reports are basic analytic tools and analysis that let you drill into your data to isolate [cohorts](/help/accountiq/product-concepts.md#segmet-def), identify anomalies, and build an understanding of your account characteristics.
 
 [!UICONTROL General Usage] reports page provides tools to carve out subgroup metrics based on the number of account devices in use, IPs detected, and respective zip codes.
 
-The reports are all based on the current segment selected using [Segments and time interval](/help/accountiq/segments-timeinterval.md) panel. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in [Snapshot Overview - Accounts above thresholds](#snapshot-overview) panel.
+The reports are all based on the current segment selected using [Segments and time interval](/help/accountiq/segments-timeinterval.md) panel. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in [Snapshot Overview-Accounts above thresholds](#snapshot-overview) panel.
 
-## Play Requests/Unique Subscribers {#playreq-uniquesubs}
+## Play requests or unique subscribers {#playreq-uniquesubs}
 
 The line graphs here gives you a view of the changes over time of values, such as Play Requests and Unique Subscribers in a selected time interval for the defined segment.
 
@@ -57,7 +57,7 @@ The x-axis represents the time based on the current interval and the y-axis repr
 >
 >The availability of metrics varies depending on the version of Account IQ.
 
-## Snapshot Overview - Accounts above thresholds {#snapshot-overview}
+## Snapshot overview-accounts above thresholds {#snapshot-overview}
 
 Fine tune your analytics and reports using this additional filter to set various usage thresholds. Once you have selected a segment, you can also use following filters to further analyze subscriber behavior:
 
@@ -67,7 +67,7 @@ Fine tune your analytics and reports using this additional filter to set various
 
 * Number of Zip Codes Threshold
 
-When you update threshold values in [Accounts Segment - based on selected thresholds](#account-segments-basedon-segments) panel, you will view the effect in:
+When you update threshold values in [Accounts Segment-based on selected thresholds](#account-segments-basedon-segments) panel, you will view the effect in:
 
 * [Devices per week (or month) per account](#devices-week-account)
 
@@ -81,9 +81,9 @@ When you update threshold values in [Accounts Segment - based on selected thresh
 >
 >The default value for each of the thresholds is 4. Which means, the General Usage page shows analysis for subscribers using more than four devices, consuming content from more than four different IP addresses, *and* more than four different zip codes.
 
-### Accounts Segment - based on selected thresholds {#account-segments-basedon-segments}
+### Accounts segment-based on selected thresholds {#account-segments-basedon-segments}
 
-The **Accounts Segment - based on selected thresholds** panel gives you options to set thresholds (between 1 and 10) for number of devices, number of IPs, and number of Zip codes.
+The **Accounts Segment-based on selected thresholds** panel gives you options to set thresholds (between 1 and 10) for number of devices, number of IPs, and number of Zip codes.
 
 The graph shows you the:
 
@@ -93,9 +93,9 @@ The graph shows you the:
 
 ![](assets/select-thresholds.png)
 
-## Devices per week (or month) per Account {#devices-week-account}
+## Devices per week (or month) per account {#devices-week-account}
 
-The **bar graph** provides insights into usage behavior in terms of how the subscribers are using their devices to access content.
+This bar graph provides insights into usage behavior in terms of how the subscribers are using their devices to access content.
 
 The x-axis plots Number of Accounts, and y-axis plots Number of Devices. Based on the threshold you set for number of devices per account, it marks the absolute number of subscriber accounts consuming content from a specific number of devices in a week's duration.  
 
@@ -113,9 +113,9 @@ The donut provides an alternate view of the devices in use by accounts in the cu
 
 ![](assets/donut-devices-w-acc.png)
 
-## Locations per week (or month) per Account {#locations-week-account}
+## Locations per week (or month) per account {#locations-week-account}
 
-Similar to the metric for [Devices per week (or month) per Account](#devices-week-account), the Locations per week (or month) per Account metric lets you analyze the subscriber account usage from different locations. The x-axis plots Number of Accounts, and y-axis plots Number of Locations.
+Similar to the metric for [Devices per week (or month) per account](#devices-week-account), the Locations per week (or month) per Account metric lets you analyze the subscriber account usage from different locations. The x-axis plots Number of Accounts, and y-axis plots Number of Locations.
 
 ![](assets/graph-loc-week-acc.png)
 
@@ -127,9 +127,9 @@ Once you have set the threshold for the number of locations, you can use the gra
 
 * Compare the weekly average (number of different locations for an account) with Threshold.
 
-## IPs per week (or month) per Account {#ip-week-account}
+## Ips per week (or month) per account {#ip-week-account}
 
-Similar to the metric for **Number of Locations per week per Account**, the **Number of IPs per week per account** metric lets you evaluate the amount of change at the source of streaming for the current segement.
+Similar to the metric for **Number of Locations per week per account**, the **Number of IPs per week per account** metric lets you evaluate the amount of change at the source of streaming for the current segement.
 
 The x-axis plots Number of Accounts, and y-axis plots Number of IPs.
 
@@ -143,15 +143,15 @@ Once you have defined a segment and set the threshold for the number of IPs, you
 
 * Compare the weekly average (number of different IPs for an account) with the threshold.
 
-## Accounts Segment - Historical View {#account-segment-historical-view}
+## Accounts segment-historical view {#account-segment-historical-view}
 
-The Historical View bar graph helps you compare the usage metrics across different time intervals. Also, it collectively plots the various usage metrics, such as [Devices per week (or month) per Account](#devices-week-account), [Locations per week (or month) per Account](#locations-week-account), and [IPs per week (or month) per Account](#ip-week-account).
+The Historical View bar graph helps you compare the usage metrics across different time intervals. Also, it collectively plots the various usage metrics, such as [Devices per week (or month) per account](#devices-week-account), [Locations per week (or month) per account](#locations-week-account), and [IPs per week (or month) per account](#ip-week-account).
 
 * The x-axis plots the time interval, and y- axis plots number of subscriber accounts, devices, locations and IPs.
 
 * The orange colored bars signify segments in various time intervals.
 
-* The line graph plots the changes in [Devices per week (or month) per Account](#devices-week-account), [Locations per week (or month) per Account](#locations-week-account), and [IPs per week (or month) per Account](#ip-week-account) values across the time interval based on the threshold.
+* The line graph plots the changes in [Devices per week (or month) per account](#devices-week-account), [Locations per week (or month) per account](#locations-week-account), and [IPs per week (or month) per account](#ip-week-account) values across the time interval based on the threshold.
 
 ![](assets/historical-view.png)
 

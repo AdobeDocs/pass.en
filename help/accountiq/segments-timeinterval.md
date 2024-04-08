@@ -18,7 +18,7 @@ When you log into Account IQ, the segment and time interval panel at the top of 
 >
 > The collapsed segment summary represented with **G** in previous image shows the [Video categories](product-concepts.md#video-category-def) used in the TV Everywhere version of Account IQ. If you're logged in as a D2C service, the labels will display your company's specific video categories.
 
-Read more about how to [create](work-with-segments.md#create-new-segment) and [manage](work-with-segments.md#manage-segment) segments from the **Segments** tab in the left panel.
+Read more about [how to create](work-with-segments.md#create-new-segment) and [manage segments](work-with-segments.md#manage-segment) from the **Segments** tab in the left panel.
 
 ## Segment selection {#segment-selection}
 
@@ -38,7 +38,7 @@ To select a specific segment, follow these steps:
 1. Select **[!UICONTROL Open segment]**.
 
 
-## Granularity and Time Interval selection {#granularity-timeinterval}
+## Granularity and time interval selection {#granularity-timeinterval}
 
 The **Granularity and Time Interval** selector lets you specify the dates and duration aggregated on a weekly/monthly basis for observing subscriber sharing behavior. The default selection is the current week. 
 

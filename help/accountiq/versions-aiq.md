@@ -1,6 +1,6 @@
 ---
-title: Versions in Account IQ
-description: Learn about different user types in Account IQ.
+title: Versions of Account IQ
+description: Learn about versions used for different services in Account IQ.
 ---
 # Versions of Account IQ {#aiq-versions}
 
@@ -8,7 +8,7 @@ Account IQ is designed to automatically identify password sharing, particularly 
 
 This guide addresses the needs of D2C subscribers, TV Everywhere programmers, and TV Everywhere MVPDs companies within the video streaming industry.
 
-Because of slight differences between these industries, there are slightly different versions of Account IQ. Each type of video streaming company interacts with their own specific version of Account IQ: 
+Because of slight differences between these type of services, there are slightly different versions of Account IQ. Each type of video streaming company interacts with their own specific version of Account IQ: 
 
 ## Direct to consumer (D2C) services {#d-to-c}
 
