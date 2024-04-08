@@ -1,5 +1,5 @@
 ---
-title: Personas in Account IQ
+title: Versions in Account IQ
 description: Learn about different user types in Account IQ.
 ---
 # Versions of Account IQ {#aiq-versions}
