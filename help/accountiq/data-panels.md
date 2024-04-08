@@ -83,7 +83,7 @@ When you log in as a **D2C** service, this table provides a comparative view of 
 
 *Sharing Score by Regions in segment*
 
-Use **Export** to download the data in a csv file. View [export data panel reports](/help/accountiq/export-reports.md) for more information.
+Use **Export** to download the data in a csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
 
 +++
 
@@ -97,7 +97,7 @@ Select the column headings to sort the data.
 
 *Sharing Score by MVPDs in segment*
 
-Use **Export** to download the data in a csv file. View [export data panel reports](/help/accountiq/export-reports.md) for more information.
+Use **Export** to download the data in a csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
 
 +++
 
@@ -111,7 +111,7 @@ Select the column headings to sort the data.
 
 *Sharing Score by Programmers in segment*
 
-Use **Export** to download the data in a csv file. View [export data panel reports](/help/accountiq/export-reports.md) for more information.
+Use **Export** to download the data in a csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
 
 +++
 
