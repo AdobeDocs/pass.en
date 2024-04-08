@@ -45,13 +45,13 @@ The line graphs here gives you a view of the changes over time of values, such a
 
 The x-axis represents the time based on the current interval and the y-axis represents basic subscriber activity metrics during that period. The line graphs help you visualize and compare activity of the subscribers in the current segment. Depending on the version of Account IQ the metrics include:
 
-* **AuthN OK**: Number of successful authentications. View [AuthN OK](/help/accountiq/product-concepts.md#authn-ok-def) for more information .
+* **AuthN OK**: Number of successful authentications. Read more about [AuthN OK](/help/accountiq/product-concepts.md#authn-ok-def).
 
-* **AuthZ OK**: Number of successful authorizations. View [AuthZ OK](/help/accountiq/product-concepts.md#authz-ok-def) for more information.
+* **AuthZ OK**: Number of successful authorizations. Read more about [AuthZ OK](/help/accountiq/product-concepts.md#authz-ok-def).
 
-* **Play Requests**: Number of Play Requests. View [Play requests](/help/accountiq/product-concepts.md#play-requests-def) for more information.
+* **Play Requests**: Number of play requests. Read more about [Play requests](/help/accountiq/product-concepts.md#play-requests-def).
 
-* **Unique Subscribers**: Number of successful unique subscribers. View [Unique subscribers](/help/accountiq/product-concepts.md#unique-subscriber-def) for more information.
+* **Unique Subscribers**: Number of successful unique subscribers. Read more about [Unique subscribers](/help/accountiq/product-concepts.md#unique-subscriber-def).
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Fine tune your analytics and reports using this additional filter to set various
 
 * Number of Zip Codes Threshold
 
-When you update threshold values in [Accounts Segment - based on selected thresholds](#account-segments-basedon-segments) panel, you can view the changes in:
+When you update threshold values in [Accounts Segment - based on selected thresholds](#account-segments-basedon-segments) panel, you will view the effect in:
 
 * [Devices per week (or month) per account](#devices-week-account)
 
@@ -79,7 +79,7 @@ When you update threshold values in [Accounts Segment - based on selected thresh
 
 >[!NOTE]
 >
->The default value for each of the thresholds is 4. Which means, the General Usage page shows analysis for subscribers using four or more devices, consuming content from four or more different IP addresses, *and* four or more different zip codes.
+>The default value for each of the thresholds is 4. Which means, the General Usage page shows analysis for subscribers using more than four devices, consuming content from more than four different IP addresses, *and* more than four different zip codes.
 
 ### Accounts Segment - based on selected thresholds {#account-segments-basedon-segments}
 
@@ -109,23 +109,17 @@ The graph also marks the following:
 
 * A green line to mark the average of the number of different devices used by a subscriber account per week (or month).
 
- You can assess the extent of sharing by comparing the threshold level with the weekly average number of different devices used by an account.
-
-The graph also gives a glimpse of the percentage of subscriber accounts that are using more number of devices than the set threshold.
-
-The donut chart helps you examine the magnitude of subscriber accounts consuming channel content using devices more than the set threshold (in a time interval) at a glance.
+The donut provides an alternate view of the devices in use by accounts in the current segment above the set threshold.
 
 ![](assets/donut-devices-w-acc.png)
 
 ## Locations per week (or month) per Account {#locations-week-account}
 
-Like [Devices per week (or month) per Account](#devices-week-account), the Locations per week (or month) per Account metric help you analyze the subscriber account usage from different locations to closely identify password sharing. The x-axis plots Number of Accounts, and y-axis plots Number of Locations.
-
-Results from this metric combined with number of [Devices per week (or month) per Account](#devices-week-account) and number of [IPs per week (or month) per Account](#ip-week-account) help you examine the password sharing instances more accurately; such that authentic users are not counted in.
+Similar to the metric for [Devices per week (or month) per Account](#devices-week-account), the Locations per week (or month) per Account metric lets you analyze the subscriber account usage from different locations. The x-axis plots Number of Accounts, and y-axis plots Number of Locations.
 
 ![](assets/graph-loc-week-acc.png)
 
-Once you have defined a segment and set the threshold for the number of locations, you can use the graph to identify the following:
+Once you have set the threshold for the number of locations, you can use the graph to identify the following:
 
 * Number (and percentage) of subscribers that are consuming content from (a specific) x number of locations in a week.
 
@@ -135,7 +129,7 @@ Once you have defined a segment and set the threshold for the number of location
 
 ## IPs per week (or month) per Account {#ip-week-account}
 
-The **Number of IPs per week per account** metric lets you analyze password sharing more precisely and with more granularity.
+Similar to the metric for **Number of Locations per week per Account**, the **Number of IPs per week per account** metric lets you evaluate the amount of change at the source of streaming for the current segement.
 
 The x-axis plots Number of Accounts, and y-axis plots Number of IPs.
 

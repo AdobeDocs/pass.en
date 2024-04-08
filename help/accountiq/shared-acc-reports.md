@@ -5,11 +5,11 @@ exl-id: 16c5ded1-2a95-4373-8b90-b445131f333a
 ---
 # Shared Accounts Reports {#shared-accounts-reports}
 
-The Shared Accounts Reports break down the metrics, such as number of devices and device types by the selected range of sharing probability. For example, **[!UICONTROL Over Moderate Probability]** and **[!UICONTROL Over Low Probability]** for the current segment.
+The Shared Accounts Reports provides another group of graphs and charts that reflect the sharing behavior and consumption for the current segment. For example, **[!UICONTROL Over Moderate Probability]** and **[!UICONTROL Over Low Probability]** for the current segment.
 
-These ranges can then serve as user-defined thresholds and the graphs are updated based on the selected thresholds.
+## Accounts Sharing Probability {#accounts-sharing-probability}
 
-Account IQ classifies all the subscriber accounts of the defined segment into the accounts with the following five categories based on their sharing probabilities:
+This donut and bar charts shows the percentages (and absolute numbers) of the subscriber accounts that fall into specific ranges of sharing probability. These ranges are defined as:
 
 * Very high (80%-100%)
 * High (60%-80%)
@@ -17,25 +17,23 @@ Account IQ classifies all the subscriber accounts of the defined segment into th
 * Low (20%-40%)
 * Very low (0%-20%)
 
-## Accounts Sharing Probability {#accounts-sharing-probability}
-
-The donut chart here categorizes and shows the percentages (and absolute numbers) of the subscriber accounts from various probability categories.
-
-The red line marks the threshold range selected by users in [Accounts over threshold in current segment](#threshold-selector) panel.
+The red line marks the threshold range selected in the [Accounts over threshold in current segment](#threshold-selector) panel and the light red area contains the total of all accounts above that threshold.
 
 ![](assets/accounts-sharing-probability-pie.png)
 
-The bar chart plots number of accounts on y-axis for various categories of sharing probabilities (plotted on x-axis).
+The bar chart plots number of accounts that fall into each range on y-axis for each of the ranges (plotted on x-axis).
 
 ![](assets/accounts-sharing-probability-bar.png)
 
-The red line marks the range of threshold, and can be adjusted in the bar chart. The threshold adjusted in the bar chart reflects in the threshold range in donut chart.
+Here again, the red line marks current threshold, and the light red area contains the total of all accounts above that threshold.
 
-<!--![](assets/shared-accounts-rep.gif)-->
+>[!NOTE]
+>
+> The y-Axis of the bar chart logarithmic.
 
 ### Accounts over threshold in current segment{#threshold-selector}
 
-This panel lets you select a range from the following as threshold for subscriber accounts (based on their sharing probabilities):
+This panel lets you select the threshold range for the donut and bar graphs above. The four options are:
 
 * Accounts **over very low** sharing **probability**
 
@@ -55,32 +53,37 @@ The donut chart shows the percentage (and number) of play requests made by subsc
 
 ![](assets/play-req-outof-total.png)
 
-When you move cursor on the donut chart, it also shows subscriber percentages and numbers from various probability ranges.
+When you move cursor over the donut chart, it also shows subscriber percentages and numbers from various probability ranges.
 
 <!--![](assets/play-request-total.gif)-->
 
 ## Segment-Average Number of Devices Per Account{#avg-devices-account}
 
-The bar chart shows the average number of devices of each type that are currently in use by subscribers in the current segment and not in the current segment.
+The bar chart shows the average number of devices of each type that are currently in use by subscribers in the current segment and of those not in the current segment.
 
 ![](assets/avg-devices-per-acc.png)
 
 ## Segment - Zip codes per Period per Account {#zip-codes-period-account}
 
-This graph informs you about the number of subscribers that are consuming content from different locations in a time interval.
+This graph informs you about the number of subscribers in the current segment that are consuming content from different locations (as measured by zip code) for the given time interval.
 
 ![](assets/zip-period-account.png)
 
-You can zoom in to narrow down and view specifics of a bar in the graph that plots a range of locations.
+>[!NOTE]
+>
+>You can zoom into the bars that represent more than one set of zip codes, represented with a **+** (plus) sign (e.g., 10+), by double-clicking them.
+
 
 ## Segment - Geographical Span / Period / Account {#geo-span-period-account}
 
-This bar graph plots number of subscriber accounts with respect to different geographical ranges in miles. The range is based on the maximum distance between the locations from which a subscriber has streamed during the time interval.
+This bar graph plots number of subscriber accounts that consume content from locations that fall into different geographical ranges in miles. The range is based on the maximum distance between the locations from which a subscriber has streamed during the time interval.
 
 ![](assets/geogr-span-account.png)
 
-When you select a bar representing a range of geographical distance, it expands the range to show you more details.
+>[!NOTE]
+>
+> You can zoom into the bars that represent more than one set of geographical distances, represented with a **+** (plus) sign (e.g., 1000+), by double-clicking them.
 
 >[!MORELIKETHIS]
 >
->* Know how to export reports for top 1000 subscribers in the selected segment using filters in Shared Accounts Reports using [Export top 1000 accounts](/help/accountiq/export-acc-information.md) option.
+>* Learn how to export reports for top 1000 subscribers in the selected segment using filters in Shared Accounts Reports using [Export top 1000 accounts](/help/accountiq/export-acc-information.md) option.
