@@ -11,7 +11,7 @@ exl-id: 1272073a-61fe-47ec-aced-2e8055b6b11e
 
 The reports are all based on the current segment selected using [Segments and time interval](/help/accountiq/segments-timeinterval.md) panel. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in [Snapshot Overview-Accounts above thresholds](#snapshot-overview) panel.
 
-## Play requests or unique subscribers {#playreq-uniquesubs}
+## Play requests and unique subscribers {#playreq-uniquesubs}
 
 The line graphs here gives you a view of the changes over time of values, such as Play Requests and Unique Subscribers in a selected time interval for the defined segment.
 

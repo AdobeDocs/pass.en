@@ -10,7 +10,7 @@ The table below outlines the availability and differences among the data panels 
 
 |Data panels|D2C services|TVE Programmers|TVE MVPDs|
 |---|---|---|---|
-|[Average sharing score - aggregated for the current segment](#aggregated-sharing)|Available and consistent|Available and consistent|Available and consistent|
+|[Average sharing score-aggregated for the current segment](#aggregated-sharing)|Available and consistent|Available and consistent|Available and consistent|
 |[Video categories in segment](#video-categories-segment)|Available with slight variations|Available with slight variations|Available with slight variations|
 |[Sharing score by channels and MVPDs](#sharin-score-by-channels-and-mvpds)|Unavailable|Available|Unavailable|
 |[Accounts sharing probability](#accounts-sharing-probability)|Available and consistent|Available and consistent|Available and consistent|

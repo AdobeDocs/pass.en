@@ -8,7 +8,7 @@ The Dashboard summarizes and aggregates data in a collection of graphs and repor
 
 >[!NOTE]
 >
->The majority of data panels on the D2C services, Programmers and MVPD dashboards are identical. However, certain data panels may vary in availability or appear slightly different for each version. 
+>The majority of data panels on the D2C services, Programmers, and MVPD dashboards are identical. However, certain data panels may differ for each version. 
 
 +++D2C services: Dashboard
 
@@ -46,7 +46,7 @@ The Dashboard for MVPDs is slightly different from those of the programmers.
 
 The Dashboard for D2C services, programmers, and MVPDs includes:
 
-* **Segments and time interval panel**: This panel enables you to select segment and time interval to generate account sharing reports, and provide a summary of the selected segment. Know how to select [segments and time interval](/help/accountiq/segments-timeinterval.md).
+* **Segments and time interval panel**: This panel allows you to select segment and time interval to generate account sharing reports, and provide a summary of the selected segment. View [segments and time interval](/help/accountiq/segments-timeinterval.md) for more information.
 
 * **Page navigation**: These tabs enable you to navigate and explore various sections and pages of Account IQ.
 
