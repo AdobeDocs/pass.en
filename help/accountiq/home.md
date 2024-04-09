@@ -7,7 +7,6 @@ exl-id: c0d85fc8-b5ab-4284-802e-82f52eff401f
 
 Understanding the subscriber usage behavior and addressing credential sharing is complex. Developing a holistic view of their activity presents challenges, such as distinguishing sharing among members within the same household and outside. This complexity leads streaming service providers have inhibitions in taking action against credential sharing.
 
-<div class "preview">
 Generally, video streaming service providers are aware of the risk and cost of sharing in their business that includes churn, poor customer experience, and negative brand impact. However, they have limited solutions available, such as blocking the sharers or providing alternative offers. However, an informed and targeted approach is recommended. The one that help services to understand sharing accurately and use strategies to reward good viewing behavior while also aiming for business growth. </span>
 
 ![Account IQ flow diagram](assets/aiq-intro.png)
