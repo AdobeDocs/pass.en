@@ -68,7 +68,7 @@ The Segment Summary is similar for D2C services and TV Everywhere. The video cat
 
 +++ D2C services
 
-Use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. It also presents information on the number of subscriber accounts and their playback requests within the chosen time period.
+Select <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. It also presents information on the number of subscriber accounts and their playback requests within the chosen time period.
 
 ![](assets/segment-panel-d2c.png){align="left"}
 
@@ -88,7 +88,7 @@ The **Segment Summary** includes the following conditions that define a segment:
 
 +++ TV Everywhere
 
-Use <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. It also presents information on the number of subscriber accounts and their playback requests within the chosen time period.
+Select <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. It also presents information on the number of subscriber accounts and their playback requests within the chosen time period.
 
 ![](assets/segment-panel-programmers-mvpd.png){align="left"}
 
