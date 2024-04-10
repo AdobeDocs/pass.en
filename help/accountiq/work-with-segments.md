@@ -62,8 +62,8 @@ It opens a **New segment** page, which includes the following elements:
 
 Perform the following steps to create a segment:
 
-1. Add a name of your segment in **Segment name** that will be visible in the list of segments and during segment selection.
-1. Add a detailed description of your segment in **Segment description**.
+1. Type the name of your segment in **Segment name** that will be visible in the list of segments and during segment selection.
+1. Type a detailed description of your segment in **Segment description**.
 1. For example, drag **Regions and content types** from the segment components on the left panel and drop them into the **Regions/Content types** section within the **Segment definition**.
 
    >[!NOTE]
@@ -143,8 +143,8 @@ It opens a **New segment** page, which includes the following elements:
 
 Perform the following steps to create a segment:
 
-1. Add a name of your segment in **Segment name** that will be visible in the list of segments and during segment selection.
-1. Add a detailed description of your segment in **Segment description**.
+1. Type the name of your segment in **Segment name** that will be visible in the list of segments and during segment selection.
+1. Type a detailed description of your segment in **Segment description**.
 1. Drag **Programmers and Channels** from the segment components on the left panel and drop them into the **Programmers/Channels** section within the **Segment definition**.
 
    >[!NOTE]

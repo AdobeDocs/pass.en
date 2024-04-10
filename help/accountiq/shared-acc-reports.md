@@ -5,11 +5,11 @@ exl-id: 16c5ded1-2a95-4373-8b90-b445131f333a
 ---
 # Shared accounts reports {#shared-accounts-reports}
 
-The Shared Accounts Reports provides another group of graphs and charts that reflect the sharing behavior and consumption for the current segment. For example, **[!UICONTROL Over Moderate Probability]** and **[!UICONTROL Over Low Probability]** for the current segment.
+The Shared Accounts Reports provide another group of graphs and charts that reflect the sharing behavior and consumption for the current segment. For example, **[!UICONTROL Over Moderate Probability]** and **[!UICONTROL Over Low Probability]** for the current segment.
 
 ## Accounts sharing probability {#accounts-sharing-probability}
 
-This donut and bar charts shows the percentages (and absolute numbers) of the subscriber accounts that fall into specific ranges of sharing probability. These ranges are defined as:
+This donut and bar charts show the percentages (and absolute numbers) of the subscriber accounts that fall into specific ranges of sharing probability. These ranges are defined as:
 
 * Very high (80%-100%)
 * High (60%-80%)

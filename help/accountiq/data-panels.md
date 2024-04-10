@@ -4,7 +4,7 @@ description: The Dashboard helps to pinpoint the instances of password sharing b
 ---
 # Data panels on Dashboard {#data-panels}
 
-Once you've selected a segment and time interval, the dashboard will display various data panels, tables, and graphs that reflect an high level view sharing for the segment.
+Once you've selected a segment and time interval, the dashboard will display various data panels, tables, and graphs that reflect a high level view sharing for the segment.
 
 The table below outlines the availability and differences among the data panels in various [versions](/help/accountiq/versions-aiq.md) of Account IQ: 
 
@@ -83,7 +83,7 @@ When you log in as a **D2C** service, this table provides a comparative view of 
 
 *Sharing Score by Regions in segment*
 
-Use **Export** to download the data in a csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
+Select **Export** to download the data in a csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
 
 +++
 
@@ -97,7 +97,7 @@ Select the column headings to sort the data.
 
 *Sharing Score by MVPDs in segment*
 
-Use **Export** to download the data in a csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
+Select **Export** to download the data in a csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
 
 +++
 
@@ -111,7 +111,7 @@ Select the column headings to sort the data.
 
 *Sharing Score by Programmers in segment*
 
-Use **Export** to download the data in a csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
+Select **Export** to download the data in a csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
 
 +++
 
@@ -150,5 +150,5 @@ This panel provides a tabular view of  accounts partitioned into ranges of shari
 
 *Number of accounts, trends, and usages falling in various probability ranges*
 
-Use **Export** to download the data in a csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md)
+Select **Export** to download the data in a csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md)
 

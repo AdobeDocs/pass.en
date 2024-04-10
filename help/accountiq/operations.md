@@ -140,7 +140,7 @@ To create new operation, follow the instructions in the following sections:
 
 ### Operation details {#operation-details}
 
-In this section, add a name for the operation in **Operation name**.
+In this section, type the name for the operation in **Operation name**.
 
    >[!TIP]
    >
@@ -207,7 +207,7 @@ In this section, select the **Start date** and **End date** from the date-picker
    
 ![Select start date and End date from the date-picker](assets/add-schedule.png)
 
-*Select start date and End date from the date-picker*
+*Select Start date and End date from the date-picker*
 
 **A.** Start date picker **B.** End date picker
 

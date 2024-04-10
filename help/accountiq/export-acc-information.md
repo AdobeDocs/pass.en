@@ -7,27 +7,25 @@ exl-id: df41ddd2-fde3-4861-abd4-6e32f0be9ea5
 
 [!UICONTROL Account IQ] allows you to export account sharing details for top 1000 subscriber accounts based on their [sharing probabilities](/help/accountiq/product-concepts.md#account-sharing-probability-def). You can export the account sharing information for the current [segment](/help/accountiq/product-concepts.md#segment-def) and [specified time interval](/help/accountiq/product-concepts.md#time-interval-def) on the [Shared Accounts Reports](/help/accountiq/shared-acc-reports.md) page.
 
-To export the account sharing information of subscriber accounts for a specific segment, follow these steps:
+Follow the steps to export the account sharing information of subscriber accounts for a specific segment.
 
-1. Log in with your authorized credentials.
+1. Log in with your credentials.
 1. Navigate to the **Shared Accounts** tab under **Reports** section.
 1. Select the required segment and time interval from segment and time interval panel. Learn [how to select a segment and time interval](segments-timeinterval.md).
 
-   If required, refer to the instructions for [creating a new segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#edit-segment).
+   If required, refer to the instructions for [creating a segment](work-with-segments.md#create-new-segment) or [editing a segment](work-with-segments.md#edit-segment).
 
-1. Select **[!UICONTROL Export top 1000 accounts]** option located in the upper-right corner of the segment and time interval panel.
+1. Select **[!UICONTROL Export top 1000 accounts]** located in the upper-right corner of the segment and time interval panel.
 
    ![Export top 1000 accounts](assets/export-top-1000-accounts.png)
 
    *Select Export top 1000 accounts option*
 
-1. The file will automatically download to your local machine.
+The file will automatically download to your local machine in CSV format.
 
-   The system saves the statistical information for 1000 accounts with the highest sharing probabilities in a CSV file.
+This file contains the data for top 1000 accounts based on the sharing probabilities of the subscriber accounts in the current segment in decreasing order.
 
-1. Find the file on your local machine to open and access the data.
-
-The CSV file contains the data for top 1000 accounts based on the sharing probabilities of the subscriber accounts in the current segment sorted in decreasing order.
+The following is an example of the exported CSV file.
 
 ![exported data in csv format](assets/exported-csv.png)
 
@@ -57,7 +55,7 @@ The minimum number of devices from which users are actively streaming content.
 
 >[!NOTE]
 >
->The actual number of devices streaming content is certainly greater than the minimum number of devices specified for a particular account. 
+>The actual number of devices streaming content is greater than the minimum number of devices specified for a particular account. 
 
 **Minimum # Persons**  
 
@@ -65,7 +63,7 @@ The minimum number of individuals actively streamed content using those devices.
 
 >[!NOTE]
 >
->The actual number of individuals streaming content is certainly greater than the minimum number of persons assigned to a particular account. 
+>The actual number of individuals streaming content is greater than the minimum number of persons assigned to a particular account. 
 
 **[!UICONTROL # IPs]** 
 
@@ -97,7 +95,7 @@ The number of logins users make during the specified period using that account.
 
 >[!NOTE]
 >
-> **[!UICONTROL # AuthN OK]** may not be available for specific D2C services.
+> Some D2C services may not see **[!UICONTROL # AuthN OK]** data as it might not be included in their company's data.
 
 **[!UICONTROL # AuthZ OK]**
 
@@ -109,7 +107,7 @@ The number of times an MVPD has authorized a stream or granted access to content
 
 >[!NOTE]
 >
->For TV Everywhere, **[!UICONTROL # AuthZ OK]** related to **[!UICONTROL # Play Requests]**. It will always be less than **[!UICONTROL # Play Requests]** because Adobe typically caches the authorizations from MVPDs for approximately 24 hours.
+>For TV Everywhere, **[!UICONTROL # AuthZ OK]** is correlated with the number of **[# Play Requests](/help/accountiq/product-concepts.md##play-requests-def)**. It will always be less than **[!UICONTROL # Play Requests]** because Adobe typically caches the authorizations from MVPDs for approximately 24 hours.
 
 
 **[!UICONTROL # Play Requests]**
@@ -118,7 +116,7 @@ The actual number of streams occurred during a specified time period.
 
    >[!NOTE]
    >
-   >The play requests column isn't available in the MVPD version.
+   >The [# Play Requests](/help/accountiq/product-concepts.md##play-requests-def) column isn't available in TV Everywhere MVPD version.
 
 **[!UICONTROL # Channels]**
 
@@ -137,13 +135,23 @@ The overall number of channels that the account has watched over a specified per
 
 The values within these columns serve as identifiers corresponding to one of the 14 patterns we use to categorize all user accounts.
 
- | ID | 1 | 2 | 3 | 4 | 5 and 8 | 6 | 7 | 9 | 10 and 11 | 12 | 13 | 14 |
- |---|---|---|---|---|---|---|---|---|---|---|---|---|
- | Usage Patterns | Regular user | Traveler or commuter | Large family | Close family and friends | Social group sharing | Large group of friends | Concurrent streaming | Community sharing | Uncertain behavior | Small family | Second home | Abnormal Usage |
 
-{style="table-layout:auto"}
+|ID | Usage Patterns| 
+|---------|----------|
+| 1 |Regular user|
+| 2 |Traveler or commuter|
+| 3 |Large family|
+| 4 |Close family and friends|
+| 5 and 8 |Social group sharing|
+| 6 |Large group of friends|
+| 7 |Concurrent streaming|
+| 9 |Community sharing|
+| 10 and 11 |Uncertain behavior|
+| 12 |Small family |
+| 13 |Second home |
+| 14 |Abnormal Usage|
 
-*Table: Usage pattern identifiers in exported CSV mapping with usage patterns*
+*Usage pattern identifiers in exported CSV mapping with usage patterns*
 
 **Sharing Probability**
 
