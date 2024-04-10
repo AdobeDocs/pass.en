@@ -96,7 +96,7 @@ To change authentication and authorization TTL across all platforms for a specif
 1. Go to the **Integrations** tab in the left panel and select the required integration.
 1. Navigate to the **Platform Settings** section.
 
-1. Select **Default for All** tab available under **Platform Settings**.
+1. Select **Default for All** tab under **Platform Settings**.
 
    >[!NOTE]
    >
@@ -126,7 +126,7 @@ To enable or disable SSO for a specific integration and platform, follow these s
 
 1. Navigate to the **Platform Settings** section.
 
-1. Select a category of platform or a specific device for which you want to enable Single Sign On available under **Platform Settings**.
+1. Select a specific platform or category of platforms for which you want to enable Single Sign On under **Platform Settings**.
 
    ![Enable Single Sign On for a specific platform](assets/single-sign-on.png)
 
@@ -152,7 +152,7 @@ To enable or disable Home-Based Authentication for OAuth2 based MVPDs, follow th
 
 1. Go to the **Integrations** tab in the left panel and select the required integration.
 1. Navigate to the **Platform Settings** section.
-1. Select a category of platform or a specific device for which you want to enable home-based authentication available under **Platform Settings**.
+1. Select a specific platform or category of platforms for which you want to enable home-based authentication under **Platform Settings**.
 
    ![Enable home-based authentication for a specific platform](assets/attempt-hba.png)
 
@@ -218,6 +218,9 @@ Adding **Auth per Aggregator** effectively breaks Single Sign On for the respect
 >A new local configuration change is pending and ready to be pushed to the server. The property will be added only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
 Once added, select **Yes** to enable **Auth per Aggregator** property for a selected integration.
+
+#### Delete properties {#delete-properties}
+
 
 ### User metadata {#user-metadata}
 
