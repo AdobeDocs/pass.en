@@ -221,6 +221,11 @@ Once added, select **Yes** to enable **Auth per Aggregator** property for a sele
 
 #### Delete properties {#delete-properties}
 
+You can delete specific properties that are no longer needed by using <img alt= "delete property button" src="./assets/delete-icon.svg" width="25"> icon located to the right of each property.
+
+>[!NOTE]
+>
+>Certain properties cannot be removed as they are mandatory requirements for the selected MVPD.
 
 ### User metadata {#user-metadata}
 

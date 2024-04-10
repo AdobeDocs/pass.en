@@ -44,7 +44,7 @@ To manage various settings of a specific Programmer:
 
 This tab displays a list of channels linked with a current programmer. Select a specific entry from this list to access detailed information in the [Channels](/help/authentication/tve-dashboard-channels.md) section.
 
-To add a new channel for the selected programmer, select **Add new channel** from the upper-right corner of **Available Channels** section. Learn [how to add a new channel](/tve-dashboard-channels.md#add-new-channel).
+To add a new channel for the selected programmer, select **Add new channel** from the upper-right corner of **Available Channels** section. Learn [how to add a new channel](/help/authentication/tve-dashboard-channels.md#add-new-channel).
 
    ![Select Add new channel](assets/programmers-channels.png)
 
