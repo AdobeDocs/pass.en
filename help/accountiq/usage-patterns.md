@@ -5,13 +5,13 @@ exl-id: 2faa7e75-b3a1-491b-bb7d-bd3a149cbe79
 ---
 # Usage patterns {#usage-patterns}
 
-Account IQ classifies users of subscriber accounts into various categories in terms of their social behavior, such as traveler or commuter, Large family, and Community sharing. The **Usage Patterns** page shows several different analytics and reports for these user typologies. For example, **Usage patterns distribution** reports compare the usage behavior for the current segment versus all of your accounts.
+Account IQ classifies users of subscriber accounts into various categories in terms of their social behavior, such as traveler or commuter, large family, and community sharing. The **Usage Patterns** page shows several different analytics and reports for these user typologies. For example, **Usage patterns distribution** reports compare the usage behavior for the current segment versus all of your accounts.
 
 Like the other pages in the app, the analytics and reports here are based on the current segment defined in the [segment panel](/help/accountiq/segments-timeinterval.md).
 
 ## Usage patterns distribution {#usage-pattern-dis}
 
-The cluster bar graph in depicts the number and percentages of subscribers for each social behavior, or usage pattern. 
+The cluster bar graph depicts the number and percentages of subscribers for each social behavior, or usage pattern. 
 
 +++D2C services: Usage patterns distribution-Users in segment
 
@@ -39,7 +39,7 @@ The **[!UICONTROL Usage patterns distribution in segment]** panel tabulates the 
 
 * Sharing probability range that the individual accounts fall into.
 * Number and percentage of accounts in that pattern.
-* Overall and perctage of usage by subscribers in that category in terms of play requests.
+* Overall and percentage of usage by subscribers in that category in terms of play requests.
 
 ![](assets/usage-pattern-segmentwise.png)
 
@@ -65,7 +65,7 @@ The **[!UICONTROL Usage pattern distribution]** table provides a comparison of u
 
 >[!NOTE]
 >
->The video categories shown in the previous image, such as **Regions** is just an example. When you log in to Account IQ, the labels will display your company's specific video categories.
+>The video category shown in the previous image, such as **Regions** is just an example. When you log in to Account IQ, the label displays your company's specific video categories.
 
 +++
 

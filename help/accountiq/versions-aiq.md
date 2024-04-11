@@ -14,13 +14,13 @@ Because of slight differences between D2C and TVE, there are corresponding varia
 
 D2C refers to video streaming services sold directly from a content provider to customers. Examples of D2C services include Netflix, Disney+, and HBO Max. These platforms typically require users to subscribe directly with the services to access their content.
 
-## TV Everywhere (TVE) {#tve-personas}
+## TV Everywhere (TVE) {#tve}
 
 TV Everywhere refers to the online component of a customer's traditional TV subscription. It includes subscribers to cable or satellite TV services, such as Comcast or DirecTV, who can access content from those providers online through various streaming platforms. 
 
-In TV Everywhere, organizations are either [Programmers](/help/accountiq/product-concepts.md#programmer-def) or [MVPDs](/help/accountiq/product-concepts.md#mvpd-def). 
+There are two versions of TV Everywhere: [Programmers](/help/accountiq/product-concepts.md#programmer-def) and [MVPDs](/help/accountiq/product-concepts.md#mvpd-def).  
 
-When you [onboard](/help/accountiq/get-started.md) your organization to Account IQ, it is assigned either a Programmer or MVPD persona. 
+When you [onboard](/help/accountiq/get-started.md) your organization to Account IQ, you are assigned with either a Programmer or MVPD version.
 
 ### Programmers {#programmers}
 

@@ -22,13 +22,13 @@ When you go to the **Actions** and select the **[!UICONTROL Segments]** tab in t
 
 You can perform the following functions with segments:
 
-* [Create new segment](#create-new-segment)
+* [Create a new segment](#create-new-segment)
 * [Manage segments](#manage-segments)
 
 
-## Create new segment {#create-new-segment}
+## Create a new segment {#create-new-segment}
 
-The process of creating a new segment are similar for D2C services and TV Everywhere. The video categories will be different for each respective version of Account IQ.
+The process of creating a new segment is similar for D2C services and TV Everywhere. The video categories will be different for each respective version of Account IQ.
 
 +++D2C services
 
@@ -40,7 +40,7 @@ To build a segment and analyze subscriber's sharing behavior, select **[!UICONTR
 
    >[!NOTE]
    >
-   >The video categories shown in the previous image, such as **Regions** and **Content Types** are just examples. When you log in to Account IQ, the labels will display your company's specific video categories.
+   >The video categories shown in the previous image, such as **Regions** and **Content Types** are just examples. When you log in to Account IQ, these labels display your company's specific video categories.
 
 It opens a **New segment** page, which includes the following elements:
 
@@ -50,7 +50,7 @@ It opens a **New segment** page, which includes the following elements:
 
 **A.** Segment components **B.** Segment definition **C.** Segment summary
 
-* **Segment components**: An inventory of [video categories](product-concepts.md##video-category-def), and calculated metrics used to define a segment.
+* **Segment components**: An inventory of [video categories](product-concepts.md##video-category-def) and calculated metrics used to define a segment.
 
    >[!NOTE]
    >
@@ -204,7 +204,7 @@ The segment you've created is now available in the segment list.
 
 ## Manage segments {#manage-segments}
 
-You can select a segment from the segments list and then perform the following actions:
+You can select a segment from the segment list and then perform the following actions:
 
 * [Edit a segment](#edit-segment)
 * [Duplicate a segment](#duplicate-segment)
@@ -218,7 +218,7 @@ You can select a segment from the segments list and then perform the following a
 
 >[!NOTE]
 >
->The video categories shown in this section, such as **MVPDs**, **Programmers**, and **Channels** represent the labels used in the TV Everywhere version of Account IQ. If you're logged in as a D2C service, the labels will display your company's specific video categories.
+>The video categories shown in this section, such as **MVPDs**, **Programmers**, and **Channels** represent the labels used in the TV Everywhere version of Account IQ. If you're logged in as a D2C service, these labels display your company's specific video categories.
 
 You cannot edit, duplicate, or delete the default segment named **All accounts in your properties**.
 

@@ -7,7 +7,7 @@ exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
 
 1. Who is [!UICONTROL Account IQ] designed for?
 
-   **Answer.** [!UICONTROL Account IQ] is designed to serve D2C services, and TV Everywhere Programmers and MVPDs. However there are minor differences between these versions. There are limitations and restrictions on what data can be showed to each group.
+   **Answer.** [!UICONTROL Account IQ] is designed to serve D2C services, and TV Everywhere Programmers and MVPDs. However, there are minor differences between these versions. There are limitations and restrictions on what data can be shown to each group.
 
 1. How far back does the data go?
 
@@ -23,19 +23,19 @@ exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
 
 1. Can I see the account sharing for different video categories?
 
-   **Answer.** Yes, you can see account sharing for specific category, or a group of categories. For example, a D2C service set of regions, or a TV Everywhere collection of channels.
+   **Answer.** Yes, you can see account sharing for specific category or a group of categories. For example, a D2C service set of regions, or a TV Everywhere collection of channels.
 
 1. What is the data source used to identify credential sharing?
 
-   **Answer.** The service examines all of the subscriber streaming activity and enhances it with proprietary data sources. For D2C services, subscriber activity typically comes from repositories, such as Adobe Analytics or third-party data warehouses. For TV Everywhere this includes all transactions between programmers and MVPDs processed by Adobe Pass.
+   **Answer.** The service examines all of the subscriber streaming activity and enhances it with proprietary data sources. For D2C services, subscriber activity typically comes from repositories, such as Adobe Analytics or third-party data warehouses. For TV Everywhere, this includes all transactions between programmers and MVPDs processed by Adobe Pass.
 
 1. What is the service or industry average?
 
-   **Answer.** For D2C services, service reflects the baseline activity across all accounts. For TV Everywhere,  the industry average reflects the total for all Programmers and MVPDs. In both cases, these values are displayed in the primary sharing indicators—Sharing level, Usage from shared accounts, and Overall sharing score. 
+   **Answer.** For D2C services, the service reflects the baseline activity across all accounts. For TV Everywhere,  the industry average reflects the total for all Programmers and MVPDs. In both cases, these values are displayed in the primary sharing indicators—Sharing level, Usage from shared accounts, and Overall sharing score. 
 
 1. Is AccountIQ an enforcement tool? If not, how do we use it to stop sharing?
 
-   **Answer.** AIQ uses powerful analytics to provide insights. However, those insights can drive unlimited actions through integrations with Adobe products, such as Concurrency Monitoring, or your enterprise tools.
+   **Answer.** Account IQ uses powerful analytics to provide insights. However, those insights can drive unlimited actions through integrations with Adobe products, such as Concurrency Monitoring, or your enterprise tools.
 
 1. How effective is Concurrency Monitoring in mitigating sharing in industry? 
 
@@ -51,11 +51,11 @@ exl-id: d6e11fc9-0d14-46d8-9a85-f1006ac81fb1
 
 1. How can I use the insights provided by [!UICONTROL Account IQ]?
 
-   **Answer.** To Understand the scale and nature of sharing is the first step in our recommended best practices. Taking targeted action with specific accounts such as upselling or limiting streams is the step. The full recommendation is to start small, measure the results of the action, and refine and scale the process.
+   **Answer.** To Understand the scale and nature of sharing is the first step in our recommended best practices. Taking targeted action with specific accounts such as upselling or limiting streams is the second step. The full recommendation is to start small, measure the results of the action, and refine and scale the process.
 
 1. Do we need to work with internal technology groups and distribution partners to implement measures like smart CM (Concurrency Monitoring)?
 
-   **Answer.** Not necessarily. [!DNL Adobe Pass] Support can work to create your own CM rules based on your AIQ data.
+   **Answer.** Not necessarily. [!DNL Adobe Pass] Support can work to create your own CM rules based on your Account IQ data.
 
 1. Can I see how segments trend over time?
 

@@ -5,11 +5,11 @@ exl-id: 1272073a-61fe-47ec-aced-2e8055b6b11e
 ---
 # [!UICONTROL General usage] reports {#general-usage-reports}
 
-[!UICONTROL Account IQ] reports are basic analytic tools and analysis that let you drill into your data to isolate [cohorts](/help/accountiq/product-concepts.md#segmet-def), identify anomalies, and build an understanding of your account characteristics.
+[!UICONTROL Account IQ] reports are basic analytic tools that let you drill into your data to isolate [cohorts](/help/accountiq/product-concepts.md#segmet-def), identify anomalies, and build an understanding of your account characteristics.
 
-[!UICONTROL General Usage] reports page provides tools to carve out subgroup metrics based on the number of account devices in use, IPs detected, and respective zip codes.
+[!UICONTROL General usage] reports page provides tools to carve out subgroup metrics based on the number of account devices in use, IPs detected, and their respective zip codes.
 
-The reports are all based on the current segment selected using [Segments and time interval](/help/accountiq/segments-timeinterval.md) panel. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in [Snapshot Overview-Accounts above thresholds](#snapshot-overview) panel.
+The reports are all based on the current segment selected from the [Segments and time interval](/help/accountiq/segments-timeinterval.md) panel. You can fine tune your selection and further narrow it down by specifying (number of devices, number of IPs, and number of zip codes) thresholds in the [Snapshot Overview-Accounts above thresholds](#snapshot-overview) panel.
 
 ## Play requests and unique subscribers {#playreq-uniquesubs}
 
@@ -125,7 +125,7 @@ Once you have set the threshold for the number of locations, you can use the gra
 
 * Percentage of total subscriber accounts that are viewing content from more locations than the threshold.
 
-* Compare the weekly average (number of different locations for an account) with Threshold.
+* Compare the weekly average (number of different locations for an account) with threshold.
 
 ## Ips per week (or month) per account {#ip-week-account}
 

@@ -6,17 +6,17 @@ exl-id: c38cde37-70d9-486d-b8d0-7c1cbd2baf2e
 
 # Segments and time interval {#segment-timeinterval}
 
-When you log into Account IQ, the segment and time interval panel at the top of dashboard allows you to define the subscriber [segment](product-concepts.md#segmet-def). Segment and time interval panel helps to filter results and display reports on subscriber sharing behavior and patterns. A segment named **ALL ACCOUNTS IN YOUR PROPERTIES** is currently selected by default where you can view the following options:
+When you log into Account IQ, the segment and time interval panel located above the dashboard allows you to define the subscriber [segment](product-concepts.md#segmet-def). This panel helps to filter results and display reports on subscriber sharing behavior and patterns. A segment named **ALL ACCOUNTS IN YOUR PROPERTIES** is currently selected by default where you can view the following options:
 
 ![](assets/new-segment-selector-collapsed.png){align="left"}
 
  *Segment and time interval panel with collapsed segment summary*
  
-**A.** Currently selected segment name **B.** Open segment list option **C.** Edit segment option **D.** Create new segment option **E.** Granularity and time interval selector **F.** Option to expand segment summary **G.** Collapsed segment summary **H.** Segment data of subscriber accounts in the segment for a selected time interval
+**A.** Currently selected segment name **B.** Open segment list **C.** Edit segment **D.** Create new segment **E.** Granularity and time interval selector **F.** Icon to expand segment summary **G.** Collapsed segment summary **H.** Number of accounts in the segment for the selected interval
 
 >[!NOTE]
 >
-> The collapsed segment summary represented with **G** in previous image shows the [Video categories](product-concepts.md#video-category-def) used in the TV Everywhere version of Account IQ. If you're logged in as a D2C service, the labels will display your company's specific video categories.
+> The collapsed segment summary shows the [Video categories](product-concepts.md#video-category-def) used in the TV Everywhere version of Account IQ. If you're logged in as a D2C service, these labels display your company's specific video categories.
 
 Read more about [how to create](work-with-segments.md#create-new-segment) and [manage segments](work-with-segments.md#manage-segment) from the **Segments** tab in the left panel.
 
@@ -24,8 +24,8 @@ Read more about [how to create](work-with-segments.md#create-new-segment) and [m
 
 To select a specific segment, follow these steps:
 
-1. Navigate to the **[!UICONTROL Open segment]** option.
-1. Select **Segment Name** for which you want to view account sharing reports.
+1. Navigate to the **[!UICONTROL Open segment]** option inside the segment and time interval panel.
+1. Select the **Segment Name** for which you want to view the account sharing reports.
 
    ![](assets/open-segment.png){align="left"}
 
@@ -33,7 +33,7 @@ To select a specific segment, follow these steps:
 
    >[!NOTE]
    >
-   > The video categories shown in the previous image, such as **MVPDs**, **Programmers**, and **Channels** represent the labels used in the TV Everywhere version of Account IQ. If you're logged in as a D2C service, the labels will display your company's specific video categories.
+   > The video categories shown in the previous image, such as **MVPDs**, **Programmers**, and **Channels** represent the labels used in the TV Everywhere version of Account IQ. If you're logged in as a D2C service, these labels display your company's specific video categories.
 
 1. Select **[!UICONTROL Open segment]**.
 
@@ -66,9 +66,9 @@ This allows you to define your problem statement as "Subscribers of MVPD A who w
 
 The Segment Summary is similar for D2C services and TV Everywhere. The video categories will be different for each respective version of Account IQ.
 
-+++ D2C services
-
 Select <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. It also presents information on the number of subscriber accounts and their playback requests within the chosen time period.
+
++++ D2C services
 
 ![](assets/segment-panel-d2c.png){align="left"}
 
@@ -76,7 +76,7 @@ Select <img alt= "expand segment summary" src="./assets/expand-segment-summary.s
 
 >[!NOTE]
 >
->The [video categories](product-concepts.md#video-category-def) shown in the previous image, such as **regions** and **content types** are just examples. When you log in to Account IQ, the labels will display your company's specific video categories.
+>The [video categories](product-concepts.md#video-category-def) shown in the previous image, such as **region** and **content types** in segment are just examples. When you log in to Account IQ, these labels display your company's specific video categories.
 
 The **Segment Summary** includes the following conditions that define a segment:
 
@@ -88,8 +88,6 @@ The **Segment Summary** includes the following conditions that define a segment:
 
 +++ TV Everywhere
 
-Select <img alt= "expand segment summary" src="./assets/expand-segment-summary.svg" width="25"> icon to view the detailed segment summary. It also presents information on the number of subscriber accounts and their playback requests within the chosen time period.
-
 ![](assets/segment-panel-programmers-mvpd.png){align="left"}
 
 *Segment Summary for programmers/MVPDs*
@@ -100,7 +98,7 @@ The **Segment Summary** includes the following conditions that define a segment:
 
 **[Channels](product-concepts.md#channel-def) in segment** refer to channels whose video streams were watched by shared accounts represented in account sharing reports.
 
-**[MVPDs](product-concepts.md#mvpd-def) in segment** refer to MVPDs to which the subscribers are associated in order to be identified in account sharing reports.
+**[MVPDs](product-concepts.md#mvpd-def) in segment** refer to multi video programming distributors to which the subscribers are associated in order to be identified in account sharing reports.
 
 **[Metrics](product-concepts.md#metric) in segment** refer to attributes or criteria that subscribers must have fulfilled to be identified in account sharing reports.
 

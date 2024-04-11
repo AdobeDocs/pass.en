@@ -21,15 +21,15 @@ Follow the steps to export the account sharing information of subscriber account
 
    *Select Export top 1000 accounts option*
 
-The file will automatically download to your local machine in CSV format.
+The file will automatically download to your local machine in CSV. format.
 
 This file contains the data for top 1000 accounts based on the sharing probabilities of the subscriber accounts in the current segment in decreasing order.
 
-The following is an example of the exported CSV file.
+The following is an example of the exported CSV. file.
 
-![exported data in csv format](assets/exported-csv.png)
+![exported data in CSV. format](assets/exported-csv.png)
 
-*Exported data in CSV format*
+*Exported data in CSV. format*
 
 ## Columns in the exported report {#columns-in-export}
 
@@ -159,4 +159,4 @@ The likelihood that a specific account is sharing its credentials.
 
 >[!NOTE]
 >
-> The average of the sharing probability of all the accounts in the selected segment is used to compute the [sharing level](/help/accountiq/data-panels.md#sharing-level) of the [Aggregated sharing score](/help/accountiq/data-panels.md#aggregated-sharing).
+> The average of the sharing probability of all the accounts in the selected segment is used to compute the [sharing level](/help/accountiq/data-panels.md#sharing-level) of the [average sharing score](/help/accountiq/data-panels.md#aggregated-sharing).

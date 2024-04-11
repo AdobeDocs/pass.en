@@ -11,15 +11,15 @@ The following product terminologies and their definitions are common to all [ver
 
 ### [!UICONTROL Accounts Sharing Probability] {#account-sharing-probability-def}
 
-A dashboard panel with charts that divides the current segments sharing scores into sharing range categories of Very Low, Low, Moderate, High, and Very High.
+A dashboard panel with charts that divides the current segment's sharing scores into sharing range categories of Very Low, Low, Moderate, High, and Very High.
 
 ### [!UICONTROL Action] {#action-def}
 
-A direct or indirect event associated with an [Operation](#operation-def) that affects the characteristics (for example, Sharing score or number of devices in use) of a related operation segment (or cohort).
+A direct or indirect event associated with an [Operation](#operation-def) that affects the characteristics (for example, sharing score or number of devices in use) of a related operation segment.
 
 ### [!UICONTROL Aggregated sharing score] {#sharing-probability-level-def}
 
-A dashboard panel with charts that divides the current segments sharing scores into sharing range categories of Very Low, Low, Moderate, High, and Very High, along with each categories percentage of the total amount of streaming for the segment.
+A dashboard panel with charts that divides the current segment's sharing scores into sharing range categories of Very Low, Low, Moderate, High, and Very High, along with each categories percentage of the total amount of streaming for the segment.
 
 ### [!UICONTROL AuthN] {#authn-def}
 
@@ -27,11 +27,11 @@ The number of authentication attempts. An authentication attempt is the process 
 
 ### [!UICONTROL AuthN OK] {#authn-ok-def}
 
-The number of successful authentications. A successful authentication occurs when a users identify is confirmed by a D2C service or MVPD. For TV Everywhere users, this results in the user being redirected back to the programmer app or site.
+The number of successful authentications. A successful authentication occurs when a user's identify is confirmed by a D2C service or MVPD. For TV Everywhere users, this results in the user being redirected back to the programmer app or site.
 
 ### [!UICONTROL Cluster] {#cluster-def}
 
-A cluster is a collection of locations and devices. The clusters are created by finding common locations between devices. The devices that have been seen in a common location will be considered to belong in the same cluster. Two devices can be in the same cluster even though they do not have common locations but can be connected through the locations of other devices.
+A cluster is a collection of locations and devices. The clusters are created by finding common locations between devices. The devices that have been seen in a common location will be considered to belong in the same cluster. Two devices can be in the same cluster even though they do not have common locations, but can be connected through the locations of other devices.
 
 #### [!UICONTROL Mobile cluster] {#mobile-cluster-def}
 
@@ -44,11 +44,11 @@ A cluster that has at least one static device.
 ### [!UICONTROL Concurrency] {#consurrency-def}
 
 The concurrent is defined by two (or more) streams played at the same time or very close in time so that the interval between them cannot be justified by traveling at a normal speed.
-Concurrent usage is calculated using the maximum speed(miles/hour) between 2 different clusters. A user is considered to have concurrent usage if he has a speed greater than 124 m/h on a distance lesser than 124 miles or if he has a speed greater than 400 m/h on a distance greater than 124 miles. The distance is calculated between locations from different clusters. Concurrent usage is allowed in the same cluster.
+Concurrent usage is calculated using the maximum speed (miles/hour) between 2 different clusters. A user is considered to have concurrent usage if he has a speed greater than 124 m/h on a distance lesser than 124 miles or if he has a speed greater than 400 m/h on a distance greater than 124 miles. The distance is calculated between locations from different clusters. Concurrent usage is allowed in the same cluster.
 
 ### [!UICONTROL Device] {#device-def}
 
-A digital video hardware product capable of playing upstreaming content. For example, smart phones, laptop and desktop computers, game consoles, and smart televisions.
+A digital video hardware product capable of playing upstreaming content. For example, smart phones, laptops and desktop computers, game consoles, and smart televisions.
 
 ### [!UICONTROL Evaluation period] {#evaluation-period-def}
 
@@ -68,7 +68,7 @@ The Internet Protocol address assigned to a device by an Internet Service Provid
 
 ### [!UICONTROL Location] {#location-def}
 
-A unique point on earth. It is also refered to as the geolocation for a specific play request with a precision of 1000m x 1000m (one square km).
+A unique point on earth. It is also referred to as the geolocation for a specific play request with a precision of 1000m x 1000m (one square km).
 
 ### [!UICONTROL Media Company] {#media-company-def}
 
@@ -76,7 +76,7 @@ Media Company is a company that owns a group of media networks.
 
 ### [!UICONTROL Metric] {#metric}
 
-Metric is an attribute of subscriber account (for example, their MVPD, the programmers and channels of the content they stream, the number of devices they use).
+Metric is an attribute of subscriber account (for example, their MVPD, the programmers and channels of the content they stream, and the number of devices they use).
 
 ### [!UICONTROL Mobile device] {#mobile-device-def}
 
@@ -88,7 +88,7 @@ Operation is a record created to track the effect of a particular [action](#acti
 
 ### [!UICONTROL Overall sharing score] {#overall-sharing-score}
 
-A value that helps users understand the magnitude of password sharing and provide them a sense of urgency to act upon it.
+A value that helps users understand the magnitude of password sharing and provides them with a sense of urgency to act upon it.
 
 ### [!UICONTROL Play Request] {#play-requests-def}
 
@@ -100,7 +100,7 @@ Also known as Usage from Shared Accounts, it is a value calculated based on the 
 
 ### [!UICONTROL Segment] {#segmet-def}
 
-Segment is a set of accounts that meet the user defined conditions specified by the selected metrics. For example, "users in region A, B, C, D or E that have more than three devices".
+Segment is a set of accounts that meet the user defined conditions specified by the selected metrics. For example, "users in regions A, B, C, D, or E that have more than three devices".
 
 ### [!UICONTROL Sharing level] {#sharing-level-def}
 
@@ -160,7 +160,7 @@ The U.S. Postal code associated with locations within the U.S.
 
 ### [!UICONTROL AuthZ] {#authz-def}
 
-Authorization, or the number of authorization request. An authorization request is the process whereby a programmer requests permission from an MVPD through Adobe to begin streaming a user's requested content. The MVPD typically grants the request based on the content rights associated with the user's MVPD subscription (for example whether the channel associated with the content is in the user's subscription). Some authorization request responses are cached by Adobe, which allows Adobe to respond immediately without passing the request on to the MVPD.
+Authorization, or the number of authorization request. An authorization request is the process whereby a programmer requests permission from an MVPD through Adobe to begin streaming a user's requested content. The MVPD typically grants the request based on the content rights associated with the user's MVPD subscription (for example, whether the channel associated with the content is in the user's subscription). Some authorization request responses are cached by Adobe, which allows Adobe to respond immediately without passing the request on to the MVPD.
 
 ### [!UICONTROL AuthZ OK] {#authz-ok-def}
 
@@ -168,7 +168,7 @@ The number of successful authorizations.
 
 ### [!UICONTROL Channel] {#channel-def}
 
-Channel, also knows as Property, is a thematically related source of video content. Traditionally representing a distinct, numerically addressable continuous video feed from an MVPD. The channel directly maps to an accessible channel of content available to the subscribers through their Set Top Box (STB).
+Channel, also known as Property, is a thematically related source of video content. Traditionally representing a distinct, numerically addressable continuous video feed from an MVPD. The channel directly maps to an accessible channel of content available to the subscribers through their Set Top Box (STB).
 
 ### [!UICONTROL Industry Average Index] {#industry-avg-index-def}
 
@@ -180,7 +180,7 @@ A type of sharing analysis where the evaluation of an account is limited to even
 
 ### [!UICONTROL MVPD] {#mvpd-def}
 
-MVPD, also known as Distributor, is aggregator, reseller, and distributor of Media Company video content.
+MVPD, also known as Distributor, is an aggregator, reseller, and distributor of Media Company video content.
 
 ### [!UICONTROL Programmer] {#programmer-def}
 
@@ -188,7 +188,7 @@ Programmer, also known as Network, is a company that is subsidiary of a larger c
 
 ### [!UICONTROL requestorID] {#requestorid-def}
 
-The ID a Media Company Uses to identify themselves or a subsidiary to an MVPD.  Depending on Programmer implementation, this could map to a Media Company, Programmer or Channel.  The most common The ID a Media Company Uses to identify themselves or a subsidiary to an MVPD.  Depending on Programmer implementation, this could map to a Media Company, Programmer or Channel.  Traditionally, this mapped to a Channel.  With the creation of pseudo-Channels like MML (March Madness Live) and technically driven moves to address MVPD-driven data limitations, requestorID is beginning to become more associated with the Media Company.
+The ID a Media Company Uses to identify themselves or a subsidiary to an MVPD.  Depending on Programmer implementation, this could map to a Media Company, Programmer or Channel. Traditionally, this is mapped to a Channel.  With the creation of Pseudo-Channels like MML (March Madness Live) and technically driven moves to address MVPD-driven data limitations, requestorID is beginning to become more associated with the Media Company.
 
 ### [!UICONTROL resourceID] {#resource-id-def}
 

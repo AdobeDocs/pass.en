@@ -4,7 +4,7 @@ description: The Dashboard helps to pinpoint the instances of password sharing b
 ---
 # Introduction to dashboard {#introduction-dashboard}
 
-The Dashboard summarizes and aggregates data in a collection of graphs and reports designed to provide a high-level overview of the scope and impact of account sharing. It provides a single page containing the major reports and metrics from [!UICONTROL Account IQ].
+The dashboard summarizes and aggregates data in a collection of graphs and reports designed to provide a high-level overview of the scope and impact of account sharing. It provides a single page containing the major reports and metrics from [!UICONTROL Account IQ].
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ The Dashboard summarizes and aggregates data in a collection of graphs and repor
 
 +++MVPDs: Dashboard
 
-The Dashboard for MVPDs is slightly different from those of the programmers.
+The dashboard for MVPDs is slightly different from those of the programmers.
 
 ![dashboard of [!UICONTROL Account IQ] for MVPDs](assets/dashboard-mvpd.png){align="left"}
 
@@ -44,7 +44,7 @@ The Dashboard for MVPDs is slightly different from those of the programmers.
 
 +++
 
-The Dashboard for D2C services, programmers, and MVPDs includes:
+The dashboard for D2C services, programmers, and MVPDs includes:
 
 * **Segments and time interval panel**: This panel allows you to select segment and time interval to generate account sharing reports, and provide a summary of the selected segment. View [segments and time interval](/help/accountiq/segments-timeinterval.md) for more information.
 
