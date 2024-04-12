@@ -29,7 +29,7 @@ Here again, the red line marks current threshold, and the light red area contain
 
 >[!NOTE]
 >
-> The y-Axis of the bar chart logarithmic.
+> The y-Axis of the bar chart is logarithmic.
 
 ### Accounts over threshold in current segment{#threshold-selector}
 
@@ -49,11 +49,11 @@ Once you select the threshold, the panel shows the percentage (and number) of ac
 
 ## Segment-play requests out of total {#play-request-out-total}
 
-The donut chart shows the percentage (and number) of play requests made by subscribers in the segment; and lets you compare the play requests made by subscribers not in the defined segment.
+The donut chart shows the percentage (and number) of play requests made by subscribers in the segment lets you compare the play requests made by subscribers not in the defined segment.
 
 ![](assets/play-req-outof-total.png)
 
-When you move cursor over the donut chart, it also shows subscriber percentages and numbers from various probability ranges.
+When you move the cursor over the donut chart, it also shows subscriber percentages and numbers from various probability ranges.
 
 <!--![](assets/play-request-total.gif)-->
 
@@ -76,7 +76,7 @@ This graph informs you about the number of subscribers in the current segment th
 
 ## Segment-geographical span per period per account {#geo-span-period-account}
 
-This bar graph plots number of subscriber accounts that consume content from locations that fall into different geographical ranges in miles. The range is based on the maximum distance between the locations from which a subscriber has streamed during the time interval.
+This bar graph plots the number of subscriber accounts that consume content from locations that fall into different geographical ranges in miles. The range is based on the maximum distance between the locations from which a subscriber has streamed during the time interval.
 
 ![](assets/geogr-span-account.png)
 

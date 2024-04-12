@@ -9,7 +9,7 @@ Once you've analyzed your subscriber's usage patterns and identified instances o
 
 **Operations** allow you to effectively track and manage credential sharing towards a group of accounts to mitigate password sharing and enhance the experience for valued subscribers. 
 
-You can apply actions to a defined [segment](/help/accountiq/product-concepts.md#segment-def) to address password sharing within a specific [time interval](/help/accountiq/product-concepts.md#time-interval-def), and schedule the operation to execute at a future date. These actions include restrictions to minimize password sharing or ease constraints on non-sharing accounts.
+You can apply actions to a defined [segment](/help/accountiq/product-concepts.md#segment-def) to address password sharing within a specific [time interval](/help/accountiq/product-concepts.md#time-interval-def) and schedule the operation to execute at a future date. These actions include restrictions to minimize password sharing or ease constraints on non-sharing accounts.
 
 Using operations, you not only specify actions and their scope, but also gauge their outcomes.
 
@@ -18,12 +18,12 @@ By evaluating the outcomes, you can refine your strategy to optimize effects, wh
 You can perform various functions with operations:
 
 * [View operation reports](#operation-reports)
-* [Create new operation](#create-new-operation)
+* [Create a new operation](#create-new-operation)
 * [Stop operation](#stop-operation)
 
 ## View operation reports {#operation-reports}
 
-You can review the effects of an operation through operation reports. To view operation report, select **Operations** tab under **Actions** in left panel of Account IQ application. A list of operations available in the system is displayed. You can access key details about each operation in a tabular format. The details include:
+You can review the effects of an operation through operation reports. To view the operation report, select **Operations** tab under **Actions** in the left panel of Account IQ application. A list of operations available in the system is displayed. You can access key details about each operation in a tabular format. The details include:
 
 * Name of the operation 
 * Current status (such as Scheduled, Running, Ended, Error, or Stopped)
@@ -61,7 +61,7 @@ This gauge shows the number of days and the percentage of the operation complete
 
 #### Overall sharing score {#overall-sharing-score}
 
-This line graph represents the [overall sharing score](/help/accountiq/data-panels.md#overall-sharing-score) that includes the sharing level and usage from shared accounts in each week during the operation's evaluation period.
+This line graph represents the [overall sharing score](/help/accountiq/data-panels.md#overall-sharing-score), that includes the sharing level and usage from shared accounts in each week during the operation's evaluation period.
 
 ### Operation impact: accounts in segment {#impact-accounts}
    
@@ -91,7 +91,7 @@ The shared accounts metrics provide an overview of sharing level and play reques
 
 #### Sharing level {#share-level}
 
-This line graph represents [sharing level](/help/accountiq/data-panels.md#sharing-level) each week over the operation's evaluation period.
+This line graph represents the [sharing level](/help/accountiq/data-panels.md#sharing-level) each week over the operation's evaluation period.
 
 ![Sharing level line graph](assets/share-level.png){width="550" align="left"}
 
@@ -99,7 +99,7 @@ This line graph represents [sharing level](/help/accountiq/data-panels.md#sharin
 
 #### Number of play requests {#play-requests}
 
-This line graph represents [play requests](/help/accountiq/general-usage-reports.md#playreq-uniquesubs) each week in the operation's evaluation period.
+This line graph represents the [play requests](/help/accountiq/general-usage-reports.md#playreq-uniquesubs) each week in the operation's evaluation period.
 
 ![Number of play requests line graph](assets/number-play-requests.png){width="550" align="left"}
 
@@ -125,7 +125,7 @@ This line graph represents the average [number of IPs](/help/accountiq/general-u
 
 *Number of IPs and locations line graph*
 
-To close the report and go back to the main **Operations** page, select **Operations** tab under **Actions** in left navigation.
+To close the report and go back to the main **Operations** page, select **Operations** tab under **Actions** in the left panel.
 
 ## Create new operation {#create-new-operation}
 
@@ -213,7 +213,7 @@ In this section, select the **Start date** and **End date** from the date-picker
 
 >[!NOTE]
 >
->The **Start date** must be later than both the evaluation period and the current date, while the **End date** must be later than the Start date and the current date in order to schedule and execute operations in the future period.
+>The **Start date** must be later than both the evaluation period and the current date, while the **End date** must be later than the Start date and the current date to schedule and execute operations in the future period.
 
 Select **Save operation** at the top of the **Operations** page to process a new operation.
 
