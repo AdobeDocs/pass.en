@@ -138,8 +138,8 @@ The values within these columns serve as identifiers corresponding to one of the
 <table>
     <tbody>
       <tr>
-        <th style="width:20%">ID</th>
-        <th style="width:50%">Usage Patterns</th>
+        <th style="width:10%">ID</th>
+        <th style="width:30%">Usage Patterns</th>
       </tr>
       <tr>
         <td>1</td>
