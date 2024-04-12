@@ -28,7 +28,7 @@ Follow the steps to export data panel reports for a specific segment.
 
 1. Select **[!UICONTROL Export]** located in the upper-right corner of the data panel.
 
-The file will automatically download to your local machine. The system saves the data for number of accounts and usage by sharing probability level in a CSV. file.
+The file will automatically download to your local machine. The system saves the data for number of accounts and usage by sharing probability level as a CSV. 
 
 The following is an example of the exported CSV. file. The file consists of the columns that appear on the selected data panel.
 

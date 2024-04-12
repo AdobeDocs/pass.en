@@ -21,9 +21,9 @@ Follow the steps to export the account sharing information of subscriber account
 
    *Select Export top 1000 accounts option*
 
-The file will automatically download to your local machine in CSV. format.
+The file will automatically download to your local machine as a CSV. 
 
-This file contains the data for top 1000 accounts based on the sharing probabilities of the subscriber accounts in the current segment in decreasing order.
+This file contains the data for top 1000 accounts based on the sharing probabilities of the subscriber accounts in the current segment in a decreasing order.
 
 The following is an example of the exported CSV. file.
 
@@ -135,21 +135,62 @@ The overall number of channels that the account has watched over a specified per
 
 The values within these columns serve as identifiers corresponding to one of the 14 patterns we use to categorize all user accounts.
 
-
-|ID | Usage Patterns| 
-|---------|----------|
-| 1 |Regular user|
-| 2 |Traveler or commuter|
-| 3 |Large family|
-| 4 |Close family and friends|
-| 5 and 8 |Social group sharing|
-| 6 |Large group of friends|
-| 7 |Concurrent streaming|
-| 9 |Community sharing|
-| 10 and 11 |Uncertain behavior|
-| 12 |Small family |
-| 13 |Second home |
-| 14 |Abnormal Usage|
+<table>
+    <tbody>
+      <tr>
+        <td>ID</td>
+        <td>Usage Patterns</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Regular user</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Traveler or commuter</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Large family</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Close family and friends</td>
+      </tr>
+      </tr>
+         <td>5 and 8</td>
+         <td>Social group sharing</td>
+      </tr>
+      </tr>
+         <td>6</td>
+         <td>Large group of friends</td>
+      </tr>
+      </tr>
+         <td>7</td>
+         <td>Concurrent streaming</td>
+      </tr>
+      </tr>
+         <td>9</td>
+         <td>Community sharing</td>
+      </tr>
+      </tr>
+         <td>10 and 11</td>
+         <td>Uncertain behavior</td>
+      </tr>
+      </tr>
+         <td>12</td>
+         <td>Small family</td>
+      </tr>
+      </tr>
+         <td>13</td>
+         <td>Second home </td>
+      </tr>
+      </tr>
+         <td>14</td>
+         <td>Abnormal usage</td>
+      </tr>
+    </tbody>
+  </table>
 
 *Usage pattern identifiers in exported CSV mapping with usage patterns*
 

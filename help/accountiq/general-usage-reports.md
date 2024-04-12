@@ -79,7 +79,7 @@ When you update threshold values in [Accounts Segment-based on selected threshol
 
 >[!NOTE]
 >
->The default value for each of the thresholds is 4. Which means, the General Usage page shows analysis for subscribers using more than four devices, consuming content from more than four different IP addresses, *and* more than four different zip codes.
+>Each threshold is set to a default value of 4. Which means, the General Usage page shows analysis for subscribers using more than four devices, consuming content from more than four different IP addresses, *and* more than four different zip codes.
 
 ### Accounts segment-based on selected thresholds {#account-segments-basedon-segments}
 
