@@ -19,15 +19,19 @@ The D2C and TV Everywhere versions of Account IQ provides usage and subscription
 
 * When defining Operations, the option to select [segment type](/help/accountiq/operations.md#segment) is limited to **Fixed number of accounts**. The **Variable number of accounts** option will be available in a future releases.
 
-* The **Benchmarking**, **Detection Models**, **Actions**, and **Settings** sections in the left navigation are currently disabled and will be available in a future releases.
+* The **Benchmarking**, **Detection Models**, **Actions**, and **Settings** sections in the left navigation are currently disabled and will be available in a future release.
 
-* When creating Operations, you can identify only two kinds of [actions](/help/accountiq/operations.md#action) — Concurrency Monitory rules and External Actions.
+* When creating Operations, you can apply only two kinds of [actions](/help/accountiq/operations.md#action) — Concurrency Monitory rules and External Actions.
 
 * Currently, you can only [create](/help/accountiq/operations.md#create-new-operation) and [schedule](/help/accountiq/operations.md#schedule) Operations. Future releases will allow you to pause, resume, and completely manage them.
 
 * You can only analyze data for a single week or month at a time when selecting Granularity and Time Interval. 
 
 ## Isolation mode MVPDs for TV Everywhere programmers {#isolation-mode-tve}
+
+>[!IMPORTANT]
+>
+> Isolation Mode MVPDs limitation is only applicable for TV Everywhere programmers.
 
 In Isolation Mode, MVPDs (such as, Xfinity) consistently identify subscribers across devices based on their interactions with specific programmers. In the standard mode, MVPDs consistently identify subscribers across devices irrespective of the programmers involved.
 
