@@ -5,7 +5,7 @@ exl-id: 08d65716-8b6a-4300-acda-fec63e1e6815
 ---
 # Limitations {#limitations}
 
-The D2C and TV Everywhere versions of Account IQ provides usage and subscription sharing analytics to streaming providers. However, the current 1.3 version have certain limitations, which will be addressed in future releases.
+The D2C and TV Everywhere versions of Account IQ provides usage and subscription sharing analytics to streaming providers. However, the current version 1.3 has certain limitations, which will be addressed in future releases.
 
 * The [Overall sharing score](/help/accountiq/data-panels.md#overall-sharing-score) currently includes [Sharing level](/help/accountiq/data-panels.md#sharing-level) and [Usage from shared accounts](/help/accountiq/data-panels.md#usage-from-shared-accounts). Future releases will include more metrics.
 
