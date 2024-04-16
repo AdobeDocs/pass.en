@@ -85,7 +85,7 @@ When you log in as a D2C service, **Regions in segment** table provides a compar
 >
 > The [video categories](product-concepts.md#video-category-def)  shown in the previous image, such as **Regions** in segment is just an example. When you log in to Account IQ, this panel displays your company's specific video category.
 
-Select **Export** to download the data in a CSV. file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
+Select **Export** to download the data in a .csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
 
 +++
 
@@ -95,7 +95,7 @@ When you log in as a Programmer, **MVPDs in segment** table provides a comparati
 
 ![](assets/sharing-scores-by-mvpds-in-segment.png)
 
-Select **Export** to download the data in a CSV. file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
+Select **Export** to download the data in a .csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
 
 +++
 
@@ -109,7 +109,7 @@ Select the column headings to sort the data.
 
 *Sharing Score by Programmers in segment*
 
-Select **Export** to download the data in a CSV. file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
+Select **Export** to download the data in a .csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
 
 +++
 
@@ -147,5 +147,5 @@ This panel provides a tabular view of  accounts partitioned into ranges of shari
 
 *Number of accounts, trends, and usages falling in various probability ranges*
 
-Select **Export** to download the data in a CSV. file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
+Select **Export** to download the data in a .csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
 

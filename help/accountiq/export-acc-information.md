@@ -21,15 +21,15 @@ Follow the steps to export the account sharing information of subscriber account
 
    *Select Export top 1000 accounts option*
 
-The file will automatically download to your local machine as a CSV. 
+The file will automatically download to your local machine as a .csv. 
 
 This file contains the data for top 1000 accounts based on the sharing probabilities of the subscriber accounts in the current segment in a decreasing order.
 
-The following is an example of the exported CSV. file.
+The following is an example of the exported .csv file.
 
-![exported data in CSV. format](assets/exported-csv.png)
+![exported data in .csv file](assets/exported-csv.png)
 
-*Exported data in CSV. format*
+*Exported data in .csv file*
 
 ## Columns in the exported report {#columns-in-export}
 
@@ -192,7 +192,7 @@ The values within these columns serve as identifiers corresponding to one of the
     </tbody>
   </table>
 
-*Usage pattern identifiers in exported CSV mapping with usage patterns*
+*Usage pattern identifiers in exported .csv mapping with usage patterns*
 
 **Sharing Probability**
 
