@@ -1,8 +1,8 @@
 ---
 title: Isolation mode MVPDs
 description: Learn about isolation mode MVPDs for TV Everywhere programmers
+exl-id: 7ffe4ce3-e9cb-4382-a421-bb57d1927b53
 ---
-
 # Isolation mode MVPDs for TV Everywhere programmers {#isolation-mode-tve}
 
 >[!IMPORTANT]

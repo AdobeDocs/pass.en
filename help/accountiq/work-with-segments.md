@@ -1,6 +1,7 @@
 ---
 title: Work with segments
-description: Understanding and using segments. Learn how to create and manage a segment. 
+description: Understanding and using segments. Learn how to create and manage a segment.
+exl-id: 01431437-55f5-464d-8ee4-7a79ec553e4f
 ---
 # Work with segments {#work-with-segments}
 
@@ -272,5 +273,3 @@ A copy of the selected segment is generated and placed at the end of the segment
    >[!NOTE]
    >
    >The segment is permanently deleted from the system, and you cannot undo this action.
-
-  

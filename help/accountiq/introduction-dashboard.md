@@ -1,6 +1,7 @@
 ---
 title: Account IQ dashboard
 description: The Dashboard helps to pinpoint the instances of password sharing by analyzing a wide array of subscriber data.
+exl-id: 23d31cc1-50c1-4810-a730-b09c7db01f74
 ---
 # Introduction to dashboard {#introduction-dashboard}
 
@@ -51,4 +52,3 @@ The dashboard for D2C services, programmers, and MVPDs includes:
 * **Page navigation**: These tabs enable you to navigate and explore various sections and pages of Account IQ.
 
 * **Data panels**: The panels display account sharing reports through tables and graphs, providing the option to export them as reports directly to your local device. View [data panels](/help/accountiq/data-panels.md) and [export data panel reports](/help/accountiq/export-reports.md) for more information.
-

@@ -1,6 +1,7 @@
 ---
 title: Data panels on dashboard
 description: The dashboard helps to pinpoint the instances of password sharing by analyzing a wide array of subscriber data.
+exl-id: 12abba05-7422-4bcc-8b11-76aca4911c0b
 ---
 # Data panels on dashboard {#data-panels}
 
@@ -148,4 +149,3 @@ This panel provides a tabular view of  accounts partitioned into ranges of shari
 *Number of accounts, trends, and usages falling in various probability ranges*
 
 Select **Export** to download the data in a .csv file. Learn [how to export data panel reports](/help/accountiq/export-reports.md).
-

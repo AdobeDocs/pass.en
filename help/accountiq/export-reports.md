@@ -1,6 +1,7 @@
 ---
 title: Export data panel reports
 description: Learn how to export data panel reports on dashboard.
+exl-id: ee76bb87-6cbf-4150-bcdd-31ffae2c0571
 ---
 # Export data panel reports {#export-reports}
 

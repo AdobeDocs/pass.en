@@ -1,6 +1,7 @@
 ---
 title: Versions of Account IQ
 description: Learn about versions used for different services in Account IQ.
+exl-id: b8b014d5-a8a8-4327-b6aa-15f7e6a63274
 ---
 # Versions of Account IQ {#aiq-versions}
 
@@ -33,7 +34,3 @@ MVPDs deliver multiple television channels to subscribers through various distri
 >[!NOTE]
 >
 > Depending on which version of Account IQ you log into, certain labels will change and some views may not be available.
-
-
-
-
