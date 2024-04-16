@@ -150,6 +150,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
   + [Monitoring Adobe Pass Adobe PayTV Pass](monitoring-adobe-pay-tv-pass.md)
   + [Minimum System Requirements](minimum-system-requirements.md)
 + Release notes {#release-notes}
+  + [Adobe Pass Authentication 2.70 release notes](auth-rn-270.md)
   + [Adobe Pass Authentication 2.69 release notes](auth-rn-269.md)
   + [Adobe Pass Authentication 2.68 release notes](auth-rn-268.md)
   + [Adobe Pass Authentication 2.67 release notes](auth-rn-267.md)
