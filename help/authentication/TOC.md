@@ -21,6 +21,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + [The programmer entitlement flow](entitlement-flow.md)
     + [Programmer use cases](programmer-use-cases.md)
     + [Passing client information (device, connection, and application)](passing-client-information-device-connection-and-application.md)
+    + [Throttling mechanism](throttling-mechanism.md)
     + REST API {#restapi}
         + [REST API Overview](rest-api-overview.md)
         + [REST API Cookbook (Server-to-Server)](rest-api-cookbook-servertoserver.md)
@@ -62,6 +63,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             + [iOS/tvOS Application Registration](iostvos-application-registration.md)
             + Migration guidelines {#migration-guidelines}  
               + [iOS/tvOS v3.x Migration Guide](iostvos-v3x-migration-guide.md)
+            + [iOS/tvOS Storage Integrity Checks](iostvos-sdk-storage-integrity-checks.md)
           + iOS/tvOS API {#ios-tvos-api}
             + [Preauthorize](preauthorize.md)    
       + Android SDK {#androidsdk}
@@ -148,6 +150,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
   + [Monitoring Adobe Pass Adobe PayTV Pass](monitoring-adobe-pay-tv-pass.md)
   + [Minimum System Requirements](minimum-system-requirements.md)
 + Release notes {#release-notes}
+  + [Adobe Pass Authentication 2.69 release notes](auth-rn-269.md)
   + [Adobe Pass Authentication 2.68 release notes](auth-rn-268.md)
   + [Adobe Pass Authentication 2.67 release notes](auth-rn-267.md)
   + [Adobe Pass Authentication 2.66 release notes](auth-rn-266.md)
@@ -157,7 +160,19 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
   + [Adobe Pass Authentication 2.64 release notes](auth-rn-264.md)
   + [Adobe Pass Authentication 2.63 release notes](auth-rn-263.md)
   + [Adobe Pass Authentication 2.62.1 release notes](auth-rn-2621.md)
+  + JavaScript SDK Release Notes  {#release-notes-javascript}
+    + [Adobe Pass Authentication JavaScript 4.7.0 Release Notes](authn-rn-javascript-470.md)
+    + [Adobe Pass Authentication JavaScript 4.6.0 Release Notes](authn-rn-javascript-460.md)
+    + [Adobe Pass Authentication JavaScript 4.4.0 Release Notes](authn-rn-javascript-440.md)
+    + [Adobe Pass Authentication JavaScript 4.2.0 Release Notes](authn-rn-javascript-420.md)
+    + [Adobe Pass Authentication JavaScript 4.1.1 Release Notes](authn-rn-javascript-411.md)
+    + [Adobe Pass Authentication JavaScript 4.1.0 Release Notes](authn-rn-javascript-410.md)
+    + [Adobe Pass Authentication JavaScript 4.0.0 Release Notes](authn-rn-javascript-400.md)
+    + [Adobe Pass Authentication JavaScript 3.5.0 Release Notes](authn-rn-javascript-350.md)
   + iOS/tvOS SDK Release Notes  {#release-notes-ios}
+    + [Adobe Pass Authentication iOS / tvOS 3.9.2 Release Notes](authn-rn-ios-tvos-392.md)
+    + [Adobe Pass Authentication iOS / tvOS 3.8.4 Release Notes](authn-rn-ios-tvos-384.md)
+    + [Adobe Pass Authentication iOS / tvOS 3.8.3 Release Notes](authn-rn-ios-tvos-383.md)
     + [Adobe Pass Authentication iOS / tvOS 3.8.2 Release Notes](authn-rn-ios-tvos-382.md)
     + [Adobe Pass Authentication iOS / tvOS 3.8.1 Release Notes](authn-rn-ios-tvos-381.md)
     + [Adobe Pass Authentication iOS / tvOS 3.7.0 Release Notes](authn-rn-ios-tvos-370.md)
@@ -167,8 +182,9 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
   + Adobe Pass Authentication SDKs {#primetime-authentication-sdks}
     + [Certificates Q&A](certificates-qa.md)
     + JavaScript SDK {#javascript}
-      + [JS SDK limitations for Safari browser](js-sdk-limitations-for-safari-browser.md)
-      + [Cookies Updates - SameSite and Secure flags](cookies-updates--samesite-and-secure-flags.md)
+      + [Tracking Prevention Assessment - Apple Safari](tracking-prevention-assessment-apple-safari.md)
+      + [Tracking Prevention Assessment - Google Chrome](tracking-prevention-assessment-google-chrome.md)
+      + [Cookies Updates - SameSite and Secure flags](cookies-updates-samesite-and-secure-flags.md)
     + Android SDK {#android}
       + [Access Enabler Android SDK Single Sign-On (SSO) on Android 10 apps](access-enabler-android-sdk-single-signon-sso-on-android-10-devices.md)
       + [Adobe Pass Authentication and the Android 6 "Marshmallow" New Permissions Model](adobe-primetime-authentication-and-the-android-6-marshmallow-new-permissions-model.md)
@@ -185,7 +201,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + [Setting up Your Environment and Testing in Pre-Qual](setting-up-your-environment-and-testing-in-prequal.md)
     + [How to test Authentication and Authorization flows using Adobe API test site](test-authn-authz-flows-using-adobes-api-test-site.md)
   + Clientless API {#clientless-api}
-    + [Clientless API Implementation - Error codes / Messages With Probable Reason / Cause](clientless-api-implementation-error-codes--messages-with-probable-reason--cause.md)
+    + [Clientless API Implementation - Error codes / Messages With Probable Reason / Cause](clientless-api-implementation-error-codes-messages-with-probable-reason-cause.md)
     + [Clientless API Flow in the Absence of Device ID](clientless-api-flow-in-the-absence-of-device-id.md)
     + [Clientless: Avoid Using '&'reg_code in /authenticate Request](clientless-avoid-using-reg-code-in-authenticate-request.md)
     + [Enabling Adobe Pass Entitlement Services for a Programer on Xbox 360 and XboxOne Clientless](enabling-primetime-entitlement-services-for-a-programmer-on-xbox-360-and-xboxone-clientless-solution.md)
@@ -198,10 +214,4 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
   + Concepts {#concepts}
     + [Understanding User IDs](understanding-user-ids.md) 
 + [TVE Dashboard user guide](tve-dashboard-user-guide.md)
-+ New TVE Dashboard user guide {#user-guide}
-  + [TVE Dashboard overview](/help/authentication/tve-dashboard-overview.md)
-  + [Work with Environments](/help/authentication/work-with-environments.md)
-  + [Dashboard](/help/authentication/dashboard.md)
-  + [Channels](/help/authentication/channels.md)
-  + [Programmers](/help/authentication/programmers.md)
 + [Glossary](glossary.md)

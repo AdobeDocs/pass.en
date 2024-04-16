@@ -31,7 +31,7 @@ In order to manually manage SVC the implementor must perform the following steps
 
 1.  call **setOptions(["handleSVC":true])** after AccessEnabler initialization (make sure this call is performed before authentication begins). This will enable "manual" SVC management, the SDK will not automatically present the SVC, but instead, when needed will     call **navigate(toUrl:*{url}* useSVC:true)**.  
 
-1.  implement the optional callback **navigateToUrl:useSVC:** inside the implementation you must create a svc instance using the SFSafariViewController instance using the provided url, and present it on the screen:
+1.  implement the optional callback **`navigateToUrl:useSVC:`** inside the implementation you must create a svc instance using the SFSafariViewController instance using the provided url, and present it on the screen:
 
     ```obj-c    
     func navigate(toUrl url: String!, useSVC: Bool) {

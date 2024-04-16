@@ -14,6 +14,9 @@ exl-id: 36ad4a64-dde8-4a5f-b0fe-64b6c0ddcbee
 
 The purpose of this cookbook document is to detail best practices for implementing Adobe Pass Authentication using the Server-to-Server architectures.  It provides basic requirements, step-by-step flow implementation and general considerations for production environments and operation.
 
+### Throttling mechanism
+
+The Adobe Pass Authentication REST API is governed by a [Throttling mechanism](/help/authentication/throttling-mechanism.md).
  
 
 ## Components {#components}

@@ -15,10 +15,12 @@ user-guide-description: Learn to define and enforce limits on concurrent usage a
 + [Concurrency Monitoring API overview](cm-api-overview.md)
 + [Standard metadata attributes](standard-metadata-attributes.md)
 + [Data retention policy](data-retention-policy.md)
++ [Throttling mechanism](throttling-mechanism.md)
 + [Escalation procedures](cm-escalation-procedures.md)
 + Concurrency Monitoring Usage {#cmu}
     + [Concurrency Monitoring Usage reports](cm-usage-reports.md)
     + [Concurrency Monitoring Usage API](cmu-api.md)
+    + [Concurrency Monitoring Usage API Access](cmu-api-access.md)
 + Version 1 API{#v1-api}
     + [Policy information point](policy-info-pt-versionone.md)
     + [Custom metadata](custom-metadata.md)
