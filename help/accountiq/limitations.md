@@ -1,36 +1,29 @@
 ---
-title: Limitations and known issues
-description: Known issues in the product.
+title: Limitations
+description: Know about limitations and isolation mode MVPD for programmers in Account IQ.
 exl-id: 08d65716-8b6a-4300-acda-fec63e1e6815
 ---
-# Known issues and limitations {#known-issues}
+# Limitations {#limitations}
 
-Adobe strives to offer robust functionality and seamless user experiences through its offerings. The current version (version 1.0) of Account IQ provides usage and subscription sharing analytics to streaming providers with high degree of confidence. However, following limitations will be addressed in upcoming release versions.
+The D2C and TV Everywhere versions of Account IQ provides usage and subscription sharing analytics to streaming providers. However, the current version 1.3 has certain limitations, which will be addressed in future releases.
 
-* When defining cohorts in the dashboard or reports pages, there currently is no option to add metrics such as **number of devices** to refine the segment. This capability will be available in a future version.
+* The [Overall sharing score](/help/accountiq/data-panels.md#overall-sharing-score) currently includes [Sharing level](/help/accountiq/data-panels.md#sharing-level) and [Usage from shared accounts](/help/accountiq/data-panels.md#usage-from-shared-accounts). Future releases will include more metrics.
 
-* When estimating sharing scores for individual accounts, Account IQ takes a conservative approach that enables companies to act on sharing with great degree of confidence. However, this approach tends to underestimate the total amount of sharing when aggregated across many accounts.
+* When defining segments on the dashboard or usage patterns, the [Video categories in segment](/help/accountiq/data-panels.md#video-categories-segment), [Sharing score by channels and MVPDs](/help/accountiq/data-panels.md#sharin-score-by-channels-and-mvpds), and [Usage pattern distribution for video categories](/help/accountiq/usage-patterns.md#usage-pattern-dis-video-categories) reports can only display data for upto 20 [video categories](product-concepts.md#video-category-def). Segments containing more than 20 video categories will not show data in these reports.
 
-* The [Overall Sharing Score](/help/accountiq/dashboard.md#overall-sharing-score) currently only factors in [Sharing Level](/help/accountiq/dashboard.md#sharing-level) and [Usage from Shared Accounts](/help/accountiq/dashboard.md#usage-from-shared-accounts). Future versions will factor in additional metrics.
+* Currently, the option to export account statistics is restricted to exporting 1000 accounts.
 
-* When defining cohorts in the dashboard or reports pages, the selectors for MVPDs and channels lack the search mechanism, as of now.
+* When defining Operations, the option to select [segment type](/help/accountiq/operations.md#segment) is limited to **Fixed number of accounts**. The **Variable number of accounts** option will be available in a future releases.
 
-* When defining cohorts in the dashboard or reports pages, there is a limitation to select only up to 10 MVPDs and Programmers (or individual channels).
+* The **Benchmarking**, **Detection Models**, **Actions**, and **Settings** sections in the left navigation are currently disabled and will be available in a future release.
 
-* The option to export account statistics is limited to export 1000 accounts, as of now.
+* When creating Operations, you can apply only two kinds of [actions](/help/accountiq/operations.md#action) — Concurrency Monitory rules and External Actions.
 
-* The option to select [Segment Type](#segment-type) when defining Operations is limited to **Fixed number of accounts**. The **Variable number of accounts** option will be available in a forthcoming version.
+* Currently, you can only [create](/help/accountiq/operations.md#create-new-operation) and [schedule](/help/accountiq/operations.md#schedule) Operations. Future releases will allow you to pause, resume, and completely manage them.
 
-* The Benchmarking, Detection Models, Segments, Snapshots, and Rules sections in the left navigation are currently disabled and will be available in a forthcoming version.
+* You can only analyze data for a single week or month at a time when selecting Granularity and Time Interval. 
 
-* When creating [Operations](/help/accountiq/operation-affecting-user-segment.md), you can identify only two kinds of [Actions](/help/accountiq/operation-affecting-user-segment.md) as of now — Concurrency Monitory rules and External Actions.
+* You can't add Isolation Mode MVPDs to the segment definition with any other MVPDs. Some MVPDs don't uniquely identify subscribers across multiple programmer channels. Therefore, those MVPDs are treated separately for TV Everywhere programmers.
 
-* Currently, Operations can only be created and [scheduled](/help/accountiq/operation-affecting-user-segment.md#action). Future versions will allow you to pause, resume, and fully manage them.
 
-* Because of the more limited set of data used, Isolation mode does not truly reflect the amount of sharing. Therefore, MVPD in Isolation mode cannot be compared to any other MVPD. <!--do we need to separate out this limitation, which is from a different persona i.e. only for Programmer persona?-->
 
-* When you are defining a new [segment](/help/accountiq/segments-timeframe.md) for an operation you can add metrics. But if you select a saved segment then you cannot add more metrics to refine the segment.
-
-* Granularity and timeframe selector is limited to one week or one month, which means data can be evaluated on a single week or a single month only.
-
-* Predefined intervals are currently disabled in granularity and timeframe selector, and will be available in a future version.

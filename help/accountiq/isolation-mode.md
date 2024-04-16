@@ -1,45 +1,60 @@
 ---
-title: View reports in isolation mode
-description: View reports in isolation mode for Xfinity.
-exl-id: e7cf24c5-9bfa-48f6-b5c8-20443a976891
+title: Isolation mode MVPDs
+description: Learn about isolation mode MVPDs for TV Everywhere programmers
 ---
-# View sharing reports in isolation mode {#report-isolation-mode}
 
-In Isolation Mode, MVPDs (such as, Xfinity) consistently identify subscribers across devices, but identify their subscribers differently, based on the programmers they interact with. Whereas in the standard mode, MVPDs consistently identify subscribers across devices, irrespective of the programmers.
+# Isolation mode MVPDs for TV Everywhere programmers {#isolation-mode-tve}
 
-For example, in the following image if a Subscriber B of an Isolation Mode MVPD (such as, Xfinity) accesses the content offered by two different programmers using the same device, then the MVPD will associate different identifiers with the two different access attempts. So, to those programmers (L and M in the figure) and to Account IQ, it appears that there are two different subscribers accessing the content. However, for Standard MVPD, if Subscriber B accesses content offered by two different programmers, then the MVPD will associate a single access identifier for both access attempts. MVPDs (such as, Xfinity) in Isolation Mode do not consistently identify a subscriber even if the subscriber is using same device across different programmers.
+>[!IMPORTANT]
+>
+> Isolation Mode MVPDs limitation is only applicable for TV Everywhere programmers.
+
+In Isolation Mode, MVPDs (such as, Xfinity) consistently identify subscribers across devices based on their interactions with specific programmers. In the standard mode, MVPDs consistently identify subscribers across devices irrespective of the programmers involved.
+
+Here is an example:
 
 ![](assets/isolation-diff-new.png)
 
-*Figure: Isolation Mode MVPD identifies four different subscribers instead of two*
+*Isolation Mode MVPDs identifies four different subscribers instead of two*
 
-To manage the distortion of data (due to identifying the same subscriber as different based on accessing different programmers), Isolation Mode limits the activity reported about a programmer to the activity only on that programmer's applications. For example, for Isolation Mode in the above image, Programmer L sees data based only on the activity of Identities W and Y, ignoring Identities X and Z.
+* If a Subscriber B of an Isolation Mode MVPD (such as, Xfinity) accesses the content offered by two different programmers using the same device, then the MVPD will associate different identifiers with the two different access attempts. It appears that there are two different subscribers accessing the content for the programmers (L and M in the figure).
+
+* For Standard MVPDs, if Subscriber B accesses content offered by two different programmers, then the MVPD will associate a single access identifier for both access attempts. 
+
+* MVPDs (such as, Xfinity) in Isolation Mode don't consistently identify a subscriber, even if the subscriber uses the same device across different programmers.
+
+To prevent data distortion caused by counting a single subscriber as multiple subscribers due to accessing different programmers, Isolation Mode restricts reported activity about a programmer to only their applications.
+
+For example, Programmer L can view data based only on the activity of Identities W and Y, ignoring Identities X and Z in the previous image.
 
 >[!IMPORTANT]
 >
 > The downside is that Programmer L is deprived of sharing information gathered about Subscribers A and B due to activity with any Programmer other than L.
 
-In Isolation Mode all the computations made for obtaining the Sharing Scores and all the associated metrics are made using only the activity of the devices streaming from applications belonging to the selected Programmer and channels.
-The sharing scores and probabilities are calculated only using the stream that starts from the currently selected channels.
+In Isolation Mode, sharing scores and associated metrics are calculated solely from the activity of devices streaming from the selected programmer's and channel's applications. The sharing scores and probabilities are calculated from stream starts on the currently selected channels.
 
-To view metrics in isolation mode:
+The system automatically operates in Isolation Mode when the selected segment contains an Isolation Mode MVPD which identifies single subscribers as multiple subscribers when streaming from different programmers. All graphs and charts for these segments will reflect the results of this altered behavior.
 
-1. Select **[!UICONTROL isolation mode]** from the **[!UICONTROL MVPDs in segment]** drop-down option, and select **[!UICONTROL Apply Selection]**.
+>[!IMPORTANT]
+>
+> The behavior in Isolation Mode is incompatible with the standard mode, Isolation Mode MVPD cannot be mixed with other MVPDs and vice versa.
 
-   ![](assets/xfinity-in-segment.gif)
+To create a segment that is analyzed in Isolation Mode, drag Isolation Mode MVPD, such as **Xfinity**, to the MVPDs section of the segment definition. 
 
-   *Figure: MVPD selection in Isolation mode*
+>[!NOTE]
+>
+> Since Isolation Mode MVPDs cannot be mixed with other MVPDs, the MVPD section of the segment definition will not allow another MVPD to be dragged there.
 
-1. Select the desired channels from the **[!UICONTROL Channels in segment]** drop-down option, and select **[!UICONTROL Apply Selection]**. 
+![](assets/xfinity-in-segment.png)
 
-   Also, select a [time frame](/help/accountiq/product-concepts.md#granularity-def).
+*Xfinity selection in Isolation Mode*
 
-   >[!IMPORTANT]
-   >
-   >Because account sharing is more relevant when measured for streaming across all Programmers' applications, you will see lower Sharing Scores and some variation in the metrics when in Isolation Mode.
+>[!IMPORTANT]
+>
+> Account sharing is more relevant when measured for streaming across all Programmer's applications. Expect lower **Sharing Scores** and some variation in the metrics when in Isolation Mode.
 
-   ![](assets/aggregate-sharing-isolation.png)
+![](assets/aggregate-sharing-isolation.png)
 
-   *Figure: Sharing probability gauges in Isolation mode*
+*Sharing probability gauges in Isolation Mode*
 
-   Note that the above gauges show that only 6% of all the accounts are being shared; and only 8% of the content is being consumed by those 8%. So the channels can compare their scores in Isolation Mode with that across the other MVPDs. Therefore, the information obtained by using Isolation Mode should be interpreted differently from the other data.
+The above gauges shows only 9% of all accounts are shared, and among those, only 11% of the content is consumed. Because of the naturally lower scores, the results in Isolation Mode should be interpreted differently from the results in standard mode.
