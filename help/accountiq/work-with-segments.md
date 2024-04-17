@@ -35,7 +35,7 @@ The process of creating a new segment is similar for D2C services and TV Everywh
 
 To build a segment and analyze subscriber's sharing behavior, select **[!UICONTROL Create new segment]** at the upper-right.
 
-   ![Select Create new segment](assets/d2c-create-new-segment.png)
+   ![Select Create new segment](assets/create-new-segment-d2c.png)
 
    *Select Create new segment*
 
@@ -215,7 +215,7 @@ You can select a segment from the segment list and then perform the following ac
 
 *Select a segment to edit, duplicate, or delete*
 
-**A.** [Video categories](product-concepts.md#video-category-def) **B.** [Default segment](#work-with-segments)
+**A.** [Default segment](#work-with-segments) **B.** [Video categories](product-concepts.md#video-category-def)
 
 >[!NOTE]
 >
