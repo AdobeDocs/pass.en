@@ -8,6 +8,17 @@ exl-id: f75cbc4d-4132-4ce8-a81c-1561a69d1d3a
 >[!NOTE]
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+>In order to use the Proxy MVPD web service, you will need to: 
+>- ask the support team for a software  statement for your registered application
+>- obtain an access token based on [Dynamic Client Registration](dynamic-client-registration.md)
+> 
+
+>[!NOTE]
+>
+>In order to use the Proxy MVPD web service, you will need to: 
+>- ask the support team for a software  statement for your registered application
+>- obtain an access token based on [Dynamic Client Registration](dynamic-client-registration.md)
+> 
 
 ## Overview {#overview-proxy-mvpd-webserv}
 
@@ -15,13 +26,13 @@ A "Proxy MVPD" is an MVPD that, in addition to managing its own integration with
 
 To implement the ProxyMVPD feature, Adobe Pass Authentication provides RESTful web services, with which ProxyMVPDs can submit and retrieve lists of ProxiedMVPDs. The protocol used for this public API is REST HTTP, with the following assumptions:
 
-* The Proxy MVPD uses the HTTP GET method to retrieve the list of the current integrated MVPDs.
-* The Proxy MVPD uses the HTTP POST method to update the list of the supported MVPDs.
+– The Proxy MVPD uses the HTTP GET method to retrieve the list of the current integrated MVPDs.
+– The Proxy MVPD uses the HTTP POST method to update the list of the supported MVPDs.
 
 ## Proxy MVPD services {#proxy-mvpd-services}
 
-* [Retrieve proxied MVPDs](#retriev-proxied-mvpds)
-* [Submit proxied MVPDs](#submit-proxied-mvpds)
+– [Retrieve proxied MVPDs](#retriev-proxied-mvpds)
+– [Submit proxied MVPDs](#submit-proxied-mvpds)
 
 ### Retrieve proxied MVPDs {#retriev-proxied-mvpds}
 
@@ -29,11 +40,11 @@ Retrieves the current list of Proxied MVPDs for the ProxyMVPD identified by the 
 
 | Endpoint | Called By | Request Headers | HTTP Method | HTTP  Response |
 |---|---|---|---|---|
-| &lt;FQDN&gt;/control/v1/proxiedMvpds | ProxyMVPD | apikey (Mandatory) | GET         | <ul><li> 200 (ok) - The request was successfully processed, and the response contains a list of ProxiedMVPDs in XML format</li><li>401 (unauthorized) - User authentication required or authorization not granted for credentials provided.  Indicates one of the following:<ul><li>The apikey token is not present in the request header</li><li>The request originates from an IP address that is not present in the allowed list</li><li>The token is not valid</li></ul></li><li>403 (forbidden) - Indicates either that the operation is not supported for the provided parameters, or the proxy MVPD is not set as a proxy or is missing</li><li>405 (method not allowed) - An HTTP method other than GET or POST was used. Either the HTTP method is unsupported generally, or is unsupported for this specific endpoint.</li><li>500  (internal server error) – An error has been raised on the server side during the request process.</li></ul> |
+| &lt;FQDN&gt;/control/v3/proxiedMvpds | ProxyMVPD | apikey (Mandatory) | GET         | <ul><li> 200 (ok) - The request was successfully processed, and the response contains a list of ProxiedMVPDs in XML format</li><li>401 (unauthorized) - Indicates one of the following:<ul><li>The client MUST request a new access_token</li><li>The request originates from an IP address that is not present in the allowed list</li><li>The token is not valid</li></ul></li><li>403 (forbidden) - Indicates either that the operation is not supported for the provided parameters, or the proxy MVPD is not set as a proxy or is missing</li><li>405 (method not allowed) - An HTTP method other than GET or POST was used. Either the HTTP method is unsupported generally, or is unsupported for this specific endpoint.</li><li>500  (internal server error) – An error has been raised on the server side during the request process.</li></ul> |
 
 Curl example:
 
-`curl -X GET -H "apikey: ???provided-by-adobe???" "https://mgmt-prequal.auth-staging.adobe.com/control/v1/proxiedMvpds"`
+`curl -X GET -H "Authorization: Bearer <access_token_here>" "https://mgmt-prequal.auth-staging.adobe.com/control/v3/proxiedMvpds"`
  
 
 XML Response example:
@@ -76,11 +87,11 @@ Pushes an array of MVPDs integrated with the Proxy MVPD identified by the apikey
 
 |            Endpoint            | Called By |                Request Headers               | HTTP Method |                                                                                                                                                                                                                                                                                                                                                                                                                                           HTTP Response                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |:------------------------------:|:---------:|:--------------------------------------------:|:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| &lt;FQDN&gt;/control/v1/proxiedMvpds | ProxyMVPD | apikey (Mandatory) proxied-mvpds (Mandatory) | POST        | <ul><li>201 (created) - The push was successfully processed</li><li>400 (bad request) - The server doesn't know how to process the request:<ul><li>Incoming XML does not adhere to schema published in this specification</li><li>The proxied mvpds do not have unique ids</li><li>The pushed requestorIds do not exist Other Servlet container reason for 400 response code</li></ul><li>401 (unauthorized) - The apikey is not valid or the caller IP is not on the allowed list</li><li>403 (forbidden) - Indicates either that the operation is not supported for the provided parameters, or the proxy MVPD is not set as a proxy or is missing</li><li>405 (method not allowed) - An HTTP method other than GET or POST was used. Either the HTTP method is unsupported generally, or is unsupported for this specific endpoint.</li><li>500 (internal server error) – An error has been raised on the server side during the request process.</li></ul> |
+| &lt;FQDN&gt;/control/v3/proxiedMvpds | ProxyMVPD | apikey (Mandatory) proxied-mvpds (Mandatory) | POST        | <ul><li>201 (created) - The push was successfully processed</li><li>400 (bad request) - The server doesn't know how to process the request:<ul><li>Incoming XML does not adhere to schema published in this specification</li><li>The proxied mvpds do not have unique ids</li><li>The pushed requestorIds do not exist Other Servlet container reason for 400 response code</li></ul><li>401 (unauthorized) - Indicates one of the following:<ul><li>The client MUST request a new access_token</li><li>The request originates from an IP address that is not present in the allowed list</li><li>The token is not valid</li></ul></li><li>403 (forbidden) - Indicates either that the operation is not supported for the provided parameters, or the proxy MVPD is not set as a proxy or is missing</li><li>405 (method not allowed) - An HTTP method other than GET or POST was used. Either the HTTP method is unsupported generally, or is unsupported for this specific endpoint.</li><li>500 (internal server error) – An error has been raised on the server side during the request process.</li></ul> |
 
 Curl example:
 
-`curl -X POST -H "apikey: <API_KEY>" "https://mgmt-prequal.auth.adobe.com/control/v1/proxiedMvpds" -d "proxied-mvpds=%3CproxiedMvpds%3E%3CproxiedMvpd%3E%3CdisplayName%3EFirst%20MVPD%20Name%3C%2FdisplayName%3E%3Cid%3EfirstMVPDId%3C%2Fid%3E%3ClogoURL%3E%3C%2FlogoURL%3E%3C%2FproxiedMvpd%3E%3CproxiedMvpd%3E%3Cid%20ProviderID%3D%22ProviderID_Value_Sent_On_IdPEntry%22%3EmvpdPickerId%3C%2Fid%3E%3CdisplayName%3EMVPD%20Name%20Two%3C%2FdisplayName%3E%3ClogoURL%3E%3C%2FlogoURL%3E%3CrequestorIds%3E%3CrequestorId%3ETHE_REQUESTOR_ID%3C%2FrequestorId%3E%3C%2FrequestorIds%3E%3C%2FproxiedMvpd%3E%3C%2FproxiedMvpds%3E"`
+`curl -X POST -H "Authorization: Bearer <access_token_here>" "https://mgmt-prequal.auth.adobe.com/control/v3/proxiedMvpds" -d "proxied-mvpds=%3CproxiedMvpds%3E%3CproxiedMvpd%3E%3CdisplayName%3EFirst%20MVPD%20Name%3C%2FdisplayName%3E%3Cid%3EfirstMVPDId%3C%2Fid%3E%3ClogoURL%3E%3C%2FlogoURL%3E%3C%2FproxiedMvpd%3E%3CproxiedMvpd%3E%3Cid%20ProviderID%3D%22ProviderID_Value_Sent_On_IdPEntry%22%3EmvpdPickerId%3C%2Fid%3E%3CdisplayName%3EMVPD%20Name%20Two%3C%2FdisplayName%3E%3ClogoURL%3E%3C%2FlogoURL%3E%3CrequestorIds%3E%3CrequestorId%3ETHE_REQUESTOR_ID%3C%2FrequestorId%3E%3C%2FrequestorIds%3E%3C%2FproxiedMvpd%3E%3C%2FproxiedMvpds%3E"`
 
  
 
@@ -200,37 +211,37 @@ Adobe has defined the following accepted format for posting/retrieving proxied M
 
 **Notes on elements:**
 
-*   `id` (mandatory) - The Proxied MVPD ID must be a string relevant to the name of the MVPD, using any of the following characters (as it will be exposed to Programmers for tracking purposes):
-    *   Any alphanumeric characters, underscore ("_"), and hyphen ("-"). 
-    *   The idID must conform to the following regular expression:
+–   `id` (mandatory) - The Proxied MVPD ID must be a string relevant to the name of the MVPD, using any of the following characters (as it will be exposed to Programmers for tracking purposes):
+    –   Any alphanumeric characters, underscore ("_"), and hyphen ("-"). 
+    –   The idID must conform to the following regular expression:
         `(a-zA-Z0-9((-)|_)*)`
 
         Thus it must have at least one character, start with a letter, and continue with any letter, digit, dash, or underscore.
 
-*   `iframeSize` (optional) - The iframeSize element is optional and defines the size of the iFrame if the MVPD authentication page is supposed to be in an iFrame. Otherwise, if the iframeSize element is not present, the authentication will happen in a full browser redirect page.
-*   `requestorIds` (optional) - The requestorIds values will be provided by Adobe. A requirement is that a proxied MVPD should be integrated with at least one requestorId. If the "requestorIds" tag is not present on the proxied MVPD element, then that proxied MVPD will be integrated with all available requestors integrated under the Proxy MVPD.
-*   `ProviderID` (optional) - When the ProviderID attribute is present on the id element, the value of ProviderID will be sent on the SAML authentication request to the Proxy MVPD as the Proxied MVPD / SubMVPD ID (instead of the id value). In this case, the value of id will be used only in the MVPD picker presented on the Programmer page, and internally by Adobe Pass Authentication. The length of the ProviderID attribute must be between 1 and 128 characters.
+–   `iframeSize` (optional) - The iframeSize element is optional and defines the size of the iFrame if the MVPD authentication page is supposed to be in an iFrame. Otherwise, if the iframeSize element is not present, the authentication will happen in a full browser redirect page.
+–   `requestorIds` (optional) - The requestorIds values will be provided by Adobe. A requirement is that a proxied MVPD should be integrated with at least one requestorId. If the "requestorIds" tag is not present on the proxied MVPD element, then that proxied MVPD will be integrated with all available requestors integrated under the Proxy MVPD.
+–   `ProviderID` (optional) - When the ProviderID attribute is present on the id element, the value of ProviderID will be sent on the SAML authentication request to the Proxy MVPD as the Proxied MVPD / SubMVPD ID (instead of the id value). In this case, the value of id will be used only in the MVPD picker presented on the Programmer page, and internally by Adobe Pass Authentication. The length of the ProviderID attribute must be between 1 and 128 characters.
  
 ## Security {#security}
 
 For a request to be considered valid, it must respect the following rules:
 
-* The request header must contain the security apikey parameter. (This is an application key that will uniquely identify the Proxy MVPD's calls.)
-* The request must come from a specific IP address that is has been allowed.
-* The request must be sent over the SSL protocol. 
+– The request header must contain the security Oauth2 access token from [Dynamic Client Registration](dynamic-client-registration.md).
+– The request must come from a specific IP address that is has been allowed.
+– The request must be sent over the SSL protocol. 
 
-Adobe will provide the (static) value of the token. This value is used in the authentication and authorization process.  Any parameters present in the request header that are not listed above will be ignored. 
+Any parameters present in the request header that are not listed above will be ignored. 
 
 Curl example:
 
-`curl -X GET -H "apikey: ???provided-by-adobe???" "https://mgmt-prequal.auth-staging.adobe.com/control/v1/proxiedMvpds"`
+`curl -X GET -H "Authorization: Bearer <access_token_here>" "https://mgmt-prequal.auth-staging.adobe.com/control/v3/proxiedMvpds"`
 
 ## Proxy MVPD Web Service Endpoints for the Adobe Pass Authentication Environments {#proxy-mvpd-wevserv-endpoints}
 
-* **Production URL:** https://mgmt.auth.adobe.com/control/v1/proxiedMvpds
-* **Staging URL:** https://mgmt.auth-staging.adobe.com/control/v1/proxiedMvpds
-* **PreQual-Production URL:** https://mgmt-prequal.auth.adobe.com/control/v1/proxiedMvpds
-* **PreQual-Staging URL:** https://mgmt-prequal.auth-staging.adobe.com/control/v1/proxiedMvpds
+– **Production URL:** https://mgmt.auth.adobe.com/control/v3/proxiedMvpds
+– **Staging URL:** https://mgmt.auth-staging.adobe.com/control/v3/proxiedMvpds
+– **PreQual-Production URL:** https://mgmt-prequal.auth.adobe.com/control/v3/proxiedMvpds
+– **PreQual-Staging URL:** https://mgmt-prequal.auth-staging.adobe.com/control/v3/proxiedMvpds
 
 <!--
 >[!RELATEDINFORMATION]
