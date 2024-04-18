@@ -37,4 +37,4 @@ This section presents 10 most recent configuration changes listed in a tabular f
 
 *List of changes log*
 
-To view the complete list of changes, select **View more in Changes Log** at the lower-right to navigate to the [Changes Log](tve-dashboard-changes-log.md) section. 
+To view the complete list of changes, select **View more in Changes Log** at the lower right to navigate to the [Changes Log](tve-dashboard-changes-log.md) section. 

@@ -4,44 +4,36 @@ description: Know about the integrations between your channels and MVPDs and how
 ---
 # Integrations
 
-The Integrations section of the TVE Dashboard allows you to view and manage settings for the existing integrations between your channels and MVPDs. You can also [create a new integration](#create-new-integration) as per your requirement.
+The Integrations section of the TVE Dashboard allows you to view and manage settings for the integrations between your channels and MVPDs. You can also [create a new integration](#create-new-integration) as per your requirement.
 
-The **Integrations** tab in the left panel displays a list of existing integrations. Each integration entries provide the following key details:
+The **Integrations** tab in the left panel displays a list of existing integrations with the following details:
 
 * Status indicating whether the integration is currently active or inactive
 * Integration linking specific channels with respective MVPDs
-* Channel name with channel Id
-* MVPD name with MVPD Id
+* Channel name with channel ID
+* MVPD name with MVPD ID
 
 ![List of existing Integrations](assets/integrations-list.png)
 
 *List of existing Integrations*
 
-To quickly locate a specific integration, enter the **Channel name** or **MVPD name** in the **Search** bar at the top-left of the list.
+To locate a specific integration, enter the channel name or MVPD name in the **Search** bar at the top of the list.
 
 ## Manage integration configurations {#manage-integration-conf}
 
-To manage various settings of a specific integration, navigate to the **Integrations** tab in the left panel and select a required integration from the list. You can view and edit various settings in the following sections:
+To manage a specific integration, navigate to the **Integrations** tab in the left panel. Select a required integration from the provided list to view and edit various settings in the following sections:
 
 * [Endpoint Selection](#endpoint-selection)
 * [Platform Settings](#platform-settings)
 * [User Metadata](#user-metadata)
 
-To disable an existing integration, select **Enabled** at the top-right of the selected integration. 
-
->[!NOTE]
->
->A new local configuration change is pending and ready to be pushed to the server. The integration will be disabled only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
-
-If you disable the integration, end users will lose the ability to authenticate or authorize using the specific MVPD.
-
 ### Endpoint selection {#endpoint-selection}
 
 This section allows you to select the endpoints from the dropdown menu that the MVPD can use for authentication, authorization and logout flows.
 
-   ![Select endpoints for Authentication, Authorization and Logout flows](assets/endpoint-selection.png)
+   ![Endpoints for Authentication, Authorization and Logout flows](assets/endpoint-selection.png)
 
-   *Select endpoints for Authentication, Authorization and Logout flows*
+   *Endpoints for Authentication, Authorization and Logout flows*
 
 >[!NOTE]
 >
@@ -221,7 +213,7 @@ Once added, select **Yes** to enable **Auth per Aggregator** property for a sele
 
 #### Delete properties {#delete-properties}
 
-You can delete specific properties that are no longer needed by using <img alt= "delete property button" src="./assets/delete-icon.svg" width="25"> icon located to the right of each property.
+Select <img alt= "delete property button" src="./assets/delete-icon.svg" width="25"> icon located to the right of each property to delete the properties that are no longer required.
 
 >[!NOTE]
 >
@@ -247,20 +239,20 @@ Learn more about available certificates in [Programmers](/help/authentication/tv
 
 **Enabled**: This column allows you to enable or disable the parameters in the API by selecting **Yes** or **No** respectively from the dropdown menu.
 
-   ![Columns in User Metadata](assets/user-metadata.png)
+   ![Parameters available for User Metadata](assets/user-metadata.png)
 
-   *Columns in User Metadata*
+   *Parameters available for User Metadata*
 
 ## Create new integration {#create-new-integration}
 
 To create a new integration with a new MVPD on your current setup, follow these steps:
 
 1. Go to the **Integrations** tab in the left panel.
-1. Select **Create new integration** at the top of the **Integrations** section.
+1. Select **Create new integration** at the upper-right of the **Integrations** section.
 
-    ![Select Create new integration](assets/create-new-integration.png)
+    ![Create a new integration](assets/create-new-integration.png)
 
-   *Select Create new integration*
+   *Create a new integration*
 
    The following sections are displayed:
 
@@ -294,20 +286,33 @@ To create a new integration with a new MVPD on your current setup, follow these 
 
    For example, you can edit the **AuthN TTL** or **Partner ID** (Channel ID) for co-branding purposes on the MVPD login page in the following image. 
 
-   Select **Save integration** at the top-right of the **Create new integration** section.
+   ![Edit Additional information](assets/additional-information.png)
 
-   ![Additional information](assets/additional-information.png)
+   *Edit Aditional information*
 
-   *Aditional information*
+   Select **Save integration** at the upper-right of the **Create new integration** section.
 
    >[!NOTE]
    >
    >A new local configuration change is pending and ready to be pushed to the server. This new integration will be created only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
-The new integration is enabled by default. To disable it, select **Enabled** at the top-right of the **Create new integration** section. 
+
+## Disable integration {#disable-integratgion}
+
+To disable an integration, follow these steps:
+
+1. Go to the **Integrations** tab in the left panel.
+1. Select the required integration you want to disable.
+1. Disable the toggle available at the top-right of the selected integration. 
+
+   ![Disable integration](assets/disable-integration.png)
+
+   *Disable integration*
 
 >[!NOTE]
 >
 >A new local configuration change is pending and ready to be pushed to the server. The integration will be disabled only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
-If you disable the integration, end users will lose the ability to authenticate or authorize using the specific MVPD.
+After the integration is disabled, end users will lose the ability to authenticate or authorize using the specific MVPD.
+
+
