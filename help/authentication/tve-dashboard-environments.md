@@ -49,7 +49,7 @@ To switch between Adobe Pass TVE Dashboard environments:
 1. Select an option from the **Environment** dropdown menu at the top of the left panel.
 1. Choose the desired environment from the dropdown menu.
 
-   ![TVE Dashboard environments dropdown](assets/tve-dashboard-env.png)
+   ![TVE Dashboard environments dropdown](assets/tve-dashboard-env..png)
 
    *The Adobe Pass TVE Dashboard environment dropdown menu*
 
