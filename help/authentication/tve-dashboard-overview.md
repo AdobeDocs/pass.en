@@ -7,19 +7,19 @@ description: Know about TVE Dashboard and the resources.
 
 >[!NOTE]
 >
->The content presented in this guide is provided for information purposes. Using this API requires a valid license from Adobe. Any unauthorized usage isn't permitted.
+>The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
-The [[!DNL Adobe] Pass TVE Dashboard](https://console.auth.adobe.com/) is a primary tool for Adobe Pass Authentication customers (Programmers) to manage their configurations and data. This self-service dashboard enables a range of functionalities, such as:
+The [[!DNL Adobe] Pass TVE Dashboard](https://console.auth.adobe.com/) is a tool for Adobe Pass Authentication customers (Programmers) to manage their configuration and data. This self-service dashboard enables a range of functionalities, such as:
 
-* **Integration management**: Add new integrations between the associated channels and Multichannel Video Programming Distributors (MVPDs) in the Adobe Pass Authentication ecosystem.
+* **Integration management**: Add new integrations between respective brands(Channels) of a programmer and Multichannel Video Programming Distributors (MVPDs) in the Adobe Pass Authentication ecosystem.
 
 * **Property configuration**: Configure multiple properties for each integration to implement granular business rules customized to specific platform needs.
 
-* **Report generation**: Access and export detailed reports on configuration setups across MVPDs. These reports include various platform categories like *Desktop, Mobile, and TV Connected Devices* and platforms like *iOS, Android&trade;, tvOS, Roku, and FireTV*. They provide insights into single sign-on (SSO) support and subscriber authentication or authorization session duration at MVPD and platform levels.
+* **Report generation**: Access and export detailed reports on configuration setup across MVPDs. These reports include various platform categories such as, *Desktop, Mobile, and TV Connected Devices* and platforms such as, *iOS, Android&trade;, tvOS, Roku, and FireTV*. The reports provide insights into Single Sign-On (SSO) support and subscriber authentication or authorization session duration at MVPD and platform levels.
 
-* **Traffic visualization**: Visualize high-level authentication and authorization traffic data for the properties of a programmer.
+* **Traffic visualization**: Visualize high-level authentication and authorization traffic data of the programmer properties.
 
-To access the TVE Dashboard, contact your Technical Account Manager (TAM). This access requires configuring two new user groups within your Adobe Marketing Cloud Organization:
+Contact your Technical Account Manager (TAM) to access the TVE Dashboard. This access requires configuring two new user groups within your Adobe Marketing Cloud Organization:
 
 * **TVE Dashboard Read-Write**: Members of this group have full editing rights across all sections of the dashboard.
 * **TVE Dashboard Read-Only**: Members of this group have viewing rights only across the entire dashboard.
@@ -38,7 +38,7 @@ Adobe Pass Authentication provides the following sections in the TVE Dashboard:
 
 ## Resources {#resources-tve-dashboard}
 
-Adobe recommends going through the following resources to gain a comprehensive understanding of the flows and features to familiarize yourself with the terminology used in this guide:
+Adobe recommends the following resources to gain a comprehensive understanding of the flows and features to familiarize yourself with the terminology used in this guide:
 
 * [TVE Technical Paper](/help/authentication/technical-paper.md)
 * [Programmer Kickstart Guide](/help/authentication/programmer-kickstart-guide.md)

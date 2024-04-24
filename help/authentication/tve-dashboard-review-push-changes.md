@@ -4,9 +4,13 @@ description: Learn how to review and push changes in the TVE dashboard.
 ---
 # Review and push changes
 
-TVE Dashboard allows you to review the changes made to the current configurations and then push it live to the server. Each time you make changes in your current configurations, the screen shows a notification to review and push changes.
+>[!NOTE]
+>
+>The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
-To review and push changes, follow these steps:
+TVE Dashboard allows you to review the changes made to the current configurations and then push it live to the server. Each time you make changes in your current configurations, the screen displays a notification to review and push changes.
+
+Follow these steps to review and push changes.
 
 1. Locate the review and push changes notification at the bottom of the screen.
 
@@ -14,7 +18,7 @@ To review and push changes, follow these steps:
 
    *Review and push changes notification box*
 
-1. Select **Review changes** from the Review and push changes notification box. 
+1. Select **Review changes** from the **review and push changes** notification box. 
 
 1. Type a brief decription of the change in **Configuration Description** to effectively track and understand the purpose of each change.
 
@@ -22,9 +26,9 @@ To review and push changes, follow these steps:
 
    *Add a Configuration Description*
 
-1. Navigate to the **Configuration Changes** section to view a summary of the alterations.
+1. Navigate to the **Configuration Changes** section to view a summary of the changes.
 
-1. Hover over the change you want to review.
+1. Hover on the change you want to review.
 
 1. Select **View** to review the previous and new values associated with a congifuration change.
  

@@ -5,27 +5,31 @@ description: Learn about channels and their various configurations within the TV
 
 # Channels {#channels}
 
-The Channels section of the TVE Dashboard allows you to view and manage settings for the channels associated with a specific programmer. You can also [add a new channel](#add-new-channel) as per your requirement.
+>[!NOTE]
+>
+>The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+The **Channels** section of the TVE Dashboard allows you to view and manage settings for the channels associated with a specific programmer. You can also [add a new channel](#add-new-channel) as per your requirement.
 
 The **Channels** tab in the left panel displays a list of linked channels with the following details:
 
 * **Display name**: The brand name of the channel used for commercial purposes.
-* **Channel ID**: A unique identifier, also referred to as requestor ID.
-* **Integrations**: The number of connections established with MVPDs.
+* **Channel ID**: A unique identifier, also referred to as Requestor ID.
+* **Integrations**: The number of connections established with [MVPDs](/help/authentication/glossary.md#mvpd).
 
 ![List of existing channels](assets/channels-list.png)
 
 *List of existing channels*
 
-To locate a specific channel, enter the display name in the **Search** bar at the top of the list.
+Type the name of the channel in the **Search** bar above the list to know more about the channel.
 
 ## Manage channel configurations {#manage-channel-conf}
 
-To manage various settings of a specific channel:
+Follow the steps to manage various settings of a specific channel.
 
-1. Navigate to the **Channels** tab in the left panel.
-1. Select the required channel from the available list. 
-1. Select one of the following tabs to view and edit corresponding settings of the selected channel.
+1. Select the **Channels** tab in the left panel.
+1. Select the channel from the available list. 
+1. Select one of the following tabs to view and edit corresponding settings of the selected channel:
 
    * [General Settings](#general-settings)
    * [Integrations](#integrations)
@@ -40,11 +44,11 @@ To manage various settings of a specific channel:
 
 >[!IMPORTANT]
 >
-> To activate the configuration changes for each setting, view [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md). 
+> View [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md) for more information on activating the configuration changes. 
 
 ### General settings {#general-settings}
 
-This tab presents Channel Information and Analytics Configuration.
+This tab presents **Channel Information** and **Analytics Configuration**.
 
 #### Channel information {#channel-information}
 
@@ -54,7 +58,7 @@ In this section, you can edit the following details:
 
 * **Default redirect URL**: The backup redirect URL for authentication and logout.
 
-* **Error reporting**: On selecting **Yes**, the Adobe Pass SDKs send error reports to the Adobe Pass backend for analytics purposes.
+* **Error reporting**: On selecting **Yes**, the Adobe Pass SDKs send error reports to Adobe Pass backend for analytics.
 
 ![Edit Channel information](assets/channel-information.png)
 
@@ -64,7 +68,7 @@ In this section, you can edit the following details:
 
 This section allows you to configure the forwarding of Adobe Pass Authentication events to Adobe Analytics.
 
-To enable **Analytics Configuration**, kindly contact your Technical Account Manager (TAM) for more details on how to configure the Report Suite ID (RSID).
+To enable **Analytics Configuration**, contact your Technical Account Manager (TAM) for more details on setting up the Report Suite ID (RSID).
 
 ![Enable Analytics Configurations](assets/channel-analytical-conf.png)
 
@@ -72,9 +76,7 @@ To enable **Analytics Configuration**, kindly contact your Technical Account Man
 
 Select **Add new analytics configuration** to add multiple configurations.
 
->[!NOTE]
->
->A new local configuration change is pending and ready to be pushed to the server. The new configuration will be added only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+The new analytics configuration will be added only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
 ### Integrations {#integrations}
 
@@ -86,9 +88,9 @@ This tab displays a list of available integrations between the currently selecte
 
 ### Certificates {#certificates}
 
-This tab displays a list of [available certificates](#available-certificates) and [inherited available certificates](#inherited-avail-certificates) used in the authentication and user metadata flows. It displays key details about each certificate that includes:
+This tab displays a list of [available certificates](#available-certificates) and [inherited available certificates](#inherited-avail-certificates) used in the authentication and user metadata flows. It displays details about each certificate that includes:
 
-* The status (whether enabled for *user metadata encryption* usage or not) 
+* The status (whether enabled for **user metadata encryption** usage or not) 
 * Serial number
 * Name of the issuer organization 
 * Name of the subject organization
@@ -116,18 +118,17 @@ To add a new certificate, follow these steps:
 
 1. Paste the public key of your certificate in the **New certificate** dialog box.
 1. Select **Add certificate**.
+   
+   The **Available Certificates** section will display the added certificate only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
->[!NOTE]
->
->A new local configuration change is pending and ready to be pushed to the server. The **Available Certificates** section will display the added certificate only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
-
-To activate a new certificate, navigate to the list of **Available certificates** and select **Yes** from **Used to encrypted user metadata** dropdown menu.
+1. Locate the added certificate in the list of **Available Certificates**.
+1. Select **Yes** from **Used to encrypted user metadata** dropdown menu to activate a new certificate.
 
 ##### Delete certificate {#delete-certificate}
 
-To delete a certificate, follow these steps: 
+Follow these steps to delete a certificate. 
 
-1. Hover over the required certificate that you want to delete from the list of **Available certificates**.
+1. Hover on the certificate that you want to delete from the list of **Available certificates**.
 1. Select **Remove**.
 
    ![Remove the selected certificate](assets/channel-delete-certificate.png)
@@ -135,12 +136,8 @@ To delete a certificate, follow these steps:
    *Remove the selected certificate*
 
 1. Select **Delete** from the **Delete active certificate** dialog box.
-
->[!NOTE]
->
->A new local configuration change is pending and ready to be pushed to the server. The certificate will be deleted from the **Available certificates** section only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
-
-The selected certificate is no longer be available for use.
+ 
+The certificate will be deleted from the **Available certificates** section only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
 #### Inherited available certificates {#inherited-avail-certificates}
 
@@ -165,55 +162,51 @@ You can make the following changes to domains:
 
 #### Add new domain {#add-domains}
 
-To add a domain, follow these steps:
+Follow these steps to add a domain.
 
-1. Select **Add new domain** at the top of the **Available domains** section.
+1. Select **Add new domain** at the upper-right corner of the **Available Domains** section.
 
    ![Add a new domain](assets/add-new-domain.png)
 
    *Add a new domain*
 
-1. Add the name of your domain in the **New domain** dialog box. 
+1. Type the name of your domain in the **New domain** dialog box. 
 
-1. Select **Add domain** to initiate adding a new domain for the selected channel.
+1. Select **Add domain** to add a new domain for the selected channel.
 
->[!NOTE]
->
->A new local configuration change is pending and ready to be pushed to the server. The **Domain** tab will display the added domain only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+The **Available Domains** section will display the added domain only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
 #### Delete domain {#delete-domain}
 
-To delete a domain, follow these steps:
+Follow these steps to delete a domain.
 
-1. Hover over the desired domain that you want to delete from the list of **Available Domains**.
+1. Hover on the domain that you want to delete from the list of **Available Domains**.
 1. Select **Remove**.
 
    ![Remove the selected domain](assets/remove-domain.png)
 
    *Remove the selected domain*
 
-1. Select **Delete** from the **Delete domain** dialog box.
+1. Select **Delete** on the **Delete domain** dialog box.
 
->[!NOTE]
->
->A new local configuration change is pending and ready to be pushed to the server. The domain will be deleted from the **Available Domains** section only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+The domain will be deleted from the **Available Domains** section only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
-The selected domain is no longer available for use, and the application associated with this domain loses access to the Adobe Pass authentication services.
+The selected domain is no longer available for use. As a result, the application associated with this domain loses access to the Adobe Pass authentication services.
 
 ### Registered Applications {#registered-applications}
 
-This tab provides a list of application registrations. For more details, view [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md).
+This tab provides a list of application registrations. View [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md) for more information.
 
 ### Custom Schemes {#custom-schemes}
 
-This tab displays a list of custom schemes. For more details, view [iOS/tvOS application registration](/help/authentication/iostvos-application-registration.md) and [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md)
+This tab displays a list of custom schemes. View [iOS/tvOS application registration](/help/authentication/iostvos-application-registration.md) and [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md) for more information.
 
 ## Add new channel {#add-new-channel}
 
-To add a new channel, follow these steps:
+Follow these steps to add a new channel.
 
-1. Go to the **Channels** tab in the left panel.
-1. Select **Add new channel** at the top of the **Channels** section.
+1. Select the **Channels** tab in the left panel.
+1. Select **Add new channel** at the upper-right corner of the **Channels** section.
 
    ![Add a new channel](assets/add-new-channel.png)
 
@@ -221,11 +214,9 @@ To add a new channel, follow these steps:
 
 1. Select **Programmer ID** from the dropdown menu in the **New channel** dialog box.
 
-1. Enter a unique identifier in **Channel ID**.
-1. Enter the brand name of the channel used for commercial purposes in the **Display name**. 
+1. Type a unique identifier in **Channel ID**.
+1. Type the brand name of the channel used for commercial purposes in the **Display name**. 
 1. Select **Add channel**.
 
->[!NOTE]
->
->A new local configuration change is pending and ready to be pushed to the server. The **Channels** section will display the added channel only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+The **Channels** section will display the added channel only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 

@@ -4,22 +4,31 @@ description: Learn how the data is aggregated in TVE Dashboard reports.
 ---
 # Reports {#Reports}
 
-The Reports section of the TVE Dashboard provides access to aggregated data for various reports. These reports include your channel integrations with different MVPDs across all [platforms](#platforms).
-
-You can filter data and gather insights across [specific Channels or MVPDs](#selecting-specific-channels-mvpds) and export reports in a CSV file for further analysis.
-
-The **Reports** tab in the left panel presents [AuthN TTL Reports](#authn-ttl-reports) by default. To access other reports, select the following tabs at the top of the **Reports** section:
-
-* [AuthZ TTL Reports](#authz-ttl-reports)
-* [SSO Reports](#sso-reports)
-
-## AuthN TTL reports {#authn-ttl-reports}
-
-The AuthN TTL reports, also referred as authentication token Time-To-Live (TTL), displays the duration of the authentication token configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to visually inspect the amount of time a user remains authenticated for a specific MVPD and platform, with values presented in user-friendly formats like **days**, **hours**, **minutes**, and **seconds**. The AuthN TTL Reports table is designed with scrollable horizontal and vertical pages to accommodate various screen sizes.
-
->[!IMPORTANT]
+>[!NOTE]
 >
-> The **Set by MVPD** placeholder is used when the MVPD enforces the AuthN TTL value rather than the Adobe Pass Authentication configuration.
+>The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+The **Reports** section of the TVE Dashboard provides access to aggregated data for AuthN TTL, AuthZ TTL, and SSO reports. These reports include your channel integrations with different MVPDs across all [platforms](#platforms).
+
+Reports let you to filter data and gather insights across [specific Channels or MVPDs](#selecting-specific-channels-mvpds). You can also export reports in a CSV file for further analysis.
+
+## View reports {#view-reports}
+
+Follow these steps to view a specific report.
+
+1. Select the **Reports** tab in the left panel.
+1. Select one of the following tabs to view and export aggregated data of the included channels and MVPDs:
+   * [AuthN TTL Reports](#authn-ttl-reports)
+   * [AuthZ TTL Reports](#authz-ttl-reports)
+   * [SSO Reports](#sso-reports)
+
+   ![Type of reports](assets/type-of-reports.png)
+
+   *Type of reports*
+
+### AuthN TTL reports {#authn-ttl-reports}
+
+The AuthN TTL reports, also referred as Authentication Time-To-Live (TTL), displays the duration of the authentication token configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to inspect the amount of time a user remains authenticated for a specific MVPD and platform. The values are presented in user-friendly formats such as, **days**, **hours**, **minutes**, and **seconds**. The AuthN TTL Reports table is designed with scrollable horizontal and vertical pages to accommodate various screen sizes.
 
 You can also view and download data for [specific channels or MVPDs](#selecting-specific-channels-mvpds).
 
@@ -27,15 +36,15 @@ You can also view and download data for [specific channels or MVPDs](#selecting-
 
 *Export AuthN TTL Reports*
 
-Select **Export reports** to save the data in a CSV file on your local machine.
-
-## AuthZ TTL reports {#authz-ttl-reports}
-
-The AuthZ TTL reports, also referred to as authorization token Time-To-Live (TTL), displays the duration of the authorization token configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to visually inspect the amount of time a user remains authorized to watch content for a specific MVPD and platform, with values presented in user-friendly formats like **days**, **hours**, **minutes**, and **seconds**. The AuthZ TTL Reports table is designed with scrollable horizontal and vertical pages to accommodate various screen sizes.
-
 >[!IMPORTANT]
 >
-> The **Set by MVPD** placeholder is used when the MVPD enforces the AuthZ TTL value rather than the Adobe Pass Authentication configuration.
+> The **Set by MVPD** placeholder is used when the MVPD enforces the AuthN TTL value rather than the Adobe Pass Authentication configuration.
+
+Select **Export reports** to save the data as a CSV file on your local machine.
+
+### AuthZ TTL reports {#authz-ttl-reports}
+
+The AuthZ TTL reports, also referred to as Authorization Time-To-Live (TTL), displays the duration of the authorization token configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to inspect the amount of time a user remains authorized to watch content for a specific MVPD and platform. The values are presented in user-friendly formats such as, **days**, **hours**, **minutes**, and **seconds**. The AuthZ TTL Reports table is designed with scrollable horizontal and vertical pages to accommodate various screen sizes.
 
 You can also view and download the data for [specific channels or MVPDs](#selecting-specific-channels-mvpds).
 
@@ -43,19 +52,15 @@ You can also view and download the data for [specific channels or MVPDs](#select
 
 *Export AuthZ TTL Reports*
 
-Select **Export reports** to save the data in a CSV file on your local machine. 
-
-## SSO Reports {#sso-reports}
-
-The SSO reports, also referred as Single Sign-On, displays the single sign-on status configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to visually inspect the expected user authentication SSO experience for a specific MVPD and platform, with values presented as a tri-state like **SSO Disabled**, **SSO Enabled**, and **SSO Uncertain**. The SSO Reports table is designed with scrollable horizontal and vertical pages to accommodate various screen sizes.
-
 >[!IMPORTANT]
 >
-> The **SSO Uncertain** placeholder is used where Single Sign-On (SSO) is enabled and possible. But the following settings might prevent SSO authentication that are explained in the examples below:
->
-> * User platform settings: The option to block third-party cookies.
-> * User decisions: The users deny platform access to their TV provider subscription.
-> * MVPD settings: MVPD requests authentication for each channel.
+> The **Set by MVPD** placeholder is used when the MVPD enforces the AuthZ TTL value rather than the Adobe Pass Authentication configuration.
+
+Select **Export reports** to save the data as a CSV file on your local machine. 
+
+### SSO Reports {#sso-reports}
+
+The SSO reports, also referred as single sign-on, displays the single sign-on status configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to inspect the expected user authentication SSO experience for a specific MVPD and platform. The values are presented in user-friendly formats such as, **SSO Disabled**, **SSO Enabled**, and **SSO Uncertain**. The SSO Reports table is designed with scrollable horizontal and vertical pages to accommodate various screen sizes.
 
 You can also view and download data for [specific channels or MVPDs](#selecting-specific-channels-mvpds).
 
@@ -63,29 +68,41 @@ You can also view and download data for [specific channels or MVPDs](#selecting-
 
 *Export SSO Reports*
 
-Select **Export reports** to save the data in a CSV file on your local machine.
+>[!IMPORTANT]
+>
+> The **SSO Uncertain** placeholder is used where Single Sign-On (SSO) is enabled and possible. But the following settings might prevent SSO authentication that is explained in the examples below:
+>
+> * User platform settings: The option to block third-party cookies.
+> * User decisions: The users deny platform access to their TV provider subscription.
+> * MVPD settings: MVPD requests authentication for each channel.
+
+Select **Export reports** to save the data as a CSV file on your local machine.
 
 ## Platforms {#platforms}
 
-The [AuthN TTL Reports](#authn-ttl-reports), [AuthZ TTL Reports](#authz-ttl-reports), and [SSO Reports](#sso-reports) present data across various platforms in a tabular format. These platforms include:
+The [AuthN TTL Reports](#authn-ttl-reports), [AuthZ TTL Reports](#authz-ttl-reports), and [SSO Reports](#sso-reports) present data across various platforms, such as:
 
-* **DESKTOP**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication JavaScript SDK.
+* **Desktop**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication JavaScript SDK.
 
-* **MOBILE: IOS**: Displays values that will be applied to the programmer implementations over the Adobe Pass Authentication iOS SDK.
+* **Mobile** 
 
-* **MOBILE: ANDROID**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication Android SDK.
+   **iOS**: Displays values that will be applied to the programmer implementations over the Adobe Pass Authentication iOS SDK.
 
-* **MOBILE: OTHERS**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication REST API developed for mobile devices.
+   **Android**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication Android SDK.
 
-* **TVCD: ROKU**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication REST API and that are sending Roku as a device type.
+   **Others**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication REST API developed for mobile devices.
 
-* **TVCD: FIRETV**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication FireTV SDK.
+* **TVCD**
 
-* **TVCD: APPLETV**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication tvOS SDK.
+   **Roku**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication REST API and that are sending Roku as a device type.
 
-* **TVCD: OTHERS**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication REST API developed for TV connected devices.
+   **FireTV**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication FireTV SDK.
 
-* **PLATFORM: UNIDENTIFIED** Displays values that are applied to the Programmer implementations for which Adobe Pass Authentication services detect an unknown device type.
+   **AppleTV**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication tvOS SDK.
+
+   **Others**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication REST API developed for TV connected devices.
+
+* **Platform unidentified**: Displays values that are applied to the Programmer implementations for which Adobe Pass Authentication services detect an unknown device type.
 
 To learn more about how to share the desired device type, such as **Roku** with Adobe Pass Authentication REST APIs or SDKs, view the mechanism of [passing client information](/help/authentication/passing-client-information-device-connection-and-application.md).
 
@@ -103,13 +120,15 @@ The [AuthN TTL Reports](#authn-ttl-reports), [AuthZ TTL Reports](#authz-ttl-repo
 
 To generate a report for specific channels:
 
-1. Select the **Included Channels** dropdown menu at the top of the required report.
+1. Select the **Included Channels** dropdown menu at the top of the selected report.
+
+   ![Included Channels dropdown menu](assets/include-channels.png)
+
+   *Included Channels dropdown menu*
+
 1. Deselect **All Channels**.
-1. Select the required channels listed in the **Included Channels** dropdown menu for which you want to generate data.
+1. Select the required channels from the **Included Channels** dropdown menu for which you want to generate data.
 
-   ![Select the required channels](assets/include-channels.png)
-
-   *Select the required channels*
 
 >[!NOTE]
 >
@@ -117,13 +136,16 @@ To generate a report for specific channels:
 
 To generate a report for specific MVPDs:
 
-1. Select the **Included MVPDs** dropdown menu at the top of the required report.
+1. Select the **Included MVPDs** dropdown menu at the top of the selected report.
+
+   ![Included MVPDs dropdown menu](assets/include-mvpds.png)
+
+   *Included MVPDs dropdown menu*
+
 1. Deselect **All MVPDs**.
-1. Select the required MVPDs listed in the **Included MVPDs** dropdown menu for which you want to generate data.
+1. Select the required MVPDs from the **Included MVPD's** dropdown menu for which you want to generate data.
 
-   ![Select the required MVPDs](assets/include-mvpds.png)
 
-   *Select the required MVPDs*
 
 
 

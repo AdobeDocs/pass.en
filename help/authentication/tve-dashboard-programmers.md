@@ -4,7 +4,11 @@ description: Learn about programmers and its configurations within TVE dashboard
 ---
 # Programmers {#programmers}
 
-The Programmers section of the TVE Dashboard allows you to view and manage settings for the [programmers](/help/authentication/glossary.md#programmer) associated with your account entitlements. You can also [add a new programmer](#add-new-programmer) as per your requirement.
+>[!NOTE]
+>
+>The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+The **Programmers** section of the TVE Dashboard allows you to view and manage settings for the [programmers](/help/authentication/glossary.md#programmer) associated with your account entitlements. You can also [add a new programmer](#add-new-programmer) as per your requirement.
 
 The **Programmers** tab in the left panel displays a list of existing programmers with the following details:
 
@@ -15,15 +19,15 @@ The **Programmers** tab in the left panel displays a list of existing programmer
 
 *List of existing programmers*
 
-To locate a specific programmer, enter the display name in the **Search** bar at the top of the list.
+Type the name of the programmer in the **Search** bar above the list to know more about a programmer.
 
 ## Manage programmer configurations {#manage-programmer-conf}
 
-To manage various settings of a specific Programmer:
+Follow these steps to manage various settings of a specific programmer.
 
-1. Navigate to the **Programmers** tab in the left panel.
-1. Select a required programmer from the list. 
-1. Select one of the following tabs to view and edit corresponding settings of the selected programmer.
+1. Select the **Programmers** tab in the left panel.
+1. Select a programmer from the list. 
+1. Select one of the following tabs to view and edit corresponding settings of the selected programmer:
 
    * [Channels](#channels)
    * [Certificates](#certificates)
@@ -36,7 +40,7 @@ To manage various settings of a specific Programmer:
 
 >[!IMPORTANT]
 >
-> To activate the configuration changes for each setting, view [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md). 
+> View [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md) for more information on activating the configuration changes.
 
 ### Channels {#channels}
 
@@ -50,9 +54,9 @@ To add a new channel for the selected programmer, select **Add new channel** fro
 
 ### Certificates {#certificates}
 
-This tab displays a list of [available certificates](#available-certificates) used in the authentication flow, providing key details about each certificate. The details include:
+This tab displays a list of [available certificates](#available-certificates) used in the authentication flow, providing details about each certificate. The details include:
 
-* The status (whether enabled for *user metadata encryption* usage or not) 
+* The status (whether enabled for **user metadata encryption** usage or not) 
 * Serial number
 * Name of the issuer organization 
 * Name of the subject organization
@@ -62,7 +66,7 @@ This tab displays a list of [available certificates](#available-certificates) us
 
 #### Available certificates {#available-certificates}
 
-These certificates serve as Private/Public Keys and are used for validation purposes. All channels associated with the same media company can use these certificates.
+These certificates serve as private or public keys and are used for validation purposes. All channels associated with the same media company can use these certificates.
 
 You can make the following changes to available certificates:
 
@@ -71,9 +75,9 @@ You can make the following changes to available certificates:
 
 ##### Add new certificate {#add-new-certificate}
 
-To add a new certificate, follow these steps:
+Follow these steps to add a new certificate.
 
-1. Select **Add new certificate** at the top of the **Programmers** section.
+1. Select **Add new certificate** at the upper-right corner of the **Available Certificates** section.
 
    ![Add a new certificate](assets/programmer-add-new-certificate.png)
 
@@ -82,55 +86,48 @@ To add a new certificate, follow these steps:
 1. Paste the public key of your certificate in the **New certificate** dialog box.
 1. Select **Add certificate**.
 
->[!NOTE]
->
->A new local configuration change is pending and ready to be pushed to the server. The **Available Certificates** section will display the added certificate only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+   The **Available Certificates** section will display the added certificate only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
-To activate a new certificate, navigate to the list of **Available certificates** and select **Yes** from **Used to encrypted user metadata** dropdown menu.
+1. Locate the added certificate in the list of **Available Certificates**.
+1. Select **Yes** from **Used to encrypted user metadata** dropdown menu to activate a new certificate.
 
 ##### Delete certificate {#delete-certificate}
 
-To delete a certificate, follow these steps:
+Follow these steps to delete a certificate.
 
-1. Hover over the desired certificate you want to delete from the list of **Available certificates**.
+1. Hover on the certificate you want to delete from the list of **Available certificates**.
 1. Select **Remove**.
 
    ![Remove the selected certificate](assets/programmer-remove-certificate.png)
 
    *Remove the selected certificate*
 
-1. Select **Delete** from the **Delete certificate** dialog box.
+1. Select **Delete** on the **Delete certificate** dialog box.
 
->[!NOTE]
->
->A new local configuration change is pending and ready to be pushed to the server. The certificate will be deleted from the **Available certificates** section only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
-
-The deleted certificate will no longer be available for use.
+The certificate will be deleted from the **Available certificates** section only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
 ### Registered Applications {#registered-applications}
 
-This tab provides a list of application registrations. For more details, view [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md).
+This tab provides a list of application registrations. View [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md), for more information.
 
 ### Custom Schemes {#custom-schemes}
 
-This tab displays a list of custom schemes. For more details, view [iOS/tvOS application registration](/help/authentication/iostvos-application-registration.md) and [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md)
+This tab displays a list of custom schemes. View [iOS/tvOS application registration](/help/authentication/iostvos-application-registration.md) and [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md), for more information.
 
 ## Add new programmer {#add-new-programmer}
 
-To add a new programmer entity, follow these steps:
+Follow these steps to add a new programmer entity.
 
-1. Go to the **Programmers** tab in the left panel.
-1. Select **Add new programmer** at the top of the **Programmers** section.
+1. Select the **Programmers** tab in the left panel.
+1. Select **Add new programmer** at the upper-right corner of the **Programmers** section.
 
    ![Add a new programmer](assets/add-new-programmer.png)
 
    *Add a new programmer*
 
-1. Enter a media company identifier in **Programmer ID** in the **New programmer** dialog box.
-1. Enter a commercial brand name you want to be shown in the console under **Display name**. 
+1. Type media company identifier in **Programmer ID** in the **New programmer** dialog box.
+1. Type a commercial brand name you want to be shown in the console under **Display name**. 
 1. Select **Add programmer**.
 
->[!NOTE]
->
->A new local configuration change is pending and ready to be pushed to the server. The **Programmers** section will display the added programmer only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+The **Programmers** section will display the added programmer only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 

@@ -5,16 +5,21 @@ description: Learn about MVPDs and its configurations within TVE dashboard.
 
 # MVPDs
 
-The MVPDs section of the TVE Dashboard allows you to view a list of integrated MVPDs in the Adobe Pass Authentication ecosystem.
+>[!NOTE]
+>
+>The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+The **MVPDs** section of the TVE Dashboard allows you to view a list of integrated MVPDs in the Adobe Pass Authentication ecosystem.
 
 The **MVPDs** tab in the left panel displays a list of MVPDs with the following details:
 
-* **Display name**: The commercial name of the MVPD used in the user selection.
+* **Display name**: The display name in the picker for each MVPD.
 
 * **MVPD ID**: A unique ID of MVPD used to set up a new integration in the system.
 
-![List of integrated MVPDs ](assets/mvpds-list.png)
+![List of integrated MVPDs](assets/mvpds-list.png)
 
 *List of integrated MVPDs*
 
-To check for an active integration of a specific MVPD, enter the display name in the **Search** bar at the top of the list.
+Type the name of an MVPD in the **Search** bar above the list to check for an active integration of a specific MVPD.
+

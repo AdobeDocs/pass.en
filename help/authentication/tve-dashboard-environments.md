@@ -4,11 +4,15 @@ description: Understand the use and working of different environments in the TVE
 ---
 # Environments {#environments}
 
+>[!NOTE]
+>
+>The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
 The TVE Dashboard provides different environments customized to fulfill specific purposes within the Adobe Pass Authentication. There are two primary environments:
 
-* **Prequal**: The pre-qualification environment serves as a testing ground for preparing and testing new builds before deployment to the live environment.
+* **Prequal**: The pre-qualification environment serves as a testing ground for preparing and testing new builds before deployment to production.
 
-* **Release**: The release environment hosts the finalized and tested builds for production use.
+* **Release**: The release environment hosts the finalized and tested builds for production.
 
 Within each environment, there are two different profiles:
 
@@ -29,7 +33,7 @@ The environments in the TVE Dashboard serve various use cases throughout the app
 
 * Validate new unreleased features or configurations of the Adobe Authentication server using MVPD's production endpoints.
 * Validate new application versions for each channel using MVPD's production endpoints.
-* It acts as the environment to validate every configuration change before pushing it to production release.
+* Validate every configuration change before pushing it to production.
 
 ### Release Staging
 
@@ -38,16 +42,15 @@ The environments in the TVE Dashboard serve various use cases throughout the app
 
 ### Release Production
 
-* Represents the live environment with the latest Adobe Pass release build available to all end users.
-* Maintains stability in code and configuration,reflecting any configuration changes in the end user's application promptly.
+* Represents the live environment with the latest Adobe Pass release build generally available to all end users.
+* Maintains stability in code and configuration and immediately reflects configuration changes in the end user's application.
 
 ## Switch environments {#switch-environments}
 
-To switch between Adobe Pass TVE Dashboard environments:
+Follow the steps to switch between Adobe Pass TVE Dashboard environments.
 
-1. Log in with your authorized programmer credentials.
-1. Select an option from the **Environment** dropdown menu at the top of the left panel.
-1. Choose the desired environment from the dropdown menu.
+1. Log in with your programmer credentials.
+1. Select the required staging or production environment from the **Environment** dropdown menu at the top of the left panel.
 
    ![TVE Dashboard environments dropdown](assets/tve-dashboard-env.png)
 
