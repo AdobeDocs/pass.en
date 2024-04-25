@@ -300,7 +300,7 @@ To create a new integration with a new MVPD on your current setup, follow these 
 
    ![Edit Additional information](assets/additional-information.png)
 
-   *Edit Aditional information*
+   *Edit Additional information*
 
    Select **Save integration** at the upper-right of the **Create new integration** section.
 
