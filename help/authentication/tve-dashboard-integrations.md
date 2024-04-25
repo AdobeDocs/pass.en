@@ -211,7 +211,7 @@ The **Display Name** or **Logo URL** property will be added only after [review a
 
 If you want to force a new authentication when users switch between apps. In that case, you can navigate to the **Add more properties**, select the **Auth per Aggregator** property.
 
-Adding **Auth per Aggregator** effectively breaks Single Sign On for the respective channel.
+Adding **Auth per Aggregator** effectively breaks single sign on for the respective channel.
 
    ![Add Auth Per Aggregator property](assets/auth-per-aggregator.png)
 
@@ -270,7 +270,7 @@ To create a new integration with a new MVPD on your current setup, follow these 
 
    **Select Channel and MVPD** 
 
-   Select a **Channel** from the **Select Channel** dropdown menu to add a new integration. Once you've selected the channel, select the required **MVPD** from the **Select MVPD** dropdown menu to be integrated with the selected Channel.
+   Select a **Channel** from the **Select Channel** dropdown menu to add a new integration. Once you've selected the channel, select the required **MVPD** from the **Select MVPD** dropdown menu to be integrated with the selected channel.
 
      ![Select Channel and MVPD](assets/select-channel-mvpd.png)
 
