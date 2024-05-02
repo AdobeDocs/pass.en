@@ -7,7 +7,7 @@ description: Know how an admin can monitor the configuration changes in the TVE 
 
 >[!NOTE]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+>The content on this page is provided for information purposes only. The usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
 The **Changes Log** section of the TVE Dashboard allows you to view the configuration changes pushed to the Adobe Pass Authentication environment through the TVE Dashboard. You can also compare two different configuration changes.
 
@@ -28,7 +28,7 @@ To compare changes, follow these steps:
 
     *Compare configuration changes*
 
-1. Select **Compare** at the upper-right of the screen.
+1. Select **Compare** at the upper-right corner of the screen.
 
    The **Configuration Changes** section displays the entity type, entity ID, property, and the status of the change operation for each change.
 

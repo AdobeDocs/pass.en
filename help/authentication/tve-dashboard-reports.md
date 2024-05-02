@@ -6,7 +6,7 @@ description: Learn how the data is aggregated in TVE Dashboard reports.
 
 >[!NOTE]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+>The content on this page is provided for information purposes only. The usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
 The **Reports** section of the TVE Dashboard provides access to aggregated data for AuthN TTL, AuthZ TTL, and SSO reports. These reports include your channel integrations with different MVPDs across all [platforms](#platforms).
 

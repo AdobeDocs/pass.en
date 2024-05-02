@@ -6,7 +6,7 @@ description: Learn how to review and push changes in the TVE dashboard.
 
 >[!NOTE]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+>The content on this page is provided for information purposes only. The usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
 TVE Dashboard allows you to review the changes made to the current configurations and then push it live to the server. Each time you make changes in your current configurations, the screen displays a notification to review and push changes.
 

@@ -7,15 +7,19 @@ description: Know about TVE Dashboard and the resources.
 
 >[!NOTE]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+>The content on this page is provided for information purposes only. The usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
 The [[!DNL Adobe] Pass TVE Dashboard](https://console.auth.adobe.com/) is a tool for Adobe Pass Authentication customers (Programmers) to manage their configuration and data. This self-service dashboard enables a range of functionalities, such as:
 
-* **Integration management**: Add new integrations between respective brands(Channels) of a programmer and Multichannel Video Programming Distributors (MVPDs) in the Adobe Pass Authentication ecosystem.
+* **Integration management**: Add new integrations between respective brands (Channels) of a programmer and Multichannel Video Programming Distributors (MVPDs) in the Adobe Pass Authentication ecosystem.
 
 * **Property configuration**: Configure multiple properties for each integration to implement granular business rules customized to specific platform needs.
 
-* **Report generation**: Access and export detailed reports on configuration setup across MVPDs. These reports include various platform categories such as, *Desktop, Mobile, and TV Connected Devices* and platforms such as, *iOS, Android&trade;, tvOS, Roku, and FireTV*. The reports provide insights into Single Sign-On (SSO) support and subscriber authentication or authorization session duration at MVPD and platform levels.
+* **Report generation**: Access and export detailed reports on configuration setup across MVPDs. These reports include:
+    * Platform categories such as *Desktop, Mobile, and TV Connected Devices* 
+    * Platforms such as *iOS, Android&trade;, tvOS, Roku, and FireTV*
+    
+    The reports provide insights into Single Sign-On (SSO) support and subscriber authentication or authorization session duration at MVPD and platform levels.
 
 * **Traffic visualization**: Visualize high-level authentication and authorization traffic data of the programmer properties.
 

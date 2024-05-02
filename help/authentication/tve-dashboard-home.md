@@ -7,14 +7,14 @@ description: Learn about the home page of TVE Dashboard.
 
 >[!NOTE]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+>The content on this page is provided for information purposes only. The usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
 The **Dashboard** section in the left panel serves as the homepage of the Adobe Pass Authentication TVE Dashboard. 
 
 There are two sections available on the homepage:
 
-* Welcome screen
-* Configuration Status
+* [Welcome screen](#welcome-screen)
+* [Configuration Status](#configuration-status)
 
 ## Welcome screen {#welcome}
 

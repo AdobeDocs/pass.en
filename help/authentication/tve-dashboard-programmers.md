@@ -6,7 +6,7 @@ description: Learn about programmers and its configurations within TVE dashboard
 
 >[!NOTE]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+>The content on this page is provided for information purposes only. The usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
 The **Programmers** section of the TVE Dashboard allows you to view and manage settings for the [programmers](/help/authentication/glossary.md#programmer) associated with your account entitlements. You can also [add a new programmer](#add-new-programmer) as per your requirement.
 

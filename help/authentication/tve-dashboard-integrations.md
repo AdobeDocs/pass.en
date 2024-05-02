@@ -6,7 +6,7 @@ description: Know about the integrations between your channels and MVPDs and how
 
 >[!NOTE]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+>The content on this page is provided for information purposes only. The usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
 The **Integrations** section of the TVE Dashboard allows you to view and manage settings for the integrations between your channels and MVPDs. You can also [create a new integration](#create-new-integration) as per your requirement.
 
@@ -120,7 +120,7 @@ The duration for **AuthN TTL** and **AuthZ TTL** across all platforms will be up
 
 >[!IMPORTANT]
 >
->**Enable Single Sign On** property is exclusively supported on *iOS, tvOS, Roku, and FireTV* platforms. It's only applicable to integrations with MVPDs that support Single Sign On for these platforms.
+>**Enable Single Sign On** property is exclusively supported on *iOS, tvOS, Roku, and FireTV* platforms. It's only applicable to integrations with MVPDs that support single sign on for these platforms.
 
 Follow these steps to enable or disable SSO for a specific integration and platform.
 

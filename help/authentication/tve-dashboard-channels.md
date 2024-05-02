@@ -7,7 +7,7 @@ description: Learn about channels and their various configurations within the TV
 
 >[!NOTE]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+>The content on this page is provided for information purposes only. The usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
 The **Channels** section of the TVE Dashboard allows you to view and manage settings for the channels associated with a specific programmer. You can also [add a new channel](#add-new-channel) as per your requirement.
 

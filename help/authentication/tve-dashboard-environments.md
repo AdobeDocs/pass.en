@@ -6,7 +6,7 @@ description: Understand the use and working of different environments in the TVE
 
 >[!NOTE]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+>The content on this page is provided for information purposes only. The usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
 The TVE Dashboard provides different environments customized to fulfill specific purposes within the Adobe Pass Authentication. There are two primary environments:
 
@@ -16,9 +16,9 @@ The TVE Dashboard provides different environments customized to fulfill specific
 
 Within each environment, there are two different profiles:
 
-* **Staging**: The staging profile connects to MVPD's staging server for testing and validation of integrations before going live.
+* **Staging**: The staging profile connects to the MVPD's staging server for testing and validation of integrations before going live.
 
-* **Production**: The production profile connects to MVPD's production profile for actual production activities.
+* **Production**: The production profile connects to the MVPD's production profile for actual production activities.
 
 ## Use cases
 
