@@ -29,7 +29,7 @@ Follow the steps to manage various settings of a specific channel.
 
 1. Select the **Channels** tab in the left panel.
 1. Select the channel from the available list. 
-1. Select one of the following tabs to view and edit corresponding settings of the selected channel:
+1. Select one of the following tabs to view and edit the corresponding settings of the selected channel:
 
    * [General Settings](#general-settings)
    * [Integrations](#integrations)
@@ -153,7 +153,7 @@ This tab displays a list of available domains through which the respective chann
 
 You can make the following changes to domains:
 
-* [Add new domain](#add-domains)
+* [Add a new domain](#add-domains)
 * [Delete domain](#delete-domain)
 
 >[!TIP]

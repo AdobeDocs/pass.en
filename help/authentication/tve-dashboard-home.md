@@ -31,7 +31,7 @@ In this section, you can access the public documentation directly from the welco
 
 ## Configuration Status {#conf-status}
 
-This section presents 10 most recent configuration changes, that includes:
+This section presents 10 most recent configuration changes that include:
 
 * **Changes log**: A brief description of the change selected by the user.
 * **Pushed by**: The account responsible for the change.

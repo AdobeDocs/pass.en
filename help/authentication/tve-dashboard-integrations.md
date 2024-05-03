@@ -86,7 +86,7 @@ Each property in platform settings inherit a default value set by the MVPD but c
 
 #### Most used business flows {#most-used-flows}
 
-The **Platform Settings** section offers a range of properties used in different business flows. The actual properties may vary depending on the MVPDs selected in the specific integration. Following are the most used flows:
+The **Platform Settings** section offers a range of properties used in different business flows. The actual properties may vary depending on the MVPDs selected in the specific integration. Below are the most used flows:
 
 **AuthN TTL and AuthZ TTL across all platforms**
 

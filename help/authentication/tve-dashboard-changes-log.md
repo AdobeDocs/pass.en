@@ -32,7 +32,7 @@ To compare changes, follow these steps:
 
    The **Configuration Changes** section displays the entity type, entity ID, property, and the status of the change operation for each change.
 
-1. Hover on the configuration change you want to view.
+1. Hover on the configuration change that you want to view.
 1. Select **View** to access the changed values.
 
    ![View configuration changes](assets/view-changes.png)
