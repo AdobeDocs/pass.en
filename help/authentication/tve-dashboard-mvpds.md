@@ -1,6 +1,6 @@
 ---
 title: TVE Dashboard MVPDs
-description: Learn about MVPDs and its configurations within TVE dashboard.
+description: Learn about MVPDs and its configurations within the TVE Dashboard.
 ---
 
 # MVPDs
