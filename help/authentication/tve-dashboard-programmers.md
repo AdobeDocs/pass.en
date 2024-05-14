@@ -54,13 +54,13 @@ To add a new channel for the selected programmer, select **Add new channel** fro
 
 ### Certificates {#certificates}
 
-This tab displays a list of [available certificates](#available-certificates) used in the authentication flow, providing details about each certificate. The details include:
+This tab displays a list of [available certificates](#available-certificates) used in the authentication and user metadata flows. It displays details about each certificate that includes:
 
 * The status (whether enabled for **user metadata encryption** usage or not) 
 * Serial number
 * Name of the issuer organization 
 * Name of the subject organization
-* Activation date
+* Issued date
 * Expiry date 
 * A dropdown menu to encrypt user metadata (If you select **Yes**, the certificate will encrypt sensitive user information, such as zip code values).
 
@@ -86,9 +86,14 @@ Follow these steps to add a new certificate.
 1. Paste the public key of your certificate in the **New certificate** dialog box.
 1. Select **Add certificate**.
 
-   The **Available Certificates** section will display the added certificate only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+   A new configuration change is created and ready for server update. To use the new certificate listed in the **Available Certificates** section, proceed with the [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md) flow.
 
-1. Locate the added certificate in the list of **Available Certificates**.
+1. Locate the new certificate in the list of **Available Certificates**.
+
+   >[!IMPORTANT]
+   >
+   > Make sure that your systems are up to date and ready to use the new certificate.
+
 1. Select **Yes** from **Used to encrypted user metadata** dropdown menu to activate a new certificate.
 
 ##### Delete certificate {#delete-certificate}
@@ -104,7 +109,7 @@ Follow these steps to delete a certificate.
 
 1. Select **Delete** on the **Delete certificate** dialog box.
 
-The certificate will be deleted from the **Available certificates** section only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+A new configuration change is created and ready for server update. The certificate will be deleted from the **Available certificates** section only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
 ### Registered Applications {#registered-applications}
 
@@ -129,5 +134,5 @@ Follow these steps to add a new programmer entity.
 1. Type a commercial brand name you want to be shown in the console under **Display name**. 
 1. Select **Add programmer**.
 
-The **Programmers** section will display the added programmer only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+A new configuration change is created and ready for server update. To use the new programmer listed in the **Programmers** section, proceed with the [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md) flow.
 

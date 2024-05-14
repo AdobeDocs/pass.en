@@ -16,7 +16,7 @@ The **Changes Log** tab in the left panel displays a list of all the configurati
 * **Change description**: A short description on the scope of the configuration change.
 * **Pushed by**: An email ID of the user responsible for making the change. 
 * **Push date**: The date of the configuration change.
-* **Push status**: Indicates whether the push operation was successful or failed.
+* **Push status**: Indicates whether the push operation was successful, pending, or failed.
 
 ## Compare changes {#compare-changes}
 
@@ -45,15 +45,4 @@ The following is an example of a change made in the selected configuration. You 
 
 *Old and new value*
 
-## Download configuration changes {#download-conf-changes}
-
-To download a specific configuration change, follow these steps:
-
-1. Select the **Changes log** tab in the left panel.
-1. Hover on the configuration change that you want to download.
-1. Select **Download** to download the configuration settings as a JSON file on your local machine.
-
-   ![Download configuration changes](assets/download-changes.png)
-
-   *Download configuration changes*
 

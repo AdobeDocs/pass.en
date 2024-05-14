@@ -9,7 +9,7 @@ description: Know about TVE Dashboard and the resources.
 >
 >The content on this page is provided for information purposes only. The usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
-The [[!DNL Adobe] Pass TVE Dashboard](https://console.auth.adobe.com/) is a tool for Adobe Pass Authentication customers (Programmers) to manage their configuration and data. This self-service dashboard enables a range of functionalities, such as:
+The [[!DNL Adobe] Pass TVE Dashboard](https://experience.adobe.com/pass/authentication) is a tool for Adobe Pass Authentication customers (Programmers) to manage their configuration and data. This self-service dashboard enables a range of functionalities, such as:
 
 * **Integration management**: Add new integrations between respective brands (Channels) of a programmer and Multichannel Video Programming Distributors (MVPDs) in the Adobe Pass Authentication ecosystem.
 

@@ -27,11 +27,11 @@ The environments in the TVE Dashboard serve various use cases throughout the app
 ### Prequal Staging
 
 * Validate new unreleased features of the Adobe Pass Authentication server using MVPD's staging endpoints.
-* Primarily used by the Adobe Authentication product team to add and validate new MVPD integrations.
+* Primarily used by the Adobe Pass Authentication product team to add and validate new MVPD integrations.
 
 ### Prequal Production
 
-* Validate new unreleased features or configurations of the Adobe Authentication server using MVPD's production endpoints.
+* Validate new unreleased features or configurations of the Adobe Pass Authentication server using MVPD's production endpoints.
 * Validate new application versions for each channel using MVPD's production endpoints.
 * Validate every configuration change before pushing it to production.
 
@@ -47,15 +47,14 @@ The environments in the TVE Dashboard serve various use cases throughout the app
 
 ## Switch environments {#switch-environments}
 
-Follow the steps to switch between Adobe Pass TVE Dashboard environments.
+Follow the steps to switch between Adobe Pass Authentication TVE Dashboard environments.
 
 1. Log in with your programmer credentials.
 1. Select the required staging or production environment from the **Environment** dropdown menu at the top of the left panel.
 
    ![TVE Dashboard environments dropdown](assets/tve-dashboard-env.png)
 
-   *The Adobe Pass TVE Dashboard environment dropdown menu*
-
+   *The Adobe Pass Authentication TVE Dashboard environment dropdown menu*
 
 >[!NOTE]
 >

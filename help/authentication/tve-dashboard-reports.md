@@ -129,7 +129,6 @@ To generate a report for specific channels:
 1. Deselect **All Channels**.
 1. Select the required channels from the **Included Channels** dropdown menu for which you want to generate data.
 
-
 >[!NOTE]
 >
 > To have options available in the **Included MVPDs** dropdown menu, you must select at least one channel in the **Included channels** dropdown menu.
@@ -144,8 +143,3 @@ To generate a report for specific MVPDs:
 
 1. Deselect **All MVPDs**.
 1. Select the required MVPDs from the **Included MVPD's** dropdown menu for which you want to generate data.
-
-
-
-
-

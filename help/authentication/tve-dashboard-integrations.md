@@ -40,7 +40,7 @@ Follow these steps to manage a specific integration.
 
 ### Endpoint selection {#endpoint-selection}
 
-This section enables you to choose the endpoints that the MVPD can use for authentication, authorization, and logout flows from the respective dropdown menus.
+This section enables you to choose the endpoints of the MVPD used for authentication, authorization, and logout flows from the respective dropdown menus.
 
    ![Endpoints for authentication, authorization, and logout flows](assets/endpoint-selection.png)
 
@@ -66,17 +66,17 @@ Each property in platform settings inherit a default value set by the MVPD but c
 
 >[!IMPORTANT]
 >
-> The settings inheritance follows a chain starting from MVPD settings (which are the most general), then MVPD Endpoint, Integration, and Platform (which holds the most specific value).
+> The settings inheritance follows a chain starting from MVPD settings (which are the most general), then MVPD endpoint, integration, platform category, and platform (which holds the most specific value).
 
-**Platform Settings** is used to override settings for a specific category of platforms. The available platforms are grouped as follows: 
+**Platform Settings** is used to override settings for each level in the inheritance chain. The available levels in the chain are grouped as follows:
 
-* **Default for All**: Set values  for properties applicable universally across all platforms if specific platform values are not defined, regardless of the Programmer's implementations.
+* **Default for All**: Set values for properties applicable universally across all platforms if specific platform values are not defined, regardless of the Programmer's implementations.
 
 * **Desktop Devices**: Set values for properties applicable to all desktop and laptop computers, irrespective of the programming method (JS SDK or REST API).
 
-* **Mobile Devices**: Set values for properties applicable to all mobile devices, such as **iOS** and **Android**, regardless of the programming approach (SDK or REST API).
+* **Mobile Devices**: Set values for properties applicable to all mobile devices, including **iOS**, **Android**, and others, regardless of the programming approach (SDK or REST API).
 
-* **TV Connected Devices**: Set values for properties applicable to all TV connected devices, such as **tvOS**, **Roku**, and **FireTV**, irrespective of the programming method (SDK or REST API).
+* **TV Connected Devices**: Set values for properties applicable to all TV connected devices, including **tvOS**, **Roku**, **FireTV**, and others, irrespective of the programming method (SDK or REST API).
 
 * **Unidentified Devices**: Set values for properties applicable to all devices where the current mechanism can't accurately identify the platform. In such cases, apply the most restrictive rules defined by the MVPD.
 
@@ -104,7 +104,7 @@ Follow these steps to change authentication and authorization TTL across all pla
 
    >[!NOTE]
    >
-   >If you want to change the duration of **AuthN TTL** and **AuthZ TTL** for a specific platform, select the platform accordingly.
+   >If you want to change the duration of **AuthN TTL** and **AuthZ TTL** for a platform category or a specific platform, select the platform accordingly.
 
    ![Change AuthN TTL AuthZ TTL duration across all platforms](assets/authn-ttl-authz-ttl-for-all-platform.png)
 
@@ -245,7 +245,7 @@ The user metadata section displays the following columns:
 
 **Description**: Provides a brief description of each user metadata parameter.
 
-**Encrypted**: This column allows you to enable or disable **User metadata** certificate by selecting **Yes** or **No** respectively from the dropdown menu. Opting for **Yes** indicates that the parameter value will encrypted in the API. The encryption is performed using a certificate defined by a **User metadata** scope. For example, you should always encrypt **zip** parameter.
+**Encrypted**: This column allows you to enable or disable **User metadata** certificate encryption by selecting **Yes** or **No** respectively from the dropdown menu. Opting for **Yes** indicates that the parameter value will be encrypted in the API. The encryption is performed using a certificate defined by a **User metadata** scope. For example, you should always encrypt **zip** parameter.
 
 Learn more about available certificates in [Programmers](/help/authentication/tve-dashboard-programmers.md#available-certificates) and [Channels](/help/authentication/tve-dashboard-channels.md#available-certificates) sections. 
 
