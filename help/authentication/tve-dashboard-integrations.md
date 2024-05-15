@@ -84,6 +84,8 @@ Each property in platform settings inherit a default value set by the MVPD but c
 
    *Category of platforms and their devices*
 
+Select <img alt= "inheritance chain icon" src="./assets/multiple-icon.svg" width="25"> icon located at the right of each property to explore the properties used for each inheritance level described above.
+
 #### Most used business flows {#most-used-flows}
 
 The **Platform Settings** section offers a range of properties used in different business flows. The actual properties may vary depending on the MVPDs selected in the specific integration. Below are the most used flows:
@@ -223,7 +225,7 @@ Once added, select **Yes** to enable **Auth per Aggregator** property for a sele
 
 #### Delete properties {#delete-properties}
 
-Select <img alt= "delete property button" src="./assets/delete-icon.svg" width="25"> icon located to the right of each property to delete the properties that are no longer required.
+Select <img alt= "delete property button" src="./assets/delete-icon.svg" width="25"> icon located at the right of each property to delete the properties that are no longer required.
 
 >[!NOTE]
 >
