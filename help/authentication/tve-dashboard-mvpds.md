@@ -21,5 +21,5 @@ The **MVPDs** tab in the left panel displays a list of MVPDs with the following 
 
 *List of integrated MVPDs*
 
-Type the name of an MVPD in the **Search** bar above the list to check for the existence of a specific MVPD.
+Type the name of an MVPD in the **Search** bar above the list to find a specific MVPD.
 

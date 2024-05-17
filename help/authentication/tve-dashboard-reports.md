@@ -28,7 +28,7 @@ Follow these steps to view a specific report.
 
 ### AuthN TTL reports {#authn-ttl-reports}
 
-The AuthN TTL reports, also referred as Authentication Time-To-Live (TTL), displays the duration of the authentication token configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to inspect the amount of time a user remains authenticated for a specific MVPD and platform. The values are presented in user-friendly formats such as, **days**, **hours**, **minutes**, and **seconds**. The AuthN TTL Reports table is designed with scrollable horizontal and vertical pages to accommodate various screen sizes.
+The AuthN TTL reports, also referred as Authentication Time-To-Live (TTL), display the duration for which authentication tokens are configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to inspect the amount of time a user remains authenticated for a specific MVPD and platform. The duration values are presented in user-friendly formats such as, **days**, **hours**, **minutes**, and **seconds**. The AuthN TTL Reports table features horizontal and vertical scrolling to accommodate different screen sizes.
 
 You can also view and download data for [specific channels or MVPDs](#selecting-specific-channels-mvpds).
 
@@ -44,7 +44,7 @@ Select **Export reports** to save the data as a CSV file on your local machine.
 
 ### AuthZ TTL reports {#authz-ttl-reports}
 
-The AuthZ TTL reports, also referred to as Authorization Time-To-Live (TTL), displays the duration of the authorization token configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to inspect the amount of time a user remains authorized to watch content for a specific MVPD and platform. The values are presented in user-friendly formats such as, **days**, **hours**, **minutes**, and **seconds**. The AuthZ TTL Reports table is designed with scrollable horizontal and vertical pages to accommodate various screen sizes.
+The AuthZ TTL reports, also referred to as Authorization Time-To-Live (TTL), display the duration of the authorization token configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to inspect the amount of time a user remains authorized to watch content for a specific MVPD and platform. The duration values are presented in user-friendly formats such as, **days**, **hours**, **minutes**, and **seconds**. The AuthZ TTL Reports table features horizontal and vertical scrolling to accommodate different screen sizes.
 
 You can also view and download the data for [specific channels or MVPDs](#selecting-specific-channels-mvpds).
 
@@ -60,7 +60,7 @@ Select **Export reports** to save the data as a CSV file on your local machine.
 
 ### SSO Reports {#sso-reports}
 
-The SSO reports, also referred as single sign-on, displays the single sign-on status configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to inspect the expected user authentication SSO experience for a specific MVPD and platform. The values are presented in user-friendly formats such as, **SSO Disabled**, **SSO Enabled**, and **SSO Uncertain**. The SSO Reports table is designed with scrollable horizontal and vertical pages to accommodate various screen sizes.
+The SSO reports, also referred as single sign-on, display the single sign-on status configured for your Channels integrations with various MVPDs across all [platforms](#platforms). These reports allow you to inspect the expected user authentication SSO experience for a specific MVPD and platform. The values are presented in user-friendly formats such as, **SSO Disabled**, **SSO Enabled**, and **SSO Uncertain**. The SSO Reports table features horizontal and vertical scrolling to accommodate different screen sizes.
 
 You can also view and download data for [specific channels or MVPDs](#selecting-specific-channels-mvpds).
 
@@ -70,7 +70,7 @@ You can also view and download data for [specific channels or MVPDs](#selecting-
 
 >[!IMPORTANT]
 >
-> The **SSO Uncertain** placeholder is used where Single Sign-On (SSO) is enabled and possible. But the following settings might prevent SSO authentication that is explained in the examples below:
+> The **SSO Uncertain** placeholder indicates that Single Sign-On (SSO) is enabled and potentially operational. However, the settings listed below may inhibit SSO authentication, as explained in the following examples:
 >
 > * User platform settings: The option to block third-party cookies.
 > * User decisions: The users deny platform access to their TV provider subscription.
@@ -82,27 +82,27 @@ Select **Export reports** to save the data as a CSV file on your local machine.
 
 The [AuthN TTL Reports](#authn-ttl-reports), [AuthZ TTL Reports](#authz-ttl-reports), and [SSO Reports](#sso-reports) present data across various platforms, such as:
 
-* **Desktop**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication JavaScript SDK.
+* **Desktop**: Displays values applied to the programmer implementations via the Adobe Pass Authentication JavaScript SDK.
 
 * **Mobile** 
 
-   **iOS**: Displays values that will be applied to the programmer implementations over the Adobe Pass Authentication iOS SDK.
+   **iOS**: Displays values applied using the Adobe Pass Authentication iOS SDK.
 
-   **Android**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication Android SDK.
+   **Android**: Displays values applied through the Adobe Pass Authentication Android SDK.
 
-   **Others**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication REST API developed for mobile devices.
+   **Others**: Displays values applied using the Adobe Pass Authentication REST API developed for mobile devices.
 
 * **TVCD**
 
-   **Roku**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication REST API and that are sending Roku as a device type.
+   **Roku**: Displays values applied via the Adobe Pass Authentication REST API, identifying Roku as a device type.
 
-   **FireTV**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication FireTV SDK.
+   **FireTV**: Displays values applied through the Adobe Pass Authentication FireTV SDK.
 
-   **AppleTV**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication tvOS SDK.
+   **AppleTV**: Displays values applied via the Adobe Pass Authentication tvOS SDK.
 
-   **Others**: Displays values that are applied to the programmer implementations over the Adobe Pass Authentication REST API developed for TV connected devices.
+   **Others**: Displays values applied using the Adobe Pass Authentication REST API for TV-connected devices.
 
-* **Platform unidentified**: Displays values that are applied to the Programmer implementations for which Adobe Pass Authentication services detect an unknown device type.
+* **Platform unidentified**: Displays values applied to programmer implementations when the Adobe Pass Authentication services detect an unknown device type.
 
 To learn more about how to share the desired device type, such as **Roku** with Adobe Pass Authentication REST APIs or SDKs, view the mechanism of [passing client information](/help/authentication/passing-client-information-device-connection-and-application.md).
 

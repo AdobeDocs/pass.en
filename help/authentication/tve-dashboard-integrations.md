@@ -15,7 +15,7 @@ The **Integrations** tab in the left panel displays a list of existing integrati
 * Status indicating whether the integration is currently active or inactive
 * Integration linking specific channels with respective MVPDs
 * Channel name with channel ID
-* MVPD name with MVPD ID
+* MVPD display name and MVPD ID
 
 ![List of existing Integrations](assets/integrations-list.png)
 
@@ -191,9 +191,9 @@ However, in cases where MVPDs agree to raise this limit, you can navigate to the
 
 **Preflight Max Resources** will add a new attribute where the agreed limit with the MVPD can be specified.
 
-   ![Add Prefix Max Resources property](assets/prefix-max-resources.png)
+   ![Add Preflight Max Resources property](assets/preflight-max-resources.png)
 
-   *Add Prefix Max Resources property*
+   *Add Preflight Max Resources property*
 
 The **Preflight Max Resources** property will be added only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
@@ -247,7 +247,12 @@ The user metadata section displays the following columns:
 
 **Description**: Provides a brief description of each user metadata parameter.
 
-**Encrypted**: This column allows you to enable or disable **User metadata** certificate encryption by selecting **Yes** or **No** respectively from the dropdown menu. Opting for **Yes** indicates that the parameter value will be encrypted in the API. The encryption is performed using a certificate defined by a **User metadata** scope. For example, you should always encrypt **zip** parameter.
+**Encrypted**: This column allows you to enable or disable parameters in the API by selecting **Yes** or **No** from the dropdown menu respectively. Opting for **Yes** indicates that the parameter value will be encrypted in the API. The encryption is performed using a certificate defined by a **User metadata** scope. 
+
+>[!TIP]
+>
+>
+> Always ensure that the **ZIP** parameter is encrypted.
 
 Learn more about available certificates in [Programmers](/help/authentication/tve-dashboard-programmers.md#available-certificates) and [Channels](/help/authentication/tve-dashboard-channels.md#available-certificates) sections. 
 

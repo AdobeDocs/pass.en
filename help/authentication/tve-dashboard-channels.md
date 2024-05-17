@@ -76,7 +76,7 @@ To enable **Analytics Configuration**, contact your Technical Account Manager (T
 
 Select **Add new analytics configuration** to add multiple configurations.
 
-A new configuration change is created and ready for server update. To use the new analytics configuration from the **Analytics Configuration** section, proceed with the [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md) flow.
+A new configuration change has been created and is ready for server update. To use the new analytics configuration from the **Analytics Configuration** section, proceed with the [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md) flow.
 
 ### Integrations {#integrations}
 
@@ -88,7 +88,7 @@ This tab displays a list of available integrations between the currently selecte
 
 ### Certificates {#certificates}
 
-This tab displays a list of [available certificates](#available-certificates) and [inherited available certificates](#inherited-avail-certificates) used in the authentication and user metadata flows. It displays details about each certificate that includes:
+This tab displays a list of [available certificates](#available-certificates) and [inherited available certificates](#inherited-avail-certificates) used in the user metadata encryption flows. It displays details about each certificate that includes:
 
 * The status (whether enabled for **user metadata encryption** usage or not) 
 * Serial number
@@ -100,7 +100,7 @@ This tab displays a list of [available certificates](#available-certificates) an
 
 #### Available certificates {#available-certificates}
 
-These certificates serve as private or public keys and are used for validation purposes.
+These certificates serve as private or public keys and are used for user metadata encryption.
 You can make the following changes under the available certificates section:
 
 * [Add new certificate](#add-new-certificate)
@@ -119,7 +119,7 @@ To add a new certificate, follow these steps:
 1. Paste the public key of your certificate in the **New certificate** dialog box.
 1. Select **Add certificate**.
 
-   A new configuration change is created and ready for server update. To use the new certificate listed in the **Available Certificates** section, proceed with the [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md) flow.
+   A new configuration change has been created and is ready for server update. To use the new certificate listed in the **Available Certificates** section, proceed with the [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md) flow.
 
 1. Locate the new certificate in the list of **Available Certificates**.
 
@@ -142,7 +142,7 @@ Follow these steps to delete a certificate.
 
 1. Select **Delete** from the **Delete active certificate** dialog box.
  
-A new configuration change is created and ready for server update. The certificate will be deleted from the **Available certificates** section only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+A new configuration change has been created and is ready for server update. The certificate will be deleted from the **Available certificates** section only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
 #### Inherited available certificates {#inherited-avail-certificates}
 
@@ -179,7 +179,7 @@ Follow these steps to add a domain.
 
 1. Select **Add domain** to add a new domain for the selected channel.
 
-A new configuration change is created and ready for server update. To use the new domain listed in the **Available Domains** section, proceed with the [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md) flow.
+A new configuration change has been created and is ready for server update. To use the new domain listed in the **Available Domains** section, proceed with the [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md) flow.
 
 #### Delete domain {#delete-domain}
 
@@ -194,7 +194,7 @@ Follow these steps to delete a domain.
 
 1. Select **Delete** on the **Delete domain** dialog box.
 
-A new configuration change is created and ready for server update. The domain will be deleted from the **Available Domains** section only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
+A new configuration change has been created and is ready for server update. The domain will be deleted from the **Available Domains** section only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
 The selected domain is no longer available for use. As a result, the application associated with this domain loses access to the Adobe Pass Authentication services.
 
@@ -223,5 +223,5 @@ Follow these steps to add a new channel.
 1. Type the brand name of the channel used for commercial purposes in the **Display name**. 
 1. Select **Add channel**.
 
-A new configuration change is created and ready for server update. To use the new channel listed in the **Channels** section, proceed with the [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md) flow.
+A new configuration change has been created and is ready for server update. To use the new channel listed in the **Channels** section, proceed with the [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md) flow.
 

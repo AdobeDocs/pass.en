@@ -26,7 +26,7 @@ The [[!DNL Adobe] Pass TVE Dashboard](https://experience.adobe.com/pass/authenti
 Contact your Technical Account Manager (TAM) to access the TVE Dashboard. This access requires configuring two new user groups within your Adobe Marketing Cloud Organization:
 
 * **TVE Dashboard Read-Write**: Members of this group have full editing rights across all sections of the dashboard.
-* **TVE Dashboard Read-Only**: Members of this group have viewing rights only across the entire dashboard.
+* **TVE Dashboard Read-Only**:  Members of this group are granted viewing-only access to the entire dashboard.
 
 Adobe Pass Authentication provides the following sections in the TVE Dashboard:
 
@@ -42,7 +42,7 @@ Adobe Pass Authentication provides the following sections in the TVE Dashboard:
 
 ## Resources {#resources-tve-dashboard}
 
-Adobe recommends the following resources to gain a comprehensive understanding of the flows and features to familiarize yourself with the terminology used in this guide:
+Adobe suggests using the following resources to thoroughly understand the flows and features, helping you become familiar with the terminology employed in this guide:
 
 * [TVE Technical Paper](/help/authentication/technical-paper.md)
 * [Programmer Kickstart Guide](/help/authentication/programmer-kickstart-guide.md)
