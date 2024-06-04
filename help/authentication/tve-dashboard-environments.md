@@ -1,6 +1,7 @@
 ---
 title: TVE Dashboard environments
 description: Understand the use and working of different environments in the TVE Dashboard.
+exl-id: 591becb8-2f6c-46e0-b108-c64e6df69f89
 ---
 # Environments {#environments}
 
@@ -59,4 +60,3 @@ Follow the steps to switch between Adobe Pass Authentication TVE Dashboard envir
 >[!NOTE]
 >
 > The configurations may vary in each environment based on your settings.
-

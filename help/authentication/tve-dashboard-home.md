@@ -1,8 +1,8 @@
 ---
 title: Dashboard
 description: Learn about the home page of TVE Dashboard.
+exl-id: 3073cd86-89f8-4c65-996b-24edda24f25b
 ---
-
 # Dashboard {#dashboard}
 
 >[!NOTE]
@@ -41,4 +41,4 @@ This section presents 10 most recent configuration changes that include:
 
 *Configuration Status of a Changes log*
 
-To view the complete list of changes, select **View more in Changes Log** at the lower-right to view the [Changes Log](tve-dashboard-changes-log.md) section. 
+To view the complete list of changes, select **View more in Changes Log** at the lower-right to view the [Changes Log](tve-dashboard-changes-log.md) section.

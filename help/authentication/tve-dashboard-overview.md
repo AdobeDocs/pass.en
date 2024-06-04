@@ -1,8 +1,8 @@
 ---
 title: TVE Dashboard overview
 description: Know about TVE Dashboard and the resources.
+exl-id: 91baeb34-a32a-4dc3-94d8-f6cfca59dc4e
 ---
-
 # TVE Dashboard overview {#tve-db-overview}
 
 >[!NOTE]
@@ -48,5 +48,3 @@ Adobe suggests using the following resources to thoroughly understand the flows 
 * [Programmer Kickstart Guide](/help/authentication/programmer-kickstart-guide.md)
 * [Entitlement Flow](/help/authentication/entitlement-flow.md)
 * [Glossary](/help/authentication/glossary.md)
-
-

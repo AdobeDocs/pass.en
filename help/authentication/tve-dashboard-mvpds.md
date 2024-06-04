@@ -1,8 +1,8 @@
 ---
 title: TVE Dashboard MVPDs
 description: Learn about MVPDs and its configurations within the TVE Dashboard.
+exl-id: 802c1570-9a5b-4bec-8fb2-6c7738b28bc9
 ---
-
 # MVPDs
 
 >[!NOTE]
@@ -22,4 +22,3 @@ The **MVPDs** tab in the left panel displays a list of MVPDs with the following 
 *List of integrated MVPDs*
 
 Type the name of an MVPD in the **Search** bar above the list to find a specific MVPD.
-

@@ -1,8 +1,8 @@
 ---
 title: Changes log
 description: Know how an admin can monitor the configuration changes in the TVE Dashboard.
+exl-id: 9b53a61b-679f-491e-90f3-5d827e21b32c
 ---
-
 # Changes log {#changes-log}
 
 >[!NOTE]
@@ -44,5 +44,3 @@ The following is an example of a change made in the selected configuration. You 
 ![Old and new value](assets/change.png)
 
 *Old and new value*
-
-

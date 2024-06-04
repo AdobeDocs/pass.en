@@ -1,6 +1,7 @@
 ---
 title: TVE Dashboard Integrations
 description: Know about the integrations between your channels and MVPDs and how to manage integrations.
+exl-id: 0add340b-120c-4e82-8e3c-6c190d77cf7e
 ---
 # Integrations
 
@@ -329,5 +330,3 @@ To disable an integration, follow these steps:
 The integration will be disabled only after [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md).
 
 After the integration is disabled, end users will lose the ability to authenticate or authorize using the specific MVPD.
-
-

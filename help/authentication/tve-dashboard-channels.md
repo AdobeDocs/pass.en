@@ -1,8 +1,8 @@
 ---
 title: Channels
 description: Learn about channels and their various configurations within the TVE Dashboard.
+exl-id: bbddeccb-6b6f-4a8f-87ab-d4af538eee1d
 ---
-
 # Channels {#channels}
 
 >[!NOTE]
@@ -224,4 +224,3 @@ Follow these steps to add a new channel.
 1. Select **Add channel**.
 
 A new configuration change has been created and is ready for server update. To use the new channel listed in the **Channels** section, proceed with the [review and push changes](/help/authentication/tve-dashboard-review-push-changes.md) flow.
-

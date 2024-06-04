@@ -1,6 +1,7 @@
 ---
 title: Review and push changes
 description: Learn how to review and push changes in the TVE dashboard.
+exl-id: 2f29712e-7b3f-472a-a36f-32780bec1508
 ---
 # Review and push changes
 
@@ -47,5 +48,3 @@ Follow these steps to review and push changes.
    *Push changes*
 
    Alternatively, you can select **Dismiss changes** if you want to revert all the listed configuration changes.
-
-
