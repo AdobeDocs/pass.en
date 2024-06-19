@@ -94,7 +94,25 @@ Use the same parameters for the call as for the session heartbeat. The response 
 
 * 202 ACCEPTED for a successful response 
 * 410 GONE if the session was already stopped.
- 
+
+#### Get all running streams {#get-all-running-streams} 
+
+This endpoint offers all currently running sessions for a specific tenant on all its applications. Use **subject** and **idp** parameters for the call:
+
+![](assets/get-all-running-streams-parameters.png)
+
+When you make the call you'll get the following response:
+
+![](assets/get-all-running-streams-success.png)
+
+Please note the **Expires** header. That is the time when the first session should expire unless a heartbeat is sent. OtherStreams has value 0 because there are no other streams running for this user on other tenant's applications.
+The metadata field will be populated with all the metadata sent when the session started. We do not filter it, you'll receive everything you sent.
+If there are no running sessions for a specific user when you do the call you'll get this response:
+
+![](assets/get-all-running-streams-empty.png)
+
+Also note that in this case the **Expires** header is not present.
+
 #### Breaking the policy {#breaking-policy-app-first}
  
 
