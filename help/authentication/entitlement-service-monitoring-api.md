@@ -27,12 +27,22 @@ The available URL paths are discoverable via links contained in the response. Va
 
 ## Drill-down Tree {#drill-down-tree}
 
-The following drill-down trees illustrate the dimensions (resources) available in ESM 2.0 for [Programmers] (#esm_dimensions) and [MVPDs](#esm_dimensions_mvpd).
+The following drill-down trees illustrate the dimensions (resources) available in ESM 2.0 for [Programmers](#progr-dimensions) and [MVPDs](#mvpd-dimensions).
 
 
 ### Dimensions available to Programmers {#progr-dimensions}
 
-![](assets/esm-progr-dimensions.png)
+#### Day
+
+![](assets/esm-progr-dimensions-day.png)
+
+#### Hour
+
+![](assets/esm-progr-dimensions-hour.png)
+
+#### Minute
+
+![](assets/esm-progr-dimensions-minute.png)
 
 ### Dimensions available to MVPDs {#mvpd-dimensions}
 
