@@ -120,7 +120,7 @@ features)**
 ```
 
 
-### `abstract class AccessEnablerCallback<PreauthorizeResponse> {#accessenablercallback}`
+### `abstract class AccessEnablerCallback<PreauthorizeResponse>` {#accessenablercallback}
 
 ```java
     /// Response callback called by the SDK when the preauthorize API request was fulfilled. The result is either a successful or an error result containing a status.
