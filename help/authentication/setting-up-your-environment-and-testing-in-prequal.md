@@ -62,7 +62,7 @@ Steps 1 and 2 are setting up the test environment on one of the testing machines
 * Edit the *c:\\windows\\System32\\drivers\\etc\\hosts* file (in Windows) or */etc/hosts* file (on Macintosh/Linux/Android) and add the following:
   
 * Spoof production profile    
-    * 52.13.71.11  http://entitlement.auth.adobe.com, http://sp.auth.adobe.com, http://api.auth.adobe.com
+    * 52.13.71.11 entitlement.auth.adobe.com sp.auth.adobe.com api.auth.adobe.com
 
 **Spoofing on Android:** In order to spoof on Android, you have to use an Android emulator.
 
