@@ -78,9 +78,9 @@ The information in the tables is intended to drive the Adobe Pass Authentication
 | 3.3 | Inline Account Registration                        | The MVPD provides a means to create a new account inline to federated AuthN flow.                                    |     A    |                                                                                                                                                           |
 | 3.4 | Inline Help / Support                              | The MVPD provides a means to provide help during the federated AuthN flow.                                           |     A    |                                                                                                                                                           |
 | 3.5 | Modem-based In-home Authentication                 | The MVPD automatically authenticates a device when it is on the local network of a registered model (ISP MVPD only). |     B    | This is lower priority because it's an optimization that many can't yet support and introduces some challenges for fraud mitigation and parental controls |
+
 You can now import Markdown table code directly using File/Paste table data... dialog.
 
- 
 
 ## 4. Analytics Features {#analytics-features}
  
