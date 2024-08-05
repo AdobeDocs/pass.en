@@ -22,7 +22,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + [Programmer use cases](programmer-use-cases.md)
     + [Passing client information (device, connection, and application)](passing-client-information-device-connection-and-application.md)
     + [Throttling mechanism](throttling-mechanism.md)
-    + REST API {#restapi}
+    + REST API V1 {#rest-api-v1}
         + [REST API Overview](rest-api-overview.md)
         + [REST API Cookbook (Server-to-Server)](rest-api-cookbook-servertoserver.md)
         + [REST API Cookbook (Client-to-Server)](rest-api-cookbook-clienttoserver.md)
@@ -46,6 +46,52 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             + [Retrieve profile-request](retrieve-profilerequest.md)
             + [Token Exchange](token-exchange.md)
             + [Free Preview for Temp Pass and Promotional Temp Pass](free-preview-for-temp-pass-and-promotional-temp-pass.md)
+    + REST API V2 {#rest-api-v2} 
+        + APIs {#rest-api-v2-apis}
+            + Configuration {#rest-api-v2-configuration-apis}
+                + [Retrieve configuration for specific service provider](./rest-api-v2/apis/configuration-apis/rest-api-v2-configuration-apis-retrieve-configuration-for-specific-service-provider.md)
+            + Sessions {#rest-api-v2-sessions-apis}
+                + [Create authentication session](./rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md)
+                + [Resume authentication session](./rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-resume-authentication-session.md)
+                + [Retrieve authentication session](./rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-retrieve-authentication-session-information-using-code.md)
+            + Profiles {#rest-api-v2-profiles-apis}
+                + [Retrieve profiles](./rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md)
+                + [Retrieve profile for specific mvpd](./rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-mvpd.md)
+                + [Retrieve profile for specific code](./rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-code.md)
+            + Decisions {#rest-api-v2-decisions-apis}
+                + [Retrieve authorization decisions using specific mvpd](./rest-api-v2/apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md)
+                + [Retrieve preauthorization decisions using specific mvpd](./rest-api-v2/apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-preauthorization-decisions-using-specific-mvpd.md) 
+            + Logout {#rest-api-v2-logout-apis}
+                + [Initiate logout for specific mvpd](./rest-api-v2/apis/logout-apis/rest-api-v2-logout-apis-initiate-logout-for-specific-mvpd.md)
+            + Partner Single Sign-On {#rest-api-v2-partner-single-sign-on-apis}
+                + [Retrieve partner authentication request](rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-partner-authentication-request.md)
+                + [Retrieve profile using partner authentication response](rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md)
+        + Flows {#rest-api-v2-flows}
+            + Basic Flows {#rest-api-v2-basic-flows}
+                + [Basic profiles flow performed within primary application](./rest-api-v2/flows/basic-flows/rest-api-v2-basic-profiles-primary-application-flow.md)
+                + [Basic profiles flow performed within secondary application](./rest-api-v2/flows/basic-flows/rest-api-v2-basic-profiles-secondary-application-flow.md)
+                + [Basic authentication flow performed within primary application](./rest-api-v2/flows/basic-flows/rest-api-v2-basic-authentication-primary-application-flow.md)
+                + [Basic authentication flow performed within secondary application](./rest-api-v2/flows/basic-flows/rest-api-v2-basic-authentication-secondary-application-flow.md)
+                + [Basic authorization flow performed within primary application](./rest-api-v2/flows/basic-flows/rest-api-v2-basic-authorization-primary-application-flow.md)
+                + [Basic preauthorization flow performed within primary application](./rest-api-v2/flows/basic-flows/rest-api-v2-basic-preauthorization-primary-application-flow.md)
+                + [Basic logout flow performed within primary application](./rest-api-v2/flows/basic-flows/rest-api-v2-basic-logout-primary-application-flow.md)
+            + Degraded Access Flows {#rest-api-v2-degraded-access-flows}
+                + [Degraded access flows](rest-api-v2/flows/access-degraded-flows/rest-api-v2-access-degraded-flows.md)
+            + Temporary Access Flows {#rest-api-v2-temporary-access-flows}
+                + [Temporary access flows](rest-api-v2/flows/access-temporary-flows/rest-api-v2-access-temporary-flows.md) 
+            + Single Sign-On Flows {#rest-api-v2-single-sign-on-flows}
+                + [Single sign-on using partner flows](./rest-api-v2/flows/single-sign-on-flows/rest-api-v2-single-sign-on-partner-flows.md)
+                + [Single sign-on using platform identity flows](./rest-api-v2/flows/single-sign-on-flows/rest-api-v2-single-sign-on-platform-identity-flows.md)
+                + [Single sign-on using service token flows](./rest-api-v2/flows/single-sign-on-flows/rest-api-v2-single-sign-on-service-token-flows.md)
+                + [Single logout flow](./rest-api-v2/flows/single-sign-on-flows/rest-api-v2-single-sign-on-logout-flow.md)
+        + Appendix {#rest-api-v2-appendix}
+            + Headers {#rest-api-v2-appendix-headers}
+                + [Header - AD-Service-Token](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ad-service-token.md)
+                + [Header - Adobe-Subject-Token](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-adobe-subject-token.md)
+                + [Header - AP-Device-Identifier](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-device-identifier.md)
+                + [Header - AP-Partner-Framework-Status](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-partner-framework-status.md)
+                + [Header - AP-TempPass-Identity](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-temppass-identity.md)
+                + [Header - X-Device-Info](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-x-device-info.md)
     + AccessEnabler SDK {#accessenabler-sdk}
       + JavaScript SDK {#javascriptsdk}        
         + [JavaScript SDK Overview](javascript-sdk-overview.md)
