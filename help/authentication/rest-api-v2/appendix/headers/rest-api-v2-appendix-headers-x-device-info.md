@@ -5,6 +5,10 @@ description: REST API V2 - Header - X-Device-Info
 
 # Header - X-Device-Info {#header-x-device-info}
 
+>[!NOTE]
+>
+>The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
 ## Overview {#overview}
 
 The <b>X-Device-Info</b> request header contains the client information (device, connection and application) related to the actual streaming device.

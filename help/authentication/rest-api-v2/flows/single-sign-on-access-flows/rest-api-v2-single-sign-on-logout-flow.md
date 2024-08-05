@@ -5,6 +5,14 @@ description: REST API V2 - Single Logout - Flow
 
 # Single logout flow {#single-logout-flow}
 
+>[!IMPORTANT]
+>
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+>[!IMPORTANT]
+>
+> REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/throttling-mechanism.md) documentation.
+
 ## Initiate single logout for specific mvpd {#initiate-single-logout-for-specific-mvpd}
 
 ### Prerequisites {#prerequisites-initiate-single-logout-for-specific-mvpd}
@@ -28,28 +36,31 @@ Before initiating single logout for a specific MVPD, ensure the following prereq
 
 Perform the given steps to implement the single logout flow for a specific MVPD as shown in the following diagram.
 
-![Initiate single logout for specific mvpd](../../../assets/rest-api-v2/flows/single-sign-on-flows/rest-api-v2-initiate-single-logout-for-specific-mvpd-flow.png)
+![Initiate single logout for specific mvpd](../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-initiate-single-logout-for-specific-mvpd-flow.png)
 
 *Initiate single logout for specific mvpd*
 
 1. **Initiate Adobe Pass logout:** The streaming application gathers all the necessary data to initiate the logout flow by calling the Adobe Pass Logout endpoint.
 
-   Refer to the [Initiate logout for specific mvpd](../../apis/logout-apis/rest-api-v2-logout-apis-initiate-logout-for-specific-mvpd.md) API documentation for details on:
-    * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `redirectUrl`
-    * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
-    * All the _optional_ parameters and headers
-
-    >[!IMPORTANT]
-    > 
-    > The streaming application must ensure it includes a valid value for the unique platform identifier or the unique user identifier before making a request.
-    >
-    > <br/>
-    > 
-    > For more details about `Adobe-Subject-Token` header, refer to the [Adobe-Subject-Token](../../appendix/headers/rest-api-v2-appendix-headers-adobe-subject-token.md) documentation.
-    > 
-    > <br/> 
-    > 
-    > For more details about `AD-Service-Token` header, refer to the [AD-Service-Token](../../appendix/headers/rest-api-v2-appendix-headers-ad-service-token.md) documentation.
+   >[!IMPORTANT]
+   >
+   > Refer to the [Initiate logout for specific mvpd](../../apis/logout-apis/rest-api-v2-logout-apis-initiate-logout-for-specific-mvpd.md) API documentation for details on:
+   >
+   > * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `redirectUrl`
+   > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
+   >
+   > <br/>
+   >
+   > The streaming application must ensure it includes a valid value for the unique platform identifier or the unique user identifier before making a request.
+   >
+   > <br/>
+   > 
+   > For more details about `Adobe-Subject-Token` header, refer to the [Adobe-Subject-Token](../../appendix/headers/rest-api-v2-appendix-headers-adobe-subject-token.md) documentation.
+   > 
+   > <br/> 
+   > 
+   > For more details about `AD-Service-Token` header, refer to the [AD-Service-Token](../../appendix/headers/rest-api-v2-appendix-headers-ad-service-token.md) documentation.
 
 1. **Find regular and single sign-on profiles:** The Adobe Pass server identifies both regular and single sign-on valid profiles based on the received parameters and headers.
 
@@ -57,10 +68,12 @@ Perform the given steps to implement the single logout flow for a specific MVPD 
 
 1. **Indicate the next action:** The Adobe Pass Logout endpoint response contains the necessary data to guide the streaming application regarding the next action.
 
-   Refer to the [Initiate logout for specific mvpd](../../apis/logout-apis/rest-api-v2-logout-apis-initiate-logout-for-specific-mvpd.md) API documentation for details on the information provided in a logout response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Initiate logout for specific mvpd](../../apis/logout-apis/rest-api-v2-logout-apis-initiate-logout-for-specific-mvpd.md) API documentation for details on the information provided in a logout response.
+   > 
+   > <br/>
+   > 
    > The Adobe Pass Logout endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.

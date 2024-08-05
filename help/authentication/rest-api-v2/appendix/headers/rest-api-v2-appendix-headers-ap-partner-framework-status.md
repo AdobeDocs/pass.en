@@ -5,6 +5,10 @@ description: REST API V2 - Header - AP-Partner-Framework-Status
 
 # Header - AP-Partner-Framework-Status {#header-ap-partner-framework-status}
 
+>[!NOTE]
+>
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
 ## Overview {#overview}
 
 The <b>AP-Partner-Framework-Status</b> request header contains status information obtained from a partner framework in order to achieve single sign-on (SSO).

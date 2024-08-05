@@ -5,6 +5,10 @@ description: REST API V2 - Header - AP-Device-Identifier
 
 # Header - AP-Device-Identifier {#header-ap-device-identifier}
 
+>[!NOTE]
+>
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
 ## Overview {#overview}
 
 The <b>AP-Device-Identifier</b> request header contains the streaming device identifier as it was created by the client application.

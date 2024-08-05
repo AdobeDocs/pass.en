@@ -5,9 +5,13 @@ description: REST API V2 - Retrieve profiles
 
 # Retrieve profiles {#retrieve-profiles}
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+>[!IMPORTANT]
+>
+> REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/throttling-mechanism.md) documentation.
 
 ## Request {#request}
 
@@ -81,7 +85,7 @@ description: REST API V2 - Retrieve profiles
       <td>
         The generation of the single sign-on payload for the Platform Identity method is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-adobe-subject-token.md">Adobe-Subject-Token</a> documentation.
         <br/><br/>
-        For more details about single sign-on enabled flows using a platform identity, refer to the <a href="../../flows/single-sign-on-flows/rest-api-v2-single-sign-on-platform-identity-flows.md">Single sign-on using platform identity flows</a> documentation.
+        For more details about single sign-on enabled flows using a platform identity, refer to the <a href="../../flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-platform-identity-flows.md">Single sign-on using platform identity flows</a> documentation.
       </td>
       <td>optional</td>
    </tr>
@@ -90,7 +94,7 @@ description: REST API V2 - Retrieve profiles
       <td>
         The generation of the single sign-on payload for the Service Token method is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-ad-service-token.md">AD-Service-Token</a> documentation.
         <br/><br/>
-        For more details about single sign-on enabled flows using a service token, refer to the <a href="../../flows/single-sign-on-flows/rest-api-v2-single-sign-on-service-token-flows.md">Single sign-on using service token flows</a> documentation.
+        For more details about single sign-on enabled flows using a service token, refer to the <a href="../../flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-service-token-flows.md">Single sign-on using service token flows</a> documentation.
       </td>
       <td>optional</td>
    </tr>
@@ -99,7 +103,7 @@ description: REST API V2 - Retrieve profiles
       <td>
         The generation of the single sign-on payload for the Partner method is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-ap-partner-framework-status.md">AP-Partner-Framework-Status</a> documentation.
         <br/><br/>
-        For more details about single sign-on enabled flows using a partner, refer to the  <a href="../../flows/single-sign-on-flows/rest-api-v2-single-sign-on-partner-flows.md">Single sign-on using partner flows</a> documentation.</td>
+        For more details about single sign-on enabled flows using a partner, refer to the  <a href="../../flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-partner-flows.md">Single sign-on using partner flows</a> documentation.</td>
       <td>optional</td>
    </tr>
    <tr>

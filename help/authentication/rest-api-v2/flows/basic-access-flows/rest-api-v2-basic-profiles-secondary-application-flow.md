@@ -5,6 +5,14 @@ description: REST API V2 - Basic Profiles - Secondary Application - Flow
 
 # Basic profiles flow performed within secondary application {#basic-profiles-flow-secondary-application}
 
+>[!IMPORTANT]
+>
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+>[!IMPORTANT]
+>
+> REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/throttling-mechanism.md) documentation.
+
 The **Profiles flow** within Adobe Pass Authentication entitlement allows the secondary application to access information on active user logins.
 
 Basic profiles flow allows you to query for the following scenarios:
@@ -23,25 +31,30 @@ Before retrieving the profile for a specific authentication code, ensure the fol
 
 Follow the given steps to implement the basic profile retrieval flow for a specific authentication code performed within a secondary application as shown in the following diagram.
 
-![Retrieve profile for specific code](../../../assets/rest-api-v2/flows/basic-flows/rest-api-v2-retrieve-profile-within-secondary-application-for-specific-code.png)
+![Retrieve profile for specific code](../../../assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-retrieve-profile-within-secondary-application-for-specific-code.png)
 
 *Retrieve profile for specific code*
 
 1. **Retrieve profile for specific code:** The secondary application gathers all the necessary data to retrieve profile information for that specific authentication code by sending a request to the Profiles endpoint.
 
-   Refer to the [Retrieve profile for specific code](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-code.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, and `code`
-   * All the _required_ headers, like `Authorization`
-   * All the _optional_ parameters and headers
+   >[!IMPORTANT]
+   >
+   > Refer to the [Retrieve profile for specific code](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-code.md) API documentation for details on:
+   >
+   > * All the _required_ parameters, like `serviceProvider`, and `code`
+   > * All the _required_ headers, like `Authorization`
+   > * All the _optional_ parameters and headers
 
 1. **Find regular profile:** The Adobe Pass server identifies a valid profile based on the received parameters and headers.
 
 1. **Return information about regular profile:** The Profiles endpoint response contains information about the found profile associated with the received parameters and headers.
 
-   Refer to the [Retrieve profile for specific code](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-code.md) API documentation for details on the information provided in a profile response.
-
-   >[!NOTE]
+   >[!IMPORTANT]
    >
+   > Refer to the [Retrieve profile for specific code](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-code.md) API documentation for details on the information provided in a profile response.
+   > 
+   > <br/>
+   > 
    > The Profiles endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.

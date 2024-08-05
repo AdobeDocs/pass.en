@@ -5,6 +5,10 @@ description: REST API V2 - Header - AP-TempPass-Identity
 
 # Header - AP-TempPass-Identity {#header-ap-temppass-identity}
 
+>[!NOTE]
+>
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
 ## Overview {#overview}
 
 The <b>AP-TempPass-Identity</b> request header contains the user identity information used to achieve promotional TempPass.

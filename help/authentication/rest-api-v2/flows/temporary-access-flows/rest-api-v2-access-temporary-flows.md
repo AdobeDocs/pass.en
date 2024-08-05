@@ -5,6 +5,14 @@ description: REST API V2 - Temporary Access Flows
 
 # Temporary access flows {#temporary-access-flows}
 
+>[!IMPORTANT]
+>
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+>[!IMPORTANT]
+>
+> REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/throttling-mechanism.md) documentation.
+ 
 TempPass allows Programmers to provide temporary access to their protected content without asking users to authenticate with a valid MVPD account.
 
 For more details about TempPass feature, refer to the [TempPass](../../../temp-pass.md) documentation.
@@ -40,25 +48,30 @@ Before retrieving authorization decisions using basic TempPass, ensure the follo
 
 Follow the given steps to implement the authorization flow using basic TempPass as shown in the following diagram.
 
-![Retrieve authorization decisions using basic TempPass](../../../assets/rest-api-v2/flows/access-temporary-flows/rest-api-v2-retrieve-authorization-decisions-using-basic-temppass-flow.png)
+![Retrieve authorization decisions using basic TempPass](../../../assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-authorization-decisions-using-basic-temppass-flow.png)
 
 *Retrieve authorization decisions using basic TempPass*
 
 1. **Retrieve authorization decision:** The streaming application gathers all the necessary data to obtain an authorization decision for a specific resource by calling the Decisions Authorize endpoint.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
-   * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
+   >[!IMPORTANT]
+   >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
+   > 
+   > * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
+   > * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
 
 1. **Validate basic TempPass:** The Adobe Pass server verifies if there is a valid configuration setup of basic TempPass applied to the integration between the provided `serviceProvider` and `mvpd`.
 
 1. **Return `Permit` decision with media token:** The Decisions Authorize endpoint response contains a `Permit` decision and a media token.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
+   >
+   > <br/>
+   > 
    > The Decisions Authorize endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
@@ -104,18 +117,21 @@ Before retrieving authorization decisions using promotional TempPass, ensure the
 
 Follow the given steps to implement the authorization flow using promotional TempPass as shown in the following diagram.
 
-![Retrieve authorization decisions using promotional TempPass](../../../assets/rest-api-v2/flows/access-temporary-flows/rest-api-v2-retrieve-authorization-decisions-using-promotional-temppass-flow.png)
+![Retrieve authorization decisions using promotional TempPass](../../../assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-authorization-decisions-using-promotional-temppass-flow.png)
 
 *Retrieve authorization decisions using promotional TempPass*
 
 1. **Retrieve authorization decision:** The streaming application gathers all the necessary data to obtain an authorization decision for a specific resource by calling the Decisions Authorize endpoint.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
-   * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
-
    >[!IMPORTANT]
+   >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
+   >
+   > * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
+   > * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
+   >
+   > <br/>
    >
    > The Decisions Authorize endpoint requires the presence of `AP-TempPass-Identity` header when using promotional TempPass. The header includes unique information about the identity of the user accessing the content.
    > 
@@ -127,10 +143,12 @@ Follow the given steps to implement the authorization flow using promotional Tem
 
 1. **Return `Permit` decision with media token:** The Decisions Authorize endpoint response contains a `Permit` decision and a media token.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
+   > 
+   > <br/>
+   > 
    > The Decisions Authorize endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
@@ -177,29 +195,34 @@ Before consuming a maximum number of resources using promotional TempPass, ensur
 
 Follow the given steps to implement the authorization flow when consuming a maximum number of resources using promotional TempPass as shown in the following diagram.
 
-![Consume maximum number of resources using promotional TempPass](../../../assets/rest-api-v2/flows/access-temporary-flows/rest-api-v2-consume-maximum-number-of-resources-using-promotional-temppass-flow.png)
+![Consume maximum number of resources using promotional TempPass](../../../assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-consume-maximum-number-of-resources-using-promotional-temppass-flow.png)
 
 *Consume maximum number of resources using promotional TempPass*
 
 1. **Retrieve profile for promotional TempPass:** The streaming application gathers all the necessary data to retrieve profile information for promotional TempPass by sending a request to the Profiles endpoint.
 
-   Refer to the [Retrieve profile for specific mvpd](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-mvpd.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, and `mvpd`
-   * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve profile for specific mvpd](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md) API documentation for details on:
+   >
+   > * All the _required_ parameters, like `serviceProvider`, and `mvpd`
+   > * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
+   >
+   > <br/>
+   > 
    > The Profiles endpoint query is optional and can be used to determine how many resources can still be played using the promotional TempPass.
 
 1. **Validate promotional TempPass:** The Adobe Pass server verifies if there is a valid configuration setup of promotional TempPass applied to the integration between the provided `serviceProvider` and `mvpd`.
 
 1. **Return information about temporary profile:** The Profiles endpoint response contains information about the temporary profile, including the attribute `type` set to "temporary".
 
-   Refer to the [Retrieve profile for specific mvpd](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-mvpd.md) API documentation for details on the information provided in a profile response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve profile for specific mvpd](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md) API documentation for details on the information provided in a profile response.
+   > 
+   > <br/>
+   > 
    > The Profiles endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
@@ -224,13 +247,16 @@ Follow the given steps to implement the authorization flow when consuming a maxi
 
 1. **Retrieve authorization decision:** The streaming application gathers all the necessary data to obtain an authorization decision for a specific resource by calling the Decisions Authorize endpoint.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
-   * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
-
    >[!IMPORTANT]
+   > 
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
    >
+   > * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
+   > * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
+   >
+   > <br/>
+   > 
    > The Decisions Authorize endpoint requires the presence of `AP-TempPass-Identity` header when using promotional TempPass. The header includes unique information about the identity of the user accessing the content.
    > 
    > <br/>
@@ -241,10 +267,12 @@ Follow the given steps to implement the authorization flow when consuming a maxi
 
 1. **Return `Permit` decision with media token:** The Decisions Authorize endpoint response contains a `Permit` decision and a media token.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
+   > 
+   > <br/>
+   > 
    > The Decisions Authorize endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
@@ -267,13 +295,16 @@ Follow the given steps to implement the authorization flow when consuming a maxi
 
 1. **Retrieve authorization decision:** The streaming application gathers all the necessary data to obtain an authorization decision for a specific resource by calling the Decisions Authorize endpoint.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
-   * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
+   >
+   > * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
+   > * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
+   >
+   > <br/>
+   > 
    > The Decisions Authorize endpoint requires the presence of `AP-TempPass-Identity` header when using promotional TempPass. The header includes unique information about the identity of the user accessing the content.
    >
    > <br/>
@@ -284,10 +315,12 @@ Follow the given steps to implement the authorization flow when consuming a maxi
 
 1. **Return `Deny` decision with details:** The Decisions Authorize endpoint response contains a `Deny` decision and an error payload which adheres to the [Enhanced Error Codes](../../../enhanced-error-codes.md) documentation.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
+   > 
+   > <br/>
+   > 
    > The Decisions Authorize endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
@@ -336,19 +369,22 @@ Before retrieving authorization decisions when basic or promotional TempPass exp
 
 Follow the given steps to implement the authorization flow when basic or promotional TempPass expires as shown in the following diagram.
 
-![Retrieve authorization decisions when basic or promotional TempPass expires](../../../assets/rest-api-v2/flows/access-temporary-flows/rest-api-v2-retrieve-authorization-decisions-when-basic-or-promotional-temppass-expires-flow.png)
+![Retrieve authorization decisions when basic or promotional TempPass expires](../../../assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-authorization-decisions-when-basic-or-promotional-temppass-expires-flow.png)
 
 *Retrieve authorization decisions when basic or promotional TempPass expires*
 
 1. **Retrieve authorization decision:** The streaming application gathers all the necessary data to obtain an authorization decision for a specific resource by calling the Decisions Authorize endpoint.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
-   * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
+   > 
+   > * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
+   > * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
+   >
+   > <br/>
+   > 
    > The Decisions Authorize endpoint requires the presence of `AP-TempPass-Identity` header when using promotional TempPass. The header includes unique information about the identity of the user accessing the content.
    > 
    > <br/>
@@ -359,10 +395,12 @@ Follow the given steps to implement the authorization flow when basic or promoti
 
 1. **Return `Deny` decision with details:** The Decisions Authorize endpoint response contains a `Deny` decision and an error payload which adheres to the [Enhanced Error Codes](../../../enhanced-error-codes.md) documentation.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
+   > 
+   > <br/>
+   > 
    > The Decisions Authorize endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
@@ -414,25 +452,30 @@ Before retrieving the profile for basic TempPass, ensure the following prerequis
 
 Follow the given steps to implement the profile retrieval flow for basic TempPass as shown in the following diagram.
 
-![Retrieve profile for basic TempPass](../../../assets/rest-api-v2/flows/access-temporary-flows/rest-api-v2-retrieve-profile-for-basic-temppass-flow.png)
+![Retrieve profile for basic TempPass](../../../assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-profile-for-basic-temppass-flow.png)
 
 *Retrieve profile for basic TempPass*
 
 1. **Retrieve profile for basic TempPass:** The streaming application gathers all the necessary data to retrieve profile information for basic TempPass by sending a request to the Profiles endpoint.
 
-   Refer to the [Retrieve profile for specific mvpd](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-mvpd.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, and `mvpd`
-   * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
+   >[!IMPORTANT]
+   >
+   > Refer to the [Retrieve profile for specific mvpd](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md) API documentation for details on:
+   > 
+   > * All the _required_ parameters, like `serviceProvider`, and `mvpd`
+   > * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
 
 1. **Validate basic TempPass:** The Adobe Pass server verifies if there is a valid configuration setup of basic TempPass applied to the integration between the provided `serviceProvider` and `mvpd`.
 
 1. **Return information about temporary profile:** The Profiles endpoint response contains information about the temporary profile, including the attribute `type` set to "temporary".
 
-   Refer to the [Retrieve profile for specific mvpd](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-mvpd.md) API documentation for details on the information provided in a profile response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve profile for specific mvpd](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md) API documentation for details on the information provided in a profile response.
+   > 
+   > <br/>
+   > 
    > The Profiles endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
@@ -480,25 +523,30 @@ Before retrieving the profile for promotional TempPass, ensure the following pre
 
 Follow the given steps to implement the profile retrieval flow for promotional TempPass as shown in the following diagram.
 
-![Retrieve profile for promotional TempPass](../../../assets/rest-api-v2/flows/access-temporary-flows/rest-api-v2-retrieve-profile-for-promotional-temppass-flow.png)
+![Retrieve profile for promotional TempPass](../../../assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-profile-for-promotional-temppass-flow.png)
 
 *Retrieve profile for promotional TempPass*
 
 1. **Retrieve profile for promotional TempPass:** The streaming application gathers all the necessary data to retrieve profile information for promotional TempPass by sending a request to the Profiles endpoint.
 
-   Refer to the [Retrieve profile for specific mvpd](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-mvpd.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, and `mvpd`
-   * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
+   >[!IMPORTANT]
+   >
+   > Refer to the [Retrieve profile for specific mvpd](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md) API documentation for details on:
+   > 
+   > * All the _required_ parameters, like `serviceProvider`, and `mvpd`
+   > * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
 
 1. **Validate promotional TempPass:** The Adobe Pass server verifies if there is a valid configuration setup of promotional TempPass applied to the integration between the provided `serviceProvider` and `mvpd`.
 
 1. **Return information about temporary profile:** The Profiles endpoint response contains information about the temporary profile, including the attribute `type` set to "temporary".
 
-   Refer to the [Retrieve profile for specific mvpd](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-mvpd.md) API documentation for details on the information provided in a profile response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve profile for specific mvpd](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md) API documentation for details on the information provided in a profile response.
+   > 
+   > <br/>
+   > 
    > The Profiles endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.

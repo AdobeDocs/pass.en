@@ -5,13 +5,17 @@ description: REST API V2 - Header - Adobe-Subject-Token
 
 # Header - Adobe-Subject-Token {#header-adobe-subject-token}
 
+>[!NOTE]
+>
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
 ## Overview {#overview}
 
 The <b>Adobe-Subject-Token</b> request header contains the unique platform identifier as `JWS` or `JWE` obtained from an identity service or library running outside of Adobe Pass Authentication systems.
 
 This header is designed for use in single sign-on (SSO) enabled flows leveraging the Platform Identity method.
 
-For more details about the single sign-on (SSO) enabled flows leveraging the Platform Identity method, refer to the [Single sign-on using platform identity flows](../../flows/single-sign-on-flows/rest-api-v2-single-sign-on-platform-identity-flows.md) documentation.
+For more details about the single sign-on (SSO) enabled flows leveraging the Platform Identity method, refer to the [Single sign-on using platform identity flows](../../flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-platform-identity-flows.md) documentation.
 
 ## Syntax {#syntax}
 

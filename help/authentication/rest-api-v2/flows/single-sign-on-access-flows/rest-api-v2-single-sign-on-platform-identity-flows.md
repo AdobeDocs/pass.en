@@ -5,6 +5,14 @@ description: REST API V2 - Single Sign-On - Platform Identity - Flows
 
 # Single sign-on using platform identity flows {#single-sign-on-platform-identity-full-flows}
 
+>[!IMPORTANT]
+>
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+>[!IMPORTANT]
+>
+> REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/throttling-mechanism.md) documentation.
+
 The Platform Identity method enables multiple applications to use a unique platform identifier to achieve single sign-on (SSO) at the device or platform level when using Adobe Pass services.
 
 The applications are responsible for retrieving the unique platform identifier payload using device specific identity services or libraries outside of Adobe Pass systems. 
@@ -39,7 +47,7 @@ Before performing the authentication flow through single sign-on using a platfor
 
 Perform the given steps to implement the authentication flow through single sign-on using a platform identity as shown in the following diagram.
 
-![Perform authentication through single sign-on using platform identity](../../../assets/rest-api-v2/flows/single-sign-on-flows/rest-api-v2-perform-authentication-through-single-sign-on-using-platform-identity-flow.png)
+![Perform authentication through single sign-on using platform identity](../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-perform-authentication-through-single-sign-on-using-platform-identity-flow.png)
 
 *Perform authentication through single sign-on using platform identity*
 
@@ -51,13 +59,16 @@ Perform the given steps to implement the authentication flow through single sign
 
 1. **Create authentication session:** The first streaming application gathers all the necessary data to initiate an authentication session by calling the Sessions endpoint.
 
-   Refer to the [Create authentication session](../../apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, `mvpd`, `domainName`, and `redirectUrl`
-   * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
-
    >[!IMPORTANT]
    >
+   > Refer to the [Create authentication session](../../apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md) API documentation for details on:
+   > 
+   > * All the _required_ parameters, like `serviceProvider`, `mvpd`, `domainName`, and `redirectUrl`
+   > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
+   >
+   > <br/>
+   > 
    > The streaming application must ensure it includes a valid value for the unique platform identifier before making a request.
    >
    > <br/>
@@ -66,10 +77,12 @@ Perform the given steps to implement the authentication flow through single sign
 
 1. **Indicate the next action:** The Sessions endpoint response contains the necessary data to guide the first streaming application regarding the next action.
 
-   Refer to the [Create authentication session](../../apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md) API documentation for details on the information provided in a session response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Create authentication session](../../apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md) API documentation for details on the information provided in a session response.
+   > 
+   > <br/>
+   > 
    > The Sessions endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
@@ -90,10 +103,13 @@ Perform the given steps to implement the authentication flow through single sign
 
 1. **Retrieve profile for specific code:** The first streaming application gathers all the necessary data to retrieve profile information by sending a request to the Profiles endpoint.
 
-   Refer to the [Retrieve profile for specific code](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-code.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, `code`
-   * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
+   >[!IMPORTANT]
+   >
+   > Refer to the [Retrieve profile for specific code](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-code.md) API documentation for details on:
+   > 
+   > * All the _required_ parameters, like `serviceProvider`, `code`
+   > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
 
    >[!NOTE]
    >
@@ -103,10 +119,12 @@ Perform the given steps to implement the authentication flow through single sign
 
 1. **Return information about regular profile:** The Profiles endpoint response contains information about the found profile associated with the received parameters and headers.
 
-   Refer to the [Retrieve profile for specific code](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-code.md) API documentation for details on the information provided in a profile response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve profile for specific code](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-code.md) API documentation for details on the information provided in a profile response.
+   > 
+   > <br/>
+   > 
    > The Profiles endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
@@ -133,13 +151,16 @@ Perform the given steps to implement the authentication flow through single sign
 
 1. **Retrieve profiles:** The second streaming application gathers all the necessary data to retrieve all profiles information by sending a request to the Profiles endpoint.
 
-   Refer to the [Retrieve profiles](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`
-   * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve profiles](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md) API documentation for details on:
+   > 
+   > * All the _required_ parameters, like `serviceProvider`
+   > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
+   >
+   > <br/>
+   > 
    > The streaming application must ensure it includes a valid value for the unique platform identifier before making a request.
    >
    > <br/>
@@ -150,10 +171,12 @@ Perform the given steps to implement the authentication flow through single sign
 
 1. **Return information about single sign-on profile:** The Profiles endpoint response contains information about the found profile associated with the received parameters and headers.
 
-   Refer to the [Retrieve profiles](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md) API documentation for details on the information provided in a profile response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve profiles](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md) API documentation for details on the information provided in a profile response.
+   >
+   > <br/>
+   > 
    > The Profiles endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
@@ -194,7 +217,7 @@ Before performing the authorization flow through single sign-on using a platform
 
 Perform the given steps to implement the authorization flow through single sign-on using a platform identity as shown in the following diagram.
 
-![Retrieve authorization decisions through single sign-on using platform identity](../../../assets/rest-api-v2/flows/single-sign-on-flows/rest-api-v2-retrieve-authorization-decisions-through-single-sign-on-using-platform-identity-flow.png)
+![Retrieve authorization decisions through single sign-on using platform identity](../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-authorization-decisions-through-single-sign-on-using-platform-identity-flow.png)
 
 *Retrieve authorization decisions through single sign-on using platform identity*
 
@@ -206,13 +229,16 @@ Perform the given steps to implement the authorization flow through single sign-
 
 1. **Retrieve authorization decision:** The second streaming application gathers all the necessary data to obtain an authorization decision for a specific resource by calling the Decisions Authorize endpoint.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
-   * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
+   >
+   > * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
+   > * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
+   >
+   > <br/>
+   > 
    > The streaming application must ensure it includes a valid value for the unique platform identifier before making a request.
    >
    > <br/>
@@ -225,10 +251,12 @@ Perform the given steps to implement the authorization flow through single sign-
 
 1. **Return `Permit` decision with media token:** The Decisions Authorize endpoint response contains a `Permit` decision and a media token.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
+   > 
+   > <br/>
+   > 
    > The Decisions Authorize endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
@@ -242,10 +270,12 @@ Perform the given steps to implement the authorization flow through single sign-
 
 1. **Return `Deny` decision with details:** The Decisions Authorize endpoint response contains a `Deny` decision and an error payload which adheres to the [Enhanced Error Codes](../../../enhanced-error-codes.md) documentation.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
+   > 
+   > <br/>
+   > 
    > The Decisions Authorize endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.

@@ -5,6 +5,14 @@ description: REST API V2 - Basic Authentication - Primary Application - Flow
 
 # Basic authentication flow performed within primary application {#basic-authentication-flow-performed-within-primary-application}
 
+>[!IMPORTANT]
+>
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+>[!IMPORTANT]
+>
+> REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/throttling-mechanism.md) documentation.
+
 The **Authentication flow** within Adobe Pass Authentication entitlement allows the streaming application to verify that a user has a valid MVPD account. This process requires the user to have an active MVPD account and enter valid login credentials on the MVPD login page.
 
 Authentication flow is required in the following cases:
@@ -20,9 +28,9 @@ The **Authentication flow** requires a user agent (browser) to complete a series
 
 Based on the primary application (streaming application) capabilities to support user interaction to select an MVPD and to authenticate with the selected MVPD in a user agent, the authentication scenarios are:
 
-* [Perform authentication within primary application](../basic-flows/rest-api-v2-basic-authentication-primary-application-flow.md)
-* [Perform authentication within secondary application with preselected mvpd](../basic-flows/rest-api-v2-basic-authentication-secondary-application-flow.md)
-* [Perform authentication within secondary application without preselected mvpd](../basic-flows/rest-api-v2-basic-authentication-secondary-application-flow.md)
+* [Perform authentication within primary application](./rest-api-v2-basic-authentication-primary-application-flow.md)
+* [Perform authentication within secondary application with preselected mvpd](./rest-api-v2-basic-authentication-secondary-application-flow.md)
+* [Perform authentication within secondary application without preselected mvpd](./rest-api-v2-basic-authentication-secondary-application-flow.md)
 
 ## Perform authentication within primary application {#perform-authentication-within-primary-application}
 
@@ -47,33 +55,36 @@ Before performing authentication through user interaction within a primary appli
 
 Follow the given steps to implement the basic authentication flow performed within a primary application as shown in the following diagram.
 
-![Perform authentication within primary application](../../../assets/rest-api-v2/flows/basic-flows/rest-api-v2-perform-authentication-within-primary-application.png)
+![Perform authentication within primary application](../../../assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-perform-authentication-within-primary-application.png)
 
 *Perform authentication within primary application*
 
 1. **Create authentication session:** The streaming application gathers all the necessary data to initiate an authentication session by calling the Sessions endpoint.
 
-   Refer to the [Create authentication session](../../apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, `mvpd`, `domainName`, and `redirectUrl`
-   * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
-
    >[!IMPORTANT]
+   >
+   > Refer to the [Create authentication session](../../apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md) API documentation for details on:
+   > 
+   > * All the _required_ parameters, like `serviceProvider`, `mvpd`, `domainName`, and `redirectUrl`
+   > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
+   > 
+   > <br/>
    > 
    > The streaming application must provide all the required parameters in a single call when creating the authentication session.
 
 1. **Indicate the next action:** The Sessions endpoint response contains the necessary data to guide the streaming application regarding the next action.
 
-   Refer to the [Create authentication session](../../apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md) API documentation for details on the information provided in a session response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Create authentication session](../../apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md) API documentation for details on the information provided in a session response.
+   > 
+   > <br/>
+   > 
    > The Sessions endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
    > * The integration between the provided `serviceProvider` and `mvpd` must be active.
-   >
-   > <br/>
    > 
    > If validation fails, an error response will be generated, providing additional information that adheres to the [Enhanced Error Codes](../../../enhanced-error-codes.md) documentation.
 
@@ -94,10 +105,13 @@ Follow the given steps to implement the basic authentication flow performed with
 
 1. **Retrieve profile for specific code:** The streaming application gathers all the necessary data to retrieve profile information by sending a request to the Profiles endpoint.
 
-   Refer to the [Retrieve profile for specific code](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-code.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, `code`
-   * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
+   >[!IMPORTANT]
+   >
+   > Refer to the [Retrieve profile for specific code](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-code.md) API documentation for details on:
+   >
+   > * All the _required_ parameters, like `serviceProvider`, `code`
+   > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
 
    >[!NOTE]
    >
@@ -105,10 +119,12 @@ Follow the given steps to implement the basic authentication flow performed with
 
 1. **Return information about regular profile:** The Profiles endpoint response contains information about the regular profile associated with the received parameters and headers.
 
-   Refer to the [Retrieve profile for specific code](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles-for-specific-code.md) API documentation for details on the information provided in a profile response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve profile for specific code](../../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-code.md) API documentation for details on the information provided in a profile response.
+   > 
+   > <br/>
+   > 
    > The Profiles endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.

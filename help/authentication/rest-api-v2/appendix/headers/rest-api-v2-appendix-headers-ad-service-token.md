@@ -5,13 +5,17 @@ description: REST API V2 - Header - AD-Service-Token
 
 # Header - AD-Service-Token {#header-ad-service-token}
 
+>[!NOTE]
+>
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
 ## Overview {#overview}
 
 The <b>AD-Service-Token</b> request header contains the unique user identifier as `JWS` obtained from an identity service running outside of Adobe Pass Authentication systems.
 
 This header is designed for use in single sign-on (SSO) enabled flows leveraging the Service Token method.
 
-For more details about the single sign-on (SSO) enabled flows leveraging the Service Token method, refer to the [Single sign-on using service token flows](../../flows/single-sign-on-flows/rest-api-v2-single-sign-on-service-token-flows.md) documentation.
+For more details about the single sign-on (SSO) enabled flows leveraging the Service Token method, refer to the [Single sign-on using service token flows](../../flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-service-token-flows.md) documentation.
 
 ## Syntax {#syntax}
 

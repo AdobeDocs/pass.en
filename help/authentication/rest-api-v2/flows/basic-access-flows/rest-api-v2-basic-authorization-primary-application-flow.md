@@ -5,6 +5,14 @@ description: REST API V2 - Basic Authorization - Primary Application - Flow
 
 # Basic authorization flow performed within primary application {#basic-authorization-flow-performed-within-primary-application}
 
+>[!IMPORTANT]
+>
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+>[!IMPORTANT]
+>
+> REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/throttling-mechanism.md) documentation.
+
 The **Authorization flow** within Adobe Pass Authentication entitlement allows the streaming application to determine whether an MVPD permits or denies the user's request to stream content. If the decision is `Permit`, the response includes a media token. Adobe Pass server signs the media token and allows the streaming application to use the media token verifier library to check its authenticity before the stream is released.
 
 The verification with the media token verifier library should occur on the streaming application backend service linked in the chain of permissions for releasing a stream from the CDN.
@@ -16,25 +24,28 @@ The verification with the media token verifier library should occur on the strea
 Before retrieving authorization decisions using a specific MVPD, ensure the following prerequisites are met:
 
 * The streaming application must have a valid regular profile that has been successfully created for the MVPD using one of the basic authentication flows:
-  * [Perform authentication within primary application](../basic-flows/rest-api-v2-basic-authentication-primary-application-flow.md)
-  * [Perform authentication within secondary application with preselected mvpd](../basic-flows/rest-api-v2-basic-authentication-secondary-application-flow.md)
-  * [Perform authentication within secondary application without preselected mvpd](../basic-flows/rest-api-v2-basic-authentication-secondary-application-flow.md)
+  * [Perform authentication within primary application](./rest-api-v2-basic-authentication-primary-application-flow.md)
+  * [Perform authentication within secondary application with preselected mvpd](./rest-api-v2-basic-authentication-secondary-application-flow.md)
+  * [Perform authentication within secondary application without preselected mvpd](./rest-api-v2-basic-authentication-secondary-application-flow.md)
 * The streaming application must retrieve an authorization decision before playing a user selected resource.
 
 ### Workflow {#workflow-retrieve-authorization-decisions-using-specific-mvpd}
 
 Follow the given steps to implement the basic authorization flow using a specific MVPD performed within a primary application as shown in the following diagram.
 
-![Retrieve authorization decisions using specific mvpd](../../../assets/rest-api-v2/flows/basic-flows/rest-api-v2-retrieve-authorization-decisions-within-primary-application-using-specific-mvpd.png)
+![Retrieve authorization decisions using specific mvpd](../../../assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-retrieve-authorization-decisions-within-primary-application-using-specific-mvpd.png)
 
 *Retrieve authorization decisions using specific mvpd*
 
 1. **Retrieve authorization decision:** The streaming application gathers all the necessary data to obtain an authorization decision for a specific resource by calling the Decisions Authorize endpoint.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
-   * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
-   * All the _optional_ parameters and headers
+   >[!IMPORTANT]
+   >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on:
+   >
+   > * All the _required_ parameters, like `serviceProvider`, `mvpd`, and `resources`
+   > * All the _required_ headers, like `Authorization` and `AP-Device-Identifier`
+   > * All the _optional_ parameters and headers
 
 1. **Find regular profile:** The Adobe Pass server identifies a valid profile based on the received parameters and headers.
 
@@ -42,10 +53,12 @@ Follow the given steps to implement the basic authorization flow using a specifi
 
 1. **Return `Permit` decision with media token:** The Decisions Authorize endpoint response contains a `Permit` decision and a media token.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
+   > 
+   > <br/>
+   > 
    > The Decisions Authorize endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
@@ -59,10 +72,12 @@ Follow the given steps to implement the basic authorization flow using a specifi
 
 1. **Return `Deny` decision with details:** The Decisions Authorize endpoint response contains a `Deny` decision and an error payload which adheres to the [Enhanced Error Codes](../../../enhanced-error-codes.md) documentation.
 
-   Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve authorization decisions using specific mvpd](../../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md) API documentation for details on the information provided in a decision response.
+   > 
+   > <br/>
+   > 
    > The Decisions Authorize endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.

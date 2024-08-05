@@ -5,6 +5,14 @@ description: REST API V2 - Single Sign-On - Partner - Flows
 
 # Single sign-on using partner flows {#single-sign-on-partner-flows}
 
+>[!IMPORTANT]
+>
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+>[!IMPORTANT]
+>
+> REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/throttling-mechanism.md) documentation.
+
 ## Retrieve partner authentication request {#retrieve-partner-authentication-request}
 
 ### Prerequisites {#prerequisites-retrieve-partner-authentication-request}
@@ -29,7 +37,7 @@ Before retrieving the partner authentication request, ensure the following prere
 
 Perform the given steps to retrieve the partner authentication request as shown in the following diagram.
 
-![Retrieve partner authentication request](../../../assets/rest-api-v2/flows/single-sign-on-flows/rest-api-v2-retrieve-partner-authentication-request-flow.png)
+![Retrieve partner authentication request](../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-partner-authentication-request-flow.png)
 
 *Retrieve partner authentication request*
 
@@ -42,12 +50,15 @@ Perform the given steps to retrieve the partner authentication request as shown 
 
 1. **Retrieve partner authentication request:** The streaming application gathers all the necessary data to initiate an authentication session by calling the Sessions Partner endpoint.
 
-   Refer to the [Retrieve partner authentication request](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-partner-authentication-request.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider` and `partner`
-   * All the _required_ headers like `Authorization`, `AP-Device-Identifier`, and `AP-Partner-Framework-Status`
-   * All the _optional_ headers and parameters
-
    >[!IMPORTANT]
+   >
+   > Refer to the [Retrieve partner authentication request](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-partner-authentication-request.md) API documentation for details on:
+   >
+   > * All the _required_ parameters, like `serviceProvider` and `partner`
+   > * All the _required_ headers like `Authorization`, `AP-Device-Identifier`, and `AP-Partner-Framework-Status`
+   > * All the _optional_ headers and parameters
+   >
+   > <br/>
    >
    > The streaming application must ensure it includes a valid value for the partner framework status before making a request.
    >
@@ -57,10 +68,12 @@ Perform the given steps to retrieve the partner authentication request as shown 
 
 1. **Indicate the next action:** The Sessions Partner endpoint response contains the necessary data to guide the streaming application regarding the next action.
 
-   Refer to the [Retrieve partner authentication request](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-partner-authentication-request.md) API documentation for details on the information provided in a session response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve partner authentication request](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-partner-authentication-request.md) API documentation for details on the information provided in a session response.
+   > 
+   > <br/>
+   > 
    > The Sessions Partner endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
@@ -99,9 +112,9 @@ Perform the given steps to retrieve the partner authentication request as shown 
    If the Adobe Pass backend does not identify a valid profile and the partner single sign-on validation fails, the Adobe Pass server falls back to the basic authentication flow.
 
    For more details about the basic authentication flow, refer to the following documents:
-   * [Perform authentication within primary application](../basic-flows/rest-api-v2-basic-authentication-primary-application-flow.md)
-   * [Perform authentication within secondary application with preselected mvpd](../basic-flows/rest-api-v2-basic-authentication-secondary-application-flow.md)
-   * [Perform authentication within secondary application without preselected mvpd](../basic-flows/rest-api-v2-basic-authentication-secondary-application-flow.md)
+   * [Perform authentication within primary application](../basic-access-flows/rest-api-v2-basic-authentication-primary-application-flow.md)
+   * [Perform authentication within secondary application with preselected mvpd](../basic-access-flows/rest-api-v2-basic-authentication-secondary-application-flow.md)
+   * [Perform authentication within secondary application without preselected mvpd](../basic-access-flows/rest-api-v2-basic-authentication-secondary-application-flow.md)
 
 1. **Proceed with decisions flows:** The Sessions Partner endpoint response contains the following data:
    * The `actionName` attribute is set to "authorize".
@@ -138,7 +151,7 @@ Before retrieving the profile using a partner authentication response, ensure th
 
 Perform the given steps to implement the profile retrieval flow using a partner authentication response as shown in the following diagram.
 
-![Retrieve profile using partner authentication response](../../../assets/rest-api-v2/flows/single-sign-on-flows/rest-api-v2-retrieve-profile-using-partner-authentication-response-flow.png)
+![Retrieve profile using partner authentication response](../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-profile-using-partner-authentication-response-flow.png)
 
 *Retrieve authenticated profile using partner authentication response*
 
@@ -151,13 +164,16 @@ Perform the given steps to implement the profile retrieval flow using a partner 
 
 1. **Retrieve profile using partner authentication response:** The streaming application gathers all the necessary data to create and retrieve a profile by calling the Profiles Partner endpoint.
 
-   Refer to the [Retrieve profile using partner authentication response](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md) API documentation for details on:
-   * All the _required_ parameters, like `serviceProvider`, `partner`, and `SAMLResponse`
-   * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`, and `AP-Partner-Framework-Status`
-   * All the _optional_ headers and parameters
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve profile using partner authentication response](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md) API documentation for details on:
+   >
+   > * All the _required_ parameters, like `serviceProvider`, `partner`, and `SAMLResponse`
+   > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`, and `AP-Partner-Framework-Status`
+   > * All the _optional_ headers and parameters
+   >
+   > <br/>
+   > 
    > The streaming application must ensure it includes a valid value for the partner framework status before making a request.
    >
    > <br/>
@@ -168,10 +184,12 @@ Perform the given steps to implement the profile retrieval flow using a partner 
 
 1. **Return information about partner profile:** The Profiles endpoint response contains information about the partner profile, including the attribute `type` set to "appleSSO".
 
-   Refer to the [Retrieve profile using partner authentication response](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md) API documentation for details on the information provided in a profile response.
-
    >[!IMPORTANT]
    >
+   > Refer to the [Retrieve profile using partner authentication response](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md) API documentation for details on the information provided in a profile response.
+   > 
+   > <br/>
+   > 
    > The Profiles Partner endpoint validates the request data to ensure that basic conditions are met:
    >
    > * The _required_ parameters and headers must be valid.
