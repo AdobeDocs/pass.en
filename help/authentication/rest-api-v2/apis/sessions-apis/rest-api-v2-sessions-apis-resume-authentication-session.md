@@ -5,7 +5,7 @@ description: REST API V2 - Resume authentication session
 
 # Resume authentication session {#resume-authentication-session}
 
->[!NOTE]
+>[!IMPORTANT]
 >
 > The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
@@ -15,11 +15,11 @@ description: REST API V2 - Resume authentication session
 
 ## Request {#request}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">HTTP</th>
+      <th style="background-color: #EFF2F7;">HTTP</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">path</td>
@@ -32,9 +32,9 @@ description: REST API V2 - Resume authentication session
       <td></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Path Parameters</th>
+      <th style="background-color: #EFF2F7;">Path Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">serviceProvider</td>
@@ -47,9 +47,9 @@ description: REST API V2 - Resume authentication session
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body Parameters</th>
+      <th style="background-color: #EFF2F7;">Body Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">mvpd</td>
@@ -81,9 +81,9 @@ description: REST API V2 - Resume authentication session
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Authorization</td>
@@ -128,10 +128,10 @@ description: REST API V2 - Resume authentication session
 
 ## Response {#response}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 10%;">Code</th>
-      <th style="background-color: #EFF2F7; width: 20%;">Text</th>
+      <th style="background-color: #EFF2F7;">Code</th>
+      <th style="background-color: #EFF2F7;">Text</th>
       <th style="background-color: #EFF2F7;">Description</th>
    </tr>
    <tr>
@@ -173,11 +173,11 @@ description: REST API V2 - Resume authentication session
 
 ### Success {#success}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -185,19 +185,19 @@ description: REST API V2 - Resume authentication session
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;"></td>
       <td>
          JSON object having the following attributes:
-         <table>
+         <table style="table-layout:auto">
             <tr>
-               <th style="background-color: #EFF2F7; width: 20%;">Attribute</th>
+               <th style="background-color: #EFF2F7;">Attribute</th>
                <th style="background-color: #EFF2F7"></th>
-               <th style="background-color: #EFF2F7; width: 15%;"></th>
+               <th style="background-color: #EFF2F7;"></th>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">actionName</td>
@@ -205,24 +205,11 @@ description: REST API V2 - Resume authentication session
                   The action that the streaming device needs to perform in order to complete the authentication flow.
                   <br/><br/>
                   The possible values are:
-                  <table>
-                     <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Value</th>
-                        <th style="background-color: #EFF2F7;"></th>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">authenticate</td>
-                        <td>The streaming device or another device needs to open the provided URL in a user agent.</td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">retry</td>
-                        <td>The streaming device or another device needs to provide the missing parameters and retry resuming the authentication session using the code.</td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">authorize</td>
-                        <td>The streaming device can directly proceed with decisions flows.</td>
-                     </tr>
-                  </table>
+                  <ul>
+                    <li><b>authenticate</b><br/>The streaming device or another device needs to open the provided URL in a user agent.</li>
+                    <li><b>retry</b><br/>The streaming device or another device needs to provide the missing parameters and retry resuming the authentication session using the code.</li>
+                    <li><b>authorize</b><br/>The streaming device can directly proceed with decisions flows.</li>
+                  </ul> 
                <td><i>required</i></td>
             </tr>
             <tr>
@@ -231,20 +218,10 @@ description: REST API V2 - Resume authentication session
                   The type of interaction the streaming device must perform in order to continue the flow with the action specified by the 'actionName' attribute.
                   <br/><br/>
                   The possible values are:
-                  <table>
-                     <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Value</th>
-                        <th style="background-color: #EFF2F7;"></th>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">direct</td>
-                        <td>The flow continues with a direct call to the provided URL using an HTTP client available for the client implementation.</td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">interactive</td>
-                        <td>The flow continues with a navigation to the provided URL using a user agent.</td>
-                     </tr>
-                  </table>
+                  <ul>
+                    <li><b>interactive</b><br/>The flow continues with a navigation to the provided URL using a user agent.</li>
+                    <li><b>direct</b><br/>The flow continues with a direct call to the provided URL using an HTTP client available for the client implementation.</li>
+                  </ul>
                <td><i>required</i></td>
             </tr>
             <tr>
@@ -284,11 +261,11 @@ description: REST API V2 - Resume authentication session
 
 ### Error {#error}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -301,9 +278,9 @@ description: REST API V2 - Resume authentication session
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">error</td>

@@ -15,11 +15,11 @@ description: REST API V2 - Retrieve partner authentication request
 
 ## Request {#request}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">HTTP</th>
+      <th style="background-color: #EFF2F7;">HTTP</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">path</td>
@@ -32,9 +32,9 @@ description: REST API V2 - Retrieve partner authentication request
       <td></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Path Parameters</th>
+      <th style="background-color: #EFF2F7;">Path Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">serviceProvider</td>
@@ -47,9 +47,9 @@ description: REST API V2 - Retrieve partner authentication request
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body Parameters</th>
+      <th style="background-color: #EFF2F7;">Body Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">domainName</td>
@@ -76,9 +76,9 @@ description: REST API V2 - Retrieve partner authentication request
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Authorization</td>
@@ -149,10 +149,10 @@ description: REST API V2 - Retrieve partner authentication request
 
 ## Response {#response}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 10%;">Code</th>
-      <th style="background-color: #EFF2F7; width: 20%;">Text</th>
+      <th style="background-color: #EFF2F7;">Code</th>
+      <th style="background-color: #EFF2F7;">Text</th>
       <th style="background-color: #EFF2F7;">Description</th>
    </tr>
    <tr>
@@ -194,11 +194,11 @@ description: REST API V2 - Retrieve partner authentication request
 
 ### Success {#success}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -211,19 +211,19 @@ description: REST API V2 - Retrieve partner authentication request
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;"></td>
       <td>
          JSON object having the following attributes:
-         <table>
+         <table style="table-layout:auto">
             <tr>
-               <th style="background-color: #EFF2F7; width: 20%;">Attribute</th>
+               <th style="background-color: #EFF2F7;">Attribute</th>
                <th style="background-color: #EFF2F7"></th>
-               <th style="background-color: #EFF2F7; width: 15%;"></th>
+               <th style="background-color: #EFF2F7;"></th>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">actionName</td>
@@ -231,36 +231,12 @@ description: REST API V2 - Retrieve partner authentication request
                   The action the streaming device needs to perform in order to complete the authentication flow.
                   <br/><br/>
                   The possible values are:
-                  <table>
-                     <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Value</th>
-                        <th style="background-color: #EFF2F7;"></th>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">partner_profile</td>
-                        <td>The streaming device can use the provided partner authentication request to obtain a partner authentication response that can be leveraged to retrieve a profile.</td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">authenticate</td>
-                        <td>
-                            When the partner single sign-on flow cannot proceed, the streaming device can fall back to the basic authentication flow.
-                            <br/><br/>
-                            The streaming device or another device needs to open the provided URL in a user agent.
-                        </td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">resume</td>
-                        <td>
-                            When the partner single sign-on flow cannot proceed, the streaming device can fall back to the basic authentication flow.
-                            <br/><br/>
-                            The streaming device or another device needs to provide the missing parameters and resume the authentication session using the code.
-                        </td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">authorize</td>
-                        <td>The streaming device can directly proceed with decisions flows.</td>
-                     </tr>
-                  </table>
+                  <ul>
+                    <li><b>partner_profile</b><br/>The streaming device can use the provided partner authentication request to obtain a partner authentication response that can be leveraged to retrieve a profile.</li>
+                    <li><b>authenticate</b><br/>When the partner single sign-on flow cannot proceed, the streaming device can fall back to the basic authentication flow.<br/>The streaming device or another device needs to open the provided URL in a user agent.</li>
+                    <li><b>resume</b><br/>When the partner single sign-on flow cannot proceed, the streaming device can fall back to the basic authentication flow.<br/>The streaming device or another device needs to provide the missing parameters and resume the authentication session using the code.</li>
+                    <li><b>authorize</b><br/>The streaming device can directly proceed with decisions flows.</li>
+                  </ul>
                <td><i>required</i></td>
             </tr>
             <tr>
@@ -269,20 +245,10 @@ description: REST API V2 - Retrieve partner authentication request
                   The type of interaction the streaming device must perform in order to continue the flow with the action specified by the 'actionName' attribute.
                   <br/><br/>
                   The possible values are:
-                  <table>
-                     <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Value</th>
-                        <th style="background-color: #EFF2F7;"></th>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">direct</td>
-                        <td>The flow continues with a direct call to the provided URL using an HTTP client available for the client implementation.</td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">interactive</td>
-                        <td>The flow continues with a navigation to the provided URL using a user agent.</td>
-                     </tr>
-                  </table>
+                  <ul>
+                    <li><b>interactive</b><br/>The flow continues with a navigation to the provided URL using a user agent.</li>
+                    <li><b>direct</b><br/>The flow continues with a direct call to the provided URL using an HTTP client available for the client implementation.</li>
+                  </ul>
                <td><i>required</i></td>
             </tr>
             <tr>
@@ -316,38 +282,11 @@ description: REST API V2 - Retrieve partner authentication request
                     This field is present when the partner single sign-on flow can proceed.
                     <br/><br/>
                     JSON object having the following attributes:
-                    <table>
-                        <tr>
-                            <th style="background-color: #EFF2F7; width: 30%;">Attribute</th>
-                            <th style="background-color: #EFF2F7;"></th>
-                        </tr>
-                        <tr>
-                            <td style="background-color: #DEEBFF;">type</td>
-                            <td>
-                                Indicates the type of protocol supported by the MVPD.
-                                <br/><br/>
-                                The possible values are:
-                                <table>
-                                    <tr>
-                                        <th style="background-color: #EFF2F7; width: 30%;">Value</th>
-                                        <th style="background-color: #EFF2F7;"></th>
-                                    </tr>
-                                    <tr>
-                                        <td style="background-color: #DEEBFF;">saml</td>
-                                        <td>The MVPD supports SAML protocol.</td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="background-color: #DEEBFF;">request</td>
-                            <td>The SAML request.</td>
-                        </tr>
-                        <tr>
-                            <td style="background-color: #DEEBFF;">attributes</td>
-                            <td>The SAML request attributes.</td>
-                        </tr>
-                    </table>
+                    <ul>
+                        <li><b>type</b><br/>Indicates the type of protocol supported by the MVPD (SAML only).</li>
+                        <li><b>request</b><br/>The SAML request.</li>
+                        <li><b>attributes</b><br/>The SAML request attributes.</li>
+                    </ul>
                </td>
                <td>optional</td>
             </tr>
@@ -372,11 +311,11 @@ description: REST API V2 - Retrieve partner authentication request
 
 ### Error {#error}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -389,9 +328,9 @@ description: REST API V2 - Retrieve partner authentication request
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">error</td>

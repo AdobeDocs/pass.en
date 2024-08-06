@@ -86,6 +86,8 @@ Follow the given steps to implement the basic authentication flow performed with
    > * The _required_ parameters and headers must be valid.
    > * The integration between the provided `serviceProvider` and `mvpd` must be active.
    > 
+   > <br/>
+   > 
    > If validation fails, an error response will be generated, providing additional information that adheres to the [Enhanced Error Codes](../../../enhanced-error-codes.md) documentation.
 
 1. **Proceed with decisions flows:** The Sessions endpoint response contains the following data:

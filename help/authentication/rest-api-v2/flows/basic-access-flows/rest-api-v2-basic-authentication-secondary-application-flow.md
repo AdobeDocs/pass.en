@@ -1,6 +1,6 @@
 ---
 title: Basic Authentication - Secondary Application - Flow
-description: Basic Authentication - REST API V2 - Secondary Application - Flow
+description: REST API V2 - Basic Authentication - Secondary Application - Flow
 ---
 
 # Basic authentication flow performed within secondary application {#basic-authentication-flow-performed-within-secondary-application}

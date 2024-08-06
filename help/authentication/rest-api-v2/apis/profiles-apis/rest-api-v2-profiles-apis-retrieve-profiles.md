@@ -15,11 +15,11 @@ description: REST API V2 - Retrieve profiles
 
 ## Request {#request}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">HTTP</th>
+      <th style="background-color: #EFF2F7;">HTTP</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">path</td>
@@ -32,9 +32,9 @@ description: REST API V2 - Retrieve profiles
       <td></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Path Parameters</th>
+      <th style="background-color: #EFF2F7;">Path Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">serviceProvider</td>
@@ -42,9 +42,9 @@ description: REST API V2 - Retrieve profiles
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Authorization</td>
@@ -124,10 +124,10 @@ description: REST API V2 - Retrieve profiles
 
 ## Response {#response}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 10%;">Code</th>
-      <th style="background-color: #EFF2F7; width: 20%;">Text</th>
+      <th style="background-color: #EFF2F7;">Code</th>
+      <th style="background-color: #EFF2F7;">Text</th>
       <th style="background-color: #EFF2F7;">Description</th>
    </tr>
    <tr>
@@ -169,11 +169,11 @@ description: REST API V2 - Retrieve profiles
 
 ### Success {#success}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -186,9 +186,9 @@ description: REST API V2 - Retrieve profiles
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">profiles</td>
@@ -196,11 +196,11 @@ description: REST API V2 - Retrieve profiles
         JSON containing a map of key, value pairs.
         <br/><br/>
         The key element is defined by the following value:
-        <table>
+        <table style="table-layout:auto">
             <tr>
-               <th style="background-color: #EFF2F7; width: 20%;">Value</th>
+               <th style="background-color: #EFF2F7;">Value</th>
                <th style="background-color: #EFF2F7"></th>
-               <th style="background-color: #EFF2F7; width: 15%;"></th>
+               <th style="background-color: #EFF2F7;"></th>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">mvpd</td>
@@ -209,11 +209,11 @@ description: REST API V2 - Retrieve profiles
             </tr>
          </table>
          The value element is defined by the following attributes:
-         <table>
+         <table style="table-layout:auto">
             <tr>
-               <th style="background-color: #EFF2F7; width: 20%;">Attribute</th>
+               <th style="background-color: #EFF2F7;">Attribute</th>
                <th style="background-color: #EFF2F7"></th>
-               <th style="background-color: #EFF2F7; width: 15%;"></th>
+               <th style="background-color: #EFF2F7;"></th>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">notBefore</td>
@@ -230,33 +230,12 @@ description: REST API V2 - Retrieve profiles
                <td>
                   The entity that owns the profile.
                   <br/><br/>
-                  Possible values are:
-                  <table>
-                     <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Value</th>
-                        <th style="background-color: #EFF2F7;"></th>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">mvpd<br/><br/>e.g., Spectrum, Cablevision, etc.</td>
-                        <td>
-                            The profile was created as a result of:
-                            <ul>
-                                <li>Basic authentication</li>
-                                <li>Single sign-on using platform identity</li>
-                                <li>Single sign-on using service token</li>
-                            </ul>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">Apple</td>
-                        <td>
-                            The profile was created as a result of:
-                            <ul>
-                                <li>Single sign-on using partner Apple</li>
-                            </ul>
-                        </td>
-                     </tr>
-                  </table>
+                  The possible values are:
+                  <ul>
+                    <li><b>mvpd (e.g., Spectrum, Cablevision, etc.)</b><br/>The profile was created as a result of: basic authentication, single sign-on using platform identity, or single sign-on using service token.</li>
+                    <li><b>Apple</b><br/>The profile was created as a result of: single sign-on using partner Apple.</li>
+                  </ul>
+               </td>
                <td><i>required</i></td>
             </tr>
             <tr>
@@ -264,49 +243,13 @@ description: REST API V2 - Retrieve profiles
                <td>
                   The type of the profile.
                   <br/><br/>
-                  Possible values are:
-                  <table>
-                     <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Value</th>
-                        <th style="background-color: #EFF2F7;"></th>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">regular</td>
-                        <td>
-                            The profile was created as a result of:
-                            <ul>
-                                <li>Basic authentication</li>
-                            </ul>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">appleSSO</td>
-                        <td>
-                            The profile was created as a result of:
-                            <ul>
-                                <li>Single sign-on using partner Apple</li>
-                            </ul>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">platformSSO</td>
-                        <td>
-                            The profile was created as a result of:
-                            <ul>
-                                <li>Single sign-on using platform identity</li>
-                            </ul>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">serviceTokenSSO</td>
-                        <td>
-                            The profile was created as a result of:
-                            <ul>
-                                <li>Single sign-on using service token</li>
-                            </ul>
-                        </td>
-                     </tr>
-                  </table>
+                  The possible values are:
+                  <ul>
+                    <li><b>regular</b><br/>The profile was created as a result of: basic authentication.</li>
+                    <li><b>appleSSO</b><br/>The profile was created as a result of: single sign-on using partner Apple.</li>
+                    <li><b>platformSSO</b><br/>The profile was created as a result of: single sign-on using platform identity.</li>
+                    <li><b>serviceTokenSSO</b><br/>The profile was created as a result of: single sign-on using service token.</li>
+                  </ul>
                <td><i>required</i></td>
             </tr>
             <tr>
@@ -335,11 +278,11 @@ description: REST API V2 - Retrieve profiles
 
 ### Error {#error}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -352,9 +295,9 @@ description: REST API V2 - Retrieve profiles
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">error</td>

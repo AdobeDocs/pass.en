@@ -15,11 +15,11 @@ description: REST API V2 - Retrieve preauthorization decisions using specific mv
 
 ## Request {#request}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">HTTP</th>
+      <th style="background-color: #EFF2F7;">HTTP</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">path</td>
@@ -32,9 +32,9 @@ description: REST API V2 - Retrieve preauthorization decisions using specific mv
       <td></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Path Parameters</th>
+      <th style="background-color: #EFF2F7;">Path Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">serviceProvider</td>
@@ -47,9 +47,9 @@ description: REST API V2 - Retrieve preauthorization decisions using specific mv
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body Parameters</th>
+      <th style="background-color: #EFF2F7;">Body Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">resources</td>
@@ -57,9 +57,9 @@ description: REST API V2 - Retrieve preauthorization decisions using specific mv
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Authorization</td>
@@ -148,10 +148,10 @@ description: REST API V2 - Retrieve preauthorization decisions using specific mv
 
 ## Response {#response}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 10%;">Code</th>
-      <th style="background-color: #EFF2F7; width: 20%;">Text</th>
+      <th style="background-color: #EFF2F7;">Code</th>
+      <th style="background-color: #EFF2F7;">Text</th>
       <th style="background-color: #EFF2F7;">Description</th>
    </tr>
    <tr>
@@ -193,11 +193,11 @@ description: REST API V2 - Retrieve preauthorization decisions using specific mv
 
 ### Success {#success}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -210,19 +210,19 @@ description: REST API V2 - Retrieve preauthorization decisions using specific mv
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">decisions</td>
       <td>
          JSON containing a list of elements, each element having the following attributes:
-         <table>
+         <table style="table-layout:auto">
             <tr>
-               <th style="background-color: #EFF2F7; width: 20%;">Attribute</th>
+               <th style="background-color: #EFF2F7;">Attribute</th>
                <th style="background-color: #EFF2F7"></th>
-               <th style="background-color: #EFF2F7; width: 15%;"></th>
+               <th style="background-color: #EFF2F7;"></th>
             </tr>
             <tr>
                 <td style="background-color: #DEEBFF;">resource</td>
@@ -248,28 +248,14 @@ description: REST API V2 - Retrieve preauthorization decisions using specific mv
                <td style="background-color: #DEEBFF;">source</td>
                <td>
                   Information about decision source:
-                  <table>
-                     <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Value</th>
-                        <th style="background-color: #EFF2F7;"></th>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">mvpd</td>
-                        <td>Decision is issued by the MVPD preauthorization endpoint.</td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">degradation</td>
-                        <td>Decision is issued as a result of degraded access.</td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">temppass</td>
-                        <td>Decision is issued as a result of temporary access.</td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">dummy</td>
-                        <td>Decision is issued as a result of dummy preauthorization feature.</td>
-                     </tr>
-                  </table>
+                  <br/><br/>
+                  The possible values are:
+                  <ul>
+                    <li><b>mvpd</b><br/>Decision is issued by the MVPD preauthorization endpoint.</li>
+                    <li><b>degradation</b><br/>Decision is issued as a result of degraded access.</li>
+                    <li><b>temppass</b><br/>Decision is issued as a result of temporary access.</li>
+                    <li><b>dummy</b><br/>Decision is issued as a result of dummy preauthorization feature.</li>
+                  </ul>
                <td><i>required</i></td>
             </tr>
             <tr>
@@ -284,11 +270,11 @@ description: REST API V2 - Retrieve preauthorization decisions using specific mv
 
 ### Error {#error}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -301,9 +287,9 @@ description: REST API V2 - Retrieve preauthorization decisions using specific mv
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">error</td>

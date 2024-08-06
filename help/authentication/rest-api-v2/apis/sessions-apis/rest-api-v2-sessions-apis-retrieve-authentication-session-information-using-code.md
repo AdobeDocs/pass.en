@@ -15,11 +15,11 @@ description: REST API V2 - Retrieve authentication session using code
 
 ## Request {#request}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">HTTP</th>
+      <th style="background-color: #EFF2F7;">HTTP</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">path</td>
@@ -32,9 +32,9 @@ description: REST API V2 - Retrieve authentication session using code
       <td></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Path Parameters</th>
+      <th style="background-color: #EFF2F7;">Path Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">serviceProvider</td>
@@ -47,9 +47,9 @@ description: REST API V2 - Retrieve authentication session using code
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Authorization</td>
@@ -85,10 +85,10 @@ description: REST API V2 - Retrieve authentication session using code
 
 ## Response {#response}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 10%;">Code</th>
-      <th style="background-color: #EFF2F7; width: 20%;">Text</th>
+      <th style="background-color: #EFF2F7;">Code</th>
+      <th style="background-color: #EFF2F7;">Text</th>
       <th style="background-color: #EFF2F7;">Description</th>
    </tr>
    <tr>
@@ -130,11 +130,11 @@ description: REST API V2 - Retrieve authentication session using code
 
 ### Success {#success}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -142,42 +142,29 @@ description: REST API V2 - Retrieve authentication session using code
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">parameters</td>
       <td>
          JSON object having the following attributes:
-         <table>
-            <tr>
-               <th style="background-color: #EFF2F7; width: 20%;">Attribute</th>
-               <th style="background-color: #EFF2F7"></th>
-               <th style="background-color: #EFF2F7; width: 15%;"></th>
-            </tr>
-            <tr>
-               <td style="background-color: #DEEBFF;">existing</td>
-               <td>The existing parameters that were already provided.</td>
-               <td><i>required</i></td>
-            </tr>
-            <tr>
-               <td style="background-color: #DEEBFF;">missing</td>
-               <td>The missing parameters that need to be provided in order to complete the authentication flow.</td>
-               <td><i>required</i></td>
-            </tr>
-         </table>
+         <ul>
+            <li><b>existing</b><br/>The existing parameters that were already provided.</li>
+            <li><b>missing</b><br/>The missing parameters that need to be provided in order to complete the authentication flow.</li>
+         </ul>
       </td>
       <td><i>required</i></td>
 </table>
 
 ### Error {#error}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -190,9 +177,9 @@ description: REST API V2 - Retrieve authentication session using code
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">error</td>

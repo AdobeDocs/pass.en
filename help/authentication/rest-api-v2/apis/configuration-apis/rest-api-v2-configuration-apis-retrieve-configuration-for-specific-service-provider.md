@@ -15,11 +15,11 @@ description: REST API V2 - Retrieve configuration for specific service provider
 
 ## Request {#request}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">HTTP</th>
+      <th style="background-color: #EFF2F7;">HTTP</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">path</td>
@@ -32,9 +32,9 @@ description: REST API V2 - Retrieve configuration for specific service provider
       <td></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Path Parameters</th>
+      <th style="background-color: #EFF2F7;">Path Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">serviceProvider</td>
@@ -42,9 +42,9 @@ description: REST API V2 - Retrieve configuration for specific service provider
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Query Parameters</th>
+      <th style="background-color: #EFF2F7;">Query Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">profile</td>
@@ -52,9 +52,9 @@ description: REST API V2 - Retrieve configuration for specific service provider
       <td>optional</td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Authorization</td>
@@ -108,10 +108,10 @@ description: REST API V2 - Retrieve configuration for specific service provider
 
 ## Response {#response}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 10%;">Code</th>
-      <th style="background-color: #EFF2F7; width: 20%;">Text</th>
+      <th style="background-color: #EFF2F7;">Code</th>
+      <th style="background-color: #EFF2F7;">Text</th>
       <th style="background-color: #EFF2F7;">Description</th>
    </tr>
    <tr>
@@ -153,11 +153,11 @@ description: REST API V2 - Retrieve configuration for specific service provider
 
 ### Success {#success}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -170,19 +170,19 @@ description: REST API V2 - Retrieve configuration for specific service provider
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;"></td>
       <td>
          JSON containing a list of elements, each element having the following attributes:
-         <table>
+         <table style="table-layout:auto">
             <tr>
-               <th style="background-color: #EFF2F7; width: 20%;">Attribute</th>
+               <th style="background-color: #EFF2F7;">Attribute</th>
                <th style="background-color: #EFF2F7"></th>
-               <th style="background-color: #EFF2F7; width: 15%;"></th>
+               <th style="background-color: #EFF2F7;"></th>
             </tr>
             <tr>
                 <td style="background-color: #DEEBFF;">device</td>
@@ -201,62 +201,32 @@ description: REST API V2 - Retrieve configuration for specific service provider
             </tr>
             <tr>
                 <td style="background-color: #DEEBFF;">requestor</td>
-                <td>JSON having the following attributes:
-                <table>
-                    <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Attribute</th>
-                    </tr>
-                    <tr>
-                        <td>id</td>
-                    </tr>
-                    <tr>
-                        <td>name</td>
-                    </tr>
-                    <tr>
-                        <td>domains</td>
-                    </tr>
-                </table>
+                <td>
+                    JSON object having the following attributes:
+                    <ul>
+                        <li><b>id</b></li>
+                        <li><b>name</b></li>
+                        <li><b>domains</b></li>
+                    </ul>
                 </td>
                 <td><i>required</i></td>
             </tr>
             <tr>
                 <td style="background-color: #DEEBFF;">mvpds</td>
-                <td>JSON having the following attributes:
-                <table>
-                    <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Attribute</th>
-                    </tr>
-                    <tr>
-                        <td>id</td>
-                    </tr>
-                    <tr>
-                        <td>displayName</td>
-                    </tr>
-                    <tr>
-                        <td>logoUrl</td>
-                    </tr>
-                    <tr>
-                        <td>isTempPass</td>
-                    </tr>
-                    <tr>
-                        <td>isProxy</td>
-                    </tr>
-                    <tr>
-                        <td>boardingStatus</td>
-                    </tr>
-                    <tr>
-                        <td>platformMappingId</td>
-                    </tr>
-                    <tr>
-                        <td>enablePlatformServices</td>
-                    </tr>
-                    <tr>
-                        <td>displayInPlatformPicker</td>
-                    </tr>
-                    <tr>
-                        <td>enforcePlatformPermissions</td>
-                    </tr>
-                </table>
+                <td>
+                    JSON object having the following attributes:
+                    <ul>
+                        <li><b>id</b></li>
+                        <li><b>displayName</b></li>
+                        <li><b>logoUr</b></li>
+                        <li><b>isTempPass</b></li>
+                        <li><b>isProxy</b></li>
+                        <li><b>boardingStatus</b></li>
+                        <li><b>platformMappingId</b></li>
+                        <li><b>enablePlatformServices</b></li>
+                        <li><b>displayInPlatformPicker</b></li>
+                        <li><b>enforcePlatformPermissions</b></li>
+                    </ul>
                 </td>
                 <td><i>required</i></td>
             </tr>
@@ -272,11 +242,11 @@ description: REST API V2 - Retrieve configuration for specific service provider
 
 ### Error {#error}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -289,9 +259,9 @@ description: REST API V2 - Retrieve configuration for specific service provider
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">error</td>

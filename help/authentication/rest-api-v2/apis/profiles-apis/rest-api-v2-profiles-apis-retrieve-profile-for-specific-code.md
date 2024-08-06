@@ -15,11 +15,11 @@ description: REST API V2 - Retrieve profile for specific code
 
 ## Request {#request}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">HTTP</th>
+      <th style="background-color: #EFF2F7;">HTTP</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">path</td>
@@ -32,9 +32,9 @@ description: REST API V2 - Retrieve profile for specific code
       <td></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Path Parameters</th>
+      <th style="background-color: #EFF2F7;">Path Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">serviceProvider</td>
@@ -47,9 +47,9 @@ description: REST API V2 - Retrieve profile for specific code
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Authorization</td>
@@ -85,10 +85,10 @@ description: REST API V2 - Retrieve profile for specific code
 
 ## Response {#response}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 10%;">Code</th>
-      <th style="background-color: #EFF2F7; width: 20%;">Text</th>
+      <th style="background-color: #EFF2F7;">Code</th>
+      <th style="background-color: #EFF2F7;">Text</th>
       <th style="background-color: #EFF2F7;">Description</th>
    </tr>
    <tr>
@@ -130,11 +130,11 @@ description: REST API V2 - Retrieve profile for specific code
 
 ### Success {#success}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -147,9 +147,9 @@ description: REST API V2 - Retrieve profile for specific code
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">profiles</td>
@@ -157,11 +157,11 @@ description: REST API V2 - Retrieve profile for specific code
         JSON containing a map of key, value pairs.
         <br/><br/>
         The key element is defined by the following value:
-        <table>
+        <table style="table-layout:auto">
             <tr>
-               <th style="background-color: #EFF2F7; width: 20%;">Value</th>
+               <th style="background-color: #EFF2F7;">Value</th>
                <th style="background-color: #EFF2F7"></th>
-               <th style="background-color: #EFF2F7; width: 15%;"></th>
+               <th style="background-color: #EFF2F7;"></th>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">mvpd</td>
@@ -170,11 +170,11 @@ description: REST API V2 - Retrieve profile for specific code
             </tr>
          </table>
          The value element is defined by the following attributes:
-         <table>
+         <table style="table-layout:auto">
             <tr>
-               <th style="background-color: #EFF2F7; width: 20%;">Attribute</th>
+               <th style="background-color: #EFF2F7;">Attribute</th>
                <th style="background-color: #EFF2F7"></th>
-               <th style="background-color: #EFF2F7; width: 15%;"></th>
+               <th style="background-color: #EFF2F7;"></th>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">notBefore</td>
@@ -191,32 +191,11 @@ description: REST API V2 - Retrieve profile for specific code
                <td>
                   The entity that owns the profile.
                   <br/><br/>
-                  Possible values are:
-                  <table>
-                     <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Value</th>
-                        <th style="background-color: #EFF2F7;"></th>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">mvpd<br/><br/>e.g., Spectrum, Cablevision, etc.</td>
-                        <td>
-                            The profile was created as a result of:
-                            <ul>
-                                <li>Basic authentication</li>
-                            </ul>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">Adobe</td>
-                        <td>
-                            The profile was created as a result of:
-                            <ul>
-                                <li>Degraded access</li>
-                                <li>Temporary access</li>
-                            </ul>
-                        </td>
-                     </tr>
-                  </table>
+                  The possible values are:
+                  <ul>
+                    <li><b>mvpd (e.g., Spectrum, Cablevision, etc.)</b><br/>The profile was created as a result of: basic authentication.</li>
+                    <li><b>Adobe</b><br/>The profile was created as a result of: degraded access, temporary access.</li>
+                  </ul>
                <td><i>required</i></td>
             </tr>
             <tr>
@@ -224,40 +203,12 @@ description: REST API V2 - Retrieve profile for specific code
                <td>
                   The type of the profile.
                   <br/><br/>
-                  Possible values are:
-                  <table>
-                     <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Value</th>
-                        <th style="background-color: #EFF2F7;"></th>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">regular</td>
-                        <td>
-                            The profile was created as a result of:
-                            <ul>
-                                <li>Basic authentication</li>
-                            </ul>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">degraded</td>
-                        <td>
-                            The profile was created as a result of:
-                            <ul>
-                                <li>Degraded access</li>
-                            </ul>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">temporary</td>
-                        <td>
-                            The profile was created as a result of:
-                            <ul>
-                                <li>Temporary access</li>
-                            </ul>
-                        </td>
-                     </tr>
-                  </table>
+                  The possible values are:
+                  <ul>
+                    <li><b>regular</b><br/>The profile was created as a result of: basic authentication.</li>
+                    <li><b>degraded</b><br/>The profile was created as a result of: degraded access.</li>
+                    <li><b>temporary</b><br/>The profile was created as a result of: temporary access.</li>
+                  </ul>
                <td><i>required</i></td>
             </tr>
             <tr>
@@ -286,11 +237,11 @@ description: REST API V2 - Retrieve profile for specific code
 
 ### Error {#error}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -303,9 +254,9 @@ description: REST API V2 - Retrieve profile for specific code
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">error</td>

@@ -15,11 +15,11 @@ description: REST API V2 - Retrieve authorization decisions using specific mvpd
 
 ## Request {#request}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">HTTP</th>
+      <th style="background-color: #EFF2F7;">HTTP</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">path</td>
@@ -32,9 +32,9 @@ description: REST API V2 - Retrieve authorization decisions using specific mvpd
       <td></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Path Parameters</th>
+      <th style="background-color: #EFF2F7;">Path Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">serviceProvider</td>
@@ -47,9 +47,9 @@ description: REST API V2 - Retrieve authorization decisions using specific mvpd
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body Parameters</th>
+      <th style="background-color: #EFF2F7;">Body Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">resources</td>
@@ -57,9 +57,9 @@ description: REST API V2 - Retrieve authorization decisions using specific mvpd
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Authorization</td>
@@ -153,10 +153,10 @@ description: REST API V2 - Retrieve authorization decisions using specific mvpd
 
 ## Response {#response}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 10%;">Code</th>
-      <th style="background-color: #EFF2F7; width: 20%;">Text</th>
+      <th style="background-color: #EFF2F7;">Code</th>
+      <th style="background-color: #EFF2F7;">Text</th>
       <th style="background-color: #EFF2F7;">Description</th>
    </tr>
    <tr>
@@ -198,11 +198,11 @@ description: REST API V2 - Retrieve authorization decisions using specific mvpd
 
 ### Success {#success}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -215,19 +215,19 @@ description: REST API V2 - Retrieve authorization decisions using specific mvpd
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">decisions</td>
       <td>
          JSON containing a list of elements, each element having the following attributes:
-         <table>
+         <table style="table-layout:auto">
             <tr>
-               <th style="background-color: #EFF2F7; width: 20%;">Attribute</th>
+               <th style="background-color: #EFF2F7;">Attribute</th>
                <th style="background-color: #EFF2F7"></th>
-               <th style="background-color: #EFF2F7; width: 15%;"></th>
+               <th style="background-color: #EFF2F7;"></th>
             </tr>
             <tr>
                 <td style="background-color: #DEEBFF;">resource</td>
@@ -252,53 +252,28 @@ description: REST API V2 - Retrieve authorization decisions using specific mvpd
             <tr>
                <td style="background-color: #DEEBFF;">source</td>
                <td>
-                  Information about decision source:
-                  <table>
-                     <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Value</th>
-                        <th style="background-color: #EFF2F7;"></th>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">mvpd</td>
-                        <td>Decision is issued by the MVPD authorization endpoint.</td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">degradation</td>
-                        <td>Decision is issued as a result of degraded access.</td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">temppass</td>
-                        <td>Decision is issued as a result of temporary access.</td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">dummy</td>
-                        <td>Decision is issued as a result of dummy authorization feature.</td>
-                     </tr>
-                  </table>
+                  Information about decision source.
+                  <br/><br/>
+                  The possible values are:
+                  <ul>
+                    <li><b>mvpd</b><br/>Decision is issued by the MVPD authorization endpoint.</li>
+                    <li><b>degradation</b><br/>Decision is issued as a result of degraded access.</li>
+                    <li><b>temppass</b><br/>Decision is issued as a result of temporary access.</li>
+                    <li><b>dummy</b><br/>Decision is issued as a result of dummy authorization feature.</li>
+                  </ul>
                <td><i>required</i></td>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">token</td>
                <td>
-                  Information about media token:
-                  <table>
-                     <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Attribute</th>
-                        <th style="background-color: #EFF2F7;"></th>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">notBefore</td>
-                        <td>The timestamp before which the media token is not valid.</td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">notAfter</td>
-                        <td>The timestamp after which the media token is not valid.</td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">serializedToken</td>
-                        <td>The Base64-encoded media token.</td>
-                     </tr>
-                  </table>
+                  Information about media token.
+                  <br/><br/>
+                  JSON object having the following attributes:
+                  <ul>
+                    <li><b>notBefore</b><br/>The timestamp before which the media token is not valid.</li>
+                    <li><b>notAfter</b><br/>The timestamp after which the media token is not valid.</li>
+                    <li><b>serializedToken</b><br/>The Base64-encoded media token.</li>
+                  </ul>
                <td>optional</td>
             </tr>
             <tr>
@@ -323,11 +298,11 @@ description: REST API V2 - Retrieve authorization decisions using specific mvpd
 
 ### Error {#error}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -340,9 +315,9 @@ description: REST API V2 - Retrieve authorization decisions using specific mvpd
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">error</td>

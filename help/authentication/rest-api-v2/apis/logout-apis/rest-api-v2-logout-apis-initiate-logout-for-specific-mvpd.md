@@ -15,11 +15,11 @@ description: REST API V2 - Initiate logout for specific mvpd
 
 ## Request {#request}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">HTTP</th>
+      <th style="background-color: #EFF2F7;">HTTP</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">path</td>
@@ -32,9 +32,9 @@ description: REST API V2 - Initiate logout for specific mvpd
       <td></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Path Parameters</th>
+      <th style="background-color: #EFF2F7;">Path Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">serviceProvider</td>
@@ -47,9 +47,9 @@ description: REST API V2 - Initiate logout for specific mvpd
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Query Parameters</th>
+      <th style="background-color: #EFF2F7;">Query Parameters</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">redirectUrl</td>
@@ -61,9 +61,9 @@ description: REST API V2 - Initiate logout for specific mvpd
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Authorization</td>
@@ -135,10 +135,10 @@ description: REST API V2 - Initiate logout for specific mvpd
 
 ## Response {#response}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 10%;">Code</th>
-      <th style="background-color: #EFF2F7; width: 20%;">Text</th>
+      <th style="background-color: #EFF2F7;">Code</th>
+      <th style="background-color: #EFF2F7;">Text</th>
       <th style="background-color: #EFF2F7;">Description</th>
    </tr>
    <tr>
@@ -180,11 +180,11 @@ description: REST API V2 - Initiate logout for specific mvpd
 
 ### Success {#success}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -197,9 +197,9 @@ description: REST API V2 - Initiate logout for specific mvpd
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">logouts</td>
@@ -207,11 +207,11 @@ description: REST API V2 - Initiate logout for specific mvpd
          JSON containing a map of key, value pairs.
          <br/><br/>
          The key element is defined by the following value:
-         <table>
+         <table style="table-layout:auto">
             <tr>
-               <th style="background-color: #EFF2F7; width: 20%;">Value</th>
+               <th style="background-color: #EFF2F7;">Value</th>
                <th style="background-color: #EFF2F7"></th>
-               <th style="background-color: #EFF2F7; width: 15%;"></th>
+               <th style="background-color: #EFF2F7;"></th>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">mvpd</td>
@@ -219,11 +219,11 @@ description: REST API V2 - Initiate logout for specific mvpd
                <td><i>required</i></td>
          </table>
          The value element is defined by the following attributes:
-         <table>
+         <table style="table-layout:auto">
             <tr>
-               <th style="background-color: #EFF2F7; width: 20%;">Attribute</th>
+               <th style="background-color: #EFF2F7;">Attribute</th>
                <th style="background-color: #EFF2F7"></th>
-               <th style="background-color: #EFF2F7; width: 15%;"></th>
+               <th style="background-color: #EFF2F7;"></th>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">actionName</td>
@@ -231,47 +231,11 @@ description: REST API V2 - Initiate logout for specific mvpd
                   The action that the streaming device needs to perform in order to complete the logout flow.
                   <br/><br/>
                   The possible values are:
-                  <table>
-                     <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Value</th>
-                        <th style="background-color: #EFF2F7;"></th>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">logout</td>
-                        <td>
-                            The streaming device needs to open the provided URL in a user agent.
-                            <br/><br/>
-                            This action applies for the following scenarios:
-                            <ul>
-                                <li>Log out of MVPD with a logout endpoint</li>
-                            </ul>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">complete</td>
-                        <td>
-                            The streaming device does not need to perform any subsequent actions.
-                            <br/><br/>
-                            This action applies for the following scenarios:
-                            <ul>\
-                                <li>Log out of MVPD without a logout endpoint (dummy logout feature)</li>
-                                <li>Log out during degraded access</li>
-                                <li>Log out during temporary access</li>
-                            </ul>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">invalid</td>
-                        <td>
-                            The streaming device does not need to perform any subsequent actions.
-                            <br/><br/>
-                            This action applies for the following scenarios:
-                            <ul>
-                                <li>Log out of MVPD when no valid profile is found</li>
-                            </ul>
-                        </td>
-                     </tr>
-                  </table>
+                  <ul>
+                    <li><b>logout</b><br/>The streaming device needs to open the provided URL in a user agent.<br/>This action applies for the following scenarios: log out of MVPD with a logout endpoint.</li>
+                    <li><b>complete</b><br/>The streaming device does not need to perform any subsequent actions.<br/>This action applies for the following scenarios: log out of MVPD without a logout endpoint (dummy logout feature), log out during degraded access, log out during temporary access.</li>
+                    <li><b>invalid</b><br/>The streaming device does not need to perform any subsequent actions.<br/>This action applies for the following scenarios: log out of MVPD when no valid profile is found.</li>
+                  </ul>  
                <td><i>required</i></td>
             </tr>
             <tr>
@@ -280,31 +244,10 @@ description: REST API V2 - Initiate logout for specific mvpd
                   The type of interaction the streaming device must perform in order to continue the flow with the action specified by the 'actionName' attribute.
                   <br/><br/>
                   The possible values are:
-                  <table>
-                     <tr>
-                        <th style="background-color: #EFF2F7; width: 30%;">Value</th>
-                        <th style="background-color: #EFF2F7;"></th>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">interactive</td>
-                        <td>
-                            This type applies for the following values of the `actionName` attribute:
-                            <ul>
-                                <li>logout</li>
-                            </ul>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td style="background-color: #DEEBFF;">none</td>
-                        <td>
-                            This type applies for the following values of the `actionName` attribute:
-                            <ul>
-                                <li>complete</li>
-                                <li>invalid</li>
-                            </ul>
-                        </td>
-                     </tr>
-                  </table>
+                  <ul>
+                    <li><b>interactive</b><br/>This type applies for the following values of the `actionName` attribute: <b>logout</b>.</li>
+                    <li><b>none</b><br/>This type applies for the following values of the `actionName` attribute: <b>complete</b>, <b>invalid</b>.</li>
+                  </ul>
                <td><i>required</i></td>
             </tr>
             <tr>
@@ -319,8 +262,8 @@ description: REST API V2 - Initiate logout for specific mvpd
                   <br/><br/>
                   This is not present for the following values of the `actionName` attribute:
                   <ul>
-                    <li>complete</li>
-                    <li>invalid</li>
+                    <li><b>complete</b></li>
+                    <li><b>invalid</b></li>
                   </ul>
                </td>
                <td>optional</td>
@@ -332,11 +275,11 @@ description: REST API V2 - Initiate logout for specific mvpd
 
 ### Error {#error}
 
-<table>
+<table style="table-layout:auto">
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Headers</th>
+      <th style="background-color: #EFF2F7;">Headers</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
@@ -349,9 +292,9 @@ description: REST API V2 - Initiate logout for specific mvpd
       <td><i>required</i></td>
    </tr>
    <tr>
-      <th style="background-color: #EFF2F7; width: 15%;">Body</th>
+      <th style="background-color: #EFF2F7;">Body</th>
       <th style="background-color: #EFF2F7;"></th>
-      <th style="background-color: #EFF2F7; width: 10%;"></th>
+      <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">error</td>
