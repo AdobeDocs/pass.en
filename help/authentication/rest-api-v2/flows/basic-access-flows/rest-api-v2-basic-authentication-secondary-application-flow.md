@@ -103,7 +103,46 @@ Follow the given steps to implement the basic authentication flow performed with
 
    If the Adobe Pass backend does not identify a valid profile, the streaming application displays the `code` that can be used to resume the authentication session within a secondary application.
 
+1. **Validate authentication code:** The secondary application validates the user provided `code` to ensure it can proceed with MVPD authentication in user agent. 
+
+   >[!IMPORTANT]
+   >
+   > Refer to the [Retrieve authentication session information](../../apis/sessions-apis/rest-api-v2-sessions-apis-retrieve-authentication-session-information-using-code.md) API documentation for details on:
+   >
+   > * All the _required_ parameters, like `serviceProvider` and `code`
+   > * All the _required_ headers, like `Authorization`
+   > * All the _optional_ parameters and headers
+
+1. **Return information about authentication session:** The Sessions endpoint response contains the following data:
+   * The `existing` attribute contains the existing parameters that were already provided.
+   * The `missing` attribute contains the missing parameters that need to be provided in order to complete the authentication flow.
+
+   >[!IMPORTANT]
+   >
+   > Refer to the [Retrieve authentication session information](../../apis/sessions-apis/rest-api-v2-sessions-apis-retrieve-authentication-session-information-using-code.md) API documentation for details on the information provided in a session validation response.
+   >
+   > <br/>
+   >
+   > The Sessions endpoint validates the request data to ensure that basic conditions are met:
+   >
+   > * The _required_ parameters and headers must be valid.
+   >
+   > <br/>
+   >
+   > If validation fails, an error response will be generated, providing additional information that adheres to the [Enhanced Error Codes](../../../enhanced-error-codes.md) documentation.
+
+   >[!NOTE]
+   >
+   > Suggestion: The secondary application can inform users that the `code` used is invalid in the event of an error response indicating a missing authentication session, and advise them to retry using a new one.
+   
 1. **Open URL in user agent:** The secondary application opens a user agent to load the self computed `url`, making a request to the Authenticate endpoint. This flow may include several redirects, ultimately leading the user to the MVPD login page and provide valid credentials.
+
+   >[!IMPORTANT]
+   >
+   > Refer to the [Perform authentication in user agent](../../apis/sessions-apis/rest-api-v2-sessions-apis-perform-authentication-in-user-agent.md) API documentation for details on:
+   >
+   > * All the _required_ parameters, like `serviceProvider` and `code`
+   > * All the _optional_ parameters and headers
 
 1. **Complete MVPD authentication:** If the authentication flow is successful, the user agent interaction saves a regular profile in Adobe Pass backend and reaches the provided `redirectUrl`.
 
@@ -225,6 +264,10 @@ Follow the given steps to implement the basic authentication flow performed with
    > <br/>
    > 
    > If validation fails, an error response will be generated, providing additional information that adheres to the [Enhanced Error Codes](../../../enhanced-error-codes.md) documentation.
+
+   >[!NOTE]
+   >
+   > Suggestion: The secondary application can inform users that the `code` used is invalid in the event of an error response indicating a missing authentication session, and advise them to retry using a new one.
 
 1. **Indicate existing profile:** The Sessions endpoint response contains the following data:
    * The `actionName` attribute is set to "authorize".

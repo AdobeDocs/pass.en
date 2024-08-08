@@ -23,7 +23,7 @@ description: REST API V2 - Retrieve profile for specific code
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">path</td>
-      <td>/api/v2/{serviceProvider}/profiles/{code}</td>
+      <td>/api/v2/{serviceProvider}/profiles/code/{code}</td>
       <td></td>
    </tr>
    <tr>

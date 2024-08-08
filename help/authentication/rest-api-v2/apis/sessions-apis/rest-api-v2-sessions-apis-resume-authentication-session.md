@@ -41,7 +41,7 @@ description: REST API V2 - Resume authentication session
       <td>The internal unique identifier associated with the Service Provider during onboarding process.</td>
       <td><i>required</i></td>
    </tr>
-    <tr>
+   <tr>
       <td style="background-color: #DEEBFF;">code</td>
       <td>The authentication code obtained after creating the authentication session on the streaming device.</td>
       <td><i>required</i></td>

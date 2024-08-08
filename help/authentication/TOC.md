@@ -55,6 +55,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                 + [Create authentication session](./rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md)
                 + [Resume authentication session](./rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-resume-authentication-session.md)
                 + [Retrieve authentication session](./rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-retrieve-authentication-session-information-using-code.md)
+                + [Perform authentication in user agent](./rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-perform-authentication-in-user-agent.md)
             + Profiles {#rest-api-v2-profiles-apis}
                 + [Retrieve profiles](./rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md)
                 + [Retrieve profile for specific mvpd](./rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md)
