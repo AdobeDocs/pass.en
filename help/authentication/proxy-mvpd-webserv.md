@@ -233,14 +233,14 @@ Any parameters present in the request header that are not listed above will be i
 
 Curl example:
 
-`curl -X GET -H "Authorization: Bearer <access_token_here>" "https://mgmt-prequal.auth-staging.adobe.com/control/v3/proxiedMvpds"`
+`curl -X GET -H "Authorization: Bearer <access_token_here>" "https://mgmt-prequal.auth-staging.adobe.com/control/v3/mvpd-proxies/&lt;proxy-mvpd-identifier&gt;/mvpds"`
 
 ## Proxy MVPD Web Service Endpoints for the Adobe Pass Authentication Environments {#proxy-mvpd-wevserv-endpoints}
 
-– **Production URL:** https://mgmt.auth.adobe.com/control/v3/proxiedMvpds
-– **Staging URL:** https://mgmt.auth-staging.adobe.com/control/v3/proxiedMvpds
-– **PreQual-Production URL:** https://mgmt-prequal.auth.adobe.com/control/v3/proxiedMvpds
-– **PreQual-Staging URL:** https://mgmt-prequal.auth-staging.adobe.com/control/v3/proxiedMvpds
+– **Production URL:** https://mgmt.auth.adobe.com/control/v3/mvpd-proxies/&lt;proxy-mvpd-identifier&gt;/mvpds
+– **Staging URL:** https://mgmt.auth-staging.adobe.com/control/v3/mvpd-proxies/&lt;proxy-mvpd-identifier&gt;/mvpds
+– **PreQual-Production URL:** https://mgmt-prequal.auth.adobe.com/control/v3/mvpd-proxies/&lt;proxy-mvpd-identifier&gt;/mvpds
+– **PreQual-Staging URL:** https://mgmt-prequal.auth-staging.adobe.com/control/v3/mvpd-proxies/&lt;proxy-mvpd-identifier&gt;/mvpds
 
 <!--
 >[!RELATEDINFORMATION]
