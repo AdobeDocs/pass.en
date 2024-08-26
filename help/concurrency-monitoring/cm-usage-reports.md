@@ -47,12 +47,13 @@ In order to access the Concurrency Monitoring Usage Reports product, a customer 
 
 ### Usage Reports users can filter the metrics listed above by the following dimensions: {#dimensions-2-filter-metrics}
 
-| Dimension Name |                                                     Description                                                   |
-|:---|:---|
+| Dimension Name | Description                                                                                                       |
+|:---------------|:------------------------------------------------------------------------------------------------------------------|
 | year           | The 4 digit year                                                                                                  |
 | month          | The month of the year (1-12)                                                                                      |
 | day            | The day of the month (1-31)                                                                                       |
 | hour           | The hour of the day                                                                                               |
+| minute         | The minute of the hour[^1]                                                                                        |
 | application    | The application name registered in Concurrency Monitoring used to manage sessions                                 |
 | application-id | The application ID registered in Concurrency Monitoring used to manage sessions                                   |
 | channel        | The channel metadata sent during the initialization of the session (marked as Unknown if no metadata is sent)     |
@@ -81,3 +82,5 @@ The main purpose of this report is to help you understand the impact of setting 
 | concurrency-level | Represents any distinct **stream activity that was approved at the session initialization phase** for a user in order to be able to observe how many concurrent streams **were opened** by a user and to understand the impact of applying a certain concurrency limit                    |
 | activity-level    | Represents any distinct **stream activity (no matter of its state: started, active, stopped, rejected)** for a user in order to be able to observe how many concurrent streams were tried to be opened by a user and to understand the impact of applying a certain concurrency limit |
 | mvpd              | The MVPD provided at session management                                                                                                                                                                                                                                           |
+
+[^1]: Minutely reports are not available by default. Please contact the Concurrency Monitoring [Support Team](mailto:tve-support@adobe.com) to request them. 
