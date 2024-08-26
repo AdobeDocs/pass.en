@@ -3,31 +3,36 @@ title: Reset Temp Pass
 description: Reset Temp Pass
 exl-id: ab39e444-eab2-4338-8d09-352a1d5135b6
 ---
+
 # Reset Temp Pass {#reset-temp-pass}
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+>[!IMPORTANT]
 >
->In order to use the Reset Temp Pass API, you will need to: 
->- ask the support team for a software  statement for your registered application
->- obtain an access token based on [Dynamic Client Registration](dynamic-client-registration.md)
-> 
+> Before using the Reset Temp Pass API, ensure the following prerequisites are met: 
+>
+> * Obtain the client credentials as described in the [Retrieve client credentials](./dcr-api/apis/dynamic-client-registration-apis-retrieve-client-credentials.md) API documentation.
+> * Obtain the access token as described in the [Retrieve access token](./dcr-api/apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation.
+>
+> Refer to the [Dynamic Client Registration Overview](./dcr-api/dynamic-client-registration-overview.md) documentation for more information about how to create a registered application and download the software statement.
  
 In order to **reset a specific Temp Pass**, Adobe Pass Authentication provides Programmers with a *public* web API:
 
-- **Environment:** specifies the Adobe Pay-TV pass server endpoint that will receive the reset Temp Pass network call. Possible values: **Prequal** (*mgmt-prequal.auth.adobe.com*), **Release** (*mgmt.auth.adobe.com*) or **Custom** (reserved for Adobe internal testing).
-- **OAuth2 Access Token:** the OAuth2 token is necessary for authorizing the Programmer for Adobe Pay-TV authentication. Such a token can be obtained from [Dynamic Client Registration](dynamic-client-registration.md).
-- **Temp Pass ID:** the unique ID for the Temp Pass MVPD to be reset.(a programmer can use multiple Temp Pass MVPDs and want to reset a specific one)
-- **Generic Key:** some Temp Pass MVPDs (i.e. [Promotional temp pass](promotional-temp-pass.md)).
+* **Environment:** specifies the Adobe Pay-TV pass server endpoint that will receive the reset Temp Pass network call. Possible values: **Prequal** (*mgmt*prequal.auth.adobe.com*), **Release** (*mgmt.auth.adobe.com*) or **Custom** (reserved for Adobe internal testing).
+* **OAuth2 Access Token:** the OAuth2 token is necessary for authorizing the Programmer for Adobe Pay-TV authentication. Such a token can be obtained as described in the [Retrieve access token](./dcr-api/apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation.
+* **Temp Pass ID:** the unique ID for the Temp Pass MVPD to be reset.(a programmer can use multiple Temp Pass MVPDs and want to reset a specific one)
+* **Generic Key:** some Temp Pass MVPDs (i.e. [Promotional temp pass](promotional-temp-pass.md)).
 
 All the above parameters (except the *Generic Key*) are mandatory. Here is an example of parameters and the associated network call(the example is in the form of a *curl *command):
 
-- **Environment:** Release (*mgmt.auth.adobe.com*)
-- **OAuth2 Access Token:** <access_token> from [Dynamic Client Registration](dynamic-client-registration.md)
-- **Programmer ID:** REF
-- **Temp Pass ID:** TempPassREF
-- **Generic Key:** null (no value provided)
+* **Environment:** Release (*mgmt.auth.adobe.com*)
+* **OAuth2 Access Token:** <access_token> as described in the [Retrieve access token](./dcr-api/apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation
+* **Programmer ID:** REF
+* **Temp Pass ID:** TempPassREF
+* **Generic Key:** null (no value provided)
 
 ```curl
 curl -X DELETE -H "Authorization:Bearer <access_token_here>" "https://mgmt.auth.adobe.com/reset-tempass/v3/reset?device_id=f23804a37802993fdc8e28a7f244dfe088b6a9ea21457670728e6731fa639991&requestor_id=REF&mvpd_id=TempPassREF"
@@ -59,19 +64,19 @@ DELETE https://mgmt.auth.adobe.com/reset-tempass/v3/reset
 >[!NOTE]
 >The URL above supersedes the previous reset API. The old reset API (v1) is no longer supported.
 
--   **Protocol:** HTTPS
--   **Host:**
-    - Release - mgmt.auth.adobe.com
-    - Prequal - mgmt-prequal.auth.adobe.com
--   **Path:** /reset-tempass/v3/reset 
--   **Query parameters:** `device_id=all&requestor_id=REQUESTOR_ID&mvpd_id=TEMPPASS_MVPD_ID`
--   **Headers:** Authorization: Bearer <access_token_here>
--   **Response:** 
-    -   Success - HTTP 204
-    -   Failure:
-        - HTTP 400 for an incorrect request
-        - HTTP 401 if the access is denied. The client MUST request a new access_token.
-        - HTTP 403 if the client id is not longer permitted to perform requests. New client credentials should be generated.
+*   **Protocol:** HTTPS
+*   **Host:**
+    * Release - mgmt.auth.adobe.com
+    * Prequal - mgmt-prequal.auth.adobe.com
+*   **Path:** /reset-tempass/v3/reset 
+*   **Query parameters:** `device_id=all&requestor_id=REQUESTOR_ID&mvpd_id=TEMPPASS_MVPD_ID`
+*   **Headers:** Authorization: Bearer <access_token_here>
+*   **Response:** 
+    *   Success - HTTP 204
+    *   Failure:
+        * HTTP 400 for an incorrect request
+        * HTTP 401 if the access is denied. The client MUST request a new access_token.
+        * HTTP 403 if the client id is not longer permitted to perform requests. New client credentials should be generated.
 
 
 For example:

@@ -5,9 +5,18 @@ exl-id: a9572372-14a6-4caa-9ab6-4a6baababaa1
 ---
 # Entitlement Service Monitoring API {#entitlement-service-monitoring-api}
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+
+>[!IMPORTANT]
+>
+> Before using the Degradation API, ensure the following prerequisites are met:
+>
+> * Obtain the client credentials as described in the [Retrieve client credentials](./dcr-api/apis/dynamic-client-registration-apis-retrieve-client-credentials.md) API documentation.
+> * Obtain the access token as described in the [Retrieve access token](./dcr-api/apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation.
+>
+> Refer to the [Dynamic Client Registration Overview](./dcr-api/dynamic-client-registration-overview.md) documentation for more information about how to create a registered application and download the software statement.
 
 ## API Overview {#api-overview}
 

@@ -106,12 +106,11 @@ This section allows viewing and editing settings for available Channels or creat
     Contains the list of integrations with available MVPDs, alongside the status of each integration which might be enabled or not. Navigating to Integration page is available by clicking on a specific entry. 
 * **Registered Applications**
     
-    Contains the list of application registrations. For more details, review the document [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md).
+    Contains the list of application registrations. For more details, review the document [Dynamic Client Registration Management](/help/authentication/dcr-api/dynamic-client-registration-overview.md#dynamic-client-registration-management).
 
 * **Custom Schemes**
 
-    Contains the list of custom schemes. For more details, see [iOS/tvOS application registration](/help/authentication/iostvos-application-registration.md) and [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md)
-
+    Contains the list of custom schemes. For more details, see [iOS/tvOS application registration](/help/authentication/iostvos-application-registration.md) and [Dynamic Client Registration Management](/help/authentication/dcr-api/dynamic-client-registration-overview.md#dynamic-client-registration-management)
 
 #### Add / Delete domains {#add-delete-domains}
 
@@ -120,6 +119,50 @@ To initiate the process of adding up a new domain for the selected channel, you 
 ![Add a new domain to a selected channel section](assets/add-domain-to-channel-sec.png)
 
 *Figure: Domains tab in channels*
+
+#### Create a registered application at channel level {#create-registered-application-channel-level}
+
+In order to create a registered application at a channel level navigate to the "Channels" menu and choose the one for which you would like to create an application. Then, after Navigating to the "Registered Applications" tab, click on the "Add New Application" button.
+
+![](./assets/reg-new-app-channel-level.png)
+
+As seen in the image below, the fields you should fill in are:
+
+*   **Application Name** - the name of the application
+
+*   **Assigned to Channel** - As shown below, what is slightly different here, compared to the same action performed at the Programmer level, is the "Assigned Channels" dropdown which is not enabled so there is no option to bind the registered application to other than the current channel.
+
+*   **Application Version** - by default, this is set to "1.0.0" but we highly encourage you to modify it with your own application version. As a best practice, if you decide to change the version of your application, reflect it by creating a new registered application for it.
+
+*   **Application Platforms** - the platforms for the application to be linked with. You have the option to select them all or multiple values.
+
+*   **Domain Names** - the domains for the application to be linked with. The domains in the dropdown list are a unified selection of all domains from all your channels. You have the option to select  multiple domains from the list. The meaning of the domains is redirect URLs [RFC6749](https://tools.ietf.org/html/rfc6749). In the client registration process, the client application can request to be permitted to use a redirect URL for the finalization of the authentication flow. When a client application requests a specific redirect URL, it is validated against the domains whitelisted in this Registered Application associated to the software statement.
+
+![](./assets/new-reg-app-channel.png)
+
+After filling the fields with appropriate values you must click on "Done" in order for the application to be saved in the configuration.
+
+Please be aware that there is **no option to modify an already created application**. In case it is discovered that something created no longer meets the requirements, a new registered application will need to be created and used with the client application whose requirements it fulfills.
+
+##### Download a software statement {#download-software-statement-channel-level}
+
+![](./assets/reg-app-list.png)
+
+Clicking the "Download" button on the list entry for which a software statement is needed will generate a text file. This file will contain something similar to the below sample output.
+
+![](./assets/download-software-statement.png)
+
+The name of the file is uniquely identified by prefixing it with "software_statement" and adding the current timestamp.
+
+Please note that, for the same registered application, different software statements will be received each time the download button will be clicked but this does not invalidate the previously obtained software statements for this application. This happens because they are generated on the spot, per action request.
+
+There is one **limitation** regarding the download action. If a software statement is asked for by clicking the "Download" button shortly after creating the registered application and this was not yet saved and the configuration json was not synchronized, the following error message will appear on the bottom of the page.
+
+![](./assets/error-sw-statement-notready.png)
+
+This wraps an HTTP 404 Not Found error code received from core as the id of the registered application was not yet propagated and the core has no knowledge of it.
+
+The solution is, after creating the registered application, to wait for at most 2 minutes for the configuration to be synchronized. After this happens the error message won't be received anymore and the text file with the software statement will be available for downloading.
 
 ### Programmers {#tve-db-programmers-section}
 
@@ -141,12 +184,57 @@ This section allows viewing and editing settings for available Programmers or cr
 
 * **Registered applications**
 
-    Contains the list of application registrations. For more details, see [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md).
+    Contains the list of application registrations. For more details, see [Dynamic Client Registration Management](/help/authentication/dcr-api/dynamic-client-registration-overview.md#dynamic-client-registration-management).
 
 * **Custom Schemes**
 
-    Contains the list of custom schemes. For more details, see [iOS/tvOS application registration](/help/authentication/iostvos-application-registration.md) and [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md).
+    Contains the list of custom schemes. For more details, see [iOS/tvOS application registration](/help/authentication/iostvos-application-registration.md).
 
+#### Create a registered application at programmer level {#create-registered-application-programmer-level}
+
+Go to **Programmers** > **Registered Applications** tab.
+
+![](./assets/reg-app-progr-level.png)
+
+In the Registered Applications tab, click **Add New Application**. Fill in the required fields in the new window.
+
+As seen in the image below, the fields you should fill in are:
+
+*   **Application Name** - the name of the application
+
+*   **Assigned to Channel** - the name of your channel, t</span>o which this application is linked to. The default setting in the dropdown mask is **All Channels.** The interface allows you to select either one channel or all channels.
+
+*   **Application Version** - by default, this is set to "1.0.0" but we highly encourage you to modify it with your own application version. As a best practice, if you decide to change the version of your application, reflect it by creating a new registered application for it.
+
+*   **Application Platforms** - the platforms for the application to be linked with. You have the option to select them all or multiple values.
+
+*   **Domain Names** - the domains for the application to be linked with. The domains in the dropdown list are a unified selection of all domains from all your channels. You have the option to select  multiple domains from the list. The meaning of the domains is redirect URLs [RFC6749](https://tools.ietf.org/html/rfc6749). In the client registration process, the client application can request to be permitted to use a redirect URL for the finalization of the authentication flow. When a client application requests a specific redirect URL, it is validated against the domains whitelisted in this Registered Application associated to the software statement.
+
+![](./assets/new-reg-app.png)
+
+After filling the fields with appropriate values you must click on "Done" in order for the application to be saved in the configuration.
+
+Please be aware that there is **no option to modify an already created application**. In case it is discovered that something created no longer meets the requirements, a new registered application will need to be created and used with the client application whose requirements it fulfills.
+
+##### Download a software statement {#download-software-statement-programmer-level}
+
+![](./assets/reg-app-list.png)
+
+Clicking the "Download" button on the list entry for which a software statement is needed will generate a text file. This file will contain something similar to the below sample output.
+
+![](./assets/download-software-statement.png)
+
+The name of the file is uniquely identified by prefixing it with "software_statement" and adding the current timestamp.
+
+Please note that, for the same registered application, different software statements will be received each time the download button will be clicked but this does not invalidate the previously obtained software statements for this application. This happens because they are generated on the spot, per action request.
+
+There is one **limitation** regarding the download action. If a software statement is asked for by clicking the "Download" button shortly after creating the registered application and this was not yet saved and the configuration json was not synchronized ,the following error message will appear on the bottom of the page.
+
+![](./assets/error-sw-statement-notready.png)
+
+This wraps an HTTP 404 Not Found error code received from core as the id of the registered application was not yet propagated and the core has no knowledge of it.
+
+The solution is, after creating the registered application, to wait for at most 2 minutes for the configuration to be synchronized. After this happens the error message won't be received anymore and the text file with the software statement will be available for downloading.
 
 ### Integrations {#tve-db-integrations-sec}
 

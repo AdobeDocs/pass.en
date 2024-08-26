@@ -58,18 +58,18 @@ description: REST API V2 - Retrieve configuration for specific service provider
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Authorization</td>
-      <td>The generation of the bearer token payload is described in the <a href="../../../dynamic-client-registration-api.md">Dynamic Client Registration</a> documentation.</td>
+      <td>The generation of the bearer token payload is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-authorization.md">Authorization</a> header documentation.</td>
       <td><i>required</i></td>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">AP-Device-Identifier</td>
-      <td>The generation of the device identifier payload is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-ap-device-identifier.md">AP-Device-Identifier</a> documentation.</td>
+      <td>The generation of the device identifier payload is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-ap-device-identifier.md">AP-Device-Identifier</a> header documentation.</td>
       <td><i>required</i></td>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">X-Device-Info</td>
       <td>
-         The generation of the device information payload is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-x-device-info.md">X-Device-Info</a> documentation.
+         The generation of the device information payload is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-x-device-info.md">X-Device-Info</a> header documentation.
          <br/><br/>
          It is strongly recommended to always use it when the application's device platform allows for the explicit provision of valid values.
          <br/><br/>
@@ -132,7 +132,7 @@ description: REST API V2 - Retrieve configuration for specific service provider
       <td>401</td>
       <td>Unauthorized</td>
       <td>
-        The access token is invalid, the client needs to obtain a new access token and try again. For more details refer to the <a href="../../../dynamic-client-registration-api.md">Dynamic Client Registration</a> documentation.
+        The access token is invalid, the client needs to obtain a new access token and try again. For more details refer to the <a href="../../../dcr-api/dynamic-client-registration-overview.md">Dynamic Client Registration Overview</a> documentation.
       </td>
    </tr>
    <tr>

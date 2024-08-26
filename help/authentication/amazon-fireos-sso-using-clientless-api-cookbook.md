@@ -143,9 +143,9 @@ If this is your first implementation please see the **Clientless Technical Overv
 
 Adobe Clientless API requires applications to use Dynamic Client Registration in order to make calls to Adobe servers.
 
-*   To use Dynamic Client Registration in your application, follow the instructions in [ Dynamic Client Registration Management to register the application](/help/authentication/dynamic-client-registration-management.md).
+*   To use Dynamic Client Registration in your application, follow the instructions in [Dynamic Client Registration Management](./dcr-api/dynamic-client-registration-overview.md#dynamic-client-registration-management) to create a registered application and download a software statement.
 
-*   To implement Dynamic Client Registration API to perform authentication and authorization requests to Adobe Pass servers, follow instructions in [Dynamic client registration API](/help/authentication/dynamic-client-registration-api.md) .
+*   To implement Dynamic Client Registration API to perform authentication and authorization requests to Adobe Pass servers, follow instructions in [Dynamic Client Registration Flow](./dcr-api/flows/dynamic-client-registration-flow.md).
 
 ### Adobe Pass Clientless API update to use Amazon SSO {#clientlesssso}
 

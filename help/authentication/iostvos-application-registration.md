@@ -3,6 +3,7 @@ title: iOS/tvOS Application Registration
 description: iOS/tvOS Application Registration
 exl-id: 89ee6b5a-29fa-4396-bfc8-7651aa3d6826
 ---
+
 # iOS/tvOS Application Registration {#iostvos-application-registration}
 
 >[!NOTE]
@@ -11,9 +12,9 @@ exl-id: 89ee6b5a-29fa-4396-bfc8-7651aa3d6826
 
 ## Introduction {#Intro}
 
-Starting with version 3.0 of the iOS/tvOS AccessEnabler SDK, we are changing the Authentication mechanism with Adobe's servers. Instead of using a public key and secret system to sign the requestorID, we are introducing the concept of a Software statement string that can be used to obtain an access token that is later used for all calls that the SDK makes to our servers. In addition to a software statement you will also need a custom URL scheme for your application.
+Starting with version 3.0 of the iOS/tvOS AccessEnabler SDK, we are changing the Authentication mechanism with Adobe's servers. Instead of using a public key and secret system to sign the requestorID, we are introducing the concept of a software statement string that can be used to obtain an access token that is later used for all calls that the SDK makes to our servers. In addition to a software statement you will also need a custom URL scheme for your application.
 
-For more information, see [Dynamic Client Registration](/help/authentication/dynamic-client-registration.md)
+For more information, see [Dynamic Client Registration Overview](./dcr-api/dynamic-client-registration-overview.md).
 
 ## What is a Software Statement? {#Soft_state}
 
@@ -34,7 +35,7 @@ A Software Statement is a JWT token that contains information about your applica
 - You should see a list with all registered applications. Click the   `Download` button on the application that you've just created. You may need to wait a few minutes before your Software Statement it's ready for download.
 - A text file will be downloaded. Use it's contents as your Software Statement.
 
-For more information see, [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md).
+For more information see, [Dynamic Client Registration Management](./dcr-api/dynamic-client-registration-overview.md#dynamic-client-registration-management).
 
 ### If you don't have access to Adobe's TVE Dashboard:
 

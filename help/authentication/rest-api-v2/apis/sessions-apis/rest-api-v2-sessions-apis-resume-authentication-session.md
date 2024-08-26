@@ -87,7 +87,7 @@ description: REST API V2 - Resume authentication session
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Authorization</td>
-      <td>The generation of the bearer token payload is described in the <a href="../../../dynamic-client-registration-api.md">Dynamic Client Registration</a> documentation.</td>
+      <td>The generation of the bearer token payload is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-authorization.md">Authorization</a> header documentation.</td>
       <td><i>required</i></td>
    </tr>
    <tr>
@@ -152,7 +152,7 @@ description: REST API V2 - Resume authentication session
       <td>401</td>
       <td>Unauthorized</td>
       <td>
-        The access token is invalid, the client needs to obtain a new access token and try again. For more details refer to the <a href="../../../dynamic-client-registration-api.md">Dynamic Client Registration</a> documentation.
+        The access token is invalid, the client needs to obtain a new access token and try again. For more details refer to the <a href="../../../dcr-api/dynamic-client-registration-overview.md">Dynamic Client Registration Overview</a> documentation.
       </td>
    </tr>
    <tr>

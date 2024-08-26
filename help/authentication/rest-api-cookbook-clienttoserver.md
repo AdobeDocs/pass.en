@@ -44,7 +44,7 @@ Additional terms used in the flow are defined in the [Glossary](/help/authentica
 
 ### Dynamic Client Registration (DCR)
 
-Adobe Pass uses DCR to secure client communications between a programmer application or server and the Adobe Pass services. The DCR flow is separate, dependent and prerequisite flow and can be found in [Dynamic client registration](/help/authentication/dynamic-client-registration.md)
+Adobe Pass uses DCR to secure client communications between a programmer application or server and the Adobe Pass services. The DCR flow is separate and is described in the [Dynamic Client Registration Overview](./dcr-api/dynamic-client-registration-overview.md) documentation.
 
 
 ### Streaming  (Smart Device) App Flows

@@ -67,18 +67,18 @@ description: REST API V2 - Initiate logout for specific mvpd
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Authorization</td>
-      <td>The generation of the bearer token payload is described in the <a href="../../../dynamic-client-registration-api.md">Dynamic Client Registration</a> documentation.</td>
+      <td>The generation of the bearer token payload is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-authorization.md">Authorization</a> header documentation.</td>
       <td><i>required</i></td>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">AP-Device-Identifier</td>
-      <td>The generation of the device identifier payload is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-ap-device-identifier.md">AP-Device-Identifier</a> documentation.</td>
+      <td>The generation of the device identifier payload is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-ap-device-identifier.md">AP-Device-Identifier</a> header documentation.</td>
       <td><i>required</i></td>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">X-Device-Info</td>
       <td>
-         The generation of the device information payload is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-x-device-info.md">X-Device-Info</a> documentation.
+         The generation of the device information payload is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-x-device-info.md">X-Device-Info</a> header documentation.
          <br/><br/>
          It is strongly recommended to always use it when the application's device platform allows for the explicit provision of valid values.
          <br/><br/>
@@ -102,7 +102,7 @@ description: REST API V2 - Initiate logout for specific mvpd
    <tr>
       <td style="background-color: #DEEBFF;">Adobe-Subject-Token</td>
       <td>
-        The generation of the single sign-on payload for the Platform Identity method is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-adobe-subject-token.md">Adobe-Subject-Token</a> documentation.
+        The generation of the single sign-on payload for the Platform Identity method is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-adobe-subject-token.md">Adobe-Subject-Token</a> header documentation.
         <br/><br/>
         For more details about single sign-on enabled flows using a platform identity, refer to the <a href="../../flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-platform-identity-flows.md">Single sign-on using platform identity flows</a> documentation.
       </td>
@@ -111,7 +111,7 @@ description: REST API V2 - Initiate logout for specific mvpd
    <tr>
       <td style="background-color: #DEEBFF;">AD-Service-Token</td>
       <td>
-        The generation of the single sign-on payload for the Service Token method is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-ad-service-token.md">AD-Service-Token</a> documentation.
+        The generation of the single sign-on payload for the Service Token method is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-ad-service-token.md">AD-Service-Token</a> header documentation.
         <br/><br/>
         For more details about single sign-on enabled flows using a service token, refer to the <a href="../../flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-service-token-flows.md">Single sign-on using service token flows</a> documentation.
       </td>
@@ -159,7 +159,7 @@ description: REST API V2 - Initiate logout for specific mvpd
       <td>401</td>
       <td>Unauthorized</td>
       <td>
-        The access token is invalid, the client needs to obtain a new access token and try again. For more details refer to the <a href="../../../dynamic-client-registration-api.md">Dynamic Client Registration</a> documentation.
+        The access token is invalid, the client needs to obtain a new access token and try again. For more details refer to the <a href="../../../dcr-api/dynamic-client-registration-overview.md">Dynamic Client Registration Overview</a> documentation.
       </td>
    </tr>
    <tr>

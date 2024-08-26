@@ -200,11 +200,11 @@ The selected domain is no longer available for use. As a result, the application
 
 ### Registered Applications {#registered-applications}
 
-This tab provides a list of application registrations. View [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md) for more information.
+This tab provides a list of application registrations.
 
 ### Custom Schemes {#custom-schemes}
 
-This tab displays a list of custom schemes. View [iOS/tvOS application registration](/help/authentication/iostvos-application-registration.md) and [Dynamic client registration management](/help/authentication/dynamic-client-registration-management.md) for more information.
+This tab displays a list of custom schemes. View [iOS/tvOS application registration](/help/authentication/iostvos-application-registration.md).
 
 ## Add new channel {#add-new-channel}
 

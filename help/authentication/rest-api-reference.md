@@ -71,4 +71,4 @@ The table below lists the available web services for the clientless approach. Cl
 
 ## REST API Security {#security}
 
-All Adobe Pass Authentication clientless APIs must be called using the HTTPS protocol for secure communication. In addition, most of the APIs called should contain an access token provided by [Dynamic Client Registration](/help/authentication/dynamic-client-registration.md).
+All Adobe Pass Authentication REST APIs must be called using the HTTPS protocol for secure communication. In addition, most of the APIs called should contain an access token obtained as described in the [Retrieve access token](./dcr-api/apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation.

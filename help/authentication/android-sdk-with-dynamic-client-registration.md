@@ -27,7 +27,7 @@ For Android, the usage of Chrome Custom Tabs restricts the access to cookies fro
 
 ## Dynamic Client Registration {#DCR}
 
-Android SDK v3.0+ will use the Dynamic Client Registration procedure as defined in [Dynamic Client Registration](/help/authentication/dynamic-client-registration.md).
+Android SDK v3.0+ will use the Dynamic Client Registration procedure as defined in [Dynamic Client Registration Overview](./dcr-api/dynamic-client-registration-overview.md).
 
 
 ## Feature demo {#Demo}

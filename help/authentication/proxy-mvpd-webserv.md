@@ -3,22 +3,21 @@ title: Proxy MVPD Web Service
 description: Proxy MVPD Web Service
 exl-id: f75cbc4d-4132-4ce8-a81c-1561a69d1d3a
 ---
+
 # Proxy MVPD web service {#proxy-mvpd-wbservice}
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
->In order to use the Proxy MVPD web service, you will need to: 
->- ask the support team for a software  statement for your registered application
->- obtain an access token based on [Dynamic Client Registration](dynamic-client-registration.md)
-> 
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
->[!NOTE]
+>[!IMPORTANT]
 >
->In order to use the Proxy MVPD web service, you will need to: 
->- ask the support team for a software  statement for your registered application
->- obtain an access token based on [Dynamic Client Registration](dynamic-client-registration.md)
-> 
+> Before using the Proxy MVPD web service, ensure the following prerequisites are met:
+>
+> * Obtain the client credentials as described in the [Retrieve client credentials](./dcr-api/apis/dynamic-client-registration-apis-retrieve-client-credentials.md) API documentation.
+> * Obtain the access token as described in the [Retrieve access token](./dcr-api/apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation.
+>
+> Refer to the [Dynamic Client Registration Overview](./dcr-api/dynamic-client-registration-overview.md) documentation for more information about how to create a registered application and download the software statement.
 
 ## Overview {#overview-proxy-mvpd-webserv}
 
@@ -226,7 +225,7 @@ Adobe has defined the following accepted format for posting/retrieving proxied M
 
 For a request to be considered valid, it must respect the following rules:
 
-– The request header must contain the security Oauth2 access token from [Dynamic Client Registration](dynamic-client-registration.md).
+– The request header must contain the security Oauth2 access token obtained as described in the [Retrieve access token](./dcr-api/apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation.
 – The request must come from a specific IP address that is has been allowed.
 – The request must be sent over the SSL protocol. 
 
