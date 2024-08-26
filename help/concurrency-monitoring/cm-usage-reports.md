@@ -53,7 +53,6 @@ In order to access the Concurrency Monitoring Usage Reports product, a customer 
 | month          | The month of the year (1-12)                                                                                      |
 | day            | The day of the month (1-31)                                                                                       |
 | hour           | The hour of the day                                                                                               |
-| minute         | The minute of the hour                                                                                            |
 | application    | The application name registered in Concurrency Monitoring used to manage sessions                                 |
 | application-id | The application ID registered in Concurrency Monitoring used to manage sessions                                   |
 | channel        | The channel metadata sent during the initialization of the session (marked as Unknown if no metadata is sent)     |
