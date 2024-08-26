@@ -17,7 +17,7 @@ The **Concurrency Monitoring Usage Reports** service is available via a REST API
 
 ## Prerequisites {#usage-rep-prerequisites}
 
-In order to access the Concurrency Monitoring Usage Reports product, a customer must first contact the Concurrency Monitoring [Support Team](mailto:tve-support@adobe.com) and they will carry out the necessary steps to allow you access to the API product.
+In order to access the Concurrency Monitoring Usage Reports product, a customer must first contact the Concurrency Monitoring [Support Team](mailto:tve-support@adobe.com) and they will carry out the necessary steps to allow you access to the API product. More details on [CMU API Access](/help/concurrency-monitoring/cmu-api-access.md). 
 
 ## General Report Metrics & Breakdowns {#general-rep-metrics-breakdown}
 
