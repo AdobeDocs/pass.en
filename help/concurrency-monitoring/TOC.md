@@ -19,6 +19,7 @@ user-guide-description: Learn to define and enforce limits on concurrent usage a
 + [Escalation procedures](cm-escalation-procedures.md)
 + Concurrency Monitoring Usage {#cmu}
     + [Concurrency Monitoring Usage reports](cm-usage-reports.md)
+    + [Concurrency Monitoring Usage reports examples](cm-usage-reports-examples.md)
     + [Concurrency Monitoring Usage API](cmu-api.md)
     + [Concurrency Monitoring Usage API Access](cmu-api-access.md)
 + Version 1 API{#v1-api}
