@@ -233,7 +233,7 @@ Any parameters present in the request header that are not listed above will be i
 
 Curl example:
 
-`curl -X GET -H "Authorization: Bearer <access_token_here>" "https://mgmt-prequal.auth-staging.adobe.com/control/v3/mvpd-proxies/&lt;proxy-mvpd-identifier&gt;/mvpds"`
+`curl -X GET -H "Authorization: Bearer <access_token_here>" "https://mgmt-prequal.auth-staging.adobe.com/control/v3/mvpd-proxies/<proxy-mvpd-identifier>/mvpds"`
 
 ## Proxy MVPD Web Service Endpoints for the Adobe Pass Authentication Environments {#proxy-mvpd-wevserv-endpoints}
 
