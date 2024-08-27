@@ -83,7 +83,7 @@ The main purpose of this report is to help you understand the impact of setting 
 | activity-level    | Represents any distinct **stream activity (no matter of its state: started, active, stopped, rejected)** for a user in order to be able to observe how many concurrent streams were tried to be opened by a user and to understand the impact of applying a certain concurrency limit |
 | mvpd              | The MVPD provided at session management                                                                                                                                                                                                                                           |
 
-***
-#### For best data accuracy, we recommend the reports presented on this page [CMU reports examples](/help/concurrency-monitoring/cm-usage-reports-examples.md)
+### Reports examples
+For best data accuracy, we recommend the reports presented on this page [CMU reports examples](/help/concurrency-monitoring/cm-usage-reports-examples.md)
 
 [^1]: Minutely reports are not available by default. Please contact the Concurrency Monitoring [Support Team](mailto:tve-support@adobe.com) to request them. 
