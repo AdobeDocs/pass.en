@@ -84,6 +84,7 @@ The main purpose of this report is to help you understand the impact of setting 
 | mvpd              | The MVPD provided at session management                                                                                                                                                                                                                                           |
 
 ### Reports examples
+
 For best data accuracy, we recommend the reports presented on this page [CMU reports examples](/help/concurrency-monitoring/cm-usage-reports-examples.md)
 
 [^1]: Minutely reports are not available by default. Please contact the Concurrency Monitoring [Support Team](mailto:tve-support@adobe.com) to request them. 
