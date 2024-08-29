@@ -1,8 +1,8 @@
 ---
 title: Single Logout - Flow
 description: REST API V2 - Single Logout - Flow
+exl-id: d7092ca7-ea7b-4e92-b45f-e373a6d673d6
 ---
-
 # Single logout flow {#single-logout-flow}
 
 >[!IMPORTANT]

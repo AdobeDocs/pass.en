@@ -1,8 +1,8 @@
 ---
 title: Header - AP-Device-Identifier
 description: REST API V2 - Header - AP-Device-Identifier
+exl-id: 90a5882b-2e6d-4e67-994a-050465cac6c6
 ---
-
 # Header - AP-Device-Identifier {#header-ap-device-identifier}
 
 >[!NOTE]

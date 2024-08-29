@@ -1,8 +1,8 @@
 ---
 title: Dynamic Client Registration Overview
 description: Dynamic Client Registration Overview
+exl-id: 9f98dfcd-4375-48c3-beff-259dfb1d3a26
 ---
-
 # Dynamic Client Registration Overview {#dynamic-client-registration-overview}
 
 >[!IMPORTANT]

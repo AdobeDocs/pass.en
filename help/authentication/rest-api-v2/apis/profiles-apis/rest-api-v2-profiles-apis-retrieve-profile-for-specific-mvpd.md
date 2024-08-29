@@ -1,8 +1,8 @@
 ---
 title: Retrieve profile for specific mvpd
 description: REST API V2 - Retrieve profile for specific mvpd
+exl-id: ed1abc33-c279-4465-b5a0-b4e5b892076e
 ---
-
 # Retrieve profile for specific mvpd {#retrieve-profile-for-specific-mvpd}
 
 >[!IMPORTANT]

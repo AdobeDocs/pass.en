@@ -1,8 +1,8 @@
 ---
 title: Single Sign-On - Partner - Flows
 description: REST API V2 - Single Sign-On - Partner - Flows
+exl-id: 5735d67f-a311-4d03-ad48-93c0fcbcace5
 ---
-
 # Single sign-on using partner flows {#single-sign-on-partner-flows}
 
 >[!IMPORTANT]

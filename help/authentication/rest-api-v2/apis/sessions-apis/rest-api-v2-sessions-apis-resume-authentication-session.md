@@ -1,8 +1,8 @@
 ---
 title: Resume authentication session
 description: REST API V2 - Resume authentication session
+exl-id: 66c33546-2be0-473f-9623-90499d1c13eb
 ---
-
 # Resume authentication session {#resume-authentication-session}
 
 >[!IMPORTANT]

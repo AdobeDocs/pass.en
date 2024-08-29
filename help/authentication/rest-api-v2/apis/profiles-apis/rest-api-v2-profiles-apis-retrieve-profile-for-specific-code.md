@@ -1,8 +1,8 @@
 ---
 title: Retrieve profile for specific code
 description: REST API V2 - Retrieve profile for specific code
+exl-id: d6ead7d5-de5f-4033-8115-980953a370c0
 ---
-
 # Retrieve profile for specific code {#retrieve-profile-for-specific-code}
 
 >[!IMPORTANT]

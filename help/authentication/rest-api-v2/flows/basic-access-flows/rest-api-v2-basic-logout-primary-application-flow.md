@@ -1,8 +1,8 @@
 ---
 title: Basic Logout - Primary Application - Flow
 description: REST API V2 - Basic Logout - Primary Application - Flow
+exl-id: 21dbff4a-0d69-4f81-b04f-e99d743c35b3
 ---
-
 # Basic logout flow performed within primary application {#basic-logout-flow-performed-within-primary-application}
 
 >[!IMPORTANT]

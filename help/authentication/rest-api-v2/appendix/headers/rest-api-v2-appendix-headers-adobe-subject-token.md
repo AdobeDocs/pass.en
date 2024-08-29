@@ -1,8 +1,8 @@
 ---
 title: Header - Adobe-Subject-Token
 description: REST API V2 - Header - Adobe-Subject-Token
+exl-id: 906d88f4-3b8f-491a-ab58-8e63d3b958d8
 ---
-
 # Header - Adobe-Subject-Token {#header-adobe-subject-token}
 
 >[!NOTE]

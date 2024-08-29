@@ -1,8 +1,8 @@
 ---
 title: Basic Authentication - Primary Application - Flow
 description: REST API V2 - Basic Authentication - Primary Application - Flow
+exl-id: 8122108d-e9da-43c5-9abb-ab177cb21eb6
 ---
-
 # Basic authentication flow performed within primary application {#basic-authentication-flow-performed-within-primary-application}
 
 >[!IMPORTANT]

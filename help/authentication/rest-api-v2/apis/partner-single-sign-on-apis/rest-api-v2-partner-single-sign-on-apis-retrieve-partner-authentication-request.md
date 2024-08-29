@@ -1,8 +1,8 @@
 ---
 title: Retrieve partner authentication request
 description: REST API V2 - Retrieve partner authentication request
+exl-id: 52d8a8e9-c176-410f-92bc-e83449278943
 ---
-
 # Retrieve partner authentication request {#retrieve-partner-authentication-request}
 
 >[!IMPORTANT]

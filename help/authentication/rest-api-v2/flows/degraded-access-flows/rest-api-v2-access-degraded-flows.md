@@ -1,8 +1,8 @@
 ---
 title: Degraded Access Flows
 description: REST API V2 - Degraded Access Flows
+exl-id: 9276f5d9-8b1a-4282-8458-0c1e1e06bcf5
 ---
-
 # Degraded access flows {#degraded-access-flows}
 
 >[!IMPORTANT]

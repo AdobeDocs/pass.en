@@ -1,8 +1,8 @@
 ---
 title: Dynamic Client Registration Flow
 description: Dynamic Client Registration Flow
+exl-id: d881cf0a-de09-4b1d-a094-d5490f944796
 ---
-
 # Dynamic Client Registration Flow {#dynamic-client-registration-flow}
 
 >[!IMPORTANT]

@@ -1,8 +1,8 @@
 ---
 title: Header - X-Device-Info
 description: REST API V2 - Header - X-Device-Info
+exl-id: 0ef25e06-86de-427a-a938-7ba3817f0d5e
 ---
-
 # Header - X-Device-Info {#header-x-device-info}
 
 >[!NOTE]

@@ -1,8 +1,8 @@
 ---
 title: Retrieve profile using partner authentication response
 description: REST API V2 - Retrieve profile using partner authentication response
+exl-id: cae260ff-a229-4df7-bbf9-4cdf300c0f9a
 ---
-
 # Retrieve profile using partner authentication response {#retrieve-profile-using-partner-authentication-response}
 
 >[!IMPORTANT]

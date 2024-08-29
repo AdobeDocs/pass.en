@@ -1,8 +1,8 @@
 ---
 title: Retrieve profiles
 description: REST API V2 - Retrieve profiles
+exl-id: 72922aa8-95ca-48dc-8523-e335802fc366
 ---
-
 # Retrieve profiles {#retrieve-profiles}
 
 >[!IMPORTANT]

@@ -1,8 +1,8 @@
 ---
 title: Single Sign-On - Service Token - Flows
 description: REST API V2 - Single Sign-On - Service Token - Flows
+exl-id: b0082d2a-e491-4cb5-bb40-35ba10db6b1a
 ---
-
 # Single sign-on using service token flows{#single-sign-on-service-token-full-flows}
 
 >[!IMPORTANT]

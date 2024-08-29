@@ -1,8 +1,8 @@
 ---
 title: Retrieve configuration for specific service provider
 description: REST API V2 - Retrieve configuration for specific service provider
+exl-id: ad7e4c6d-ed96-4ae7-82a9-3c24e5fc9302
 ---
-
 # Retrieve configuration for specific service provider {#retrieve-configuration-for-specific-service-provider}
 
 >[!IMPORTANT]

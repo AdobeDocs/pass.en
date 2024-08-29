@@ -1,8 +1,8 @@
 ---
 title: Header - Authorization
 description: REST API V2 - Header - Authorization
+exl-id: 86917d7e-ffd9-4d34-8f9c-5a50083f85e6
 ---
-
 # Header - Authorization {#header-authorization}
 
 >[!NOTE]

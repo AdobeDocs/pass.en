@@ -1,8 +1,8 @@
 ---
 title: Header - AP-Partner-Framework-Status
 description: REST API V2 - Header - AP-Partner-Framework-Status
+exl-id: f589d948-e23e-43d4-81c2-8db0e7a40e93
 ---
-
 # Header - AP-Partner-Framework-Status {#header-ap-partner-framework-status}
 
 >[!NOTE]

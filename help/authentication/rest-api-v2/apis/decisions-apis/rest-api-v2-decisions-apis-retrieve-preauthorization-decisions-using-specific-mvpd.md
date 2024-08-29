@@ -1,8 +1,8 @@
 ---
 title: Retrieve preauthorization decisions using specific mvpd
 description: REST API V2 - Retrieve preauthorization decisions using specific mvpd
+exl-id: 8647e4fb-00b6-45cd-b81b-d00618b2e08b
 ---
-
 # Retrieve preauthorization decisions using specific mvpd {#retrieve-preauthorization-decisions-using-specific-mvpd}
 
 >[!IMPORTANT]

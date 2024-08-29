@@ -1,8 +1,8 @@
 ---
 title: Create authentication session
 description: REST API V2 - Create authentication session
+exl-id: bb2a6bb4-0778-4748-a674-df9d0e8242c8
 ---
-
 # Create authentication session {#create-authentication-session}
 
 >[!IMPORTANT]

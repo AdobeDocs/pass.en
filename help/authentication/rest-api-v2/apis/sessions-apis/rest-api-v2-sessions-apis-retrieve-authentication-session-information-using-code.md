@@ -1,8 +1,8 @@
 ---
 title: Retrieve authentication session using code
 description: REST API V2 - Retrieve authentication session using code
+exl-id: 5cc209eb-ee6b-4bb9-9c04-3444408844b7
 ---
-
 # Retrieve authentication session using code {#retrieve-authentication-session-using-code}
 
 >[!IMPORTANT]
