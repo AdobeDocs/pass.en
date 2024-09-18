@@ -32,7 +32,7 @@ Continuing to the next sections of this user guide, you will discover ways of ad
 >[!IMPORTANT]
 >TVE Dashboard offers the option of switching between a Basic and an Advanced Workspace. You can do this by toggling the icon in the upper right-hand corner. The Advanced Workspace is aimed at users with substantial technical knowledge as well as advanced knowledge of the features offered by the Adobe Pass Authentication product team. 
 
-![TVE Dashbord workspaces](assets/tve-basic-advanced-workspace.png)
+![TVE Dashbord workspaces](../../assets/tve-dashboard/old-tve-dashboard/tve-basic-advanced-workspace.png)
 
 *Figure 1: The Adobe Primetime TVE Dashboard "Basic / Advanced Workspace" drop-down*
 
@@ -49,7 +49,7 @@ TVE Dashboard provides two environments named Prequal (Prequalification) and Rel
 
 To switch between environments, the user can click on the desired environment represented by the entry from the drop-down element depicted below:
 
-![TVE Dashboard environments dropdown](assets/tve-dashboard-env.png)
+![TVE Dashboard environments dropdown](../../assets/tve-dashboard/new-tve-dashboard/dashboard/dashboard-environment-menu.png)
 
 *Figure 2: The Adobe Pass TVE Dashboard environments drop-down* 
 
@@ -67,7 +67,7 @@ To make administrative changes to your Adobe Pass Authentication configuration t
 >
 >For the administrative changes to go live, users must navigate to the "Review and Push Changes" section by selecting the button, which will show up in the bottom-left part of the sidebar, in order to review changes, add a description for the newly created changes and confirm the configuration update by selecting the "Push Configuration".
 
-![Tve Dashboard review an push notification](assets/tve-review-push-notifications.png)
+![Tve Dashboard review an push notification](../../assets/tve-dashboard/old-tve-dashboard/tve-review-push-notifications.png)
 
 *Figure 3: The Adobe Primetime TVE Dashboard Review and Push Changes notification*
 
@@ -82,7 +82,7 @@ Users working for media companies (Programmers) can access the following section
 * **Reports** - Contains aggregated data for three types of reports: AuthN TTL, AuthZ TTL, SSO
 * **Change Log** - Contains the latest modifications applied to the TVE Dashboard configuration
  
- ![TVE dashboard sections](assets/tve-dashboard-sections.png)
+ ![TVE dashboard sections](../../assets/tve-dashboard/old-tve-dashboard/tve-dashboard-sections.png)
 
 *Figure 4: The Adobe Primetime TVE Dashboard sections*
 
@@ -116,7 +116,7 @@ This section allows viewing and editing settings for available Channels or creat
 
 To initiate the process of adding up a new domain for the selected channel, you need to click the "Add New Domain" button below the Domains list. This will create a new domain entry where you can specify the domain name. If a more generic domain already exists in the domains list, you shouldn't add a new subdomain.
 
-![Add a new domain to a selected channel section](assets/add-domain-to-channel-sec.png)
+![Add a new domain to a selected channel section](../../assets/tve-dashboard/old-tve-dashboard/add-domain-to-channel-sec.png)
 
 *Figure: Domains tab in channels*
 
@@ -124,7 +124,7 @@ To initiate the process of adding up a new domain for the selected channel, you 
 
 In order to create a registered application at a channel level navigate to the "Channels" menu and choose the one for which you would like to create an application. Then, after Navigating to the "Registered Applications" tab, click on the "Add New Application" button.
 
-![](./assets/reg-new-app-channel-level.png)
+![](../../assets/tve-dashboard/old-tve-dashboard/reg-new-app-channel-level.png)
 
 As seen in the image below, the fields you should fill in are:
 
@@ -138,7 +138,7 @@ As seen in the image below, the fields you should fill in are:
 
 *   **Domain Names** - the domains for the application to be linked with. The domains in the dropdown list are a unified selection of all domains from all your channels. You have the option to select  multiple domains from the list. The meaning of the domains is redirect URLs [RFC6749](https://tools.ietf.org/html/rfc6749). In the client registration process, the client application can request to be permitted to use a redirect URL for the finalization of the authentication flow. When a client application requests a specific redirect URL, it is validated against the domains whitelisted in this Registered Application associated to the software statement.
 
-![](./assets/new-reg-app-channel.png)
+![](../../assets/tve-dashboard/old-tve-dashboard/new-reg-app-channel.png)
 
 After filling the fields with appropriate values you must click on "Done" in order for the application to be saved in the configuration.
 
@@ -146,11 +146,11 @@ Please be aware that there is **no option to modify an already created applicati
 
 ##### Download a software statement {#download-software-statement-channel-level}
 
-![](./assets/reg-app-list.png)
+![](../../assets/tve-dashboard/old-tve-dashboard/reg-app-list.png)
 
 Clicking the "Download" button on the list entry for which a software statement is needed will generate a text file. This file will contain something similar to the below sample output.
 
-![](./assets/download-software-statement.png)
+![](../../assets/download-software-statement.png)
 
 The name of the file is uniquely identified by prefixing it with "software_statement" and adding the current timestamp.
 
@@ -158,7 +158,7 @@ Please note that, for the same registered application, different software statem
 
 There is one **limitation** regarding the download action. If a software statement is asked for by clicking the "Download" button shortly after creating the registered application and this was not yet saved and the configuration json was not synchronized, the following error message will appear on the bottom of the page.
 
-![](./assets/error-sw-statement-notready.png)
+![](../../assets/tve-dashboard/old-tve-dashboard/error-sw-statement-notready.png)
 
 This wraps an HTTP 404 Not Found error code received from core as the id of the registered application was not yet propagated and the core has no knowledge of it.
 
@@ -194,7 +194,7 @@ This section allows viewing and editing settings for available Programmers or cr
 
 Go to **Programmers** > **Registered Applications** tab.
 
-![](./assets/reg-app-progr-level.png)
+![](../../assets/tve-dashboard/old-tve-dashboard/reg-app-progr-level.png)
 
 In the Registered Applications tab, click **Add New Application**. Fill in the required fields in the new window.
 
@@ -210,7 +210,7 @@ As seen in the image below, the fields you should fill in are:
 
 *   **Domain Names** - the domains for the application to be linked with. The domains in the dropdown list are a unified selection of all domains from all your channels. You have the option to select  multiple domains from the list. The meaning of the domains is redirect URLs [RFC6749](https://tools.ietf.org/html/rfc6749). In the client registration process, the client application can request to be permitted to use a redirect URL for the finalization of the authentication flow. When a client application requests a specific redirect URL, it is validated against the domains whitelisted in this Registered Application associated to the software statement.
 
-![](./assets/new-reg-app.png)
+![](../../assets/tve-dashboard/old-tve-dashboard/new-reg-app.png)
 
 After filling the fields with appropriate values you must click on "Done" in order for the application to be saved in the configuration.
 
@@ -218,11 +218,11 @@ Please be aware that there is **no option to modify an already created applicati
 
 ##### Download a software statement {#download-software-statement-programmer-level}
 
-![](./assets/reg-app-list.png)
+![](../../assets/tve-dashboard/old-tve-dashboard/reg-app-list.png)
 
 Clicking the "Download" button on the list entry for which a software statement is needed will generate a text file. This file will contain something similar to the below sample output.
 
-![](./assets/download-software-statement.png)
+![](../../assets/download-software-statement.png)
 
 The name of the file is uniquely identified by prefixing it with "software_statement" and adding the current timestamp.
 
@@ -230,7 +230,7 @@ Please note that, for the same registered application, different software statem
 
 There is one **limitation** regarding the download action. If a software statement is asked for by clicking the "Download" button shortly after creating the registered application and this was not yet saved and the configuration json was not synchronized ,the following error message will appear on the bottom of the page.
 
-![](./assets/error-sw-statement-notready.png)
+![](../../assets/tve-dashboard/old-tve-dashboard/error-sw-statement-notready.png)
 
 This wraps an HTTP 404 Not Found error code received from core as the id of the registered application was not yet propagated and the core has no knowledge of it.
 
@@ -269,7 +269,7 @@ In order to create a new integration please follow the steps below:
 * click on "Create Integration" button
 * depending on the MVPD settings a popup can appear and ask for additional properties, which should have been provided by the MVPD beforehand, otherwise a redirect to the newly created integration page will take place
 
- ![](assets/new-integration-window.png)
+ ![](../../assets/tve-dashboard/old-tve-dashboard/new-integration-window.png)
 
 
 
@@ -295,7 +295,7 @@ In the case of both Basic and Advanced Workspace modes, these settings can be ch
 >[!IMPORTANT]
 >It is important to understand the settings inheritance chain: MVPD -> MVPD Endpoint -> Integration -> Platform, where Platform has the most specific value and MVPD the most generic default. 
 
-![](assets/inheritance-chain-component.png)
+![](../../assets/tve-dashboard/old-tve-dashboard/inheritance-chain-component.png)
 
 
 *Figure 6. The Adobe Primetime TVE Dashboard property inheritance chain component*
@@ -319,7 +319,7 @@ This sub-section can be used to override the settings for specific platforms. Th
 * **tvOS** - Set values that will be applied to the Programmer implementations over Adobe Pass Authentication tvOS SDK.
  
 
-![](assets/platform-sp-settings.png)
+![](../../assets/tve-dashboard/old-tve-dashboard/platform-sp-settings.png)
 
 *Figure 7. The Adobe Primetime TVE Dashboard Platform Specific Settings*
 
@@ -488,7 +488,7 @@ In terms of user experience, the AuthN TTL reports allow you to visually inspect
 
 In order to navigate to this type of report please click the "AuthN TTL Reports" tab from the "Reports" section.
 
-![AuthN TTL reports](assets/authn-ttl-reports.png)
+![AuthN TTL reports](../../assets/tve-dashboard/new-tve-dashboard/reports/reports-authn-ttl-export-button.png)
 
 *Figure 8: The Adobe Primetime TVE Dashboard AuthN TTL Report tab* 
 
@@ -510,7 +510,7 @@ In terms of user experience, the AuthZ TTL reports allow you to visually inspect
 
 To navigate to this type of report please click the "AuthZ TTL Reports" tab from the "Reports" section. 
 
-![AuthZ TTL reports](assets/authz-ttl-reports.png)
+![AuthZ TTL reports](../../assets/tve-dashboard/new-tve-dashboard/reports/reports-authz-ttl-export-button.png)
 
 *Figure 9. The Adobe Primetime TVE Dashboard AuthZ TTL Report tab*
 
@@ -533,7 +533,7 @@ In terms of user experience, the SSO reports allow you to visually inspect the e
 In order to navigate to this type of report please click the "**SSO Reports**" tab from the "**Reports**" section.
 
  
-![TVE Dashboard SSO reports tab](assets/sso-reports.png)
+![TVE Dashboard SSO reports tab](../../assets/tve-dashboard/new-tve-dashboard/reports/reports-sso-export-button.png)
 
 
 *Figure 10: The Adobe Primetime TVE Dashboard SSO Reports tab*
@@ -563,7 +563,7 @@ This section allows users to send feedback. Follow the steps to provide feedback
 * if needed upload a screenshot to the message by clicking "Upload Screenshot" button
 * click "Submit" button
 
-![tve dashboard feedback form](assets/tve-dashboard-feedback.png)
+![tve dashboard feedback form](../../assets/tve-dashboard/old-tve-dashboard/tve-dashboard-feedback.png)
 
 *Figure 11: The Adobe Primetime TVE Dashboard Feedback section*
 
@@ -577,7 +577,7 @@ For instructions on how to capture screenshots, view the links below:
 
 ### Maintenance mode {#maintenance-mode}
 
-![TVE App in maintenance mode](assets/tveapp-maintenance-mode.png)
+![TVE App in maintenance mode](../../assets/tve-dashboard/old-tve-dashboard/tveapp-maintenance-mode.png)
 
 
 *Figure: TVE App in Maintenance mode*
@@ -589,7 +589,7 @@ If this occurs, then you will have to wait for the Adobe Pass Authentication eng
 
 ### Degraded state {#degraded-state}
 
-![TVE App in degraded state](assets/tve-degraded-state.png)
+![TVE App in degraded state](../../assets/tve-dashboard/old-tve-dashboard/tve-degraded-state.png)
 
 
 *Figure: TVE App in degraded state*

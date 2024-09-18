@@ -47,7 +47,7 @@ To learn more about how to manage and use dynamic client registration, refer to 
 
 The dynamic client registration management process allows client applications running on specific platforms and needing access to specific Adobe Pass Authentication APIs to register through the [Adobe Pass TVE Dashboard](https://console.auth.adobe.com/).
 
-The Adobe Pass TVE Dashboard is a tool for Adobe Pass Authentication customers (Programmers) to manage their configuration and data. This self-service dashboard enables a range of functionalities that are described in the [Adobe Pass TVE Dashboard User Guide](../tve-dashboard-user-guide.md) documentation.
+The Adobe Pass TVE Dashboard is a tool for Adobe Pass Authentication customers (Programmers) to manage their configuration and data. This self-service dashboard enables a range of functionalities that are described in the [Adobe Pass TVE Dashboard User Guide](../tve-dashboard/old-tve-dashboard/tve-dashboard-user-guide.md) documentation.
 
 In case you have access to the [Adobe Pass TVE Dashboard](https://console.auth.adobe.com/), follow the steps in the sections below to create a registered application and download the software statement.
 
@@ -61,12 +61,12 @@ There are two available ways you can create a registered application:
 
 * **Programmer level**
 
-  The programmer-level registration process allows you to create a registered application linked to all available channels or a selected subset of channels. For more details, refer to the [Create a registered application at programmer level](../tve-dashboard-user-guide.md#create-registered-application-programmer-level) section from the [TVE Dashboard User Guide](../tve-dashboard-user-guide.md) documentation.
+  The programmer-level registration process allows you to create a registered application linked to all available channels or a selected subset of channels. For more details, refer to the [Create a registered application at programmer level](../tve-dashboard/old-tve-dashboard/tve-dashboard-user-guide.md#create-registered-application-programmer-level) section from the [TVE Dashboard User Guide](../tve-dashboard/old-tve-dashboard/tve-dashboard-user-guide.md) documentation.
 
 
 * **Channel level**
 
-  The channel-level registration process allows you to create a registered application linked only to the current selected channel. For more details, refer to the [Create a registered application at channel level](../tve-dashboard-user-guide.md#create-registered-application-channel-level) section from the [TVE Dashboard User Guide](../tve-dashboard-user-guide.md) documentation.
+  The channel-level registration process allows you to create a registered application linked only to the current selected channel. For more details, refer to the [Create a registered application at channel level](../tve-dashboard/old-tve-dashboard/tve-dashboard-user-guide.md#create-registered-application-channel-level) section from the [TVE Dashboard User Guide](../tve-dashboard/old-tve-dashboard/tve-dashboard-user-guide.md) documentation.
 
 >[!IMPORTANT]
 >
@@ -86,11 +86,11 @@ There are two available ways you can download a software statement based on the 
 
 * **Programmer level**
 
-  For more details, refer to the [Download a software statement at programmer level](../tve-dashboard-user-guide.md#download-software-statement-programmer-level) section from the [TVE Dashboard User Guide](../tve-dashboard-user-guide.md) documentation.
+  For more details, refer to the [Download a software statement at programmer level](../tve-dashboard/old-tve-dashboard/tve-dashboard-user-guide.md#download-software-statement-programmer-level) section from the [TVE Dashboard User Guide](../tve-dashboard/old-tve-dashboard/tve-dashboard-user-guide.md) documentation.
 
 * **Channel level**
 
-  For more details, refer to the [Download a software statement at channel level](../tve-dashboard-user-guide.md#download-software-statement-channel-level) section from the [TVE Dashboard User Guide](../tve-dashboard-user-guide.md) documentation.
+  For more details, refer to the [Download a software statement at channel level](../tve-dashboard/old-tve-dashboard/tve-dashboard-user-guide.md#download-software-statement-channel-level) section from the [TVE Dashboard User Guide](../tve-dashboard/old-tve-dashboard/tve-dashboard-user-guide.md) documentation.
 
 The software statement is a JSON Web Token (`JWT`) that contains information about your client application software as a bundle. When presented to the [Retrieve client credentials](./apis/dynamic-client-registration-apis-retrieve-client-credentials.md) API, the software statement is digitally signed using JSON Web Signature (`JWS`).
 

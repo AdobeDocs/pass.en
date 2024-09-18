@@ -30,15 +30,15 @@ Contact your Technical Account Manager (TAM) to access the TVE Dashboard. This a
 
 Adobe Pass Authentication provides the following sections in the TVE Dashboard:
 
-* [Environments](/help/authentication/tve-dashboard-environments.md)
-* [Review and push changes](/help/authentication/tve-dashboard-review-push-changes.md)
-* [Dashboard](/help/authentication/tve-dashboard-home.md)
-* [Channels](/help/authentication/tve-dashboard-channels.md)
-* [Programmers](/help/authentication/tve-dashboard-programmers.md)
-* [MVPDs](/help/authentication/tve-dashboard-mvpds.md)
-* [Integrations](/help/authentication/tve-dashboard-integrations.md)
-* [Reports](/help/authentication/tve-dashboard-reports.md)
-* [Changes log](/help/authentication/tve-dashboard-changes-log.md)
+* [Environments](/help/authentication/tve-dashboard/new-tve-dashboard/tve-dashboard-environments.md)
+* [Review and push changes](/help/authentication/tve-dashboard/new-tve-dashboard/tve-dashboard-review-push-changes.md)
+* [Dashboard](/help/authentication/tve-dashboard/new-tve-dashboard/tve-dashboard-home.md)
+* [Channels](/help/authentication/tve-dashboard/new-tve-dashboard/tve-dashboard-channels.md)
+* [Programmers](/help/authentication/tve-dashboard/new-tve-dashboard/tve-dashboard-programmers.md)
+* [MVPDs](/help/authentication/tve-dashboard/new-tve-dashboard/tve-dashboard-mvpds.md)
+* [Integrations](/help/authentication/tve-dashboard/new-tve-dashboard/tve-dashboard-integrations.md)
+* [Reports](/help/authentication/tve-dashboard/new-tve-dashboard/tve-dashboard-reports.md)
+* [Changes log](/help/authentication/tve-dashboard/new-tve-dashboard/tve-dashboard-changes-log.md)
 
 ## Resources {#resources-tve-dashboard}
 

@@ -21,7 +21,7 @@ Your feedback is always appreciated!
 
 | **Featured Items** |
 |-|
-| <ul><li>[Single Sign-On for iOS](/help/authentication/apple-sso-overview.md)</li><li>[Promotional Temp Pass](/help/authentication/promotional-temp-pass.md)</li><li>[Home-Based Authentication (HBA)](/help/authentication/home-based-authn-tve.md)</li><li>[HBA Infographic](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf)</li><li>[Adobe Pass TVE Dashboard User Guide](/help/authentication/tve-dashboard-user-guide.md)</li></ul> |
+| <ul><li>[Single Sign-On for iOS](/help/authentication/apple-sso-overview.md)</li><li>[Promotional Temp Pass](/help/authentication/promotional-temp-pass.md)</li><li>[Home-Based Authentication (HBA)](/help/authentication/home-based-authn-tve.md)</li><li>[HBA Infographic](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf)</li><li>[Adobe Pass TVE Dashboard User Guide](/help/authentication/tve-dashboard/old-tve-dashboard/tve-dashboard-user-guide.md)</li></ul> |
 
 | **For Programmers** | **For MVPDs** |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|

@@ -51,9 +51,10 @@ The environments in the TVE Dashboard serve various use cases throughout the app
 Follow the steps to switch between Adobe Pass Authentication TVE Dashboard environments.
 
 1. Log in with your programmer credentials.
+
 1. Select the required staging or production environment from the **Environment** dropdown menu at the top of the left panel.
 
-   ![TVE Dashboard environments dropdown](assets/tve-dashboard-env.png)
+   ![TVE Dashboard environments dropdown](../../assets/tve-dashboard/new-tve-dashboard/dashboard/dashboard-environment-menu.png)
 
    *The Adobe Pass Authentication TVE Dashboard environment dropdown menu*
 

@@ -23,7 +23,7 @@ Follow these steps to view a specific report.
    * [AuthZ TTL Reports](#authz-ttl-reports)
    * [SSO Reports](#sso-reports)
 
-   ![Type of reports](assets/type-of-reports.png)
+   ![Type of reports](../../assets/tve-dashboard/new-tve-dashboard/reports/reports-tabs-view.png)
 
    *Type of reports*
 
@@ -33,7 +33,7 @@ The AuthN TTL reports, also referred as Authentication Time-To-Live (TTL), displ
 
 You can also view and download data for [specific channels or MVPDs](#selecting-specific-channels-mvpds).
 
-![Export AuthN TTL Reports](assets/authn-ttl-reports.png)
+![Export AuthN TTL Reports](../../assets/tve-dashboard/new-tve-dashboard/reports/reports-authn-ttl-export-button.png)
 
 *Export AuthN TTL Reports*
 
@@ -49,7 +49,7 @@ The AuthZ TTL reports, also referred to as Authorization Time-To-Live (TTL), dis
 
 You can also view and download the data for [specific channels or MVPDs](#selecting-specific-channels-mvpds).
 
-![Export AuthZ TTL Reports](assets/authz-ttl-reports.png)
+![Export AuthZ TTL Reports](../../assets/tve-dashboard/new-tve-dashboard/reports/reports-authz-ttl-export-button.png)
 
 *Export AuthZ TTL Reports*
 
@@ -65,7 +65,7 @@ The SSO reports, also referred as single sign-on, display the single sign-on sta
 
 You can also view and download data for [specific channels or MVPDs](#selecting-specific-channels-mvpds).
 
-![Export SSO Reports](assets/sso-reports.png)
+![Export SSO Reports](../../assets/tve-dashboard/new-tve-dashboard/reports/reports-sso-export-button.png)
 
 *Export SSO Reports*
 
@@ -109,7 +109,7 @@ To learn more about how to share the desired device type, such as **Roku** with 
 
 >[!IMPORTANT]
 >
-> The data aggregated is based on the specific configuration of each Adobe Pass Authentication environment. When switching between different TVE Dashboard environments, expect variations in the data across reports. Refer to the [Adobe Pass Authentication environments](/help/authentication/tve-dashboard-environments.md) to know more. 
+> The data aggregated is based on the specific configuration of each Adobe Pass Authentication environment. When switching between different TVE Dashboard environments, expect variations in the data across reports. Refer to the [Adobe Pass Authentication environments](/help/authentication/tve-dashboard/new-tve-dashboard/tve-dashboard-environments.md) to know more. 
 
 ## Selecting specific channels and MVPDs {#selecting-specific-channels-mvpds} 
 
@@ -123,11 +123,12 @@ To generate a report for specific channels:
 
 1. Select the **Included Channels** dropdown menu at the top of the selected report.
 
-   ![Included Channels dropdown menu](assets/include-channels.png)
+   ![Included Channels dropdown menu](../../assets/tve-dashboard/new-tve-dashboard/reports/reports-included-channels-menu.png)
 
    *Included Channels dropdown menu*
 
 1. Deselect **All Channels**.
+
 1. Select the required channels from the **Included Channels** dropdown menu for which you want to generate data.
 
 >[!NOTE]
@@ -138,9 +139,10 @@ To generate a report for specific MVPDs:
 
 1. Select the **Included MVPDs** dropdown menu at the top of the selected report.
 
-   ![Included MVPDs dropdown menu](assets/include-mvpds.png)
+   ![Included MVPDs dropdown menu](../../assets/tve-dashboard/new-tve-dashboard/reports/reports-included-mvpds-menu.png)
 
    *Included MVPDs dropdown menu*
 
 1. Deselect **All MVPDs**.
-1. Select the required MVPDs from the **Included MVPD's** dropdown menu for which you want to generate data.
+
+1. Select the required MVPDs from the **Included MVPDs** dropdown menu for which you want to generate data.

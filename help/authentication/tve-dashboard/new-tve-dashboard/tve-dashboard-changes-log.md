@@ -24,7 +24,7 @@ To compare changes, follow these steps:
 
 1. Select two configuration changes from the list that you want to compare.
 
-   ![Compare configuration changes](assets/select-changes.png)
+   ![Compare configuration changes](../../assets/tve-dashboard/new-tve-dashboard/review/review-changes-compare-button.png)
 
     *Compare configuration changes*
 
@@ -33,14 +33,15 @@ To compare changes, follow these steps:
    The **Configuration Changes** section displays the entity type, entity ID, property, and the status of the change operation for each change.
 
 1. Hover on the configuration change that you want to view.
+
 1. Select **View** to access the changed values.
 
-   ![View configuration changes](assets/view-changes.png)
+   ![View configuration changes](../../assets/tve-dashboard/new-tve-dashboard/review/review-changes-view-button.png)
 
    *View configuration changes*
 
 The following is an example of a change made in the selected configuration. You can view the difference between the old and new values within the change.
 
-![Old and new value](assets/change.png)
+![Old and new value](../../assets/tve-dashboard/new-tve-dashboard/review/review-change-modal-view.png)
 
 *Old and new value*

@@ -109,7 +109,7 @@ Description of the HBA authentication flow for the SAML authentication protocol
 ## How to activate HBA {#how-to-activate-hba}
 
 *   **OAuth protocol:**
-    * For enabling HBA see, [Adobe Pass TVE Dashboard User Guide](/help/authentication/tve-dashboard-user-guide.md)
+    * For enabling HBA see, [Adobe Pass TVE Dashboard User Guide](/help/authentication/tve-dashboard/old-tve-dashboard/tve-dashboard-user-guide.md)
 *   **SAML protocol:** Home Based Authentication is activated on the MVPD side. No action is required by the Programmer or Adobe. 
 For more information on the MVPDs that support Home Based Authentication, see [HBA status for MVPDs](/help/authentication/hba-status-mvpds.md). 
 
@@ -150,5 +150,5 @@ For more information on the MVPDs that support Home Based Authentication, see [H
 * [Home Based Authentication Infographic](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf?dc=201604260953-2640){target=_blank} - by Adobe
 * [Authentication using the OAuth 2.0 protocol](/help/authentication/authn-oauth2-protocol.md)
 * [Authentication with SAML MVPDs](/help/authentication/authn-usecase.md)
-* [Adobe Pass TVE Dashboard User Guide](/help/authentication/tve-dashboard-user-guide.md)
+* [Adobe Pass TVE Dashboard User Guide](/help/authentication/tve-dashboard/old-tve-dashboard/tve-dashboard-user-guide.md)
 * [hba_status User Metadata](/help/authentication/user-metadata-feature.md#obtaining)
