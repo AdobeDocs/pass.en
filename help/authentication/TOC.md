@@ -47,6 +47,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             + [Token Exchange](token-exchange.md)
             + [Free Preview for Temp Pass and Promotional Temp Pass](free-preview-for-temp-pass-and-promotional-temp-pass.md)
     + REST API V2 {#rest-api-v2}
+        + [REST API V2 - Overview](./rest-api-v2/rest-api-v2-overview.md)
         + APIs {#rest-api-v2-apis}
             + [REST API V2 - APIs - Overview](./rest-api-v2/apis/rest-api-v2-apis-overview.md)
             + Configuration {#rest-api-v2-configuration-apis}
