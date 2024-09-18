@@ -20,6 +20,7 @@ To implement Adobe Pass REST API V2, you need to follow the steps below grouped 
 ## A. Registration phase {#registration-phase}
 
 ### Step 1: Register your application {#step-1-register-your-application}
+
 For the application to be able to call Adobe Pass REST API V2, it needs an access token required by the API security layer.
 To get the access token, the application needs to follow steps as described:
 [Dynamic Client Registration](./dynamic-client-registration.md)
@@ -27,6 +28,7 @@ To get the access token, the application needs to follow steps as described:
 ## B. Authentication phase {#authentication-phase}
 
 ### Step 2: Check for existing authenticated profiles {#step-2-check-for-existing-authenticated-profiles}
+
 Streaming application checks for existing authenticated profiles : <b>/api/v2/{serviceProvider}/profiles</b><br>
 ([Retrieve authenticated profiles](./apis/profiles-apis/rest-api-v2-retrieve-authenticated-profiles.md))
 
@@ -43,6 +45,7 @@ Streaming application checks for existing authenticated profiles : <b>/api/v2/{s
     * if a profile is found, Streaming application may proceed to <a href="#preauthorization-phase">C. Preauthorization phase</a> or <a href="#authorization-phase">D. Authorization phase</a>
 
 ### Step 3: Authenticate the user {#step-3-authenticate-the-user}
+
 Using a Browser or a Second Screen Web based application:
 
 * Option 1. Streaming Application can open a browser or webview, load the URL to authenticate and the user lands on MVPD login page where credentials needs to be submitted
@@ -51,6 +54,7 @@ Using a Browser or a Second Screen Web based application:
   * user enter login/password, final redirect show a success page
 
 ### Step 4: Check for authenticated profiles {#step-4-check-for-authenticated-profiles}
+
 Streaming application checks for authentication with MVPD to complete in Browser or Second Screen
 
 * polling every 15 seconds is recommended on <b>/api/v2/{serviceProvider}/profiles/{mvpd}</b><br>
@@ -64,8 +68,10 @@ Streaming application checks for authentication with MVPD to complete in Browser
 ## C. Preauthorization phase {#preauthorization-phase}
 
 ### Step 5: Check for preauthorized resources {#step-5-check-for-preauthorized-resources}
+
 Streaming application prepares to display the videos available for the authenticated user and has the possibility to check the
 access to these resources.
+
 * step is optional and executed if the application wants to filter our the resources not available in the authenticated user package
 * call to <b>/api/v2/{serviceProvider}/decisions/preauthorize/{mvpd}</b><br>
 ([Retrieve preauthorization decision using specific MVPD](.apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-preauthorization-decisions-using-specific-mvpd.md))
@@ -74,6 +80,7 @@ access to these resources.
 ## D. Authorization phase {#authorization-phase}
 
 ### Step 6: Check for authorized resources {#step-6-check-for-authorized-resources}
+
 Streaming application prepares to play a video/asset/resource selected by the user.
 
 * step is necessary for every play start
@@ -85,6 +92,7 @@ Streaming application prepares to play a video/asset/resource selected by the us
 ## E. Logout phase {#logout-phase}
 
 ### Step 7: Logout {#step-7-logout}
+
 Streaming device : User wants to logout from the MVPD
 
 * call <b>/api/v2/{serviceProvider}/logout/{mvpd}</b><br>
