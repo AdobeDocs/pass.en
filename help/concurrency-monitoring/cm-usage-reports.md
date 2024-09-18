@@ -17,7 +17,7 @@ The **Concurrency Monitoring Usage Reports** service is available via a REST API
 
 ## Prerequisites {#usage-rep-prerequisites}
 
-In order to access the Concurrency Monitoring Usage Reports product, a customer must first contact the Concurrency Monitoring [Support Team](mailto:tve-support@adobe.com) and they will carry out the necessary steps to allow you access to the API product.
+In order to access the Concurrency Monitoring Usage Reports product, a customer must first contact the Concurrency Monitoring [Support Team](mailto:tve-support@adobe.com) and they will carry out the necessary steps to allow you access to the API product. More details on [CMU API Access](/help/concurrency-monitoring/cmu-api-access.md). 
 
 ## General Report Metrics & Breakdowns {#general-rep-metrics-breakdown}
 
@@ -47,13 +47,13 @@ In order to access the Concurrency Monitoring Usage Reports product, a customer 
 
 ### Usage Reports users can filter the metrics listed above by the following dimensions: {#dimensions-2-filter-metrics}
 
-| Dimension Name |                                                     Description                                                   |
-|:---|:---|
+| Dimension Name | Description                                                                                                       |
+|:---------------|:------------------------------------------------------------------------------------------------------------------|
 | year           | The 4 digit year                                                                                                  |
 | month          | The month of the year (1-12)                                                                                      |
 | day            | The day of the month (1-31)                                                                                       |
 | hour           | The hour of the day                                                                                               |
-| minute         | The minute of the hour                                                                                            |
+| minute         | The minute of the hour[^1]                                                                                        |
 | application    | The application name registered in Concurrency Monitoring used to manage sessions                                 |
 | application-id | The application ID registered in Concurrency Monitoring used to manage sessions                                   |
 | channel        | The channel metadata sent during the initialization of the session (marked as Unknown if no metadata is sent)     |
@@ -82,3 +82,9 @@ The main purpose of this report is to help you understand the impact of setting 
 | concurrency-level | Represents any distinct **stream activity that was approved at the session initialization phase** for a user in order to be able to observe how many concurrent streams **were opened** by a user and to understand the impact of applying a certain concurrency limit                    |
 | activity-level    | Represents any distinct **stream activity (no matter of its state: started, active, stopped, rejected)** for a user in order to be able to observe how many concurrent streams were tried to be opened by a user and to understand the impact of applying a certain concurrency limit |
 | mvpd              | The MVPD provided at session management                                                                                                                                                                                                                                           |
+
+### Reports examples
+
+For best data accuracy, we recommend the reports presented on this page [CMU reports examples](/help/concurrency-monitoring/cm-usage-reports-examples.md)
+
+[^1]: Minutely reports are not available by default. Please contact the Concurrency Monitoring [Support Team](mailto:tve-support@adobe.com) to request them. 
