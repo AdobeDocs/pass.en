@@ -88,6 +88,8 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                 + [Single sign-on using platform identity flows](rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-platform-identity-flows.md)
                 + [Single sign-on using service token flows](rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-service-token-flows.md)
                 + [Single logout flow](rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-logout-flow.md)
+        + Cookbooks {#rest-api-v2-cookbooks}
+            + [REST API V2 Cookbook (Client-to-Server)](rest-api-v2/cookbooks/rest-api-v2-cookbooks-client-server.md)
         + Appendix {#rest-api-v2-appendix}
             + Headers {#rest-api-v2-appendix-headers}
                 + [Header - Authorization](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-authorization.md)
