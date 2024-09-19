@@ -23,24 +23,24 @@ To implement Adobe Pass REST API V2, you need to follow the steps below grouped 
 
 For the application to be able to call Adobe Pass REST API V2, it needs an access token required by the API security layer.
 
-To get the access token, the application needs to follow steps as described: [Dynamic Client Registration](./dynamic-client-registration.md)
+To get the access token, the application needs to follow steps as described: [Dynamic Client Registration](../../dcr-api/apis/dynamic-client-registration-apis-retrieve-access-token.md)
 
 ## B. Authentication phase {#authentication-phase}
 
 ### Step 2: Check for existing authenticated profiles {#step-2-check-for-existing-authenticated-profiles}
 
 Streaming application checks for existing authenticated profiles: <b>/api/v2/{serviceProvider}/profiles</b><br>
-([Retrieve authenticated profiles](./apis/profiles-apis/rest-api-v2-retrieve-authenticated-profiles.md))
+([Retrieve authenticated profiles](../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md))
 
 * If no profile found and Streaming application implements a TempPass flow 
   * Follow documentation on how to implement [Temporary access flows](../flows/temporary-access-flows/rest-api-v2-access-temporary-flows.md)
 * If no profile found, Streaming application implement an Authentication flow
   * Streaming application retrieve the list of MVPDs available for serviceProvider: <b>/api/v2/{serviceProvider}/configuration</b><br> 
-  ([Retrieve list of available MVPDs](./apis/configuration-apis/rest-api-v2-configuration-apis-retrieve-configuration-for-specific-service-provider.md))
+  ([Retrieve list of available MVPDs](../apis/configuration-apis/rest-api-v2-configuration-apis-retrieve-configuration-for-specific-service-provider.md))
   * Streaming application may implement filtering on the list of MVPDs and display only MVPDs intended while hiding others (TempPass, test MVPDs, MVPDs under development, etc.) 
   * Streaming application display picker, User selects the MVPD
   * Streaming application create a session: <b>/api/v2/{serviceProvider}/sessions</b><br>
-  ([Create authentication session](./apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md))<br>
+  ([Create authentication session](../apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md))<br>
     * a CODE and URL to use for authentication is returned
     * if a profile is found, Streaming application may proceed to <a href="#preauthorization-phase">C. Preauthorization phase</a> or <a href="#authorization-phase">D. Authorization phase</a>
 
@@ -58,9 +58,9 @@ Using a Browser or a Second Screen Web based application:
 Streaming application checks for authentication with MVPD to complete in Browser or Second Screen
 
 * Polling every 15 seconds is recommended on <b>/api/v2/{serviceProvider}/profiles/{mvpd}</b><br>
-([Retrieve authenticated profiles for specific MVPD](.apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md))
+([Retrieve authenticated profiles for specific MVPD](../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md))
   * If MVPD selection is not made in the Streaming application as the MVPD picker is presented in the Second Screen application, the polling should happen with CODE <b>/api/v2/{serviceProvider}/profiles/code/{CODE}</b><br>
-    ([Retrieve authenticated profiles for specific CODE](./apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-code.md))
+    ([Retrieve authenticated profiles for specific CODE](../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-code.md))
 * Polling should not exceed 30 minutes, in case 30 minutes are reached and the Streaming Application is still active, a new session needs to be initiated and a new CODE and URL will be returned
 * When authentication is complete the return is 200 with authenticated profile
 * The Streaming application may proceed to <a href="#preauthorization-phase">C. Preauthorization phase</a> or <a href="#authorization-phase">D. Authorization phase</a>
@@ -74,7 +74,7 @@ access to these resources.
 
 * Step is optional and executed if the application wants to filter our the resources not available in the authenticated user package
 * Call to <b>/api/v2/{serviceProvider}/decisions/preauthorize/{mvpd}</b><br>
-([Retrieve preauthorization decision using specific MVPD](.apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-preauthorization-decisions-using-specific-mvpd.md))
+([Retrieve preauthorization decision using specific MVPD](../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-preauthorization-decisions-using-specific-mvpd.md))
 
 ## D. Authorization phase {#authorization-phase}
 
@@ -84,7 +84,7 @@ Streaming application prepares to play a video/asset/resource selected by the us
 
 * Step is necessary for every play start
 * Call <b>/api/v2/{serviceProvider}/decision/authorize/{mvpd}</b><br>
-([Retrieve authorization decision using specific MVPD](.apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md))
+([Retrieve authorization decision using specific MVPD](../apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md))
   * decision = 'Permit' , Streaming device starts streaming
   * decision = 'Deny', Streaming device informs the user that it does not have access to that video
 
@@ -95,5 +95,5 @@ Streaming application prepares to play a video/asset/resource selected by the us
 Streaming device: User wants to logout from the MVPD
 
 * Call <b>/api/v2/{serviceProvider}/logout/{mvpd}</b><br>
-([Initiate logout for specific MVPD](.apis/logout-apis/rest-api-v2-logout-apis-initiate-logout-for-specific-mvpd.md))
+([Initiate logout for specific MVPD](../apis/logout-apis/rest-api-v2-logout-apis-initiate-logout-for-specific-mvpd.md))
 * If the response actionType='interactive' and url is present, open the url in a Browser/Second Screen to complete logout with MVPD
