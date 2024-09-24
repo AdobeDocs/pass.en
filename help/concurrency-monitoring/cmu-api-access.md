@@ -21,20 +21,22 @@ Follow the steps in the sections below to gain access.
 ## Access procedure steps {#access-procedure-steps}
 
 1. Have a registered application in Adobe Pass DCR server. For this step please contact our [Support Team](mailto:tve-support@adobe.com).
+
 2. Get the software statement
-   1. Go to TVE Dashboard <a href="https://console-preprod.auth.adobe.com/#!/" target="_blank"> Pre-Prod </a>  or <a href="https://console.auth.adobe.com/" target="_blank">PROD</a>
-   2. Select programmer
-   3. Go to Applications tab
+   1. Go to [Adobe Pass TVE Dashboard](https://experience.adobe.com/#/pass/authentication)
+   2. Select Programmer
+   3. Go to *Registered Applications* tab
    4. Select application
-   5. Click DownLoad Software Statement to get a file similar with bellow capture
+   5. Click download on the registered application row for which you want to get a software statement and save it as a file on your local machine
       <figure>
-          <img src="assets/software_statement_1_download.png"
+          <img src="assets/programmer-download-software-statement-button.png"
                alt="Download Software Statement">
-       </figure>
+      </figure>
+
       <figure>
           <img src="assets/software_statement_2.png"
                alt="Software Statement Sample">
-       </figure>
+      </figure>
    
 3. Obtain access token
    1. Get client credentials by using the software statement obtained above and performing the bellow call. In this way a client_id - client_secret pair will be obtained, that can be used to get the access token. 

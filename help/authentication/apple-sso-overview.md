@@ -33,7 +33,7 @@ In order to benefit from the Single Sign-On (SSO) user experience, one Programme
 
 1.  Have the [Video Subscriber Single Sign-On Entitlement](https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_developer_video-subscriber-single-sign-on) configured to their Apple Developer Account. Please contact Apple to enable [Video Subscriber Account framework](https://developer.apple.com/documentation/videosubscriberaccount) for your Apple Team ID.
 
-1.  Enable Single Sign-On (YES) for each desired integration (Channel x MVPD) and desired platform (iOS / tvOS) through the [Adobe Primetime TVE Dashboard](https://console.auth.adobe.com/).
+1.  Enable Single Sign-On (YES) for each desired integration (Channel x MVPD) and desired platform (iOS / tvOS) through the [Adobe Pass TVE Dashboard](https://experience.adobe.com/#/pass/authentication).
 
 1.  Integrate the Apple SSO workflows using one of the following two solutions offered by Adobe Pass Authentication team:
 
@@ -84,7 +84,7 @@ MVPD must:
 ## FAQ {#FAQ}
 
 1.  In case something goes wrong with the Apple SSO workflow, can the application using the AccessEnabler iOS/tvOS SDK have the ability to fallback to regular authentication flow?
-      - This is possible but requires a configuration change being performed on the [Adobe Primetime TVE Dashboard](https://console.auth.adobe.com/). The *Enable Single Sign-On* must be set on *NO* for the desired integration (Channel x MVPD) and desired platform (iOS/tvOS).
+      - This is possible but requires a configuration change being performed on the [Adobe Pass TVE Dashboard](https://experience.adobe.com/#/pass/authentication). The *Enable Single Sign-On* must be set on *NO* for the desired integration (Channel x MVPD) and desired platform (iOS/tvOS).
       - The application would acknowledge the configuration change only after calling [setRequestor](/help/authentication/iostvos-sdk-api-reference.md#setReqV3) API in case it is using the AccessEnabler iOS/tvOS SDK.
 1.  Will the application know when an authentication has happened as a result of a sign-in through the platform SSO on another device or another application?
       - This information will not be available.
@@ -92,13 +92,13 @@ MVPD must:
       - This information is available as part of the user metadata key: *tokenSource*, which should return the string value: "Apple" in this case.
 1.  What happens if a user signs-in by going to the *`Settings -> TV Provider`* on iOS/iPadOS or *`Settings -> Accounts -> TV Provider`* on tvOS section using an MVPD which is not integrated with the application?
       - When the user launches the application, the user won't be authenticated via the Apple SSO workflow. Therefore, the application would have to fallback to regular authentication flow and present its own MVPD picker.
-1.  What happens if a user signs-in by going to the *`Settings -> TV Provider`* on iOS/iPadOS or *`Settings -> Accounts -> TV Provider`* on tvOS section using an MVPD which has the *Enable Single Sign-On* set on *NO* on the [Adobe Primetime TVE Dashboard](https://console.auth.adobe.com/) for iOS/tvOS platform?
+1.  What happens if a user signs-in by going to the *`Settings -> TV Provider`* on iOS/iPadOS or *`Settings -> Accounts -> TV Provider`* on tvOS section using an MVPD which has the *Enable Single Sign-On* set on *NO* on the [Adobe Pass TVE Dashboard](https://experience.adobe.com/#/pass/authentication) for iOS/tvOS platform?
       - When the user launches the application, the user won't be authenticated via the Apple SSO workflow. Therefore, the application would have to fallback to regular authentication flow and present its own MVPD picker.
 1.  What happens if a user has an MVPD which is not onboarded (not supported) by Apple, but it is present in the Apple picker?
       - When the user launches the application, the user will only select the MVPD via the Apple SSO workflow without completing the authentication flow. Therefore, the application would have to fallback to regular authentication flow, but could use the already selected MVPD.
 1.  What happens if a user has an MVPD which is not onboarded (not supported) by Apple?
       - When the user launches the application, the user will select the "Other TV Providers" picker option via the Apple SSO workflow. Therefore, the application would have to fallback to regular authentication flow and present its own MVPD picker.
-1.  What happens if a user has an MVPD which is degraded through the medium of [Adobe Primetime TVE Dashboard](https://console.auth.adobe.com/)?
+1.  What happens if a user has an MVPD which is degraded through the medium of [Adobe Pass TVE Dashboard](https://experience.adobe.com/#/pass/authentication)?
       - When the user launches the application, the user will be authenticated via the degradation mechanism and not via the Apple SSO workflow.
       - The experience should be seamless for the user, while the application will be informed through the *N010* warning code in case it is using the AccessEnabler iOS/tvOS SDK.
 1.  Will the MVPD user ID change between Apple SSO and non-Apple SSO authentication flow?

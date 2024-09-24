@@ -39,7 +39,7 @@ exl-id: 0b39768b-25b8-47b9-8080-59c56fb829fb
    <tr>
       <td style="background-color: #DEEBFF;">software_statement</td>
       <td>
-            The software statement associated with the registered application created and downloaded from <a href="https://console.auth.adobe.com/">Adobe Pass TVE Dashboard</a>.
+            The software statement associated with the registered application created and downloaded from <a href="https://experience.adobe.com/#/pass/authentication">Adobe Pass TVE Dashboard</a>.
             <br/><br/>
             The management of registered applications is described in the <a href="../dynamic-client-registration-overview.md">Dynamic Client Registration Overview</a> documentation.
       </td>

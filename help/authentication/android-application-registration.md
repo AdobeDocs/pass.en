@@ -31,7 +31,7 @@ Here are ways you can obtain a Software Statement.
 
 ### If you have access to Adobe's TVE Dashboard
 
-1. Open your browser and navigate to [Adobe Pass TVE Dashboard](https://console.auth.adobe.com).
+1. Open your browser and navigate to [Adobe Pass TVE Dashboard](https://experience.adobe.com/#/pass/authentication).
 
 1. Navigate to **[!UICONTROL Channels]** section, then select your channel.
 

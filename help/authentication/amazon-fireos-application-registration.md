@@ -27,7 +27,7 @@ A Software Statement is a JWT token that contains information about your applica
 
 ### If you have access to Adobe's TVE Dashboard:
 
-1. Open your browser and navigate to `https://console.auth.adobe.com`.
+1. Open your browser and navigate to `https://experience.adobe.com/#/pass/authentication`.
 
 1. Navigate to the **[!UICONTROL Channels]** section, then select your channel.
 

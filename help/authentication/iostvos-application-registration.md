@@ -26,7 +26,7 @@ A Software Statement is a JWT token that contains information about your applica
 
 ### If you have access to Adobe's TVE Dashboard:
 
-- Open your browser and navigate to <https://console.auth.adobe.com>
+- Open your browser and navigate to <https://experience.adobe.com/#/pass/authentication>
 - Navigate to `Channels` section and select your channel.
 - Navigate to `Registered Applications` Tab.
 - Click on `Add new application`.
@@ -49,7 +49,7 @@ After you obtain your Software Statement you need to pass it as a paramenter in 
 
 ### If you have access to Adobe's TVE Dashboard:
 
-- Open your browser and navigate to <https://console.auth.adobe.com>
+- Open your browser and navigate to <https://experience.adobe.com/#/pass/authentication>
 - Navigate to `Channels` section and select your channel.
 - Navigate to `Custom Schemes` Tab.
 - Click on `Generate a new custom scheme`.
