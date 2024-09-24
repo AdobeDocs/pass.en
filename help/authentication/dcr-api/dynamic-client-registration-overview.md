@@ -72,7 +72,7 @@ There are two available ways you can create a registered application:
 >
 > It is recommended to create registered applications with more specific and limited permissions to enhance security and prevent unauthorized access. Therefore, when creating registered applications, consider using narrower options for the assigned `channels`, `platforms`, and `scopes`.
 >
-> It is recommended to create a new registered application for each major update of your client application to manage its life cycle and usage. When necessary, create a ticket through our [Zendesk](https://adobeprimetime.zendesk.com) and ask your Technical Account Manager (TAM) to revoke a registered application in order to block the functionality of a specific client application version.
+> It is recommended to create a new registered application for each major update of your client application to manage its life cycle and usage. If necessary, create a ticket through our [Zendesk](https://adobeprimetime.zendesk.com) and ask your Technical Account Manager (TAM) to revoke a registered application in order to block the functionality of a specific client application version.
 
 ### Manage software statements {#manage-software-statements}
 

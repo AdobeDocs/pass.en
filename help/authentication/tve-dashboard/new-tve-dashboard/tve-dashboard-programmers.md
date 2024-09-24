@@ -116,11 +116,87 @@ A new configuration change has been created and is ready for server update. The 
 
 ### Registered Applications {#registered-applications}
 
-This tab provides a list of application registrations.
+This tab displays a list of registered applications. For more details related to registered applications usage, refer to the [dynamic client registration overview](../../dcr-api/dynamic-client-registration-overview.md) documentation.
+
+You can make the following actions with registered applications:
+
+* [Add a new registered application](#add-registered-applications)
+* [Download a software statement](#download-software-statement)
+
+#### Add new registered application {#add-registered-applications}
+
+Follow these steps to add a new registered application.
+
+1. Select **Add new application** at the upper-right corner of the **Registered Applications** section.
+
+   ![Add a new application](../../assets/tve-dashboard/new-tve-dashboard/programmers/programmer-add-new-application-button.png)
+
+   *Add a new application*
+
+1. Select **Assigned to Channel** from the dropdown menu in the **New Application** dialog box.
+
+   >[!IMPORTANT]
+   >
+   > It is recommended to create registered applications with more specific and limited permissions to enhance security and prevent unauthorized access. Therefore, when creating registered applications, consider using narrower options for the assigned `channel`.
+
+1. Select **Platforms** from the dropdown menu.
+
+   >[!IMPORTANT]
+   >
+   > It is recommended to create registered applications with more specific and limited permissions to enhance security and prevent unauthorized access. Therefore, when creating registered applications, consider using narrower options for the assigned `platforms`.
+
+1. Select **Domains** from the dropdown menu.
+
+   >[!IMPORTANT]
+   >
+   > In the client registration process, the client application can request to be permitted to use a redirect URL for the finalization of the authentication flow. When a client application uses a specific redirect URL, it is validated against the `domains` picked in this selection.
+
+1. Type the **Name** of the application.
+
+1. Type the **Version** of the application.
+
+   >[!IMPORTANT]
+   >
+   > It is recommended to create a new registered application for each major update of your client application to manage its life cycle and usage. If necessary, create a ticket through our [Zendesk](https://adobeprimetime.zendesk.com) and ask your Technical Account Manager (TAM) to revoke a registered application in order to block the functionality of a specific client application version.
+
+1. Select **Type** value "DIRECT" from the dropdown menu.
+
+1. Select **Add application**.
+
+A new configuration change has been created and is ready for server update. To use the new registered application listed in the **Registered Applications** section, proceed with the [review and push changes](/help/authentication/tve-dashboard/new-tve-dashboard/tve-dashboard-review-push-changes.md) flow.
+
+#### Download software statement {#download-software-statement}
+
+Follow these steps to download a software statement.
+
+1. Hover on the registered application you want to download the software statement from the list of **Registered Applications**.
+
+1. Select **Download**.
+
+   ![Download a software statement](../../assets/tve-dashboard/new-tve-dashboard/programmers/programmer-download-software-statement-button.png)
+
+   *Download a software statement*
+
 
 ### Custom Schemes {#custom-schemes}
 
-This tab displays a list of custom schemes. View [iOS/tvOS application registration](/help/authentication/iostvos-application-registration.md).
+This tab displays a list of custom schemes. For more details related to custom schemes usage, refer to the [iOS/tvOS application registration](/help/authentication/iostvos-application-registration.md).
+
+You can make the following changes to custom schemes:
+
+* [Generate a new custom scheme](#generate-custom-schemes)
+
+#### Generate new custom scheme {#generate-custom-schemes}
+
+Follow these steps to generate a new custom scheme.
+
+1. Select **Generate new custom scheme**.
+
+   ![Generate a new custom scheme](../../assets/tve-dashboard/new-tve-dashboard/programmers/programmer-add-new-custom-scheme-button.png)
+
+   *Generate a new custom scheme*
+
+A new configuration change has been created and is ready for server update. To use the new custom scheme listed in the **Custom Schemes** section, proceed with the [review and push changes](/help/authentication/tve-dashboard/new-tve-dashboard/tve-dashboard-review-push-changes.md) flow.
 
 ## Add new programmer {#add-new-programmer}
 
