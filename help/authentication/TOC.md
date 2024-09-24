@@ -183,6 +183,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
         + [HBA status for MVPDs](hba-status-mvpds.md)
     + User metadata {#user-metadat}
         + [User metadata](user-metadata-feature.md)
+        + [User metadata certificate for encryption](user-metadata-certificate.md)
     + [Preflight authorization](preflight-authz.md)
     + Error reporting {#error-reportn}
         + [Error reporting](error-reporting.md)

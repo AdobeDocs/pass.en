@@ -22,7 +22,7 @@ User Metadata Key Points:
 - Passed to the Programmer's application during the authentication and authorization flows
 - Values are saved in the token
 - Values can be normalized if different MVPDs provide data in different formats
-- Some parameters can be encrypted using the Programmer's key (e.g. zip code)
+- Some parameters can be encrypted using the Programmer's key (e.g. zip code), see [User Metadata Certificate for encryption](./user-metadata-certificate.md) for encryption certificate generation
 - Specific values are made available by Adobe, via a configuration change
 
 ## Obtaining User Metadata {#obtaining}
