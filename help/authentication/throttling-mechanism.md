@@ -38,7 +38,7 @@ You can find more details on how to pass the X-Forwarded-For header [here](rest-
 
 ### Actual limits and endpoints
 
-Currently, the default limit allows a maximum of 1 request per second., with an initial burst of 3 requests (one-time allowance on the first interaction of the identified client, which should allow initialization to finish successfully). This should not affect any regular business case across all our customers.
+Currently, the default limit allows a maximum of 1 request per second, with an initial burst of 10 requests (one-time allowance on the first interaction of the identified client, which should allow initialization to finish successfully). This should not affect any regular business case across all our customers.
 
 The throttling mechanism will be enabled on the following endpoints:
 
@@ -61,6 +61,7 @@ The throttling mechanism will be enabled on the following endpoints:
 - /api/v1/authenticate/
 - /api/v1/.+/profile-requests/.+
 - /api/v1/identities
+- /adobe-services/config/
 - /reggie/v1/.+/regcode
 - /reggie/v1/.+/regcode/.+
 
@@ -137,14 +138,22 @@ Customers using a custom implementation (including server-to-server ones) to int
 
 ## Scenario example for throttling
 
-| Time since first request | Response received                 | Explanation                                                                                              |
-|--------------------------|-----------------------------------|----------------------------------------------------------------------------------------------------------|
-| Second 0                 | Call receives success status code | 1 calls consumed from the limit                                                                          |
-| Second 0.3               | Call receives success status code | 1 calls consumed from the limit and 1 calls marked as burst                                              |
-| Second 0.6               | Call receives success status code | 1 calls consumed from the limit and 2 calls marked as burst                                              |
-| Second 0.9               | Call receives success status code | 1 calls consumed from the limit and 3 calls marked as burst                                              |
-| Second 1.2               | Call receives success status code | 2 calls consumed from the limit and 3 calls marked as burst                                              |
-| Second 1.4               | Call receives 429 status code     | 2 calls consumed from the limit and 3 calls marked as burst and 1 calls receives ‘429 Too many requests’ |
-| Second 1.6               | Call receives 429 status code     | 2 calls consumed from the limit and 3 calls marked as burst and 2 calls receives ‘429 Too many requests’ |
-| Second 1.8               | Call receives 429 status code     | 2 calls consumed from the limit and 3 calls marked as burst and 3 calls receives ‘429 Too many requests’ |
-| Second 2.1               | Call receives success status code | 3 calls consumed from the limit and 3 calls marked as burst and 3 calls receives ‘429 Too many requests’ |
+| Time since first request | Response received                 | Explanation                                                                                               |
+|--------------------------|-----------------------------------|-----------------------------------------------------------------------------------------------------------|
+| Second 0                 | Call receives success status code | 1 calls consumed from the limit                                                                           |
+| Second 0.3               | Call receives success status code | 1 calls consumed from the limit and 1 calls marked as burst                                               |
+| Second 0.6               | Call receives success status code | 1 calls consumed from the limit and 2 calls marked as burst                                               |
+| Second 0.9               | Call receives success status code | 1 calls consumed from the limit and 3 calls marked as burst                                               |
+| Second 1.2               | Call receives success status code | 2 calls consumed from the limit and 3 calls marked as burst                                               |
+| Second 1.3               | Call receives success status code | 2 calls consumed from the limit and 4 calls marked as burst                                               |
+| Second 1.4               | Call receives success status code | 2 calls consumed from the limit and 5 calls marked as burst                                               |
+| Second 1.5               | Call receives success status code | 2 calls consumed from the limit and 6 calls marked as burst                                               |
+| Second 1.6               | Call receives success status code | 2 calls consumed from the limit and 7 calls marked as burst                                               |
+| Second 1.7               | Call receives success status code | 2 calls consumed from the limit and 8 calls marked as burst                                               |
+| Second 1.8               | Call receives success status code | 2 calls consumed from the limit and 9 calls marked as burst                                               |
+| Second 2.1               | Call receives success status code | 3 calls consumed from the limit and 9 calls marked as burst                                               |
+| Second 2.2               | Call receives success status code | 3 calls consumed from the limit and 10 calls marked as burst                                              |
+| Second 2.4               | Call receives 429 status code     | 3 calls consumed from the limit and 10 calls marked as burst and 1 calls receives ‘429 Too many requests’ |
+| Second 2.6               | Call receives 429 status code     | 3 calls consumed from the limit and 10 calls marked as burst and 2 calls receives ‘429 Too many requests’ |
+| Second 2.8               | Call receives 429 status code     | 3 calls consumed from the limit and 10 calls marked as burst and 3 calls receives ‘429 Too many requests’ |
+| Second 3.1               | Call receives success status code | 4 calls consumed from the limit and 10 calls marked as burst and 3 calls receives ‘429 Too many requests’ |
