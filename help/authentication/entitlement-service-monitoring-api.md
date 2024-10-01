@@ -30,13 +30,13 @@ The ESM API provides a hierarchical view of the underlying OLAP cubes. Each reso
 
 The REST API provides the available data within a time interval specified in the request (falling back to default values if none provided), according to the dimension path, provided filters, and selected metrics. The time range will not be applied for reports that do not contain time dimensions (year, month, day, hour, minute, second).
 
-The endpoint URL root path will return the overall aggregated metrics within a single record, along with the links to the available drill-down options. The API version is mapped as the trailing segment of the endpoint URI path. For example, `https://mgmt.auth.adobe.com/*v2*` means that the clients will access WOLAP version 2.
+The endpoint URL root path will return the overall aggregated metrics within a single record, along with the links to the available drill-down options. The API version is mapped as the trailing segment of the endpoint URI path. For example, `https://mgmt.auth.adobe.com/esm/v3` means that the clients will access WOLAP version 3.
 
 The available URL paths are discoverable via links contained in the response. Valid URL paths are held to map a path within the underlying drill-down tree that holds (pre-) aggregated metrics. A path in the form `/dimension1/dimension2/dimension3` will reflect a pre-aggregation of those three dimensions (the equivalent of an SQL `clause GROUP` BY `dimension1`, `dimension2`, `dimension3`). If such a pre-aggregation does not exist and the system cannot compute it on the fly, the API will return a 404 Not Found response.
 
 ## Drill-down Tree {#drill-down-tree}
 
-The following drill-down trees illustrate the dimensions (resources) available in ESM 2.0 for [Programmers](#progr-dimensions) and [MVPDs](#mvpd-dimensions).
+The following drill-down trees illustrate the dimensions (resources) available in ESM 3.0 for [Programmers](#progr-dimensions) and [MVPDs](#mvpd-dimensions).
 
 
 ### Dimensions available to Programmers {#progr-dimensions}
@@ -57,13 +57,13 @@ The following drill-down trees illustrate the dimensions (resources) available i
 
 ![](assets/esm-mvpd-dimensions.png)
 
-A GET to the `https://mgmt.auth.adobe.com/v2` API endpoint will return a representation containing:
+A GET to the `https://mgmt.auth.adobe.com/esm/v3` API endpoint will return a representation containing:
 
 *   Links to the available root drill-down paths:
 
-    *   `<link rel="drill-down" href="/v2/dimensionA"/>`
+    *   `<link rel="drill-down" href="/v3/dimensionA"/>`
 
-    *   `<link rel="drill-down" href="/v2/dimensionB"/>`
+    *   `<link rel="drill-down" href="/v3/dimensionB"/>`
 
 *   A summary (aggregated values) for all the metrics (in the default
     interval, since no query string parameters are provided, see below).
@@ -112,18 +112,17 @@ The following query string parameters have reserved meanings for the API (and th
 
 ### ESM API Reserved Query String Parameters
 
-| Parameter | Optional  | Description | Default value  |Example |
-| --- | ---- | --- | ---- | --- |
-|access_token | Yes | In case the IMS OAuth protection is enabled, the IMS token can be passed either as a standard Authorization Bearer token or as a query string parameter. | None | access_token=XXXXXX |
-| dimension-name | Yes | Any dimension name – either contained in the current URL path or in any valid subpath; the value will be treated as an equals filter. If no value is provided, this will force the specified dimension to be included in the output even if it is not included or adjacent to the current path | None | someDimension=someValue&someOtherDimension | 
-| end | Yes | End time for the report in millis | Current time of the server | end=2012-07-30 | 
-| format | Yes | Used for content negotiation (with the same effect but lower precedence than the path "extension" – see bellow). | None: the content negotiation will try the other strategies | format=json | 
-| limit | Yes | Maximum number of rows to be returned| Default value reported by the server in the self link if no limit is specified in the request | limit=1500 |
+| Parameter | Optional  | Description                                                                                                                                                                                                                                                                                         | Default value  |Example |
+| --- | ---- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ---- | --- |
+|access_token | Yes | The DCR token can be passed as a standard Authorization Bearer token.                                                                                                                                                                                         | None | access_token=XXXXXX |
+| dimension-name | Yes | Any dimension name – either contained in the current URL path or in any valid subpath; the value will be treated as an equals filter. If no value is provided, this will force the specified dimension to be included in the output even if it is not included or adjacent to the current path      | None | someDimension=someValue&someOtherDimension | 
+| end | Yes | End time for the report in millis                                                                                                                                                                                                                                                                   | Current time of the server | end=2012-07-30 | 
+| format | Yes | Used for content negotiation (with the same effect but lower precedence than the path "extension" – see bellow).                                                                                                                                                                                    | None: the content negotiation will try the other strategies | format=json | 
+| limit | Yes | Maximum number of rows to be returned                                                                                                                                                                                                                                                               | Default value reported by the server in the self link if no limit is specified in the request | limit=1500 |
 | metrics | Yes | Comma-separated list of metric names to be returned; this should be used for both filtering a subset of the available metrics (to reduce the payload size) and also for enforcing the API to return a projection which contains the requested metrics (rather than the default optimal projection). | All the metrics available for the current projection will be returned in case this parameter is not provided. | metrics=m1,m2 |
-| start | Yes | Start time for the report as ISO8601; the server will fill in the remaining part if only a prefix is provided: e.g., start=2012 will result in start=2012-01-01:00:00:00 | Reported by the server in the self link; the server tries to provide reasonable defaults based on the selected time granularity | start=2012-07-15 | 
+| start | Yes | Start time for the report as ISO8601; the server will fill in the remaining part if only a prefix is provided: e.g., start=2012 will result in start=2012-01-01:00:00:00                                                                                                                            | Reported by the server in the self link; the server tries to provide reasonable defaults based on the selected time granularity | start=2012-07-15 | 
 
-The only available HTTP method currently is GET. Support for OPTIONS /
-HEAD methods may be provided in future versions.
+The only available HTTP method currently is GET.
 
 ## ESM API Status Codes {#esm-api-status-codes}
 
@@ -150,7 +149,7 @@ The data is available in the following formats:
 
 The following content negotiation strategies can be used by clients (the precedence is given by the position in the list – first things first):
 
-1.  A "file extension" appended to the last segment of the URL path: e.g., `/esm/v2/media-company/year/month/day.xml`. If the URL contains a query string, the extension must come before the question mark: `/esm/v2/media-company/year/month/day.csv?mvpd= SomeMVPD`
+1.  A "file extension" appended to the last segment of the URL path: e.g., `/esm/v3/media-company/year/month/day.xml`. If the URL contains a query string, the extension must come before the question mark: `/esm/v3/media-company/year/month/day.csv?mvpd= SomeMVPD`
 1.  A format query string parameter: e.g., `/esm/report?format=json`
 1.  The standard HTTP Accept header: e.g., `Accept: application/xml`
 
@@ -199,13 +198,13 @@ The resource link (the "self" rel in JSON and the "href" resource attribute in X
 
 Example (assuming we have a single metric called `clients` and there is a pre-aggregation for `year/month/day/...`):
 
-* https://mgmt.auth.adobe.com/esm/v2/year/month.xml
+* https://mgmt.auth.adobe.com/esm/v3/year/month.xml
     
 ```XML
-   <resource href="/esm/v2/year/month?start=2012-07-20T00:00:00&end=2012-08-20T14:35:21">
+   <resource href="/esm/v3/year/month?start=2012-07-20T00:00:00&end=2012-08-20T14:35:21">
    <links>
-   <link rel="roll-up" href="/esm/v2/year"/>
-   <link rel="drill-down" href="/esm/v2/year/month/day"/>
+   <link rel="roll-up" href="/esm/v3/year"/>
+   <link rel="drill-down" href="/esm/v3/year/month/day"/>
    </links>
    <report>
    <record month="6" year="2012" clients="205"/>
@@ -214,19 +213,19 @@ Example (assuming we have a single metric called `clients` and there is a pre-ag
    </resource>
 ```
 
-* https://mgmt.auth.adobe.com/esm/v2/year/month.json 
+* https://mgmt.auth.adobe.com/esm/v3/year/month.json 
     
     ```JSON
         {
           "_links" : {
             "self" : {
-              "href" : "/esm/v2/year/month?start=2012-07-20T00:00:00&end=2012-08-20T14:35:21"
+              "href" : "/esm/v3/year/month?start=2012-07-20T00:00:00&end=2012-08-20T14:35:21"
             },
             "roll-up" : {
-              "href" : "/esm/v2/year"
+              "href" : "/esm/v3/year"
             },
             "drill-down" : {
-              "href" : "/esm/v2/year/month/day"
+              "href" : "/esm/v3/year/month/day"
             }
           },
           "report" : [ {
@@ -254,7 +253,7 @@ The CSV will contain a header row and then the report data as subsequent rows. T
 The order of the fields in the header row will reflect the sort-order of the table data.
 
 
-Example: https://mgmt.auth.adobe.com/v2/year/month.csv will produce a file named `report__2012-07-20_2012-08-20_1000.csv` with the following content:
+Example: https://mgmt.auth.adobe.com/esm/v3/year/month.csv will produce a file named `report__2012-07-20_2012-08-20_1000.csv` with the following content:
 
 
 | Year | Month | Clients |
@@ -267,8 +266,6 @@ Example: https://mgmt.auth.adobe.com/v2/year/month.csv will produce a file named
 The successful HTTP responses contain a `Last-Modified` header which indicates the time when the report in the body was last updated. The lack of a Last-Modified header indicates that the report data is computed in real-time.
 
 Usually, coarse-grained data will be updated less frequently than fine-grained data (e.g., by-the-minute values, or hourly values, may be more up-to-date than the daily values, especially for metrics that cannot be computed based on smaller granularities, like unique counts).
-
-Future versions of ESM may allow clients to perform conditional GETs by providing the standard "If-Modified-Since" header.
 
 ## GZIP Compression {#gzip-compression}
 
