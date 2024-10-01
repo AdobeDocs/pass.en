@@ -44,7 +44,11 @@ There is only one supported types as presented below.
    </tr>
    <tr>
       <td>fingerprint</td>
-      <td>The device identifier consists of an opaque identifier and is created by the client application.</td>
+      <td>
+            The device identifier consists of a stable and unique identifier created and managed by the client application.
+            <br/>
+            The client application must prevent value changes caused by user actions such as application uninstall, re-install, or upgrades.
+      </td>
    </tr>
 </table>
 
@@ -64,3 +68,63 @@ The `Base64-encoded` value of the device identifier.
 
 AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
 ```
+
+## Cookbooks {#cookbooks}
+
+>[!IMPORTANT]
+>
+> The documentation resources are provided for referencing purposes.
+>
+> The documentation resources are not exhaustive and may require additional modifications to work in your project.
+> 
+> Regardless of your actual implementation, the `AP-Device-Identifier` header must contain a value formated as described in the [Directives](#directives) section.
+
+### Browsers {#browsers}
+
+To build the `AP-Device-Identifier` header for devices running in a browser, your client application requires to compute a stable and unique identifier based on available data such as browser, device, or user specific data.
+
+_(*) We recommend to integrate a library or service that provides a browser or device fingerprinting mechanism._
+
+### Mobile Devices {#mobile-devices}
+
+#### iOS & iPadOS {#ios-ipados}
+
+To build the `AP-Device-Identifier` header for devices running [iOS or iPadOS](https://developer.apple.com/documentation/ios-ipados-release-notes), you may refer to the following documents:
+
+* Apple developer documentation for [identifierForVendor](https://developer.apple.com/documentation/uikit/uidevice/1620059-identifierforvendor).
+
+_(*) We recommend to apply an SHA-256 hash function over the OS provided value._
+
+#### Android {#android}
+
+To build the `AP-Device-Identifier` header for devices running [Android](https://developer.android.com/about/versions), you may refer to the following documents:
+
+* Android developer documentation for [ANDROID_ID](https://developer.android.com/reference/android/provider/Settings.Secure#ANDROID_ID).
+
+_(*) We recommend to apply an SHA-256 hash function over the OS provided value._
+
+### TV Connected Devices {#tv-connected-devices}
+
+#### tvOS {#tvos}
+
+To build the `AP-Device-Identifier` header for devices running [tvOS](https://developer.apple.com/documentation/tvos-release-notes), you may refer to the following documents:
+
+* Apple developer documentation for [identifierForVendor](https://developer.apple.com/documentation/uikit/uidevice/1620059-identifierforvendor).
+
+_(*) We recommend to apply an SHA-256 hash function over the OS provided value._
+
+#### Fire OS {#fireos}
+
+To build the `AP-Device-Identifier` header for devices running [Fire OS](https://developer.amazon.com/docs/fire-tv/fire-os-overview.html), you may refer to the following documents:
+
+* Android developer documentation for [ANDROID_ID](https://developer.android.com/reference/android/provider/Settings.Secure#ANDROID_ID).
+
+_(*) We recommend to apply an SHA-256 hash function over the OS provided value._
+
+#### Roku OS {#rokuos}
+
+To build the `AP-Device-Identifier` header for devices running [Roku OS](https://developer.roku.com/docs/developer-program/release-notes/roku-os-release-notes.md), you may refer to the following documents:
+
+* Roku developer documentation for [GetChannelClientId](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getchannelclientid-as-string).
+
+_(*) We recommend to apply an SHA-256 hash function over the OS provided value._
