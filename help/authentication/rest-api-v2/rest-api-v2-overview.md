@@ -1,8 +1,8 @@
 ---
-title: REST API V2 - Overview
-description: REST API V2 - Overview
+title: REST API V2 Overview
+description: REST API V2 Overview
 ---
-# REST API V2 - Overview {#rest-api-v2-overview}
+# REST API V2 Overview {#rest-api-v2-overview}
 
 >[!IMPORTANT]
 >
@@ -64,7 +64,11 @@ However, all future developments will be built on the REST API V2. We strongly r
 
 ## Want to learn more?
 
-To get started, visit our public documentation to access [flow description](./flows/rest-api-v2-flows-overview.md) and [API reference](./apis/rest-api-v2-apis-overview.md). 
+To get started, visit our public documentation:
+
+- [Glossary](rest-api-v2-glossary.md)
+- [APIs](./apis/rest-api-v2-apis-overview.md)
+- [Flows](./flows/rest-api-v2-flows-overview.md)
 
 Our dedicated support team is also available to help you with any questions or technical assistance you may need.
 

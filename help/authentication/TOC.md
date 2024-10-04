@@ -47,9 +47,10 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             + [Token Exchange](token-exchange.md)
             + [Free Preview for Temp Pass and Promotional Temp Pass](free-preview-for-temp-pass-and-promotional-temp-pass.md)
     + REST API V2 {#rest-api-v2}
-        + [REST API V2 - Overview](./rest-api-v2/rest-api-v2-overview.md)
+        + [REST API V2 Overview](./rest-api-v2/rest-api-v2-overview.md)
+        + [REST API V2 Glossary](./rest-api-v2/rest-api-v2-glossary.md)
         + APIs {#rest-api-v2-apis}
-            + [REST API V2 - APIs - Overview](./rest-api-v2/apis/rest-api-v2-apis-overview.md)
+            + [REST API V2 APIs Overview](./rest-api-v2/apis/rest-api-v2-apis-overview.md)
             + Configuration {#rest-api-v2-configuration-apis}
                 + [Retrieve configuration for specific service provider](./rest-api-v2/apis/configuration-apis/rest-api-v2-configuration-apis-retrieve-configuration-for-specific-service-provider.md)
             + Sessions {#rest-api-v2-sessions-apis}
@@ -70,7 +71,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                 + [Retrieve partner authentication request](rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-partner-authentication-request.md)
                 + [Retrieve profile using partner authentication response](rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md)
         + Flows {#rest-api-v2-flows}
-            + [REST API V2 - Flows - Overview](./rest-api-v2/flows/rest-api-v2-flows-overview.md)
+            + [REST API V2 Flows Overview](./rest-api-v2/flows/rest-api-v2-flows-overview.md)
             + Basic Access Flows {#rest-api-v2-basic-access-flows}
                 + [Basic profiles flow performed within primary application](rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-profiles-primary-application-flow.md)
                 + [Basic profiles flow performed within secondary application](rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-profiles-secondary-application-flow.md)

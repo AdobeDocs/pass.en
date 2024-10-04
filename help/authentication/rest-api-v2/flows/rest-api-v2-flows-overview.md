@@ -1,15 +1,15 @@
 ---
-title: REST API V2 - Flows - Overview
-description: REST API V2 - Flows - Overview
+title: REST API V2 Flows Overview
+description: REST API V2 Flows Overview
 exl-id: 84a9ac0f-c26a-4159-82a8-3a31bb31f529
 ---
-# REST API V2 - Flows - Overview {#rest-api-v2-flows-overview}
+# REST API V2 Flows Overview {#rest-api-v2-flows-overview}
 
 >[!IMPORTANT]
 >
 > The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
-To get started, visit the public documentation of each entry from the list below.
+To get started, visit the public documentation of the flows you are interested in the list below.
 
 ## Basic Access Flows {#rest-api-v2-flows-access-basic}
 

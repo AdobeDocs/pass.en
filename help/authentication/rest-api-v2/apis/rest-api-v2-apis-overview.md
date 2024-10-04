@@ -1,15 +1,15 @@
 ---
-title: REST API V2 - APIs - Overview
-description: REST API V2 - APIs - Overview
+title: REST API V2 APIs Overview
+description: REST API V2 APIs Overview
 exl-id: 62b48bf0-d200-4949-b268-8f8ea2daabfa
 ---
-# REST API V2 - APIs - Overview {#rest-api-v2-apis-overview}
+# REST API V2 APIs Overview {#rest-api-v2-apis-overview}
 
 >[!IMPORTANT]
 >
 > The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
-To get started, visit the public documentation of each entry from the list below.
+To get started, visit the public documentation of the APIs you are interested in the list below.
 
 ## Configuration {#rest-api-v2-apis-configuration}
 
