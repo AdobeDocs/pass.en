@@ -107,8 +107,8 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             + [JavaScript SDK API Reference](javascript-sdk-api-reference.md)
             + Guidelines {#js-sdk-guidelines}
                 + [Refresh-less Login and Logout](refreshless-login-and-logout.md)
-            + JavaScript API {#js-api}
-                + [Preauthorize](js-preauthorize.md)
+            + JavaScript API {#javascript-sdk-api}
+                + [Preauthorize](preauthorize-api-javascript-sdk.md)
         + iOS/tvOS SDK {#ios-sdk}
             + [iOS/tvOS SDK Overview](iostvos-sdk-overview.md)
             + [iOS/tvOS SDK Cookbook](iostvos-sdk-cookbook.md)
@@ -118,8 +118,8 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                 + Migration guidelines {#migration-guidelines}
                     + [iOS/tvOS v3.x Migration Guide](iostvos-v3x-migration-guide.md)
                 + [iOS/tvOS Storage Integrity Checks](iostvos-sdk-storage-integrity-checks.md)
-            + iOS/tvOS API {#ios-tvos-api}
-                + [Preauthorize](preauthorize.md)
+            + iOS/tvOS API {#ios-tvos-sdk-api}
+                + [Preauthorize](preauthorize-api-ios-tvos-sdk.md)
         + Android SDK {#androidsdk}
             + [Android SDK Overview](android-sdk-overview.md)
             + [Android SDK Cookbook](android-sdk-cookbook.md)
@@ -127,8 +127,8 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             + Guidelines {#androidguidelines}
                 + [Android Application Registration](android-application-registration.md)
                 + [Android SDK with Dynamic Client Registration](android-sdk-with-dynamic-client-registration.md)
-            + Android API{#androidapi}
-                + [Preauthorize](preauthorize-android.md)
+            + Android API{#android-sdk-api}
+                + [Preauthorize](preauthorize-api-android-sdk.md)
         + Amazon FireOS SDK {#fireossdk}
             + [Amazon FireOS SSO - Programmer kick-off guide](amazon-firetv-sso-programmer-kickoff-guide.md)
             + [Amazon FireOS SSO using Clientless API Cookbook](amazon-fireos-sso-using-clientless-api-cookbook.md)

@@ -182,8 +182,8 @@ exl-id: 5cc209eb-ee6b-4bb9-9c04-3444408844b7
       <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
-      <td style="background-color: #DEEBFF;">error</td>
-      <td>The error provides additional information that adheres to the <a href="../../../enhanced-error-codes.md">Enhanced Error Codes</a> documentation.</td>
+      <td style="background-color: #DEEBFF;"></td>
+      <td>The response body may provide additional error information that adheres to the <a href="../../../enhanced-error-codes.md">Enhanced Error Codes</a> documentation.</td>
       <td><i>required</i></td>
    </tr>
 </table>

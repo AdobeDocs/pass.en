@@ -333,8 +333,8 @@ exl-id: 52d8a8e9-c176-410f-92bc-e83449278943
       <th style="background-color: #EFF2F7;"></th>
    </tr>
    <tr>
-      <td style="background-color: #DEEBFF;">error</td>
-      <td>The error provides additional information that adheres to the <a href="../../../enhanced-error-codes.md">Enhanced Error Codes</a> documentation.</td>
+      <td style="background-color: #DEEBFF;"></td>
+      <td>The response body may provide additional error information that adheres to the <a href="../../../enhanced-error-codes.md">Enhanced Error Codes</a> documentation.</td>
       <td><i>required</i></td>
    </tr>
 </table>
