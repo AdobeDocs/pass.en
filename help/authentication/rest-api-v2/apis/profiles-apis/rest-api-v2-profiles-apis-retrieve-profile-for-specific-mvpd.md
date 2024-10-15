@@ -162,6 +162,13 @@ exl-id: ed1abc33-c279-4465-b5a0-b4e5b892076e
       </td>
    </tr>
    <tr>
+      <td>403</td>
+      <td>Forbidden</td>
+      <td>
+        The temporary access time-to-live (TTL) is expired or maximum number of resources is exceeded, the client needs to indicate the user to initiate a basic authentication flow using a regular MVPD. The response body may contain error information that adheres to the <a href="../../../enhanced-error-codes.md">Enhanced Error Codes</a> documentation.
+      </td>
+   </tr>
+   <tr>
       <td>405</td>
       <td>Method Not Allowed</td>
       <td>
@@ -298,7 +305,7 @@ exl-id: ed1abc33-c279-4465-b5a0-b4e5b892076e
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">Status</td>
-      <td>400, 401, 405, 500</td>
+      <td>400, 401, 403, 405, 500</td>
       <td><i>required</i></td>
    </tr>
    <tr>
@@ -320,51 +327,52 @@ exl-id: ed1abc33-c279-4465-b5a0-b4e5b892076e
 
 ## Samples {#samples}
 
-### 1. Retrieve all existing and valid authenticated profiles obtained through basic authentication for specific mvpd
+### 1. Retrieve profile for specific mvpd obtained through basic authentication
 
 >[!BEGINTABS]
 
 >[!TAB Request]
 
-```JSON
-GET /api/v2/REF30/profiles/Spectrum  
+```HTTPS
+GET /api/v2/REF30/profiles/Spectrum HTTP/1.1 
 
-Authorization: Bearer ....
-AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
-X-Device-Info ....
-Accept: application/json
-User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 14.5 like Mac OS X; en_US)
+    Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjNGZjM2U3ZS0xMmQ5LTQ5NWQtYjc0Mi02YWVhYzhhNDkwZTciLCJuYmYiOjE3MjQwODc4NjgsImlzcyI6ImF1dGguYWRvYmUuY29tIiwic2NvcGVzIjoiYXBpOmNsaWVudDp2MiIsImV4cCI6MTcyNDEwOTQ2OCwiaWF0IjoxNzI0MDg3ODY4fQ.DJ9GFl_yKAp2Qw-NVcBeRSnxIhqrwxhns5T5jU31N2tiHxCucKLSQ5guBygqkkJx6D0N_93f50meEEyfb7frbHhVHHwmRjHYjkfrWqHCpviwVjVZKKwl8Y3FEMb0bjKIB8p_E3txX9IbzeNGWRufZBRh2sxB5Q9B7XYINpVfh8s_sFvskrbDu5c01neCx5kEagEW5CtE0_EXTgEb5FSr_SfQG3UUu_iwlkOggOh_kOP_5GueElf9jn-bYBMnpObyN5s-FzuHDG5Rtac5rvcWqVW2reEqFTHqLI4rVC7UKQb6DSvPBPV4AgrutAvk30CYgDsOQILVyrjniincp7r9Ww
+    AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
+    X-Device-Info: ewoJInByaW1hcnlIYXJkd2FyZVR5cGUiOiAiU2V0VG9wQm94IiwKCSJtb2RlbCI6ICJUViA1dGggR2VuIiwKCSJtYW51ZmFjdHVyZXIiOiAiQXBwbGUiLAoJIm9zTmFtZSI6ICJ0dk9TIgoJIm9zVmVuZG9yIjogIkFwcGxlIiwKCSJvc1ZlcnNpb24iOiAiMTEuMCIKfQ==
+    Accept: application/json
+    User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 11.0 like Mac OS X; en_US)
 ```
 
 >[!TAB Response]
 
-```JSON
+```HTTPS
 HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
- 
+
+Content-Type: application/json;charset=UTF-8
+
 {
-    "profiles" : {
-        "Spectrum" : {
-            "notBefore" : 1623943955,
-            "notAfter" : 1623951155,
-            "issuer" : "Spectrum",
-            "type" : "regular",
-            "attributes" : {
-                "userId" : {
-                    "value" : "BASE64_value_userId",
-                    "state" : "plain"
+    "profiles": {
+        "Spectrum": {
+            "notBefore": 1623943955,
+            "notAfter": 1623951155,
+            "issuer": "Spectrum",
+            "type": "regular",
+            "attributes": {
+                "userId": {
+                    "value": "BASE64_value_userId",
+                    "state": "plain"
                 },
                 "householdId" : {
-                    "value" : "BASE64_value_householdId",
-                    "state" : "plain"
+                    "value": "BASE64_value_householdId",
+                    "state": "plain"
                 },
                 "zip" : {
-                    "value" : "BASE64_value_zip",
-                    "state" : "enc"
+                    "value": "BASE64_value_zip",
+                    "state": "enc"
                 },
                 "parental-controls" : {
-                    "value" : BASE64_value_parental-controls,
-                    "state" : "plain"
+                    "value": BASE64_value_parental-controls,
+                    "state": "plain"
                 }
             }
         }
@@ -374,28 +382,29 @@ Content-Type: application/json; charset=utf-8
 
 >[!ENDTABS]
 
-### 2. Retrieve all existing and valid authenticated profiles including the ones obtained through single sign-on authentication using Service Token method for specific mvpd
+### 2. Retrieve profile for specific mvpd obtained through basic authentication or single sign-on using Service Token method
 
 >[!BEGINTABS]
 
 >[!TAB Request]
 
-```JSON
-GET /api/v2/REF30/profiles/AdobeShibboleth  
+```HTTPS
+GET /api/v2/REF30/profiles/AdobeShibboleth HTTP/1.1
 
-Authorization: Bearer ....
-AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
-X-Device-Info ....
-AD-Service-Token : eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJkZDNmYWIyN2NmMjg0ZmU2ZWU0ZDY3ZmExZjY4MzE3YyIsImlzcyI6IkFkb2JlIiw.....
-Accept: application/json
-User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 14.5 like Mac OS X; en_US)
+    Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjNGZjM2U3ZS0xMmQ5LTQ5NWQtYjc0Mi02YWVhYzhhNDkwZTciLCJuYmYiOjE3MjQwODc4NjgsImlzcyI6ImF1dGguYWRvYmUuY29tIiwic2NvcGVzIjoiYXBpOmNsaWVudDp2MiIsImV4cCI6MTcyNDEwOTQ2OCwiaWF0IjoxNzI0MDg3ODY4fQ.DJ9GFl_yKAp2Qw-NVcBeRSnxIhqrwxhns5T5jU31N2tiHxCucKLSQ5guBygqkkJx6D0N_93f50meEEyfb7frbHhVHHwmRjHYjkfrWqHCpviwVjVZKKwl8Y3FEMb0bjKIB8p_E3txX9IbzeNGWRufZBRh2sxB5Q9B7XYINpVfh8s_sFvskrbDu5c01neCx5kEagEW5CtE0_EXTgEb5FSr_SfQG3UUu_iwlkOggOh_kOP_5GueElf9jn-bYBMnpObyN5s-FzuHDG5Rtac5rvcWqVW2reEqFTHqLI4rVC7UKQb6DSvPBPV4AgrutAvk30CYgDsOQILVyrjniincp7r9Ww
+    AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
+    X-Device-Info: ewoJInByaW1hcnlIYXJkd2FyZVR5cGUiOiAiU2V0VG9wQm94IiwKCSJtb2RlbCI6ICJUViA1dGggR2VuIiwKCSJtYW51ZmFjdHVyZXIiOiAiQXBwbGUiLAoJIm9zTmFtZSI6ICJ0dk9TIgoJIm9zVmVuZG9yIjogIkFwcGxlIiwKCSJvc1ZlcnNpb24iOiAiMTEuMCIKfQ==
+    AD-Service-Token: eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJkZDNmYWIyN2NmMjg0ZmU2ZWU0ZDY3ZmExZjY4MzE3YyIsImlzcyI6IkFkb2JlIiw.....
+    Accept: application/json
+    User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 11.0 like Mac OS X; en_US)
 ```
 
 >[!TAB Response]
 
-```JSON
+```HTTPS
 HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
+
+Content-Type: application/json;charset=UTF-8
 
 {
    "profiles": {
@@ -425,29 +434,30 @@ Content-Type: application/json; charset=utf-8
 
 >[!ENDTABS]
 
-### 3. Retrieve all existing and valid authenticated profiles including the ones obtained through single sign-on authentication using Platform Identity method for specific mvpd
+### 3. Retrieve profile for specific mvpd obtained through basic authentication or single sign-on using Platform Identity method
 
 >[!BEGINTABS]
 
 >[!TAB Request]
 
-```JSON
-GET /api/v2/REF30/profiles/AdobePass_SMI  
- 
-Authorization: Bearer ....
-AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
-X-Device-Info ....
-Adobe-Subject-Token : eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIyMmM4MDU1MjEzMDIwYzhmZGYzOGZkMTI1YWViMzUzYSIsImlzcyI6....
-Accept: application/json
-User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 14.5 like Mac OS X; en_US)
+```HTTPS
+GET /api/v2/REF30/profiles/AdobePass_SMI HTTP/1.1
+
+    Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjNGZjM2U3ZS0xMmQ5LTQ5NWQtYjc0Mi02YWVhYzhhNDkwZTciLCJuYmYiOjE3MjQwODc4NjgsImlzcyI6ImF1dGguYWRvYmUuY29tIiwic2NvcGVzIjoiYXBpOmNsaWVudDp2MiIsImV4cCI6MTcyNDEwOTQ2OCwiaWF0IjoxNzI0MDg3ODY4fQ.DJ9GFl_yKAp2Qw-NVcBeRSnxIhqrwxhns5T5jU31N2tiHxCucKLSQ5guBygqkkJx6D0N_93f50meEEyfb7frbHhVHHwmRjHYjkfrWqHCpviwVjVZKKwl8Y3FEMb0bjKIB8p_E3txX9IbzeNGWRufZBRh2sxB5Q9B7XYINpVfh8s_sFvskrbDu5c01neCx5kEagEW5CtE0_EXTgEb5FSr_SfQG3UUu_iwlkOggOh_kOP_5GueElf9jn-bYBMnpObyN5s-FzuHDG5Rtac5rvcWqVW2reEqFTHqLI4rVC7UKQb6DSvPBPV4AgrutAvk30CYgDsOQILVyrjniincp7r9Ww
+    AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
+    X-Device-Info: ewoJInByaW1hcnlIYXJkd2FyZVR5cGUiOiAiU2V0VG9wQm94IiwKCSJtb2RlbCI6ICJUViA1dGggR2VuIiwKCSJtYW51ZmFjdHVyZXIiOiAiQXBwbGUiLAoJIm9zTmFtZSI6ICJ0dk9TIgoJIm9zVmVuZG9yIjogIkFwcGxlIiwKCSJvc1ZlcnNpb24iOiAiMTEuMCIKfQ==
+    Adobe-Subject-Token: eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIyMmM4MDU1MjEzMDIwYzhmZGYzOGZkMTI1YWViMzUzYSIsImlzcyI6....
+    Accept: application/json
+    User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 11.0 like Mac OS X; en_US)
 ```
 
 >[!TAB Response]
 
-```JSON
+```HTTPS
 HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8    
- 
+
+Content-Type: application/json;charset=UTF-8
+
 {
    "profiles": {
       "AdobePass_SMI": {
@@ -476,28 +486,29 @@ Content-Type: application/json; charset=utf-8
 
 >[!ENDTABS]
 
-### 4. Retrieve profile information for temporary pass
+### 4. Retrieve profile for basic TempPass
 
 >[!BEGINTABS]
 
 >[!TAB Request]
 
-```JSON
-GET /api/v2/REF30/profiles/TempPass_TEST40
- 
-Authorization: Bearer ....
-AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
-X-Device-Info ....
-Accept: application/json
-User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 14.5 like Mac OS X; en_US)
+```HTTPS
+GET /api/v2/REF30/profiles/TempPass_TEST40 HTTP/1.1
+
+    Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjNGZjM2U3ZS0xMmQ5LTQ5NWQtYjc0Mi02YWVhYzhhNDkwZTciLCJuYmYiOjE3MjQwODc4NjgsImlzcyI6ImF1dGguYWRvYmUuY29tIiwic2NvcGVzIjoiYXBpOmNsaWVudDp2MiIsImV4cCI6MTcyNDEwOTQ2OCwiaWF0IjoxNzI0MDg3ODY4fQ.DJ9GFl_yKAp2Qw-NVcBeRSnxIhqrwxhns5T5jU31N2tiHxCucKLSQ5guBygqkkJx6D0N_93f50meEEyfb7frbHhVHHwmRjHYjkfrWqHCpviwVjVZKKwl8Y3FEMb0bjKIB8p_E3txX9IbzeNGWRufZBRh2sxB5Q9B7XYINpVfh8s_sFvskrbDu5c01neCx5kEagEW5CtE0_EXTgEb5FSr_SfQG3UUu_iwlkOggOh_kOP_5GueElf9jn-bYBMnpObyN5s-FzuHDG5Rtac5rvcWqVW2reEqFTHqLI4rVC7UKQb6DSvPBPV4AgrutAvk30CYgDsOQILVyrjniincp7r9Ww
+    AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
+    X-Device-Info: ewoJInByaW1hcnlIYXJkd2FyZVR5cGUiOiAiU2V0VG9wQm94IiwKCSJtb2RlbCI6ICJUViA1dGggR2VuIiwKCSJtYW51ZmFjdHVyZXIiOiAiQXBwbGUiLAoJIm9zTmFtZSI6ICJ0dk9TIgoJIm9zVmVuZG9yIjogIkFwcGxlIiwKCSJvc1ZlcnNpb24iOiAiMTEuMCIKfQ==
+    Accept: application/json
+    User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 11.0 like Mac OS X; en_US)
 ```
 
 >[!TAB Response - Available]
 
-```JSON
+```HTTPS
 HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
- 
+
+Content-Type: application/json;charset=UTF-8
+
 {
     "profiles": {
         "TempPass_TEST40": {
@@ -520,125 +531,64 @@ Content-Type: application/json; charset=utf-8
 }
 ```
 
->[!TAB Response - Started]
+>[!TAB Response - Duration Limit Exceeded]
 
-```JSON
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8  
- 
+```HTTPS
+HTTP/1.1 403 Forbidden
+
+Content-Type: application/json;charset=UTF-8
+
 {
-    "profiles": {
-        "TempPass_TEST40": {
-            "notBefore": 1697719584085,
-            "notAfter": 1697719704085,
-            "issuer": "Adobe",
-            "type": "temporary",
-            "attributes": {
-                "expiration_date": {
-                    "value": 1697719704085,
-                    "state": "plain"
-                },
-                "userID": {
-                    "value": "temppass_0bdf451aa9c8fa60e80f6b99ab48310c73b480f1",
-                    "state": "plain"
-                }
-            }
-        }
-    }
-}
-```
-
->[!TAB Response - Expired]
-
-```JSON
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8    
- 
-{
-    "status": 200,
-    "code": "temppass_expired",
-    "message": "TempPass has expired.",
+    "status": 403,
+    "code": "temporary_access_duration_limit_exceeded",
+    "message": "The temporary access duration limit has been exceeded.",
     "helpUrl": "https://experienceleague.adobe.com/docs/pass/authentication/auth-features/error-reportn/enhanced-error-codes.html",
-    "action": "none"
+    "action": "authentication"
 }
 ```
 
 >[!TAB Response - Invalid Configuration]
 
-```JSON
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8      
- 
+```HTTPS
+HTTP/1.1 500 Internal Server Error
+
+Content-Type: application/json;charset=UTF-8
+
 {
     "status": 500,
-    "code": "temppass_invalid_configuration",
-    "message": "TempPass configuration is invalid.",
+    "code": "invalid_configuration_temporary_access",
+    "message": "The temporary access configuration is invalid.",
     "helpUrl": "https://experienceleague.adobe.com/docs/pass/authentication/auth-features/error-reportn/enhanced-error-codes.html",
-    "action": "none"
+    "action": "configuration"
 }
 ```
 
 >[!ENDTABS]
 
-### 5. Retrieve profile information for promotional temporary pass
+### 5. Retrieve profile for promotional TempPass
 
 >[!BEGINTABS]
 
 >[!TAB Request]
 
-```JSON
-GET /api/v2/REF30/profiles/flexibleTempPass
- 
-Authorization: Bearer ....
-AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
-X-Device-Info ....
-AP-TempPass-Identity: eyJlbWFpbCI6ImZvb0BiYXIuY29tIn0=
-Accept: application/json
-User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 14.5 like Mac OS X; en_US)
+```HTTPS
+GET /api/v2/REF30/profiles/flexibleTempPass HTTP/1.1
+
+    Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjNGZjM2U3ZS0xMmQ5LTQ5NWQtYjc0Mi02YWVhYzhhNDkwZTciLCJuYmYiOjE3MjQwODc4NjgsImlzcyI6ImF1dGguYWRvYmUuY29tIiwic2NvcGVzIjoiYXBpOmNsaWVudDp2MiIsImV4cCI6MTcyNDEwOTQ2OCwiaWF0IjoxNzI0MDg3ODY4fQ.DJ9GFl_yKAp2Qw-NVcBeRSnxIhqrwxhns5T5jU31N2tiHxCucKLSQ5guBygqkkJx6D0N_93f50meEEyfb7frbHhVHHwmRjHYjkfrWqHCpviwVjVZKKwl8Y3FEMb0bjKIB8p_E3txX9IbzeNGWRufZBRh2sxB5Q9B7XYINpVfh8s_sFvskrbDu5c01neCx5kEagEW5CtE0_EXTgEb5FSr_SfQG3UUu_iwlkOggOh_kOP_5GueElf9jn-bYBMnpObyN5s-FzuHDG5Rtac5rvcWqVW2reEqFTHqLI4rVC7UKQb6DSvPBPV4AgrutAvk30CYgDsOQILVyrjniincp7r9Ww
+    AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
+    X-Device-Info: ewoJInByaW1hcnlIYXJkd2FyZVR5cGUiOiAiU2V0VG9wQm94IiwKCSJtb2RlbCI6ICJUViA1dGggR2VuIiwKCSJtYW51ZmFjdHVyZXIiOiAiQXBwbGUiLAoJIm9zTmFtZSI6ICJ0dk9TIgoJIm9zVmVuZG9yIjogIkFwcGxlIiwKCSJvc1ZlcnNpb24iOiAiMTEuMCIKfQ==
+    AP-TempPass-Identity: eyJlbWFpbCI6ImZvb0BiYXIuY29tIn0=
+    Accept: application/json
+    User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 11.0 like Mac OS X; en_US)
 ```
 
 >[!TAB Response - Available]
 
-```JSON
+```HTTPS
 HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
- 
-{
-    "profiles": {
-        "flexibleTempPass": {
-            "notBefore": 1697719042666,
-            "notAfter": 1697719102666,
-            "issuer": "Adobe",
-            "type": "temporary",
-            "attributes": {
-                "remaining_resources": {
-                    "value": 5,
-                    "state": "plain"
-                },
-                "used_assets": {
-                    "value": 0,
-                    "state": "plain"
-                },
-                "expiration_date": {
-                    "value": 1697719102666,
-                    "state": "plain"
-                },
-                "userID": {
-                    "value": "temppass_0bdf451aa9c8fa60e80f6b99ab48310c73b480f1",
-                    "state": "plain"
-                }
-            }
-        }
-    }
-}
-```
 
->[!TAB Response - Started]
+Content-Type: application/json;charset=UTF-8
 
-```JSON
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
- 
 {
     "profiles": {
         "flexibleTempPass": {
@@ -674,53 +624,49 @@ Content-Type: application/json; charset=utf-8
 }
 ```
 
->[!TAB Response - Expired]
+>[!TAB Response - Duration Limit Exceeded]
 
-```JSON
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
- 
+```HTTPS
+HTTP/1.1 403 Forbidden
+
+Content-Type: application/json;charset=UTF-8
+
 {
-    "status": 200,
-    "code": "temppass_expired",
-    "message": "TempPass has expired.",
+    "status": 403,
+    "code": "temporary_access_duration_limit_exceeded",
+    "message": "The temporary access duration limit has been exceeded.",
     "helpUrl": "https://experienceleague.adobe.com/docs/pass/authentication/auth-features/error-reportn/enhanced-error-codes.html",
     "action": "none"
 }
 ```
 
->[!TAB Response - Consumed]
+>[!TAB Response - Resources Limit Exceeded]
 
-```JSON
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
- 
+```HTTPS
+HTTP/1.1 403 Forbidden
+
+Content-Type: application/json;charset=UTF-8
+
 {
-    "decisions": [
-        {
-            "authorized": false,
-            "error": {
-                "status": 200,
-                "code": "temppass_max_resources_exceeded",
-                "message": "Flexible TempPass maximum resources exceeded.",
-                "helpUrl": "https://experienceleague.adobe.com/docs/pass/authentication/auth-features/error-reportn/enhanced-error-codes.html",
-                "action": "none"
-            }
-        }
-    ]
+    "status": 403,
+    "code": "temporary_access_resources_limit_exceeded",
+    "message": "The temporary access resources limit has been exceeded.",
+    "helpUrl": "https://experienceleague.adobe.com/docs/pass/authentication/auth-features/error-reportn/enhanced-error-codes.html",
+    "action": "authentication"
 }
 ```
 
 >[!TAB Response - Invalid Configuration]
 
-```JSON
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8      
- 
+```HTTPS
+HTTP/1.1 500 Internal Server Error
+
+Content-Type: application/json;charset=UTF-8
+
 {
     "status": 500,
-    "code": "temppass_invalid_configuration",
-    "message": "TempPass configuration is invalid.",
+    "code": "invalid_configuration_temporary_access",
+    "message": "The temporary access configuration is invalid.",
     "helpUrl": "https://experienceleague.adobe.com/docs/pass/authentication/auth-features/error-reportn/enhanced-error-codes.html",
     "action": "none"
 }
@@ -728,14 +674,15 @@ Content-Type: application/json; charset=utf-8
 
 >[!TAB Response - Invalid Identity]
 
-```JSON
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
- 
+```HTTPS
+HTTP/1.1 400 Bad Request
+
+Content-Type: application/json;charset=UTF-8
+
 {
     "status": 400,
-    "code": "temppass_invalid_identity",
-    "message": "TempPass is not available for the specified identity.",
+    "code": "invalid_header_identity_for_temporary_access",
+    "message": "The identity for temporary access header value is missing or invalid.",
     "helpUrl": "https://experienceleague.adobe.com/docs/pass/authentication/auth-features/error-reportn/enhanced-error-codes.html",
     "action": "none"
 }
@@ -743,31 +690,32 @@ Content-Type: application/json; charset=utf-8
 
 >[!ENDTABS]
 
-### 6. Retrieve profile information for degraded mvpd
+### 6. Retrieve profile for specific mvpd while degradation is applied
 
 >[!BEGINTABS]
 
 >[!TAB Request]
 
-```JSON
-GET /api/v2/REF30/profiles/degradedMvpd
- 
-Authorization: Bearer ....
-AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
-X-Device-Info ....
-Accept: application/json
-User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 14.5 like Mac OS X; en_US)
+```HTTPS
+GET /api/v2/REF30/profiles/${degradedMvpd} HTTP/1.1
+
+    Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjNGZjM2U3ZS0xMmQ5LTQ5NWQtYjc0Mi02YWVhYzhhNDkwZTciLCJuYmYiOjE3MjQwODc4NjgsImlzcyI6ImF1dGguYWRvYmUuY29tIiwic2NvcGVzIjoiYXBpOmNsaWVudDp2MiIsImV4cCI6MTcyNDEwOTQ2OCwiaWF0IjoxNzI0MDg3ODY4fQ.DJ9GFl_yKAp2Qw-NVcBeRSnxIhqrwxhns5T5jU31N2tiHxCucKLSQ5guBygqkkJx6D0N_93f50meEEyfb7frbHhVHHwmRjHYjkfrWqHCpviwVjVZKKwl8Y3FEMb0bjKIB8p_E3txX9IbzeNGWRufZBRh2sxB5Q9B7XYINpVfh8s_sFvskrbDu5c01neCx5kEagEW5CtE0_EXTgEb5FSr_SfQG3UUu_iwlkOggOh_kOP_5GueElf9jn-bYBMnpObyN5s-FzuHDG5Rtac5rvcWqVW2reEqFTHqLI4rVC7UKQb6DSvPBPV4AgrutAvk30CYgDsOQILVyrjniincp7r9Ww
+    AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
+    X-Device-Info: ewoJInByaW1hcnlIYXJkd2FyZVR5cGUiOiAiU2V0VG9wQm94IiwKCSJtb2RlbCI6ICJUViA1dGggR2VuIiwKCSJtYW51ZmFjdHVyZXIiOiAiQXBwbGUiLAoJIm9zTmFtZSI6ICJ0dk9TIgoJIm9zVmVuZG9yIjogIkFwcGxlIiwKCSJvc1ZlcnNpb24iOiAiMTEuMCIKfQ==
+    Accept: application/json
+    User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 11.0 like Mac OS X; en_US)
 ```
 
 >[!TAB Response - AuthNAll Degradation]
 
-```JSON
+```HTTPS
 HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
- 
+
+Content-Type: application/json;charset=UTF-8
+
 {
     "profiles": {
-        "degradedMvpd": {
+        "${degradedMvpd}": {
             "notBefore": 1697719042666,
             "notAfter": 1697719102666,
             "issuer": "Adobe",
@@ -783,6 +731,8 @@ Content-Type: application/json; charset=utf-8
 }
 ```
 
-**Note:** 95cf93bcd183214a is a degradation specific prefix.
+>[!IMPORTANT]
+>
+> `95cf93bcd183214a` is a degradation specific prefix.
 
 >[!ENDTABS]

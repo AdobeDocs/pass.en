@@ -138,16 +138,16 @@ The successful response is a series of one or multiple redirects until reaching 
 
 >[!TAB Request]
 
-```JSON 
-GET /api/v2/authenticate/REF30/8KHP9RW
+```HTTPS 
+GET /api/v2/authenticate/REF30/8KHP9RW HTTP/1.1
 
-User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 14.5 like Mac OS X; en_US)
+    User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 11.0 like Mac OS X; en_US)
 ```
 
 >[!TAB Response]
 
-```JSON
-HTTP/1.1 302 OK
+```HTTPS
+HTTP/1.1 302 Found
 
 Location :  https://sp.auth.adobe.com/adobe-services/authenticate/saml?noflash=true&mso_id=Cablevision&requestor_id=REF30&no_iframe=false&domain_name=adobe.com&redirect_url=http%3A%2F%2Fadobe.com%2Fapitest%2Flive.html
 ```

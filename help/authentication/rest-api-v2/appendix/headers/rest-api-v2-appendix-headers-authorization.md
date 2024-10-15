@@ -3,6 +3,7 @@ title: Header - Authorization
 description: REST API V2 - Header - Authorization
 exl-id: 86917d7e-ffd9-4d34-8f9c-5a50083f85e6
 ---
+
 # Header - Authorization {#header-authorization}
 
 >[!NOTE]
@@ -19,7 +20,7 @@ For more details about the mechanism to access Adobe Pass protected APIs, refer 
 
 <table>
    <tr>
-      <td style="background-color: #DEEBFF;" colspan="2"><b>Authorization</b>: bearer &lt;access_token&gt;</td>
+      <td style="background-color: #DEEBFF;" colspan="2"><b>Authorization</b>: Bearer &lt;access_token&gt;</td>
    </tr>
    <tr>
       <td>Header Type</td>
@@ -40,7 +41,7 @@ The access token value is an opaque value having a limited time-to-live (e.g., 2
 ## Examples {#examples}
 
 ```JSON
-Authorization: bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0NmY0MGZiMy01NmJkLTQyYTktOTExYS02YmZmNmEyZmY0
+Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI0NmY0MGZiMy01NmJkLTQyYTktOTExYS02YmZmNmEyZmY0
                       MDciLCJuYmYiOjE3MjM1NjE4ODUsImlzcyI6ImF1dGguYWRvYmUuY29tIiwic2NvcGVzIjoiYXBpO
                       mNsaWVudDp2MiIsImV4cCI6MTcyMzU4MzQ4NSwiaWF0IjoxNzIzNTYxODg1fQ.aZUZqwN2fCqNXgX
                       SdKFG9_HcqHjha66G6HmsfTJYcZc12iuLxMu7TT7MbhWVz3kW1jRqgJv8PHhrFSBL5_dgJ1PRSuDg

@@ -20,6 +20,7 @@ To get started, visit the public documentation of the APIs you are interested in
 * [Create authentication session](sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md)
 * [Resume authentication session](sessions-apis/rest-api-v2-sessions-apis-resume-authentication-session.md)
 * [Retrieve authentication session](sessions-apis/rest-api-v2-sessions-apis-retrieve-authentication-session-information-using-code.md)
+* [Perform authentication in user agent](sessions-apis/rest-api-v2-sessions-apis-perform-authentication-in-user-agent.md)
 
 ## Profiles {#rest-api-v2-apis-profiles}
 

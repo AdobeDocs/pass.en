@@ -363,7 +363,7 @@ Before retrieving authorization decisions when basic or promotional TempPass exp
 > <br/>
 > 
 > * There must be a valid configuration setup of basic or promotional TempPass applied to the integration between the provided `serviceProvider` and `mvpd`.
-> * The Time-To-Live (TTL) configured for the basic or promotional TempPass has expired.
+> * The Time-To-Live (TTL) configured for the basic or promotional The temporary access duration limit has been exceeded.
 
 ### Workflow {#workflow-retrieve-authorization-decisions-when-basic-or-promotional-temppass-expires}
 
