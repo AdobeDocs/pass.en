@@ -15,7 +15,7 @@ description: REST API V2 Cookbook (Client-to-Server)
 
 ## Steps to implement the REST API V2 in client side applications {#steps-to-implement-the-rest-api-v2-in-client-side-applications}
 
-To implement Adobe Pass REST API V2, you need to follow the steps below grouped into phases.
+To implement Adobe Pass REST API V2, you need to follow the steps below, grouped into phases.
 
 ## A. Registration phase {#registration-phase}
 
@@ -32,14 +32,14 @@ To get the access token, the application needs to follow steps as described: [Dy
 Streaming application checks for existing authenticated profiles: <b>/api/v2/{serviceProvider}/profiles</b><br>
 ([Retrieve authenticated profiles](../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md))
 
-* If no profile found and Streaming application implements a TempPass flow 
+* If no profile is found and the Streaming application implements a TempPass flow 
   * Follow documentation on how to implement [Temporary access flows](../flows/temporary-access-flows/rest-api-v2-access-temporary-flows.md)
-* If no profile found, Streaming application implement an Authentication flow
-  * Streaming application retrieve the list of MVPDs available for serviceProvider: <b>/api/v2/{serviceProvider}/configuration</b><br> 
+* If no profile is found and the Streaming application implements an Authentication flow
+  * Streaming application retrieves the list of MVPDs available for serviceProvider: <b>/api/v2/{serviceProvider}/configuration</b><br> 
   ([Retrieve list of available MVPDs](../apis/configuration-apis/rest-api-v2-configuration-apis-retrieve-configuration-for-specific-service-provider.md))
   * Streaming application may implement filtering on the list of MVPDs and display only MVPDs intended while hiding others (TempPass, test MVPDs, MVPDs under development, etc.) 
-  * Streaming application display picker, User selects the MVPD
-  * Streaming application create a session: <b>/api/v2/{serviceProvider}/sessions</b><br>
+  * Streaming application displays picker, User selects the MVPD
+  * Streaming application creates a session: <b>/api/v2/{serviceProvider}/sessions</b><br>
   ([Create authentication session](../apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md))<br>
     * a CODE and URL to use for authentication is returned
     * if a profile is found, Streaming application may proceed to <a href="#preauthorization-phase">C. Preauthorization phase</a> or <a href="#authorization-phase">D. Authorization phase</a>
@@ -48,8 +48,8 @@ Streaming application checks for existing authenticated profiles: <b>/api/v2/{se
 
 Using a Browser or a Second Screen Web based application:
 
-* Option 1. Streaming Application can open a browser or webview, load the URL to authenticate and the user lands on MVPD login page where credentials needs to be submitted
-  * user enter login/password, final redirect show a success page
+* Option 1. Streaming Application can open a browser or webview, load the URL to authenticate and the user lands on the MVPD login page where credentials need to be submitted
+  * user enters login/password, final redirect shows a success page
 * Option 2. Streaming Application can't open a browser and just display the CODE. <b>A separate web application needs to be developed</b> to asks the user to enter CODE, build and open URL : <b>/api/v2/authenticate/{serviceProvider}/{CODE}</b>
   * user enter login/password, final redirect show a success page
 
@@ -62,7 +62,7 @@ Streaming application checks for authentication with MVPD to complete in Browser
   * If MVPD selection is not made in the Streaming application as the MVPD picker is presented in the Second Screen application, the polling should happen with CODE <b>/api/v2/{serviceProvider}/profiles/code/{CODE}</b><br>
     ([Retrieve authenticated profiles for specific CODE](../apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-code.md))
 * Polling should not exceed 30 minutes, in case 30 minutes are reached and the Streaming Application is still active, a new session needs to be initiated and a new CODE and URL will be returned
-* When authentication is complete the return is 200 with authenticated profile
+* When authentication is complete, the return is 200 with authenticated profile
 * The Streaming application may proceed to <a href="#preauthorization-phase">C. Preauthorization phase</a> or <a href="#authorization-phase">D. Authorization phase</a>
 
 ## C. Preauthorization phase {#preauthorization-phase}
