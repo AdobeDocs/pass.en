@@ -116,11 +116,11 @@ The following query string parameters have reserved meanings for the API (and th
 | --- | ---- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ---- | --- |
 |access_token | Yes | The DCR token can be passed as a standard Authorization Bearer token.                                                                                                                                                                                         | None | access_token=XXXXXX |
 | dimension-name | Yes | Any dimension name – either contained in the current URL path or in any valid subpath; the value will be treated as an equals filter. If no value is provided, this will force the specified dimension to be included in the output even if it is not included or adjacent to the current path      | None | someDimension=someValue&someOtherDimension | 
-| end | Yes | End time for the report in millis                                                                                                                                                                                                                                                                   | Current time of the server | end=2012-07-30 | 
+| end | Yes | End time for the report in millis                                                                                                                                                                                                                                                                   | Current time of the server | end=2024-07-30 | 
 | format | Yes | Used for content negotiation (with the same effect but lower precedence than the path "extension" – see bellow).                                                                                                                                                                                    | None: the content negotiation will try the other strategies | format=json | 
 | limit | Yes | Maximum number of rows to be returned                                                                                                                                                                                                                                                               | Default value reported by the server in the self link if no limit is specified in the request | limit=1500 |
 | metrics | Yes | Comma-separated list of metric names to be returned; this should be used for both filtering a subset of the available metrics (to reduce the payload size) and also for enforcing the API to return a projection which contains the requested metrics (rather than the default optimal projection). | All the metrics available for the current projection will be returned in case this parameter is not provided. | metrics=m1,m2 |
-| start | Yes | Start time for the report as ISO8601; the server will fill in the remaining part if only a prefix is provided: e.g., start=2012 will result in start=2012-01-01:00:00:00                                                                                                                            | Reported by the server in the self link; the server tries to provide reasonable defaults based on the selected time granularity | start=2012-07-15 | 
+| start | Yes | Start time for the report as ISO8601; the server will fill in the remaining part if only a prefix is provided: e.g., start=2024 will result in start=2024-01-01:00:00:00                                                                                                                            | Reported by the server in the self link; the server tries to provide reasonable defaults based on the selected time granularity | start=2024-07-15 | 
 
 The only available HTTP method currently is GET.
 
@@ -201,14 +201,14 @@ Example (assuming we have a single metric called `clients` and there is a pre-ag
 * https://mgmt.auth.adobe.com/esm/v3/year/month.xml
     
 ```XML
-   <resource href="/esm/v3/year/month?start=2012-07-20T00:00:00&end=2012-08-20T14:35:21">
+   <resource href="/esm/v3/year/month?start=2024-07-20T00:00:00&end=2024-08-20T14:35:21">
    <links>
    <link rel="roll-up" href="/esm/v3/year"/>
    <link rel="drill-down" href="/esm/v3/year/month/day"/>
    </links>
    <report>
-   <record month="6" year="2012" clients="205"/>
-   <record month="7" year="2012" clients="466"/>
+   <record month="6" year="2024" clients="205"/>
+   <record month="7" year="2024" clients="466"/>
    </report>
    </resource>
 ```
@@ -219,7 +219,7 @@ Example (assuming we have a single metric called `clients` and there is a pre-ag
         {
           "_links" : {
             "self" : {
-              "href" : "/esm/v3/year/month?start=2012-07-20T00:00:00&end=2012-08-20T14:35:21"
+              "href" : "/esm/v3/year/month?start=2024-07-20T00:00:00&end=2024-08-20T14:35:21"
             },
             "roll-up" : {
               "href" : "/esm/v3/year"
@@ -230,11 +230,11 @@ Example (assuming we have a single metric called `clients` and there is a pre-ag
           },
           "report" : [ {
             "month" : "6",
-            "year" : "2012",
+            "year" : "2024",
             "clients" : "205"
           }, {
             "month" : "7",
-            "year" : "2012",
+            "year" : "2024",
             "clients" : "466"
           } ]
         }
@@ -253,13 +253,13 @@ The CSV will contain a header row and then the report data as subsequent rows. T
 The order of the fields in the header row will reflect the sort-order of the table data.
 
 
-Example: https://mgmt.auth.adobe.com/esm/v3/year/month.csv will produce a file named `report__2012-07-20_2012-08-20_1000.csv` with the following content:
+Example: https://mgmt.auth.adobe.com/esm/v3/year/month.csv will produce a file named `report__2024-07-20_2024-08-20_1000.csv` with the following content:
 
 
 | Year | Month | Clients |
 | ---- | :---: | ------- |
-| 2012 |   6   | 580     |
-| 2012 |   7   | 231     |
+| 2024 |   6   | 580     |
+| 2024 |   7   | 231     |
 
 ## Data Freshness {#data-freshness}
 
