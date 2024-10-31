@@ -13,6 +13,18 @@ exl-id: 5735d67f-a311-4d03-ad48-93c0fcbcace5
 >
 > REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/throttling-mechanism.md) documentation.
 
+The Partner method enables multiple applications to use a partner framework status payload to achieve single sign-on (SSO) at the device level when using Adobe Pass services.
+
+The applications are responsible for retrieving the partner framework status payload using partner specific frameworks or libraries outside of Adobe Pass systems.
+
+The applications are responsible for including this partner framework status payload as part of the `AP-Partner-Framework-Status` header for all requests that specify it.
+
+For more details about `AP-Partner-Framework-Status` header, refer to the [AP-Partner-Framework-Status](../../appendix/headers/rest-api-v2-appendix-headers-ap-partner-framework-status.md) documentation.
+
+The Adobe Pass Authentication REST API V2 has support for Partner Single Sign-On (SSO) for end users of client applications running on iOS, iPadOS or tvOS.
+
+For more details about single sign-on (SSO) for Apple platform, refer to the [Apple SSO Cookbook (REST API V2)](/help/authentication/single-sign-on/partner-single-sign-on/apple-single-sign-on/apple-sso-cookbook-rest-api-v2.md) documentation.
+
 ## Retrieve partner authentication request {#retrieve-partner-authentication-request}
 
 ### Prerequisites {#prerequisites-retrieve-partner-authentication-request}
@@ -55,7 +67,7 @@ Perform the given steps to retrieve the partner authentication request as shown 
    > Refer to the [Retrieve partner authentication request](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-partner-authentication-request.md) API documentation for details on:
    >
    > * All the _required_ parameters, like `serviceProvider` and `partner`
-   > * All the _required_ headers like `Authorization`, `AP-Device-Identifier`, and `AP-Partner-Framework-Status`
+   > * All the _required_ headers like `Authorization`, `AP-Device-Identifier`, `Content-Type`, `X-Device-Info`, and `AP-Partner-Framework-Status`
    > * All the _optional_ headers and parameters
    >
    > <br/>
@@ -169,7 +181,7 @@ Perform the given steps to implement the profile retrieval flow using a partner 
    > Refer to the [Retrieve profile using partner authentication response](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md) API documentation for details on:
    >
    > * All the _required_ parameters, like `serviceProvider`, `partner`, and `SAMLResponse`
-   > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`, and `AP-Partner-Framework-Status`
+   > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`, `Content-Type`, `X-Device-Info`, and `AP-Partner-Framework-Status`
    > * All the _optional_ headers and parameters
    >
    > <br/>

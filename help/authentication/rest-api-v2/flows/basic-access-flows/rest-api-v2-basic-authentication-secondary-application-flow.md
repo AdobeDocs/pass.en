@@ -131,7 +131,7 @@ Follow the given steps to implement the basic authentication flow performed with
    >
    > If validation fails, an error response will be generated, providing additional information that adheres to the [Enhanced Error Codes](../../../enhanced-error-codes.md) documentation.
 
-   >[!NOTE]
+   >[!TIP]
    >
    > Suggestion: The secondary application can inform users that the `code` used is invalid in the event of an error response indicating a missing authentication session, and advise them to retry using a new one.
    
@@ -156,7 +156,7 @@ Follow the given steps to implement the basic authentication flow performed with
    > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
    > * All the _optional_ parameters and headers
 
-   >[!NOTE]
+   >[!TIP]
    >
    > Suggestion: The streaming application can implement a polling mechanism using the `code` to check if the regular profile was successfully generated and saved.
 
@@ -265,7 +265,7 @@ Follow the given steps to implement the basic authentication flow performed with
    > 
    > If validation fails, an error response will be generated, providing additional information that adheres to the [Enhanced Error Codes](../../../enhanced-error-codes.md) documentation.
 
-   >[!NOTE]
+   >[!TIP]
    >
    > Suggestion: The secondary application can inform users that the `code` used is invalid in the event of an error response indicating a missing authentication session, and advise them to retry using a new one.
 
@@ -294,7 +294,7 @@ Follow the given steps to implement the basic authentication flow performed with
    > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
    > * All the _optional_ parameters and headers
 
-   >[!NOTE]
+   >[!TIP]
    >
    > Suggestion: The streaming application can implement a polling mechanism using the `code` to check if the regular profile was successfully generated and saved.
 

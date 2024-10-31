@@ -124,16 +124,22 @@ Adobe Pass uses DCR to secure client communications between a programmer applica
 
 1.  Send the user back to your Smart Device app to complete the authorization flow.
 
-## Platform SSO {#platform-sso}
+## Partner Single Sign-On {#partner-sso}
 
-Some platforms provide dedicated support for Single Sign-On (SSO). Implementation details can be found for each respective platform:
+Some devices provide dedicated support for Partner Single Sign-On (SSO):
 
-* [Apple SSO](/help/authentication/apple-sso-cookbook-rest-api.md)
-* Amazon SSO
+* [Apple SSO](/help/authentication/single-sign-on/partner-single-sign-on/apple-single-sign-on/apple-sso-cookbook-rest-api-v1.md)
+
+## Platform Single Sign-On {#platform-sso}
+
+Some devices provide dedicated support for Platform Single Sign-On (SSO):
+
+* [Amazon SSO](./single-sign-on/platform-single-sign-on/amazon-single-sign-on/amazon-sso-cookbook-rest-api-v1.md)
+* [Roku SSO](./single-sign-on/platform-single-sign-on/roku-single-sign-on/roku-sso-overview.md)
 
 ## TempPass and Promotional TempPass for REST API {#temppass}
 
-For TempPass and Promotional TempPass implementations where the user is not required to enter credetials, authentication can be implemented directly in the Streaming App.
+For TempPass and Promotional TempPass implementations where the user is not required to enter credentials, authentication can be implemented directly in the Streaming App.
 
 **In order to use this API the Streaming App needs to make sure of the uniqueness of the device ID as this is being used for identifying the token, along with the optional extra data.**
 

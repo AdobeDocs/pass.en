@@ -41,10 +41,10 @@ The JSON Web Signature (`JWS`) or JSON Web Encryption (`JWE`) which is a signed 
 
 This is available for the following platforms:
 
-* [Amazon](../../../amazon-fireos-sso-using-clientless-api-cookbook.md)
+* [Amazon SSO Cookbook (REST API V2)](../../../single-sign-on/platform-single-sign-on/amazon-single-sign-on/amazon-sso-cookbook-rest-api-v1.md)
 
 ## Examples {#examples}
 
 Please see the examples as described for the following platforms:
 
-* [Amazon](../../../amazon-fireos-sso-using-clientless-api-cookbook.md)
+* [Amazon SSO Cookbook (REST API V2)](../../../single-sign-on/platform-single-sign-on/amazon-single-sign-on/amazon-sso-cookbook-rest-api-v1.md)

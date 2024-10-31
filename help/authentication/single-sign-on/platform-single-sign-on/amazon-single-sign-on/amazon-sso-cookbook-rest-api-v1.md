@@ -1,9 +1,9 @@
 ---
-title: Amazon FireOS SSO using Clientless API Cookbook
-description: Amazon FireOS SSO using Clientless API Cookbook
+title: Amazon SSO Cookbook (REST API V1)
+description: Amazon SSO Cookbook (REST API V1)
 exl-id: 4c65eae7-81c1-4926-9202-a36fd13af6ec
 ---
-# Amazon FireOS SSO using Clientless API Cookbook {#amazon-fireos-sso-using-clientless-api-cookbook}
+# Amazon SSO Cookbook (REST API V1) {#amazon-sso-cookbook-rest-api-v1}
 
 >[!NOTE]
 >
@@ -143,9 +143,9 @@ If this is your first implementation please see the **Clientless Technical Overv
 
 Adobe Clientless API requires applications to use Dynamic Client Registration in order to make calls to Adobe servers.
 
-*   To use Dynamic Client Registration in your application, follow the instructions in [Dynamic Client Registration Management](./dcr-api/dynamic-client-registration-overview.md#dynamic-client-registration-management) to create a registered application and download a software statement.
+*   To use Dynamic Client Registration in your application, follow the instructions in [Dynamic Client Registration Management](../../../dcr-api/dynamic-client-registration-overview.md#dynamic-client-registration-management) to create a registered application and download a software statement.
 
-*   To implement Dynamic Client Registration API to perform authentication and authorization requests to Adobe Pass servers, follow instructions in [Dynamic Client Registration Flow](./dcr-api/flows/dynamic-client-registration-flow.md).
+*   To implement Dynamic Client Registration API to perform authentication and authorization requests to Adobe Pass servers, follow instructions in [Dynamic Client Registration Flow](../../../dcr-api/flows/dynamic-client-registration-flow.md).
 
 ### Adobe Pass Clientless API update to use Amazon SSO {#clientlesssso}
 

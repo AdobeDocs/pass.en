@@ -50,28 +50,28 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
         + [REST API V2 Overview](./rest-api-v2/rest-api-v2-overview.md)
         + [REST API V2 Glossary](./rest-api-v2/rest-api-v2-glossary.md)
         + APIs {#rest-api-v2-apis}
-            + [REST API V2 APIs Overview](./rest-api-v2/apis/rest-api-v2-apis-overview.md)
+            + [REST API V2 APIs Overview](rest-api-v2/apis/rest-api-v2-apis-overview.md)
             + Configuration {#rest-api-v2-configuration-apis}
-                + [Retrieve configuration for specific service provider](./rest-api-v2/apis/configuration-apis/rest-api-v2-configuration-apis-retrieve-configuration-for-specific-service-provider.md)
+                + [Retrieve configuration for specific service provider](rest-api-v2/apis/configuration-apis/rest-api-v2-configuration-apis-retrieve-configuration-for-specific-service-provider.md)
             + Sessions {#rest-api-v2-sessions-apis}
-                + [Create authentication session](./rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md)
-                + [Resume authentication session](./rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-resume-authentication-session.md)
-                + [Retrieve authentication session](./rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-retrieve-authentication-session-information-using-code.md)
-                + [Perform authentication in user agent](./rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-perform-authentication-in-user-agent.md)
+                + [Create authentication session](rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md)
+                + [Resume authentication session](rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-resume-authentication-session.md)
+                + [Retrieve authentication session](rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-retrieve-authentication-session-information-using-code.md)
+                + [Perform authentication in user agent](rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-perform-authentication-in-user-agent.md)
             + Profiles {#rest-api-v2-profiles-apis}
-                + [Retrieve profiles](./rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md)
-                + [Retrieve profile for specific mvpd](./rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md)
-                + [Retrieve profile for specific code](./rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-code.md)
+                + [Retrieve profiles](rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md)
+                + [Retrieve profile for specific mvpd](rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md)
+                + [Retrieve profile for specific code](rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-code.md)
             + Decisions {#rest-api-v2-decisions-apis}
-                + [Retrieve authorization decisions using specific mvpd](./rest-api-v2/apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md)
-                + [Retrieve preauthorization decisions using specific mvpd](./rest-api-v2/apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-preauthorization-decisions-using-specific-mvpd.md)
+                + [Retrieve authorization decisions using specific mvpd](rest-api-v2/apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md)
+                + [Retrieve preauthorization decisions using specific mvpd](rest-api-v2/apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-preauthorization-decisions-using-specific-mvpd.md)
             + Logout {#rest-api-v2-logout-apis}
-                + [Initiate logout for specific mvpd](./rest-api-v2/apis/logout-apis/rest-api-v2-logout-apis-initiate-logout-for-specific-mvpd.md)
+                + [Initiate logout for specific mvpd](rest-api-v2/apis/logout-apis/rest-api-v2-logout-apis-initiate-logout-for-specific-mvpd.md)
             + Partner Single Sign-On {#rest-api-v2-partner-single-sign-on-apis}
                 + [Retrieve partner authentication request](rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-partner-authentication-request.md)
                 + [Retrieve profile using partner authentication response](rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md)
         + Flows {#rest-api-v2-flows}
-            + [REST API V2 Flows Overview](./rest-api-v2/flows/rest-api-v2-flows-overview.md)
+            + [REST API V2 Flows Overview](rest-api-v2/flows/rest-api-v2-flows-overview.md)
             + Basic Access Flows {#rest-api-v2-basic-access-flows}
                 + [Basic profiles flow performed within primary application](rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-profiles-primary-application-flow.md)
                 + [Basic profiles flow performed within secondary application](rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-profiles-secondary-application-flow.md)
@@ -93,13 +93,13 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             + [REST API V2 Cookbook (Client-to-Server)](rest-api-v2/cookbooks/rest-api-v2-cookbooks-client-server.md)
         + Appendix {#rest-api-v2-appendix}
             + Headers {#rest-api-v2-appendix-headers}
-                + [Header - Authorization](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-authorization.md)
-                + [Header - AP-Device-Identifier](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-device-identifier.md)
-                + [Header - X-Device-Info](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-x-device-info.md)
-                + [Header - AD-Service-Token](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ad-service-token.md)
-                + [Header - Adobe-Subject-Token](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-adobe-subject-token.md)
-                + [Header - AP-Partner-Framework-Status](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-partner-framework-status.md)
-                + [Header - AP-TempPass-Identity](./rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-temppass-identity.md)
+                + [Header - Authorization](rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-authorization.md)
+                + [Header - AP-Device-Identifier](rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-device-identifier.md)
+                + [Header - X-Device-Info](rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-x-device-info.md)
+                + [Header - AD-Service-Token](rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ad-service-token.md)
+                + [Header - Adobe-Subject-Token](rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-adobe-subject-token.md)
+                + [Header - AP-Partner-Framework-Status](rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-partner-framework-status.md)
+                + [Header - AP-TempPass-Identity](rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-temppass-identity.md)
     + AccessEnabler SDK {#accessenabler-sdk}
         + JavaScript SDK {#javascriptsdk}
             + [JavaScript SDK Overview](javascript-sdk-overview.md)
@@ -130,20 +130,24 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             + Android API{#android-sdk-api}
                 + [Preauthorize](preauthorize-api-android-sdk.md)
         + Amazon FireOS SDK {#fireossdk}
-            + [Amazon FireOS SSO - Programmer kick-off guide](amazon-firetv-sso-programmer-kickoff-guide.md)
-            + [Amazon FireOS SSO using Clientless API Cookbook](amazon-fireos-sso-using-clientless-api-cookbook.md)
             + [Amazon FireOS Technical Overview](amazon-fireos-technical-overview.md)
             + [Amazon FireOS Integration Cookbook](amazon-fireos-integration-cookbook.md)
             + [Amazon FireOS API Reference](amazon-fireos-native-client-api-reference.md)
             + [Amazon FireOS Application Registration](amazon-fireos-application-registration.md)
             + [FireOS SDK with Dynamic Client Registration](fireos-sdk-with-dynamic-client-registration.md)
-    + Platform SSO {#platform-sso}
-        + Apple SSO {#apple-sso}
-            + [Apple SSO Overview](apple-sso-overview.md)
-            + [Apple SSO Cookbook (REST API)](apple-sso-cookbook-rest-api.md)
-            + [Apple SSO Cookbook (iOS/tvOS SDK)](apple-sso-cookbook-iostvos-sdk.md)
-        + Roku SSO {#roku-sso}
-            + [Roku SSO](roku-sso-overview.md)
+            + [Amazon FireOS SSO - Programmer kick-off guide](amazon-firetv-sso-programmer-kickoff-guide.md)
+    + Single Sign-On {#sso}
+        + Partner Single Sign-On {#partner-sso}
+            + Apple Single Sign-On {#apple-sso}
+                + [Apple SSO Overview](single-sign-on/partner-single-sign-on/apple-single-sign-on/apple-sso-overview.md)
+                + [Apple SSO Cookbook (REST API V2)](single-sign-on/partner-single-sign-on/apple-single-sign-on/apple-sso-cookbook-rest-api-v2.md)
+                + [Apple SSO Cookbook (REST API V1)](single-sign-on/partner-single-sign-on/apple-single-sign-on/apple-sso-cookbook-rest-api-v1.md)
+                + [Apple SSO Cookbook (iOS/tvOS SDK)](single-sign-on/partner-single-sign-on/apple-single-sign-on/apple-sso-cookbook-iostvos-sdk.md)
+        + Platform Single Sign-On {#platform-sso}
+            + Amazon Single Sign-On {#amazon-sso}
+                + [Amazon SSO Cookbook (REST API V1)](single-sign-on/platform-single-sign-on/amazon-single-sign-on/amazon-sso-cookbook-rest-api-v1.md)
+            + Roku Single Sign-On {#roku-sso}
+                + [Roku SSO Overview](single-sign-on/platform-single-sign-on/roku-single-sign-on/roku-sso-overview.md)
     + Content Metadata {#content-metadata}
         + [Identifying Protected Resource](identify-protected-resources.md)
     + Content server integration {#content-serv-int}
@@ -191,10 +195,10 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + Client Registration {#dcr-api}
         + [Dynamic client registration overview](./dcr-api/dynamic-client-registration-overview.md)
         + APIs {#dcr-api-apis}
-          + [Retrieve client credentials](./dcr-api/apis/dynamic-client-registration-apis-retrieve-client-credentials.md)
-          + [Retrieve access token](./dcr-api/apis/dynamic-client-registration-apis-retrieve-access-token.md)
+            + [Retrieve client credentials](./dcr-api/apis/dynamic-client-registration-apis-retrieve-client-credentials.md)
+            + [Retrieve access token](./dcr-api/apis/dynamic-client-registration-apis-retrieve-access-token.md)
         + Flows {#dcr-api-flows}
-          + [Dynamic client registration flow](./dcr-api/flows/dynamic-client-registration-flow.md)
+            + [Dynamic client registration flow](./dcr-api/flows/dynamic-client-registration-flow.md)
     + Degradation service {#degrn-service}
         + [Degradation API Overview](degradation-api-overview.md)
     + Privacy readiness {#privacy-readiness}

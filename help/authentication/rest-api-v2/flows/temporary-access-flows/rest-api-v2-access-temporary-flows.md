@@ -343,7 +343,7 @@ Follow the given steps to implement the authorization flow when consuming a maxi
 
 1. **Handle `Deny` decision details:** The streaming application processes the error information from the response and can use it to optionally display a specific message on the user interface.
 
-   >[!NOTE]
+   >[!TIP]
    >
    > Suggestion: The streaming application can inform users that the maximum number of resources was exceeded and advise them to initiate a basic authentication flow using a regular MVPD to continue watching.
 
@@ -423,7 +423,7 @@ Follow the given steps to implement the authorization flow when basic or promoti
 
 1. **Handle `Deny` decision details:** The streaming application processes the error information from the response and can use it to optionally display a specific message on the user interface.
 
-   >[!NOTE]
+   >[!TIP]
    >
    > Suggestion: The streaming application can inform users that the temporary access has expired and advise them to initiate a basic authentication flow using a regular MVPD to continue watching.
 

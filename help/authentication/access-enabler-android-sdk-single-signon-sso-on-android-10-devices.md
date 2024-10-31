@@ -17,8 +17,6 @@ However, Google in latest Android 10 release produced some changes "to give user
 
 As a result of these changes the Single Sign-On (SSO) offered by Access Enabler Android version **3.2.1 SDK (latest)** and previous versions can be affected on Android 10 devices as explained in the next section.
 
-See [Roku SSO Overview](/help/authentication/roku-sso-overview.md).
-
 ## Behavior
 
 Depending on your app's **[!UICONTROL target SDK level]** or the usage of **android:requestLegacyExternalStorage** manifest attribute the Single Sign-On (SSO) offered by Access Enabler Android version 3.2.1 SDK (latest) and previous versions will currently behave as follows:
@@ -26,7 +24,6 @@ Depending on your app's **[!UICONTROL target SDK level]** or the usage of **andr
 - Your app targets **Android 9 (API level 28)** or lower **-\>** Single Sign-On (SSO) **will work**  
 - Your app targets **Android 10** **(API level 29)** and does **set** the value of **requestLegacyExternalStorage to true** in your app's manifest file **-\>** Single Sign-On (SSO) **will work**  
 - Your app targets **Android 10** **(API level 29)** and does **not set** the value of **requestLegacyExternalStorage to true** in your app's manifest file **-\>** Single Sign-On (SSO) **will not work**
-
 
 >[!TIP]
 >

@@ -111,7 +111,7 @@ Perform the given steps to implement the authentication flow through single sign
    > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
    > * All the _optional_ parameters and headers
 
-   >[!NOTE]
+   >[!TIP]
    >
    > Suggestion: The streaming application can wait for the user agent to reach the provided `redirectUrl` to check if the regular profile was successfully generated and saved.
 
