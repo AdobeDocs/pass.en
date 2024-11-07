@@ -180,4 +180,4 @@ The Programmer Service must maintain certificates shared with Adobe (for encrypt
 
 ## Related Information {#related}
 
-* [REST API V2 Reference](/help/authentication/rest-api-v2/rest-api-v2-flows-overview.md)
+* [REST API V2 Reference](/help/authentication/rest-api-v2/rest-api-v2-overview.md)
