@@ -1,6 +1,7 @@
 ---
 title: Apple SSO Cookbook (REST API V2)
 description: Apple SSO Cookbook (REST API V2)
+exl-id: 81476312-9ba4-47a0-a4f7-9a557608cfd6
 ---
 # Apple SSO Cookbook (REST API V2) {#apple-sso-cookbook-rest-api-v2}
 

@@ -1,6 +1,7 @@
 ---
 title: Concurrency Monitoring Usage Reports Examples
 description: Concurrency Monitoring Usage Reports Examples
+exl-id: e612ea40-c59c-440e-9c80-754b81b37a72
 ---
 # Concurrency Monitoring Usage Reports Examples{#cm-usage-reports-examples}
 
@@ -87,4 +88,3 @@ description: Concurrency Monitoring Usage Reports Examples
 | Per-tenant channel/platform hourly stats with application name                | "tenant", "year", "month", "day", "hour", "channel", "platform", "application-id", "application" | cmu/v2/tenant/year/month/day/hour/channel/platform/application-id/application | "active-users", "active-sessions", "started-sessions", "completed-sessions", "failed-attempts", "dismissed-sessions", "killed-sessions", "duration_0-15", "duration_15-30", "duration_30-60", "duration_60-120", "duration_2h-4h", "duration_4h-8h", "duration_8h-16h", "duration_16h-1d", "duration_1d-3d", "duration_3d-7d", "duration_1w-1m", "duration_over-1m" |
 | Per-MVPD hourly stats                                                         | "mvpd", "year", "month", "day", "hour"                                                           | cmu/v2/mvpd/year/month/day/hour                                               | "active-users", "active-sessions", "started-sessions", "completed-sessions", "failed-attempts", "dismissed-sessions", "killed-sessions", "duration_0-15", "duration_15-30", "duration_30-60", "duration_60-120", "duration_2h-4h", "duration_4h-8h", "duration_8h-16h", "duration_16h-1d", "duration_1d-3d", "duration_3d-7d", "duration_1w-1m", "duration_over-1m" |
 | Per-MVPD tenant hourly stats                                                  | "mvpd", "year", "month", "day", "hour", "tenant"                                                 | cmu/v2/mvpd/year/month/day/hour/tenant                                        | "active-users", "active-sessions", "started-sessions", "completed-sessions", "failed-attempts", "dismissed-sessions", "killed-sessions", "duration_0-15", "duration_15-30", "duration_30-60", "duration_60-120", "duration_2h-4h", "duration_4h-8h", "duration_8h-16h", "duration_16h-1d", "duration_1d-3d", "duration_3d-7d", "duration_1w-1m", "duration_over-1m" |
-
