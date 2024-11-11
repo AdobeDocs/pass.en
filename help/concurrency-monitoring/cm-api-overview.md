@@ -67,12 +67,27 @@ Make the session initialization call. You will get the following response:
 
 All the data we need is contained in the response headers. The **Location** header represents the id of the new created session and the **Date** and **Expires** headers represent the values used to schedule your application to make the next heartbeat in order to keep the session alive.
 
+With every call you are allowed to send any metadata that you need, not only the mandatory metadata for you application. Sending metadata can be achieved in 2 ways:
+* using **query** **parameters**:
+
+  ```sh
+  curl -i -XPOST -u "user:pass" "https://streams-stage.adobeprimetime.com/v2/sessions/some_idp/some_user?metadata1=value1&metadata2=value2"
+  ```
+  
+* using **request** **body**:
+
+  ```sh
+  curl -i -XPOST -u "user:pass" https://streams-stage.adobeprimetime.com/v2/sessions/some_idp/some_user -d "metadata1=value1" -d "metadata2=value2" -H "Content-Type=application/x-www-form-urlencoded"
+  ```
+
 #### Heartbeat {#heartbeat} 
 
 Make a heartbeat call. Provide the **session id** obtained in the session initialization call, along with the **subject** and **idp** parameters used.
 
 ![](assets/heartbeat.png)
 
+For heartbeat call you are allowed to send metadata in the same way you're doing for session init. One can add anytime new metadata and can update previously sent values with some **exceptions**. The following values, once set, cannot be changed: **package**, **channel**, **platform**, **assetId**, **idp**, **mvpd**, **hba_status**, **hba**,
+**mobileDevice**
 
 If the session is still valid (it has not expired or has been manually deleted), you will receive a successful result: 
 
@@ -105,8 +120,11 @@ When you make the call you'll get the following response:
 
 ![](assets/get-all-running-streams-success.png)
 
-Please note the **Expires** header. That is the time when the first session should expire unless a heartbeat is sent. OtherStreams has value 0 because there are no other streams running for this user on other tenant's applications.
+For each sessions one will get the **terminationCode** and complete metadata.
+
+Please note the **Expires** header. That is the time when the first session should expire unless a heartbeat is sent.
 The metadata field will be populated with all the metadata sent when the session started. We do not filter it, you'll receive everything you sent.
+The response include all streams running on other tenants' apps as long as the apps are sharing the same policy.
 If there are no running sessions for a specific user when you do the call you'll get this response:
 
 ![](assets/get-all-running-streams-empty.png)
@@ -120,8 +138,13 @@ In order to simulate the behavior of our application when the 3 streams policy a
  
 ![](assets/breaking-policy-frstapp.png)
 
+We get a 409 CONFLICT response along with an evaluation result object in the payload. This indicates that the server-side policies do not allow this session to be created or to continue. The response body will contain an EvaluationResult object with a non-empty AssociatedAdvice, which is the list of Advice objects containing explanations for each rule violation.
 
-We get a 409 CONFLICT response along with an evaluation result object in the payload. Read a complete description of the evaluation result in the [Swagger API specification](http://docs.adobeptime.io/cm-api-v2/#evaluation-result).
+The application should prompt the user with the error message(s) carried by each Advice instance. Also, every advice also indicates the rule details like attribute, threshold, rule and policy names. Moreover, the conflicting values will also be included with the list of active sessions for each value.
+
+This information is intended for advanced error message formatting and for allowing the user to take action regarding the conflicting sessions.
+
+Every conflicting session will carry a **terminationCode** that can be used for **killing** that stream. This way, the application may allow the user to choose what session(s) to terminate in order to try to gain access for the current session.
 
 The application can use the information from the evaluation result to display a certain message to the user when stopping the video and to take further actions if needed. One use case can be to stop other existing streams in order to start a new one. This is done by using the **terminationCode** value present in the **conflicts** field for a specific conflicting attribute. The value will be provided as the X-Terminate HTTP header in the call for a new session initialization.                                    
 
@@ -130,6 +153,30 @@ The application can use the information from the evaluation result to display a 
 When providing one or more termination codes at session initialization the call will succeed and a new session will be generated. Then if we try and make a heartbeat with one of the sessions that have been remotely stopped we will get a 410 GONE response back with an evaluation result payload that describes the fact that the session has been remotely terminated, like in the example: 
 
 ![](assets/remote-termination.png)
+
+410 can be returned with or without a body, based on what caused the current session to be terminated.
+
+When the response has no body, 410 means that a heartbeat (or termination) call is attempted for a session that is no longer active (due to timeout or a previous conflict or whatever). The only way to recover from this state is for the application to initiate a new session. Since there is no body, the application is supposed to handle this error without the user being aware of it.
+
+On the other hand, when a response body is provided, the application needs to look within the **associatedAdvice** attribute to find a **remote-termination** advice that indicates the remote session that was initiated with an explicit intention of **killing** the current one. This should result in an error message like "Your session was kicked out by device/application".
+
+### Response Body {#response-body} 
+
+For all the session lifecycle API calls, the the response body (when present) will be a JSON object containing the following fields:
+
+![](assets/body_small.png) 
+
+**Advice**
+The **EvaluationResult** will include an array of Advice objects under **associatedAdvice**. The advices are intended for the application to display a comprehensive error message for the user and (potentially) allow the user to take action.
+
+Currently, there are two types of advices (specified by their **type** attribute value): **rule-violation** and **remote-termination**. The first one provides details regarding a rule that was broken and the sessions that are conflicting with the current one (including the terminate attribute that can be used to terminate that session remotely). The second is just stating that the current session was deliberately terminated by a remote one, so the users will know who kicked them out when the limits were reached.
+
+![](assets/advices.png) 
+
+**Obligation**
+The evaluation may also contain one or more predefined actions that must be triggered by the application as a result of this evaluation.
+
+![](assets/obligation.png) 
 
 ### Second application {#second-application} 
 
