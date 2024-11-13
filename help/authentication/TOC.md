@@ -146,6 +146,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                 + [Apple SSO Cookbook (iOS/tvOS SDK)](single-sign-on/partner-single-sign-on/apple-single-sign-on/apple-sso-cookbook-iostvos-sdk.md)
         + Platform Single Sign-On {#platform-sso}
             + Amazon Single Sign-On {#amazon-sso}
+                + [Amazon SSO Cookbook (REST API V2)](single-sign-on/platform-single-sign-on/amazon-single-sign-on/amazon-sso-cookbook-rest-api-v2.md)
                 + [Amazon SSO Cookbook (REST API V1)](single-sign-on/platform-single-sign-on/amazon-single-sign-on/amazon-sso-cookbook-rest-api-v1.md)
             + Roku Single Sign-On {#roku-sso}
                 + [Roku SSO Overview](single-sign-on/platform-single-sign-on/roku-single-sign-on/roku-sso-overview.md)

@@ -1,17 +1,16 @@
 ---
-title: Amazon SSO Cookbook (REST API V1)
-description: Amazon SSO Cookbook (REST API V1)
-exl-id: 4c65eae7-81c1-4926-9202-a36fd13af6ec
+title: Amazon SSO Cookbook (REST API V2)
+description: Amazon SSO Cookbook (REST API V2)
 ---
-# Amazon SSO Cookbook (REST API V1) {#amazon-sso-cookbook-rest-api-v1}
+# Amazon SSO Cookbook (REST API V2) {#amazon-sso-cookbook-rest-api-v2}
 
 >[!IMPORTANT]
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
-The Adobe Pass Authentication REST API V1 has support for Platform Single Sign-On (SSO) for end users of client applications running on FireOS.
+The Adobe Pass Authentication REST API V2 has support for Platform Single Sign-On (SSO) for end users of client applications running on FireOS.
 
-This document acts as an extension to the existing [REST API V1 Overview](/help/authentication/rest-api-overview.md) that provides a high-level view.
+This document acts as an extension to the existing [REST API V2 Overview](/help/authentication/rest-api-v2/rest-api-v2-overview.md) that provides a high-level view and the document that describes how to implement [Single sign-on using platform identity flows](/help/authentication/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-platform-identity-flows.md).
 
 ## Amazon single sign-on using platform identity flows {#cookbook}
 
@@ -133,56 +132,31 @@ Ensure that the streaming application is handling:
 
 ### Workflow {#workflow}
 
-The Amazon SSO token (platform identity) payload needs to be present on all HTTP requests made against Adobe Pass Authentication endpoints:
+The Amazon SSO token (platform identity) payload needs to be present on all HTTP requests made against Adobe Pass Authentication REST API V2 endpoints:
 
 ```
-/adobe-services/*
-/reggie/*
-/api/*
+/api/v2/*
 ```
+
+Adobe Pass Authentication REST API V2 supports the following methods to receive the SSO token (platform identity) payload which is a device-scoped or platform-scoped identifier:
+
+* As a header named: `Adobe-Subject-Token`
 
 >[!IMPORTANT]
 > 
-> The streaming application may skip sending the Amazon SSO token (platform identity) payload on the `/authenticate` call, as it was provided on the `/regcode` call.
-
-Adobe Pass Authentication supports the following methods to receive the SSO token (platform identity) payload which is a device-scoped or platform-scoped identifier:
-
-* As a header named: `Adobe-Subject-Token`
-* As a query parameter named: `ast`
-* As a post parameter named: `ast`
-
->[!IMPORTANT]
->
-> If sent as a query parameter, then the entire URL may become very long and rejected.
->
-> If sent as a query/post parameter, then it must be included when generating the request signature.
+> For more details about `Adobe-Subject-Token` header, refer to the [Adobe-Subject-Token](/help/authentication/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-adobe-subject-token.md) documentation.
 
 #### Samples
 
 **Sending as a header**
 
 ```HTTPS
-GET /api/v1/config/{requestorId} HTTP/1.1 
+GET /api/v2/{serviceProvider}/sessions HTTP/1.1 
 Host: sp-preprod.auth.adobe.com
 
 Adobe-Subject-Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyb2t1IiwiaWF0IjoxNTExMzY4ODAyLCJleHAiOjE1NDI5MDQ4MDIsImF1ZCI6ImFkb2JlIiwic3ViIjoiNWZjYzMwODctYWJmZi00OGU4LWJhZTgtODQzODViZTFkMzQwIiwiZGlkIjoiY2FmZjQ1ZDAtM2NhMy00MDg3LWI2MjMtNjFkZjNhMmNlOWM4In0.JlBFhNhNCJCDXLwBjy5tt3PtPcqbMKEIGZ6sr2NA
 ```
 
-**Sending as a query parameter**
-
-```HTTPS
-GET /api/v1/config/{requestorId}?ast=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyb2t1IiwiaWF0IjoxNTExMzY4ODAyLCJleHAiOjE1NDI5MDQ4MDIsImF1ZCI6ImFkb2JlIiwic3ViIjoiNWZjYzMwODctYWJmZi00OGU4LWJhZTgtODQzODViZTFkMzQwIiwiZGlkIjoiY2FmZjQ1ZDAtM2NhMy00MDg3LWI2MjMtNjFkZjNhMmNlOWM4In0.JlBFhNhNCJCDXLwBjy5tt3PtPcqbMKEIGZ6sr2NA HTTP/1.1
-Host: sp.auth.adobe.com
-```
-
-**Sending as a post parameter**
-
-```HTTPS
-POST /api/v1/config/{requestorId}?ast=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyb2t1IiwiaWF0IjoxNTExMzY4ODAyLCJleHAiOjE1NDI5MDQ4MDIsImF1ZCI6ImFkb2JlIiwic3ViIjoiNWZjYzMwODctYWJmZi00OGU4LWJhZTgtODQzODViZTFkMzQwIiwiZGlkIjoiY2FmZjQ1ZDAtM2NhMy00MDg3LWI2MjMtNjFkZjNhMmNlOWM4In0.Jl\_BFhN\_h\_NCJCDXLwBjy5tt3PtPcqbMKEIGZ6sr2NA HTTP/1.1
-Host: sp.auth.adobe.com 
-Content-Type: multipart/form-data;
-```
-
 >[!IMPORTANT]
 >
-> In case the `Adobe-Subject-Token` header or `ast` parameter value is missing or invalid, then Adobe Pass Authentication will service the requests without taking Single Sign-On into account.
+> In case the `Adobe-Subject-Token` header value is missing or invalid, then Adobe Pass Authentication will service the requests without taking Single Sign-On into account.

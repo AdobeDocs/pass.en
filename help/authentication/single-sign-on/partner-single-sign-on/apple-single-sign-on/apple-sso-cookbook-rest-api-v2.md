@@ -11,11 +11,11 @@ exl-id: 81476312-9ba4-47a0-a4f7-9a557608cfd6
 
 The Adobe Pass Authentication REST API V2 has support for Partner Single Sign-On (SSO) for end users of client applications running on iOS, iPadOS or tvOS.
 
-This document acts as an extension to the existing REST API V2 documentation that describes how to implement [Single sign-on using partner flows](/help/authentication/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-partner-flows.md).
+This document acts as an extension to the existing [REST API V2 Overview](/help/authentication/rest-api-v2/rest-api-v2-overview.md) that provides a high-level view and the document that describes how to implement [Single sign-on using partner flows](/help/authentication/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-partner-flows.md).
 
-## Apple single sign-on using partner flows {#apple-sso-cookbook-rest-api-v2-cookbook}
+## Apple single sign-on using partner flows {#cookbook}
 
-### Prerequisites {#apple-sso-cookbook-rest-api-v2-prerequisites}
+### Prerequisites {#prerequisites}
 
 Before proceeding with the Apple single sign-on using partner flows, ensure the following prerequisites are met:
 
@@ -35,7 +35,7 @@ Before proceeding with the Apple single sign-on using partner flows, ensure the 
 >
 > * The streaming application has completed the [onboarding prerequisites](/help/authentication/single-sign-on/partner-single-sign-on/apple-single-sign-on/apple-sso-overview.md#apple-sso-prerequisites-programmer) that apply to a Programmer and are required to enable the Apple single sign-on user experience. 
 
-### Workflow {#apple-sso-cookbook-rest-api-v2-workflow}
+### Workflow {#workflow}
 
 Perform the given steps to implement the Apple single sign-on using partner flows as shown in the following diagram.
 
