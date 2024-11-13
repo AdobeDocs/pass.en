@@ -1,6 +1,7 @@
 ---
 title: Amazon SSO Cookbook (REST API V2)
 description: Amazon SSO Cookbook (REST API V2)
+exl-id: 44365f9b-a8d0-4991-8e4a-7b15eabcbd30
 ---
 # Amazon SSO Cookbook (REST API V2) {#amazon-sso-cookbook-rest-api-v2}
 
