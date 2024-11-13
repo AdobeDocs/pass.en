@@ -70,6 +70,7 @@ To get started, visit our public documentation:
 - [Glossary](rest-api-v2-glossary.md)
 - [APIs](./apis/rest-api-v2-apis-overview.md)
 - [Flows](./flows/rest-api-v2-flows-overview.md)
+- [Minimum System Requirements](/help/authentication/minimum-system-requirements.md)
 
 Our dedicated support team is also available to help you with any questions or technical assistance you may need.
 
