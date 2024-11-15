@@ -1,6 +1,7 @@
 ---
 title: REST API V2 FAQs
 description: REST API V2 FAQs
+exl-id: d48e5756-2f76-40b1-bd04-0516643d4a27
 ---
 # REST API V2 FAQs {#rest-api-v2-faqs}
 
