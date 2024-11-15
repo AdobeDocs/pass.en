@@ -49,6 +49,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + REST API V2 {#rest-api-v2}
         + [REST API V2 Overview](./rest-api-v2/rest-api-v2-overview.md)
         + [REST API V2 Glossary](./rest-api-v2/rest-api-v2-glossary.md)
+        + [REST API V2 FAQs](./rest-api-v2/rest-api-v2-faqs.md)
         + APIs {#rest-api-v2-apis}
             + [REST API V2 APIs Overview](rest-api-v2/apis/rest-api-v2-apis-overview.md)
             + Configuration {#rest-api-v2-configuration-apis}

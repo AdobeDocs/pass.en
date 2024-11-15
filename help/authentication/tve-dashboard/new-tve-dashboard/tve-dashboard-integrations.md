@@ -322,7 +322,7 @@ To create a new integration with a new MVPD on your current setup, follow these 
 A new integration will be created only after [review and push changes](/help/authentication/tve-dashboard/new-tve-dashboard/tve-dashboard-review-push-changes.md).
 
 
-## Disable integration {#disable-integratgion}
+## Disable integration {#disable-integration}
 
 To disable an integration, follow these steps:
 
