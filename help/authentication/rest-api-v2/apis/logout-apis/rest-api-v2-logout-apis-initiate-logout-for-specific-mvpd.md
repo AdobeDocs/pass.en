@@ -233,6 +233,7 @@ exl-id: 2482de87-b3d4-4ea8-bd4a-25bf10017e01
                   The possible values are:
                   <ul>
                     <li><b>logout</b><br/>The streaming device needs to open the provided URL in a user agent.<br/>This action applies for the following scenarios: log out of MVPD with a logout endpoint.</li>
+                    <li><b>partner_logout</b><br/>The streaming device needs to inform the user to log out from the partner (system) level as well.<br/>This action applies for the following scenarios: log out of MVPD when profile type is "appleSSO".</li>
                     <li><b>complete</b><br/>The streaming device does not need to perform any subsequent actions.<br/>This action applies for the following scenarios: log out of MVPD without a logout endpoint (dummy logout feature), log out during degraded access, log out during temporary access.</li>
                     <li><b>invalid</b><br/>The streaming device does not need to perform any subsequent actions.<br/>This action applies for the following scenarios: log out of MVPD when no valid profile is found.</li>
                   </ul>  
@@ -246,6 +247,7 @@ exl-id: 2482de87-b3d4-4ea8-bd4a-25bf10017e01
                   The possible values are:
                   <ul>
                     <li><b>interactive</b><br/>This type applies for the following values of the `actionName` attribute: <b>logout</b>.</li>
+                    <li><b>partner_interactive</b><br/>This type applies for the following values of the `actionName` attribute: <b>partner_logout</b>.</li>
                     <li><b>none</b><br/>This type applies for the following values of the `actionName` attribute: <b>complete</b>, <b>invalid</b>.</li>
                   </ul>
                <td><i>required</i></td>
@@ -470,7 +472,43 @@ Content-Type: application/json;charset=UTF-8
 
 >[!ENDTABS]
 
-### 5. Initiate logout for specific mvpd while degradation is applied
+### 5. Initiate logout for specific mvpd including profiles obtained through single sign-on using Partner (Apple)
+
+>[!BEGINTABS]
+
+>[!TAB Request]
+
+```HTTPS 
+GET /api/v2/REF30/logout/Cablevision?redirectUrl=https%3A%2F%2Fadobe.com HTTP/1.1
+
+    Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjNGZjM2U3ZS0xMmQ5LTQ5NWQtYjc0Mi02YWVhYzhhNDkwZTciLCJuYmYiOjE3MjQwODc4NjgsImlzcyI6ImF1dGguYWRvYmUuY29tIiwic2NvcGVzIjoiYXBpOmNsaWVudDp2MiIsImV4cCI6MTcyNDEwOTQ2OCwiaWF0IjoxNzI0MDg3ODY4fQ.DJ9GFl_yKAp2Qw-NVcBeRSnxIhqrwxhns5T5jU31N2tiHxCucKLSQ5guBygqkkJx6D0N_93f50meEEyfb7frbHhVHHwmRjHYjkfrWqHCpviwVjVZKKwl8Y3FEMb0bjKIB8p_E3txX9IbzeNGWRufZBRh2sxB5Q9B7XYINpVfh8s_sFvskrbDu5c01neCx5kEagEW5CtE0_EXTgEb5FSr_SfQG3UUu_iwlkOggOh_kOP_5GueElf9jn-bYBMnpObyN5s-FzuHDG5Rtac5rvcWqVW2reEqFTHqLI4rVC7UKQb6DSvPBPV4AgrutAvk30CYgDsOQILVyrjniincp7r9Ww
+    AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
+    X-Device-Info: ewoJInByaW1hcnlIYXJkd2FyZVR5cGUiOiAiU2V0VG9wQm94IiwKCSJtb2RlbCI6ICJUViA1dGggR2VuIiwKCSJtYW51ZmFjdHVyZXIiOiAiQXBwbGUiLAoJIm9zTmFtZSI6ICJ0dk9TIgoJIm9zVmVuZG9yIjogIkFwcGxlIiwKCSJvc1ZlcnNpb24iOiAiMTEuMCIKfQ==
+    Accept: application/json
+    User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 11.0 like Mac OS X; en_US)
+```
+
+>[!TAB Response]
+
+```HTTPS
+HTTP/1.1 200 OK
+
+Content-Type: application/json;charset=UTF-8
+
+{
+   "logouts": {
+      "Cablevision": {
+         "actionName": "partner_logout",
+         "actionType": "partner_interactive",
+         "mvpd": "Cablevision"
+      }
+   }
+}
+```
+
+>[!ENDTABS]
+
+### 6. Initiate logout for specific mvpd while degradation is applied
 
 >[!BEGINTABS]
 
@@ -506,7 +544,7 @@ Content-Type: application/json;charset=UTF-8
 
 >[!ENDTABS]
 
-### 6. Initiate logout for basic or promotional TempPass (not required)
+### 7. Initiate logout for basic or promotional TempPass (not required)
 
 >[!BEGINTABS]
 

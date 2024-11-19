@@ -502,7 +502,10 @@ Perform the given steps to implement the Apple single sign-on using partner flow
    > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`
    > * All the _optional_ parameters and headers
 
-1. **Indicate the next action:** The Adobe Pass Logout endpoint response contains the necessary data to guide the streaming application regarding the next action.
+1. **Indicate the next action:** The Adobe Pass Logout endpoint response contains the necessary data to guide the streaming application regarding the next action:
+   * The `url` attribute is missing since the user needs to interact with the partner (system) level to complete the logout flow.
+   * The `actionName` attribute is set to "partner_logout".
+   * The `actionType` attribute is set to "partner_interactive".
 
    >[!IMPORTANT]
    >
