@@ -35,6 +35,16 @@ Steps 1 and 2 are setting up the test environment on one of the testing machines
 
 ```Choose any IP from **addresses** section (e.g. `52.13.71.11)```
 
+  ```cmd
+  C:\>nslookup entitlement-prequal.auth.adobe.com 
+  ...
+  Addresses:  52.26.79.43
+              54.190.212.171
+  ```
+
+```Choose any IP from **addresses** section (e.g. `54.190.212.171)```
+
+
 * **On Linux/Mac**
 
 ```sh
@@ -47,6 +57,17 @@ Steps 1 and 2 are setting up the test environment on one of the testing machines
 ```    
 
 ```Choose any IP from **A records (**e.g `52.13.71.11)```
+
+```sh
+    $ dig entitlement-prequal.auth.adobe.com
+    
+    ;; ANSWER SECTION:
+    ...
+    ............ 60 IN A      52.26.79.43
+    ............ 60 IN A      54.190.212.171
+```    
+
+```Choose any IP from **A records (**e.g `54.190.212.171)```
 
 >[!NOTE] 
 >
@@ -62,7 +83,8 @@ Steps 1 and 2 are setting up the test environment on one of the testing machines
 * Edit the *c:\\windows\\System32\\drivers\\etc\\hosts* file (in Windows) or */etc/hosts* file (on Macintosh/Linux/Android) and add the following:
   
 * Spoof production profile    
-    * 52.13.71.11 entitlement.auth.adobe.com sp.auth.adobe.com api.auth.adobe.com
+    * 52.13.71.11 sp.auth.adobe.com api.auth.adobe.com
+    * 54.190.212.171 entitlement.auth.adobe.com
 
 **Spoofing on Android:** In order to spoof on Android, you have to use an Android emulator.
 
