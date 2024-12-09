@@ -225,6 +225,23 @@ exl-id: 66c33546-2be0-473f-9623-90499d1c13eb
                <td><i>required</i></td>
             </tr>
             <tr>
+               <td style="background-color: #DEEBFF;">reasonType</td>
+               <td>
+                  The type of reason used that explains the 'actionName'.
+                  <br/><br/>
+                  The possible values are:
+                  <ul>
+                    <li><b>none</b></li>
+                    <li><b>authenticated</b></li>
+                    <li><b>temporary</b></li>
+                    <li><b>degraded</b></li>
+                    <li><b>authenticatedSSO</b></li>
+                    <li><b>pfs_fallback</b></li>
+                    <li><b>configuration_fallback</b></li>
+                  </ul>
+               <td><i>required</i></td>
+            </tr>
+            <tr>
                <td style="background-color: #DEEBFF;">missingParameters</td>
                <td>The missing parameters that need to be provided in order to complete the basic authentication flow.</td>
                <td>optional</td>
@@ -253,6 +270,16 @@ exl-id: 66c33546-2be0-473f-9623-90499d1c13eb
                <td style="background-color: #DEEBFF;">serviceProvider</td>
                <td>The internal unique identifier associated with the Service Provider during onboarding process.</td>
                <td><i>required</i></td>
+            </tr>
+            <tr>
+               <td style="background-color: #DEEBFF;">notBefore</td>
+               <td>The timestamp before which the authentication code is not valid.</td>
+               <td>optional</td>
+            </tr>
+            <tr>
+               <td style="background-color: #DEEBFF;">notAfter</td>
+               <td>The timestamp after which the authentication code is not valid.</td>
+               <td>optional</td>
             </tr>
          </table>
       </td>
@@ -324,7 +351,9 @@ Content-Type: application/json;charset=UTF-8
     "code": "8ER640M",
     "sessionId": "1b614390-6610-4d14-9421-6565f6e75958",
     "mvpd": "Cablevision",
-    "serviceProvider": "REF30"
+    "serviceProvider": "REF30",
+    "notBefore": "1733735289035",
+    "notAfter": "1733737089035"
 }
 ```
 
@@ -359,12 +388,15 @@ Content-Type: application/json;charset=UTF-8
 {           
     "actionName": "retry",
     "actionType": "direct",
+    "reasonType": "none",
     "url": "/api/v2/REF30/sessions/8BLW4RW",
     "missingParameters": ["redirectUrl"]
     "code": "8BLW4RW",
     "sessionId": "1b614390-6610-4d14-9421-6565f6e75958",
     "mvpd": "Cablevision",
-    "serviceProvider": "REF30"
+    "serviceProvider": "REF30",
+    "notBefore": "1733735289035",
+    "notAfter": "1733737089035"
 }
 ```
 
@@ -399,6 +431,7 @@ Content-Type: application/json;charset=UTF-8
 {
     "actionName": "authorize",
     "actionType": "direct",
+    "reasonType": "authenticated",
     "url": "/api/v2/REF30/decisions/authorize/Cablevision",
     "sessionId": "1b614390-6610-4d14-9421-6565f6e75958",
     "mvpd": "Cablevision",
@@ -435,6 +468,7 @@ Content-Type: application/json;charset=UTF-8
 {
     "actionName": "authorize",
     "actionType": "direct",
+    "reasonType": "temporary"
     "url": "/api/v2/REF30/decisions/authorize/TempPass_TEST40",
     "sessionId": "1b614390-6610-4d14-9421-6565f6e75958",
     "mvpd": "TempPass_TEST40",
@@ -473,6 +507,7 @@ Content-Type: application/json;charset=UTF-8
 {
     "actionName": "authorize",
     "actionType": "direct",
+    "reasonType": "degraded",
     "url": "/api/v2/REF30/decisions/authorize/Cablevision",
     "sessionId": "1b614390-6610-4d14-9421-6565f6e75958",
     "mvpd": "Cablevision",

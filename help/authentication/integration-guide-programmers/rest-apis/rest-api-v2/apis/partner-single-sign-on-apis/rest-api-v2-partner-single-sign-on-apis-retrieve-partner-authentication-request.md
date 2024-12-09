@@ -419,6 +419,7 @@ Content-Type: application/json;charset=UTF-8
 {
     "actionName": "authorize",
     "actionType": "direct",
+    "reasonType": "degraded",
     "url": "/api/v2/REF30/decisions/authorize/${degradedMvpd}",
     "sessionId": "14d4f239-e3b1-4a4a-b8b3-6395b968a260",
     "mvpd": "${degradedMvpd}",
@@ -468,11 +469,14 @@ Content-Type: application/json;charset=UTF-8
 {
     "actionName": "authenticate",
     "actionType": "interactive",
+    "reasonType": "none",
     "url": "/api/v2/authenticate/REF30/OKTWW2W",
     "code": "OKTWW2W",
     "sessionId": "748f0b9e-a2ae-46d5-acd9-4b4e6d71add7",
     "mvpd": "Cablevision",
-    "serviceProvider": "REF30"
+    "serviceProvider": "REF30",
+    "notBefore": "1733735289035",
+    "notAfter": "1733737089035"
 }
 ```
 
@@ -518,6 +522,7 @@ Content-Type: application/json;charset=UTF-8
 {
     "actionName": "resume",
     "actionType": "direct",
+    "reasonType": "none",
     "missingParameters": [
           "redirectUrl"
     ],
@@ -525,7 +530,9 @@ Content-Type: application/json;charset=UTF-8
     "code": "SB7ZRIO",
     "sessionId": "1476173f-5088-43b8-b7c3-8cf3a185de0a",
     "mvpd": "Cablevision",
-    "serviceProvider": "REF30"
+    "serviceProvider": "REF30",
+    "notBefore": "1733735289035",
+    "notAfter": "1733737089035"
 }
 ```
 
