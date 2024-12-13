@@ -9,6 +9,10 @@ exl-id: a1d98325-32a1-4881-8635-9a3c38169422
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Introduction {#intro}
 
 Android AccessEnabler is a Java Android library that enables mobile apps to use Adobe Pass Authentication for TV Everywhere's entitlement services. An Android implementation consists of the AccessEnabler interface that defines the entitlement API, and an EntitlementDelegate protocol that describes the callbacks that the library triggers. The interface together with the protocol is referred to under one common name: the AccessEnabler Android library.

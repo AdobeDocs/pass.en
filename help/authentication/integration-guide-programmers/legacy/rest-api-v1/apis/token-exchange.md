@@ -9,6 +9,10 @@ exl-id: 5ab60268-8f97-4755-8281-be45e812ed7f
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 >[!NOTE]
 >
 > REST API implementation is bounded by [Throttling mechanism](/help/authentication/integration-guide-programmers/throttling-mechanism.md)

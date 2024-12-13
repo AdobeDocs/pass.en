@@ -9,6 +9,10 @@ exl-id: 8756c804-a4c1-4ee3-b2b9-be45f38bdf94
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Introduction
 
 Adobe highly recommends that you migrate to the latest JS v4.x of the AccessEnabler library.

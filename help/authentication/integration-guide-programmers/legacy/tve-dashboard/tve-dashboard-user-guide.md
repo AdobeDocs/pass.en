@@ -9,6 +9,10 @@ exl-id: 6f7f7901-db3a-4c68-ac6a-27082db9240a
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Introduction {#tve-db-intro}
 
 [[!DNL Adobe] TVE Dashboard (TVE Dashboard)](https://console.auth.adobe.com/) is a self-service dashboard aimed at users working for media companies (Programmers) that have a business relationship with the Adobe Pass Authentication product team.

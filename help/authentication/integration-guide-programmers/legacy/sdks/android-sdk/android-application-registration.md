@@ -9,6 +9,10 @@ exl-id: 6238bd87-ac97-4a5c-9d92-3631f7b2d46a
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Introduction {#intro}
 
 Starting with version 3.0 of the Android AccessEnabler SDK, we are changing the Authentication mechanism with Adobe's servers. Instead of using a public key and secret system to sign the requestorID, we are introducing the concept of a Software Statement string that can be used to obtain an access token that is later used for all calls that the SDK makes to our servers. In addition to a Software Statement you will also need to create a deep link for your application.

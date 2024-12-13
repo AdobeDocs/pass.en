@@ -9,6 +9,10 @@ exl-id: 04af4aed-35e4-44cb-98ce-7643165a8869
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 In order to test the AuthN and AuthZ flows, we have prepared an **API test site** which is at your disposal. Our support team will be happy to supply you with credentials. You can contact us at **support@tve.zendesk.com**.
 
 

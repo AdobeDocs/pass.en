@@ -9,6 +9,10 @@ exl-id: 4c65eae7-81c1-4926-9202-a36fd13af6ec
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 The Adobe Pass Authentication REST API V1 has support for Platform Single Sign-On (SSO) for end users of client applications running on FireOS.
 
 This document acts as an extension to the existing [REST API V1 Overview](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/rest-api-overview.md) that provides a high-level view.

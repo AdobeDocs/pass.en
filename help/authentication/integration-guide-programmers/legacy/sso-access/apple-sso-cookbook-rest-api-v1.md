@@ -9,6 +9,10 @@ exl-id: 072a011f-e1bb-4d3e-bcb5-697f2d1739cc
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 The Adobe Pass Authentication REST API V1 has support for Partner Single Sign-On (SSO) for end users of client applications running on iOS, iPadOS or tvOS.
 
 This document acts as an extension to the existing REST API V1 documentation, which can be found [here](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/rest-api-reference.md).

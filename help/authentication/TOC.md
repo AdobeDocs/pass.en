@@ -9,6 +9,35 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
 # Adobe Pass Authentication Help {#authentication}
 
 + [Adobe Pass Authentication](home.md)
++ [Product Announcements](product-announcements.md)
++ Product Releases {#product-releases}
+    + 2024 {#2024}
+        + [Adobe Pass Authentication 3.0.3 release notes](notes-releases/auth-rn-303.md)
+        + [Adobe Pass Authentication 3.0 release notes](notes-releases/auth-rn-300.md)
+        + [Adobe Pass Authentication 2.70 release notes](notes-releases/auth-rn-270.md)
+        + [Adobe Pass Authentication 2.69 release notes](notes-releases/auth-rn-269.md)
+        + [Adobe Pass Authentication JavaScript 4.7.0 release notes](notes-releases/authn-rn-javascript-470.md)
+        + [Adobe Pass Authentication iOS / tvOS 3.9.2 release notes](notes-releases/authn-rn-ios-tvos-392.md)
+        + [Adobe Pass Authentication iOS / tvOS 3.8.4 release notes](notes-releases/authn-rn-ios-tvos-384.md)
+    + 2023 {#2023}
+        + [Adobe Pass Authentication 2.68 release notes](notes-releases/auth-rn-268.md)
+        + [Adobe Pass Authentication 2.67 release notes](notes-releases/auth-rn-267.md)
+        + [Adobe Pass Authentication 2.66 release notes](notes-releases/auth-rn-266.md)
+        + [Adobe Pass Authentication 2.65.1 release notes](notes-releases/auth-rn-2651.md)
+        + [Adobe Pass Authentication 2.65 release notes](notes-releases/auth-rn-265.md)
+        + [Adobe Pass Authentication 2.64.1 release notes](notes-releases/auth-rn-2641.md)
+        + [Adobe Pass Authentication iOS / tvOS 3.8.3 release notes](notes-releases/authn-rn-ios-tvos-383.md)
+        + [Adobe Pass Authentication iOS / tvOS 3.8.2 release notes](notes-releases/authn-rn-ios-tvos-382.md)
+        + [Adobe Pass Authentication iOS / tvOS 3.8.1 release notes](notes-releases/authn-rn-ios-tvos-381.md)
+        + [Adobe Pass Authentication Android 3.7.3 release notes](notes-releases/authn-rn-android-373.md)
+    + 2022 {#2022}
+        + [Adobe Pass Authentication 2.64 release notes](notes-releases/auth-rn-264.md)
+        + [Adobe Pass Authentication 2.63 release notes](notes-releases/auth-rn-263.md)
+        + [Adobe Pass Authentication 2.62.1 release notes](notes-releases/auth-rn-2621.md)
+        + [Adobe Pass Authentication JavaScript 4.6.0 release notes](notes-releases/authn-rn-javascript-460.md)
+    + 2021 {#2021}
+        + [Adobe Pass Authentication JavaScript 4.4.0 release notes](notes-releases/authn-rn-javascript-440.md)
+        + [Adobe Pass Authentication iOS / tvOS 3.7.0 release notes](notes-releases/authn-rn-ios-tvos-370.md)
 + Kickstart {#kickstart}
     + [Technical paper](kickstart/technical-paper.md)
     + [Programmer overview](kickstart/programmer-overview.md)
@@ -113,7 +142,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             + [Promotional temp pass](integration-guide-programmers/features-premium/temporary-access/promotional-temp-pass.md)
             + [Reset Temp Pass](integration-guide-programmers/features-premium/temporary-access/reset-temp-pass.md)
         + Degraded Access {#degraded-access}
-            + [Degradation API Overview](integration-guide-programmers/features-premium/degraded-access/degradation-api-overview.md) 
+            + [Degradation API Overview](integration-guide-programmers/features-premium/degraded-access/degradation-api-overview.md)
         + ESM {#esm}
             + [Entitlement service monitoring overview](integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md)
             + [Entitlement service monitoring API](integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-api.md)
@@ -255,34 +284,6 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + [Integrations](/help/authentication/user-guide-tve-dashboard/tve-dashboard-integrations.md)
     + [Reports](/help/authentication/user-guide-tve-dashboard/tve-dashboard-reports.md)
     + [Changes log](/help/authentication/user-guide-tve-dashboard/tve-dashboard-changes-log.md)
-+ Release Notes {#release-notes}
-    + 2024 {#release-notes-2024}
-        + [Adobe Pass Authentication 3.0.3 release notes](notes-releases/auth-rn-303.md)
-        + [Adobe Pass Authentication 3.0 release notes](notes-releases/auth-rn-300.md)
-        + [Adobe Pass Authentication 2.70 release notes](notes-releases/auth-rn-270.md)
-        + [Adobe Pass Authentication 2.69 release notes](notes-releases/auth-rn-269.md)
-        + [Adobe Pass Authentication JavaScript 4.7.0 Release Notes](notes-releases/authn-rn-javascript-470.md)
-        + [Adobe Pass Authentication iOS / tvOS 3.9.2 Release Notes](notes-releases/authn-rn-ios-tvos-392.md)
-        + [Adobe Pass Authentication iOS / tvOS 3.8.4 Release Notes](notes-releases/authn-rn-ios-tvos-384.md)
-    + 2023 {#release-notes-2023}
-        + [Adobe Pass Authentication 2.68 release notes](notes-releases/auth-rn-268.md)
-        + [Adobe Pass Authentication 2.67 release notes](notes-releases/auth-rn-267.md)
-        + [Adobe Pass Authentication 2.66 release notes](notes-releases/auth-rn-266.md)
-        + [Adobe Pass Authentication 2.65.1 release notes](notes-releases/auth-rn-2651.md)
-        + [Adobe Pass Authentication 2.65 release notes](notes-releases/auth-rn-265.md)
-        + [Adobe Pass Authentication 2.64.1 release notes](notes-releases/auth-rn-2641.md)
-        + [Adobe Pass Authentication iOS / tvOS 3.8.3 Release Notes](notes-releases/authn-rn-ios-tvos-383.md)
-        + [Adobe Pass Authentication iOS / tvOS 3.8.2 Release Notes](notes-releases/authn-rn-ios-tvos-382.md)
-        + [Adobe Pass Authentication iOS / tvOS 3.8.1 Release Notes](notes-releases/authn-rn-ios-tvos-381.md)
-        + [Adobe Pass Authentication Android 3.7.3 Release Notes](notes-releases/authn-rn-android-373.md)
-    + 2022 {#release-notes-2022}
-        + [Adobe Pass Authentication 2.64 release notes](notes-releases/auth-rn-264.md)
-        + [Adobe Pass Authentication 2.63 release notes](notes-releases/auth-rn-263.md)
-        + [Adobe Pass Authentication 2.62.1 release notes](notes-releases/auth-rn-2621.md)
-        + [Adobe Pass Authentication JavaScript 4.6.0 Release Notes](notes-releases/authn-rn-javascript-460.md)
-    + 2021 {#release-notes-2021}
-        + [Adobe Pass Authentication JavaScript 4.4.0 Release Notes](notes-releases/authn-rn-javascript-440.md)
-        + [Adobe Pass Authentication iOS / tvOS 3.7.0 Release Notes](notes-releases/authn-rn-ios-tvos-370.md)
 + Tech Notes {#tech-notes}
     + Environments {#environments}
         + [Understanding the Adobe Environments](notes-technical/environments/understanding-the-adobe-environments.md)

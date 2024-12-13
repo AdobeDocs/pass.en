@@ -9,6 +9,10 @@ exl-id: fb000e9d-b5aa-45b1-a914-9e419ec8a4d9
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Introduction {#intro}
 
 Customers can use [Nagios](http://www.nagios.org) or other tools to check whether Adobe Pass Authentication is up or down. 

@@ -9,6 +9,10 @@ exl-id: 813a8501-db72-4850-a387-c8db6120db80
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 Conceptually, each user who initiates an entitlement flow is associated with a single, unique User ID. However, through the course of an entitlement flow, that one User ID can be presented in different ways, depending upon which API you obtain the ID from.
 
 The `sessionGUID` in the Short Media Token is the secure form of the User ID, which is available via the `sendTrackingData()` call. In all current integrations, this is a persistent GUID for the user across time and devices. The source of the GUID starts with the User ID from the authentication response coming from the MVPD. However, some MVPDs could change their mind in the future, and start sending a transient GUID. If a Programmer wants to ensure that the MVPD source User ID in the AuthN response is persistent, they should arrange for that in their agreements with MVPDs.

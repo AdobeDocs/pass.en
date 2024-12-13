@@ -9,6 +9,10 @@ exl-id: 2d59cd33-ccfd-41a8-9697-1ace3165bc44
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 The Adobe Pass Authentication AccessEnabler iOS/tvOS SDK has support for Partner Single Sign-On (SSO) for end users of client applications running on iOS, iPadOS or tvOS.
 
 This document acts as an extension to the existing AccessEnabler iOS/tvOS SDK documentation, which can be found [here](/help/authentication/integration-guide-programmers/legacy/sdks/ios-tvos-sdk/iostvos-sdk-api-reference.md).

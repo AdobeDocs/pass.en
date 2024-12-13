@@ -9,6 +9,10 @@ exl-id: b7493ca6-1862-4cea-a11e-a634c935c86e
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Overview {#preauth-overview}
 
 The Preauthorize API method is to be used by applications to obtain preauthorization decisions for one or more resources. The Preauthorize API request should be used for UI hints and/or content filtering. An actual Authorization API request must be made before allowing user access to the specified resources.

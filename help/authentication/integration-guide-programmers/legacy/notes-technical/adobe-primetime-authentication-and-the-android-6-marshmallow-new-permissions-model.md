@@ -9,6 +9,10 @@ exl-id: 3c96769e-b25b-48ab-bb74-40f13d4e5a84
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 </br>
 
 The new Android 6 Marshmallow release introduces some updates to the permissions model, which can affect the behavior of apps that use the existing Adobe Pass Authentication SDK version 1.8 and older. 

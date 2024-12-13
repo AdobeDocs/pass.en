@@ -9,6 +9,10 @@ exl-id: 017a55a8-0855-4c52-aad0-d3d597996fcb
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Introduction {#intro}
 
 This page describes the methods and callback functions exposed by the iOS/tvOS native client for Adobe Pass Authentication. The methods and callback functions described here are defined in the `AccessEnabler.h` and `EntitlementDelegate.h` header files; you can find them in the iOS AccessEnabler SDK here: `[SDK directory]/AccessEnabler/headers/api/`

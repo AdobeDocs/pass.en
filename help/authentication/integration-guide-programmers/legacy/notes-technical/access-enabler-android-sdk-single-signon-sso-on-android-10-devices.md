@@ -9,6 +9,10 @@ exl-id: dedade15-c451-4757-b684-d3728e11dd87
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Overview
 
 Single Sign-On (SSO) between Adobe Pass Authentication powered apps is available on devices using Android OS through the means of Access Enabler Android SDK. In order to offer Single Sign-On (SSO) on Android devices, the Access Enabler Android SDK version 3.2.1 (latest) and previous versions use a shared database file saved in an Android storage implementation, accessible by all Adobe Pass Authentication powered apps.

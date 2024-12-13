@@ -10,6 +10,10 @@ exl-id: 89ee6b5a-29fa-4396-bfc8-7651aa3d6826
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Introduction {#Intro}
 
 Starting with version 3.0 of the iOS/tvOS AccessEnabler SDK, we are changing the Authentication mechanism with Adobe's servers. Instead of using a public key and secret system to sign the requestorID, we are introducing the concept of a software statement string that can be used to obtain an access token that is later used for all calls that the SDK makes to our servers. In addition to a software statement you will also need a custom URL scheme for your application.

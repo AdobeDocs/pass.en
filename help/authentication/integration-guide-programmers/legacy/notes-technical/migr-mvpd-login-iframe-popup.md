@@ -9,6 +9,10 @@ exl-id: 389ea0ea-4e18-4c2e-a527-c84bffd808b4
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Popup versus iFrame {#popup-vs-iframe}
 
 Some users have encountered 3rd-party cookie issues with the iFrame implementation of an MVPD login page. 

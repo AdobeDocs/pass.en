@@ -9,6 +9,10 @@ exl-id: a3362020-92ff-4232-b923-e462868730d5
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Safari 10 {#safari10}
 
 **Details**

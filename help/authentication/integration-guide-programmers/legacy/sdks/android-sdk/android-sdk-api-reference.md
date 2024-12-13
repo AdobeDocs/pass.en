@@ -9,6 +9,10 @@ exl-id: f932e9a1-2dbe-4e35-bd60-a4737407942d
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Introduction {#intro}
 
 This document details the methods and callbacks exposed by the Android SDK for Adobe Pass Authentication, supported with Adobe Pass Authentication versions 1.7 and later. The methods and callback functions described here are defined in the AccessEnabler.h and EntitlementDelegate.h header files.

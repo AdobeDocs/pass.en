@@ -9,6 +9,10 @@ exl-id: d4e493b0-4467-42b1-9758-16c5941d8051
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 </br>
 
 **Q1:** Is it possible to register certificates across iOS and Android?

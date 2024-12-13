@@ -9,6 +9,10 @@ exl-id: cd97c6fb-f0fa-45c2-82c1-f28aa6b2fd12
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Issue {#issue}
 
 The user is going through the Authentication flow, and after they successfully entered their credentials with their provider they get redirected back to either an error page, a search page, or some other custom page informing them that `adobepass.ios.app` could not be found/resolved.

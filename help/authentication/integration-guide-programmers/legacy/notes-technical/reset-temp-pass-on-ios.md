@@ -9,6 +9,10 @@ exl-id: 53a22fae-192c-4b4c-9d63-fd9a2d960923
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 </br>
 
 The iOS Demo App includes a dedicated screen for resetting the Temp Pass TTL. The following information is required for the reset operation:

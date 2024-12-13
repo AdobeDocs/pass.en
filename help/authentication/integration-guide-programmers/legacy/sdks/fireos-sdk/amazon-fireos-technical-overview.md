@@ -9,6 +9,10 @@ exl-id: 939683ee-0dd9-42ab-9fde-8686d2dc0cd0
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 </br>
 
 ## Introduction {#intro}

@@ -9,6 +9,10 @@ exl-id: edc3719e-c627-464c-9b10-367a425698c6
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Overview {#overview-sso-support}
 
 This document describes the types of Single Sign On supported and powered by Adobe Pass Authentication on different platforms. The scope of this document is to shed light into what's supported and what's not, what is the MVPD coverage for each SSO method and what is required from the Programmers to be able to benefit from SSO on each platform.

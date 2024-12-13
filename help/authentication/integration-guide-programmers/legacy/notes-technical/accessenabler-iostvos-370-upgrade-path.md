@@ -9,6 +9,10 @@ exl-id: f15c7414-ec9b-4e21-b457-1ecf59f47441
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 </br>
 
 Keychain storage changes from the [new AccessEnabler version 3.7.0](/help/authentication/notes-releases/authn-rn-ios-tvos-370.md) are incompatible with Keychain storage implementation from AccessEnabler version's lower than 3.7.0.

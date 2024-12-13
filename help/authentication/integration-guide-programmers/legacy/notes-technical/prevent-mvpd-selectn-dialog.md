@@ -9,6 +9,10 @@ exl-id: 20faf501-c006-45e2-a725-fb1273ecaffe
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Issue {#issue-prevent-mvpd-sel-dialog}
 
 You need to prevent ("block-list") specific MVPDs from appearing in the MVPD selector.

@@ -9,6 +9,9 @@ exl-id: ea024797-315e-47c0-99ea-1ac49c8c9697
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
 
 ## Clearing Temporary Data {#clearing-temporary-data}
 

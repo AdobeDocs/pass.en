@@ -9,6 +9,10 @@ exl-id: 3ce8dfec-279a-4d10-93b4-1fbb18276543
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Overview {#overview}
 
 For web applications, you must account for some different possible scenarios for authenticating and logging out users.  MVPDs require that users log in on the MVPD's web page to authenticate, with the following additional factors coming into play:

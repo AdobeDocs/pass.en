@@ -9,6 +9,10 @@ exl-id: d57f7a4a-ac77-4f3c-8008-0cccf8839f7c
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Introduction {#intro}
 
 This document describes the entitlement workflows that a Programmer's upper-level application implements for a JavaScript integration with Adobe Pass Authentication service. Links to the JavaScript API Reference are included throughout.  

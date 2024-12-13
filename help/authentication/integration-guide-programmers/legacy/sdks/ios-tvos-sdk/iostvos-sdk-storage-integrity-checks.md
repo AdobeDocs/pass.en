@@ -9,6 +9,10 @@ exl-id: 5d7cdc46-3e51-4e14-9e30-d7f48bc87506
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Introduction {#Intro}
 
 Starting with version 3.8.3 of the iOS/tvOS AccessEnabler SDK, the option of performing storage integrity checks is available on AccessEnabler initialization.

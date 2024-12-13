@@ -9,6 +9,10 @@ exl-id: 48d48327-14e6-46f3-9e80-557f161acd8a
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## API Reference {#api-reference}
 
 These functions initiate requests for interaction with an MVPD. All calls are asynchronous; you must implement [callbacks](#callbacks) to handle the responses:

@@ -9,6 +9,10 @@ exl-id: 90062be0-1a0a-44ae-8d8e-f4d97a92b17a
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 </br>
 
 **Due to Apple deprecating UIWebView on iOS, we have updated iOS SDK 3.1 with support for WKWebView.**

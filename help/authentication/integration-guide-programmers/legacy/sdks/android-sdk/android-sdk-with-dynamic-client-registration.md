@@ -9,6 +9,10 @@ exl-id: 8d0c1507-8e80-40a4-8698-fb795240f618
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Introduction {#Intro}
 
 Android AccessEnabler SDK for Android was modified to enable Authentication without using session cookies. As more and more browsers are restricting the access to cookies, another method needs to be used to allow authentication.

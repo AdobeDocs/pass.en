@@ -9,6 +9,10 @@ exl-id: 2c0e0f06-ddc6-4bea-90dc-d7ef8e78d27e
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 ## Issue {#issue}
 
 The Programmer may want to test or check the user experience of new MVPD integrations before going public to end users.

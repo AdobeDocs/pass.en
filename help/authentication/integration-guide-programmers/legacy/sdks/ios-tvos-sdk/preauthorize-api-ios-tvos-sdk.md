@@ -9,6 +9,10 @@ exl-id: 79c596a4-0e38-4b6c-bb85-f97c6af45ed8
 >
 >The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
+>[!IMPORTANT]
+>
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
 The Preauthorize API can be used to obtain a preauthorization decision for one or more resources, this way the application can implement UI hints and/or content filtering.
 
 >[!IMPORTANT]

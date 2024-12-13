@@ -5,17 +5,11 @@ exl-id: a8b01469-3d5f-4a44-9ae8-06a68c29d56d
 ---
 # Welcome to Adobe&reg; Pass Authentication {#pt-auth-overview}
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
 
 Adobe Pass Authentication is an entitlement solution for TV Everywhere, providing a modular framework for determining whether someone who requests access to a resource is entitled to it. To participate in the Adobe Pass Authentication entitlement solution, Content Providers (Programmers) and Pay TV Providers (MVPDs) integrate their entitlement systems with the Adobe Pass Authentication workflows. This documentation site provides details on the integration process, as well as tips for existing partners.
-
-Your feedback is always appreciated!
-
->[!NOTE]
->
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
 ## Popular Help and FAQs {#help-faqs}
 
@@ -33,13 +27,11 @@ Your feedback is always appreciated!
 
 >[!IMPORTANT]
 >
->If you can't find an answer, [**Email Us**](mailto:tve-support@adobe.com).
+> If you can't find an answer, [**Email Us**](mailto:tve-support@adobe.com).
 >
->[Emailing our support team](mailto:tve-support@adobe.com) is also the first step for any issue or incident report.
+> [Emailing our support team](mailto:tve-support@adobe.com) is also the first step for any issue or incident report.
 >
->If you have a [SEVERITY 1 LIVE](/help/authentication/kickstart/escalation-procedures.md) issue and you have emailed us and 30 minutes have elapsed without a response, then see the [Escalation Procedures](/help/authentication/kickstart/escalation-procedures.md) document for phone numbers to call.
->
-
+> If you have a [SEVERITY 1 LIVE](/help/authentication/kickstart/escalation-procedures.md) issue, and you have emailed us and 30 minutes have elapsed without a response, then see the [Escalation Procedures](/help/authentication/kickstart/escalation-procedures.md) document for phone numbers to call.
 
 ## To find what you need {#how-to-search}
 
