@@ -3,7 +3,7 @@ title: JavaScript SDK Cookbook
 description: JavaScript SDK Cookbook
 exl-id: d57f7a4a-ac77-4f3c-8008-0cccf8839f7c
 ---
-# JavaScript SDK Cookbook {#javascript-sdk-cookbook}
+# (Legacy) JavaScript SDK Cookbook {#javascript-sdk-cookbook}
 
 >[!NOTE]
 >

@@ -3,7 +3,7 @@ title: Amazon FireOS Technical Overview
 description: Amazon FireOS Technical Overview
 exl-id: 939683ee-0dd9-42ab-9fde-8686d2dc0cd0
 ---
-# Amazon FireOS Technical Overview {#amazon-fireos-technical-overview}
+# (Legacy) Amazon FireOS Technical Overview {#amazon-fireos-technical-overview}
 
 >[!NOTE]
 >

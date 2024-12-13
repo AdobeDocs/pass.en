@@ -3,7 +3,7 @@ title: Retrieve Authorization Token
 description: Retrieve Authorization Token
 exl-id: 0b010958-efa8-4dd9-b11b-5d10f51f5680
 ---
-# Retrieve Authorization Token {#retrieve-authorization-token}
+# (Legacy) Retrieve Authorization Token {#retrieve-authorization-token}
 
 >[!NOTE]
 >
@@ -45,8 +45,8 @@ Retrieves authorization (AuthZ) Token.
 | requestor | The Programmer requestorId for which this operation is valid. |
 | deviceId | The device id bytes. |
 | resource | A string that contains a resourceId (or MRSS fragment), identifies the content requested by a user and is recognized by MVPD authorization endpoints. |
-| device_info/</br></br>X-Device-Info | Streaming Device information.</br></br>**Note**: This MAY be passed device_info as a URL paramater, but due to the potential size of this paramater and limitations on the length of a GET URL, it SHOULD be passed as X-Device-Info n the http header. </br></br>See the full details in [Passing Device and Connection Information](/help/authentication/integration-guide-programmers/passing-client-information-device-connection-and-application.md). |
-| _deviceType_ | The device type (for example, Roku, PC).</br></br>If this parameter is set correctly, ESM offers metrics that are [broken down per device type](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md#clientless_device_type) when using Clientless, so that different types of analysis can be performed for example, Roku, AppleTV, and Xbox.</br></br>See, [Benefits of using clientless device type parameter in pass metrics](/help/authentication/notes-technical/benefits-of-using-the-clientless-devicetype-parameter-in-pass-metrics.md)</br></br>**Note**: the device_info will replace this parameter. |
+| device_info/</br></br>X-Device-Info | Streaming Device information.</br></br>**Note**: This MAY be passed device_info as a URL paramater, but due to the potential size of this paramater and limitations on the length of a GET URL, it SHOULD be passed as X-Device-Info n the http header. </br></br>See the full details in [Passing Device and Connection Information](/help/authentication/integration-guide-programmers/legacy/client-information/passing-client-information-device-connection-and-application.md). |
+| _deviceType_ | The device type (for example, Roku, PC).</br></br>If this parameter is set correctly, ESM offers metrics that are [broken down per device type](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md#clientless_device_type) when using Clientless, so that different types of analysis can be performed for example, Roku, AppleTV, and Xbox.</br></br>See, [Benefits of using clientless device type parameter in pass metrics](/help/authentication/integration-guide-programmers/legacy/notes-technical/benefits-of-using-the-clientless-devicetype-parameter-in-pass-metrics.md)</br></br>**Note**: the device_info will replace this parameter. |
 | _deviceUser_ | The device user identifier. |
 | _appId_ | The application id/name. </br></br>**Note**: the device_info replaces this parameter. |
 

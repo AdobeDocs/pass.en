@@ -3,7 +3,7 @@ title: JavaScript SDK API Reference
 description: JavaScript SDK API Reference
 exl-id: 48d48327-14e6-46f3-9e80-557f161acd8a
 ---
-# JavaScript SDK API Reference {#javascript-sdk-api-reference}
+# (Legacy) JavaScript SDK API Reference {#javascript-sdk-api-reference}
 
 >[!NOTE]
 >
@@ -418,7 +418,7 @@ You must implement these callbacks to handle the responses to your asynchronous 
 
 >[!NOTE] 
 > 
->If you are using the current, [Advance Error Reporting](/help/authentication/integration-guide-programmers/features-standard/error-reporting/error-reporting.md) system, you can ignore the errorCode paramer sent to this function.  However, the isAuthenticated flagis still of use for tracking the authentication status of a user in the entitlement flow
+>If you are using the current, [Advance Error Reporting](/help/authentication/integration-guide-programmers/legacy/error-reporting/error-reporting.md) system, you can ignore the errorCode paramer sent to this function.  However, the isAuthenticated flagis still of use for tracking the authentication status of a user in the entitlement flow
 
 
 **Parameters:**

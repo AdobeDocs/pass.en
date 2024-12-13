@@ -3,7 +3,7 @@ title: Android SDK API Reference
 description: Android SDK API Reference
 exl-id: f932e9a1-2dbe-4e35-bd60-a4737407942d
 ---
-# Android SDK API Reference {#android-sdk-api-reference}
+# (Legacy) Android SDK API Reference {#android-sdk-api-reference}
 
 >[!NOTE]
 >
@@ -153,7 +153,7 @@ The values will be passed to the server independent of the current flow (authent
   - **applicationProfile** - It can be used to make server configurations based on this value.
   - **ap_vi** - The Experience Cloud ID (visitorID). This value can be later used for advanced analytics reports.
   - **ap_ai** - The Advertising ID
-  - **device_info** - Client information as described here: [Passing client information device connection and application](/help/authentication/integration-guide-programmers/passing-client-information-device-connection-and-application.md).
+  - **device_info** - Client information as described here: [Passing client information device connection and application](/help/authentication/integration-guide-programmers/legacy/client-information/passing-client-information-device-connection-and-application.md).
 
 [Back to top...](#apis)
 

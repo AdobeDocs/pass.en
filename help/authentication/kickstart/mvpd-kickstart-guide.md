@@ -82,7 +82,7 @@ Adobe provides different environments for different stages of the development pr
 * **Prequalification** (PRE-QUAL): The PRE-QUAL environment contains the next release candidate. Adobe initially integrates new partners in this environment, before upgrading the integration to the Release environment. Partners have two weeks to test on the PRE‐QUAL environment and must explicitly request any changes to the PRE-QUAL configuration (contact your Adobe representative for details on the change request process). Bug fixes trigger new deployments in this environment.
 * **Release** (RELEASE): Adobe's current production build is deployed to a live environment here. 
 
-For more information on how to use Adobe's environments, see [Understanding the Adobe Environments](/help/authentication/notes-technical/understanding-the-adobe-environments.md)
+For more information on how to use Adobe's environments, see [Understanding the Adobe Environments](/help/authentication/notes-technical/environments/understanding-the-adobe-environments.md)
 
 ## 7. Staging deployment {#stag-env}
 
@@ -92,7 +92,7 @@ The MVPD needs to do the same deployment in their QA/staging/test environment.
 
 ## 8. Test and troubleshoot {#tes-troubleshoot}
 
-In this phase, Adobe and the MVPD test and troubleshoot the integration. To help test the integration, the Adobe Pass Authentication team can use Adobe's API test site. To know more about using Adobe's API test site see [Test authentication and authorization flows using Adobe API test site](/help/authentication/notes-technical/test-authn-authz-flows-using-adobes-api-test-site.md). 
+In this phase, Adobe and the MVPD test and troubleshoot the integration. To help test the integration, the Adobe Pass Authentication team can use Adobe's API test site. To know more about using Adobe's API test site see [Test authentication and authorization flows using Adobe API test site](/help/authentication/integration-guide-programmers/legacy/notes-technical/test-authn-authz-flows-using-adobes-api-test-site.md). 
 
 When testing and troubleshooting has concluded successfully, the integration is enabled in Adobe's release staging environment. At this point, Adobe can integrate the MVPD with an actual programmer. 
 

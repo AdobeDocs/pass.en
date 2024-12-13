@@ -3,7 +3,7 @@ title: Android SDK Overview
 description: Android SDK Overview
 exl-id: a1d98325-32a1-4881-8635-9a3c38169422
 ---
-# Android SDK Overview {#android-sdk-overview}
+# (Legacy) Android SDK Overview {#android-sdk-overview}
 
 >[!NOTE]
 >

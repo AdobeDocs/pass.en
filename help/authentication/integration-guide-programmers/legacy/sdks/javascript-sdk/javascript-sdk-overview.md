@@ -3,7 +3,7 @@ title: JavaScript SDK Overview
 description: JavaScript SDK Overview
 exl-id: 8756c804-a4c1-4ee3-b2b9-be45f38bdf94
 ---
-# JavaScript SDK Overview {#javascript-sdk-overview}
+# (Legacy) JavaScript SDK Overview {#javascript-sdk-overview}
 
 >[!NOTE]
 >

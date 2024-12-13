@@ -3,7 +3,7 @@ title: REST API Reference
 description: Rest api reference
 exl-id: 67e4639e-db0b-4400-bb81-e214263e8395
 ---
-# REST API Reference {#rest-api-reference}
+# (Legacy) REST API Reference {#rest-api-reference}
 
 >[!NOTE]
 >

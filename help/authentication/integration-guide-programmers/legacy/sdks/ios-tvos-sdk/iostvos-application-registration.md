@@ -4,7 +4,7 @@ description: iOS/tvOS Application Registration
 exl-id: 89ee6b5a-29fa-4396-bfc8-7651aa3d6826
 ---
 
-# iOS/tvOS Application Registration {#iostvos-application-registration}
+# (Legacy) iOS/tvOS Application Registration {#iostvos-application-registration}
 
 >[!NOTE]
 >

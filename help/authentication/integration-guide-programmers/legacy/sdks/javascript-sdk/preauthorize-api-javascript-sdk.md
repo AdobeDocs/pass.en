@@ -3,7 +3,7 @@ title: Preauthorize
 description: JavaScript preauthorize
 exl-id: b7493ca6-1862-4cea-a11e-a634c935c86e
 ---
-# Preauthorize {#js-preauthorize}
+# (Legacy) Preauthorize {#js-preauthorize}
 
 >[!NOTE]
 >

@@ -3,7 +3,7 @@ title: Refresh-less Login and Logout
 description: Refresh-less Login and Logout
 exl-id: 3ce8dfec-279a-4d10-93b4-1fbb18276543
 ---
-# Refresh-less Login and Logout {#tefresh-less-login-and-logout}
+# (Legacy) Refresh-less Login and Logout {#tefresh-less-login-and-logout}
 
 >[!NOTE]
 >

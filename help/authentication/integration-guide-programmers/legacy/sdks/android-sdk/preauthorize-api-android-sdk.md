@@ -3,7 +3,7 @@ title: Preauthorize Android
 description: Preauthorize Android
 exl-id: b5337595-135f-4981-a578-2da432f125d6
 ---
-# Preauthorize {#preuthorize-android}
+# (Legacy) Preauthorize {#preuthorize-android}
 
 >[!NOTE]
 >

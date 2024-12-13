@@ -3,7 +3,7 @@ title: iOS/tvOS v3.x Migration Guide
 description: iOS/tvOS v3.x Migration Guide
 exl-id: 4c43013c-40af-48b7-af26-0bd7f8df2bdb
 ---
-# iOS/tvOS v3.x Migration Guide {#iostvos-v3x-migration-guide}
+# (Legacy) iOS/tvOS v3.x Migration Guide {#iostvos-v3x-migration-guide}
 
 >[!NOTE]
 >

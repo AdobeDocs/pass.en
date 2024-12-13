@@ -3,7 +3,7 @@ title: Return Registration Record
 description: Return Registration Record
 exl-id: 7b9e63a2-59b6-4123-a19b-ee1f021219ea
 ---
-# Return Registration Record {#return-registration-record}
+# (Legacy) Return Registration Record {#return-registration-record}
 
 >[!NOTE]
 >

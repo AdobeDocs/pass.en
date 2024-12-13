@@ -3,7 +3,7 @@ title: Android Application Registration
 description: Android Application Registration
 exl-id: 6238bd87-ac97-4a5c-9d92-3631f7b2d46a
 ---
-# Android Application Registration {#android-application-registration}
+# (Legacy) Android Application Registration {#android-application-registration}
 
 >[!NOTE]
 >

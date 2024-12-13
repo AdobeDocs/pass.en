@@ -3,7 +3,7 @@ title: Delete Registration Record
 description: Delete registration resord
 exl-id: 42707070-2e1f-4847-93fd-30025aef56c1
 ---
-# Delete Registration Record {#delete-registration-record}
+# (Legacy) Delete Registration Record {#delete-registration-record}
 
 >[!NOTE]
 >

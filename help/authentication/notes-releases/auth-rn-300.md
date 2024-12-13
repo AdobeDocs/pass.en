@@ -35,7 +35,7 @@ Release Date: **09/10/2024 - 09/12/2024**
   * [REST API v2 - APIs - Overview](../integration-guide-programmers/rest-apis/rest-api-v2/apis/rest-api-v2-apis-overview.md)
   * [REST API v2 - Flows - Overview](../integration-guide-programmers/rest-apis/rest-api-v2/flows/rest-api-v2-flows-overview.md)
 * The URLs for public documents of REST API v1 have changed, refer to the following documents:
-  * [REST API v1 - APIs - Overview](../integration-guide-programmers/legacy/rest-api-v1/apis/rest-api-overview.md)
+  * [REST API v1 - APIs - Overview](../integration-guide-programmers/legacy/rest-api-v1/rest-api-overview.md)
   * [REST API v1 - APIs - Reference](../integration-guide-programmers/legacy/rest-api-v1/rest-api-reference.md)
 
 ##### Tools

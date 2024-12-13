@@ -3,7 +3,7 @@ title: iOS/tvOS API Reference
 description: iOS/tvOS API Reference
 exl-id: 017a55a8-0855-4c52-aad0-d3d597996fcb
 ---
-# iOS/tvOS SDK API Reference {#iostvos-sdk-api-reference}
+# (Legacy) iOS/tvOS SDK API Reference {#iostvos-sdk-api-reference}
 
 >[!NOTE]
 >
@@ -157,10 +157,10 @@ Associated documentation:
 * *options*: An NSDictionary containing global SDK options. Currently, the following options are available:
   * **applicationProfile** - It can be used to make server configurations based on this value.
   * **visitorID** - The Experience Cloud ID Service. This value can be later used for advanced analytics reports.
-  * **handleSVC** - Boolean indicating if the programmer will handle the SFSafariViewControllers. Please see [SFSafariViewController support on iOS SDK 3.2+](/help/authentication/notes-technical/sfsafariviewcontroller-support-on-ios-sdk-32.md) for more details.
+  * **handleSVC** - Boolean indicating if the programmer will handle the SFSafariViewControllers. Please see [SFSafariViewController support on iOS SDK 3.2+](/help/authentication/integration-guide-programmers/legacy/notes-technical/sfsafariviewcontroller-support-on-ios-sdk-32.md) for more details.
     * If set to **false,** the SDK will automatically present the end user with an SFSafariViewController. The SDK will further navigate to the MVPDs login page URL.
     * If set to **true,** the SDK will **NOT** automatically present the end user with an SFSafariViewController. The SDK will further trigger **navigate(toUrl:{url}, useSVC:YES)**.
-* **device\_info** - Client information as described in [Passing client information](/help/authentication/integration-guide-programmers/passing-client-information-device-connection-and-application.md).
+* **device\_info** - Client information as described in [Passing client information](/help/authentication/integration-guide-programmers/legacy/client-information/passing-client-information-device-connection-and-application.md).
 
 [Back to top...](#apis)
 
@@ -703,7 +703,7 @@ As the UIWebView/WKWebView` `controller goes through several redirects, your app
 
 **File:** AccessEnabler/headers/EntitlementDelegate.h
 
-**Description:** Callback triggered by the AccessEnabler instead of the `navigateToUrl:` callback in case your application previously enabled manual Safari View Controller (SVC) handling via the [setOptions(\["handleSVC":true"\])](#setOptions) call, and only in case of MVPDs requiring Safari View Controller (SVC). For all other MVPDs the `navigateToUrl:` callback will be called. Please see[SFSafariViewController support on iOS SDK 3.2+](/help/authentication/notes-technical/sfsafariviewcontroller-support-on-ios-sdk-32.md) for details on how Safari View Controller (SVC) should be managed.
+**Description:** Callback triggered by the AccessEnabler instead of the `navigateToUrl:` callback in case your application previously enabled manual Safari View Controller (SVC) handling via the [setOptions(\["handleSVC":true"\])](#setOptions) call, and only in case of MVPDs requiring Safari View Controller (SVC). For all other MVPDs the `navigateToUrl:` callback will be called. Please see[SFSafariViewController support on iOS SDK 3.2+](/help/authentication/integration-guide-programmers/legacy/notes-technical/sfsafariviewcontroller-support-on-ios-sdk-32.md) for details on how Safari View Controller (SVC) should be managed.
 
 Similar to the `navigateToUrl:` callback the `navigateToUrl:useSVC:` is triggered by the AccessEnabler to request your application to instantiate a `SFSafariViewController` controller and to load the URL provided in the callback's **`url`** parameter. The callback passes the **`url`** parameter which represents the URL of the authentication endpoint or the URL of the logout endpoint, and the **`useSVC`** parameter which specifies that the application must use a `SFSafariViewController`.
 

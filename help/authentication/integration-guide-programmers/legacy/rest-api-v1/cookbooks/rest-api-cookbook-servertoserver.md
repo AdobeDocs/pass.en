@@ -3,7 +3,7 @@ title: REST API Cookbook (Server-to-Server)
 description: Rest API cookbook server to server.
 exl-id: 36ad4a64-dde8-4a5f-b0fe-64b6c0ddcbee
 ---
-# REST API Cookbook (Server-to-Server) {#rest-api-cookbook-server-to-server}
+# (Legacy) REST API Cookbook (Server-to-Server) {#rest-api-cookbook-server-to-server}
 
 >[!NOTE]
 >

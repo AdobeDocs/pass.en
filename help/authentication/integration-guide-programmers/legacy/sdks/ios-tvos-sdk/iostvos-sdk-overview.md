@@ -3,7 +3,7 @@ title: iOS/tvOS SDK Overview
 description: iOS/tvOS SDK Overview
 exl-id: b02a6234-d763-46c0-bc69-9cfd65917a19
 ---
-# iOS/tvOS SDK Overview {#iostvos-sdk-overview}
+# (Legacy) iOS/tvOS SDK Overview {#iostvos-sdk-overview}
 
 >[!NOTE]
 >

@@ -3,7 +3,7 @@ title: Android SDK Cookbook
 description: Android SDK Cookbook
 exl-id: 7f66ab92-f52c-4dae-8016-c93464dd5254
 ---
-# Android SDK Cookbook {#android-sdk-cookbook}
+# (Legacy) Android SDK Cookbook {#android-sdk-cookbook}
 
 >[!NOTE]
 >

@@ -3,7 +3,7 @@ title: Initiate Authentication
 description: Initiate authentication
 exl-id: 55dddd29-68d6-4aae-8744-307fea285e29
 ---
-# Initiate Authentication {#initiate-authentication}
+# (Legacy) Initiate Authentication {#initiate-authentication}
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ Initiates the authentication process by informing of an MVPD selection event. Cr
 
 * The value of the `domain_name` parameter must be set to one of the domain names registered with Adobe Pass Authentication. For more details, refer to [Registration and Initialization](/help/authentication/kickstart/programmer-overview.md).
 
-* [Avoid using '&'reg\_code in /authenticate request (Tech Note)](/help/authentication/notes-technical/clientless-avoid-using-reg-code-in-authenticate-request.md)
+* [Avoid using '&'reg\_code in /authenticate request (Tech Note)](/help/authentication/integration-guide-programmers/legacy/notes-technical/clientless-avoid-using-reg-code-in-authenticate-request.md)
 
 * The `redirect_url` parameter must be the last one in order
 

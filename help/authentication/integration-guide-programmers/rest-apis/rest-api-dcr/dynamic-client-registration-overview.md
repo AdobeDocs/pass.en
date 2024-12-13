@@ -19,13 +19,13 @@ Adobe Pass provides a dynamic client registration service that enables access to
   * [Proxy MVPD API](../../../integration-guide-mvpds/proxy-mvpd-webserv.md)
   * [Entitlement Service Monitoring API](../../features-premium/esm/entitlement-service-monitoring-api.md)
 * Adobe Pass Authentication REST APIs:
-  * [REST API V1](../../legacy/rest-api-v1/rest-api-reference.md)
   * [REST API V2](../rest-api-v2/apis/rest-api-v2-apis-overview.md)
+  * [(Legacy) REST API V1](../../legacy/rest-api-v1/rest-api-reference.md)
 * Adobe Pass Authentication SDKs:
-  * [JavaScript SDK](../../legacy/sdks/javascript-sdk/javascript-sdk-api-reference.md)
-  * [iOS/tvOS SDK](../../legacy/sdks/ios-tvos-sdk/iostvos-sdk-api-reference.md)
-  * [Android SDK](../../legacy/sdks/android-sdk/android-sdk-api-reference.md)
-  * [FireOS SDK](../../legacy/sdks/fireos-sdk/amazon-fireos-native-client-api-reference.md)
+  * [(Legacy) JavaScript SDK](../../legacy/sdks/javascript-sdk/javascript-sdk-api-reference.md)
+  * [(Legacy) iOS/tvOS SDK](../../legacy/sdks/ios-tvos-sdk/iostvos-sdk-api-reference.md)
+  * [(Legacy) Android SDK](../../legacy/sdks/android-sdk/android-sdk-api-reference.md)
+  * [(Legacy) FireOS SDK](../../legacy/sdks/fireos-sdk/amazon-fireos-native-client-api-reference.md)
 
 >[!IMPORTANT]
 >

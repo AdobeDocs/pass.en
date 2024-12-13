@@ -3,7 +3,7 @@ title: iOS/tvOS Storage Integrity Check Mechanism
 description: iOS/tvOS Integrity Check Mechanism
 exl-id: 5d7cdc46-3e51-4e14-9e30-d7f48bc87506
 ---
-# iOS/tvOS Integrity Check Mechanism {#iostvos-sdk-storage-integrity-checks}
+# (Legacy) iOS/tvOS Integrity Check Mechanism {#iostvos-sdk-storage-integrity-checks}
 
 >[!NOTE]
 >

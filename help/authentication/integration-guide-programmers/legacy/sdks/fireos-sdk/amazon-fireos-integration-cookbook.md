@@ -3,7 +3,7 @@ title: Amazon FireOS Integration Cookbook
 description: Amazon FireOS Integration Cookbook
 exl-id: 1982c485-f0ed-4df3-9a20-9c6a928500c2
 ---
-# Amazon FireOS Integration Cookbook {#amazon-fireos-integration-cookbook}
+# (Legacy) Amazon FireOS Integration Cookbook {#amazon-fireos-integration-cookbook}
 
 >[!NOTE]
 >

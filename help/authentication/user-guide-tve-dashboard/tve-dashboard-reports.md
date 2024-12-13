@@ -105,7 +105,7 @@ The [AuthN TTL Reports](#authn-ttl-reports), [AuthZ TTL Reports](#authz-ttl-repo
 
 * **Platform unidentified**: Displays values applied to programmer implementations when the Adobe Pass Authentication services detect an unknown device type.
 
-To learn more about how to share the desired device type, such as **Roku** with Adobe Pass Authentication REST APIs or SDKs, view the mechanism of [passing client information](/help/authentication/integration-guide-programmers/passing-client-information-device-connection-and-application.md).
+To learn more about how to share the desired device type, such as **Roku** with Adobe Pass Authentication REST APIs or SDKs, view the mechanism of [passing client information](/help/authentication/integration-guide-programmers/legacy/client-information/passing-client-information-device-connection-and-application.md).
 
 >[!IMPORTANT]
 >

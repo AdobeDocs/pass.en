@@ -3,7 +3,7 @@ title: Provide MVPD List
 description: Provide MVPD List
 exl-id: db2d8f19-d0b9-4195-bf0b-f9de0d96062b
 ---
-# Provide MVPD List {#provide-mvpd-list}
+# (Legacy) Provide MVPD List {#provide-mvpd-list}
 
 >[!NOTE]
 >

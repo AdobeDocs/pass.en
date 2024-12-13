@@ -3,7 +3,7 @@ title: Amazon FireOS Native Client API Reference
 description: Amazon FireOS Native Client API Reference
 exl-id: 8ac9f976-fd6b-4b19-a80d-49bfe57134b5
 ---
-# Amazon FireOS Native Client API Reference {#amazon-fireos-native-client-api-reference}
+# (Legacy) Amazon FireOS Native Client API Reference {#amazon-fireos-native-client-api-reference}
 
 >[!NOTE]
 >

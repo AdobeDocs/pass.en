@@ -4,7 +4,7 @@ description: Amazon FireOS SDK with Dynamic Client Registration
 exl-id: 27acf3f5-8b7e-4299-b0f0-33dd6782aeda
 ---
 
-# Amazon FireOS SDK with Dynamic Client Registration {#amazon-fireos-sdk-with-dynamic-client-registration}
+# (Legacy) Amazon FireOS SDK with Dynamic Client Registration {#amazon-fireos-sdk-with-dynamic-client-registration}
 
 >[!NOTE]
 >

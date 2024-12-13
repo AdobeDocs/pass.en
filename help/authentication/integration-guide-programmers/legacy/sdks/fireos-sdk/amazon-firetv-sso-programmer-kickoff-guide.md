@@ -3,7 +3,7 @@ title: Amazon fireTV SSO - Programmer kick-off guide
 description: Amazon fireTV SSO - Programmer kick-off guide
 exl-id: cf9ba614-57ad-46c3-b154-34204b38742d
 ---
-# Amazon fireTV SSO - Programmer kick-off guide {#amazon-firetv-sso---programmer-kick-off-guide}
+# (Legacy) Amazon fireTV SSO - Programmer kick-off guide {#amazon-firetv-sso---programmer-kick-off-guide}
 
 >[!NOTE]
 >

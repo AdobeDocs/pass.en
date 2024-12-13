@@ -3,7 +3,7 @@ title: REST API Cookbook (Client-to-Server)
 description: Rest API cookbook client to server.
 exl-id: f54a1eda-47d5-4f02-b343-8cdbc99a73c0
 ---
-# REST API Cookbook (Client-to-Server) {#rest-api-cookbook-client-to-server}
+# (Legacy) REST API Cookbook (Client-to-Server) {#rest-api-cookbook-client-to-server}
 
 >[!NOTE]
 >
@@ -12,7 +12,7 @@ exl-id: f54a1eda-47d5-4f02-b343-8cdbc99a73c0
 
 ## Overview {#overview}
 
-This document provides step-by-step instructions for a Programmer's engineering team to integrate a "smart device" (game console, smart TV app, set top box, etc.) with Adobe Pass Authentication using REST API services. This Client-to-Server approach, which uses REST APIs rather than a client SDK, allows for broader support of different platforms for which developing a significant number of unique SDKs would not be feasible. For a broad technical overview of how the Clientless solution works, see the [Clientless Technical Overview](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/apis/rest-api-overview.md).
+This document provides step-by-step instructions for a Programmer's engineering team to integrate a "smart device" (game console, smart TV app, set top box, etc.) with Adobe Pass Authentication using REST API services. This Client-to-Server approach, which uses REST APIs rather than a client SDK, allows for broader support of different platforms for which developing a significant number of unique SDKs would not be feasible. For a broad technical overview of how the Clientless solution works, see the [Clientless Technical Overview](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/rest-api-overview.md).
 
 
 This approach requires two components (streaming app and AuthN app) to complete the required flows: start-up, registration, authorization, and view-media flows in the streaming app, and the authentication flow in your AuthN app.
@@ -128,13 +128,13 @@ Adobe Pass uses DCR to secure client communications between a programmer applica
 
 Some devices provide dedicated support for Partner Single Sign-On (SSO):
 
-* [Apple SSO](/help/authentication/integration-guide-programmers/features-standard/sso-access/partner-sso/apple-sso/apple-sso-cookbook-rest-api-v1.md)
+* [Apple SSO](/help/authentication/integration-guide-programmers/legacy/sso-access/apple-sso-cookbook-rest-api-v1.md)
 
 ## Platform Single Sign-On {#platform-sso}
 
 Some devices provide dedicated support for Platform Single Sign-On (SSO):
 
-* [Amazon SSO](../../../features-standard/sso-access/platform-sso/amazon-single-sign-on/amazon-sso-cookbook-rest-api-v1.md)
+* [Amazon SSO](../../sso-access/amazon-sso-cookbook-rest-api-v1.md)
 * [Roku SSO](../../../features-standard/sso-access/platform-sso/roku-single-sign-on/roku-sso-overview.md)
 
 ## TempPass and Promotional TempPass for REST API {#temppass}
