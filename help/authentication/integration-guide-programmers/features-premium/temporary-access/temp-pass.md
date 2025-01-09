@@ -20,7 +20,7 @@ Temp Pass lets Programmers offer temporary access to their protected content, fo
 *   Programmers specify the duration (Time-To-Live, or TTL) of their Temp Pass.  
 *   Temp Pass operates per requestor.  For example, NBC could set up a 4-hour Temp Pass for the requestor "NBCOlympics".
 *   Programmers can reset all of the tokens granted to a particular requestor.  The "temporary MVPD" used to implement the Temp Pass must be configured with "Authentication Per Requestor" enabled.  
-*   **Temp Pass access is granted to individual users on specific devices**. After Temp Pass access expires for a user, that user will not be able to get temporary access on the same device until that user's expired [authorization token](/help/authentication/kickstart/glossary.md#authz-token) is cleared from the Adobe Pass Authentication server.
+*   **Temp Pass access is granted to individual users on specific devices**. After Temp Pass access expires for a user, that user will not be able to get temporary access on the same device until that user's expired authorization token is cleared from the Adobe Pass Authentication server.
  
 
 >[!NOTE]

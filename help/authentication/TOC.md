@@ -45,16 +45,17 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + [Programmer kickstart guide](kickstart/programmer-kickstart-guide.md)
     + [MVPD kickstart guide](kickstart/mvpd-kickstart-guide.md)
     + [Escalation Procedures](kickstart/escalation-procedures.md)
-    + [Glossary](kickstart/glossary.md)
 + Integration Guide For Programmers {#integration-guide-programmers}
     + REST APIs {#rest-apis}
         + REST API DCR {#rest-api-dcr}
-            + [Dynamic client registration overview](integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md)
+            + [Dynamic Client Registration Overview](integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md)
+            + [Dynamic Client Registration Glossary](integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-glossary.md)
+            + [Dynamic Client Registration FAQs](integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-faqs.md)
             + APIs {#rest-api-dcr-apis}
                 + [Retrieve client credentials](integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-client-credentials.md)
                 + [Retrieve access token](integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md)
             + Flows {#rest-api-dcr-flows}
-                + [Dynamic client registration flow](integration-guide-programmers/rest-apis/rest-api-dcr/flows/dynamic-client-registration-flow.md)
+                + [Dynamic Client Registration Flow](integration-guide-programmers/rest-apis/rest-api-dcr/flows/dynamic-client-registration-flow.md)
         + REST API V2 {#rest-api-v2}
             + [REST API V2 Overview](integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-overview.md)
             + [REST API V2 Glossary](integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md)

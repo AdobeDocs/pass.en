@@ -9,7 +9,7 @@ exl-id: b450d7cc-d5b5-4454-8f95-8047856bfb98
 >
 >The content on this page is provided for information purposes only. The usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
-The **Programmers** section of the TVE Dashboard allows you to view and manage settings for the [programmers](/help/authentication/kickstart/glossary.md#programmer) linked to your account entitlements. You can also [add a new programmer](#add-new-programmer) as per your requirement.
+The **Programmers** section of the TVE Dashboard allows you to view and manage settings for the [programmers](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md#programmer) linked to your account entitlements. You can also [add a new programmer](#add-new-programmer) as per your requirement.
 
 The **Programmers** tab in the left panel displays a list of existing programmers with the following details:
 

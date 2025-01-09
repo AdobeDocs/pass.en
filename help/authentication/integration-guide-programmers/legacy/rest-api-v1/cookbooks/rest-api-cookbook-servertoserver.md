@@ -37,10 +37,6 @@ In a working Server-to-Server solution the following components are involved:
 | MVPD Infrastructure | MVPD IdP | An MVPD endpoint that provides credential-based authentication service to validate their user's identity. |
 | | MVPD AuthZ Service | An MVPD endpoint that provides authorization decisions based on user's subscriptions, parental controls, etc. |
 
-
-Additional terms used in the flow are defined in the
-[Glossary](/help/authentication/kickstart/glossary.md).
-
 ## Flows {#flows}
 
 ### Dynamic Client Registration (DCR)
@@ -191,10 +187,3 @@ The Programmer service should send data and formating required by individual MVP
 The Programmer service must respect authN and authZ TTLs when caching and invalidate the authN or authZ sessions when notified.
 
 The Programmer must maintain certificates shared with Adobe.
-
-<!--
-## Related Information {#related}
-
-* [REST API Reference](/help/authentication/rest-api-reference.md)
-* [Glossary of Terms](/help/authentication/adobe-pass-glossary.md)
--->

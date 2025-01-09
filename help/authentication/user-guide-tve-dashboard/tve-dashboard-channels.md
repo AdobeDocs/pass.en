@@ -15,7 +15,7 @@ The **Channels** tab in the left panel displays a list of linked channels with t
 
 * **Display name**: The brand name of the channel used for commercial purposes.
 * **Channel ID**: A unique identifier, also referred to as Requestor ID.
-* **Integrations**: The number of connections established with [MVPDs](/help/authentication/kickstart/glossary.md#mvpd).
+* **Integrations**: The number of connections established with [MVPDs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md#mvpd).
 
 ![List of existing channels](../assets/tve-dashboard/new-tve-dashboard/channels/channels-list-view.png)
 

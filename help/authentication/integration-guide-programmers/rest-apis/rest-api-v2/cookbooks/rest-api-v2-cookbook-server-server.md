@@ -29,7 +29,7 @@ In a working Server-to-Server solution, the following components are involved:
 | MVPD Infrastructure       | MVPD IdP                  | An MVPD endpoint that provides credential-based authentication service to validate their user's identity.                                                                                        |
 |                           | MVPD AuthZ Service        | An MVPD endpoint that provides authorization decisions based on user's subscriptions, parental controls, etc.                                                                                    |
 
-Additional terms used in the flow are defined in the [Glossary](/help/authentication/kickstart/glossary.md).
+Additional terms used in the flow are defined in the [Glossary](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md).
 
 The following diagram illustrates the entire flow:
 

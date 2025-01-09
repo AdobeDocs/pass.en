@@ -183,7 +183,7 @@ Perform the given steps to implement the Apple single sign-on using partner flow
    >
    > <br/>
    >
-   > If validation fails, an error response will be generated, providing additional information that adheres to the [Enhanced Error Codes](/help/authentication/integration-guide-programmers/features-standard/error-reporting/enhanced-error-codes.md)
+   > If validation fails, an error response will be generated, providing additional information that adheres to the [Enhanced Error Codes](/help/authentication/integration-guide-programmers/features-standard/error-reporting/enhanced-error-codes.md) documentation.
 
    >[!IMPORTANT]
    >
