@@ -1,6 +1,7 @@
 ---
 title: Dynamic Client Registration (DCR) Glossary
 description: Dynamic Client Registration (DCR) Glossary
+exl-id: 4ce67fa5-b0e5-4967-b83d-c682426d9329
 ---
 # Dynamic Client Registration (DCR) Glossary {#rest-api-dcr-glossary}
 

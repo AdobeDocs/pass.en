@@ -1,6 +1,7 @@
 ---
 title: Dynamic Client Registration (DCR) FAQs
 description: Dynamic Client Registration (DCR) FAQs
+exl-id: 12268163-632e-4884-b35d-a29cc8ef45bf
 ---
 # Dynamic Client Registration (DCR) FAQs {#rest-api-dcr-faqs}
 
