@@ -40,14 +40,14 @@ There are two sets of APIs: one set for the Streaming App or Programmer Service 
   
 | Endpoint | Called  </br>By | Input   </br>Params | HTTP  </br>Method | Response | HTTP  </br>Response |
 | --- | --- | --- | --- | --- | --- |
-| <SP_FQDN>/api/v1/preauthorize | Streaming App</br></br>or</br></br>Programmer Service | 1.  requestor (Mandatory)</br>2.  deviceId (Mandatory)</br>3.  resource list (Mandatory)</br>4.  device_info/X-Device-Info (Mandatory)</br>5.  _deviceType_</br>6.  _deviceUser_ (Deprecated)</br>7.  _appId_ (Deprecated) | GET | XML or JSON containing individual pre-authorization decisions or error details. See samples below. | 200 - Success</br></br>400 - Bad request</br></br>401 - Unauthorized</br></br>405 - Method not allowed  </br></br>412 - Precondition failed</br></br>500 - Internal Server Error |
+| <SP_FQDN>/api/v1/preauthorize | Streaming App</br></br>or</br></br>Programmer Service | 1.  requestor (Mandatory)</br>2.  deviceId (Mandatory)</br>3.  resource (Mandatory)</br>4.  device_info/X-Device-Info (Mandatory)</br>5.  _deviceType_</br>6.  _deviceUser_ (Deprecated)</br>7.  _appId_ (Deprecated) | GET | XML or JSON containing individual pre-authorization decisions or error details. See samples below. | 200 - Success</br></br>400 - Bad request</br></br>401 - Unauthorized</br></br>405 - Method not allowed  </br></br>412 - Precondition failed</br></br>500 - Internal Server Error |
 
   
 | Input Parameter | Description |
 | --- | --- |
 | requestor | The Programmer requestorId for which this operation is valid. |
 | deviceId | The device id bytes. |
-| resource list | A string that contains a comma delimited list of resourceIds that identifies the content that might be accessible to a user and is recognized by MVPD authorization endpoints. |
+| resource | A string that contains a comma delimited list of resourceIds that identifies the content that might be accessible to a user and is recognized by MVPD authorization endpoints. |
 | device_info/</br></br>X-Device-Info | Streaming Device information.</br></br>**Note**: This MAY be passed device_info as a URL paramater, but due to the potential size of this paramater and limitations on the length of a GET URL, it SHOULD be passed as X-Device-Info n the http header. </br></br>See the full details in [Passing Device and Connection Information](/help/authentication/integration-guide-programmers/legacy/client-information/passing-client-information-device-connection-and-application.md). |
 | _deviceType_ | The device type (for example, Roku, PC).</br></br>If this parameter is set correctly, ESM offers metrics that are [broken down per device type](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md#clientless_device_type) when using Clientless, so that different types of analysis can be performed for example, Roku, AppleTV, and Xbox.</br></br>See, [benefits of using clientless device type parameter in pass metrics](/help/authentication/integration-guide-programmers/legacy/notes-technical/benefits-of-using-the-clientless-devicetype-parameter-in-pass-metrics.md)</br></br>**Note**: the `device_info` will replace this parameter. |
 | _deviceUser_ | The device user identifier. |

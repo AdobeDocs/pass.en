@@ -40,15 +40,15 @@ There are two sets of APIs: one set for the Streaming App or Programmer Service 
    
 | Endpoint | Called  </br>By | Input   </br>Params | HTTP  </br>Method | Response | HTTP  </br>Response |
 | --- | --- | --- | --- | --- | --- |
-| <SP_FQDN>/api/v1/preauthorize/{registration code} | AuthN Module | 1.  registration code  </br>    (Path component)</br>2.  requestor (Mandatory)</br>3.  resource list (Mandatory) | GET | XML or JSON containing individual pre-authorization decisions or error details. See samples below. | 200 - Success</br></br>400 - Bad request</br></br>401 - Unauthorized</br></br>405 - Method not allowed  </br></br>412 - Precondition failed</br></br>500 - Internal Server Error |
+| <SP_FQDN>/api/v1/preauthorize/{registration code} | AuthN Module | 1.  registration code  </br>    (Path component)</br>2.  requestor (Mandatory)</br>3.  resource (Mandatory) | GET | XML or JSON containing individual pre-authorization decisions or error details. See samples below. | 200 - Success</br></br>400 - Bad request</br></br>401 - Unauthorized</br></br>405 - Method not allowed  </br></br>412 - Precondition failed</br></br>500 - Internal Server Error |
 
 
 
-| Input Parameter   | Description                                                                                                                                                                    |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Input Parameter  | Description                                                                                                                                                                    |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | registration code | The registration code value supplied by the user at the beginning of the authentication flow.                                                                                  |
-| requestor         | The Programmer requestorId for which this operation is valid.                                                                                                                  |
-| resource list     | A string that contains a comma delimited list of resourceIds that identifies the content that might be accessible to a user and is recognized by MVPD authorization endpoints. |
+| requestor        | The Programmer requestorId for which this operation is valid.                                                                                                                  |
+| resource     | A string that contains a comma delimited list of resourceIds that identifies the content that might be accessible to a user and is recognized by MVPD authorization endpoints. |
 
 
 ### Sample Response {#sample-response}
