@@ -27,8 +27,8 @@ After completing Part I, carry out the following steps:
 
 1. Open webpage: [Staging API test](https://sp.auth-staging.adobe.com/apitest/api.html).
 1. Load access enabler by:
-    * Picking from the dropdown menu what version of AccessEnabler is needed (v3 or v4), from where you want to access it (staging or production) and if it should be in debug mode 
-    * Entering the software statement with which you want to test if using v4
+    * Picking from the dropdown menu from where you want to access it (staging or production) and if it should be in debug mode 
+    * Entering the software statement with which you want to test
     * Then clicking on the "**Load Access Enabler**" button.
 1. Now set the requestor id value to "**requestorID**" and click on the "setRequestor" button.
 1. After that press on the "getAuthentication" button and wait for the display picker to show up.
