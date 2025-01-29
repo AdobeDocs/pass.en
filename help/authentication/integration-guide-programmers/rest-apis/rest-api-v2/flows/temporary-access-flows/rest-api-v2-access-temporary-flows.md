@@ -15,7 +15,7 @@ exl-id: 387fcdb0-3a42-4893-ba83-e809426f92be
  
 TempPass allows Programmers to provide temporary access to their protected content without asking users to authenticate with a valid MVPD account.
 
-For more details about TempPass feature, refer to the [TempPass](../../../../features-premium/temporary-access/temp-pass.md) documentation.
+For more details about TempPass feature, refer to the [TempPass](../../../../features-premium/temporary-access/temp-pass-feature.md) documentation.
 
 Temporary access flows allow you to query for the following scenarios:
 

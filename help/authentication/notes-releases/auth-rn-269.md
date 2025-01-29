@@ -27,7 +27,7 @@ Release Date: **02/27/2024 - 02/29/2024**
 
 * Patched security vulnerabilities.
 * Enhancements to Reset Temp Pass security layer with Dynamic Client Registration (DCR).
-  * You can find more details here: [Reset Temp Pass](../integration-guide-programmers/features-premium/temporary-access/reset-temp-pass.md)
+  * You can find more details here: [TempPass Feature](../integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md)
 * Enhancements to Platform Identification reporting.
 
 #### REST APIs {#rest-apis}

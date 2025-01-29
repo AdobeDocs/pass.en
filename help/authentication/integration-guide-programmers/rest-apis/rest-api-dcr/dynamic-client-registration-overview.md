@@ -14,7 +14,7 @@ Dynamic client registration represents an authorization mechanism defined by [RF
 Adobe Pass provides a dynamic client registration service that enables access to the following protected APIs:
 
 * Adobe Pass Authentication Management APIs:
-  * [Reset Temp Pass API](../../features-premium/temporary-access/reset-temp-pass.md)
+  * [Reset Temp Pass API](../../features-premium/temporary-access/temp-pass-feature.md)
   * [Degradation API](../../features-premium/degraded-access/degradation-api-overview.md)
   * [Proxy MVPD API](../../../integration-guide-mvpds/proxy-mvpd-webserv.md)
   * [Entitlement Service Monitoring API](../../features-premium/esm/entitlement-service-monitoring-api.md)

@@ -223,13 +223,13 @@ The single sign-on (SSO) is a process that allows a user to authenticate once an
 
 The basic TempPass is an Adobe Pass Authentication feature that allows a user to access protected content for a limited time without the need to authenticate with an [MVPD](#mvpd).
 
-For more information, refer to the [Temp Pass](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass.md) documentation.
+For more information, refer to the [Basic TempPass](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md#basic-temp-pass) documentation.
 
 #### TempPass Promotional {#temp-pass-promotional}
 
 The promotional TempPass is an Adobe Pass Authentication feature that allows a user to access protected content for a maximum number of resources and a limited time without the need to authenticate with an [MVPD](#mvpd).
 
-For more information, refer to the [Promotional Temp Pass](/help/authentication/integration-guide-programmers/features-premium/temporary-access/promotional-temp-pass.md) documentation.
+For more information, refer to the [Promotional TempPass](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md#promotional-temp-pass) documentation.
 
 #### TTL {#ttl}
 

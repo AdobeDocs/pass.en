@@ -138,9 +138,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             + [How to make a privacy request](integration-guide-programmers/features-premium/privacy-support/make-privacy-req.md)
     + Premium Features {#features-premium}
         + Temporary Access {#temporary-access}
-            + [Temp pass](integration-guide-programmers/features-premium/temporary-access/temp-pass.md)
-            + [Promotional temp pass](integration-guide-programmers/features-premium/temporary-access/promotional-temp-pass.md)
-            + [Reset Temp Pass](integration-guide-programmers/features-premium/temporary-access/reset-temp-pass.md)
+            + [TempPass Feature](integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md)
         + Degraded Access {#degraded-access}
             + [Degradation API Overview](integration-guide-programmers/features-premium/degraded-access/degradation-api-overview.md)
         + ESM {#esm}
