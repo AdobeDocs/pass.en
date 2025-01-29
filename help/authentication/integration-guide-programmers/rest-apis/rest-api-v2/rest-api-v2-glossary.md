@@ -269,7 +269,7 @@ The user ID is a unique identifier bound to the user and originates from the [MV
 
 The user metadata refers to user-specific attributes (e.g., zip codes, parental ratings, user IDs, etc.) that are maintained by the [MVPD](#mvpd) and provided by Adobe Pass Authentication as part of a [profile](#profile).
 
-For more information, refer to the [User Metadata](/help/authentication/integration-guide-programmers/features-standard/entitlements/user-metadata-feature.md) documentation.
+For more information, refer to the [User Metadata](/help/authentication/integration-guide-programmers/features-standard/entitlements/user-metadata.md) documentation.
 
 ### V {#v}
 

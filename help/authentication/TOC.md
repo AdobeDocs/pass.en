@@ -117,8 +117,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             + [Identifying Protected Resource](integration-guide-programmers/features-standard/entitlements/identify-protected-resources.md)
             + [Preflight authorization](integration-guide-programmers/features-standard/entitlements/preflight-authz.md)
             + [How to integrate the Media Token Verifier](integration-guide-programmers/features-standard/entitlements/media-token-verifier-int.md)
-            + [User metadata](integration-guide-programmers/features-standard/entitlements/user-metadata-feature.md)
-            + [User metadata certificate for encryption](integration-guide-programmers/features-standard/entitlements/user-metadata-certificate.md)
+            + [User metadata](integration-guide-programmers/features-standard/entitlements/user-metadata.md)
         + Error Reporting {#error-reporting}
             + [Enhanced error codes](integration-guide-programmers/features-standard/error-reporting/enhanced-error-codes.md)
         + Single Sign-On Access {#sso-access}

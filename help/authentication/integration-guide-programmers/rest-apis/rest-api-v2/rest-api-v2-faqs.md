@@ -120,7 +120,7 @@ For more details, refer to the following documents:
 
 #### 3. How can the client application get the user's metadata information? {#authentication-phase-faq3}
 
-The client application can query one of the following endpoints capable to return [user metadata](/help/authentication/integration-guide-programmers/features-standard/entitlements/user-metadata-feature.md) information as part of the profile information:
+The client application can query one of the following endpoints capable to return [user metadata](/help/authentication/integration-guide-programmers/features-standard/entitlements/user-metadata.md) information as part of the profile information:
 
 * [Profiles endpoint API](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md)
 * [Profiles endpoint for specific MVPD API](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md)

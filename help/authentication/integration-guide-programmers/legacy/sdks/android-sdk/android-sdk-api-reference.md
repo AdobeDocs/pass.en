@@ -608,7 +608,7 @@ There are two types of metadata available to Programmers:
 
 **Callbacks triggered:** [`setMetadataStatus()`](#setMetadaStatus)
 
-**More Information:** [User Metadata](/help/authentication/integration-guide-programmers/features-standard/entitlements/user-metadata-feature.md)
+**More Information:** [User Metadata](/help/authentication/integration-guide-programmers/features-standard/entitlements/user-metadata.md)
 
 [Back to Android API...](#api)
 
@@ -670,7 +670,7 @@ This value is null when the request was made for simple metadata (Authentication
 
 **Triggered by:** [`getMetadata()`](#getMetadata)
 
-**More Information:** [User Metadata](/help/authentication/integration-guide-programmers/features-standard/entitlements/user-metadata-feature.md)
+**More Information:** [User Metadata](/help/authentication/integration-guide-programmers/features-standard/entitlements/user-metadata.md)
 
 
 [Back to Android API...](#api)
