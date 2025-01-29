@@ -1,6 +1,7 @@
 ---
 title: Protected Resources
 description: Protected Resources
+exl-id: 87f18ea7-4029-476a-a4a5-55bd14d9bf0c
 ---
 # Protected Resources {#protected-resources}
 

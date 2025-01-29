@@ -1,6 +1,7 @@
 ---
 title: Media Tokens
 description: Media Tokens
+exl-id: 7e486d2c-e078-464d-90b1-14e2cfb4d20a
 ---
 # Media Tokens {#media-tokens}
 
