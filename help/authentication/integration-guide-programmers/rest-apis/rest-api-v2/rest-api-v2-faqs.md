@@ -239,7 +239,7 @@ The resource unique identifier can have two formats:
 * A simple string format such as a unique identifier for a channel (brand).
 * A media RSS (MRSS) format containing additional information such as the title, ratings and parental-control metadata.
 
-For more details, refer to the [Identifying Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/identify-protected-resources.md) documentation.
+For more details, refer to the [Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/protected-resources.md#identifiers) documentation.
 
 #### 6. For how many resources can the client application obtain a preauthorization decision at a time? {#preauthorization-phase-faq6}
 
@@ -288,7 +288,7 @@ The media token is a term defined in the [Glossary](/help/authentication/integra
 
 The media token consists of a signed string sent in clear text that can be retrieved from the Decisions Authorize endpoint.
 
-For more information, refer to the [Integrating the Media Token Verifier](/help/authentication/integration-guide-programmers/features-standard/entitlements/media-token-verifier-int.md) documentation.
+For more information, refer to the [Media Token Verifier](/help/authentication/integration-guide-programmers/features-standard/entitlements/media-tokens.md#media-token-verifier) documentation.
 
 The media token is valid for a limited and short timeframe specified at the moment of issue, indicating the amount of time it must be used by the client application before requiring to query the Decisions Authorize endpoint again.
 
@@ -310,7 +310,7 @@ The resource unique identifier can have two formats:
 * A simple string format such as a unique identifier for a channel (brand).
 * A media RSS (MRSS) format containing additional information such as the title, ratings and parental-control metadata.
 
-For more details, refer to the [Identifying Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/identify-protected-resources.md) documentation.
+For more details, refer to the [Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/protected-resources.md#identifiers) documentation.
 
 #### 6. For how many resources can the client application obtain an authorization decision at a time? {#authorization-phase-faq6}
 

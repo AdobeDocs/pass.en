@@ -223,7 +223,7 @@ is authorized to view.
 1.  Call [getAuthorization()](#$getAuthZ) to initiate the authorization flow.
 
     * **Dependency:** Valid ResourceID(s) agreed upon with the MVPD(s).
-    * Resource IDs should be the same as those used on any other devices or platforms, and will be the same across MVPDs. For information on Resource IDs, see [Identifying Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/identify-protected-resources.md)
+    * Resource IDs should be the same as those used on any other devices or platforms, and will be the same across MVPDs. For information on Resource IDs, see [Identifying Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/protected-resources.md#identifiers)
 
 1.  Validate authentication and authorization.
 

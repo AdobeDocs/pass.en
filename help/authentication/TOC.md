@@ -114,9 +114,9 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                     + [Header - AP-TempPass-Identity](integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-temppass-identity.md)
     + Standard Features {#standard-features}
         + Entitlements {#entitlements}
-            + [Identifying Protected Resource](integration-guide-programmers/features-standard/entitlements/identify-protected-resources.md)
             + [Preflight authorization](integration-guide-programmers/features-standard/entitlements/preflight-authz.md)
-            + [How to integrate the Media Token Verifier](integration-guide-programmers/features-standard/entitlements/media-token-verifier-int.md)
+            + [Protected resource](integration-guide-programmers/features-standard/entitlements/protected-resources.md)
+            + [Media tokens](integration-guide-programmers/features-standard/entitlements/media-tokens.md)
             + [User metadata](integration-guide-programmers/features-standard/entitlements/user-metadata.md)
         + Error Reporting {#error-reporting}
             + [Enhanced error codes](integration-guide-programmers/features-standard/error-reporting/enhanced-error-codes.md)

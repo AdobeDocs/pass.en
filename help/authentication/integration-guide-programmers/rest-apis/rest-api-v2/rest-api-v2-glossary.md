@@ -109,7 +109,7 @@ Synonymous with former term used short authorization token.
 
 The Media Token Verifier is a library distributed by Adobe Pass Authentication that is responsible for verifying the authenticity of a [media token](#media-token).
 
-For more information, refer to the [Integrating the Media Token Verifier](/help/authentication/integration-guide-programmers/features-standard/entitlements/media-token-verifier-int.md) documentation.
+For more information, refer to the [Media Token Verifier](/help/authentication/integration-guide-programmers/features-standard/entitlements/media-tokens.md#media-token-verifier) documentation.
 
 #### MVPD {#mvpd}
 
@@ -177,7 +177,7 @@ The resource is a protected content that a user is trying to access from a [Prog
 
 The resource is identified by a unique value agreed upon between the Programmer and MVPDs.
 
-For more information, refer to the [Identifying Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/identify-protected-resources.md) documentation.
+For more information, refer to the [Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/protected-resources.md#identifiers) documentation.
 
 ### S {#s}
 

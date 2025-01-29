@@ -110,7 +110,7 @@ An AuthN token is considered valid if the following two points are true:
 
 ### Authorization Flow {#authorization}
 
-Authorization is a prerequisite for viewing protected content. Successful authorization generates an AuthZ token, along with a short-lived Media Token that is provided to the Programmer's app for security purposes. Note that, to support the authorization workflow, you must have previously performed the necessary requestor setup and have integrated the [Media Token Verifier](/help/authentication/integration-guide-programmers/features-standard/entitlements/media-token-verifier-int.md). With these completed, you can initiate authorization.
+Authorization is a prerequisite for viewing protected content. Successful authorization generates an AuthZ token, along with a short-lived Media Token that is provided to the Programmer's app for security purposes. Note that, to support the authorization workflow, you must have previously performed the necessary requestor setup and have integrated the [Media Token Verifier](/help/authentication/integration-guide-programmers/features-standard/entitlements/media-tokens.md#media-token-verifier). With these completed, you can initiate authorization.
 
 Your app initiates authorization when a user requests access to a protected resource. You pass a resource ID specifying the requested resource (for example , a channel, episode, etc.). Your app first checks for a stored authentication token. If one is not found, you initiate the authentication process.
 
