@@ -44,7 +44,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + [MVPD overview](kickstart/mvpd-overview.md)
     + [Programmer kickstart guide](kickstart/programmer-kickstart-guide.md)
     + [MVPD kickstart guide](kickstart/mvpd-kickstart-guide.md)
-    + [Escalation Procedures](kickstart/escalation-procedures.md)
+    + [Support procedures FAQs](kickstart/support-procedures-faqs.md)
 + Integration Guide For Programmers {#integration-guide-programmers}
     + REST APIs {#rest-apis}
         + REST API DCR {#rest-api-dcr}
