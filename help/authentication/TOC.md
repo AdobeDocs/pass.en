@@ -130,8 +130,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                 + Roku Single Sign-On {#roku-sso}
                     + [Roku SSO Overview](integration-guide-programmers/features-standard/sso-access/platform-sso/roku-single-sign-on/roku-sso-overview.md)
         + Home Based Authentication Access {#hba-access}
-            + [Home based authentication for TV Everywhere](integration-guide-programmers/features-standard/hba-access/home-based-authn-tve.md)
-            + [HBA status for MVPDs](integration-guide-programmers/features-standard/hba-access/hba-status-mvpds.md)
+            + [Home-based authentication (HBA)](integration-guide-programmers/features-standard/hba-access/home-based-authentication.md)
         + Privacy Support {#privacy-support}
             + [Privecy support overview](integration-guide-programmers/features-premium/privacy-support/privacy-supp-overview.md)
             + [How to make a privacy request](integration-guide-programmers/features-premium/privacy-support/make-privacy-req.md)
