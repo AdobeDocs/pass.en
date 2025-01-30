@@ -57,7 +57,7 @@ The decision is an Adobe Pass Authentication concept that stores information abo
 
 The degradation is an Adobe Pass Authentication feature that allows a user to access protected content even when its [MVPD](#mvpd) experiences a service disruption.
 
-For more information, refer to the [Degradation API Overview](/help/authentication/integration-guide-programmers/features-premium/degraded-access/degradation-api-overview.md) documentation.
+For more information, refer to the [Degradation Feature](/help/authentication/integration-guide-programmers/features-premium/degraded-access/degradation-feature.md) documentation.
 
 #### Device ID {#device-id}
 

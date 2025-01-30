@@ -15,7 +15,7 @@ exl-id: 9276f5d9-8b1a-4282-8458-0c1e1e06bcf5
 
 Degradation provides the temporary bypassing of specific MVPD authentication and authorization endpoints. Usually, the Programmer initiates this action, but regardless of who triggers a degradation event, the action depends on prior arrangements made with the affected MVPDs.
 
-For more details about Degradation feature, refer to the [Degradation](../../../../features-premium/degraded-access/degradation-api-overview.md) documentation.
+For more details about Degradation feature, refer to the [Degradation](../../../../features-premium/degraded-access/degradation-feature.md) documentation.
 
 Degraded access flows allow you to query for the following scenarios:
 

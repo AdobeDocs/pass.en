@@ -274,12 +274,3 @@ Adobe strongly recommends that you enable gzip support in clients that fetch ESM
 To enable gzip compression in your client, set the `Accept-Encoding:` header as follows:
 
 * Accept-Encoding: gzip, deflate
-
-
-<!--
-## Related Information {#related-information}
-
-- [ESM Overview](/help/authentication/entitlement-service-monitoring-overview.md)
-- [Degradation API Overview](/help/authentication/degradation-api-overview.md)
-- [Understanding Server-side Metrics](/help/authentication/understanding-serverside-metrics.md)
--->

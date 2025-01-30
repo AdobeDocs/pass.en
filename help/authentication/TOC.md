@@ -140,7 +140,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
         + Temporary Access {#temporary-access}
             + [TempPass Feature](integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md)
         + Degraded Access {#degraded-access}
-            + [Degradation API Overview](integration-guide-programmers/features-premium/degraded-access/degradation-api-overview.md)
+            + [Degradation Feature](integration-guide-programmers/features-premium/degraded-access/degradation-feature.md)
         + ESM {#esm}
             + [Entitlement service monitoring overview](integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md)
             + [Entitlement service monitoring API](integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-api.md)

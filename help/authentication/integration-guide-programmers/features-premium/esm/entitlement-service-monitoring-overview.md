@@ -123,11 +123,3 @@ You can use the ESM data for the following use cases:
 - **Debugging/Quality Testing** - Because data is also broken down by platform, device, browser, and OS, analyzing usage patterns can pinpoint problems on specific combinations (e.g., Safari on OSX).  
 
 - **Analytics** - The data provided can be used to supplement/audit the client side data being collected through Adobe Analytics or another analytics tool.
-
-<!--
-## Related Information {#related-information}
-
-- [ESM API](/help/authentication/entitlement-service-monitoring-api.md)
-- [Degradation API Overview](/help/authentication/degradation-api-overview.md)
-- [Server-side Metrics](/help/authentication/understanding-serverside-metrics.md)
--->
