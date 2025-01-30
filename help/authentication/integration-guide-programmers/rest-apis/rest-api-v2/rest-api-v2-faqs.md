@@ -239,7 +239,7 @@ The resource unique identifier can have two formats:
 * A simple string format such as a unique identifier for a channel (brand).
 * A media RSS (MRSS) format containing additional information such as the title, ratings and parental-control metadata.
 
-For more details, refer to the [Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/protected-resources.md#identifiers) documentation.
+For more details, refer to the [Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/decisions.md#protected-resources) documentation.
 
 #### 6. For how many resources can the client application obtain a preauthorization decision at a time? {#preauthorization-phase-faq6}
 
@@ -310,7 +310,7 @@ The resource unique identifier can have two formats:
 * A simple string format such as a unique identifier for a channel (brand).
 * A media RSS (MRSS) format containing additional information such as the title, ratings and parental-control metadata.
 
-For more details, refer to the [Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/protected-resources.md#identifiers) documentation.
+For more details, refer to the [Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/decisions.md#protected-resources) documentation.
 
 #### 6. For how many resources can the client application obtain an authorization decision at a time? {#authorization-phase-faq6}
 

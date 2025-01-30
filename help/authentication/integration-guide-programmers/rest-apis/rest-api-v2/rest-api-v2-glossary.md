@@ -177,7 +177,7 @@ The resource is a protected content that a user is trying to access from a [Prog
 
 The resource is identified by a unique value agreed upon between the Programmer and MVPDs.
 
-For more information, refer to the [Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/protected-resources.md#identifiers) documentation.
+For more information, refer to the [Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/decisions.md#protected-resources) documentation.
 
 ### S {#s}
 

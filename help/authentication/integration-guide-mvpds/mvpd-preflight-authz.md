@@ -123,12 +123,3 @@ The following table lists the MVPDs that support Preflight Authorization, along 
 | Channel Lineup in User Metadata | Suddenlink HTC                                                                                           | All Synacor direct integrations can support this approach as well. |
 | Fork & Join                     | All others not listed above                                                                              | The default maximum number of resources checked = 5.               |
   
-<!--
-![RelatedInformation]
->* [Logout](/help/authentication/usecase-mvpd-logout.md)
->* [Authorization](/help/authentication/authz-usecase.md)
->* [MVPD Integration Features](/help/authentication/mvpd-integr-features.md)
->* [MVPD User Metadata Exchange](/help/authentication/mvpd-user-metadata-exchng.md)
->* [Preflight Authorization - Programmer Integration Guide](/help/authentication/preflight-authz.md)
->* [AuthN and AuthZ Interface 1.0 Specification](https://www.cablelabs.com/specifications/CL-SP-AUTH1.0-I04-120621.pdf){target=_blank} 
--->
