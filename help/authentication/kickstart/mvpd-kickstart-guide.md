@@ -131,7 +131,7 @@ The Adobe Pass Authentication team is available to cover any questions or techni
 
 **Adobe will provide** access to our public documentation via [Adobe Experience League](https://experienceleague.adobe.com/en/docs/pass/authentication/home).
 
-The Adobe Pass Authentication team provides comprehensive documentation for the available features and workflows under the [Integration Guide for MVPDs](/help/authentication/kickstart/mvpd-overview.md) section. Refer to the table of contents under this section for links to detailed information on each topic.
+The Adobe Pass Authentication team provides comprehensive documentation for the available features and workflows under the [Integration Guide for MVPDs](/help/authentication/integration-guide-mvpds/mvpd-integration-guide-overview.md) section. Refer to the table of contents under this section for links to detailed information on each topic.
 
 ## Access to testing tool {#access-testing-tool}
 

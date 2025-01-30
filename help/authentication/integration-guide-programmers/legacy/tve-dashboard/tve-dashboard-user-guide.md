@@ -281,7 +281,7 @@ In order to create a new integration please follow the steps below:
 
 In order to update an existing integration click on the table entry for that specific integration from the Integrations section or from the Channels section, which contains an Integrations tab. 
 
-When using the Basic Workspace mode, this section will allow seeing and editing the most commonly updated settings, such as authentication and authorization token TTLs (time-to-live), as well as iFrame settings. Please bear in mind that TTL settings can be missing for the integrations with MVPDs that support Dynamically Defined Token Persistence TTL (see entry 1.19 from [MVPD Integration Requirements](/help/authentication/integration-guide-mvpds/mvpd-integr-features.md)).
+When using the Basic Workspace mode, this section will allow seeing and editing the most commonly updated settings, such as authentication and authorization token TTLs (time-to-live), as well as iFrame settings. Please bear in mind that TTL settings can be missing for the integrations with MVPDs that support Dynamically Defined Token Persistence TTL.
 
  
 

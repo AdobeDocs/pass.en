@@ -42,7 +42,6 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     + [Technical paper](kickstart/technical-paper.md)
     + [Programmer kickstart guide](kickstart/programmer-kickstart-guide.md)
     + [MVPD kickstart guide](kickstart/mvpd-kickstart-guide.md)
-    + [MVPD overview](kickstart/mvpd-overview.md)
     + [Support procedures FAQs](kickstart/support-procedures-faqs.md)
 + Integration Guide For Programmers {#integration-guide-programmers}
     + [Programmer integration guide](integration-guide-programmers/programmer-integration-guide-overview.md)
@@ -254,7 +253,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                 + [(Legacy) Monitoring Adobe Pass Adobe PayTV Pass](integration-guide-programmers/legacy/notes-technical/monitoring-adobe-pay-tv-pass.md)
                 + [(Legacy) How to test Authentication and Authorization flows using Adobe API test site](integration-guide-programmers/legacy/notes-technical/test-authn-authz-flows-using-adobes-api-test-site.md)
 + Integration Guide For MVPDs {#integration-guide-mvpds}
-    + [Integration features](integration-guide-mvpds/mvpd-integr-features.md)
+    + [MVPD integration guide](integration-guide-mvpds/mvpd-integration-guide-overview.md)
     + [Authentication](integration-guide-mvpds/authn-usecase.md)
     + [Authentication using the OAuth 2.0 Protocol](integration-guide-mvpds/authn-oauth2-protocol.md)
     + [Authorization](integration-guide-mvpds/authz-usecase.md)
