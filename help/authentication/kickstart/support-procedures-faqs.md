@@ -55,7 +55,7 @@ A SEVERITY 1 level incident can be initiated by either Adobe or an Adobe Pass Au
     * HTTP Trace or Device logs demonstrating the issue
     * (optional) Any available screenshots or video captures demonstrating the issue
 
-1. If Adobe does not respond to the ticket within a period, the partner can call the following number: **1-205-693-9813**.
+1. If Adobe does not respond to the ticket within a period, the partner can call the following number: **1-657-312-4623**.
 
 >[!IMPORTANT]
 >
