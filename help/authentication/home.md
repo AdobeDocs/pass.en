@@ -1,42 +1,70 @@
 ---
-title: Welcome to Adobe&reg; Pass Authentication!
-description: Welcome to Adobe&reg; Pass Authentication overview
+title: Welcome to Adobe&reg; Pass Authentication
+description: Welcome to Adobe&reg; Pass Authentication
 exl-id: a8b01469-3d5f-4a44-9ae8-06a68c29d56d
 ---
-# Welcome to Adobe&reg; Pass Authentication {#pt-auth-overview}
+# Welcome to Adobe&reg; Pass Authentication {#welcome}
 
 >[!IMPORTANT]
 >
 > Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
 
-Adobe Pass Authentication is an entitlement solution for TV Everywhere, providing a modular framework for determining whether someone who requests access to a resource is entitled to it. To participate in the Adobe Pass Authentication entitlement solution, Content Providers (Programmers) and Pay TV Providers (MVPDs) integrate their entitlement systems with the Adobe Pass Authentication workflows. This documentation site provides details on the integration process, as well as tips for existing partners.
+Adobe Pass Authentication is a powerful entitlement solution for TV Everywhere (TVE), designed to streamline and secure the process of verifying whether viewers are entitled to access protected content. This modular framework connects Content Providers (Programmers) with Pay TV Providers (MVPDs), facilitating entitlement transactions with speed, consistency, and reliability.
 
-## Popular Help and FAQs {#help-faqs}
+In the TVE ecosystem, Programmers supply content while MVPDs manage subscriber data. This dynamic can be challenging, especially when navigating the diverse systems of numerous MVPDs. Adobe Pass Authentication eliminates these complexities by providing a single integration point that connects both parties to the broader TVE landscape.
 
-| **Featured Items**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul><li>[Single Sign-On for iOS](/help/authentication/integration-guide-programmers/features-standard/sso-access/partner-sso/apple-sso/apple-sso-overview.md)</li><li>[Home-Based Authentication (HBA)](/help/authentication/integration-guide-programmers/features-standard/hba-access/home-based-authentication.md)</li><li>[HBA Infographic](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/files/AdobeNewsletterHBA.pdf)</li><li>[Adobe Pass TVE Dashboard User Guide](/help/authentication/user-guide-tve-dashboard/tve-dashboard-overview.md)</li></ul> |
+For Programmers, Adobe Pass Authentication ensures secure access to eligible viewers while reducing the technical burden of entitlement verification. For MVPDs, it offers a scalable solution to connect with multiple content providers through a unified interface, strengthening customer relationships and enhancing the viewer experience.
 
-| **For Programmers**                                                                                                                                                                                                                                                            | **For MVPDs**                                                                                                                                                                                                                                                                                                                                                         |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul><li>[Programmer Kickstart Guide](/help/authentication/kickstart/programmer-kickstart-guide.md)</li><li>[User Metadata](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/apis/user-metadata.md)</li></ul>                                           | <ul><li>[MVPD Kickstart Guide](/help/authentication/kickstart/mvpd-kickstart-guide.md)</li><li>[Authentication](/help/authentication/integration-guide-mvpds/authn-usecase.md)</li><li>[Authorization](/help/authentication/integration-guide-mvpds/authz-usecase.md)</li><li>[Logout](/help/authentication/integration-guide-mvpds/usecase-mvpd-logout.md)</li></ul> |
-| **For Native App Clients**                                                                                                                                                                                                                                                     | **For Everyone**                                                                                                                                                                                                                                                                                                                                                      |
-| <ul><li>[iOS Technical Overview](/help/authentication/integration-guide-programmers/legacy/sdks/ios-tvos-sdk/iostvos-sdk-overview.md)</li><li>[Android Technical Overview](/help/authentication/integration-guide-programmers/legacy/sdks/android-sdk/android-sdk-overview.md)</li></ul>     | <ul><li>[Technical Paper](/help/authentication/kickstart/technical-paper.md)</li><li>[Support procedures FAQs](/help/authentication/kickstart/support-procedures-faqs.md)</li></ul>                                                                                                                                                                                   |
-| **For Smart Devices**                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                       |
-| <ul><li>[Clientless Technical Overview](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/rest-api-overview.md)</li><li>[Clientless API](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/rest-api-reference.md)</li></ul> |                                                                                                                                                                                                                                                                                                                                                                       |
+As a SaaS (Software as a Service) solution, Adobe Pass Authentication speeds up time-to-market, mitigates fraud risks, and enables seamless cross-platform content access, ensuring that the right viewers receive the right content effortlessly.
 
->[!IMPORTANT]
->
-> If you can't find an answer, [**Email Us**](mailto:tve-support@adobe.com).
->
-> [Emailing our support team](mailto:tve-support@adobe.com) is also the first step for any issue or incident report.
->
-> If you have a [SEVERITY 1 LIVE](/help/authentication/kickstart/support-procedures-faqs.md) issue, and you have emailed us and 30 minutes have elapsed without a response, then see the [Escalation Procedures](/help/authentication/kickstart/support-procedures-faqs.md) document for phone numbers to call.
+## 📢 Community and Updates
 
-## To find what you need {#how-to-search}
+* [Product Announcements](/help/authentication/product-announcements.md)  
+  Stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines.
 
-*   **Search** anywhere on the Adobe Pass Authentication Helpdesk for results that include this
-documentation.
-*   **Browse** all the Adobe Pass Authentication documentation, via the folder hierarchy in the navigation pane on the left.  
-*   **Filter** the folder hierarchy by entering terms in the field at the top of the navigation pane.  
-*   **Bookmark** "deep links" to pages of interest using your web browser.
+## ❓ Support and Troubleshooting
+
+* [Zendesk Customer Support Portal](https://tve.zendesk.com/home)  
+  Log in to access tickets, submit queries, or view the knowledge base.
+
+* [Support Procedures FAQs](/help/authentication/kickstart/support-procedures-faqs.md)
+  Commonly asked questions about Adobe Pass Authentication support procedures.
+
+* [Dynamic Client Registration (DCR) FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-faqs.md)  
+  Commonly asked questions about Adobe Pass Authentication Dynamic Client Registration (DCR).
+
+* [REST API V2 FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md)  
+  Commonly asked questions about Adobe Pass Authentication REST API V2.
+
+## 📄 Documentation
+
+**For Programmers:**
+
+* [Programmer Kickstart Guide](/help/authentication/kickstart/programmer-kickstart-guide.md)  
+  Get started with Adobe Pass Authentication.
+
+* [Integration Guide for Programmers](/help/authentication/integration-guide-programmers/programmer-integration-guide-overview.md)  
+  Learn how to integrate Adobe Pass Authentication with your Programmer.
+
+**For MVPDs:**
+
+* [MVPD Kickstart Guide](/help/authentication/kickstart/mvpd-kickstart-guide.md)  
+  Get started with Adobe Pass Authentication.
+
+* [Integration Guide for MVPDs](/help/authentication/integration-guide-mvpds/mvpd-integration-guide-overview.md)  
+  Learn how to integrate Adobe Pass Authentication with your MVPD.
+
+*Search for specific topics using the search bar at the top of the page or navigate through the left-hand menu.*
+
+## 🛠️ Tools and Libraries
+
+* [Adobe Developer Website](https://developer.adobe.com/adobe-pass/)  
+  Access the Adobe Developer website to try out Adobe Pass Authentication REST APIs.
+
+* [Media Token Verifier](https://tve.zendesk.com/hc/en-us/articles/204963159-Media-Token-Verifier-library)  
+  Integrate the library that validates media tokens generated by Adobe Pass Authentication.
+
+## 📧 Contact
+
+* [Contact Adobe Support](mailto:tve-support@adobe.com)  
+  For additional help or business inquiries, email the Adobe support team.
