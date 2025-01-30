@@ -27,7 +27,6 @@ Before deep diving into this user guide, we recommend you to go through the foll
 
 * [TVE Technical Paper](/help/authentication/kickstart/technical-paper.md)
 * [Programmer Kickstart Guide](/help/authentication/kickstart/programmer-kickstart-guide.md)
-* [Entitlement Flow](/help/authentication/integration-guide-programmers/entitlement-flow.md)
 
 Continuing to the next sections of this user guide, you will discover ways of administering different settings for your company's Channels, Programmers or the Integrations between Channels and MVPDs (Multichannel Video Program Distributors).
 

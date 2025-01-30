@@ -47,10 +47,3 @@ function displayAllowlisted(list) {
 }
 
 ```
-
-<!--
-**Related Information**
-* [Prevent MVPDs from appearing in the Selection Dialog](/help/authentication/prevent-mvpd-selectn-dialog.md)
-* **Code Samples**
-* [Programmer integration guide](/help/authentication/programmer-integration-guide-overview.md)
--->

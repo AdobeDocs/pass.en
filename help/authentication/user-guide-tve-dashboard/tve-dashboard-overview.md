@@ -46,6 +46,6 @@ Adobe suggests using the following resources to thoroughly understand the flows 
 
 * [TVE Technical Paper](/help/authentication/kickstart/technical-paper.md)
 * [Programmer Kickstart Guide](/help/authentication/kickstart/programmer-kickstart-guide.md)
-* [Entitlement Flow](/help/authentication/integration-guide-programmers/entitlement-flow.md)
+* [Programmer Integration Guide Overview](/help/authentication/integration-guide-programmers/programmer-integration-guide-overview.md)
 * [Dynamic Client Registration (DCR) Glossary](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-glossary.md)
 * [REST API v2 Glossary](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md)

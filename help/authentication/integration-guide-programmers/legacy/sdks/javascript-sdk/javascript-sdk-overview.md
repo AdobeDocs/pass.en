@@ -19,7 +19,7 @@ Adobe highly recommends that you migrate to the latest JS v4.x of the AccessEnab
 
 The Adobe Pass Authentication JavaScript integration offers Programmers a TV-Everywhere solution in the familiar JS web application development environment. The main components of the integration are your "high-level" application (user interaction, video presentation), and the Adobe-provided "low-level" AccessEnabler library that provides your entry to the entitlement flows, and handles communication with Adobe Pass Authentication servers.
 
-The general Adobe Pass Authentication entitlement flow is covered in [Programmer Entitlement Flow](/help/authentication/integration-guide-programmers/entitlement-flow.md), and the JavaScript Integration Cookbook walks you through the implementation. The following sections provide descriptions and samples specific to the JavaScript AccessEnabler integration.
+The following sections provide descriptions and samples specific to the JavaScript AccessEnabler integration.
 
 >[!IMPORTANT]
 >

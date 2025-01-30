@@ -45,11 +45,3 @@ function displayAllowlisted(list) {
     // TODO: Implement site-specific logic here.
 } 
 ```
-
-<!--
-**Related Information**
-
-* [Allow MVPDs in the Selection Dialog](/help/authentication/allow-mvpd-selectn-dialog.md)
-* **Code samples**
-* [Programmer integration guide](/help/authentication/programmer-integration-guide-overview.md)
--->

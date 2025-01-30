@@ -45,7 +45,6 @@ Adobe will provide:
 
 * Deployment Guide: **`https://tve.zendesk.com/entries/498741-tve-deployment-guide`**
 * Access to our Zendesk customer support system. This is also where you can find samples, information and video tutorials on some of the processes. In order to access this document on Zendesk, along with other documents posted there, you will have to register and create an account at `https://tve.zendesk.com/home`. There is no limit to the amount of users you can register.  You able to see and share comments on any filed ticket. All support questions should be addressed to `tve-support@adobe.com`.
-* [Programmer Integration Guide](/help/authentication/integration-guide-programmers/programmer-integration-guide-overview.md)
 * Media Token Verifier Library: `https://tve.zendesk.com/entries/471323-media-token-validator-library`.
 
 ## Test environment setup {#test-env-setup}

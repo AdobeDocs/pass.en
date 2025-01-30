@@ -89,7 +89,7 @@ Initiates the authentication process by informing of an MVPD selection event. Cr
 
 ### **Notes** {#notes}
 
-* The value of the `domain_name` parameter must be set to one of the domain names registered with Adobe Pass Authentication. For more details, refer to [Registration and Initialization](/help/authentication/kickstart/programmer-overview.md).
+* The value of the `domain_name` parameter must be set to one of the domain names registered with Adobe Pass Authentication.
 
 * [Avoid using '&'reg\_code in /authenticate request (Tech Note)](/help/authentication/integration-guide-programmers/legacy/notes-technical/clientless-avoid-using-reg-code-in-authenticate-request.md)
 

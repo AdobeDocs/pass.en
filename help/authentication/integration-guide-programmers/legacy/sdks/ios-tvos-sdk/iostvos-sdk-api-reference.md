@@ -20,7 +20,6 @@ This page describes the methods and callback functions exposed by the iOS/tvOS n
 
 Associated documentation:
 
-*   For a description of the basic Adobe Pass Authentication entitlement flow, see [Entitlement Flow](/help/authentication/integration-guide-programmers/entitlement-flow.md).
 *   For a step-by-step walkthough of how to implement the Adobe Pass
   authentication entitlement flow using this API, see the [iOS Integration Cookbook](/help/authentication/integration-guide-programmers/legacy/sdks/ios-tvos-sdk/iostvos-sdk-cookbook.md).
 *   For the latest iOS AccessEnabler SDK, see [iOS Native Access Enabler Library](https://tve.zendesk.com/hc/en-us/articles/204963209-iOS-Native-AccessEnabler-Library).

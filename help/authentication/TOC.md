@@ -40,12 +40,14 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
         + [Adobe Pass Authentication iOS / tvOS 3.7.0 release notes](notes-releases/authn-rn-ios-tvos-370.md)
 + Kickstart {#kickstart}
     + [Technical paper](kickstart/technical-paper.md)
-    + [Programmer overview](kickstart/programmer-overview.md)
-    + [MVPD overview](kickstart/mvpd-overview.md)
     + [Programmer kickstart guide](kickstart/programmer-kickstart-guide.md)
     + [MVPD kickstart guide](kickstart/mvpd-kickstart-guide.md)
+    + [MVPD overview](kickstart/mvpd-overview.md)
     + [Support procedures FAQs](kickstart/support-procedures-faqs.md)
 + Integration Guide For Programmers {#integration-guide-programmers}
+    + [Programmer integration guide](integration-guide-programmers/programmer-integration-guide-overview.md)
+    + [Minimum system requirements](integration-guide-programmers/minimum-system-requirements.md)
+    + [Throttling mechanism](integration-guide-programmers/throttling-mechanism.md)
     + REST APIs {#rest-apis}
         + REST API DCR {#rest-api-dcr}
             + [Dynamic Client Registration Overview](integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md)
@@ -114,9 +116,9 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                     + [Header - AP-TempPass-Identity](integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-temppass-identity.md)
     + Standard Features {#standard-features}
         + Entitlements {#entitlements}
+            + [User metadata](integration-guide-programmers/features-standard/entitlements/user-metadata.md)
             + [Decisions](integration-guide-programmers/features-standard/entitlements/decisions.md)
             + [Media tokens](integration-guide-programmers/features-standard/entitlements/media-tokens.md)
-            + [User metadata](integration-guide-programmers/features-standard/entitlements/user-metadata.md)
         + Error Reporting {#error-reporting}
             + [Enhanced error codes](integration-guide-programmers/features-standard/error-reporting/enhanced-error-codes.md)
         + Single Sign-On Access {#sso-access}
@@ -251,11 +253,6 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                 + [(Legacy) Using Charles Proxy](integration-guide-programmers/legacy/notes-technical/using-charles-proxy.md)
                 + [(Legacy) Monitoring Adobe Pass Adobe PayTV Pass](integration-guide-programmers/legacy/notes-technical/monitoring-adobe-pay-tv-pass.md)
                 + [(Legacy) How to test Authentication and Authorization flows using Adobe API test site](integration-guide-programmers/legacy/notes-technical/test-authn-authz-flows-using-adobes-api-test-site.md)
-    + [Programmer integration guide overview](integration-guide-programmers/programmer-integration-guide-overview.md)
-    + [Programmer entitlement flow](integration-guide-programmers/entitlement-flow.md)
-    + [Programmer use cases](integration-guide-programmers/programmer-use-cases.md)
-    + [Throttling mechanism](integration-guide-programmers/throttling-mechanism.md)
-    + [Minimum system requirements](integration-guide-programmers/minimum-system-requirements.md)
 + Integration Guide For MVPDs {#integration-guide-mvpds}
     + [Integration features](integration-guide-mvpds/mvpd-integr-features.md)
     + [Authentication](integration-guide-mvpds/authn-usecase.md)
