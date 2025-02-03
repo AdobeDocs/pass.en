@@ -37,10 +37,9 @@ Enable SSL Proxying `\[ *Proxy -\> Proxy Settings... -\> SSL* \]`
 
 Check the "Enable SSL Proxying" checkbox and add all of the HTTPS locations.
 
-
+<!-- NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/ProxySettings.PNG) ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/SSLSettings.PNG) ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/AddHttpsLocations.PNG)
-
-
+-->
 
 - SSL Proxying - <http://www.charlesproxy.com/documentation/proxying/ssl-proxying/>
 - SSL Certificates - <http://www.charlesproxy.com/documentation/using-charles/ssl-certificates/> 
@@ -63,7 +62,9 @@ If your output becomes too cluttered you can choose to ignore or exclude locatio
 
 DNS spoofing is very useful when trying to redirect a request to a different IP, especially when working with mobile devices:
 
+<!-- NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/DNSSpoofing.PNG)
+-->
 
 <http://www.charlesproxy.com/documentation/tools/dns-spoofing/>
 
@@ -76,7 +77,9 @@ DNS spoofing is very useful when trying to redirect a request to a different IP,
 
 With map remote you can redirect an "incoming" request to a different endpoint. The most common use case for this feature is to "Map" `AccessEnabler.swf` to `AccessEnablerDebug.swf:`
 
+<!-- NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/MapRemote.PNG) ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/MapRemoteAdd.PNG)
+-->
 
 <http://www.charlesproxy.com/documentation/tools/map-remote/>
 
@@ -94,7 +97,9 @@ With map remote you can redirect an "incoming" request to a different endpoint. 
 
 Browse to <http://charlesproxy.com/charles.crt> from your iOS device.  This will start the certificate install dialog:
 
+<!-- NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/iOSDeviceSSLCertificate1\(1\).PNG)![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/iOSDeviceSSLCertificate2\(1\).PNG)![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/iOSDeviceSSLCertificate3.PNG)
+-->
 
  </br>
 
@@ -111,15 +116,18 @@ On your iOS device select `\[ *Settings* -\> *Wi-FI* -\> (*YOUR\_WIFI\_NETWORK)*
 
  </br>
 
+<!-- NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/iOSDeviceManualProxy1.png)![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/iOSDeviceManualProxy2.PNG)
-
+-->
 
  </br>
 Here you need to specify the IP and port of the machine where you are running Charles. <span style="line-height: 1.6em;">If you now open Safari on your iOS device and try to open a web page, you should get the following popup on the machine that's running Charles:
  
  </br>
 
+<!-- NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/iOSDeviceManualProxy3.PNG)
+-->
 
 </br>
 Click "Allow" to allow the device to use Charles to proxy all its
