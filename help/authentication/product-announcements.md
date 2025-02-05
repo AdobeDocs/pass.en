@@ -5,6 +5,31 @@ exl-id: 3c9c66e1-d31d-4af3-8ab2-eb32492f42ca
 ---
 # Product Announcements {#product-announcements}
 
+<a href="https://experienceleague.adobe.com/en/docs/pass/authentication/product-announcements">![Live Webinar Series](/help/authentication/assets/rest-api-v2/live-webinar-series-banner.png)</a>
+
+As a valued Adobe Pass Authentication partner, we’d like to invite you to our upcoming live webinar on the new REST API. The new API was launched last year to enhance end user experience and simplify integration with Adobe Pass services.  
+
+We will be conducting a series of two webinars to provide an overview of the new API, benefits and additional use cases that can be activated by migrating to the new API.
+
+Please register for the webinar which works best for you and your team.
+
+* [Webinar 1 - 19th February, 2025](https://events.teams.microsoft.com/event/83c6ec1e-2522-4918-910f-c529b4fb0574@fa7b1b5a-7b34-4387-94ae-d2c178decee1)
+* [Webinar 2 - 5th March, 2025](https://events.teams.microsoft.com/event/6f673689-e848-4c00-93d9-4f5d8f108977@fa7b1b5a-7b34-4387-94ae-d2c178decee1)
+
+During the session, you will learn about:
+
+* REST API v2 overview and benefits
+* Basic flows walkthrough
+* Timelines and next steps
+
+The webinar would be useful if you are:
+
+* A new customer planning to launch a new TVE app
+* Existing customers who need to migrate to the new APIs
+* Implementation partners who would implement APIs for customers
+
+You can find technical documentation on the new API [here](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/rest-api-v2-apis-overview.md). We encourage you and your team to fill out any questions you would want to discuss during the session [here](https://forms.office.com/r/sJea78tUy3).
+
 ## End-of-Life (EOL) {#eol}
 
 This section outlines the end-of-support and end-of-life dates for certain Adobe Pass Authentication features and products that are planned to be decommissioned.

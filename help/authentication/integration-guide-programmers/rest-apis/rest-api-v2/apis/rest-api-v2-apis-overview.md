@@ -7,7 +7,9 @@ exl-id: 62b48bf0-d200-4949-b268-8f8ea2daabfa
 
 >[!IMPORTANT]
 >
-> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
+<a href="https://experienceleague.adobe.com/en/docs/pass/authentication/product-announcements">![Live Webinar Series](/help/authentication/assets/rest-api-v2/live-webinar-series-banner.png)</a>
 
 To get started, visit the public documentation of the APIs you are interested in the list below.
 

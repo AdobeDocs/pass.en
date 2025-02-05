@@ -7,7 +7,9 @@ exl-id: a5595193-82c4-4033-bd98-596b4908b401
 
 >[!IMPORTANT]
 >
-> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
+
+<a href="https://experienceleague.adobe.com/en/docs/pass/authentication/product-announcements">![Live Webinar Series](/help/authentication/assets/rest-api-v2/live-webinar-series-banner.png)</a>
 
 Do you want to improve the cost efficiency of your TVE applications?
 
