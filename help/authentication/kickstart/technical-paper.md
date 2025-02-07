@@ -106,7 +106,11 @@ The rest of this  paper provides a technical introduction to Adobe Pass Authenti
 
 ## Architectural Building Blocks {#arch-building-blocks}
 
-![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/import-pc7mz3dfnv/check.gif) The following discusses the central entitlement transactions of authentication and authorization. Authentication is the process of confirming with a Pay TV provider that a given user is a known customer. Authorization is the process wherein a Pay TV provider confirms that an authenticated user has a valid subscription to a given resource.
+<!-- BROKEN LINK
+![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/import-pc7mz3dfnv/check.gif) 
+-->
+
+The following discusses the central entitlement transactions of authentication and authorization. Authentication is the process of confirming with a Pay TV provider that a given user is a known customer. Authorization is the process wherein a Pay TV provider confirms that an authenticated user has a valid subscription to a given resource.
 Adobe Pass Authentication consists of the following basic components:
 
 *   Client Component (one of the following):
