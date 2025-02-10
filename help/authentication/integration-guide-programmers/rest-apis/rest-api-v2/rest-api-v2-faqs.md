@@ -13,21 +13,21 @@ This document provides high overview answers for frequently asked questions abou
 
 For more information about the REST API V2 overall, see the [REST API V2 Overview](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-overview.md) documentation.
 
->[!MORELIKETHIS]
->
-> * [Dynamic Client Registration (DCR) FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-faqs.md)
-
 ## General FAQs {#general-faqs}
 
 Start with this section if you are working on an application that needs to integrate the REST API V2, whether it is a new application or an existing one that migrates from [REST API V1](#migration-rest-api-v1-to-rest-api-v2) or [SDK](#migration-sdk-to-rest-api-v2).
 
 For more information about migration details and steps, see the next sections too.
 
+>[!MORELIKETHIS]
+>
+> * [Dynamic Client Registration (DCR) FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-faqs.md#general-faqs)
+
 ### Registration Phase FAQs {#registration-phase-faqs-general}
 
 +++Registration Phase FAQs
 
-Refer to the [Dynamic Client Registration (DCR) FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-faqs.md) documentation.
+Refer to the [Dynamic Client Registration (DCR) FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-faqs.md#rest-api-v2-access-faqs) documentation.
 
 +++
 
@@ -369,6 +369,10 @@ In case the client application is migrating from REST API V1 to REST API V2, the
 
 Continue with this section if you are working on an application that needs to migrate an existing application to REST API V2.
 
+>[!MORELIKETHIS]
+>
+> * [Dynamic Client Registration (DCR) FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-faqs.md#migration-faqs)
+
 ### General Migration FAQs {#general-migration-faqs}
 
 +++General Migration FAQs
@@ -399,25 +403,7 @@ The user authentication obtained within older client application versions integr
 
 Therefore, the user will be required to re-authenticate within the new client application migrated to REST API V2.
 
-#### 4. Can the client application use the existing registered applications (software statements)? {#migration-faq4}
-
-The client application cannot re-use the existing registered applications (software statements), therefore it must generate and download a new registered applications (software statements) dedicated for consuming REST API V2.
-
-This operation can be completed through the Adobe Pass [TVE Dashboard](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md#tve-dashboard) by one of your organization administrators or by an Adobe Pass Authentication representative acting on your behalf.
-
-For more details, refer to the [TVE Dashboard Channels User Guide](/help/authentication/user-guide-tve-dashboard/tve-dashboard-channels.md#registered-applications) or [TVE Dashboard Programmers User Guide](/help/authentication/user-guide-tve-dashboard/tve-dashboard-programmers.md#registered-applications) documentation.
-
-For the moment you will be required to ask an Adobe Pass Authentication representative to enable the usage of REST API V2 for your new registered applications (software statements), until the Adobe Pass [TVE Dashboard](rest-api-v2-glossary.md#tve-dashboard) will be updated to allow the self-management of this operation.
-
-In order to distinguish the registered applications (software statements) used in client applications consuming REST API V2, we require you to add a specific suffix to the registered application name, such as "RESTV2".
-
-#### 5. Can the client application use the existing custom schemes? {#migration-faq5}
-
-The client application can re-use the existing custom schemes generated through the Adobe Pass [TVE Dashboard](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md#tve-dashboard).
-
-For more details, refer to the [TVE Dashboard Channels User Guide](/help/authentication/user-guide-tve-dashboard/tve-dashboard-channels.md#custom-schemes) or [TVE Dashboard Programmers User Guide](/help/authentication/user-guide-tve-dashboard/tve-dashboard-programmers.md#custom-schemes) documentation.
-
-#### 6. Are the enhanced error codes enabled by default in REST API V2? {#migration-faq6}
+#### 4. Are the enhanced error codes enabled by default in REST API V2? {#migration-faq4}
 
 Yes.
 
