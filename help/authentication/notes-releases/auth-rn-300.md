@@ -3,7 +3,7 @@ title: Adobe Pass Authentication 3.0 Release Notes
 description: Adobe Pass Authentication 3.0 Release Notes
 exl-id: 9284151a-8458-44a3-937b-35f379ca0e4e
 ---
-# Adobe Pass Authentication 3.0 Release Notes {#pt-authn-300-rn}
+# Adobe Pass Authentication 3.0 Release Notes {#authn-300-rn}
 
 >[!NOTE]
 >
@@ -14,16 +14,17 @@ This page describes new features, changes, and known issues with this release:
 ## Server Side and Web Clients {#server-side-web-clients-300}
 
 * [Build Number](#build-number-300)
-* [Release overview](#release-overview-300)
+* [Release Overview](#release-overview-300)
 
-### Build Number {#build-number-2651}
+### Build Number {#build-number-300}
 
 Adobe Pass Authentication: adobe-pass-**3.0**
+
 Release Date: **09/10/2024 - 09/12/2024**
 
-### New Features {#new-features-300}
+### Release Overview {#release-overview-300}
 
-#### REST API v2 {#rest-apis}
+#### REST API v2
 
 ##### Code
 
@@ -42,6 +43,6 @@ Release Date: **09/10/2024 - 09/12/2024**
 
 * To try the new REST API v2, refer to the new Adobe Pass Authentication page from [Adobe Developer](https://developer.adobe.com/adobe-pass) website.
 
-### Bug Fixes {#bug-fixes-300}
+#### Bug Fixes
 
 * Fixed an issue with redirect URL parameter not being used when present in the logout request.

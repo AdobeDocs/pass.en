@@ -3,7 +3,7 @@ title: Adobe Pass Authentication 3.0.3 Release Notes
 description: Adobe Pass Authentication 3.0.3 Release Notes
 exl-id: f54b7c4a-78c5-4536-bed7-3c5f15640dea
 ---
-# Adobe Pass Authentication 3.0.3 Release Notes {#pt-authn-303-rn}
+# Adobe Pass Authentication 3.0.3 Release Notes {#authn-303-rn}
 
 >[!NOTE]
 >
@@ -14,16 +14,17 @@ This page describes new features, changes, and known issues with this release:
 ## Server Side and Web Clients {#server-side-web-clients-303}
 
 * [Build Number](#build-number-303)
-* [Release overview](#release-overview-303)
+* [Release Overview](#release-overview-303)
 
-### Build Number {#build-number-2651}
+### Build Number {#build-number-303}
 
 Adobe Pass Authentication: adobe-pass-**3.0.3**
+
 Release Date: **10/29/2024 - 10/31/2024**
 
-### New Features {#new-features-303}
+### Release Overview {#release-overview-303}
 
-#### REST API v2 {#rest-apis}
+#### REST API v2
 
 ##### Code
 

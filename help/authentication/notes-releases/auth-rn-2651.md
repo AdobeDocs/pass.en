@@ -14,11 +14,12 @@ This page describes new features, changes, and known issues with this release:
 ## Server Side and Web Clients {#server-side-web-clients-2651}
 
 * [Build Number](#build-number-2651)
-* [Release overview](#release-overview-2651)
+* [Release Overview](#release-overview-2651)
 
 ### Build Number {#build-number-2651}
 
 Adobe Pass Authentication: adobe-pass-**2.65.1**
+
 Release Date: **06/20/2023 - 06/22/2023** 
 
 ### Release Overview {#release-overview-2651}

@@ -3,7 +3,7 @@ title: Adobe Pass Authentication JavaScript 4.4.0 Release Notes
 description: Adobe Pass Authentication JavaScript 4.4.0 Release Notes
 exl-id: 28cc0ccc-7a1d-45bd-8455-26cfde25c5c5
 ---
-# Adobe Pass Authentication JavaScript 4.4.0 Release Notes {#javascript-sdk-440-release-notes}
+# Adobe Pass Authentication JavaScript 4.4.0 Release Notes {#javascript-sdk-440-rn}
 
 >[!NOTE]
 >
@@ -11,16 +11,15 @@ exl-id: 28cc0ccc-7a1d-45bd-8455-26cfde25c5c5
 
 This page describes new features, changes, and known issues with this release:
 
-## Build Number {#build-no-javascript-sdk-440}
+## Build Number {#build-number-440}
 
 Adobe Pass Authentication: JavaScript 4.4.0
 
 Release Date: **06/22/2021**
 
+## Release Overview {#release-overview-440}
 
-## Release Overview {#overview-javascript-sdk-440}
-
-### New Features {#new-features-javascript-sdk-440}
+### New Features
 
 Preflight authorization
 
@@ -36,14 +35,13 @@ Others
 
 * Internal architectural improvements.
 
-
-### Bug Fixes {#bug-fixes-javascript-sdk-440}
+### Bug Fixes
 
 * Fix race condition produced when setRequestor and getAuthentication are called simultaneously.
 * Fixed an issue that prevented entitlements to be loaded correctly on staging environments.
 * Addressed an issue that prevented background logout flow to complete on Safari browsers, thus the user still seemed authenticated until a page refresh occurred. A timeout was introduced, currently set at 30 seconds, so if there's no response from Primetime Authentication server during this period, the SDK will invoke setAuthenticationStatus callback.
 
-## Release package {#rel-pkg-javascript-sdk-440}
+## Release Package {#release-package-440}
 
 The production URL is: https://entitlement.auth.adobe.com/entitlement/v4/AccessEnabler.js
 

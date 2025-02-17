@@ -14,20 +14,20 @@ This page describes new features, changes, and known issues with this release:
 ## Server Side and Web Clients {#server-side-web-clients-268}
 
 * [Build Number](#build-number-268)
-* [New Features](#new-features-268)
-* [Bug Fixes](#bug-fixes-268)
+* [Release Overview](#release-overview-268)
 
 ### Build Number {#build-number-268}
 
 Adobe Pass Authentication: adobe-pass-**2.68.0.5**
+
 Release Date: **12/05/2023 - 12/07/2023** 
 
-### New Features {#new-features-268}
+### Release Overview {#release-overview-268}
 
 * Ongoing development to new REST APIS. The new end-points and flows planned to become available in an upcoming dedicated release. Updating documentation for use of these new APIS is in progress.
 * Continued internal architectural improvements.
 * Updated Device Atlas library to the latest version in order to improve device identification.
  
-#### Bug Fixes {#bug-fixes-268}
+#### Bug Fixes
 
 * Fixed an issue with Vidgo MVPD so that multiple decisions cannot be returned for the same resource.

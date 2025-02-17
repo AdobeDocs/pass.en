@@ -3,7 +3,7 @@ title: Authentication iOS / tvOS 3.7.0 Release Notes
 description: Authentication iOS / tvOS 3.7.0 Release Notes
 exl-id: 19c1179e-16b1-4608-954f-25b0980d7ad9
 ---
-# Authentication iOS / tvOS 3.7.0 Release Notes {#ios-tvos-sdk-370-release-notes}
+# Authentication iOS / tvOS 3.7.0 Release Notes {#ios-tvos-sdk-370-rn}
 
 >[!NOTE]
 >
@@ -11,19 +11,17 @@ exl-id: 19c1179e-16b1-4608-954f-25b0980d7ad9
 
 This page describes new features, changes, and known issues with this release:
 
-## Build Number {#build-no-ios-tvos-sdk-370}
+## Build Number {#build-number-370}
 
 Adobe Pass Authentication: iOS / tvOS 3.7.0
 
-Release Date: 09/03/2021
+Release Date: **09/03/2021**
 
- 
-
-## Release Overview {#overview-ios-tvos-sdk-370}
+## Release Overview {#release-overview-370}
 
 Adds improvements for AccessEnabler framework usage by allowing Keychain storage operations when the application is in the background or when the device is locked. This can facilitate, for example, the implementation of AirPlay.
 
-## Release package {#rel=pkg-iostvos370}
+## Release Package {#rrelease-package-370}
 
 You can download iOS/tvOS SDK v3.7.0 from here.
 
