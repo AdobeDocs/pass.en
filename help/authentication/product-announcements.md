@@ -47,6 +47,13 @@ Make sure you stay informed about the decommissioning timelines and that you pla
 
 This section compiles references to the release history and corresponding release notes for Adobe Pass Authentication.
 
+### 2025 {#product-releases-2025}
+
+| Release Notes                                                                                             | Dates                   |
+|-----------------------------------------------------------------------------------------------------------|-------------------------|
+| [Adobe Pass Authentication 3.1.0 release notes](notes-releases/auth-rn-310.md)                            | 02/25/2025 - 02/27/2025 |
+| [Adobe Pass Authentication JavaScript SDK 4.7.1 release notes](notes-releases/authn-rn-javascript-471.md) | 02/25/2025 - 02/27/2025 |
+
 ### 2024 {#product-releases-2024}
 
 | Release Notes                                                                                             | Dates                   |
