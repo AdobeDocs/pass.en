@@ -5,9 +5,9 @@ exl-id: 9284151a-8458-44a3-937b-35f379ca0e4e
 ---
 # Adobe Pass Authentication 3.0 Release Notes {#authn-300-rn}
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
 
 This page describes new features, changes, and known issues with this release:
 

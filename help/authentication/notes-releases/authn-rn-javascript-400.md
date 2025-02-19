@@ -5,9 +5,9 @@ exl-id: 2ded9ad8-56f7-44b5-87a2-12a195cd0829
 ---
 # Adobe Pass Authentication JavaScript 4.0.0 Release Notes {#javascript-sdk-400-rn}
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
 
 This page describes new features, changes, and known issues with this release:
 

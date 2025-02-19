@@ -5,9 +5,9 @@ exl-id: b0edbd90-ebb5-40a7-9034-1699dccfadb5
 ---
 # Adobe Pass Authentication 2.64.1 Release Notes {#authn-264-rn}
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
 
 This page describes new features, changes, and known issues with this release:
 

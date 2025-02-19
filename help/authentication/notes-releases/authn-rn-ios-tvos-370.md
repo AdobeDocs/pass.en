@@ -5,9 +5,9 @@ exl-id: 19c1179e-16b1-4608-954f-25b0980d7ad9
 ---
 # Authentication iOS / tvOS 3.7.0 Release Notes {#ios-tvos-sdk-370-rn}
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
 
 This page describes new features, changes, and known issues with this release:
 

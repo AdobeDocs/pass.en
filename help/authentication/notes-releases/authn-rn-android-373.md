@@ -5,9 +5,9 @@ exl-id: f335357e-c209-428d-af2a-2181551447d4
 ---
 # Adobe Pass Authentication Android 3.7.3 Release Notes {#android-sdk-373-rn}
 
->[!NOTE]
+>[!IMPORTANT]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
+> Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
 
 This page describes new features, changes, and known issues with this release:
 
