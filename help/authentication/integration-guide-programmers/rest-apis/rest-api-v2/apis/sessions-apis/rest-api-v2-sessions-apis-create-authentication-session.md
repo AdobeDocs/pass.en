@@ -262,17 +262,15 @@ exl-id: bb2a6bb4-0778-4748-a674-df9d0e8242c8
             <tr>
                <td style="background-color: #DEEBFF;">reasonType</td>
                <td>
-                  The type of reason used that explains the 'actionName'.
+                  The type of reason that explains the 'actionName'.
                   <br/><br/>
                   The possible values are:
                   <ul>
-                    <li><b>none</b></li>
-                    <li><b>authenticated</b></li>
-                    <li><b>temporary</b></li>
-                    <li><b>degraded</b></li>
-                    <li><b>authenticatedSSO</b></li>
-                    <li><b>pfs_fallback</b></li>
-                    <li><b>configuration_fallback</b></li>
+                    <li><b>none</b><br/>The client application is required to continue to authenticate.</li>
+                    <li><b>authenticated</b><br/>The client application is already authenticated through basic access flows.</li>
+                    <li><b>temporary</b><br/>The client application is already authenticated through temporary access flows.</li>
+                    <li><b>degraded</b><br/>The client application is already authenticated through degraded access flows.</li>
+                    <li><b>authenticatedSSO</b><br/>The client application is already authenticated through single sign-on access flows.</li>
                   </ul>
                <td><i>required</i></td>
             </tr>
@@ -478,6 +476,8 @@ Content-Type: application/json;charset=UTF-8
     "serviceProvider": "REF30"
 }
 ```
+
+>[!ENDTABS]
 
 ### 4. Create authentication session using basic or promotional TempPass (not required)
 

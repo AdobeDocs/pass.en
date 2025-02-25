@@ -227,17 +227,14 @@ exl-id: 66c33546-2be0-473f-9623-90499d1c13eb
             <tr>
                <td style="background-color: #DEEBFF;">reasonType</td>
                <td>
-                  The type of reason used that explains the 'actionName'.
+                  The type of reason that explains the 'actionName'.
                   <br/><br/>
                   The possible values are:
                   <ul>
-                    <li><b>none</b></li>
-                    <li><b>authenticated</b></li>
-                    <li><b>temporary</b></li>
-                    <li><b>degraded</b></li>
-                    <li><b>authenticatedSSO</b></li>
-                    <li><b>pfs_fallback</b></li>
-                    <li><b>configuration_fallback</b></li>
+                    <li><b>none</b><br/>The client application is required to continue to authenticate.</li>
+                    <li><b>authenticated</b><br/>The client application is already authenticated through basic access flows.</li>
+                    <li><b>temporary</b><br/>The client application is already authenticated through temporary access flows.</li>
+                    <li><b>degraded</b><br/>The client application is already authenticated through degraded access flows.</li>
                   </ul>
                <td><i>required</i></td>
             </tr>
@@ -347,6 +344,7 @@ Content-Type: application/json;charset=UTF-8
 {
     "actionName": "authenticate",
     "actionType": "interactive",
+    "reasonType": "none",
     "url": "/api/v2/authenticate/REF30/8ER640M",
     "code": "8ER640M",
     "sessionId": "1b614390-6610-4d14-9421-6565f6e75958",
@@ -438,6 +436,8 @@ Content-Type: application/json;charset=UTF-8
     "serviceProvider": "REF30"
 }
 ```
+
+>[!ENDTABS]
 
 ### 4. Resume authentication session using basic or promotional TempPass (not required)
 

@@ -252,6 +252,23 @@ exl-id: 52d8a8e9-c176-410f-92bc-e83449278943
                <td><i>required</i></td>
             </tr>
             <tr>
+               <td style="background-color: #DEEBFF;">reasonType</td>
+               <td>
+                  The type of reason that explains the 'actionName'.
+                  <br/><br/>
+                  The possible values are:
+                  <ul>
+                    <li><b>none</b><br/>The client application is required to continue to authenticate.</li>
+                    <li><b>authenticated</b><br/>The client application is already authenticated through basic access flows.</li>
+                    <li><b>temporary</b><br/>The client application is already authenticated through temporary access flows.</li>
+                    <li><b>degraded</b><br/>The client application is already authenticated through degraded access flows.</li>
+                    <li><b>authenticatedSSO</b><br/>The client application is already authenticated through single sign-on access flows.</li>
+                    <li><b>pfs_fallback</b><br/>The client application is required to fall back to basic authentication flow due to missing or invalid <a href="../../appendix/headers/rest-api-v2-appendix-headers-ap-partner-framework-status.md">AP-Partner-Framework-Status</a> header value.</li>
+                    <li><b>configuration_fallback</b><br/>The client application is required to fall back to basic authentication flow due to partner single sign-on configuration on Adobe Pass backend.</li>
+                  </ul>
+               <td><i>required</i></td>
+            </tr>
+            <tr>
                <td style="background-color: #DEEBFF;">missingParameters</td>
                <td>
                     The missing parameters that need to be provided in order to complete the basic authentication flow.
@@ -373,6 +390,7 @@ Content-Type: application/json;charset=UTF-8
 {
     "actionName": "partner_profile",
     "actionType": "direct",
+    "reasonType": "none",
     "url": "/api/v2/REF30/profiles/sso/Apple",
     "sessionId": "83c046be-ea4b-4581-b5f2-13e56e69dee9",
     "mvpd": "Cablevision",
@@ -429,15 +447,52 @@ Content-Type: application/json;charset=UTF-8
 
 >[!ENDTABS]
 
-### 3. Retrieve partner authentication request, but fall backs to basic authentication flow without missing parameters
+### 3. Retrieve partner authentication request, but fall backs to basic authentication flow due to missing or invalid AP-Partner-Framework-Status header value
 
->[!IMPORTANT]
-> 
-> Assumptions
-> 
-> <br/>
->
-> * Fall backs to the basic authentication flow due to partner single sign-on parameters or to the partner single sign-on configuration on Adobe Pass backend.
+>[!BEGINTABS]
+
+>[!TAB Request]
+
+```HTTPS
+POST /api/v2/REF30/sessions/sso/Apple HTTP/1.1
+ 
+    Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjNGZjM2U3ZS0xMmQ5LTQ5NWQtYjc0Mi02YWVhYzhhNDkwZTciLCJuYmYiOjE3MjQwODc4NjgsImlzcyI6ImF1dGguYWRvYmUuY29tIiwic2NvcGVzIjoiYXBpOmNsaWVudDp2MiIsImV4cCI6MTcyNDEwOTQ2OCwiaWF0IjoxNzI0MDg3ODY4fQ.DJ9GFl_yKAp2Qw-NVcBeRSnxIhqrwxhns5T5jU31N2tiHxCucKLSQ5guBygqkkJx6D0N_93f50meEEyfb7frbHhVHHwmRjHYjkfrWqHCpviwVjVZKKwl8Y3FEMb0bjKIB8p_E3txX9IbzeNGWRufZBRh2sxB5Q9B7XYINpVfh8s_sFvskrbDu5c01neCx5kEagEW5CtE0_EXTgEb5FSr_SfQG3UUu_iwlkOggOh_kOP_5GueElf9jn-bYBMnpObyN5s-FzuHDG5Rtac5rvcWqVW2reEqFTHqLI4rVC7UKQb6DSvPBPV4AgrutAvk30CYgDsOQILVyrjniincp7r9Ww
+    Content-Type: application/x-www-form-urlencoded
+    AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
+    X-Device-Info: ewoJInByaW1hcnlIYXJkd2FyZVR5cGUiOiAiU2V0VG9wQm94IiwKCSJtb2RlbCI6ICJUViA1dGggR2VuIiwKCSJtYW51ZmFjdHVyZXIiOiAiQXBwbGUiLAoJIm9zTmFtZSI6ICJ0dk9TIgoJIm9zVmVuZG9yIjogIkFwcGxlIiwKCSJvc1ZlcnNpb24iOiAiMTEuMCIKfQ==
+    AP-Partner-Framework-Status: ewogICAgImZyYW1ld29ya1Blcm1pc3Npb25JbmZvIjogewogICAgICAiYWNjZXNzU3RhdHVzIjogImRlbmllZCIKICAgIH0sCiAgICAiZnJhbWV3b3JrUHJvdmlkZXJJbmZvIiA6IHt9Cn0=
+    Accept: application/json
+    User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 11.0 like Mac OS X; en_US)
+
+Body:
+
+domainName=adobe.com&redirectUrl=https%3A%2F%2Fadobe.com
+```
+
+>[!TAB Response]
+
+```HTTPS
+HTTP/1.1 200 OK  
+
+Content-Type: application/json;charset=UTF-8
+
+{
+    "actionName": "authenticate",
+    "actionType": "interactive",
+    "reasonType": "pfs_fallback",
+    "url": "/api/v2/authenticate/REF30/OKTWW2W",
+    "code": "OKTWW2W",
+    "sessionId": "748f0b9e-a2ae-46d5-acd9-4b4e6d71add7",
+    "mvpd": "Cablevision",
+    "serviceProvider": "REF30",
+    "notBefore": "1733735289035",
+    "notAfter": "1733737089035"
+}
+```
+
+>[!ENDTABS]
+
+### 4. Retrieve partner authentication request, but fall backs to basic authentication flow due to partner single sign-on configuration on Adobe Pass backend
 
 >[!BEGINTABS]
 
@@ -469,7 +524,7 @@ Content-Type: application/json;charset=UTF-8
 {
     "actionName": "authenticate",
     "actionType": "interactive",
-    "reasonType": "none",
+    "reasonType": "configuration_fallback",
     "url": "/api/v2/authenticate/REF30/OKTWW2W",
     "code": "OKTWW2W",
     "sessionId": "748f0b9e-a2ae-46d5-acd9-4b4e6d71add7",
@@ -482,15 +537,7 @@ Content-Type: application/json;charset=UTF-8
 
 >[!ENDTABS]
 
-### 4. Retrieve partner authentication request, but fallback to basic authentication flow with missing parameters
-
->[!IMPORTANT]
->
-> Assumptions
->
-> <br/>
->
-> * Fall backs to the basic authentication flow due to partner single sign-on parameters or to the partner single sign-on configuration on Adobe Pass backend.
+### 5. Retrieve partner authentication request, but fall backs to basic authentication flow due to missing parameters
 
 >[!BEGINTABS]
 
