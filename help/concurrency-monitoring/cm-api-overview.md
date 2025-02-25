@@ -131,6 +131,10 @@ If there are no running sessions for a specific user when you do the call you'll
 
 Also note that in this case the **Expires** header is not present.
 
+In case that a session was created killing another one, using **X-Terminate** header, under metadata you'll find field **superseded**. It's value is an indicator of the session killed to make room for the current one.
+
+![](assets/get-all-running-streams-superseded.png)
+
 #### Breaking the policy {#breaking-policy-app-first}
  
 
@@ -169,7 +173,7 @@ For all the session lifecycle API calls, the the response body (when present) wi
 **Advice**
 The **EvaluationResult** will include an array of Advice objects under **associatedAdvice**. The advices are intended for the application to display a comprehensive error message for the user and (potentially) allow the user to take action.
 
-Currently, there are two types of advices (specified by their **type** attribute value): **rule-violation** and **remote-termination**. The first one provides details regarding a rule that was broken and the sessions that are conflicting with the current one (including the terminate attribute that can be used to terminate that session remotely). The second is just stating that the current session was deliberately terminated by a remote one, so the users will know who kicked them out when the limits were reached.
+Currently, there are two types of advices (specified by their **type** attribute value): **rule-violation** and **remote-termination**. The first one provides details regarding a rule that was broken and the sessions that are conflicting with the current one (including the terminate attribute that can be used to terminate that session remotely). The second is just stating that the current session was deliberately terminated by a remote one, so the users will know who kicked them out when the limits were reached. In case **superseded** is included in the metadata then the session in question was created using **X-Terminate** header.
 
 ![](assets/advices.png) 
 
