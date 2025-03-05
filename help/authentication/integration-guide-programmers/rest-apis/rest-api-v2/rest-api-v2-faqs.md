@@ -330,6 +330,10 @@ The purpose of the Logout Phase is to provide the client application the capabil
 
 #### 1. How to compute the value for the Authorization header? {#headers-faq1}
 
+>[!IMPORTANT]
+>
+> In case the client application is migrating from REST API V1 to REST API V2, the client application can continue to use the same method to obtain the `Bearer` access token value as before.
+
 The [Authorization](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-authorization.md) request header contains the `Bearer` access token required by the client application to access Adobe Pass protected APIs.
 
 The Authorization header value must be obtained from Adobe Pass Authentication during the Registration Phase.
@@ -341,23 +345,25 @@ For more details, refer to the following documents:
 * [Retrieve access token API](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md)
 * [Dynamic Client Registration Flow](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/flows/dynamic-client-registration-flow.md)
 
-In case the client application is migrating from REST API V1 to REST API V2, the client application can continue to use the same method to obtain the `Bearer` access token as before.
-
 #### 2. How to compute the value for the AP-Device-Identifier header? {#headers-faq2}
+
+>[!IMPORTANT]
+>
+> In case the client application is migrating from REST API V1 to REST API V2, the client application can continue to use the same method to compute the device identifier value as before.
 
 The [AP-Device-Identifier](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-device-identifier.md) request header contains the streaming device identifier as it was created by the client application.
 
-The [AP-Device-Identifier](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-device-identifier.md) header documentation provides some examples of how to compute the value for different platforms, but the client application can choose to use a different method based on its own business logic and requirements.
-
-In case the client application is migrating from REST API V1 to REST API V2, the client application can continue to use the same method to compute the device identifier as before.
+The [AP-Device-Identifier](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-device-identifier.md) header documentation provides examples for major platforms of how to compute the value, but the client application can choose to use a different method based on its own business logic and requirements.
 
 #### 3. How to compute the value for the X-Device-Info header? {#headers-faq3}
 
+>[!IMPORTANT]
+>
+> In case the client application is migrating from REST API V1 to REST API V2, the client application can continue to use the same method to compute the device information value as before.
+
 The [X-Device-Info](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-x-device-info.md) request header contains the client information (device, connection and application) related to the actual streaming device.
 
-The [X-Device-Info](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-x-device-info.md) header documentation provides some examples of how to compute the value for different platforms, but the client application can choose to use a different method based on its own business logic and requirements.
-
-In case the client application is migrating from REST API V1 to REST API V2, the client application can continue to use the same method to compute the device information as before.
+The [X-Device-Info](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-x-device-info.md) header documentation provides examples for major platforms of how to compute the value, but the client application can choose to use a different method based on its own business logic and requirements.
 
 +++
 

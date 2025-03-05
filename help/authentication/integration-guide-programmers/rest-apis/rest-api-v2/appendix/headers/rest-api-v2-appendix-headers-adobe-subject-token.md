@@ -19,7 +19,7 @@ For more details about the single sign-on (SSO) enabled flows leveraging the Pla
 
 ## Syntax {#syntax}
 
-<table>
+<table style="table-layout:auto">
    <tr>
       <td style="background-color: #DEEBFF;" colspan="2"><b>Adobe-Subject-Token</b>: &lt;unique_platform_identifier&gt;</td>
    </tr>

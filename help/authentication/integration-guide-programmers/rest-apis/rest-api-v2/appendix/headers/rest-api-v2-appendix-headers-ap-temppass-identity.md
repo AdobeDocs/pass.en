@@ -15,7 +15,7 @@ The <b>AP-TempPass-Identity</b> request header contains the user identity inform
 
 ## Syntax {#syntax}
 
-<table>
+<table style="table-layout:auto">
    <tr>
       <td style="background-color: #DEEBFF;" colspan="2"><b>AP-TempPass-Identity</b>: &lt;user_identity_information&gt;</td>
    </tr>

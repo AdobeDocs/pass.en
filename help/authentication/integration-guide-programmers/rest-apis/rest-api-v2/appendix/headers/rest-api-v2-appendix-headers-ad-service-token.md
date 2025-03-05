@@ -19,7 +19,7 @@ For more details about the single sign-on (SSO) enabled flows leveraging the Ser
 
 ## Syntax {#syntax}
 
-<table>
+<table style="table-layout:auto">
    <tr>
       <td style="background-color: #DEEBFF;" colspan="2"><b>AD-Service-Token</b>: &lt;unique_user_identifier&gt;</td>
    </tr>
@@ -41,7 +41,7 @@ The JSON Web Signature (`JWS`) which is a signed JSON Web Token (`JWT`) containi
 
 The `JWT` has the following attributes:
 
-<table>
+<table style="table-layout:auto">
    <tr>
       <th style="background-color: #EFF2F7; width: 15%;">Attribute</th>
       <th style="background-color: #EFF2F7;">Description</th>

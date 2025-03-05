@@ -15,7 +15,7 @@ The <b>AP-Partner-Framework-Status</b> request header contains status informatio
 
 ## Syntax {#syntax}
 
-<table>
+<table style="table-layout:auto">
    <tr>
       <td style="background-color: #DEEBFF;" colspan="2"><b>AP-Partner-Framework-Status</b>: &lt;partner_framework_status_information&gt;</td>
    </tr>
@@ -35,7 +35,7 @@ The <b>AP-Partner-Framework-Status</b> request header contains status informatio
 
 The `Base64-encoded` value of the JSON element containing the following attributes:
 
-<table>
+<table style="table-layout:auto">
    <tr>
       <th style="background-color: #EFF2F7; width: 15%;">Attribute</th>
       <th style="background-color: #EFF2F7;"></th>
@@ -62,10 +62,10 @@ The `Base64-encoded` value of the JSON element containing the following attribut
                   This is an enumeration with the following possible values:
                   <br/>
                   <ul>
-                     <li>granted - The user allowed the application to access subscription information.</li>
-                     <li>denied - The user denied the application to access subscription information.</li>
-                     <li>pending - The user did not choose yet to allow the application to access subscription information.</li>
-                     <li>notDetermined - The application is not allowed to access subscription information.</li>
+                     <li><b>granted</b><br/>The user allowed the application to access subscription information.</li>
+                     <li><b>denied</b><br/>The user denied the application to access subscription information.</li>
+                     <li><b>pending</b><br/>The user did not choose yet to allow the application to access subscription information.</li>
+                     <li><b>notDetermined</b><br/>The application is not allowed to access subscription information.</li>
                   </ul>
                </td>
             </tr>

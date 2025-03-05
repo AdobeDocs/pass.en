@@ -15,7 +15,7 @@ The <b>X-Device-Info</b> request header contains the client information (device,
 
 ## Syntax {#syntax}
 
-<table>
+<table style="table-layout:auto">
    <tr>
       <td style="background-color: #DEEBFF;" colspan="2"><b>X-Device-Info</b>: &lt;device_information&gt;</td>
    </tr>
@@ -35,7 +35,7 @@ The <b>X-Device-Info</b> request header contains the client information (device,
 
 The `Base64-encoded` value of the JSON element containing at least the attributes marked as required by the following table. 
 
-<table>
+<table style="table-layout:auto">
     <tr>
         <th style="background-color: #EFF2F7; width: 15%;">Presence</th>
         <th style="background-color: #EFF2F7; width: 15%;">Key</th>
@@ -716,3 +716,7 @@ The application information can be constructed the following way:
 | Key           | Source    | Value (example) |
 |---------------|-----------|-----------------|
 | applicationId | hardcoded | REF30           |
+
+### Others {#others}
+
+For device platforms not covered in the documentation, the client information (device, connection and application) should be linked to any available hardware and operating system (OS) attributes, typically specified in the device’s hardware and OS manuals.

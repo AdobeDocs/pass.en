@@ -21,6 +21,11 @@ The applications are responsible for including this unique platform identifier p
 
 For more details about `Adobe-Subject-Token` header, refer to the [Adobe-Subject-Token](../../appendix/headers/rest-api-v2-appendix-headers-adobe-subject-token.md) documentation.
 
+>[!MORELIKETHIS]
+> 
+> * [Amazon SSO Cookbook](/help/authentication/integration-guide-programmers/features-standard/sso-access/platform-sso/amazon-single-sign-on/amazon-sso-cookbook-rest-api-v2.md)
+> * [Roku SSO Cookbook](/help/authentication/integration-guide-programmers/features-standard/sso-access/platform-sso/roku-single-sign-on/roku-sso-overview.md)
+
 ## Perform authentication through single sign-on using platform identity {#perform-authentication-through-single-sign-on-using-platform-identity}
 
 ### Prerequisites {#prerequisites-perform-authentication-through-single-sign-on-using-platform-identity}

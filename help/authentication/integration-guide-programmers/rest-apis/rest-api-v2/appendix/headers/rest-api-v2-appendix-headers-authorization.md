@@ -18,7 +18,7 @@ For more details about the mechanism to access Adobe Pass protected APIs, refer 
 
 ## Syntax {#syntax}
 
-<table>
+<table style="table-layout:auto">
    <tr>
       <td style="background-color: #DEEBFF;" colspan="2"><b>Authorization</b>: Bearer &lt;access_token&gt;</td>
    </tr>
