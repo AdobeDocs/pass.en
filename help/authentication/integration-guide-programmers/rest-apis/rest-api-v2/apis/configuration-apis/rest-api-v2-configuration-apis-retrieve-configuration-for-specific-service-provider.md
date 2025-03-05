@@ -13,6 +13,10 @@ exl-id: ad7e4c6d-ed96-4ae7-82a9-3c24e5fc9302
 >
 > REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/integration-guide-programmers/throttling-mechanism.md) documentation.
 
+>[!MORELIKETHIS]
+>
+> Make sure to also visit the [REST API V2 FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#configuration-phase-faqs-general).
+
 ## Request {#request}
 
 <table style="table-layout:auto">
@@ -204,9 +208,9 @@ exl-id: ad7e4c6d-ed96-4ae7-82a9-3c24e5fc9302
                 <td>
                     JSON object having the following attributes:
                     <ul>
-                        <li><b>id</b></li>
-                        <li><b>name</b></li>
-                        <li><b>domains</b></li>
+                        <li><b>id</b><br/>The internal unique identifier associated with the Service Provider during onboarding process.</li>
+                        <li><b>name</b><br/>The commercial (brand) name associated with the Service Provider during onboarding process.</li>
+                        <li><b>domains</b><br/>The list of domain names listed to Adobe Pass Authentication to represent the Service Provider.</li>
                     </ul>
                 </td>
                 <td><i>required</i></td>
@@ -216,16 +220,16 @@ exl-id: ad7e4c6d-ed96-4ae7-82a9-3c24e5fc9302
                 <td>
                     JSON object having the following attributes:
                     <ul>
-                        <li><b>id</b></li>
-                        <li><b>displayName</b></li>
-                        <li><b>logoUrl</b></li>
-                        <li><b>isTempPass</b></li>
-                        <li><b>isProxy</b></li>
-                        <li><b>boardingStatus</b></li>
-                        <li><b>platformMappingId</b></li>
-                        <li><b>enablePlatformServices</b></li>
-                        <li><b>displayInPlatformPicker</b></li>
-                        <li><b>enforcePlatformPermissions</b></li>
+                        <li><b>id</b><br/>The internal unique identifier associated with the Identity Provider during onboarding process.</li>
+                        <li><b>displayName</b><br/>The commercial (brand) name associated with the Identity Provider during onboarding process.</li>
+                        <li><b>logoUrl</b><br>The URL from where to download the logo associated with the Identity Provider.</li>
+                        <li><b>isTempPass</b><br/>The flag that specifies if the MVPD is designed to provide <a href="../../../../features-premium/temporary-access/temp-pass-feature.md">TempPass</a> feature functionality.</li>
+                        <li><b>isProxy</b><br/>The flag that specifies if the MVPD is a proxied MVPD.</li>
+                        <li><b>boardingStatus</b><br/>The status that specifies if the Identity Provider is onboarded by the streaming device platform for single sign-on flows.</li>
+                        <li><b>platformMappingId</b><br/>The internal unique identifier associated with the Identity Provider by the streaming device platform for single sign-on flows.</li>
+                        <li><b>enablePlatformServices</b><br/>The flag that specifies if the Identity Provider configuration is enabled for the streaming device platform for single sign-on flows.</li>
+                        <li><b>displayInPlatformPicker</b><br/>The flag that specifies if the Identity Provider can be displayed into the streaming device platform picker for single sign-on flows.</li>
+                        <li><b>enforcePlatformPermissions</b><br/>The flag that specifies if the streaming device must enforce the user permissions provided by the platform for single sign-on flows.</li>
                     </ul>
                 </td>
                 <td><i>required</i></td>
