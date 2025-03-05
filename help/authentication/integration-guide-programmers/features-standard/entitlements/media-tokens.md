@@ -192,10 +192,14 @@ The media token can be retrieved using the following API:
 
 Refer to the **Response** and **Samples** sections of the above API to understand the structure of authorization decisions and media tokens.
 
+>[!IMPORTANT]
+>
+> The client application does not need to query a separate endpoint to retrieve the [media tokens](/help/authentication/integration-guide-programmers/features-standard/entitlements/media-tokens.md), as they are already included in the authorization decisions that permit user access.
+
 For more details about how and when to integrate the above API, refer to the following document:
 
 * [Basic authorization flow performed within primary application](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-authorization-primary-application-flow.md)
 
->[!IMPORTANT]
+>[!MORELIKETHIS]
 >
-> The client application must pass the `serializedToken` value from the returned `token` to the [Media Token Verifier](#media-token-verifier) for validation.
+> [Authorization Phase FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authorization-phase-faqs-general)

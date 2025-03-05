@@ -345,11 +345,29 @@ For more details, refer to the following documents:
 * [Retrieve preauthorization decisions API](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-preauthorization-decisions-using-specific-mvpd.md)
 * [Basic preauthorization flow performed within primary application](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-preauthorization-primary-application-flow.md)
 
-#### 4. Why is the preauthorization decision missing a media token? {#preauthorization-phase-faq4}
+#### 4. Should the client application cache the preauthorization decisions in a persistent storage? {#preauthorization-phase-faq4}
+
+The client application is not required to store preauthorization decisions in persistent storage. However, it is recommended to cache permit decisions in memory to improve the user experience. This helps avoid unnecessary calls to the Decisions Preauthorize endpoint for resources that have already been preauthorized, reducing latency and improving performance.
+
+#### 5. How can the client application determine why a preauthorization decision was denied? {#preauthorization-phase-faq5}
+
+The client application can determine the reason for a denied preauthorization decision by inspecting the [error code and message](/help/authentication/integration-guide-programmers/features-standard/error-reporting/enhanced-error-codes.md) included in the response from the Decisions Preauthorize endpoint. These details provide insight into the specific reason the preauthorization request was denied, helping to inform the user experience or trigger any necessary handling in the application.
+
+Ensure that any retry mechanism implemented for retrieving preauthorization decisions does not result in an endless loop if the preauthorization decision is denied.
+
+Consider limiting retries to a reasonable number and handling denials gracefully by surfacing clear feedback to the user.
+
+#### 6. Why is the preauthorization decision missing a media token? {#preauthorization-phase-faq6}
 
 The preauthorization decision is missing a media token because the Preauthorization Phase must not be used to play resources, as that is the purpose of the Authorization Phase.
 
-#### 5. What is a resource and what formats are supported? {#preauthorization-phase-faq5}
+#### 7. Can the Authorization Phase be skipped if a preauthorization decision already exists? {#preauthorization-phase-faq7}
+
+No.
+
+The Authorization Phase cannot be skipped even if a preauthorization decision is available. Preauthorization decisions are informational only and do not grant actual playback rights. The Preauthorization Phase is intended to provide early guidance, but the Authorization Phase is still required before playing any content.
+
+#### 8. What is a resource and what formats are supported? {#preauthorization-phase-faq8}
 
 The resource is a term defined in the [Glossary](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md#resource) documentation.
 
@@ -362,7 +380,7 @@ The resource unique identifier can have two formats:
 
 For more details, refer to the [Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/decisions.md#protected-resources) documentation.
 
-#### 6. For how many resources can the client application obtain a preauthorization decision at a time? {#preauthorization-phase-faq6}
+#### 9. For how many resources can the client application obtain a preauthorization decision at a time? {#preauthorization-phase-faq9}
 
 The client application can obtain a preauthorization decision for a limited number of resources in a single API request, usually up to 5, due to conditions imposed by MVPDs.
 
@@ -403,7 +421,19 @@ This limited timeframe known as authorization (authZ) [TTL](/help/authentication
 
 For more details, refer to the [TVE Dashboard Integrations User Guide](/help/authentication/user-guide-tve-dashboard/tve-dashboard-integrations.md#most-used-flows) documentation.
 
-#### 4. What's a media token and how long is it valid? {#authorization-phase-faq4}
+#### 4. Should the client application cache the authorization decisions in a persistent storage? {#authorization-phase-faq4}
+
+The client application is not required to store authorization decisions in persistent storage.
+
+#### 5. How can the client application determine why an authorization decision was denied? {#authorization-phase-faq5}
+
+The client application can determine the reason for a denied authorization decision by inspecting the [error code and message](/help/authentication/integration-guide-programmers/features-standard/error-reporting/enhanced-error-codes.md) included in the response from the Decisions Authorize endpoint. These details provide insight into the specific reason the authorization request was denied, helping to inform the user experience or trigger any necessary handling in the application.
+
+Ensure that any retry mechanism implemented for retrieving authorization decisions does not result in an endless loop if the authorization decision is denied.
+
+Consider limiting retries to a reasonable number and handling denials gracefully by surfacing clear feedback to the user.
+
+#### 6. What's a media token and how long is it valid? {#authorization-phase-faq6}
 
 The media token is a term defined in the [Glossary](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md#media-token) documentation.
 
@@ -411,7 +441,7 @@ The media token consists of a signed string sent in clear text that can be retri
 
 For more information, refer to the [Media Token Verifier](/help/authentication/integration-guide-programmers/features-standard/entitlements/media-tokens.md#media-token-verifier) documentation.
 
-The media token is valid for a limited and short timeframe specified at the moment of issue, indicating the amount of time it must be used by the client application before requiring to query the Decisions Authorize endpoint again.
+The media token is valid for a limited and short timeframe specified at the moment of issue, indicating the time limit before it must be verified and used by the client application.
 
 The client application can use the media token to play a resource stream in case the TV Provider (authoritative) decision would allow the user to access it.
 
@@ -420,7 +450,41 @@ For more details, refer to the following documents:
 * [Retrieve authorization decisions API](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md)
 * [Basic authorization flow performed within primary application](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-authorization-primary-application-flow.md)
 
-#### 5. What is a resource and what formats are supported? {#authorization-phase-faq5}
+#### 7. Should the client application validate the media token before playing the resource stream? {#authorization-phase-faq7}
+
+Yes.
+
+The client application must validate the media token before starting playback of the resource stream. This validation should be performed using the [Media Token Verifier](/help/authentication/integration-guide-programmers/features-standard/entitlements/media-tokens.md#media-token-verifier). By verifying the `serializedToken` from the returned `token`, the client application helps prevent unauthorized access, such as stream ripping, and ensures that only properly authorized users can play the content.
+
+#### 8. Should the client application refresh an expired media token during playback? {#authorization-phase-faq8}
+
+No.
+
+The client application is not required to refresh an expired media token while the stream is actively playing. If the media token expires during playback, the stream should be allowed to continue uninterrupted. However, the client must request a new authorization decision — and obtain a new media token — the next time the user attempts to play the same resource.
+
+#### 9. What is the purpose of each timestamp attribute in the authorization decision? {#authorization-phase-faq9}
+
+The authorization decision includes several timestamp attributes that provide essential context about the validity period of the authorization itself and the associated media token. These timestamps serve different purposes, depending on whether they relate to the authorization decision or the media token.
+
+**Decision-Level Timestamps**
+
+These timestamps describe the validity period of the overall authorization decision:
+
+| Attribute   | Description                                          | Notes                                                                                                                                                                                                                                                                                                        |
+|-------------|------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `notBefore` | The time when the authorization decision was issued. | This marks the start of the authorization validity window.                                                                                                                                                                                                                                                   |
+| `notAfter`  | The time when the authorization decision expires.    | The [authorization Time-to-Live (TTL)](/help/authentication/integration-guide-programmers/features-standard/entitlements/decisions.md#authorization-ttl-management) determines how long the authorization remains valid before requiring re-authorization. This TTL is negotiated with MVPD representatives. |
+
+**Token-Level Timestamps**
+
+These timestamps describe the validity period of the media token that is tied to the authorization decision:
+
+| Attribute   | Description                               | Notes                                                                                                                                                                                                          |
+|-------------|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `notBefore` | The time when the media token was issued. | This marks when the token becomes valid for playback.                                                                                                                                                          |
+| `notAfter`  | The time when the media token expires.    | Media tokens have a deliberately short lifespan (typically 7 minutes) to minimize misuse risks and account for potential clock differences between the token-generating server and the token-verifying server. |
+
+#### 10. What is a resource and what formats are supported? {#authorization-phase-faq10}
 
 The resource is a term defined in the [Glossary](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md#resource) documentation.
 
@@ -433,7 +497,7 @@ The resource unique identifier can have two formats:
 
 For more details, refer to the [Protected Resources](/help/authentication/integration-guide-programmers/features-standard/entitlements/decisions.md#protected-resources) documentation.
 
-#### 6. For how many resources can the client application obtain an authorization decision at a time? {#authorization-phase-faq6}
+#### 11. For how many resources can the client application obtain an authorization decision at a time? {#authorization-phase-faq11}
 
 The client application can obtain an authorization decision for a limited number of resources in a single API request, usually up to 1, due to conditions imposed by MVPDs.
 

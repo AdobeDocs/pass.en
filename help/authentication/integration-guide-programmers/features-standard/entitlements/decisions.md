@@ -64,6 +64,17 @@ It is important to note that authorization decisions can only be obtained for a 
 >
 > The maximum number of resources can be increased only after reaching an agreement with the MVPDs and Adobe Pass Authentication representatives.
 
+## Authorization Time-to-Live (TTL) Management {#authorization-ttl-management}
+
+Authorization Time-to-Live (TTL) defines how long a resource remains authorized before needing to re-authorize. This timeframe is limited and must be agreed upon with MVPD representatives. TTL values can vary based on:
+
+* Platform category (e.g., desktop, mobile, TV connected devices)
+* Specific platform (e.g., iOS, Android, tvOS, Roku, FireTV)
+
+The authorization (authZ) TTL can be viewed and changed through the Adobe Pass [TVE Dashboard](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md#tve-dashboard) by one of your organization administrators or by an Adobe Pass Authentication representative acting on your behalf.
+
+For more details, refer to the [TVE Dashboard Integrations User Guide](/help/authentication/user-guide-tve-dashboard/tve-dashboard-integrations.md#most-used-flows) documentation.
+
 ## Protected Resources {#protected-resources}
 
 Protected resources refer to streamable content, identified by unique values defined through agreements between MVPDs and participating Programmers.
@@ -128,3 +139,8 @@ For more details about how and when to integrate the above APIs, refer to the fo
 
 * [Basic preauthorization flow performed within primary application](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-preauthorization-primary-application-flow.md)
 * [Basic authorization flow performed within primary application](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-authorization-primary-application-flow.md)
+
+>[!MORELIKETHIS]
+>
+> [Preauthorization Phase FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#preauthorization-phase-faqs-general)
+> [Authorization Phase FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authorization-phase-faqs-general)
