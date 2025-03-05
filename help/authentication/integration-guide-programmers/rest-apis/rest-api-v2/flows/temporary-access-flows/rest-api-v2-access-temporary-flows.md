@@ -12,7 +12,11 @@ exl-id: 387fcdb0-3a42-4893-ba83-e809426f92be
 >[!IMPORTANT]
 >
 > REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/integration-guide-programmers/throttling-mechanism.md) documentation.
- 
+
+>[!MORELIKETHIS]
+>
+> Make sure to also visit the [REST API V2 FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authentication-phase-faqs-general).
+
 TempPass allows Programmers to provide temporary access to their protected content without asking users to authenticate with a valid MVPD account.
 
 For more details about TempPass feature, refer to the [TempPass](../../../../features-premium/temporary-access/temp-pass-feature.md) documentation.

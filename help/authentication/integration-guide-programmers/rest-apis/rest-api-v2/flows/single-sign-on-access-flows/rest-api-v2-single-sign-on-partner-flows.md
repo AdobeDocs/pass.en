@@ -13,6 +13,10 @@ exl-id: 5735d67f-a311-4d03-ad48-93c0fcbcace5
 >
 > REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/integration-guide-programmers/throttling-mechanism.md) documentation.
 
+>[!MORELIKETHIS]
+>
+> Make sure to also visit the [REST API V2 FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authentication-phase-faqs-general).
+
 The Partner method enables multiple applications to use a partner framework status payload to achieve single sign-on (SSO) at the device level when using Adobe Pass services.
 
 The applications are responsible for retrieving the partner framework status payload using partner specific frameworks or libraries outside of Adobe Pass systems.

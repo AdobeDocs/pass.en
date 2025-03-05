@@ -13,6 +13,10 @@ exl-id: 72922aa8-95ca-48dc-8523-e335802fc366
 >
 > REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/integration-guide-programmers/throttling-mechanism.md) documentation.
 
+>[!MORELIKETHIS]
+>
+> Make sure to also visit the [REST API V2 FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authentication-phase-faqs-general).
+
 ## Request {#request}
 
 <table style="table-layout:auto">

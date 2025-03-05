@@ -13,6 +13,10 @@ exl-id: 9276f5d9-8b1a-4282-8458-0c1e1e06bcf5
 >
 > REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/integration-guide-programmers/throttling-mechanism.md) documentation.
 
+>[!MORELIKETHIS]
+>
+> Make sure to also visit the [REST API V2 FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authentication-phase-faqs-general).
+
 Degradation provides the temporary bypassing of specific MVPD authentication and authorization endpoints. Usually, the Programmer initiates this action, but regardless of who triggers a degradation event, the action depends on prior arrangements made with the affected MVPDs.
 
 For more details about Degradation feature, refer to the [Degradation](../../../../features-premium/degraded-access/degradation-feature.md) documentation.

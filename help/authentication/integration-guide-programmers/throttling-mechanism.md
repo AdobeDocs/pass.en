@@ -36,7 +36,7 @@ Server-to-server implementations must forward their client's IP addresses using 
 
 You can find more details on how to pass the X-Forwarded-For header [here](legacy/rest-api-v1/cookbooks/rest-api-cookbook-servertoserver.md).
 
-### Actual limits and endpoints
+### Actual limits and endpoints {#throttling-mechanism-limits}
 
 Currently, the default limit allows a maximum of 1 request per second, with an initial burst of 10 requests (one-time allowance on the first interaction of the identified client, which should allow initialization to finish successfully). This should not affect any regular business case across all our customers.
 
@@ -91,7 +91,7 @@ For each specific implementation detail, please refer to the specific SDK docume
 - [Android SDK API Reference](legacy/sdks/android-sdk/android-sdk-api-reference.md)
 - [iOS/tvOS API Reference](legacy/sdks/ios-tvos-sdk/iostvos-sdk-api-reference.md)
 
-### API response changes and response
+### API response changes and response {#throttling-mechanism-response}
 
 When we identify that the limit is breached, we will mark this request with a specific response status (HTTP 429 Too Many Requests), instructing that you have consumed all the tokens assigned to the user device (IP address) for the time interval.
 

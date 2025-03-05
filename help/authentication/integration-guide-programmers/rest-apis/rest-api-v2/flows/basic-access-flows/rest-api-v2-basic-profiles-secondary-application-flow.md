@@ -13,6 +13,10 @@ exl-id: 1fcefcfa-7534-4b85-b3b5-df513685d66b
 >
 > REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/integration-guide-programmers/throttling-mechanism.md) documentation.
 
+>[!MORELIKETHIS]
+>
+> Make sure to also visit the [REST API V2 FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authentication-phase-faqs-general).
+
 The **Profiles flow** within Adobe Pass Authentication entitlement allows the secondary application to access information on active user logins.
 
 Basic profiles flow allows you to query for the following scenarios:

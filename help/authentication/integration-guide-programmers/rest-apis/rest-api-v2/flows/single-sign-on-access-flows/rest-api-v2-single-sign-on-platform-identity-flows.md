@@ -13,6 +13,10 @@ exl-id: 5200e851-84e8-4cb4-b068-63b91a2a8945
 >
 > REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/integration-guide-programmers/throttling-mechanism.md) documentation.
 
+>[!MORELIKETHIS]
+>
+> Make sure to also visit the [REST API V2 FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authentication-phase-faqs-general).
+
 The Platform Identity method enables multiple applications to use a unique platform identifier to achieve single sign-on (SSO) at the device or platform level when using Adobe Pass services.
 
 The applications are responsible for retrieving the unique platform identifier payload using device specific identity services or libraries outside of Adobe Pass systems. 

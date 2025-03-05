@@ -13,6 +13,10 @@ exl-id: d7092ca7-ea7b-4e92-b45f-e373a6d673d6
 >
 > REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/integration-guide-programmers/throttling-mechanism.md) documentation.
 
+>[!MORELIKETHIS]
+>
+> Make sure to also visit the [REST API V2 FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authentication-phase-faqs-general).
+
 ## Initiate single logout for specific mvpd {#initiate-single-logout-for-specific-mvpd}
 
 ### Prerequisites {#prerequisites-initiate-single-logout-for-specific-mvpd}

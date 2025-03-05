@@ -13,6 +13,10 @@ exl-id: 8122108d-e9da-43c5-9abb-ab177cb21eb6
 >
 > REST API V2 implementation is bounded by the [Throttling mechanism](/help/authentication/integration-guide-programmers/throttling-mechanism.md) documentation.
 
+>[!MORELIKETHIS]
+>
+> Make sure to also visit the [REST API V2 FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authentication-phase-faqs-general).
+
 The **Authentication flow** within Adobe Pass Authentication entitlement allows the streaming application to verify that a user has a valid MVPD account. This process requires the user to have an active MVPD account and enter valid login credentials on the MVPD login page.
 
 Authentication flow is required in the following cases:
