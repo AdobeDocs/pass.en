@@ -278,7 +278,7 @@ Perform the given steps to implement the Apple single sign-on using partner flow
    * [Perform authentication within secondary application with preselected mvpd](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-authentication-secondary-application-flow.md)
    * [Perform authentication within secondary application without preselected mvpd](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-authentication-secondary-application-flow.md)
 
-1. **Proceed with retrieve profile using partner authentication response flow:** The Sessions Partner endpoint response contains the following data:
+1. **Proceed with create and retrieve profile using partner authentication response flow:** The Sessions Partner endpoint response contains the following data:
    * The `actionName` attribute is set to "partner_profile".
    * The `actionType` attribute is set to "direct".
    * The `authenticationRequest - type` attribute includes the security protocol used by the partner framework for MVPD login (currently set to SAML only).
@@ -310,11 +310,11 @@ Perform the given steps to implement the Apple single sign-on using partner flow
    * The user provider profile's expiration date (if available) is valid.
    * The partner authentication response (SAML response) is present and valid.
 
-1. **Retrieve profile using partner authentication response:** The streaming application gathers all the necessary data to create and retrieve a profile by calling the Profiles Partner endpoint.
+1. **Create and retrieve profile using partner authentication response:** The streaming application gathers all the necessary data to create and retrieve a profile by calling the Profiles Partner endpoint.
 
    >[!IMPORTANT]
    >
-   > Refer to the [Retrieve profile using partner authentication response](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md#Request) API documentation for details on:
+   > Refer to the [Create and retrieve profile using partner authentication response](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md#Request) API documentation for details on:
    >
    > * All the _required_ parameters, like `serviceProvider`, `partner`, and `SAMLResponse`
    > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`, `Content-Type`, `X-Device-Info`, and `AP-Partner-Framework-Status`
@@ -332,7 +332,7 @@ Perform the given steps to implement the Apple single sign-on using partner flow
 
    >[!IMPORTANT]
    >
-   > Refer to the [Retrieve profile using partner authentication response](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md#Response) API documentation for details on the information provided in a profile response.
+   > Refer to the [Create and retrieve profile using partner authentication response](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md#Response) API documentation for details on the information provided in a profile response.
    >
    > <br/>
    >
@@ -365,6 +365,10 @@ Perform the given steps to implement the Apple single sign-on using partner flow
 1. **Retrieve partner framework status:** The streaming application calls the [Video Subscriber Account Framework](https://developer.apple.com/documentation/videosubscriberaccount) developed by Apple, to obtain user permission and provider information.
 
    >[!IMPORTANT]
+   > 
+   > The streaming application can skip this step if the selected user profile type is not "appleSSO."
+
+   >[!IMPORTANT]
    >
    > Refer to the [Video Subscriber Account Framework](https://developer.apple.com/documentation/videosubscriberaccount) documentation for details on:
    >
@@ -380,13 +384,17 @@ Perform the given steps to implement the Apple single sign-on using partner flow
    > The streaming application must ensure it specifies a Boolean value equal to `false` for the [`isInterruptionAllowed`](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadatarequest/1771708-isinterruptionallowed) property in the `VSAccountMetadataRequest` object, to indicate that the user cannot be interrupted at this phase.
 
    >[!TIP]
-   > 
-   > Suggestion: The streaming application can use a cached value for the partner framework status information, that we recommend refreshing when the application transitions from background to foreground state. 
+   >
+   > Suggestion: The streaming application can use instead a cached value for the partner framework status information, that we recommend refreshing when the application transitions from background to foreground state. In that case, the streaming application must ensure it caches and uses only valid values for the partner framework status as described by the "Return partner framework status information" step.
 
 1. **Return partner framework status information:** The streaming application validates the response data to ensure that basic conditions are met:
    * The user permission access status is granted.
    * The user provider mapping identifier is present and valid.
-   * The user provider profile's expiration date (if available) is valid.
+   * The user provider profile's expiration date is valid.
+
+   >[!IMPORTANT]
+   >
+   > The streaming application can skip this step if the selected user profile type is not "appleSSO."
 
 1. **Retrieve preauthorization decisions:** The streaming application gathers all the necessary data to obtain preauthorization decisions for a list of resources by calling the Decisions Preauthorize endpoint.
 
@@ -400,7 +408,7 @@ Perform the given steps to implement the Apple single sign-on using partner flow
    >
    > <br/>
    >
-   > The streaming application must ensure it includes a valid value for the partner framework status before making a request further, when the chosen profile is an "appleSSO" type profile.
+   > The streaming application must ensure it includes a valid value for the partner framework status before making a request further, when the chosen profile is an "appleSSO" type profile. However, this step can be skipped if the selected user profile type is not "appleSSO".
    >
    > <br/>
    >
@@ -429,6 +437,10 @@ Perform the given steps to implement the Apple single sign-on using partner flow
 
    >[!IMPORTANT]
    >
+   > The streaming application can skip this step if the selected user profile type is not "appleSSO."
+
+   >[!IMPORTANT]
+   >
    > Refer to the [Video Subscriber Account Framework](https://developer.apple.com/documentation/videosubscriberaccount) documentation for details on:
    >
    > <br/>
@@ -444,12 +456,16 @@ Perform the given steps to implement the Apple single sign-on using partner flow
 
    >[!TIP]
    >
-   > Suggestion: The streaming application can use a cached value for the partner framework status information, that we recommend refreshing when the application transitions from background to foreground state.
+   > Suggestion: The streaming application can use instead a cached value for the partner framework status information, that we recommend refreshing when the application transitions from background to foreground state. In that case, the streaming application must ensure it caches and uses only valid values for the partner framework status as described by the "Return partner framework status information" step.
 
 1. **Return partner framework status information:** The streaming application validates the response data to ensure that basic conditions are met:
    * The user permission access status is granted.
    * The user provider mapping identifier is present and valid.
-   * The user provider profile's expiration date (if available) is valid.
+   * The user provider profile's expiration date is valid.
+
+   >[!IMPORTANT]
+   >
+   > The streaming application can skip this step if the selected user profile type is not "appleSSO."
 
 1. **Retrieve authorization decision:** The streaming application gathers all the necessary data to obtain an authorization decision for a specific resource by calling the Decisions Authorize endpoint.
 
@@ -463,7 +479,7 @@ Perform the given steps to implement the Apple single sign-on using partner flow
    >
    > <br/>
    >
-   > The streaming application must ensure it includes a valid value for the partner framework status before making a request further, when the chosen profile is an "appleSSO" type profile.
+   > The streaming application must ensure it includes a valid value for the partner framework status before making a request further, when the chosen profile is an "appleSSO" type profile. However, this step can be skipped if the selected user profile type is not "appleSSO".
    >
    > <br/>
    >
@@ -509,6 +525,10 @@ Perform the given steps to implement the Apple single sign-on using partner flow
 
    >[!IMPORTANT]
    >
+   > The streaming application must prompt the user to complete the logout process at the partner level, as specified by the `actionName` and `actionType` attributes, when the removed user profile type is "appleSSO".
+
+   >[!IMPORTANT]
+   >
    > Refer to the [Initiate logout for specific mvpd](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/logout-apis/rest-api-v2-logout-apis-initiate-logout-for-specific-mvpd.md#response) API documentation for details on the information provided in a logout response.
    >
    > <br/>
@@ -521,9 +541,5 @@ Perform the given steps to implement the Apple single sign-on using partner flow
    > <br/>
    >
    > If validation fails, an error response will be generated, providing additional information that adheres to the [Enhanced Error Codes](/help/authentication/integration-guide-programmers/features-standard/error-reporting/enhanced-error-codes.md) documentation.
-
-   >[!IMPORTANT]
-   > 
-   > The streaming application must ensure it indicates the user to continue to log out from partner level further.
 
 +++

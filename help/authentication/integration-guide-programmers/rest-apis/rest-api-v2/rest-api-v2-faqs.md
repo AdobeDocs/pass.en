@@ -218,7 +218,7 @@ However, for MVPDs that support [home-based authentication](/help/authentication
 
 #### 9. What are the use cases for each available Profiles endpoint? {#authentication-phase-faq9}
 
-The Profiles endpoints are designed to provide client application the capability to know the user's authentication status, access user metadata information, find the method used to authenticate or the entity used to provide identity.
+The basic Profiles endpoints are designed to provide client application the capability to know the user's authentication status, access user metadata information, find the method used to authenticate or the entity used to provide identity.
 
 Each endpoint suits a specific use case, as follows:
 
@@ -227,6 +227,18 @@ Each endpoint suits a specific use case, as follows:
 | [Profiles endpoint API](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md)                                                     | Retrieve all user profiles.                                               | **User opens the client application for the first time**<br/><br/>In this scenario, the client application does not have the user's selected MVPD identifier cached in persistent storage.<br/><br/>As a result, it will send a single request to retrieve all available user profiles.                                                           |
 | [Profiles endpoint for specific MVPD API](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md)                  | Retrieve the user profile associated with a specific MVPD.                | **User returns to the client application after authenticating in a previous visit**<br/><br/>In this case, the client application must have the user's previously selected MVPD identifier cached in persistent storage.<br/><br/>As a result, it will send a single request to retrieve the user's profile for that specific MVPD.               |
 | [Profiles endpoint for specific (authentication) code API](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-code.md) | Retrieve the user profile associated with a specific authentication code. | **User initiates the authentication process**<br/><br/>In this scenario, the client application must determine whether the user has successfully completed authentication and retrieve their profile information.<br/><br/>As a result, it will start a polling mechanism to retrieve the user's profile associated with the authentication code. |
+
+For more details, refer to the [Basic profiles flow performed within primary application](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-profiles-primary-application-flow.md) and [Basic profiles flow performed within secondary application](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-profiles-secondary-application-flow.md) documents.
+
+The Profiles SSO endpoint serves a different purpose, it provides the client application the capability to create a user profile using the partner authentication response and retrieve it in a single, one-time operation.
+
+| API                                                                                                                                                                                                                                      | Description                                                             | Use case                                                                                                                                                                                                                                                         |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Profiles SSO endpoint API](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md) | Create and retrieve user profile using partner authentication response. | **User permits the application to use partner single-sign-on to authenticate**<br/><br/>In this scenario, the client application must create a user profile after receiving the partner authentication response and retrieve it in a single, one-time operation. |
+
+For any subsequent queries, the basic Profiles endpoints must be used to determine the user's authentication status, access user metadata information, find the method used to authenticate or the entity used to provide identity. 
+
+For more details, refer to the [Single sign-on using partner flows](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-partner-flows.md) and [Apple SSO Cookbook (REST API V2)](/help/authentication/integration-guide-programmers/features-standard/sso-access/partner-sso/apple-sso/apple-sso-cookbook-rest-api-v2.md) documents.
 
 #### 10. What should the client application do if the user has multiple MVPD profiles? {#authentication-phase-faq10}
 
@@ -510,6 +522,10 @@ The client application can obtain an authorization decision for a limited number
 #### 1. What's the purpose of the Logout Phase? {#logout-phase-faq1}
 
 The purpose of the Logout Phase is to provide the client application the capability to terminate the user's authenticated profile within Adobe Pass Authentication upon user request.
+
+#### 2. Is the Logout Phase mandatory? {#logout-phase-faq2}
+
+The Logout Phase is mandatory, the client application must provide the user with the capability to log out.
 
 +++
 

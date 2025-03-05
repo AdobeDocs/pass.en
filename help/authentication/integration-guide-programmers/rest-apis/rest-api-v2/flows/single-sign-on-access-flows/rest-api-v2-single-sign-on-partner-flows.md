@@ -119,7 +119,7 @@ Perform the given steps to retrieve the partner authentication request as shown 
 
    If the Adobe Pass backend does not identify a valid profile and the partner single sign-on validation passes, the streaming application receives a response with actions and data to pass to the partner framework for starting the authentication flow with the MVPD.
 
-   For more details about the profile retrieval flow using a partner authentication response, refer to the [Retrieve profile using partner authentication response](#retrieve-profile-using-partner-authentication-response) section.
+   For more details about the profile retrieval flow using a partner authentication response, refer to the [Crreate and retrieve profile using partner authentication response](#create-and-retrieve-profile-using-partner-authentication-response) section.
 
 1. **Proceed with basic authentication flow:** The Sessions Partner endpoint response contains the following data:
    * The `actionName` attribute is set to either "authenticate" or "resume".
@@ -146,9 +146,9 @@ Perform the given steps to retrieve the partner authentication request as shown 
    > 
    > For more details about `AP-Partner-Framework-Status` header, refer to the [AP-Partner-Framework-Status](../../appendix/headers/rest-api-v2-appendix-headers-ap-partner-framework-status.md) documentation.
 
-## Retrieve profile using partner authentication response {#retrieve-profile-using-partner-authentication-response}
+## Create and retrieve profile using partner authentication response {#create-and-retrieve-profile-using-partner-authentication-response}
 
-### Prerequisites {#prerequisites-retrieve-profile-using-partner-authentication-response}
+### Prerequisites {#prerequisites-create-and-retrieve-profile-using-partner-authentication-response}
 
 Before retrieving the profile using a partner authentication response, ensure the following prerequisites are met:
 
@@ -163,13 +163,13 @@ Before retrieving the profile using a partner authentication response, ensure th
 > * The partner framework supports user interaction to authenticate with the selected MVPD.
 > * The partner framework provides user permission and provider information.
 
-### Workflow {#workflow-retrieve-profile-using-partner-authentication-response}
+### Workflow {#workflow-create-and-retrieve-profile-using-partner-authentication-response}
 
 Perform the given steps to implement the profile retrieval flow using a partner authentication response as shown in the following diagram.
 
-![Retrieve profile using partner authentication response](../../../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-profile-using-partner-authentication-response-flow.png)
+![Create and retrieve profile using partner authentication response](../../../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-profile-using-partner-authentication-response-flow.png)
 
-*Retrieve authenticated profile using partner authentication response*
+*Create and retrieve authenticated profile using partner authentication response*
 
 1. **Complete MVPD authentication with partner framework:** If the authentication flow is successful, the partner framework interaction with the MVPD produces a partner authentication response (SAML response) that is returned along with the partner framework status information.
 
@@ -178,11 +178,11 @@ Perform the given steps to implement the profile retrieval flow using a partner 
    * The user provider mapping identifier is present and valid.
    * The user provider profile's expiration date (if available) is valid.
 
-1. **Retrieve profile using partner authentication response:** The streaming application gathers all the necessary data to create and retrieve a profile by calling the Profiles Partner endpoint.
+1. **Create and retrieve profile using partner authentication response:** The streaming application gathers all the necessary data to create and retrieve a profile by calling the Profiles Partner endpoint.
 
    >[!IMPORTANT]
    >
-   > Refer to the [Retrieve profile using partner authentication response](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md) API documentation for details on:
+   > Refer to the [Create and retrieve profile using partner authentication response](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md) API documentation for details on:
    >
    > * All the _required_ parameters, like `serviceProvider`, `partner`, and `SAMLResponse`
    > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`, `Content-Type`, `X-Device-Info`, and `AP-Partner-Framework-Status`
@@ -202,7 +202,7 @@ Perform the given steps to implement the profile retrieval flow using a partner 
 
    >[!IMPORTANT]
    >
-   > Refer to the [Retrieve profile using partner authentication response](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md) API documentation for details on the information provided in a profile response.
+   > Refer to the [Create and retrieve profile using partner authentication response](../../apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md) API documentation for details on the information provided in a profile response.
    > 
    > <br/>
    > 

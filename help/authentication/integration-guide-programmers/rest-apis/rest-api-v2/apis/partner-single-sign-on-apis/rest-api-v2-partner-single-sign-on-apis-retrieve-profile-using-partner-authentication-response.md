@@ -1,9 +1,9 @@
 ---
-title: Retrieve profile using partner authentication response
-description: REST API V2 - Retrieve profile using partner authentication response
+title: Create and retrieve profile using partner authentication response
+description: REST API V2 - Create and retrieve profile using partner authentication response
 exl-id: cae260ff-a229-4df7-bbf9-4cdf300c0f9a
 ---
-# Retrieve profile using partner authentication response {#retrieve-profile-using-partner-authentication-response}
+# Create and retrieve profile using partner authentication response {#create-and-retrieve-profile-using-partner-authentication-response}
 
 >[!IMPORTANT]
 >
@@ -315,7 +315,7 @@ exl-id: cae260ff-a229-4df7-bbf9-4cdf300c0f9a
 
 ## Samples {#samples}
 
-### 1. Retrieve profile using partner authentication response
+### 1. Create and retrieve profile using partner authentication response
 
 >[!BEGINTABS]
 
@@ -372,7 +372,7 @@ Content-Type: application/json;charset=UTF-8
 
 >[!ENDTABS]
 
-### 2. Retrieve profile using partner authentication response, but degradation is applied
+### 2. Create and retrieve profile using partner authentication response, but degradation is applied
 
 >[!BEGINTABS]
 
