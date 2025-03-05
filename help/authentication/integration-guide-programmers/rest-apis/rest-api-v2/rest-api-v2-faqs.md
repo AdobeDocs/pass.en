@@ -19,10 +19,6 @@ Start with this section if you are working on an application that needs to integ
 
 For more information about migration details and steps, see the next sections too.
 
->[!MORELIKETHIS]
->
-> * [Dynamic Client Registration (DCR) FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-faqs.md#general-faqs)
-
 ### Registration Phase FAQs {#registration-phase-faqs-general}
 
 +++Registration Phase FAQs
@@ -362,6 +358,51 @@ The [X-Device-Info](/help/authentication/integration-guide-programmers/rest-apis
 The [X-Device-Info](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-x-device-info.md) header documentation provides some examples of how to compute the value for different platforms, but the client application can choose to use a different method based on its own business logic and requirements.
 
 In case the client application is migrating from REST API V1 to REST API V2, the client application can continue to use the same method to compute the device information as before.
+
++++
+
+### Misc FAQs {#misc-faqs-general}
+
++++Misc FAQs
+
+#### 1. Can I explore REST API V2 requests and responses and test the API? {#misc-faq1}
+
+Yes.
+
+You can explore REST API V2 through our dedicated [Adobe Developer](https://developer.adobe.com/adobe-pass/) website. The Adobe Developer website provides unrestricted access to:
+
+* [DCR API](https://developer.adobe.com/adobe-pass/api/dcr_api/interactive/)
+* [REST API V2](https://developer.adobe.com/adobe-pass/api/rest_api_v2/interactive/)
+
+To interact with [REST API V2](https://developer.adobe.com/adobe-pass/api/rest_api_v2/interactive/), you must include the [Authorization](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-authorization.md) header with a `Bearer` access token obtained via the [DCR API](https://developer.adobe.com/adobe-pass/api/dcr_api/interactive/).
+
+For using the [DCR API](https://developer.adobe.com/adobe-pass/api/dcr_api/interactive/), a software statement with REST API V2 scope is required. For more details, refer to the [Dynamic Client Registration (DCR) FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-faqs.md) document.
+
+#### 2. Can I explore REST API V2 requests and responses using an API development tool with OpenAPI support? {#misc-faq2}
+
+Yes.
+
+You can download OpenAPI specification files for the [DCR API](https://developer.adobe.com/adobe-pass/api/dcr_api/interactive/) and [REST API V2](https://developer.adobe.com/adobe-pass/api/rest_api_v2/interactive/) from the [Adobe Developer](https://developer.adobe.com/adobe-pass/) website.
+
+To download the OpenAPI specification files, click the download buttons to save the following files to your local machine:
+
+* [DCR API JSON](https://developer.adobe.com/adobe-pass/dcrApi.json)
+* [REST API V2 JSON](https://developer.adobe.com/adobe-pass/restApiV2.json)
+
+You can then import these files into your preferred API development tool to explore REST API V2 requests and responses and test the API.
+
+#### 3. Can I still use the existing API test tool hosted at https://sp.auth-staging.adobe.com/apitest/api.html? {#misc-faq3}
+
+No.
+
+The client applications migrating to REST API V2 should use the new test tool hosted at https://developer.adobe.com/adobe-pass/. The Adobe Developer website provides unrestricted access to:
+
+* [DCR API](https://developer.adobe.com/adobe-pass/api/dcr_api/interactive/)
+* [REST API V2](https://developer.adobe.com/adobe-pass/api/rest_api_v2/interactive/)
+
+To interact with [REST API V2](https://developer.adobe.com/adobe-pass/api/rest_api_v2/interactive/), you must include the [Authorization](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-authorization.md) header with a `Bearer` access token obtained via the [DCR API](https://developer.adobe.com/adobe-pass/api/dcr_api/interactive/).
+
+For using the [DCR API](https://developer.adobe.com/adobe-pass/api/dcr_api/interactive/), a software statement with REST API V2 scope is required. For more details, refer to the [Dynamic Client Registration (DCR) FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-faqs.md) document.
 
 +++
 
