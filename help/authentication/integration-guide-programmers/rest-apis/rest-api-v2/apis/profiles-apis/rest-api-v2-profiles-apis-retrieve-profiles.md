@@ -363,7 +363,7 @@ Content-Type: application/json;charset=UTF-8
             "issuer": "Spectrum",
             "type": "regular",
             "attributes": {
-                "userId": {
+                "userID": {
                     "value": "BASE64_value_userId",
                     "state": "plain"
                 }
@@ -427,7 +427,7 @@ Content-Type: application/json;charset=UTF-8
          "issuer": "Spectrum",
          "type": "regular",
          "attributes": {
-            "userId": {
+            "userID": {
                "value": "BASE64_value_userId",
                "state": "plain"
             }
@@ -491,7 +491,7 @@ Content-Type: application/json;charset=UTF-8
          "issuer": "Spectrum",
          "type": "regular",
          "attributes": {
-            "userId": {
+            "userID": {
                "value": "BASE64_value_userId",
                "state": "plain"
             }
