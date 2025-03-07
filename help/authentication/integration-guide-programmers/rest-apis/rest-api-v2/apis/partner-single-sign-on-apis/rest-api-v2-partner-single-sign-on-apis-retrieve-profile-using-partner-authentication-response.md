@@ -266,8 +266,8 @@ exl-id: cae260ff-a229-4df7-bbf9-4cdf300c0f9a
                     <br/><br/>
                     These attributes can be:
                     <ul>
-                        <li>Mandatory, like 'userId'</li>
-                        <li>Non-mandatory, like 'zip', 'householdId', 'maxRating', etc.</li>
+                        <li>Mandatory, like 'userID'</li>
+                        <li>Non-mandatory, like 'zip', 'householdID', 'maxRating', etc.</li>
                     </ul>
                     The values for the attributes can be:
                     <ul>
@@ -352,11 +352,11 @@ Content-Type: application/json;charset=UTF-8
             "issuer": "Apple",
             "type": "appleSSO",
             "attributes": {
-                "userId": {
+                "userID": {
                     "value": "BASE64_value_userId",
                     "state": "plain"
                 },
-                "householdId": {
+                "householdID": {
                     "value": "BASE64_value_householdId",
                     "state": "plain"
                 },

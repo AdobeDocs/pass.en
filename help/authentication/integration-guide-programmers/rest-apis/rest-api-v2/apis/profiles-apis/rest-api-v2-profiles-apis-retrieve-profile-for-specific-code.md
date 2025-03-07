@@ -234,8 +234,8 @@ exl-id: d6ead7d5-de5f-4033-8115-980953a370c0
                     <br/><br/>
                     These attributes can be:
                     <ul>
-                        <li>Mandatory, like 'userId'</li>
-                        <li>Non-mandatory, like 'zip', 'householdId', 'maxRating', etc.</li>
+                        <li>Mandatory, like 'userID'</li>
+                        <li>Non-mandatory, like 'zip', 'householdID', 'maxRating', etc.</li>
                     </ul>
                     The values for the attributes can be:
                     <ul>
@@ -312,21 +312,17 @@ Content-Type: application/json;charset=UTF-8
             "issuer": "Cablevision",
             "type": "regular",
             "attributes": {
-                "userId": {
+                "userID": {
                     "value": "BASE64_value_userId",
                     "state": "plain"
                 },
-                "householdId" : {
+                "householdID": {
                     "value": "BASE64_value_householdId",
                     "state": "plain"
                 },
-                "zip" : {
+                "zip": {
                     "value": "BASE64_value_zip",
                     "state": "enc"
-                },
-                "parental-controls" : {
-                    "value": BASE64_value_parental-controls,
-                    "state": "plain"
                 }
             }
         }
