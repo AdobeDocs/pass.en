@@ -297,7 +297,7 @@ To ensure efficiency and avoid unnecessary requests, the client application must
 
 | **Authentication performed within the primary (screen) application** | **Authentication performed within a secondary (screen) application** |
 |----------------------------------------------------------------------|----------------------------------------------------------------------|
-| The primary (streaming) application should poll every 1-5 seconds.   | The primary (streaming) application should poll every 3-5 seconds.   |
+| The primary (streaming) application should poll every 3-5 seconds.   | The primary (streaming) application should poll every 3-5 seconds.   |
 
 #### 16. What's the maximum number of polling requests the client application can send? {#authentication-phase-faq16}
 
