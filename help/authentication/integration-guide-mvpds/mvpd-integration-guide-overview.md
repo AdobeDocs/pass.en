@@ -133,4 +133,6 @@ For more details about entitlements, refer to the following documents:
 
 * **[Media Tokens](/help/authentication/integration-guide-programmers/features-standard/entitlements/media-tokens.md)**
 
-  Upon successful authorization, Adobe Pass Authentication creates a media token ("short-lived") that is associated with a successful play request.
+  Upon successful authorization, Adobe Pass Authentication creates a media token ("short-lived") that is associated with a successful play request and provides support for industry best practices for mitigating fraud (e.g., stream ripping).
+
+The time-to-live ("TTL") values for profiles and decisions are set based on agreements between Programmers and Pay TV providers, who agree on a value that best serves everyone involved.
