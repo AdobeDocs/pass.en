@@ -259,9 +259,9 @@ exl-id: 72922aa8-95ca-48dc-8523-e335802fc366
             <tr>
                <td style="background-color: #DEEBFF;">attributes</td>
                <td>
-                    The list of user metadata attributes.
+                    JSON containing a map of key, value pairs.
                     <br/><br/>
-                    These attributes can be:
+                    The key element is defined by user metadata attributes and can be:
                     <ul>
                         <li>Mandatory, like 'userID'</li>
                         <li>Non-mandatory, like 'zip', 'householdID', 'maxRating', etc.</li>
@@ -272,6 +272,7 @@ exl-id: 72922aa8-95ca-48dc-8523-e335802fc366
                         <li>list</li>
                         <li>map</li>
                     </ul>
+                    User metadata becomes available after the authentication flow completes, but certain metadata attributes may be updated during the authorization flow, depending on the MVPD and the specific metadata attribute in question.
                </td>
                <td><i>required</i></td>
             </tr>

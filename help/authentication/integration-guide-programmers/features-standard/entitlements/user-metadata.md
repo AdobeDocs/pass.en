@@ -11,6 +11,8 @@ exl-id: 9fd68885-7b3a-4af0-a090-6f1f16efd2a1
 
 User metadata refers to user-specific [attributes](#attributes) (e.g., zip codes, parental ratings, user IDs, etc.) that are maintained by MVPDs and provided to Programmers through the Adobe Pass Authentication [REST API V2](#apis).
 
+User metadata becomes available after the authentication flow completes, but certain metadata attributes may be updated during the authorization flow, depending on the MVPD and the specific metadata attribute in question.
+
 User metadata can be used to enhance personalization for users, but might also be used for analytics. For example, a Programmer might use a user's zip code to deliver localized news or weather updates, or to enforce parental controls.
 
 Adobe Pass Authentication normalizes user metadata values when MVPDs provide data in different formats. Also, for certain attributes (e.g., zip code), the values can be [encrypted](#encryption) using a Programmer's certificate.
@@ -162,7 +164,17 @@ The user metadata attributes can be retrieved using the following APIs:
 
 Refer to the **Response** and **Samples** sections of the above APIs to understand the structure of the user metadata attributes.
 
+>[!IMPORTANT]
+>
+> User metadata becomes available after the authentication flow completes, therefore the client application does not need to query a separate endpoint to retrieve the [user metadata](/help/authentication/integration-guide-programmers/features-standard/entitlements/user-metadata.md) information, as it is already included in the profile information.
+
 For more details about how and when to integrate the above APIs, refer to the following documents:
 
 * [Basic profiles flow performed within primary application](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-profiles-primary-application-flow.md)
 * [Basic profiles flow performed within secondary application](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-profiles-secondary-application-flow.md)
+
+Certain metadata attributes may be updated during the authorization flow, depending on the MVPD and the specific metadata attribute. As a result, the client application may need to query the above APIs again to retrieve the latest user metadata.
+
+>[!MORELIKETHIS]
+>
+> [Authentication Phase FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authentication-phase-faqs-general)

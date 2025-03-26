@@ -315,12 +315,14 @@ The client application can query one of the following endpoints capable to retur
 * [Profiles endpoint for specific MVPD API](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md)
 * [Profiles endpoint for specific (authentication) code API](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-code.md)
 
-The client application does not need to query a separate endpoint to retrieve the user's metadata information, as it is already included in the profile information obtained when verifying if the user is authenticated.
+User metadata becomes available after the authentication flow completes, therefore the client application does not need to query a separate endpoint to retrieve the [user metadata](/help/authentication/integration-guide-programmers/features-standard/entitlements/user-metadata.md) information, as it is already included in the profile information.
 
 For more details, refer to the following documents:
 
 * [Basic profiles flow performed within primary application](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-profiles-primary-application-flow.md)
 * [Basic profiles flow performed within secondary application](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-profiles-secondary-application-flow.md)
+
+Certain metadata attributes may be updated during the authorization flow, depending on the MVPD and the specific metadata attribute. As a result, the client application may need to query the above APIs again to retrieve the latest user metadata.
 
 #### 18. How should the client application manage degraded access? {#authentication-phase-faq18}
 
