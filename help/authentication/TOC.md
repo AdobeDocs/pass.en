@@ -245,7 +245,6 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                     + [(Legacy) SFSafariViewController support on iOS SDK 3.2+](integration-guide-programmers/legacy/notes-technical/sfsafariviewcontroller-support-on-ios-sdk-32.md)
                     + [(Legacy) SSO on iOS when using the Adobe Pass Authentication Access Enabler](integration-guide-programmers/legacy/notes-technical/sso-on-ios-when-using-the-primetime-authentication-access-enabler.md)
                     + [(Legacy) iOS Authentication Error - adobepass.ios.app Cannot Be Found](integration-guide-programmers/legacy/notes-technical/ios-authentication-error-adobepassiosapp-cannot-be-found.md)
-                    + [(Legacy) Reset Temp Pass on iOS](integration-guide-programmers/legacy/notes-technical/reset-temp-pass-on-ios.md)
                     + [(Legacy) Debugging the AccessEnabler iOS/tvOS SDK using Console app logs](integration-guide-programmers/legacy/notes-technical/debugging-the-accessenabler-iostvos-sdk-using-console-app-logs.md)
                     + [(Legacy) AccessEnabler iOS/tvOS 3.7.0 Upgrade Path](integration-guide-programmers/legacy/notes-technical/accessenabler-iostvos-370-upgrade-path.md)
             + (Legacy) User Experience {#user-experience}
