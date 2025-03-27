@@ -9,8 +9,6 @@ exl-id: a8b01469-3d5f-4a44-9ae8-06a68c29d56d
 >
 > Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
 
-<a href="https://experienceleague.adobe.com/en/docs/pass/authentication/product-announcements">![Live Webinar Series](/help/authentication/assets/rest-api-v2/live-webinar-series-banner.png)</a>
-
 Adobe Pass Authentication is a powerful entitlement solution for TV Everywhere (TVE), designed to streamline and secure the process of verifying whether viewers are entitled to access protected content. This modular framework connects Content Providers (Programmers) with Pay TV Providers (MVPDs), facilitating entitlement transactions with speed, consistency, and reliability.
 
 In the TVE ecosystem, Programmers supply content while MVPDs manage subscriber data. This dynamic can be challenging, especially when navigating the diverse systems of numerous MVPDs. Adobe Pass Authentication eliminates these complexities by providing a single integration point that connects both parties to the broader TVE landscape.

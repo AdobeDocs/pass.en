@@ -9,8 +9,6 @@ exl-id: 84a9ac0f-c26a-4159-82a8-3a31bb31f529
 >
 > Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
 
-<a href="https://experienceleague.adobe.com/en/docs/pass/authentication/product-announcements">![Live Webinar Series](/help/authentication/assets/rest-api-v2/live-webinar-series-banner.png)</a>
-
 To get started, visit the public documentation of the flows you are interested in the list below.
 
 ## Basic Access Flows {#rest-api-v2-flows-access-basic}

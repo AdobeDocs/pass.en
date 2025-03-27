@@ -9,8 +9,6 @@ exl-id: a5595193-82c4-4033-bd98-596b4908b401
 >
 > Make sure you stay informed about the latest Adobe Pass Authentication product announcements and decommissioning timelines aggregated in the [Product Announcements](/help/authentication/product-announcements.md) page.
 
-<a href="https://experienceleague.adobe.com/en/docs/pass/authentication/product-announcements">![Live Webinar Series](/help/authentication/assets/rest-api-v2/live-webinar-series-banner.png)</a>
-
 Do you want to improve the cost efficiency of your TVE applications?
 
 Do you want to reduce the development time and resources required to support TVE applications on multiple platforms?
