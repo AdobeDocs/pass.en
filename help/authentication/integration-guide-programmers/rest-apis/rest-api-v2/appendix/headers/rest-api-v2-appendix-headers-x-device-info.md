@@ -11,7 +11,7 @@ exl-id: 0ef25e06-86de-427a-a938-7ba3817f0d5e
 
 ## Overview {#overview}
 
-The <b>X-Device-Info</b> request header contains the client information (device, connection and application) related to the actual streaming device.
+The <b>X-Device-Info</b> request header contains the client information (device, connection and application) related to the actual streaming device and is used to determine platform-specific rules that MVPDs may enforce.
 
 ## Syntax {#syntax}
 
