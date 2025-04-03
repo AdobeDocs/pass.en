@@ -328,7 +328,7 @@ exl-id: e8889395-4434-4bec-a212-a8341bb9c310
 
 ## Samples {#samples}
 
-### 1. Retrieve authorization decisions using specific mvpd
+### 1. Retrieve authorization decisions using specific mvpd while decision is permit
 
 >[!BEGINTABS]
 
@@ -380,7 +380,63 @@ Content-Type: application/json;charset=UTF-8
 
 >[!ENDTABS]
 
-### 2. Retrieve authorization decisions using specific mvpd while degradation is applied
+### 2. Retrieve authorization decisions using specific mvpd while decision is deny
+
+>[!BEGINTABS]
+
+>[!TAB Request]
+
+```HTTPS
+POST /api/v2/REF30/decisions/authorize/Cablevision HTTP/1.1
+
+    Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjNGZjM2U3ZS0xMmQ5LTQ5NWQtYjc0Mi02YWVhYzhhNDkwZTciLCJuYmYiOjE3MjQwODc4NjgsImlzcyI6ImF1dGguYWRvYmUuY29tIiwic2NvcGVzIjoiYXBpOmNsaWVudDp2MiIsImV4cCI6MTcyNDEwOTQ2OCwiaWF0IjoxNzI0MDg3ODY4fQ.DJ9GFl_yKAp2Qw-NVcBeRSnxIhqrwxhns5T5jU31N2tiHxCucKLSQ5guBygqkkJx6D0N_93f50meEEyfb7frbHhVHHwmRjHYjkfrWqHCpviwVjVZKKwl8Y3FEMb0bjKIB8p_E3txX9IbzeNGWRufZBRh2sxB5Q9B7XYINpVfh8s_sFvskrbDu5c01neCx5kEagEW5CtE0_EXTgEb5FSr_SfQG3UUu_iwlkOggOh_kOP_5GueElf9jn-bYBMnpObyN5s-FzuHDG5Rtac5rvcWqVW2reEqFTHqLI4rVC7UKQb6DSvPBPV4AgrutAvk30CYgDsOQILVyrjniincp7r9Ww
+    Content-Type: application/json
+    AP-Device-Identifier: fingerprint YmEyM2QxNDEtZDcxNS01NjFjLTk0ZjQtZTllNGM5NjZiMWVi
+    X-Device-Info: ewoJInByaW1hcnlIYXJkd2FyZVR5cGUiOiAiU2V0VG9wQm94IiwKCSJtb2RlbCI6ICJUViA1dGggR2VuIiwKCSJtYW51ZmFjdHVyZXIiOiAiQXBwbGUiLAoJIm9zTmFtZSI6ICJ0dk9TIgoJIm9zVmVuZG9yIjogIkFwcGxlIiwKCSJvc1ZlcnNpb24iOiAiMTEuMCIKfQ==
+    Accept: application/json
+    User-Agent: Mozilla/5.0 (Apple TV; U; CPU AppleTV5,3 OS 11.0 like Mac OS X; en_US)
+        
+Body:
+
+{
+    "resources": ["REF30"]
+}
+```
+
+>[!TAB Response]
+
+```HTTPS
+HTTP/1.1 200 OK
+
+Content-Type: application/json;charset=UTF-8
+
+{
+    "decisions": [
+        {
+            "resource": "REF30",
+            "serviceProvider": "REF30",
+            "mvpd": "Cablevision",
+            "source": "mvpd",
+            "authorized": false,
+            "error": {
+                "action": "none",
+                "status": 403,
+                "code": "authorization_denied_by_mvpd",
+                "message": "The MVPD has returned a "Deny" decision when requesting authorization for the specified resource",
+                "details": "Your subscription package does not include the "Live" channel",
+                "helpUrl": "https://experienceleague.adobe.com/docs/pass/authentication/auth-features/error-reportn/enhanced-error-codes.html",
+                "trace": "12f6fef9-d2e0-422b-a9d7-60d799abe353"
+            },
+            "notBefore": 1697094207324,
+            "notAfter": 1697098802367
+        }
+    ]
+}
+```
+
+>[!ENDTABS]
+
+### 3. Retrieve authorization decisions using specific mvpd while degradation is applied
 
 >[!BEGINTABS]
 
@@ -524,7 +580,7 @@ Content-Type: application/json;charset=UTF-8
 
 >[!ENDTABS]
 
-### 3. Retrieve authorization decisions using basic TempPass
+### 4. Retrieve authorization decisions using basic TempPass
 
 >[!BEGINTABS]
 
@@ -630,7 +686,7 @@ Content-Type: application/json;charset=UTF-8
 
 >[!ENDTABS]
 
-### 4. Retrieve authorization decisions using promotional TempPass
+### 5. Retrieve authorization decisions using promotional TempPass
 
 >[!BEGINTABS]
 
