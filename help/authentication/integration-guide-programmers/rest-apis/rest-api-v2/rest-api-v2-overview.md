@@ -67,6 +67,7 @@ However, all future developments will be built on the REST API V2. We strongly r
 
 To get started, visit our public documentation:
 
+- [Checklist](rest-api-v2-checklist.md)
 - [Glossary](rest-api-v2-glossary.md)
 - [FAQs](rest-api-v2-faqs.md)
 - [APIs](apis/rest-api-v2-apis-overview.md)

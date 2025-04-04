@@ -62,6 +62,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                 + [Dynamic Client Registration Flow](integration-guide-programmers/rest-apis/rest-api-dcr/flows/dynamic-client-registration-flow.md)
         + REST API V2 {#rest-api-v2}
             + [REST API V2 Overview](integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-overview.md)
+            + [REST API V2 Checklist](integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-checklist.md)
             + [REST API V2 Glossary](integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md)
             + [REST API V2 FAQs](integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md)
             + APIs {#rest-api-v2-apis}
