@@ -260,7 +260,6 @@ exl-id: 52d8a8e9-c176-410f-92bc-e83449278943
                   <ul>
                     <li><b>none</b><br/>The client application is required to continue to authenticate.</li>
                     <li><b>authenticated</b><br/>The client application is already authenticated through basic access flows.</li>
-                    <li><b>temporary</b><br/>The client application is already authenticated through temporary access flows.</li>
                     <li><b>degraded</b><br/>The client application is already authenticated through degraded access flows.</li>
                     <li><b>authenticatedSSO</b><br/>The client application is already authenticated through single sign-on access flows.</li>
                     <li><b>pfs_fallback</b><br/>The client application is required to fall back to basic authentication flow due to missing or invalid <a href="../../appendix/headers/rest-api-v2-appendix-headers-ap-partner-framework-status.md">AP-Partner-Framework-Status</a> header value.</li>

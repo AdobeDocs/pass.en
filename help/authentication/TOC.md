@@ -115,6 +115,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                     + [Header - X-Device-Info](integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-x-device-info.md)
                     + [Header - AD-Service-Token](integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ad-service-token.md)
                     + [Header - Adobe-Subject-Token](integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-adobe-subject-token.md)
+                    + [Header - X-Roku-Reserved-Roku-Connect-Token](integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-x-roku-reserved-roku-connect-token.md)
                     + [Header - AP-Partner-Framework-Status](integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-partner-framework-status.md)
                     + [Header - AP-TempPass-Identity](integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-temppass-identity.md)
     + Standard Features {#standard-features}
@@ -133,7 +134,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                 + Amazon Single Sign-On {#amazon-sso}
                     + [Amazon SSO Cookbook (REST API V2)](integration-guide-programmers/features-standard/sso-access/platform-sso/amazon-single-sign-on/amazon-sso-cookbook-rest-api-v2.md)
                 + Roku Single Sign-On {#roku-sso}
-                    + [Roku SSO Overview](integration-guide-programmers/features-standard/sso-access/platform-sso/roku-single-sign-on/roku-sso-overview.md)
+                    + [Roku SSO Cookbook (REST API V2)](integration-guide-programmers/features-standard/sso-access/platform-sso/roku-single-sign-on/roku-sso-cookbook-rest-api-v2.md)
         + Home Based Authentication Access {#hba-access}
             + [Home-based authentication (HBA)](integration-guide-programmers/features-standard/hba-access/home-based-authentication.md)
         + Privacy Support {#privacy-support}

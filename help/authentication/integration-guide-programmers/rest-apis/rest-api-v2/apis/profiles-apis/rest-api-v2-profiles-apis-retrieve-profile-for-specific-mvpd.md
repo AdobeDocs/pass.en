@@ -90,9 +90,9 @@ exl-id: ed1abc33-c279-4465-b5a0-b4e5b892076e
       <td>optional</td>
    </tr>
    <tr>
-      <td style="background-color: #DEEBFF;">Adobe-Subject-Token</td>
+      <td style="background-color: #DEEBFF;">Adobe-Subject-Token<br/><br/>X-Roku-Reserved-Roku-Connect-Token</td>
       <td>
-        The generation of the single sign-on payload for the Platform Identity method is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-adobe-subject-token.md">Adobe-Subject-Token</a> header documentation.
+        The generation of the single sign-on payload for the Platform Identity method is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-adobe-subject-token.md">Adobe-Subject-Token</a> / <a href="../../appendix/headers/rest-api-v2-appendix-headers-x-roku-reserved-roku-connect-token.md">X-Roku-Reserved-Roku-Connect-Token</a> header documentation.
         <br/><br/>
         For more details about single sign-on enabled flows using a platform identity, refer to the <a href="../../flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-platform-identity-flows.md">Single sign-on using platform identity flows</a> documentation.
       </td>

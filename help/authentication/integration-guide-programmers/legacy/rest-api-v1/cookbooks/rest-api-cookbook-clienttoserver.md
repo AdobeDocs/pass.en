@@ -134,7 +134,6 @@ Some devices provide dedicated support for Partner Single Sign-On (SSO):
 Some devices provide dedicated support for Platform Single Sign-On (SSO):
 
 * [Amazon SSO](../../sso-access/amazon-sso-cookbook-rest-api-v1.md)
-* [Roku SSO](../../../features-standard/sso-access/platform-sso/roku-single-sign-on/roku-sso-overview.md)
 
 ## TempPass and Promotional TempPass for REST API {#temppass}
 

@@ -15,6 +15,8 @@ This document acts as an extension to the existing [REST API V2 Overview](/help/
 
 ## Amazon single sign-on using platform identity flows {#cookbook}
 
+Adobe Pass Authentication collaborates with Amazon to improve the login user experience and to facilitate Single Sign-On (SSO) across TV Everywhere applications for TV subscribers.
+
 ### Prerequisites {#prerequisites}
 
 Before proceeding with the Amazon single sign-on using platform identity flows, ensure the following prerequisites are met.
