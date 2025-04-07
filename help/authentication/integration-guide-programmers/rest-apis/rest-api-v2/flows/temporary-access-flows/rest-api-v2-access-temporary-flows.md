@@ -349,7 +349,7 @@ Follow the given steps to implement the authorization flow when consuming a maxi
 
    >[!TIP]
    >
-   > Suggestion: The streaming application can inform users that the maximum number of resources was exceeded and advise them to initiate a basic authentication flow using a regular MVPD to continue watching.
+   > The streaming application can inform users that the maximum number of resources was exceeded and advise them to initiate a basic authentication flow using a regular MVPD to continue watching.
 
 ## Retrieve authorization decisions when basic or promotional TempPass expires {#retrieve-authorization-decisions-when-basic-or-promotional-temppass-expires}
 
@@ -429,7 +429,7 @@ Follow the given steps to implement the authorization flow when basic or promoti
 
    >[!TIP]
    >
-   > Suggestion: The streaming application can inform users that the temporary access has expired and advise them to initiate a basic authentication flow using a regular MVPD to continue watching.
+   > The streaming application can inform users that the temporary access has expired and advise them to initiate a basic authentication flow using a regular MVPD to continue watching.
 
 ## Retrieve profile for basic TempPass {#retrieve-profile-for-basic-temppass}
 

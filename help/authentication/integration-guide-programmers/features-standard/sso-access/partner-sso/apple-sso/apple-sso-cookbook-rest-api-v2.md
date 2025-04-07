@@ -73,7 +73,7 @@ Perform the given steps to implement the Apple single sign-on using partner flow
 
    >[!TIP]
    >
-   > Suggestion: The client credentials must be cached and may be used indefinitely.
+   > The client credentials must be cached and used indefinitely.
 
 1. **Retrieve access token:** The streaming application gathers all the necessary data to retrieve access token by calling the Client Token endpoint.
 
@@ -103,7 +103,7 @@ Perform the given steps to implement the Apple single sign-on using partner flow
 
    >[!TIP]
    >
-   > Suggestion: The access token must be cached and used only within the specified duration (e.g., 24-hour time-to-live). After it expires, the streaming application must request a new access token.
+   > The access token must be cached and used only within the specified duration (e.g., 24-hour time-to-live). After it expires, the streaming application must request a new access token.
 
 +++
 
@@ -385,7 +385,7 @@ Perform the given steps to implement the Apple single sign-on using partner flow
 
    >[!TIP]
    >
-   > Suggestion: The streaming application can use instead a cached value for the partner framework status information, that we recommend refreshing when the application transitions from background to foreground state. In that case, the streaming application must ensure it caches and uses only valid values for the partner framework status as described by the "Return partner framework status information" step.
+   > The streaming application can use instead a cached value for the partner framework status information, that we recommend refreshing when the application transitions from background to foreground state. In that case, the streaming application must ensure it caches and uses only valid values for the partner framework status as described by the "Return partner framework status information" step.
 
 1. **Return partner framework status information:** The streaming application validates the response data to ensure that basic conditions are met:
    * The user permission access status is granted.
@@ -456,7 +456,7 @@ Perform the given steps to implement the Apple single sign-on using partner flow
 
    >[!TIP]
    >
-   > Suggestion: The streaming application can use instead a cached value for the partner framework status information, that we recommend refreshing when the application transitions from background to foreground state. In that case, the streaming application must ensure it caches and uses only valid values for the partner framework status as described by the "Return partner framework status information" step.
+   > The streaming application can use instead a cached value for the partner framework status information, that we recommend refreshing when the application transitions from background to foreground state. In that case, the streaming application must ensure it caches and uses only valid values for the partner framework status as described by the "Return partner framework status information" step.
 
 1. **Return partner framework status information:** The streaming application validates the response data to ensure that basic conditions are met:
    * The user permission access status is granted.

@@ -195,7 +195,7 @@ The following steps outline the high-level steps in case of a SAML integration:
 
 **FAQs**
 
-* [Authentication phase FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authentication-phase-faqs-general).
+* [Authentication phase FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authentication-phase-faqs-general)
 
 >[!TIP]
 >
@@ -230,7 +230,7 @@ The Preauthorization Phase can enhance the user experience when the user opens t
 
 **FAQs**
 
-* [Preauthorization phase FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#preauthorization-phase-faqs-general).
+* [Preauthorization phase FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#preauthorization-phase-faqs-general)
 
 >[!TIP]
 >
@@ -271,7 +271,7 @@ The following steps outline the high-level steps:
 
 **FAQs**
 
-* [Authorization phase FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authorization-phase-faqs-general).
+* [Authorization phase FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#authorization-phase-faqs-general)
 
 >[!TIP]
 >
@@ -291,7 +291,7 @@ The purpose of the Logout Phase is to provide the client application the capabil
 
 **FAQs**
 
-* [Logout phase FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#logout-phase-faqs-general).
+* [Logout phase FAQs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-faqs.md#logout-phase-faqs-general)
 
 #### Single Logout (SLO) {#single-logout}
 

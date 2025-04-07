@@ -35,7 +35,7 @@ Following this document must be considered part of your acceptance criteria when
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;"><i>Access Tokens Caching</i></td>
-      <td>Store the access tokens in persistent storage and reuse them until they expire — do not request a new token for every REST API v2 call.</td>
+      <td>Store the access tokens in persistent storage and reuse them until they expire.<br/><br/>Do not request a new token for every REST API v2 call, refresh the access tokens only when they expire.</td>
       <td>Risks overloading system resources, increasing latency, and potentially triggering HTTP 429 "Too Many Requests" error responses.</td>
    </tr>
 </table>
@@ -80,7 +80,7 @@ Following this document must be considered part of your acceptance criteria when
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;"><i>Polling Mechanism Configuring</i></td>
-      <td>Configure the polling mechanism frequency under the following conditions:<br/><br/><b><a href="/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-authentication-primary-application-flow.md">Authentication performed within the primary (screen) application</a></b><ul><li>The primary (streaming) application should poll every 3-5 seconds.</li></ul><br/><b><a href="/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-authentication-secondary-application-flow.md">Authentication performed within a secondary (screen) application</a></b><ul><li>The primary (streaming) application should poll every 3-5 seconds.</li></ul></td>
+      <td>Configure the polling mechanism frequency under the following conditions:<br/><br/><b><a href="/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-authentication-primary-application-flow.md">Authentication performed within the primary (screen) application</a></b><ul><li>The primary (streaming) application should poll every 3-5 seconds or more.</li></ul><br/><b><a href="/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/basic-access-flows/rest-api-v2-basic-authentication-secondary-application-flow.md">Authentication performed within a secondary (screen) application</a></b><ul><li>The primary (streaming) application should poll every 3-5 seconds.</li></ul></td>
       <td>Risks overloading system resources, increasing latency, and potentially triggering HTTP 429 "Too Many Requests" error responses.</td>
    </tr>
    <tr>
@@ -232,7 +232,7 @@ Following this document must be considered part of your acceptance criteria when
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;"><i>Access Tokens Validation</i></td>
-      <td>Proactively check access token validity and refresh it when expired.<br/><br/>Ensure that any retry mechanism for handling HTTP 401 "Unauthorized" errors first refreshes the access token before retrying the original request.</td>
+      <td>Proactively check access token validity to refresh it when expired.<br/><br/>Ensure that any retry mechanism for handling HTTP 401 "Unauthorized" errors first refreshes the access token before retrying the original request.</td>
       <td>Risks triggering HTTP 401 "Unauthorized" error responses, overloading system resources and increasing latency.</td>
    </tr>
 </table>

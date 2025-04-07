@@ -305,7 +305,7 @@ The user's profile information is successfully retrieved, confirming their authe
 
 **Authentication session and code expiry**
 
-The authentication session and code expire, as indicated by the `notAfter` timestamp in the [Sessions](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md) endpoint response. If this happens, the user must restart the authentication process, and polling using the previous authentication code should be stopped immediately.
+The authentication session and code expire, as indicated by the `notAfter` timestamp (e.g., 30 minutes) in the [Sessions](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/sessions-apis/rest-api-v2-sessions-apis-create-authentication-session.md) endpoint response. If this happens, the user must restart the authentication process, and polling using the previous authentication code should be stopped immediately.
 
 **New authentication code generated** 
 
@@ -315,9 +315,9 @@ If the user requests a new authentication code on the primary (screen) device, t
 
 To ensure efficiency and avoid unnecessary requests, the client application must configure the polling mechanism frequency under the following conditions:
 
-| **Authentication performed within the primary (screen) application** | **Authentication performed within a secondary (screen) application** |
-|----------------------------------------------------------------------|----------------------------------------------------------------------|
-| The primary (streaming) application should poll every 3-5 seconds.   | The primary (streaming) application should poll every 3-5 seconds.   |
+| **Authentication performed within the primary (screen) application**       | **Authentication performed within a secondary (screen) application**       |
+|----------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| The primary (streaming) application should poll every 3-5 seconds or more. | The primary (streaming) application should poll every 3-5 seconds or more. |
 
 #### 17. What's the maximum number of polling requests the client application can send? {#authentication-phase-faq17}
 
@@ -520,7 +520,7 @@ The client application must validate the media token before starting playback of
 
 No.
 
-The client application is not required to refresh an expired media token while the stream is actively playing. If the media token expires during playback, the stream should be allowed to continue uninterrupted. However, the client must request a new authorization decision — and obtain a new media token — the next time the user attempts to play the same resource.
+The client application is not required to refresh an expired media token while the stream is actively playing. If the media token expires during playback, the stream should be allowed to continue uninterrupted. However, the client must request a new authorization decision — and obtain a new media token — the next time the user attempts to play a resource.
 
 #### 9. What is the purpose of each timestamp attribute in the authorization decision? {#authorization-phase-faq9}
 

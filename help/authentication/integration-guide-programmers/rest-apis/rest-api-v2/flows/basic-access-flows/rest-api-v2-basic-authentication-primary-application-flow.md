@@ -121,7 +121,7 @@ Follow the given steps to implement the basic authentication flow performed with
 
    >[!TIP]
    >
-   > Suggestion: The streaming application can wait for the user agent to reach the provided `redirectUrl` to check if the regular profile was successfully generated and saved.
+   > The streaming application must wait for the user agent to reach the provided `redirectUrl` to check if the regular profile was successfully generated and saved.
 
 1. **Return information about regular profile:** The Profiles endpoint response contains information about the regular profile associated with the received parameters and headers.
 

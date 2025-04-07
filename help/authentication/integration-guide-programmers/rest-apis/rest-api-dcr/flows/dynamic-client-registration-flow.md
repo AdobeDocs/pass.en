@@ -64,7 +64,7 @@ Follow the given steps to access Adobe Pass protected APIs as shown in the follo
 
    >[!TIP]
    >
-   > Suggestion: The client credentials must be cached and may be used indefinitely.
+   > The client credentials must be cached and used indefinitely.
 
 1. **Retrieve access token:** The client application gathers all the necessary data to retrieve access token by calling the Client Token endpoint.
 
@@ -94,7 +94,7 @@ Follow the given steps to access Adobe Pass protected APIs as shown in the follo
 
    >[!TIP]
    >
-   > Suggestion: The access token must be cached and used only within the specified duration (e.g., 24-hour time-to-live). After it expires, the client application must request a new access token.
+   > The access token must be cached and used only within the specified duration (e.g., 24-hour time-to-live). After it expires, the client application must request a new access token.
 
 1. **Proceed with accessing protected APIs:** The client application uses the access token to access other Adobe Pass protected APIs. The client application must include the access token in the `Authorization` request header using the `Bearer` authentication scheme (i.e., `Authorization: Bearer <access_token>`).
 

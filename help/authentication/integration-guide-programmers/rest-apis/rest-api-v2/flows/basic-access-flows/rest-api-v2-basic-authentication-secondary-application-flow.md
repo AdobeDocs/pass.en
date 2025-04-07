@@ -137,7 +137,7 @@ Follow the given steps to implement the basic authentication flow performed with
 
    >[!TIP]
    >
-   > Suggestion: The secondary application can inform users that the `code` used is invalid in the event of an error response indicating a missing authentication session, and advise them to retry using a new one.
+   > The secondary application can inform users that the `code` used is invalid in the event of an error response indicating a missing authentication session, and advise them to retry using a new one.
    
 1. **Open URL in user agent:** The secondary application opens a user agent to load the self computed `url`, making a request to the Authenticate endpoint. This flow may include several redirects, ultimately leading the user to the MVPD login page and provide valid credentials.
 
@@ -162,7 +162,7 @@ Follow the given steps to implement the basic authentication flow performed with
 
    >[!TIP]
    >
-   > Suggestion: The streaming application can implement a polling mechanism using the `code` to check if the regular profile was successfully generated and saved.
+   > The streaming application must implement a polling mechanism using the `code` to check if the regular profile was successfully generated and saved.
 
 1. **Return information about regular profile:** The Profiles endpoint response contains information about the regular profile associated with the received parameters and headers.
 
@@ -271,7 +271,7 @@ Follow the given steps to implement the basic authentication flow performed with
 
    >[!TIP]
    >
-   > Suggestion: The secondary application can inform users that the `code` used is invalid in the event of an error response indicating a missing authentication session, and advise them to retry using a new one.
+   > The secondary application can inform users that the `code` used is invalid in the event of an error response indicating a missing authentication session, and advise them to retry using a new one.
 
 1. **Indicate existing profile:** The Sessions endpoint response contains the following data:
    * The `actionName` attribute is set to "authorize".
@@ -300,7 +300,7 @@ Follow the given steps to implement the basic authentication flow performed with
 
    >[!TIP]
    >
-   > Suggestion: The streaming application can implement a polling mechanism using the `code` to check if the regular profile was successfully generated and saved.
+   > The streaming application must implement a polling mechanism using the `code` to check if the regular profile was successfully generated and saved.
 
 1. **Return information about regular profile:** The Profiles endpoint response contains information about the regular profile associated with the received parameters and headers.
 

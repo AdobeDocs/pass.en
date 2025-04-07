@@ -120,7 +120,7 @@ Perform the given steps to implement the authentication flow through single sign
 
    >[!TIP]
    >
-   > Suggestion: The streaming application can wait for the user agent to reach the provided `redirectUrl` to check if the regular profile was successfully generated and saved.
+   > The streaming application must wait for the user agent to reach the provided `redirectUrl` to check if the regular profile was successfully generated and saved.
 
 1. **Find regular profile:** The Adobe Pass server identifies a valid profile based on the received parameters and headers.
 
