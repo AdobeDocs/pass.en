@@ -301,7 +301,7 @@ exl-id: 52d8a8e9-c176-410f-92bc-e83449278943
                     <ul>
                         <li><b>type</b><br/>Indicates the type of protocol supported by the MVPD (SAML only).</li>
                         <li><b>request</b><br/>The SAML request.</li>
-                        <li><b>attributes</b><br/>The SAML request attributes.</li>
+                        <li><b>attributesNames</b><br/>The SAML request attributes.</li>
                     </ul>
                </td>
                <td>optional</td>
