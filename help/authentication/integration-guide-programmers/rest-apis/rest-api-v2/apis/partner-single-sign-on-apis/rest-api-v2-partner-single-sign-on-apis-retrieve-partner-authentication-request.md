@@ -264,6 +264,7 @@ exl-id: 52d8a8e9-c176-410f-92bc-e83449278943
                     <li><b>authenticatedSSO</b><br/>The client application is already authenticated through single sign-on access flows.</li>
                     <li><b>pfs_fallback</b><br/>The client application is required to fall back to basic authentication flow due to missing or invalid <a href="../../appendix/headers/rest-api-v2-appendix-headers-ap-partner-framework-status.md">AP-Partner-Framework-Status</a> header value.</li>
                     <li><b>configuration_fallback</b><br/>The client application is required to fall back to basic authentication flow due to partner single sign-on configuration on Adobe Pass backend.</li>
+                    <li><b>missing_parameters_fallback</b><br />The client application must revert to the resume flow due to a missing or invalid parameter.</li>
                   </ul>
                <td><i>required</i></td>
             </tr>
@@ -568,7 +569,7 @@ Content-Type: application/json;charset=UTF-8
 {
     "actionName": "resume",
     "actionType": "direct",
-    "reasonType": "none",
+    "reasonType": "missing_parameters_fallback",
     "missingParameters": [
           "redirectUrl"
     ],
