@@ -153,7 +153,7 @@ exl-id: 23287acf-5d56-46f0-b65e-79bf7d667708
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">created_at</td>
-               <td>The time at which the access token was issued.</td>
+               <td>The time in milliseconds at which the access token was issued.</td>
                <td><i>required</i></td>
             </tr>
             <tr>

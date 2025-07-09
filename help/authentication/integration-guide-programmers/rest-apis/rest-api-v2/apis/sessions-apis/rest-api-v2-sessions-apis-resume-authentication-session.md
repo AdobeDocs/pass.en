@@ -274,12 +274,12 @@ exl-id: 66c33546-2be0-473f-9623-90499d1c13eb
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">notBefore</td>
-               <td>The timestamp before which the authentication code is not valid.</td>
+               <td>The timestamp in milliseconds before which the authentication code is not valid.</td>
                <td>optional</td>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">notAfter</td>
-               <td>The timestamp after which the authentication code is not valid.</td>
+               <td>The timestamp in milliseconds after which the authentication code is not valid.</td>
                <td>optional</td>
             </tr>
          </table>

@@ -238,12 +238,12 @@ exl-id: ed1abc33-c279-4465-b5a0-b4e5b892076e
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">notBefore</td>
-               <td>The timestamp before which the profile is not valid.</td>
+               <td>The timestamp in milliseconds before which the profile is not valid.</td>
                <td><i>required</i></td>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">notAfter</td>
-               <td>The timestamp after which the profile is not valid.</td>
+               <td>The timestamp in milliseconds after which the profile is not valid.</td>
                <td><i>required</i></td>
             </tr>
             <tr>

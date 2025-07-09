@@ -310,12 +310,12 @@ exl-id: bb2a6bb4-0778-4748-a674-df9d0e8242c8
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">notBefore</td>
-               <td>The timestamp before which the authentication code is not valid.</td>
+               <td>The timestamp in milliseconds before which the authentication code is not valid.</td>
                <td>optional</td>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">notAfter</td>
-               <td>The timestamp after which the authentication code is not valid.</td>
+               <td>The timestamp in milliseconds after which the authentication code is not valid.</td>
                <td>optional</td>
             </tr>
 </table>

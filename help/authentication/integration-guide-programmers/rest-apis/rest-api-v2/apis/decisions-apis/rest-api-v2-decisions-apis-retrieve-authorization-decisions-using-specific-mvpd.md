@@ -270,20 +270,20 @@ exl-id: e8889395-4434-4bec-a212-a8341bb9c310
                   <br/><br/>
                   JSON object having the following attributes:
                   <ul>
-                    <li><b>notBefore</b><br/>The timestamp before which the media token is not valid.</li>
-                    <li><b>notAfter</b><br/>The timestamp after which the media token is not valid.</li>
+                    <li><b>notBefore</b><br/>The timestamp in milliseconds before which the media token is not valid.</li>
+                    <li><b>notAfter</b><br/>The timestamp in milliseconds after which the media token is not valid.</li>
                     <li><b>serializedToken</b><br/>The Base64-encoded media token.</li>
                   </ul>
                <td>optional</td>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">notBefore</td>
-               <td>The timestamp before which the decision is not valid.</td>
+               <td>The timestamp in milliseconds before which the decision is not valid.</td>
                <td>optional</td>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">notAfter</td>
-               <td>The timestamp after which the decision is not valid.</td>
+               <td>The timestamp in milliseconds after which the decision is not valid.</td>
                <td>optional</td>
             </tr>
             <tr>

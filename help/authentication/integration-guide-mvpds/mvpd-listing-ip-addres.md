@@ -6,10 +6,9 @@ exl-id: be18084c-22f5-47b5-b088-d9032681113d
 
 # MVPD Listing of IP Addresses
 
-> [!NOTE]
+>[!IMPORTANT]
 >
->The content on this page is provided for information purposes only. Usage of this API requires a current license from
-> Adobe. No unauthorized use is permitted.
+> The content on this page is provided for information purposes only. Usage of this API requires a current license from Adobe. No unauthorized use is permitted.
 
 For an MVPD / Adobe Pass Authentication integration certain IPs must be allowed in an MVPD's firewall. These are the
 egress IPs:
