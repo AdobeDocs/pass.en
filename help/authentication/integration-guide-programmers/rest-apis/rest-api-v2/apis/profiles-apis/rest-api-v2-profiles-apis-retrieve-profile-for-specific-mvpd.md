@@ -358,8 +358,8 @@ Content-Type: application/json;charset=UTF-8
 {
     "profiles": {
         "Spectrum": {
-            "notBefore": 1623943955,
-            "notAfter": 1623951155,
+            "notBefore": 1752149281000,
+            "notAfter": 1783685280000,
             "issuer": "Spectrum",
             "type": "regular",
             "attributes": {

@@ -339,8 +339,8 @@ Content-Type: application/json;charset=UTF-8
 {
     "profiles": {
         "Cablevision": {
-            "notBefore": 1623943955,
-            "notAfter": 1623951155,
+            "notBefore": 1752149281000,
+            "notAfter": 1783685280000,
             "issuer": "Cablevision",
             "type": "regular",
             "attributes": {
@@ -359,8 +359,8 @@ Content-Type: application/json;charset=UTF-8
             }
         },
         "Spectrum": {
-            "notBefore": 1623943955,
-            "notAfter": 1623951155,
+            "notBefore": 1752149272300,
+            "notAfter": 1783685284670,
             "issuer": "Spectrum",
             "type": "regular",
             "attributes": {
@@ -423,8 +423,8 @@ Content-Type: application/json;charset=UTF-8
          }
       },
       "Spectrum": {
-         "notBefore": 1623943955,
-         "notAfter": 1623951155,
+         "notBefore": 1752149281000,
+         "notAfter": 1783685280000,
          "issuer": "Spectrum",
          "type": "regular",
          "attributes": {
@@ -487,8 +487,8 @@ Content-Type: application/json;charset=UTF-8
          }
       },
       "Cablevision": {
-         "notBefore": 1623943955,
-         "notAfter": 1623951155,
+         "notBefore": 1752149281000,
+         "notAfter": 1783685280000,
          "issuer": "Spectrum",
          "type": "regular",
          "attributes": {
