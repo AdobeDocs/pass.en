@@ -27,6 +27,7 @@ This section compiles references to the release history and corresponding releas
 
 | Release Notes                                                                                             | Dates                   |
 |-----------------------------------------------------------------------------------------------------------|-------------------------|
+| [Adobe Pass Authentication 3.3.0 release notes](notes-releases/auth-rn-330.md)                            | 07/22/2025 - 07/24/2025 |
 | [Adobe Pass Authentication 3.2.0 release notes](notes-releases/auth-rn-320.md)                            | 06/10/2025 - 06/12/2025 |
 | [Adobe Pass Authentication 3.1.0 release notes](notes-releases/auth-rn-310.md)                            | 02/25/2025 - 02/27/2025 |
 | [Adobe Pass Authentication JavaScript SDK 4.7.1 release notes](notes-releases/authn-rn-javascript-471.md) | 02/25/2025 - 02/27/2025 |
