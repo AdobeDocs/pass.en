@@ -120,6 +120,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
                     -   [Header - X-Roku-Reserved-Roku-Connect-Token](integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-x-roku-reserved-roku-connect-token.md)
                     -   [Header - AP-Partner-Framework-Status](integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-partner-framework-status.md)
                     -   [Header - AP-TempPass-Identity](integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-temppass-identity.md)
+                    -   [Header - AP-Visitor-Identifier](integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-visitor-identifier.md)
     -   Standard Features {#standard-features}
         -   Entitlements {#entitlements}
             -   [User metadata](integration-guide-programmers/features-standard/entitlements/user-metadata.md)

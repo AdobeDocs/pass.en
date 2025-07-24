@@ -121,6 +121,12 @@ exl-id: ed1abc33-c279-4465-b5a0-b4e5b892076e
       <td>optional</td>
    </tr>
    <tr>
+      <td style="background-color: #DEEBFF;">AP-Visitor-Identifier</td>
+      <td>
+        The generation of the visitor identifier payload  is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-ap-visitor-identifier.md">AP-Visitor-Identifier</a> header documentation.
+      <td>optional</td>
+   </tr>
+   <tr>
       <td style="background-color: #DEEBFF;">Accept</td>
       <td>
          The media type accepted by the client application.

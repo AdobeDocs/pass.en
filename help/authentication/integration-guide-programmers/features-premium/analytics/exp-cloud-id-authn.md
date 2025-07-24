@@ -70,8 +70,19 @@ accessEnabler.setOptions(options);
 
 ### Clientless API {#clientless-api}
 
-When using Adobe Pass via it's REST API, the **ECID** value should be sent **on all APIs** as a parameter named **'ap_vi'**. 
+When using Adobe Pass via it's REST API v1, the **ECID** value should be sent **on all APIs** as a parameter named **'ap_vi'**. 
 
 **Usage example:**
 
 `GET: https://api.auth.adobe.com/api/v1/authorize?...&ap_vi=THE_ECID_VALUE`
+
+### REST API V2 {#rest-api-v2}
+
+When using Adobe Pass via it's REST API v2, the **ECID** value should be sent **on all APIs** as a header named **'AP-Visitor-Identifier'**.
+
+**Usage example:**
+
+`POST: https://api.auth.adobe.com/api/v2/${serviceProvider}/sessions/`  
+Headers:  
+`AP-Visitor-Identifier: THE_ECID_VALUE`
+
