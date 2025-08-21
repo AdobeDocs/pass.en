@@ -1,9 +1,8 @@
 ---
 title: Header - AP-Visitor-Identifier
 description: REST API V2 - Header - AP-Visitor-Identifier
-exl-id: b4f8e2a1-9c7d-4e3a-8f5b-2d1c6e9a4b7f
+exl-id: 216f398b-1cfa-4453-a81d-963675b33ec2
 ---
-
 # Header - AP-Visitor-Identifier {#header-ap-visitor-identifier}
 
 >[!NOTE]
