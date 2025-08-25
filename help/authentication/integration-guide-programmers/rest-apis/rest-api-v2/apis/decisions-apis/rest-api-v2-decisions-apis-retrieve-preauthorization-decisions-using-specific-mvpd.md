@@ -71,7 +71,7 @@ exl-id: 8647e4fb-00b6-45cd-b81b-d00618b2e08b
       <td>
          The accepted media type for the resources being sent.
          <br/><br/>
-         It must be application/json.
+         It must be application/json;charset=utf-8.
       </td>
       <td><i>required</i></td>
    </tr>
@@ -141,7 +141,7 @@ exl-id: 8647e4fb-00b6-45cd-b81b-d00618b2e08b
       <td>
          The media type accepted by the client application.
          <br/><br/>
-         If specified, it must be application/json.
+         If specified, it must be application/json;charset=utf-8.
       </td>
       <td>optional</td>
    </tr>

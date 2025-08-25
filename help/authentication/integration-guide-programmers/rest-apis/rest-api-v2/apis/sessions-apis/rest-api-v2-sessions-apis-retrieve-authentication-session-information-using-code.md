@@ -82,7 +82,7 @@ exl-id: 5cc209eb-ee6b-4bb9-9c04-3444408844b7
       <td>
          The media type accepted by the client application.
          <br/><br/>
-         If specified, it must be application/json.
+         If specified, it must be application/json;charset=utf-8.
       </td>
       <td>optional</td>
    </tr>
