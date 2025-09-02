@@ -299,7 +299,20 @@ exl-id: 8647e4fb-00b6-45cd-b81b-d00618b2e08b
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;"></td>
-      <td>The response body may provide additional error information that adheres to the <a href="../../../../features-standard/error-reporting/enhanced-error-codes.md">Enhanced Error Codes</a> documentation.</td>
+      <td>
+            The response body may provide additional error information that adheres to the <a href="../../../../features-standard/error-reporting/enhanced-error-codes.md">Enhanced Error Codes</a> documentation.
+            <br/><br/>
+            The client application must implement an error handling mechanism capable of properly processing the error codes most commonly returned by this API:
+            <ul>
+                <li>authenticated_profile_missing</li>
+                <li>authenticated_profile_expired</li>
+                <li>preauthorization_denied_by_mvpd</li>
+                <li>network_received_error</li>
+                <li>too_many_resources</li>
+                <li>etc.</li>
+            </ul>
+            The list above is non-exhaustive. The client application must be capable of handling all enhanced error codes defined in the <a href="../../../../features-standard/error-reporting/enhanced-error-codes.md">public documentation</a>.
+      </td>
       <td><i>required</i></td>
    </tr>
 </table>

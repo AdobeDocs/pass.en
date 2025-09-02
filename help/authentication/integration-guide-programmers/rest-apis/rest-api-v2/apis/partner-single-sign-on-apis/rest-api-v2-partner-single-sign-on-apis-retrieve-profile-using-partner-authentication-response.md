@@ -315,7 +315,22 @@ exl-id: cae260ff-a229-4df7-bbf9-4cdf300c0f9a
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;"></td>
-      <td>The response body may provide additional error information that adheres to the <a href="../../../../features-standard/error-reporting/enhanced-error-codes.md">Enhanced Error Codes</a> documentation.</td>
+      <td>
+            The response body may provide additional error information that adheres to the <a href="../../../../features-standard/error-reporting/enhanced-error-codes.md">Enhanced Error Codes</a> documentation.
+            <br/><br/>
+            The client application must implement an error handling mechanism capable of properly processing the error codes most commonly returned by this API:
+            <ul>
+                <li>invalid_header_pfs_permission_access_not_present</li>
+                <li>invalid_header_pfs_permission_access_not_determined</li>
+                <li>invalid_header_pfs_permission_access_not_granted</li>
+                <li>invalid_header_pfs_provider_id_not_determined</li>
+                <li>invalid_header_pfs_provider_id_mismatch</li>
+                <li>invalid_header_pfs_provider_info_expired</li>
+                <li>invalid_parameter_saml_response</li>
+                <li>etc.</li>
+            </ul>
+            The list above is non-exhaustive. The client application must be capable of handling all enhanced error codes defined in the <a href="../../../../features-standard/error-reporting/enhanced-error-codes.md">public documentation</a>.
+      </td>
       <td><i>required</i></td>
    </tr>
 </table>

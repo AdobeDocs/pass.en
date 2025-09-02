@@ -193,7 +193,17 @@ exl-id: 5cc209eb-ee6b-4bb9-9c04-3444408844b7
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;"></td>
-      <td>The response body may provide additional error information that adheres to the <a href="../../../../features-standard/error-reporting/enhanced-error-codes.md">Enhanced Error Codes</a> documentation.</td>
+      <td>
+            The response body may provide additional error information that adheres to the <a href="../../../../features-standard/error-reporting/enhanced-error-codes.md">Enhanced Error Codes</a> documentation.
+            <br/><br/>
+            The client application must implement an error handling mechanism capable of properly processing the error codes most commonly returned by this API:
+            <ul>
+                <li>invalid_authentication_session</li>
+                <li>invalid_parameter_code</li>
+                <li>etc.</li>
+            </ul>
+            The list above is non-exhaustive. The client application must be capable of handling all enhanced error codes defined in the <a href="../../../../features-standard/error-reporting/enhanced-error-codes.md">public documentation</a>.
+      </td>
       <td><i>required</i></td>
    </tr>
 </table>

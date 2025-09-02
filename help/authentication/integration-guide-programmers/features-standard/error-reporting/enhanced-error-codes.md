@@ -316,7 +316,7 @@ The table below lists possible Enhanced Error Codes a client application might e
 |                              | *network_connection_timeout*                           | 403    | There was a connection timeout with the associated partner service. Retrying the request might solve the issue.                                                                                                                                                                                                                            |
 |                              | *maximum_execution_time_exceeded*                      | 403    | The request did not complete in the maximum allowed time. Retrying the request might solve the issue.                                                                                                                                                                                                                                      |
 
-### REST API v1 {#enhanced-error-codes-lists-rest-api-v1}
+### (Legacy) REST API v1 {#enhanced-error-codes-lists-rest-api-v1}
 
 The table below lists possible Enhanced Error Codes a client application might encounter when integrated with Adobe Pass Authentication REST API v1.
 
@@ -348,7 +348,7 @@ The table below lists possible Enhanced Error Codes a client application might e
 |                    | *network_connection_timeout*                      | 403               | There was a connection timeout with the associated partner service. Retrying the request might solve the issue.                                                                                                                                                                                                                              |
 |                    | *maximum_execution_time_exceeded*                 | 403               | The request did not complete in the maximum allowed time. Retrying the request might solve the issue.                                                                                                                                                                                                                                        |
 
-### SDKs Preauthorize API {#enhanced-error-codes-lists-sdks-preauthorize-api}
+### (Legacy) SDKs Preauthorize API {#enhanced-error-codes-lists-sdks-preauthorize-api}
 
 Refer to the previous [section](#enhanced-error-codes-list-rest-api-v1) for possible Enhanced Error Codes a client application might encounter when integrated with Adobe Pass Authentication SDKs Preauthorize API.
 
@@ -364,11 +364,13 @@ Refer to the previous [section](#enhanced-error-codes-list-rest-api-v1) for poss
 
 In summary, when handling responses containing Enhanced Error Codes, you should consider the following:
 
-1. **Check both status values**: Always check both the HTTP response status code and the Enhanced Error Code "status" field. They might differ, and both provide valuable information.
+1. **Agnostic to API returning the error**: Implement a centralized error-handling logic that supports the full catalog of enhanced error codes, irrespective of which API produces them. Several Enhanced Error Code are shared across APIs and must be handled consistently.
 
 1. **Agnostic to top-level versus item-level error information**: Handle top-level and item-level error information agnostic to the way it is communicated, ensure you can handle both forms of transmitting Enhanced Error Codes.
 
-1. **Retry logic**: For errors that require a retry, ensure that retries are done with exponential backoff to avoid overwhelming the server. Also, in case of Adobe Pass Authentication APIs that handle multiple items at once (e.g., Preauthorize API), you should include in the repeated request only those items marked with "retry" and not the entire list.
+1. **Check both status values**: Always check both the HTTP response status code and the Enhanced Error Code "status" field. They might differ, and both provide valuable information.
+
+1. **Retry logic**: For errors that require a retry, ensure that retries are limited (i.e. 2-3) or are done with exponential backoff to avoid overwhelming the server. Also, in case of Adobe Pass Authentication APIs that handle multiple items at once (e.g., Preauthorize API), you should include in the repeated request only those items marked with "retry" and not the entire list.
 
 1. **Configuration changes**: For errors that require configuration changes, ensure that the necessary changes are made before launching the new application or new feature.
 
