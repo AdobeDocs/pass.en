@@ -68,7 +68,7 @@ exl-id: ad7e4c6d-ed96-4ae7-82a9-3c24e5fc9302
    <tr>
       <td style="background-color: #DEEBFF;">AP-Device-Identifier</td>
       <td>The generation of the device identifier payload is described in the <a href="../../appendix/headers/rest-api-v2-appendix-headers-ap-device-identifier.md">AP-Device-Identifier</a> header documentation.</td>
-      <td><i>required</i></td>
+      <td>optional</td>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">X-Device-Info</td>
@@ -81,7 +81,7 @@ exl-id: ad7e4c6d-ed96-4ae7-82a9-3c24e5fc9302
          <br/><br/>
          When not provided, the Adobe Pass Authentication backend will use extracted values implicitly (by default).
       </td>
-      <td><i>required</i></td>
+      <td>optional</td>
    </tr>
    <tr>
       <td style="background-color: #DEEBFF;">X-Forwarded-For</td>
