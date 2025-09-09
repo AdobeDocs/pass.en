@@ -19,7 +19,7 @@ This page describes new features, changes, and known issues with this release:
 ### Build Number {#build-number-340}
 
 Adobe Pass Authentication: adobe-pass-**3.4.0**
-Release Date: **09/09/2025 - 09/11/2025**
+Release Date: **09/16/2025 - 09/18/2025**
 
 ### Release Overview {#release-overview-340}
 
