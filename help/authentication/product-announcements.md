@@ -27,6 +27,7 @@ This section compiles references to the release history and corresponding releas
 
 | Release Notes                                                                                             | Dates                   |
 |-----------------------------------------------------------------------------------------------------------|-------------------------|
+| [Adobe Pass Authentication Android 3.8.0 release notes](notes-releases/authn-rn-android-380.md)           | 09/18/2025              |
 | [Adobe Pass Authentication 3.4.0 release notes](notes-releases/auth-rn-340.md)                            | 09/16/2025 - 09/18/2025 |
 | [Adobe Pass Authentication 3.3.0 release notes](notes-releases/auth-rn-330.md)                            | 07/22/2025 - 07/24/2025 |
 | [Adobe Pass Authentication 3.2.0 release notes](notes-releases/auth-rn-320.md)                            | 06/10/2025 - 06/12/2025 |
