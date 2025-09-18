@@ -12,6 +12,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
 -   [Product Announcements](product-announcements.md)
 -   Product Releases {#product-releases}
     -   2025 {#2025}
+        -   [Adobe Pass Authentication Android 3.8.0 release notes](notes-releases/authn-rn-android-380.md)
         -   [Adobe Pass Authentication 3.4.0 release notes](notes-releases/auth-rn-340.md)
         -   [Adobe Pass Authentication 3.3.0 release notes](notes-releases/auth-rn-330.md)
         -   [Adobe Pass Authentication 3.2.0 release notes](notes-releases/auth-rn-320.md)
