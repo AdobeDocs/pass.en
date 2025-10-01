@@ -125,6 +125,8 @@ The `Base64-encoded` value of the JSON element containing the following attribut
                   This is a required attribute.
                   <br/><br/>
                   This is the expiration date of the authenticated user profile, in case the user has successfully logged using a supported MVPD at the partner framework level.
+                  <br/><br/>
+                  This must be a timestamp in milliseconds since Unix epoch (e.g. "1735689600000"), expressed as a string.
                </td>
             </tr>
             <tr>
