@@ -61,7 +61,21 @@ The client application must store the user's selected MVPD identifier, as specif
 
 For more information, refer to the [Retrieve configuration](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/configuration-apis/rest-api-v2-configuration-apis-retrieve-configuration-for-specific-service-provider.md) documentation.
 
-#### 4. Should the client application cache the configuration response information in a persistent storage? {#configuration-phase-faq4}
+#### 4. Is the configuration specific to a service provider, platform, or user? {#configuration-phase-faq4}
+
+The configuration is specific to a [service provider](rest-api-v2-glossary.md#service-provider).
+
+The configuration is specific to a platform type.
+
+The configuration is not specific to a user.
+
+For client applications using a server-to-server architecture, it is recommended to cache the configuration response (e.g., with a 2-minute TTL) for each platform type in server-side memory storage. This reduces unnecessary requests for each user and improves overall user experience.
+
+#### 5. Should the client application cache the configuration response information in a persistent storage? {#configuration-phase-faq5}
+
+>[!IMPORTANT]
+> 
+> For client applications using a server-to-server architecture, it is recommended to cache the configuration response (e.g., with a 2-minute TTL) for each platform type in server-side memory storage. This reduces unnecessary requests for each user and improves overall user experience.
 
 The client application must retrieve the configuration only when the user needs to select their MVPD to authenticate or re-authenticate.
 
@@ -71,19 +85,19 @@ The client application should cache the configuration response information in a 
 * The user is offered temporary access through basic or promotional [TempPass](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md) feature.
 * The user authentication has expired, but the client application has cached the previously selected MVPD as a user experience motivated choice, and just prompts the user to confirm that they are still a subscriber of that MVPD.
 
-#### 5. Can the client application manage its own list of MVPDs? {#configuration-phase-faq5}
+#### 6. Can the client application manage its own list of MVPDs? {#configuration-phase-faq6}
 
 The client application can manage its own list of MVPDs, but it would require to keep the MVPD identifiers in sync with Adobe Pass Authentication. Therefore, it is recommended to use the configuration provided by Adobe Pass Authentication to ensure the list is up to date and accurate.
 
 The client application would receive an [error](/help/authentication/integration-guide-programmers/features-standard/error-reporting/enhanced-error-codes.md#enhanced-error-codes-lists-rest-api-v2) from Adobe Pass Authentication REST API V2 if the provided MVPD identifier is invalid or in case it does not have an active integration with the specified [service provider](rest-api-v2-glossary.md#service-provider).
 
-#### 6. Can the client application filter the list of MVPDs? {#configuration-phase-faq6}
+#### 7. Can the client application filter the list of MVPDs? {#configuration-phase-faq7}
 
 The client application can filter the list of MVPDs provided in the configuration response by implementing a custom mechanism based on its own business logic and requirements such as user location or user history of previous selection.
 
 The client application can filter the list of [TempPass](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md) MVPDs or the MVPDs that have their integration still in development or testing.
 
-#### 7. What happens if the integration with an MVPD is disabled and marked as inactive? {#configuration-phase-faq7}
+#### 8. What happens if the integration with an MVPD is disabled and marked as inactive? {#configuration-phase-faq8}
 
 When the integration with an MVPD is disabled and marked as inactive, then the MVPD is removed from the list of MVPDs provided in further configuration responses, and there are two important consequences to consider:
 
@@ -92,14 +106,14 @@ When the integration with an MVPD is disabled and marked as inactive, then the M
 
 The client application would receive an [error](/help/authentication/integration-guide-programmers/features-standard/error-reporting/enhanced-error-codes.md#enhanced-error-codes-lists-rest-api-v2) from Adobe Pass Authentication REST API V2 if the user selected MVPD does not have anymore an active integration with the specified [service provider](rest-api-v2-glossary.md#service-provider).
 
-#### 8. What happens if the integration with an MVPD is enabled back and marked as active? {#configuration-phase-faq8}
+#### 9. What happens if the integration with an MVPD is enabled back and marked as active? {#configuration-phase-faq9}
 
 When the integration with an MVPD is enabled back and marked as active, then the MVPD is included back in the list of MVPDs provided in further configuration responses, and there are two important consequences to consider:
 
 * The unauthenticated users of that MVPD will be able again to complete the Authentication Phase using that MVPD.
 * The authenticated users of that MVPD will be able again to complete the Preauthorization, Authorization, or Logout Phases using that MVPD.
 
-#### 9. How to enable or disable the integration with an MVPD? {#configuration-phase-faq9}
+#### 10. How to enable or disable the integration with an MVPD? {#configuration-phase-faq10}
 
 This operation can be completed through the Adobe Pass [TVE Dashboard](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md#tve-dashboard) by one of your organization administrators or by an Adobe Pass Authentication representative acting on your behalf.
 
