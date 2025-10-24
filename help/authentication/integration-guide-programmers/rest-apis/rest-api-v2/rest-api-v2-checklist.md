@@ -13,6 +13,10 @@ This document aggregates in one place the mandatory requirements and recommended
 
 Following this document must be considered part of your acceptance criteria when implementing the REST API V2 and must be used as a checklist to ensure that all necessary steps have been taken to obtain a successful integration.
 
+>[!TIP]
+>
+> For AI-assisted development, see our [AI Rules](rest-api-v2-ai-rules.md) which transforms these requirements into structured rules for AI coding assistants.
+
 ## Mandatory Requirements {#mandatory-requirements}
 
 ### 1. Registration Phase {#mandatory-requirements-registration-phase}

@@ -70,6 +70,7 @@ To get started, visit our public documentation:
 - [Webinar](#rest-api-v2-webinar)
 - [Glossary](rest-api-v2-glossary.md)
 - [Checklist](rest-api-v2-checklist.md)
+- [AI Rules](rest-api-v2-ai-rules.md)
 - [FAQs](rest-api-v2-faqs.md)
 - [APIs](apis/rest-api-v2-apis-overview.md)
 - [Flows](flows/rest-api-v2-flows-overview.md)
