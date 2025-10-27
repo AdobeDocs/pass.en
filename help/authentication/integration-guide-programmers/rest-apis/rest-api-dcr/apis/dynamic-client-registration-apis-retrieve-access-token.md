@@ -224,7 +224,11 @@ exl-id: 23287acf-5d56-46f0-b65e-79bf7d667708
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">unauthorized_client</td>
-               <td>The grant type used is invalid.</td>
+               <td>The client application is not authorized to use this authorization grant type.</td>
+            </tr>
+            <tr>
+               <td style="background-color: #DEEBFF;">unsupported_grant_type</td>
+               <td>The authorization grant type is not supported by the authorization server.</td>
             </tr>
          </table>
       </td>
