@@ -297,7 +297,7 @@ exl-id: bb2a6bb4-0778-4748-a674-df9d0e8242c8
             <tr>
                <td style="background-color: #DEEBFF;">code</td>
                <td>The authentication code that can be used on a secondary application to resume the authentication session.</td>
-               <td><i>required</i></td>
+               <td>optional</td>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">sessionId</td>

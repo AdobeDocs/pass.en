@@ -286,7 +286,7 @@ exl-id: 52d8a8e9-c176-410f-92bc-e83449278943
             <tr>
                <td style="background-color: #DEEBFF;">url</td>
                <td>The URL where the client application needs to navigate.</td>
-               <td><i>required</i></td>
+               <td>optional</td>
             </tr>
             <tr>
                <td style="background-color: #DEEBFF;">code</td>
@@ -327,6 +327,16 @@ exl-id: 52d8a8e9-c176-410f-92bc-e83449278943
                <td style="background-color: #DEEBFF;">serviceProvider</td>
                <td>The internal unique identifier associated with the Service Provider during onboarding process.</td>
                <td><i>required</i></td>
+            </tr>
+            <tr>
+               <td style="background-color: #DEEBFF;">notBefore</td>
+               <td>The timestamp in milliseconds before which the authentication code is not valid.</td>
+               <td>optional</td>
+            </tr>
+            <tr>
+               <td style="background-color: #DEEBFF;">notAfter</td>
+               <td>The timestamp in milliseconds after which the authentication code is not valid.</td>
+               <td>optional</td>
             </tr>
          </table>
       </td>
