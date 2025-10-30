@@ -59,7 +59,7 @@ Before performing authentication through user interaction within a primary appli
 
 Follow the given steps to implement the basic authentication flow performed within a primary application as shown in the following diagram.
 
-![Perform authentication within primary application](../../../../../assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-perform-authentication-within-primary-application.png)
+![Perform authentication within primary application](../..//help/authentication/assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-perform-authentication-within-primary-application.png)
 
 *Perform authentication within primary application*
 

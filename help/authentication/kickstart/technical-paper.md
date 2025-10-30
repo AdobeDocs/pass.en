@@ -66,7 +66,7 @@ To overcome these hurdles, **Adobe® Pass Authentication** simplifies and stream
 
 Adobe Pass Authentication securely mediates entitlement transactions between Programmers and Pay TV providers, ensuring that the right customers can access the right content effortlessly.
 
-![](../assets/programmers-connect-authn.png)
+![](/help/authentication/assets/programmers-connect-authn.png)
 
 *Some of the Programmers and Pay TV providers who connect through Adobe Pass Authentication*
 

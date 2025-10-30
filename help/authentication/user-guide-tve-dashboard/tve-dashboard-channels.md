@@ -17,7 +17,7 @@ The **Channels** tab in the left panel displays a list of linked channels with t
 * **Channel ID**: A unique identifier, also referred to as Requestor ID.
 * **Integrations**: The number of connections established with [MVPDs](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/rest-api-v2-glossary.md#mvpd).
 
-![List of existing channels](../assets/tve-dashboard/new-tve-dashboard/channels/channels-list-view.png)
+![List of existing channels](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channels-list-view.png)
 
 *List of existing channels*
 
@@ -40,7 +40,7 @@ Follow the steps to manage various settings of a specific channel.
    * [Registered Applications](#registered-applications)
    * [Custom Schemes](#custom-schemes)
 
-   ![Channel settings](../assets/tve-dashboard/new-tve-dashboard/channels/channel-tabs-view.png)
+   ![Channel settings](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-tabs-view.png)
 
    *Channel settings*
 
@@ -62,7 +62,7 @@ In this section, you can edit the following details:
 
 * **Error reporting**: On selecting **Yes**, the Adobe Pass SDKs send error reports to Adobe Pass backend for analytics.
 
-![Edit Channel information](../assets/tve-dashboard/new-tve-dashboard/channels/channel-general-settings-tab-view.png)
+![Edit Channel information](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-general-settings-tab-view.png)
 
 *Edit Channel information*
 
@@ -72,7 +72,7 @@ This section allows you to configure the forwarding of Adobe Pass Authentication
 
 To enable **Analytics Configuration**, contact your Technical Account Manager (TAM) for more details on setting up the Report Suite ID (RSID).
 
-![Enable Analytics Configurations](../assets/tve-dashboard/new-tve-dashboard/channels/channel-add-new-analytics-configuration-button.png)
+![Enable Analytics Configurations](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-add-new-analytics-configuration-button.png)
 
 *Enable Analytics Configurations*
 
@@ -84,7 +84,7 @@ A new configuration change has been created and is ready for server update. To u
 
 This tab displays a list of available integrations between the currently selected channel and MVPDs. The list presents each integration along with its status, indicating whether it's enabled or not. Select a specific integration from this list to access detailed information in the [Integrations](tve-dashboard-integrations.md) section.
 
-![List of Available Integrations](../assets/tve-dashboard/new-tve-dashboard/channels/channel-integrations-tab-view.png)
+![List of Available Integrations](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-integrations-tab-view.png)
 
 *List of Available Integrations*
 
@@ -114,7 +114,7 @@ To add a new certificate, follow these steps:
 
 1. Select **Add new certificate** at the top of the **Available Certificates** section.
 
-   ![Add a new certificate](../assets/tve-dashboard/new-tve-dashboard/channels/channel-add-new-certificate-button.png)
+   ![Add a new certificate](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-add-new-certificate-button.png)
 
    *Add a new certificate*
 
@@ -140,7 +140,7 @@ Follow these steps to delete a certificate.
 
 1. Select **Remove**.
 
-   ![Remove the selected certificate](../assets/tve-dashboard/new-tve-dashboard/channels/channel-delete-certificate-button.png)
+   ![Remove the selected certificate](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-delete-certificate-button.png)
 
    *Remove the selected certificate*
 
@@ -152,7 +152,7 @@ A new configuration change has been created and is ready for server update. The 
 
 Media companies define these certificates at their own level. All channels associated with the same media company can use these certificates.
 
-   ![Inherited available certificates](../assets/tve-dashboard/new-tve-dashboard/channels/channel-inherited-available-certificates-panel-view.png)
+   ![Inherited available certificates](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-inherited-available-certificates-panel-view.png)
 
    *Inherited available certificates*
 
@@ -175,7 +175,7 @@ Follow these steps to add a domain.
 
 1. Select **Add new domain** at the upper-right corner of the **Available Domains** section.
 
-   ![Add a new domain](../assets/tve-dashboard/new-tve-dashboard/channels/channel-add-new-domain-button.png)
+   ![Add a new domain](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-add-new-domain-button.png)
 
    *Add a new domain*
 
@@ -193,7 +193,7 @@ Follow these steps to delete a domain.
 
 1. Select **Remove**.
 
-   ![Remove the selected domain](../assets/tve-dashboard/new-tve-dashboard/channels/channel-remove-domain-button.png)
+   ![Remove the selected domain](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-remove-domain-button.png)
 
    *Remove the selected domain*
 
@@ -218,7 +218,7 @@ Follow these steps to add a new registered application.
 
 1. Select **Add new application** at the upper-right corner of the **Registered Applications** section.
 
-   ![Add a new application](../assets/tve-dashboard/new-tve-dashboard/channels/channel-add-new-application-button.png)
+   ![Add a new application](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-add-new-application-button.png)
 
    *Add a new application*
 
@@ -256,7 +256,7 @@ Follow these steps to download a software statement.
 
 1. Select **Download**.
 
-   ![Download a software statement](../assets/tve-dashboard/new-tve-dashboard/channels/channel-download-software-statement-button.png)
+   ![Download a software statement](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-download-software-statement-button.png)
 
    *Download a software statement*
 
@@ -274,7 +274,7 @@ Follow these steps to generate a new custom scheme.
 
 1. Select **Generate new custom scheme**.
 
-   ![Generate a new custom scheme](../assets/tve-dashboard/new-tve-dashboard/channels/channel-add-new-custom-scheme-button.png)
+   ![Generate a new custom scheme](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-add-new-custom-scheme-button.png)
 
    *Generate a new custom scheme*
 
@@ -284,7 +284,7 @@ A new configuration change has been created and is ready for server update. To u
 
 Media companies define these custom schemes at their own level. All channels associated with the same media company can use these custom schemes.
 
-![Inherited custom schemes](../assets/tve-dashboard/new-tve-dashboard/channels/channel-inherited-custom-schemes-panel-view.png)
+![Inherited custom schemes](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-inherited-custom-schemes-panel-view.png)
 
 *Inherited custom schemes*
 
@@ -296,7 +296,7 @@ Follow these steps to add a new channel.
 
 1. Select **Add new channel** at the upper-right corner of the **Channels** section.
 
-   ![Add a new channel](../assets/tve-dashboard/new-tve-dashboard/channels/channel-add-new-channel-button.png)
+   ![Add a new channel](/help/authentication/assets/tve-dashboard/new-tve-dashboard/channels/channel-add-new-channel-button.png)
 
    *Add a new channel*
 

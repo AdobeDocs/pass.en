@@ -131,6 +131,9 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             -   [Media tokens](integration-guide-programmers/features-standard/entitlements/media-tokens.md)
         -   Error Reporting {#error-reporting}
             -   [Enhanced error codes](integration-guide-programmers/features-standard/error-reporting/enhanced-error-codes.md)
+        -   Privacy Support {#privacy-support}
+            -   [Privacy support overview](integration-guide-programmers/features-standard/privacy-support/privacy-supp-overview.md)
+            -   [How to make a privacy request](integration-guide-programmers/features-standard/privacy-support/make-privacy-req.md)
         -   Analytics {#analytics}
             -   [Integrating Adobe Pass Authentication server side data into Adobe Analytics](integration-guide-programmers/features-standard/analytics/integrate-authn-servr-data-analytics.md)
             -   [Using Experience Cloud ID in Adobe Pass Authentication](integration-guide-programmers/features-standard/analytics/exp-cloud-id-authn.md)

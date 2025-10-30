@@ -31,7 +31,7 @@ Before retrieving preauthorization decisions using a specific MVPD, ensure the f
 
 Follow the given steps to implement the basic preauthorization flow using a specific MVPD performed within a primary application as shown in the following diagram.
 
-![Retrieve preauthorization decisions using specific mvpd](../../../../../assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-retrieve-preauthorization-decisions-within-primary-application-using-specific-mvpd.png)
+![Retrieve preauthorization decisions using specific mvpd](../..//help/authentication/assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-retrieve-preauthorization-decisions-within-primary-application-using-specific-mvpd.png)
 
 *Retrieve preauthorization decisions using specific mvpd*
 

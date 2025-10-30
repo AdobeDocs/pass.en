@@ -43,19 +43,19 @@ The following drill-down trees illustrate the dimensions (resources) available i
 
 #### Day
 
-![](../../../assets/esm-progr-dimensions-day.png)
+![](/help/authentication/assets/esm-progr-dimensions-day.png)
 
 #### Hour
 
-![](../../../assets/esm-progr-dimensions-hour.png)
+![](/help/authentication/assets/esm-progr-dimensions-hour.png)
 
 #### Minute
 
-![](../../../assets/esm-progr-dimensions-minute.png)
+![](/help/authentication/assets/esm-progr-dimensions-minute.png)
 
 ### Dimensions available to MVPDs {#mvpd-dimensions}
 
-![](../../../assets/esm-mvpd-dimensions.png)
+![](/help/authentication/assets/esm-mvpd-dimensions.png)
 
 A GET to the `https://mgmt.auth.adobe.com/esm/v3` API endpoint will return a representation containing:
 

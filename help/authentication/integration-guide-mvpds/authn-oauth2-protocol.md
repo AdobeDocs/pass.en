@@ -61,7 +61,7 @@ In the authentication flow, Adobe Pass Authentication will communicate with the 
 
  
 
-![Diagram to show Authentication flow in Adobe Authentication that communicates with the MVPD on the protocol selected in configuration.](../assets/authn-flow.png)
+![Diagram to show Authentication flow in Adobe Authentication that communicates with the MVPD on the protocol selected in configuration.](/help/authentication/assets/authn-flow.png)
 
 **Figure 1: OAuth 2.0 authentication flow**
 

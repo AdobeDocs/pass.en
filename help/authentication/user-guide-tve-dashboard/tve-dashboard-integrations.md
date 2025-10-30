@@ -18,7 +18,7 @@ The **Integrations** tab in the left panel displays a list of existing integrati
 * Channel name with channel ID
 * MVPD display name and MVPD ID
 
-![List of existing Integrations](../assets/tve-dashboard/new-tve-dashboard/integrations/integrations-list.png)
+![List of existing Integrations](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integrations-list.png)
 
 *List of existing Integrations*
 
@@ -43,7 +43,7 @@ Follow these steps to manage a specific integration.
 
 This section enables you to choose the endpoints of the MVPD used for authentication, authorization, and logout flows from the respective dropdown menus.
 
-   ![Endpoints for authentication, authorization, and logout flows](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-endpoint-selection-panel-view.png)
+   ![Endpoints for authentication, authorization, and logout flows](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-endpoint-selection-panel-view.png)
 
    *Endpoints for authentication, authorization, and logout flows*
 
@@ -81,11 +81,11 @@ Each property in platform settings inherit a default value set by the MVPD but c
 
 * **Unidentified Devices**: Set values for properties applicable to all devices where the current mechanism can't accurately identify the platform. In such cases, apply the most restrictive rules defined by the MVPD.
 
-   ![Category of platforms and their devices](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-menu.png)
+   ![Category of platforms and their devices](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-menu.png)
 
    *Category of platforms and their devices*
 
-Select <img alt= "inheritance chain icon" src="../assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-inheritance-chain-icon.svg" width="25"> icon located at the right of each property to explore the properties used for each inheritance level described above.
+Select <img alt= "inheritance chain icon" src="/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-inheritance-chain-icon.svg" width="25"> icon located at the right of each property to explore the properties used for each inheritance level described above.
 
 #### Most used business flows {#most-used-flows}
 
@@ -111,7 +111,7 @@ Follow these steps to change authentication and authorization TTL across all pla
    >
    >If you want to change the duration of **AuthN TTL** and **AuthZ TTL** for a platform category or a specific platform, select the platform accordingly.
 
-   ![Change AuthN TTL AuthZ TTL duration across all platforms](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-authn-ttl-authz-ttl-properties.png)
+   ![Change AuthN TTL AuthZ TTL duration across all platforms](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-authn-ttl-authz-ttl-properties.png)
 
    *Change AuthN TTL AuthZ TTL duration across all platforms*
 
@@ -137,7 +137,7 @@ Follow these steps to enable or disable SSO for a specific integration and platf
 
 1. Select a specific platform or category of platforms for which you want to enable single sign on under **Platform Settings**.
 
-   ![Enable Single Sign On for a specific platform](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-single-sign-on-properties.png)
+   ![Enable Single Sign On for a specific platform](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-single-sign-on-properties.png)
 
    *Enable Single Sign On for a specific platform*
 
@@ -165,7 +165,7 @@ Follow these steps to enable or disable home-based authentication for OAuth2 bas
 
 1. Select a specific platform or category of platforms for which you want to enable home-based authentication under **Platform Settings**.
 
-   ![Enable home-based authentication for a specific platform](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-attempt-hba-properties.png)
+   ![Enable home-based authentication for a specific platform](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-attempt-hba-properties.png)
 
    *Enable home-based authentication for a specific platform*
 
@@ -198,7 +198,7 @@ However, in cases where MVPDs agree to raise this limit, you can navigate to the
 
 **Preflight Max Resources** will add a new attribute where the agreed limit with the MVPD can be specified.
 
-   ![Add Preflight Max Resources property](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-preflight-max-resources-properties.png)
+   ![Add Preflight Max Resources property](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-preflight-max-resources-properties.png)
 
    *Add Preflight Max Resources property*
 
@@ -210,7 +210,7 @@ For programmer applications that don't want to build their MVPD picker and inste
 
 Different values for these properties can be used for the same MVPD depending on the device platform and the desired user experience.
 
-   ![Add Display Name or Logo URL property](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-display-name-logo-url-properties.png)
+   ![Add Display Name or Logo URL property](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-display-name-logo-url-properties.png)
 
    *Add Display Name or Logo URL property*
 
@@ -222,7 +222,7 @@ If you want to force a new authentication when users switch between apps. In tha
 
 Adding **Auth per Aggregator** effectively breaks single sign on for the respective channel.
 
-   ![Add Auth Per Aggregator property](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-auth-per-aggregator-properties.png)
+   ![Add Auth Per Aggregator property](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-auth-per-aggregator-properties.png)
 
    *Add Auth Per Aggregator property*
 
@@ -232,7 +232,7 @@ Once added, select **Yes** to enable **Auth per Aggregator** property for a sele
 
 #### Delete properties {#delete-properties}
 
-Select <img alt= "delete property button" src="../assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-delete-property-icon.svg" width="25"> icon located at the right of each property to delete the properties that are no longer required.
+Select <img alt= "delete property button" src="/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-platform-settings-delete-property-icon.svg" width="25"> icon located at the right of each property to delete the properties that are no longer required.
 
 >[!NOTE]
 >
@@ -265,7 +265,7 @@ Learn more about available certificates in [Programmers](/help/authentication/us
 
 **Enabled**: This column allows you to enable or disable the parameters in the API by selecting **Yes** or **No** respectively from the dropdown menu.
 
-   ![Parameters available for User Metadata](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-user-metadata-panel-view.png)
+   ![Parameters available for User Metadata](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-user-metadata-panel-view.png)
 
    *Parameters available for User Metadata*
 
@@ -277,7 +277,7 @@ To create a new integration with a new MVPD on your current setup, follow these 
 
 1. Select **Create new integration** at the upper-right of the **Integrations** section.
 
-    ![Create a new integration](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-create-new-integration-button.png)
+    ![Create a new integration](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-create-new-integration-button.png)
 
    *Create a new integration*
 
@@ -287,7 +287,7 @@ To create a new integration with a new MVPD on your current setup, follow these 
 
    Select a **Channel** from the **Select Channel** dropdown menu to add a new integration. Once you've selected the channel, select the required **MVPD** from the **Select MVPD** dropdown menu to be integrated with the selected channel.
 
-     ![Select Channel and MVPD](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-new-integration-select-channel-and-mvpd-panel-view.png)
+     ![Select Channel and MVPD](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-new-integration-select-channel-and-mvpd-panel-view.png)
 
      *Select Channel and MVPD*
 
@@ -299,7 +299,7 @@ To create a new integration with a new MVPD on your current setup, follow these 
    >
    >Don't change the default endpoints in any flow unless stated specifically by the MVPD.
 
-   ![Select endpoints ](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-new-integration-select-endpoints-panel-view.png)
+   ![Select endpoints ](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-new-integration-select-endpoints-panel-view.png)
 
    *Select endpoints*
 
@@ -313,7 +313,7 @@ To create a new integration with a new MVPD on your current setup, follow these 
 
    For example, you can edit the **AuthN TTL** or **Partner ID** (Channel ID) for co-branding purposes on the MVPD login page in the following image. 
 
-   ![Edit Additional information](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-new-integration-additional-information-panel-view.png)
+   ![Edit Additional information](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-new-integration-additional-information-panel-view.png)
 
    *Edit Additional information*
 
@@ -332,7 +332,7 @@ To disable an integration, follow these steps:
 
 1. Disable the toggle available at the top-right of the selected integration. 
 
-   ![Disable integration](../assets/tve-dashboard/new-tve-dashboard/integrations/integration-enabled-disabled-button.png)
+   ![Disable integration](/help/authentication/assets/tve-dashboard/new-tve-dashboard/integrations/integration-enabled-disabled-button.png)
 
    *Disable integration*
 

@@ -48,7 +48,7 @@ Adobe Pass uses DCR to secure client communications between a programmer applica
 
 ### Streaming  (Smart Device) App Flows
 
-![](../../../../assets/smart-device-app-flow.png)
+![](..//help/authentication/assets/smart-device-app-flow.png)
 
 #### Startup Flow
 
@@ -113,7 +113,7 @@ Adobe Pass uses DCR to secure client communications between a programmer applica
 
 ### AuthN (2nd Screen) App Flow
 
-![](../../../../assets/secnd-screen-authn-flow.png)
+![](..//help/authentication/assets/secnd-screen-authn-flow.png)
 
 1.  Get a list of MVPDs for this user. For example: [`<SP_FQDN>/api/v1/config/[requestorID]`](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/apis/provide-mvpd-list.md)
 
@@ -142,4 +142,4 @@ For TempPass and Promotional TempPass implementations where the user is not requ
 **In order to use this API the Streaming App needs to make sure of the uniqueness of the device ID as this is being used for identifying the token, along with the optional extra data.**
 
 
-![](../../../../assets/temp-pass-promo-temppass.png)
+![](..//help/authentication/assets/temp-pass-promo-temppass.png)

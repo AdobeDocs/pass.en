@@ -71,7 +71,7 @@ if (ContextCompat.checkSelfPermission(thisActivity,
 >A feature which introduces storage resilience is currently in development for the Adobe Pass Authentication SDK 1.9. The new SDK is targeted for **release in the last week of October**. The application will fallback to writing in the application's sandbox storage whenever the general storage cannot be used. This covers the case in which, for applications developed in API level 23, users do NOT accept read/write permissions in the global storage. The tokens are stored individually per app which means that Single-Sign-On between apps using Adobe Pass Authentication will be disabled.
 
 
-![](../../../assets/android-permissions-request.png)
+![](/help/authentication/assets/android-permissions-request.png)
 
 *Figure: The permission request dialogue for apps written targeting API level 23*
 

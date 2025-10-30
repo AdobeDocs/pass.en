@@ -44,19 +44,19 @@ Depending on the issues which are investigated you may wish to include or exclud
 
 First of all in order to be able to see any of the logging messages emitted by the AccessEnabler framework you **must** select the "Include Info Messages" and "Include Debug Messages" in the Action section of the Console app, as presented in the image below.
 
-![](../../../assets/include-info-debug-msg.png)
+![](/help/authentication/assets/include-info-debug-msg.png)
 
 
 In order to be able to debug the functionality of the AccessEnabler iOS/tvOS SDK and **see** the AccessEnabler framework logs you can:
 
 * Search in Console app using **Subsystem** option which Equals the com.adobe.pass.AccessEnabler value as in the image below.
 
-![](../../../assets/subsys-console-app.png)
+![](/help/authentication/assets/subsys-console-app.png)
 
 * Search in Console app using **Any** option which Contains the
   [AccessEnabler] value as in the image below.
 
-![](../../../assets/any-optn-console-app.png)
+![](/help/authentication/assets/any-optn-console-app.png)
 
 Alongside the above two criterias you can also use the **Category** option in conjuction with **Subsystem** or **Any (prefix)** to explicitly search for **debug** or **error** level messages emitted by the AccessEnabler iOS/tvOS SDK.
 

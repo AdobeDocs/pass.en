@@ -68,7 +68,7 @@ The following chart describes the events and steps for a user with no authentica
 
 
 
-![](../../../assets/ae-flow-with-events.png)
+![](/help/authentication/assets/ae-flow-with-events.png)
 
 
 
@@ -88,7 +88,7 @@ For users who have valid AuthZ and AuthN tokens cached, the following
 steps happen:
 
 
-![](../../../assets/ae-flow-tokens-cached-web.png)
+![](/help/authentication/assets/ae-flow-tokens-cached-web.png)
 
 
 
@@ -103,7 +103,7 @@ This is triggered automatically when calling `getAuthorization()`, and involves 
 
 For users who still have valid AuthN tokens, the following steps happen:
 
-![](../../../assets/ae-flow-authn-token-cached.png)
+![](/help/authentication/assets/ae-flow-authn-token-cached.png)
 
 
 This flow involves a round trip to the MVPD.

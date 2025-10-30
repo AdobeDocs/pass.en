@@ -22,13 +22,13 @@ Before granting access to protected content, you must determine whether the view
 
 For Programmers, determining entitlement is not always straightforward. MVPDs are the custodians of their customers’ identifying data and access privileges. Complicating matters further, Programmers viewers may subscribe to a wide variety of MVPDs, each operating with unique systems. These complexities make verifying entitlement both technically challenging and resource-intensive.
 
-![User Entitlement Determined Directly By Programmer](../assets/user-ent-by-progr.png){align="center"}
+![User Entitlement Determined Directly By Programmer](/help/authentication/assets/user-ent-by-progr.png){align="center"}
 
 *User Entitlement Determined Directly By Programmer*
 
 Adobe Pass Authentication securely facilitates entitlement transactions between Programmers and MVPDs, making it quick, easy, and secure to provide protected content to eligible viewers.
 
-![User Entitlement Mediated by Adobe Pass Authentication](../assets/user-ent-mediatedby-authn.png){align="center"}
+![User Entitlement Mediated by Adobe Pass Authentication](/help/authentication/assets/user-ent-mediatedby-authn.png){align="center"}
 
 *User Entitlement Mediated by Adobe Pass Authentication*
 

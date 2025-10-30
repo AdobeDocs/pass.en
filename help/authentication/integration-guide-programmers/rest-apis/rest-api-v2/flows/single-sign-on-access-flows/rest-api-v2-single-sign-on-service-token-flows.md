@@ -54,7 +54,7 @@ Before performing the authentication flow through single sign-on using a service
 
 Perform the given steps to implement the authentication flow through single sign-on using a service token as shown in the following diagram.
 
-![Perform authentication through single sign-on using service token](../../../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-perform-authentication-through-single-sign-on-using-service-token-flow.png)
+![Perform authentication through single sign-on using service token](../..//help/authentication/assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-perform-authentication-through-single-sign-on-using-service-token-flow.png)
 
 *Perform authentication through single sign-on using service token*
 
@@ -224,7 +224,7 @@ Before performing the authorization flow through single sign-on using a service 
 
 Perform the given steps to implement the authorization flow through single sign-on using a service token as shown in the following diagram.
 
-![Retrieve authorization decisions through single sign-on using service token](../../../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-authorization-decisions-through-single-sign-on-using-service-token-flow.png)
+![Retrieve authorization decisions through single sign-on using service token](../..//help/authentication/assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-authorization-decisions-through-single-sign-on-using-service-token-flow.png)
 
 *Retrieve authorization decisions through single sign-on using service token*
 

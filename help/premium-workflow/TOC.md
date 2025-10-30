@@ -18,9 +18,6 @@ user-guide-description: A robust suite of premium add-on features to enhance the
         + [Roku SSO Cookbook (REST API V2)](sso-access/platform-sso/roku-single-sign-on/roku-sso-cookbook-rest-api-v2.md)
 + Home Based Authentication Access {#hba-access}
     + [Home-based authentication (HBA)](hba-access/home-based-authentication.md)
-+ Privacy Support {#privacy-support}
-    + [Privacy support overview](privacy-support/privacy-supp-overview.md)
-    + [How to make a privacy request](privacy-support/make-privacy-req.md)
 + Temporary Access {#temporary-access}
     + [TempPass Feature](temporary-access/temp-pass-feature.md)
 + Degraded Access {#degraded-access}

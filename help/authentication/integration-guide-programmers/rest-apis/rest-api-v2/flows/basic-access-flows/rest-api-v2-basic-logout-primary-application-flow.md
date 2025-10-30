@@ -47,7 +47,7 @@ Before initiating logout for a specific MVPD with a logout endpoint, ensure the 
 
 Follow the given steps to implement the basic logout flow for a specific MVPD with a logout endpoint performed within a primary application as shown in the following diagram.
 
-![Initiate logout for specific mvpd with logout endpoint](../../../../../assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-initiate-logout-within-primary-application-for-specific-mvpd-with-logout-endpoint.png)
+![Initiate logout for specific mvpd with logout endpoint](../..//help/authentication/assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-initiate-logout-within-primary-application-for-specific-mvpd-with-logout-endpoint.png)
 
 *Initiate logout for specific mvpd with logout endpoint*
 
@@ -113,7 +113,7 @@ Before initiating logout for a specific MVPD without a logout endpoint, ensure t
 
 Follow the given steps to implement the basic logout flow for a specific MVPD without a logout endpoint performed within a primary application as shown in the following diagram.
 
-![Initiate logout for specific mvpd without logout endpoint](../../../../../assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-initiate-logout-within-primary-application-for-specific-mvpd-without-logout-endpoint.png)
+![Initiate logout for specific mvpd without logout endpoint](../..//help/authentication/assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-initiate-logout-within-primary-application-for-specific-mvpd-without-logout-endpoint.png)
 
 *Initiate logout for specific mvpd without logout endpoint*
 

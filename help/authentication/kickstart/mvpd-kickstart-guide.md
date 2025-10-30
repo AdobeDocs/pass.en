@@ -27,7 +27,7 @@ Adobe provides a range of resources to help you to integrate with Adobe Pass Aut
 
 The setup process involves among others the following steps:
 
-![Adobe&reg; Pass Authentication Integration Process](../assets/mvpd-int-lifecycle.png)
+![Adobe&reg; Pass Authentication Integration Process](/help/authentication/assets/mvpd-int-lifecycle.png)
 
 *Adobe&reg; Pass Authentication Integration Process*
 
