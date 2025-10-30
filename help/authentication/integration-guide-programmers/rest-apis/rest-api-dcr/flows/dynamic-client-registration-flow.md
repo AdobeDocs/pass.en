@@ -70,7 +70,7 @@ Follow the given steps to access Adobe Pass protected APIs as shown in the follo
 
    >[!IMPORTANT]
    >
-   > Refer to the [Retrieve access token](../apis/dynamic-client-registration-apis-retrieve-access-token.md#request) API documentation for details on:
+   > Refer to the [Retrieve access token](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md#request) API documentation for details on:
    >
    > * All the _required_ parameters, like `client_id`, `client_secret`, and `grant_type`
    > * All the _required_ headers, like `Content-Type`, `X-Device-Info`
@@ -80,7 +80,7 @@ Follow the given steps to access Adobe Pass protected APIs as shown in the follo
 
    >[!IMPORTANT]
    >
-   > Refer to the [Retrieve access token](../apis/dynamic-client-registration-apis-retrieve-access-token.md#success) API documentation for details on the information provided in an access token response.
+   > Refer to the [Retrieve access token](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md#success) API documentation for details on the information provided in an access token response.
    >
    > <br/>
    >
@@ -90,7 +90,7 @@ Follow the given steps to access Adobe Pass protected APIs as shown in the follo
    >
    > <br/>
    >
-   > If validation fails, an error response will be generated, providing additional information that adheres to the [Retrieve access token](../apis/dynamic-client-registration-apis-retrieve-access-token.md#error) API documentation.
+   > If validation fails, an error response will be generated, providing additional information that adheres to the [Retrieve access token](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md#error) API documentation.
 
    >[!TIP]
    >

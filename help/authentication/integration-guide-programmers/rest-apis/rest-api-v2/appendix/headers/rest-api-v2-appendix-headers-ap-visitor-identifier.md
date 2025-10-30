@@ -13,7 +13,7 @@ exl-id: 216f398b-1cfa-4453-a81d-963675b33ec2
 
 The <b>AP-Visitor-Identifier</b> request header contains the `ECID` required by the client application to uniquely identify a visitor across Adobe Experience Cloud solutions.
 
-For more details about the usage of ECID in Adobe Pass Authentication, refer to the [Using Experience Cloud ID in Adobe Pass Authentication](../../../../features-premium/analytics/exp-cloud-id-authn.md) documentation.
+For more details about the usage of ECID in Adobe Pass Authentication, refer to the [Using Experience Cloud ID in Adobe Pass Authentication](/help/authentication/integration-guide-programmers/features-standard/analytics/exp-cloud-id-authn.md) documentation.
 
 ## Syntax {#syntax}
 

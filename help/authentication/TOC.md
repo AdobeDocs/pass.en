@@ -51,7 +51,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     -   [MVPD kickstart guide](kickstart/mvpd-kickstart-guide.md)
     -   [Support procedures FAQs](kickstart/support-procedures-faqs.md)
 -   Integration Guide For Programmers {#integration-guide-programmers}
-    -   [Programmer integration guide](integration-guide-programmers/programmer-integration-guide-overview.md)
+    -   [Programmer integration guide](/help/authentication/integration-guide-programmers/programmer-integration-guide-overview.md)
     -   [Minimum system requirements](integration-guide-programmers/minimum-system-requirements.md)
     -   [Throttling mechanism](integration-guide-programmers/throttling-mechanism.md)
     -   REST APIs {#rest-apis}
@@ -61,7 +61,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             -   [Dynamic Client Registration FAQs](integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-faqs.md)
             -   APIs {#rest-api-dcr-apis}
                 -   [Retrieve client credentials](integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-client-credentials.md)
-                -   [Retrieve access token](integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md)
+                -   [Retrieve access token](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md)
             -   Flows {#rest-api-dcr-flows}
                 -   [Dynamic Client Registration Flow](integration-guide-programmers/rest-apis/rest-api-dcr/flows/dynamic-client-registration-flow.md)
         -   REST API V2 {#rest-api-v2}
@@ -136,7 +136,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             -   [How to make a privacy request](integration-guide-programmers/features-standard/privacy-support/make-privacy-req.md)
         -   Analytics {#analytics}
             -   [Integrating Adobe Pass Authentication server side data into Adobe Analytics](integration-guide-programmers/features-standard/analytics/integrate-authn-servr-data-analytics.md)
-            -   [Using Experience Cloud ID in Adobe Pass Authentication](integration-guide-programmers/features-standard/analytics/exp-cloud-id-authn.md)
+            -   [Using Experience Cloud ID in Adobe Pass Authentication](/help/authentication/integration-guide-programmers/features-standard/analytics/exp-cloud-id-authn.md)
     -   Legacy {#legacy}
         -   (Legacy) REST API V1 {#rest-api-v1}
             -   [(Legacy) REST API V1 Overview](integration-guide-programmers/legacy/rest-api-v1/rest-api-overview.md)

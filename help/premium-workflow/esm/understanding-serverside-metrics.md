@@ -284,6 +284,6 @@ difference:
 <!--
 ## Related Information {#related-information}
 
-- [Entitlement Service Monitoring API](/help/authentication/entitlement-service-monitoring-api.md)
+- [Entitlement Service Monitoring API](/help/premium-workflow/esm/entitlement-service-monitoring-api.md)
 
 -->

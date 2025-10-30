@@ -79,7 +79,7 @@ Initiates the authentication process by informing of an MVPD selection event. Cr
 >
 >The call may also contain optional parameters that enable other functionalities like:
 >
-> * generic\_data - enables the use of [Promotional TempPass](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md#promotional-temp-pass)
+> * generic\_data - enables the use of [Promotional TempPass](/help/premium-workflow/temporary-access/temp-pass-feature.md#promotional-temp-pass)
 >
 >```JSON
 >Example:

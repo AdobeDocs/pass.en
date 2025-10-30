@@ -32,7 +32,7 @@ The `deviceType` parameter was present in the Clientless API since the first ver
 >If the parameter `deviceType` is set correctly then it has the following **benefit** in Entitlement Service Monitoring: it offers metrics that are [broken down per device type](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md#clientless_device_type) when using Clientless, so that different types of analysis can be performed for e.g. Roku, AppleTV, Xbox etc.
 
 
-For more information on the Entitlement Service Monitoring API, please refer to the [drill-down tree,](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-api.md#drill-down_tree) which illustrates the [dimensions](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md#esm_dimensions) (resources) available in ESM 2.0.
+For more information on the Entitlement Service Monitoring API, please refer to the [drill-down tree,](/help/premium-workflow/esm/entitlement-service-monitoring-api.md#drill-down_tree) which illustrates the [dimensions](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md#esm_dimensions) (resources) available in ESM 2.0.
 
 >[!NOTE]
 >

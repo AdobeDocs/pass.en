@@ -36,7 +36,7 @@ For more details about the mechanism to access Adobe Pass protected APIs, refer 
 
 <b>&lt;access_token&gt;</b>
 
-The access token value is an opaque value having a limited time-to-live (e.g., 24-hours) that must be obtained from Adobe Pass as described in the [Retrieve access token](../../../rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation.
+The access token value is an opaque value having a limited time-to-live (e.g., 24-hours) that must be obtained from Adobe Pass as described in the [Retrieve access token](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation.
 
 ## Examples {#examples}
 

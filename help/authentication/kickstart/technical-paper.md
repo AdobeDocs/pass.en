@@ -126,7 +126,7 @@ Additional guidance is available once the integration is formally initiated, but
 * Integrate the Adobe Pass Authentication [Media Token Verifier](/help/authentication/integration-guide-programmers/features-standard/entitlements/media-tokens.md#media-token-verifier).
 * Develop a user interface for the authentication, authorization and logout workflow.
 
-For more details on the Programmer integration process, refer to the [Programmer kickstart guide](/help/authentication/kickstart/programmer-kickstart-guide.md) and [Programmer integration guide](/help/authentication/integration-guide-programmers/programmer-integration-guide-overview.md) documents.
+For more details on the Programmer integration process, refer to the [Programmer kickstart guide](/help/authentication/integration-guide-programmers/programmer-integration-guide-overview.md) documents.
 
 #### Pay TV Provider Integration Process {#pay-tv-provider-integration-process}
 
@@ -163,11 +163,11 @@ For Programmers, Adobe Pass Authentication provides APIs as part of a **Standard
     * [REST API V2](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/rest-api-v2-apis-overview.md)
 
 * Premium Adobe Pass Authentication APIs:
-    * [Reset Temp Pass API](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md#reset-tempass-api-access)
-      * [TempPass Feature](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md)
+    * [Reset Temp Pass API](/help/premium-workflow/temporary-access/temp-pass-feature.md#reset-tempass-api-access)
+      * [TempPass Feature](/help/premium-workflow/temporary-access/temp-pass-feature.md)
     * [Degradation API](/help/authentication/integration-guide-programmers/features-premium/degraded-access/degradation-feature.md#degradation-api-access)
-      * [Degradation Feature](/help/authentication/integration-guide-programmers/features-premium/degraded-access/degradation-feature.md)
-    * [Entitlement Service Monitoring API](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-api.md)
+      * [Degradation Feature](/help/premium-workflow/degraded-access/degradation-feature.md)
+    * [Entitlement Service Monitoring API](/help/premium-workflow/esm/entitlement-service-monitoring-api.md)
 
 For more details on the entitlement flow, refer to the [Programmer Integration Guide](/help/authentication/integration-guide-programmers/programmer-integration-guide-overview.md#entitlement-flow) documentation.
 

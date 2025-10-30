@@ -27,7 +27,7 @@ For more details about `AP-Partner-Framework-Status` header, refer to the [AP-Pa
 
 The Adobe Pass Authentication REST API V2 has support for Partner Single Sign-On (SSO) for end users of client applications running on iOS, iPadOS or tvOS.
 
-For more details about single sign-on (SSO) for Apple platform, refer to the [Apple SSO Cookbook (REST API V2)](/help/authentication/integration-guide-programmers/features-standard/sso-access/partner-sso/apple-sso/apple-sso-cookbook-rest-api-v2.md) documentation.
+For more details about single sign-on (SSO) for Apple platform, refer to the [Apple SSO Cookbook (REST API V2)](/help/premium-workflow/sso-access/partner-sso/apple-sso/apple-sso-cookbook-rest-api-v2.md) documentation.
 
 ## Retrieve partner authentication request {#retrieve-partner-authentication-request}
 

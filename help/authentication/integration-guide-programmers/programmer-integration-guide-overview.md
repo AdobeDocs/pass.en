@@ -41,11 +41,11 @@ For Programmers, Adobe Pass Authentication provides APIs as part of a **Standard
     * [REST API V2](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/rest-api-v2-apis-overview.md)
 
 * Premium Adobe Pass Authentication APIs:
-    * [Reset Temp Pass API](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md#reset-tempass-api-access)
-        * [TempPass Feature](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md)
+    * [Reset Temp Pass API](/help/premium-workflow/temporary-access/temp-pass-feature.md#reset-tempass-api-access)
+        * [TempPass Feature](/help/premium-workflow/temporary-access/temp-pass-feature.md)
     * [Degradation API](/help/authentication/integration-guide-programmers/features-premium/degraded-access/degradation-feature.md#degradation-api-access)
-        * [Degradation Feature](/help/authentication/integration-guide-programmers/features-premium/degraded-access/degradation-feature.md)
-    * [Entitlement Service Monitoring API](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-api.md)
+        * [Degradation Feature](/help/premium-workflow/degraded-access/degradation-feature.md)
+    * [Entitlement Service Monitoring API](/help/premium-workflow/esm/entitlement-service-monitoring-api.md)
 
 ### Use Cases {#use-cases}
 
@@ -66,7 +66,7 @@ This section outlines further the Programmer integration use cases supported by 
 | **Phase**            | **Priority** | **Use Case**                                                            | **Documents**                                                                                                                                                                    |
 |----------------------|--------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Authentication**   | **High**     | Authentication                                                          | For more details, refer to the documents aggregated under the [Authentication Phase](#authentication-phase) section.                                                             |
-|                      | **High**     | Home-Based Authentication (HBA)                                         | For more details, refer to the [Home-Based Authentication](/help/authentication/integration-guide-programmers/features-standard/hba-access/home-based-authentication.md).        |
+|                      | **High**     | Home-Based Authentication (HBA)                                         | For more details, refer to the [Home-Based Authentication](/help/premium-workflow/hba-access/home-based-authentication.md).        |
 |                      | **High**     | Single Sign-On (SSO)                                                    | For more details, refer to the documents aggregated under the [Single Sign-On (SSO)](#sso) section.                                                                              |
 |                      | **High**     | Select MVPD                                                             | For more details, refer to the documents aggregated under the [Configuration Phase](#configuration-phase) section.                                                               |
 |                      | **Medium**   | Branded MVPD Login Page                                                 | Enables MVPDs to provide login pages with branding specific to the Programmer or service provider, including support for default language preferences.                           |

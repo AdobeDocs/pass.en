@@ -127,7 +127,7 @@ At this point these Safari requirements/prompts do not align with our UX require
 
 **Temp Pass**
 
-In order to mitigate the individualization problems and to have a user interaction we recommend you to use **[Promotional Temp Pass](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md#promotional-temp-pass)** in a interactive way, and provide at least one additional information about the user (for example, email address).
+In order to mitigate the individualization problems and to have a user interaction we recommend you to use **[Promotional Temp Pass](/help/premium-workflow/temporary-access/temp-pass-feature.md#promotional-temp-pass)** in a interactive way, and provide at least one additional information about the user (for example, email address).
 
 ## Safari 13 {#safari13}
 
