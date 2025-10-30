@@ -15,7 +15,7 @@ Adobe Pass provides a dynamic client registration service that enables access to
 
 * Adobe Pass Authentication Management APIs:
   * [Reset Temp Pass API](/help/premium-workflow/temporary-access/temp-pass-feature.md#reset-tempass-api-access)
-  * [Degradation API](../../features-premium/degraded-access/degradation-feature.md#degradation-api-access)
+  * [Degradation API](/help/premium-workflow/degraded-access/degradation-feature.md#degradation-api-access)
   * [Proxy MVPD API](../../../integration-guide-mvpds/proxy-mvpd-webserv.md)
   * [Entitlement Service Monitoring API](/help/premium-workflow/esm/entitlement-service-monitoring-api.md)
 * Adobe Pass Authentication REST APIs:

@@ -11,7 +11,7 @@ exl-id: 51461caf-08ef-459e-b284-8f317f45e7b1
 
 This integration guide is intended for content providers (Programmers) who plan to integrate with Adobe&reg; Pass Authentication.
 
-In today’s digital landscape, viewers can access the Internet anytime, anywhere, and request access to your protected content. They might be looking to watch a one-time event or seeking the rights to stream an entire television series you are airing.
+In today's digital landscape, viewers can access the Internet anytime, anywhere, and request access to your protected content. They might be looking to watch a one-time event or seeking the rights to stream an entire television series you are airing.
 
 Before granting access to protected content, you must determine whether the viewer is entitled to it. Key questions include:
 
@@ -20,7 +20,7 @@ Before granting access to protected content, you must determine whether the view
 
 ## Adobe Pass Authentication for TV Everywhere {#adobe-pass-authentication-for-tv-everywhere}
 
-For Programmers, determining entitlement is not always straightforward. MVPDs are the custodians of their customers’ identifying data and access privileges. Complicating matters further, Programmers viewers may subscribe to a wide variety of MVPDs, each operating with unique systems. These complexities make verifying entitlement both technically challenging and resource-intensive.
+For Programmers, determining entitlement is not always straightforward. MVPDs are the custodians of their customers' identifying data and access privileges. Complicating matters further, Programmers viewers may subscribe to a wide variety of MVPDs, each operating with unique systems. These complexities make verifying entitlement both technically challenging and resource-intensive.
 
 ![User Entitlement Determined Directly By Programmer](/help/authentication/assets/user-ent-by-progr.png){align="center"}
 
@@ -43,7 +43,7 @@ For Programmers, Adobe Pass Authentication provides APIs as part of a **Standard
 * Premium Adobe Pass Authentication APIs:
     * [Reset Temp Pass API](/help/premium-workflow/temporary-access/temp-pass-feature.md#reset-tempass-api-access)
         * [TempPass Feature](/help/premium-workflow/temporary-access/temp-pass-feature.md)
-    * [Degradation API](/help/authentication/integration-guide-programmers/features-premium/degraded-access/degradation-feature.md#degradation-api-access)
+    * [Degradation API](/help/premium-workflow/degraded-access/degradation-feature.md#degradation-api-access)
         * [Degradation Feature](/help/premium-workflow/degraded-access/degradation-feature.md)
     * [Entitlement Service Monitoring API](/help/premium-workflow/esm/entitlement-service-monitoring-api.md)
 
