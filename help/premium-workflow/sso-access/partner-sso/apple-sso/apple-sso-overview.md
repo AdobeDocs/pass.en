@@ -47,7 +47,7 @@ In order to benefit from the Single Sign-On (SSO) user experience, one Programme
 
   * The legacy Adobe Pass Authentication REST API V1 has support for Partner Single Sign-On (SSO).
 
-    Refer to the [(Legacy) Apple SSO Cookbook (REST API V1)](../../../../legacy/sso-access/apple-sso-cookbook-rest-api-v1.md) documentation.
+    Refer to the [(Legacy) Apple SSO Cookbook (REST API V1)](/help/authentication/integration-guide-programmers/legacy/sso-access/apple-sso-cookbook-rest-api-v1.md) documentation.
 
   * The legacy Adobe Pass Authentication AccessEnabler iOS/tvOS SDK has support for Partner Single Sign-On (SSO).
 

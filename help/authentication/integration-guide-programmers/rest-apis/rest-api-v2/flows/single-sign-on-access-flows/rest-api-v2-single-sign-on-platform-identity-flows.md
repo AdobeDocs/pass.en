@@ -28,7 +28,7 @@ For more details about `Adobe-Subject-Token` / `X-Roku-Reserved-Roku-Connect-Tok
 >[!MORELIKETHIS]
 > 
 > * [Amazon SSO Cookbook](/help/premium-workflow/sso-access/platform-sso/amazon-single-sign-on/amazon-sso-cookbook-rest-api-v2.md)
-> * [Roku SSO Cookbook](/help/premium-workflow/sso-access/platform-sso/roku-single-sign-on/amazon-sso-cookbook-rest-api-v2.md)
+> * [Roku SSO Cookbook](/help/premium-workflow/sso-access/platform-sso/roku-single-sign-on/roku-sso-cookbook-rest-api-v2.md)
 
 ## Perform authentication through single sign-on using platform identity {#perform-authentication-through-single-sign-on-using-platform-identity}
 
