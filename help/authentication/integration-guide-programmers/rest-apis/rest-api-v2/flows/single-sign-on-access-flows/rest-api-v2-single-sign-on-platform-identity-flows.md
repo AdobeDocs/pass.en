@@ -56,7 +56,7 @@ Before performing the authentication flow through single sign-on using a platfor
 
 Perform the given steps to implement the authentication flow through single sign-on using a platform identity as shown in the following diagram.
 
-![Perform authentication through single sign-on using platform identity](../..//help/authentication/assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-perform-authentication-through-single-sign-on-using-platform-identity-flow.png)
+![Perform authentication through single sign-on using platform identity](/help/authentication/assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-perform-authentication-through-single-sign-on-using-platform-identity-flow.png)
 
 *Perform authentication through single sign-on using platform identity*
 
@@ -226,7 +226,7 @@ Before performing the authorization flow through single sign-on using a platform
 
 Perform the given steps to implement the authorization flow through single sign-on using a platform identity as shown in the following diagram.
 
-![Retrieve authorization decisions through single sign-on using platform identity](../..//help/authentication/assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-authorization-decisions-through-single-sign-on-using-platform-identity-flow.png)
+![Retrieve authorization decisions through single sign-on using platform identity](/help/authentication/assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-authorization-decisions-through-single-sign-on-using-platform-identity-flow.png)
 
 *Retrieve authorization decisions through single sign-on using platform identity*
 

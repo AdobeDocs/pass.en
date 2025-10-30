@@ -32,7 +32,7 @@ Before accessing Adobe Pass protected APIs, ensure the following prerequisites a
 
 Follow the given steps to access Adobe Pass protected APIs as shown in the following diagram.
 
-![Access Adobe Pass protected APIs](..//help/authentication/assets/dcr-api/dcr-api-access-adobe-pass-protected-apis.png)
+![Access Adobe Pass protected APIs](/help//authentication/assets/dcr-api/dcr-api-access-adobe-pass-protected-apis.png)
 
 *Access Adobe Pass protected APIs*
 

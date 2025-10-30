@@ -114,7 +114,7 @@ is authorized to view.
       * Triggered by a user action (by selecting "Cancel" or "Other TV Providers" from the Apple SSO Dialog).
       * The viewController parameter is the Apple SSO Dialog and needs to be dismissed from the main view controller.
 
-![](..//help/authentication/assets/iOS-flows.png)
+![](/help//authentication/assets/iOS-flows.png)
 
 ### B. Startup Flow {#startup_flow}
 
