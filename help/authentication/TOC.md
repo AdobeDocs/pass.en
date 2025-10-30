@@ -56,7 +56,7 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     -   [Throttling mechanism](integration-guide-programmers/throttling-mechanism.md)
     -   REST APIs {#rest-apis}
         -   REST API DCR {#rest-api-dcr}
-            -   [Dynamic Client Registration Overview](integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md)
+            -   [Dynamic Client Registration Overview](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md)
             -   [Dynamic Client Registration Glossary](integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-glossary.md)
             -   [Dynamic Client Registration FAQs](integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-faqs.md)
             -   APIs {#rest-api-dcr-apis}

@@ -19,7 +19,7 @@ exl-id: 650fd4a2-dfc3-4c74-9b5b-6bea832a28ca
 
 Starting with version 3.0 of the FireOS AccessEnabler SDK, we are changing the Authentication mechanism with Adobe's servers. Instead of using a public key and secret system to sign the requestorID, we are introducing the concept of a Software Statement string that can be used to obtain an access token that is later used for all calls that the SDK makes to our servers. In adition to a Software Statement you will also need to create a deep link for your application.
 
-More information, see [Dynamic Client Registration Overview](../../../rest-apis/rest-api-dcr/dynamic-client-registration-overview.md).
+More information, see [Dynamic Client Registration Overview](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md).
 
 ## What is a Software Statement? {#what}
 
@@ -53,7 +53,7 @@ A Software Statement is a JWT token that contains information about your applica
 
     A text file downloads. Use its contents as your Software Statement.
 
-More information, see [Dynamic Client Registration Management](../../../rest-apis/rest-api-dcr/dynamic-client-registration-overview.md#dynamic-client-registration-management).
+More information, see [Dynamic Client Registration Management](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md#dynamic-client-registration-management).
 
 ### If you don't have access to Adobe's TVE Dashboard:
 

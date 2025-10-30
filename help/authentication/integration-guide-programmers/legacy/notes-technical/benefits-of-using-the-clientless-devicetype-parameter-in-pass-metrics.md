@@ -17,7 +17,7 @@ exl-id: a5004887-d5fa-468e-971b-10806519175b
 
 ## Context
 
-Although optional, the parameter `deviceType` from the Clientless API, when present, is used in Adobe Pass Authentication metrics that are being exposed through [Entitlement Service Monitoring](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md).
+Although optional, the parameter `deviceType` from the Clientless API, when present, is used in Adobe Pass Authentication metrics that are being exposed through [Entitlement Service Monitoring](/help/premium-workflow/esm/entitlement-service-monitoring-overview.md).
 
 Considering that the connection between the `deviceType` parameter and its **benefits** on Adobe Pass Authentication metrics wasn't initially stated, the scope of this tech note is to add more information about them.
 
@@ -29,10 +29,10 @@ The `deviceType` parameter was present in the Clientless API since the first ver
 
 >[!IMPORTANT]
 >
->If the parameter `deviceType` is set correctly then it has the following **benefit** in Entitlement Service Monitoring: it offers metrics that are [broken down per device type](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md#clientless_device_type) when using Clientless, so that different types of analysis can be performed for e.g. Roku, AppleTV, Xbox etc.
+>If the parameter `deviceType` is set correctly then it has the following **benefit** in Entitlement Service Monitoring: it offers metrics that are [broken down per device type](/help/premium-workflow/esm/entitlement-service-monitoring-overview.md#clientless_device_type) when using Clientless, so that different types of analysis can be performed for e.g. Roku, AppleTV, Xbox etc.
 
 
-For more information on the Entitlement Service Monitoring API, please refer to the [drill-down tree,](/help/premium-workflow/esm/entitlement-service-monitoring-api.md#drill-down_tree) which illustrates the [dimensions](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md#esm_dimensions) (resources) available in ESM 2.0.
+For more information on the Entitlement Service Monitoring API, please refer to the [drill-down tree,](/help/premium-workflow/esm/entitlement-service-monitoring-overview.md#esm_dimensions) (resources) available in ESM 2.0.
 
 >[!NOTE]
 >

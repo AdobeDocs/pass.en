@@ -17,7 +17,7 @@ exl-id: f75cbc4d-4132-4ce8-a81c-1561a69d1d3a
 > * Obtain the client credentials as described in the [Retrieve client credentials](../integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-client-credentials.md) API documentation.
 > * Obtain the access token as described in the [Retrieve access token](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation.
 >
-> Refer to the [Dynamic Client Registration Overview](../integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md) documentation for more information about how to create a registered application and download the software statement.
+> Refer to the [Dynamic Client Registration Overview](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md) documentation for more information about how to create a registered application and download the software statement.
 
 ## Overview {#overview-proxy-mvpd-webserv}
 

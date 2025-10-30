@@ -205,7 +205,7 @@ The selected domain is no longer available for use. As a result, the application
 
 ### Registered Applications {#registered-applications}
 
-This tab displays a list of registered applications. For more details related to registered applications usage, refer to the [dynamic client registration overview](../integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md) documentation.
+This tab displays a list of registered applications. For more details related to registered applications usage, refer to the [dynamic client registration overview](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md) documentation.
 
 You can make the following actions with registered applications:
 

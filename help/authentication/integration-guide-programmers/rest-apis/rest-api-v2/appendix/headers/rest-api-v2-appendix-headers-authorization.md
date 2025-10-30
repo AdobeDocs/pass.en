@@ -14,7 +14,7 @@ exl-id: 86917d7e-ffd9-4d34-8f9c-5a50083f85e6
 
 The <b>Authorization</b> request header contains the `Bearer` access token required by the client application to access Adobe Pass protected APIs.
 
-For more details about the mechanism to access Adobe Pass protected APIs, refer to the [Dynamic Client Registration Overview](../../../rest-api-dcr/dynamic-client-registration-overview.md) documentation.
+For more details about the mechanism to access Adobe Pass protected APIs, refer to the [Dynamic Client Registration Overview](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md) documentation.
 
 ## Syntax {#syntax}
 

@@ -19,8 +19,8 @@ exl-id: d881cf0a-de09-4b1d-a094-d5490f944796
 
 Before accessing Adobe Pass protected APIs, ensure the following prerequisites are met:
 
-* A client representative must create a registered application as described in the [Manage registered applications](../dynamic-client-registration-overview.md#manage-registered-applications) section.
-* A client representative must download and embed a software statement as described in the [Manage software statements](../dynamic-client-registration-overview.md#manage-software-statements) section.
+* A client representative must create a registered application as described in the [Manage registered applications](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md#manage-registered-applications) section.
+* A client representative must download and embed a software statement as described in the [Manage software statements](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md#manage-software-statements) section.
 
 >[!IMPORTANT]
 >

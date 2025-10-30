@@ -23,6 +23,6 @@ user-guide-description: A robust suite of premium add-on features to enhance the
 + Degraded Access {#degraded-access}
     + [Degradation Feature](degraded-access/degradation-feature.md)
 + ESM {#esm}
-    + [Entitlement service monitoring overview](esm/entitlement-service-monitoring-overview.md)
+    + [Entitlement service monitoring overview](/help/premium-workflow/esm/entitlement-service-monitoring-overview.md)
     + [Entitlement service monitoring API](/help/premium-workflow/esm/entitlement-service-monitoring-api.md)
     + [Server-side metrics](esm/understanding-serverside-metrics.md)

@@ -42,7 +42,7 @@ In a working Server-to-Server solution the following components are involved:
 ### Dynamic Client Registration (DCR)
 
 
-Adobe Pass uses DCR to secure client communications between a programmer application or server and the Adobe Pass services. The DCR flow is separate and described in the [Dynamic Client Registration Overview](../../../rest-apis/rest-api-dcr/dynamic-client-registration-overview.md) documentation.
+Adobe Pass uses DCR to secure client communications between a programmer application or server and the Adobe Pass services. The DCR flow is separate and described in the [Dynamic Client Registration Overview](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md) documentation.
 
 
 ### Authentication (authN)
