@@ -11,7 +11,7 @@ exl-id: 5edeaccb-f9fa-4395-83b4-706c518d5a03
 
 ## About TV Everywhere {#about-tv-everywhere}
 
-Today’s television viewers expect seamless access to Pay TV content anytime, anywhere. With the rise of Internet-connected devices, audiences are consuming content across an expanding range of platforms, including:
+Today's television viewers expect seamless access to Pay TV content anytime, anywhere. With the rise of Internet-connected devices, audiences are consuming content across an expanding range of platforms, including:
 
 * Laptops
 * Tablets
@@ -60,13 +60,13 @@ Beyond entitlement, several technical and integration challenges arise, includin
 
 These challenges make direct integrations between Programmers and multiple Pay TV authentication systems highly resource-intensive, requiring both time and technical expertise.
 
-To overcome these hurdles, **Adobe® Pass Authentication** simplifies and streamlines entitlement verification, enabling seamless, secure access to TV Everywhere content.
+To overcome these hurdles, **Adobe&reg; Pass Authentication** simplifies and streamlines entitlement verification, enabling seamless, secure access to TV Everywhere content.
 
 ## Introduction to Adobe Pass Authentication {#introduction-adobe-pass-authentication}
 
 Adobe Pass Authentication securely mediates entitlement transactions between Programmers and Pay TV providers, ensuring that the right customers can access the right content effortlessly.
 
-![](../assets/programmers-connect-authn.png)
+![](/help/authentication/assets/programmers-connect-authn.png)
 
 *Some of the Programmers and Pay TV providers who connect through Adobe Pass Authentication*
 
@@ -126,7 +126,7 @@ Additional guidance is available once the integration is formally initiated, but
 * Integrate the Adobe Pass Authentication [Media Token Verifier](/help/authentication/integration-guide-programmers/features-standard/entitlements/media-tokens.md#media-token-verifier).
 * Develop a user interface for the authentication, authorization and logout workflow.
 
-For more details on the Programmer integration process, refer to the [Programmer kickstart guide](/help/authentication/kickstart/programmer-kickstart-guide.md) and [Programmer integration guide](/help/authentication/integration-guide-programmers/programmer-integration-guide-overview.md) documents.
+For more details on the Programmer integration process, refer to the [Programmer kickstart guide](/help/authentication/integration-guide-programmers/programmer-integration-guide-overview.md) documents.
 
 #### Pay TV Provider Integration Process {#pay-tv-provider-integration-process}
 
@@ -163,11 +163,11 @@ For Programmers, Adobe Pass Authentication provides APIs as part of a **Standard
     * [REST API V2](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/rest-api-v2-apis-overview.md)
 
 * Premium Adobe Pass Authentication APIs:
-    * [Reset Temp Pass API](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md#reset-tempass-api-access)
-      * [TempPass Feature](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md)
-    * [Degradation API](/help/authentication/integration-guide-programmers/features-premium/degraded-access/degradation-feature.md#degradation-api-access)
-      * [Degradation Feature](/help/authentication/integration-guide-programmers/features-premium/degraded-access/degradation-feature.md)
-    * [Entitlement Service Monitoring API](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-api.md)
+    * [Reset Temp Pass API](/help/premium-workflow/temporary-access/temp-pass-feature.md#reset-tempass-api-access)
+      * [TempPass Feature](/help/premium-workflow/temporary-access/temp-pass-feature.md)
+    * [Degradation API](/help/premium-workflow/degraded-access/degradation-feature.md#degradation-api-access)
+      * [Degradation Feature](/help/premium-workflow/degraded-access/degradation-feature.md)
+    * [Entitlement Service Monitoring API](/help/premium-workflow/esm/entitlement-service-monitoring-api.md)
 
 For more details on the entitlement flow, refer to the [Programmer Integration Guide](/help/authentication/integration-guide-programmers/programmer-integration-guide-overview.md#entitlement-flow) documentation.
 
@@ -223,7 +223,7 @@ TV Everywhere is an industry initiative that allows Pay TV customers to access t
 
 **What is Adobe Pass Authentication, and how does it support TV Everywhere?**
 
-Adobe Pass Authentication brings TV Everywhere to life by securely verifying a user’s entitlement to content in a simple and efficient manner. It is a hosted service that facilitates rapid back-end integration based on business rules set by both Programmers and Pay TV providers. This results in faster time to market for all stakeholders, a more secure environment that minimizes fraud, and a better user experience, with more TV content accessible across multiple platforms.
+Adobe Pass Authentication brings TV Everywhere to life by securely verifying a user's entitlement to content in a simple and efficient manner. It is a hosted service that facilitates rapid back-end integration based on business rules set by both Programmers and Pay TV providers. This results in faster time to market for all stakeholders, a more secure environment that minimizes fraud, and a better user experience, with more TV content accessible across multiple platforms.
 
 **How is Adobe Pass Authentication delivered?**
 
@@ -235,11 +235,11 @@ Adobe Pass Authentication offers several advantages over alternative solutions:
 
 * **Seamless Single Sign-On (SSO)** – Unlike direct integrations with individual providers, Adobe Pass Authentication enables a persistent login experience as users move between different websites and apps.
 * **Broad Market Penetration** – Once a Programmer integrates with Adobe Pass Authentication, they immediately gain access to Pay TV operators covering over 90% of U.S. households.
-* **Integration with Adobe’s Ecosystem** – Works seamlessly with other Adobe solutions for content delivery, protection, and monetization, including Adobe Analytics.
+* **Integration with Adobe's Ecosystem** – Works seamlessly with other Adobe solutions for content delivery, protection, and monetization, including Adobe Analytics.
 
 **How secure is Adobe Pass Authentication?**
 
-Security is a top priority. Adobe Pass Authentication ensures that only authorized users can access premium content by binding access to the user’s device. It also provides options for limiting the number of concurrent streams, sessions, or devices per household.
+Security is a top priority. Adobe Pass Authentication ensures that only authorized users can access premium content by binding access to the user's device. It also provides options for limiting the number of concurrent streams, sessions, or devices per household.
 
 **Which devices does Adobe Pass Authentication support?**
 

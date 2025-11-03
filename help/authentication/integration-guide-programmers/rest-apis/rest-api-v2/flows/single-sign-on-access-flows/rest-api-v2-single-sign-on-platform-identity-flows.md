@@ -27,8 +27,8 @@ For more details about `Adobe-Subject-Token` / `X-Roku-Reserved-Roku-Connect-Tok
 
 >[!MORELIKETHIS]
 > 
-> * [Amazon SSO Cookbook](/help/authentication/integration-guide-programmers/features-standard/sso-access/platform-sso/amazon-single-sign-on/amazon-sso-cookbook-rest-api-v2.md)
-> * [Roku SSO Cookbook](/help/authentication/integration-guide-programmers/features-standard/sso-access/platform-sso/roku-single-sign-on/roku-sso-cookbook-rest-api-v2.md)
+> * [Amazon SSO Cookbook](/help/premium-workflow/sso-access/platform-sso/amazon-single-sign-on/amazon-sso-cookbook-rest-api-v2.md)
+> * [Roku SSO Cookbook](/help/premium-workflow/sso-access/platform-sso/roku-single-sign-on/roku-sso-cookbook-rest-api-v2.md)
 
 ## Perform authentication through single sign-on using platform identity {#perform-authentication-through-single-sign-on-using-platform-identity}
 
@@ -56,7 +56,7 @@ Before performing the authentication flow through single sign-on using a platfor
 
 Perform the given steps to implement the authentication flow through single sign-on using a platform identity as shown in the following diagram.
 
-![Perform authentication through single sign-on using platform identity](../../../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-perform-authentication-through-single-sign-on-using-platform-identity-flow.png)
+![Perform authentication through single sign-on using platform identity](/help/authentication/assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-perform-authentication-through-single-sign-on-using-platform-identity-flow.png)
 
 *Perform authentication through single sign-on using platform identity*
 
@@ -226,7 +226,7 @@ Before performing the authorization flow through single sign-on using a platform
 
 Perform the given steps to implement the authorization flow through single sign-on using a platform identity as shown in the following diagram.
 
-![Retrieve authorization decisions through single sign-on using platform identity](../../../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-authorization-decisions-through-single-sign-on-using-platform-identity-flow.png)
+![Retrieve authorization decisions through single sign-on using platform identity](/help/authentication/assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-authorization-decisions-through-single-sign-on-using-platform-identity-flow.png)
 
 *Retrieve authorization decisions through single sign-on using platform identity*
 

@@ -49,7 +49,7 @@ In order to benefit from the Apple SSO user experience, the application needs to
 * [Initiate regular authentication workflow](#step10)
 * [Proceed with authorization flows](#step11)
 
-![](../../../assets/rest-api-v1/apple-sso-cookbook-rest-api-v1.png)
+![](/help/authentication/assets/rest-api-v1/apple-sso-cookbook-rest-api-v1.png)
 
 #### Step: "Is there a valid Adobe authentication token?" {#step1}
 

@@ -35,7 +35,7 @@ Before retrieving the profile for a specific authentication code, ensure the fol
 
 Follow the given steps to implement the basic profile retrieval flow for a specific authentication code performed within a secondary application as shown in the following diagram.
 
-![Retrieve profile for specific code](../../../../../assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-retrieve-profile-within-secondary-application-for-specific-code.png)
+![Retrieve profile for specific code](/help/authentication/assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-retrieve-profile-within-secondary-application-for-specific-code.png)
 
 *Retrieve profile for specific code*
 

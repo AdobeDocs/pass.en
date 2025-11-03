@@ -59,7 +59,7 @@ Before starting the authentication flow within a primary application and finishi
 
 Follow the given steps to implement the basic authentication flow performed within a secondary application with a preselected MVPD as shown in the following diagram.
 
-![Perform authentication within secondary application with preselected mvpd](../../../../../assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-perform-authentication-within-secondary-application-with-preselected-mvpd.png)
+![Perform authentication within secondary application with preselected mvpd](/help/authentication/assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-perform-authentication-within-secondary-application-with-preselected-mvpd.png)
 
 *Perform authentication within secondary application with preselected mvpd*
 
@@ -203,7 +203,7 @@ Before starting the authentication flow within a primary application and finishi
 
 Follow the given steps to implement the basic authentication flow performed within a secondary application without a preselected MVPD as shown in the following diagram.
 
-![Perform authentication within secondary application without preselected mvpd](../../../../../assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-perform-authentication-within-secondary-application-without-preselected-mvpd.png)
+![Perform authentication within secondary application without preselected mvpd](/help/authentication/assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-perform-authentication-within-secondary-application-without-preselected-mvpd.png)
 
 *Perform authentication within secondary application without preselected mvpd*
 

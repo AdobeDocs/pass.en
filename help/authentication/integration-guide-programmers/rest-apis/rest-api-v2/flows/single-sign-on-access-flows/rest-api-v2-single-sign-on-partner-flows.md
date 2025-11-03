@@ -27,7 +27,7 @@ For more details about `AP-Partner-Framework-Status` header, refer to the [AP-Pa
 
 The Adobe Pass Authentication REST API V2 has support for Partner Single Sign-On (SSO) for end users of client applications running on iOS, iPadOS or tvOS.
 
-For more details about single sign-on (SSO) for Apple platform, refer to the [Apple SSO Cookbook (REST API V2)](/help/authentication/integration-guide-programmers/features-standard/sso-access/partner-sso/apple-sso/apple-sso-cookbook-rest-api-v2.md) documentation.
+For more details about single sign-on (SSO) for Apple platform, refer to the [Apple SSO Cookbook (REST API V2)](/help/premium-workflow/sso-access/partner-sso/apple-sso/apple-sso-cookbook-rest-api-v2.md) documentation.
 
 ## Retrieve partner authentication request {#retrieve-partner-authentication-request}
 
@@ -53,7 +53,7 @@ Before retrieving the partner authentication request, ensure the following prere
 
 Perform the given steps to retrieve the partner authentication request as shown in the following diagram.
 
-![Retrieve partner authentication request](../../../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-partner-authentication-request-flow.png)
+![Retrieve partner authentication request](/help/authentication/assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-partner-authentication-request-flow.png)
 
 *Retrieve partner authentication request*
 
@@ -167,7 +167,7 @@ Before retrieving the profile using a partner authentication response, ensure th
 
 Perform the given steps to implement the profile retrieval flow using a partner authentication response as shown in the following diagram.
 
-![Create and retrieve profile using partner authentication response](../../../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-profile-using-partner-authentication-response-flow.png)
+![Create and retrieve profile using partner authentication response](/help/authentication/assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-retrieve-profile-using-partner-authentication-response-flow.png)
 
 *Create and retrieve authenticated profile using partner authentication response*
 

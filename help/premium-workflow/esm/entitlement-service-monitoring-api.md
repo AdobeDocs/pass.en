@@ -13,10 +13,10 @@ exl-id: a9572372-14a6-4caa-9ab6-4a6baababaa1
 >
 > Before using the Degradation API, ensure the following prerequisites are met:
 >
-> * Obtain the client credentials as described in the [Retrieve client credentials](../../rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-client-credentials.md) API documentation.
-> * Obtain the access token as described in the [Retrieve access token](../../rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation.
+> * Obtain the client credentials as described in the [Retrieve client credentials](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-client-credentials.md) API documentation.
+> * Obtain the access token as described in the [Retrieve access token](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation.
 >
-> Refer to the [Dynamic Client Registration Overview](../../rest-apis/rest-api-dcr/dynamic-client-registration-overview.md) documentation for more information about how to create a registered application and download the software statement.
+> Refer to the [Dynamic Client Registration Overview](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md) documentation for more information about how to create a registered application and download the software statement.
 
 ## API Overview {#api-overview}
 
@@ -43,19 +43,19 @@ The following drill-down trees illustrate the dimensions (resources) available i
 
 #### Day
 
-![](../../../assets/esm-progr-dimensions-day.png)
+![](/help/authentication/assets/esm-progr-dimensions-day.png)
 
 #### Hour
 
-![](../../../assets/esm-progr-dimensions-hour.png)
+![](/help/authentication/assets/esm-progr-dimensions-hour.png)
 
 #### Minute
 
-![](../../../assets/esm-progr-dimensions-minute.png)
+![](/help/authentication/assets/esm-progr-dimensions-minute.png)
 
 ### Dimensions available to MVPDs {#mvpd-dimensions}
 
-![](../../../assets/esm-mvpd-dimensions.png)
+![](/help/authentication/assets/esm-mvpd-dimensions.png)
 
 A GET to the `https://mgmt.auth.adobe.com/esm/v3` API endpoint will return a representation containing:
 

@@ -223,7 +223,7 @@ exl-id: ad7e4c6d-ed96-4ae7-82a9-3c24e5fc9302
                         <li><b>id</b><br/>The internal unique identifier associated with the Identity Provider during onboarding process.</li>
                         <li><b>displayName</b><br/>The commercial (brand) name associated with the Identity Provider during onboarding process.</li>
                         <li><b>logoUrl</b><br>The URL from where to download the logo associated with the Identity Provider.</li>
-                        <li><b>isTempPass</b><br/>The flag that specifies if the MVPD is designed to provide <a href="../../../../features-premium/temporary-access/temp-pass-feature.md">TempPass</a> feature functionality.</li>
+                        <li><b>isTempPass</b><br/>The flag that specifies if the MVPD is designed to provide <a href="/help/premium-workflow/temporary-access/temp-pass-feature.md">TempPass</a> feature functionality.</li>
                         <li><b>isProxy</b><br/>The flag that specifies if the MVPD is a proxied MVPD.</li>
                         <li><b>boardingStatus</b><br/>The status that specifies if the Identity Provider is onboarded by the streaming device platform for single sign-on flows.</li>
                         <li><b>platformMappingId</b><br/>The internal unique identifier associated with the Identity Provider by the streaming device platform for single sign-on flows.</li>

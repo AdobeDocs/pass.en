@@ -25,7 +25,7 @@ In this section, you can access the public documentation directly from the welco
 * **Database updates**: The number of configuration changes made to current environment. Select **View more in Changes Log section** to access detailed information in the [Changes Log](tve-dashboard-changes-log.md) section.
 * **ESM dashboard**: Keep an eye out for the upcoming ESM Dashboard, offering in-depth metrics on property usage in the current environment. This functionality will be accessible in future updates.
 
-![Welcome screen](../assets/tve-dashboard/new-tve-dashboard/dashboard/dashboard-welcome-panel-view.png)
+![Welcome screen](/help/authentication/assets/tve-dashboard/new-tve-dashboard/dashboard/dashboard-welcome-panel-view.png)
 
 *Welcome screen*
 
@@ -37,7 +37,7 @@ This section presents 10 most recent configuration changes that include:
 * **Pushed by**: The account responsible for the change.
 * **Push date**: The date when the change was made.
 
-![Configuration Status of a Changes log](../assets/tve-dashboard/new-tve-dashboard/dashboard/dashboard-configuration-status-panel-view.png)
+![Configuration Status of a Changes log](/help/authentication/assets/tve-dashboard/new-tve-dashboard/dashboard/dashboard-configuration-status-panel-view.png)
 
 *Configuration Status of a Changes log*
 

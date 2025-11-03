@@ -107,7 +107,7 @@ The AccessEnabler's network activity takes place in a different thread so the UI
           The `authorizedResources` parameter presents the resources that the user is authorized to view.  
  
 
-![](../../../../assets/android-entitlement-flows.png)  
+![](/help//authentication/assets/android-entitlement-flows.png)  
  
 
 ### B. Startup Flow {#startup_flow}

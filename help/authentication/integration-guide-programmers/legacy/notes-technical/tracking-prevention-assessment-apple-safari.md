@@ -27,7 +27,7 @@ for the following versions of the AccessEnabler JavaScript SDK: v2 (versions 2.x
 
 In order to mitigate these limitations you can instruct the user to change the Safari 10 browser privacy settings, and use the "**Always allow**" option for the "**Cookies and website data**" entry in the browser's Privacy tab from Preferences, as depicted in bellow image.
 
-![](../../../assets/always-allow-safari10.png) 
+![](/help/authentication/assets/always-allow-safari10.png) 
 
 
 ## Safari 11 {#safari11}
@@ -58,12 +58,12 @@ When [N130](/help/authentication/integration-guide-programmers/legacy/error-repo
 
 * In case of Mac OS X High Sierra and later: Unchecking the "**Prevent cross-site tracking**" option for "**Website tracking**" entry in the browser's Privacy tab from Preferences, as depicted in bellow image.
 
-  ![](../../../assets/uncheck-prvnt-cr-st-tr-safari11.png)
+  ![](/help/authentication/assets/uncheck-prvnt-cr-st-tr-safari11.png)
 
 
 * In case of Mac OS X Sierra and previous: Checking the "**Always allow**" option for the "**Cookies and website data**" entry in the browser's Privacy tab from Preferences, as depicted in bellow image. 
 
-  ![](../../../assets/always-allow-safari11.png)
+  ![](/help/authentication/assets/always-allow-safari11.png)
 
 ## Safari 12 {#safari12}
 
@@ -120,14 +120,14 @@ Use cases affected by this issue:
 
 There is no known mitigation available or possible at the moment of these writing. Apple did introduce an "Storage Access API" in Safari 12 (`https://webkit.org/blog/8124/introducing-storage-access-api`), but the current implementation does not apply to localStorage but only to cookies. Moreover the API requires user interaction in order to be used, and once you use it, the user is also prompted with a permission dialog similar with the one below.
 
-![](../../../assets/permission-dialog-apple.png)
+![](/help/authentication/assets/permission-dialog-apple.png)
 
   
 At this point these Safari requirements/prompts do not align with our UX requirements and we don't have a consistent behavior as on other browsers, where SSO "just works" once we saved a token in a common domain localStorage.
 
 **Temp Pass**
 
-In order to mitigate the individualization problems and to have a user interaction we recommend you to use **[Promotional Temp Pass](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md#promotional-temp-pass)** in a interactive way, and provide at least one additional information about the user (for example, email address).
+In order to mitigate the individualization problems and to have a user interaction we recommend you to use **[Promotional Temp Pass](/help/premium-workflow/temporary-access/temp-pass-feature.md#promotional-temp-pass)** in a interactive way, and provide at least one additional information about the user (for example, email address).
 
 ## Safari 13 {#safari13}
 
@@ -158,8 +158,8 @@ When [N130](/help/authentication/integration-guide-programmers/legacy/error-repo
 
 * In case of Mac OS X High Sierra and later: Unchecking the "**Prevent cross-site tracking**" option for "**Website tracking**" entry in the browser's Privacy tab from Preferences, as depicted in bellow image.
 
-  ![](../../../assets/prvnt-cross-site-tr-safari13.png)
+  ![](/help/authentication/assets/prvnt-cross-site-tr-safari13.png)
 
 * In case of Mac OS X Sierra and previous: Checking t</span>he "**Always allow**" option for the "**Cookies and website data**" entry in the browser's Privacy tab from Preferences, as depicted in bellow image.
 
-  ![](../../../assets/always-allow-safari13.png)
+  ![](/help/authentication/assets/always-allow-safari13.png)

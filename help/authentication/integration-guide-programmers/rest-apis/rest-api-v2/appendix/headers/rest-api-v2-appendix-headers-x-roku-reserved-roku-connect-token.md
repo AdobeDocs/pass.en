@@ -41,4 +41,4 @@ The JSON Web Signature (`JWS`) or JSON Web Encryption (`JWE`) which is a signed 
 
 This is available for the following platforms:
 
-* [Roku SSO Cookbook (REST API V2)](../../../../features-standard/sso-access/platform-sso/roku-single-sign-on/roku-sso-cookbook-rest-api-v2.md)
+* [Roku SSO Cookbook (REST API V2)](/help/premium-workflow/sso-access/platform-sso/roku-single-sign-on/roku-sso-cookbook-rest-api-v2.md)

@@ -19,7 +19,7 @@ exl-id: 387fcdb0-3a42-4893-ba83-e809426f92be
 
 TempPass allows Programmers to provide temporary access to their protected content without asking users to authenticate with a valid MVPD account.
 
-For more details about TempPass feature, refer to the [TempPass](../../../../features-premium/temporary-access/temp-pass-feature.md) documentation.
+For more details about TempPass feature, refer to the [TempPass](/help/premium-workflow/temporary-access/temp-pass-feature.md) documentation.
 
 Temporary access flows allow you to query for the following scenarios:
 
@@ -52,7 +52,7 @@ Before retrieving authorization decisions using basic TempPass, ensure the follo
 
 Follow the given steps to implement the authorization flow using basic TempPass as shown in the following diagram.
 
-![Retrieve authorization decisions using basic TempPass](../../../../../assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-authorization-decisions-using-basic-temppass-flow.png)
+![Retrieve authorization decisions using basic TempPass](/help/authentication/assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-authorization-decisions-using-basic-temppass-flow.png)
 
 *Retrieve authorization decisions using basic TempPass*
 
@@ -121,7 +121,7 @@ Before retrieving authorization decisions using promotional TempPass, ensure the
 
 Follow the given steps to implement the authorization flow using promotional TempPass as shown in the following diagram.
 
-![Retrieve authorization decisions using promotional TempPass](../../../../../assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-authorization-decisions-using-promotional-temppass-flow.png)
+![Retrieve authorization decisions using promotional TempPass](/help/authentication/assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-authorization-decisions-using-promotional-temppass-flow.png)
 
 *Retrieve authorization decisions using promotional TempPass*
 
@@ -199,7 +199,7 @@ Before consuming a maximum number of resources using promotional TempPass, ensur
 
 Follow the given steps to implement the authorization flow when consuming a maximum number of resources using promotional TempPass as shown in the following diagram.
 
-![Consume maximum number of resources using promotional TempPass](../../../../../assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-consume-maximum-number-of-resources-using-promotional-temppass-flow.png)
+![Consume maximum number of resources using promotional TempPass](/help/authentication/assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-consume-maximum-number-of-resources-using-promotional-temppass-flow.png)
 
 *Consume maximum number of resources using promotional TempPass*
 
@@ -373,7 +373,7 @@ Before retrieving authorization decisions when basic or promotional TempPass exp
 
 Follow the given steps to implement the authorization flow when basic or promotional TempPass expires as shown in the following diagram.
 
-![Retrieve authorization decisions when basic or promotional TempPass expires](../../../../../assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-authorization-decisions-when-basic-or-promotional-temppass-expires-flow.png)
+![Retrieve authorization decisions when basic or promotional TempPass expires](/help/authentication/assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-authorization-decisions-when-basic-or-promotional-temppass-expires-flow.png)
 
 *Retrieve authorization decisions when basic or promotional TempPass expires*
 
@@ -456,7 +456,7 @@ Before retrieving the profile for basic TempPass, ensure the following prerequis
 
 Follow the given steps to implement the profile retrieval flow for basic TempPass as shown in the following diagram.
 
-![Retrieve profile for basic TempPass](../../../../../assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-profile-for-basic-temppass-flow.png)
+![Retrieve profile for basic TempPass](/help/authentication/assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-profile-for-basic-temppass-flow.png)
 
 *Retrieve profile for basic TempPass*
 
@@ -527,7 +527,7 @@ Before retrieving the profile for promotional TempPass, ensure the following pre
 
 Follow the given steps to implement the profile retrieval flow for promotional TempPass as shown in the following diagram.
 
-![Retrieve profile for promotional TempPass](../../../../../assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-profile-for-promotional-temppass-flow.png)
+![Retrieve profile for promotional TempPass](/help/authentication/assets/rest-api-v2/flows/temporary-access-flows/rest-api-v2-retrieve-profile-for-promotional-temppass-flow.png)
 
 *Retrieve profile for promotional TempPass*
 

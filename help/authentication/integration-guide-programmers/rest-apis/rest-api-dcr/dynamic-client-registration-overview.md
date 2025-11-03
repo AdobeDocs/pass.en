@@ -14,10 +14,10 @@ Dynamic client registration represents an authorization mechanism defined by [RF
 Adobe Pass provides a dynamic client registration service that enables access to the following protected APIs:
 
 * Adobe Pass Authentication Management APIs:
-  * [Reset Temp Pass API](../../features-premium/temporary-access/temp-pass-feature.md#reset-tempass-api-access)
-  * [Degradation API](../../features-premium/degraded-access/degradation-feature.md#degradation-api-access)
+  * [Reset Temp Pass API](/help/premium-workflow/temporary-access/temp-pass-feature.md#reset-tempass-api-access)
+  * [Degradation API](/help/premium-workflow/degraded-access/degradation-feature.md#degradation-api-access)
   * [Proxy MVPD API](../../../integration-guide-mvpds/proxy-mvpd-webserv.md)
-  * [Entitlement Service Monitoring API](../../features-premium/esm/entitlement-service-monitoring-api.md)
+  * [Entitlement Service Monitoring API](/help/premium-workflow/esm/entitlement-service-monitoring-api.md)
 * Adobe Pass Authentication REST APIs:
   * [REST API V2](../rest-api-v2/apis/rest-api-v2-apis-overview.md)
   * [(Legacy) REST API V1](../../legacy/rest-api-v1/rest-api-reference.md)
@@ -108,6 +108,6 @@ In summary, the dynamic client registration authorization mechanism involves sev
 **Flow**
 
 * The client application must obtain the client credentials as described in the [Retrieve client credentials](apis/dynamic-client-registration-apis-retrieve-client-credentials.md) API documentation.
-* The client application must obtain the access token as described in the [Retrieve access token](apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation.
+* The client application must obtain the access token as described in the [Retrieve access token](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md) API documentation.
 
 Refer to the [Dynamic Client Registration Flow](flows/dynamic-client-registration-flow.md) documentation to better understand how to access Adobe Pass protected APIs. Furthermore, you can also watch this [webinar](https://my.adobeconnect.com/pzkp8ujrigg1/) recording, which provides more context and includes a demo.

@@ -11,7 +11,7 @@ exl-id: 51461caf-08ef-459e-b284-8f317f45e7b1
 
 This integration guide is intended for content providers (Programmers) who plan to integrate with Adobe&reg; Pass Authentication.
 
-In today’s digital landscape, viewers can access the Internet anytime, anywhere, and request access to your protected content. They might be looking to watch a one-time event or seeking the rights to stream an entire television series you are airing.
+In today's digital landscape, viewers can access the Internet anytime, anywhere, and request access to your protected content. They might be looking to watch a one-time event or seeking the rights to stream an entire television series you are airing.
 
 Before granting access to protected content, you must determine whether the viewer is entitled to it. Key questions include:
 
@@ -20,15 +20,15 @@ Before granting access to protected content, you must determine whether the view
 
 ## Adobe Pass Authentication for TV Everywhere {#adobe-pass-authentication-for-tv-everywhere}
 
-For Programmers, determining entitlement is not always straightforward. MVPDs are the custodians of their customers’ identifying data and access privileges. Complicating matters further, Programmers viewers may subscribe to a wide variety of MVPDs, each operating with unique systems. These complexities make verifying entitlement both technically challenging and resource-intensive.
+For Programmers, determining entitlement is not always straightforward. MVPDs are the custodians of their customers' identifying data and access privileges. Complicating matters further, Programmers viewers may subscribe to a wide variety of MVPDs, each operating with unique systems. These complexities make verifying entitlement both technically challenging and resource-intensive.
 
-![User Entitlement Determined Directly By Programmer](../assets/user-ent-by-progr.png){align="center"}
+![User Entitlement Determined Directly By Programmer](/help/authentication/assets/user-ent-by-progr.png){align="center"}
 
 *User Entitlement Determined Directly By Programmer*
 
 Adobe Pass Authentication securely facilitates entitlement transactions between Programmers and MVPDs, making it quick, easy, and secure to provide protected content to eligible viewers.
 
-![User Entitlement Mediated by Adobe Pass Authentication](../assets/user-ent-mediatedby-authn.png){align="center"}
+![User Entitlement Mediated by Adobe Pass Authentication](/help/authentication/assets/user-ent-mediatedby-authn.png){align="center"}
 
 *User Entitlement Mediated by Adobe Pass Authentication*
 
@@ -41,11 +41,11 @@ For Programmers, Adobe Pass Authentication provides APIs as part of a **Standard
     * [REST API V2](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/rest-api-v2-apis-overview.md)
 
 * Premium Adobe Pass Authentication APIs:
-    * [Reset Temp Pass API](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md#reset-tempass-api-access)
-        * [TempPass Feature](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md)
-    * [Degradation API](/help/authentication/integration-guide-programmers/features-premium/degraded-access/degradation-feature.md#degradation-api-access)
-        * [Degradation Feature](/help/authentication/integration-guide-programmers/features-premium/degraded-access/degradation-feature.md)
-    * [Entitlement Service Monitoring API](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-api.md)
+    * [Reset Temp Pass API](/help/premium-workflow/temporary-access/temp-pass-feature.md#reset-tempass-api-access)
+        * [TempPass Feature](/help/premium-workflow/temporary-access/temp-pass-feature.md)
+    * [Degradation API](/help/premium-workflow/degraded-access/degradation-feature.md#degradation-api-access)
+        * [Degradation Feature](/help/premium-workflow/degraded-access/degradation-feature.md)
+    * [Entitlement Service Monitoring API](/help/premium-workflow/esm/entitlement-service-monitoring-api.md)
 
 ### Use Cases {#use-cases}
 
@@ -66,7 +66,7 @@ This section outlines further the Programmer integration use cases supported by 
 | **Phase**            | **Priority** | **Use Case**                                                            | **Documents**                                                                                                                                                                    |
 |----------------------|--------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Authentication**   | **High**     | Authentication                                                          | For more details, refer to the documents aggregated under the [Authentication Phase](#authentication-phase) section.                                                             |
-|                      | **High**     | Home-Based Authentication (HBA)                                         | For more details, refer to the [Home-Based Authentication](/help/authentication/integration-guide-programmers/features-standard/hba-access/home-based-authentication.md).        |
+|                      | **High**     | Home-Based Authentication (HBA)                                         | For more details, refer to the [Home-Based Authentication](/help/premium-workflow/hba-access/home-based-authentication.md).        |
 |                      | **High**     | Single Sign-On (SSO)                                                    | For more details, refer to the documents aggregated under the [Single Sign-On (SSO)](#sso) section.                                                                              |
 |                      | **High**     | Select MVPD                                                             | For more details, refer to the documents aggregated under the [Configuration Phase](#configuration-phase) section.                                                               |
 |                      | **Medium**   | Branded MVPD Login Page                                                 | Enables MVPDs to provide login pages with branding specific to the Programmer or service provider, including support for default language preferences.                           |

@@ -21,7 +21,7 @@ The **Degradation Feature** can be a vital safeguard for Programmers, ensuring c
 
 By applying a degradation rule, Programmers can temporarily enable auto-authentication or auto-authorization, ensuring uninterrupted access to content for the period the degradation is applied. Degradation actions are always initiated by a Programmer based on prearranged agreements with MVPDs. While Adobe does not currently trigger degradation directly, future capabilities may include proactive management if Service Level Agreements (SLAs) are established.
 
-This feature is designed to be used together with a [usage monitoring API](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md) and based on pre-agreements with MVPDs, Adobe Pass Authentication offers a powerful tool to balance user experience, reliability, and operational control during critical moments.
+This feature is designed to be used together with a [usage monitoring API](/help/premium-workflow/esm/entitlement-service-monitoring-overview.md) and based on pre-agreements with MVPDs, Adobe Pass Authentication offers a powerful tool to balance user experience, reliability, and operational control during critical moments.
 
 >[!IMPORTANT]
 >

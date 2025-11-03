@@ -33,7 +33,7 @@ Before proceeding with the Apple single sign-on using partner flows, ensure the 
 >
 > <br/>
 >
-> * The streaming application has completed the [onboarding prerequisites](/help/authentication/integration-guide-programmers/features-standard/sso-access/partner-sso/apple-sso/apple-sso-overview.md#apple-sso-prerequisites-programmer) that apply to a Programmer and are required to enable the Apple single sign-on user experience. 
+> * The streaming application has completed the [onboarding prerequisites](/help/premium-workflow/sso-access/partner-sso/apple-sso/apple-sso-overview.md#apple-sso-prerequisites-programmer) that apply to a Programmer and are required to enable the Apple single sign-on user experience. 
 
 ### Workflow {#workflow}
 
