@@ -29,7 +29,7 @@ Release Date: **04/23/2024 - 04/25/2024**
 * Patched security vulnerabilities.
 * Enhancements to Degradation API Service.
   * Use DCR as security mechanism for Degradation API.
-  * You can find more details here: [Degradation Feature](/help/premium-workflow/degraded-access/degradation-feature.md)
+  * You can find more details here: [Degradation Feature](../integration-guide-programmers/features-premium/degraded-access/degradation-feature.md)
 
 #### REST APIs
 

@@ -45,7 +45,7 @@ These functions initiate requests for interaction with an MVPD. All calls are as
 
 - *options* -  A JSON object containing the Application ID value, Visitor ID value refresh-less settings (background login logout) and MVPD settings (iFrame). All values are optional.
     1.  If specified, the Experience Cloud visitorID would be reported on all network calls performed by the library. The value can be later used for advanced analytics reports.
-    2.  If the unique identifier of the application is specified -`applicationId` - the value will be added to all subsequent calls made by the application as part of the X-Device-Info HTTP header. This value can be later fetched from [ESM](/help/premium-workflow/esm/entitlement-service-monitoring-overview.md) reports using the proper query.
+    2.  If the unique identifier of the application is specified -`applicationId` - the value will be added to all subsequent calls made by the application as part of the X-Device-Info HTTP header. This value can be later fetched from [ESM](/help/authentication/integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md) reports using the proper query.
 
   **Note:** All JSON keys are case-sensitive.
 

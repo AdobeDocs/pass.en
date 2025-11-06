@@ -19,7 +19,7 @@ exl-id: 9276f5d9-8b1a-4282-8458-0c1e1e06bcf5
 
 Degradation provides the temporary bypassing of specific MVPD authentication and authorization endpoints. Usually, the Programmer initiates this action, but regardless of who triggers a degradation event, the action depends on prior arrangements made with the affected MVPDs.
 
-For more details about Degradation feature, refer to the [Degradation](/help/premium-workflow/degraded-access/degradation-feature.md) documentation.
+For more details about Degradation feature, refer to the [Degradation](../../../../features-premium/degraded-access/degradation-feature.md) documentation.
 
 Degraded access flows allow you to query for the following scenarios:
 
@@ -49,7 +49,7 @@ Before performing the authentication flow while degradation is applied, ensure t
 
 Follow the given steps to implement the authentication flow while degradation is applied as shown in the following diagram.
 
-![Perform authentication while degradation is applied](/help/authentication/assets/rest-api-v2/flows/degraded-access-flows/rest-api-v2-perform-authentication-while-degradation-is-applied-flow.png)
+![Perform authentication while degradation is applied](../../../../../assets/rest-api-v2/flows/degraded-access-flows/rest-api-v2-perform-authentication-while-degradation-is-applied-flow.png)
 
 *Perform authentication while degradation is applied*
 
@@ -117,7 +117,7 @@ Before retrieving authorization decisions while degradation is applied, ensure t
 
 Follow the given steps to implement the authorization flow while degradation is applied as shown in the following diagram.
 
-![Retrieve authorization decisions while degradation is applied](/help/authentication/assets/rest-api-v2/flows/degraded-access-flows/rest-api-v2-retrieve-authorization-decisions-while-degradation-is-applied-flow.png)
+![Retrieve authorization decisions while degradation is applied](../../../../../assets/rest-api-v2/flows/degraded-access-flows/rest-api-v2-retrieve-authorization-decisions-while-degradation-is-applied-flow.png)
 
 *Retrieve authorization decisions while degradation is applied*
 
@@ -183,7 +183,7 @@ Before retrieving preauthorization decisions while degradation is applied, ensur
 
 Follow the given steps to implement the preauthorization flow while degradation is applied as shown in the following diagram.
 
-![Retrieve preauthorization decisions while degradation is applied](/help/authentication/assets/rest-api-v2/flows/degraded-access-flows/rest-api-v2-retrieve-preauthorization-decisions-while-degradation-is-applied-flow.png)
+![Retrieve preauthorization decisions while degradation is applied](../../../../../assets/rest-api-v2/flows/degraded-access-flows/rest-api-v2-retrieve-preauthorization-decisions-while-degradation-is-applied-flow.png)
 
 *Retrieve preauthorization decisions while degradation is applied*
 
@@ -257,7 +257,7 @@ Before retrieving the profile for a specific MVPD while degradation is applied, 
 
 Follow the given steps to implement the profile retrieval flow for a specific MVPD while degradation is applied as shown in the following diagram.
 
-![Retrieve profile while degradation is applied](/help/authentication/assets/rest-api-v2/flows/degraded-access-flows/rest-api-v2-retrieve-profile-while-degradation-is-applied-flow.png)
+![Retrieve profile while degradation is applied](../../../../../assets/rest-api-v2/flows/degraded-access-flows/rest-api-v2-retrieve-profile-while-degradation-is-applied-flow.png)
 
 *Retrieve profile while degradation is applied*
 

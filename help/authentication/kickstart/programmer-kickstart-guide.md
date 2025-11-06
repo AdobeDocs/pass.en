@@ -19,7 +19,7 @@ Adobe provides a range of resources to help you integrate Adobe Pass Authenticat
 
 The setup process involves among others the following steps:
 
-![Adobe&reg; Pass Authentication Integration Process](/help/authentication/assets/progr-flow-int-lifecycle.png)
+![Adobe&reg; Pass Authentication Integration Process](../assets/progr-flow-int-lifecycle.png)
 
 *Adobe&reg; Pass Authentication Integration Process*
 

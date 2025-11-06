@@ -42,7 +42,7 @@ In a working Server-to-Server solution the following components are involved:
 ### Dynamic Client Registration (DCR)
 
 
-Adobe Pass uses DCR to secure client communications between a programmer application or server and the Adobe Pass services. The DCR flow is separate and described in the [Dynamic Client Registration Overview](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md) documentation.
+Adobe Pass uses DCR to secure client communications between a programmer application or server and the Adobe Pass services. The DCR flow is separate and described in the [Dynamic Client Registration Overview](../../../rest-apis/rest-api-dcr/dynamic-client-registration-overview.md) documentation.
 
 
 ### Authentication (authN)
@@ -67,7 +67,7 @@ to their MVPD to determine whether the user has a valid account.
 
 The following diagram illustrates the authentication flow:
 
-![](/help//authentication/assets/authn-flow.png)
+![](../../../../assets/authn-flow.png)
 
 ### Authorization (authZ)
 
@@ -80,7 +80,7 @@ The authorization flow is used to determine whether a user is entitled to access
 
 The following diagram illustrates the authorization flow:
 
-![](/help//authentication/assets/authz-flow.png)
+![](../../../../assets/authz-flow.png)
 
 ### Logout
 
@@ -92,7 +92,7 @@ associated with the application.
 
 The following diagram illustrates the logout flow:
 
-![](/help//authentication/assets/logout-flow.png)
+![](../../../../assets/logout-flow.png)
 
 ### \[Optional\] Preauthorization (a.k.a. Pre-flight)
 
@@ -108,7 +108,7 @@ Preauthorization can be used to quickly determine from a set of resources the on
 
 The following diagram illustrates the preauthorization flow:
 
-![](/help//authentication/assets/preauthz-flow.png)
+![](../../../../assets/preauthz-flow.png)
 
 
 ### \[Optional\] Metadata
@@ -124,7 +124,7 @@ The following diagram illustrates the preauthorization flow:
 
  
 
-![](/help//authentication/assets/user-metadata-api-preauthz.png)
+![](../../../../assets/user-metadata-api-preauthz.png)
 
  
 

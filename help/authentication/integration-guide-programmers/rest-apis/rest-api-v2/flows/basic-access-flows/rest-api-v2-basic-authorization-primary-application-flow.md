@@ -33,7 +33,7 @@ Before retrieving authorization decisions using a specific MVPD, ensure the foll
 
 Follow the given steps to implement the basic authorization flow using a specific MVPD performed within a primary application as shown in the following diagram.
 
-![Retrieve authorization decisions using specific mvpd](/help/authentication/assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-retrieve-authorization-decisions-within-primary-application-using-specific-mvpd.png)
+![Retrieve authorization decisions using specific mvpd](../../../../../assets/rest-api-v2/flows/basic-access-flows/rest-api-v2-retrieve-authorization-decisions-within-primary-application-using-specific-mvpd.png)
 
 *Retrieve authorization decisions using specific mvpd*
 

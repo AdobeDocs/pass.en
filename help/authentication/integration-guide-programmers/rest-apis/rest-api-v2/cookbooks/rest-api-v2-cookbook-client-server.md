@@ -101,7 +101,7 @@ The Authentication Phase acts as a prerequisite step for the Preauthorization Ph
 * **Scenario 2:** There are no existing profiles, the streaming application may proceed to the next step to [Authenticate the user](#step-3-authenticate-the-user).
 
 
-* **Scenario 3:** There are no existing profiles, the streaming application may proceed to provide the user with temporary access through the [TempPass](/help/premium-workflow/temporary-access/temp-pass-feature.md) feature.
+* **Scenario 3:** There are no existing profiles, the streaming application may proceed to provide the user with temporary access through the [TempPass](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md) feature.
 
   * This scenario is outside the scope of this document, refer to the [Temporary Access Flows](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/temporary-access-flows/rest-api-v2-access-temporary-flows.md) documentation for more information.
 

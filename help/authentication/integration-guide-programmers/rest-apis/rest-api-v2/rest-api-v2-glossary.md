@@ -57,7 +57,7 @@ The decision is an Adobe Pass Authentication concept that stores information abo
 
 The degradation is an Adobe Pass Authentication feature that allows a user to access protected content even when its [MVPD](#mvpd) experiences a service disruption.
 
-For more information, refer to the [Degradation Feature](/help/premium-workflow/degraded-access/degradation-feature.md) documentation.
+For more information, refer to the [Degradation Feature](/help/authentication/integration-guide-programmers/features-premium/degraded-access/degradation-feature.md) documentation.
 
 #### Device ID {#device-id}
 
@@ -223,13 +223,13 @@ The single sign-on (SSO) is a process that allows a user to authenticate once an
 
 The basic TempPass is an Adobe Pass Authentication feature that allows a user to access protected content for a limited time without the need to authenticate with an [MVPD](#mvpd).
 
-For more information, refer to the [Basic TempPass](/help/premium-workflow/temporary-access/temp-pass-feature.md#basic-temp-pass) documentation.
+For more information, refer to the [Basic TempPass](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md#basic-temp-pass) documentation.
 
 #### TempPass Promotional {#temp-pass-promotional}
 
 The promotional TempPass is an Adobe Pass Authentication feature that allows a user to access protected content for a maximum number of resources and a limited time without the need to authenticate with an [MVPD](#mvpd).
 
-For more information, refer to the [Promotional TempPass](/help/premium-workflow/temporary-access/temp-pass-feature.md#promotional-temp-pass) documentation.
+For more information, refer to the [Promotional TempPass](/help/authentication/integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md#promotional-temp-pass) documentation.
 
 #### TTL {#ttl}
 

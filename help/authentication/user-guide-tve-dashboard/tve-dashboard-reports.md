@@ -23,7 +23,7 @@ Follow these steps to view a specific report.
    * [AuthZ TTL Reports](#authz-ttl-reports)
    * [SSO Reports](#sso-reports)
 
-   ![Type of reports](/help/authentication/assets/tve-dashboard/new-tve-dashboard/reports/reports-tabs-view.png)
+   ![Type of reports](../assets/tve-dashboard/new-tve-dashboard/reports/reports-tabs-view.png)
 
    *Type of reports*
 
@@ -33,7 +33,7 @@ The AuthN TTL reports, also referred as Authentication Time-To-Live (TTL), displ
 
 You can also view and download data for [specific channels or MVPDs](#selecting-specific-channels-mvpds).
 
-![Export AuthN TTL Reports](/help/authentication/assets/tve-dashboard/new-tve-dashboard/reports/reports-authn-ttl-export-button.png)
+![Export AuthN TTL Reports](../assets/tve-dashboard/new-tve-dashboard/reports/reports-authn-ttl-export-button.png)
 
 *Export AuthN TTL Reports*
 
@@ -49,7 +49,7 @@ The AuthZ TTL reports, also referred to as Authorization Time-To-Live (TTL), dis
 
 You can also view and download the data for [specific channels or MVPDs](#selecting-specific-channels-mvpds).
 
-![Export AuthZ TTL Reports](/help/authentication/assets/tve-dashboard/new-tve-dashboard/reports/reports-authz-ttl-export-button.png)
+![Export AuthZ TTL Reports](../assets/tve-dashboard/new-tve-dashboard/reports/reports-authz-ttl-export-button.png)
 
 *Export AuthZ TTL Reports*
 
@@ -65,7 +65,7 @@ The SSO reports, also referred as single sign-on, display the single sign-on sta
 
 You can also view and download data for [specific channels or MVPDs](#selecting-specific-channels-mvpds).
 
-![Export SSO Reports](/help/authentication/assets/tve-dashboard/new-tve-dashboard/reports/reports-sso-export-button.png)
+![Export SSO Reports](../assets/tve-dashboard/new-tve-dashboard/reports/reports-sso-export-button.png)
 
 *Export SSO Reports*
 
@@ -123,7 +123,7 @@ To generate a report for specific channels:
 
 1. Select the **Included Channels** dropdown menu at the top of the selected report.
 
-   ![Included Channels dropdown menu](/help/authentication/assets/tve-dashboard/new-tve-dashboard/reports/reports-included-channels-menu.png)
+   ![Included Channels dropdown menu](../assets/tve-dashboard/new-tve-dashboard/reports/reports-included-channels-menu.png)
 
    *Included Channels dropdown menu*
 
@@ -139,7 +139,7 @@ To generate a report for specific MVPDs:
 
 1. Select the **Included MVPDs** dropdown menu at the top of the selected report.
 
-   ![Included MVPDs dropdown menu](/help/authentication/assets/tve-dashboard/new-tve-dashboard/reports/reports-included-mvpds-menu.png)
+   ![Included MVPDs dropdown menu](../assets/tve-dashboard/new-tve-dashboard/reports/reports-included-mvpds-menu.png)
 
    *Included MVPDs dropdown menu*
 
