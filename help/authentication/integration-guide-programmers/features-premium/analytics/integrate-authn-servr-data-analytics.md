@@ -13,7 +13,7 @@ Customers of Adobe Pass Authentication want to see the Adobe Pass Authentication
 
 The data will serve to track important TVE metrics such authentication conversion rates per MVPD, unique users based on the MVPD User ID and more.
 
-It is not meant to replace a client side implementation if one exists already since the user activity cannot be tracked beyond the specific events below in the absence of a visitor ID. If the customers are providing a visitor ID on Pass calls then we can unlock another type of Analytics integration - real time - that can join all the Pass events with the existing customer data, more details on this new type of possible integration here: "[Using Experience Cloud ID in Adobe Pass Authentication](/help/authentication/integration-guide-programmers/features-standard/analytics/exp-cloud-id-authn.md)"
+It is not meant to replace a client side implementation if one exists already since the user activity cannot be tracked beyond the specific events below in the absence of a visitor ID. If the customers are providing a visitor ID on Pass calls then we can unlock another type of Analytics integration - real time - that can join all the Pass events with the existing customer data, more details on this new type of possible integration here: "[Using Experience Cloud ID in Adobe Pass Authentication](/help/authentication/integration-guide-programmers/features-premium/analytics/exp-cloud-id-authn.md)"
 
 ## Metrics included {#metrics-included-int-authn-analyt}
 

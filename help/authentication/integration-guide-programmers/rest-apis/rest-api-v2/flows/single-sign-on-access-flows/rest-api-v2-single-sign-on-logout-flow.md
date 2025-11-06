@@ -40,7 +40,7 @@ Before initiating single logout for a specific MVPD, ensure the following prereq
 
 Perform the given steps to implement the single logout flow for a specific MVPD as shown in the following diagram.
 
-![Initiate single logout for specific mvpd](/help/authentication/assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-initiate-single-logout-for-specific-mvpd-flow.png)
+![Initiate single logout for specific mvpd](../../../../../assets/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-initiate-single-logout-for-specific-mvpd-flow.png)
 
 *Initiate single logout for specific mvpd*
 

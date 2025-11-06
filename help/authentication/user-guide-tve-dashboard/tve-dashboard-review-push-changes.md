@@ -15,7 +15,7 @@ Follow these steps to review and push changes.
 
 1. Locate the review and push changes notification at the bottom of the screen.
 
-   ![Review and push changes notification](/help/authentication/assets/tve-dashboard/new-tve-dashboard/review/review-and-push-changes-banner-view.png)
+   ![Review and push changes notification](../assets/tve-dashboard/new-tve-dashboard/review/review-and-push-changes-banner-view.png)
 
    *Review and push changes notification box*
 
@@ -23,7 +23,7 @@ Follow these steps to review and push changes.
 
 1. Type a brief description of the change in **Configuration Description** to effectively track and understand the purpose of each change.
 
-   ![Add a Configuration Description](/help/authentication/assets/tve-dashboard/new-tve-dashboard/review/review-and-push-configuration-details-panel-view.png)
+   ![Add a Configuration Description](../assets/tve-dashboard/new-tve-dashboard/review/review-and-push-configuration-details-panel-view.png)
 
    *Add a Configuration Description*
 
@@ -33,7 +33,7 @@ Follow these steps to review and push changes.
 
 1. Select **View** to review the previous and new values associated with a configuration change.
  
-   ![View configuration changes](/help/authentication/assets/tve-dashboard/new-tve-dashboard/review/review-and-push-changes-view-button.png)
+   ![View configuration changes](../assets/tve-dashboard/new-tve-dashboard/review/review-and-push-changes-view-button.png)
 
    *View configuration changes*
    
@@ -43,7 +43,7 @@ Follow these steps to review and push changes.
    >
    >The **Push changes** button becomes active only after adding a **Configuration Description**.
 
-   ![Push changes](/help/authentication/assets/tve-dashboard/new-tve-dashboard/review/review-and-push-push-changes-button.png)
+   ![Push changes](../assets/tve-dashboard/new-tve-dashboard/review/review-and-push-push-changes-button.png)
 
    *Push changes*
 

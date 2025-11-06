@@ -51,17 +51,17 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
     -   [MVPD kickstart guide](kickstart/mvpd-kickstart-guide.md)
     -   [Support procedures FAQs](kickstart/support-procedures-faqs.md)
 -   Integration Guide For Programmers {#integration-guide-programmers}
-    -   [Programmer integration guide](/help/authentication/integration-guide-programmers/programmer-integration-guide-overview.md)
+    -   [Programmer integration guide](integration-guide-programmers/programmer-integration-guide-overview.md)
     -   [Minimum system requirements](integration-guide-programmers/minimum-system-requirements.md)
     -   [Throttling mechanism](integration-guide-programmers/throttling-mechanism.md)
     -   REST APIs {#rest-apis}
         -   REST API DCR {#rest-api-dcr}
-            -   [Dynamic Client Registration Overview](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md)
+            -   [Dynamic Client Registration Overview](integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md)
             -   [Dynamic Client Registration Glossary](integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-glossary.md)
             -   [Dynamic Client Registration FAQs](integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-faqs.md)
             -   APIs {#rest-api-dcr-apis}
                 -   [Retrieve client credentials](integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-client-credentials.md)
-                -   [Retrieve access token](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md)
+                -   [Retrieve access token](integration-guide-programmers/rest-apis/rest-api-dcr/apis/dynamic-client-registration-apis-retrieve-access-token.md)
             -   Flows {#rest-api-dcr-flows}
                 -   [Dynamic Client Registration Flow](integration-guide-programmers/rest-apis/rest-api-dcr/flows/dynamic-client-registration-flow.md)
         -   REST API V2 {#rest-api-v2}
@@ -131,12 +131,33 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             -   [Media tokens](integration-guide-programmers/features-standard/entitlements/media-tokens.md)
         -   Error Reporting {#error-reporting}
             -   [Enhanced error codes](integration-guide-programmers/features-standard/error-reporting/enhanced-error-codes.md)
+        -   Single Sign-On Access {#sso-access}
+            -   Partner Single Sign-On {#partner-sso}
+                -   Apple Single Sign-On {#apple-sso}
+                    -   [Apple SSO Overview](integration-guide-programmers/features-standard/sso-access/partner-sso/apple-sso/apple-sso-overview.md)
+                    -   [Apple SSO Cookbook (REST API V2)](integration-guide-programmers/features-standard/sso-access/partner-sso/apple-sso/apple-sso-cookbook-rest-api-v2.md)
+            -   Platform Single Sign-On {#platform-sso}
+                -   Amazon Single Sign-On {#amazon-sso}
+                    -   [Amazon SSO Cookbook (REST API V2)](integration-guide-programmers/features-standard/sso-access/platform-sso/amazon-single-sign-on/amazon-sso-cookbook-rest-api-v2.md)
+                -   Roku Single Sign-On {#roku-sso}
+                    -   [Roku SSO Cookbook (REST API V2)](integration-guide-programmers/features-standard/sso-access/platform-sso/roku-single-sign-on/roku-sso-cookbook-rest-api-v2.md)
+        -   Home Based Authentication Access {#hba-access}
+            -   [Home-based authentication (HBA)](integration-guide-programmers/features-standard/hba-access/home-based-authentication.md)
         -   Privacy Support {#privacy-support}
-            -   [Privacy support overview](integration-guide-programmers/features-standard/privacy-support/privacy-supp-overview.md)
-            -   [How to make a privacy request](integration-guide-programmers/features-standard/privacy-support/make-privacy-req.md)
+            -   [Privacy support overview](integration-guide-programmers/features-premium/privacy-support/privacy-supp-overview.md)
+            -   [How to make a privacy request](integration-guide-programmers/features-premium/privacy-support/make-privacy-req.md)
+    -   Premium Features {#features-premium}
+        -   Temporary Access {#temporary-access}
+            -   [TempPass Feature](integration-guide-programmers/features-premium/temporary-access/temp-pass-feature.md)
+        -   Degraded Access {#degraded-access}
+            -   [Degradation Feature](integration-guide-programmers/features-premium/degraded-access/degradation-feature.md)
+        -   ESM {#esm}
+            -   [Entitlement service monitoring overview](integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md)
+            -   [Entitlement service monitoring API](integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-api.md)
+            -   [Server-side metrics](integration-guide-programmers/features-premium/esm/understanding-serverside-metrics.md)
         -   Analytics {#analytics}
-            -   [Integrating Adobe Pass Authentication server side data into Adobe Analytics](integration-guide-programmers/features-standard/analytics/integrate-authn-servr-data-analytics.md)
-            -   [Using Experience Cloud ID in Adobe Pass Authentication](/help/authentication/integration-guide-programmers/features-standard/analytics/exp-cloud-id-authn.md)
+            -   [Integrating Adobe Pass Authentication server side data into Adobe Analytics](integration-guide-programmers/features-premium/analytics/integrate-authn-servr-data-analytics.md)
+            -   [Using Experience Cloud ID in Adobe Pass Authentication](integration-guide-programmers/features-premium/analytics/exp-cloud-id-authn.md)
     -   Legacy {#legacy}
         -   (Legacy) REST API V1 {#rest-api-v1}
             -   [(Legacy) REST API V1 Overview](integration-guide-programmers/legacy/rest-api-v1/rest-api-overview.md)

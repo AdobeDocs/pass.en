@@ -30,7 +30,7 @@ link to a set of JavaScript code samples.
 
 </br>
 
-![](/help//authentication/assets/javascript-flows.png)
+![](../../../../assets/javascript-flows.png)
 
 
 ## Prerequisites {#prereq}

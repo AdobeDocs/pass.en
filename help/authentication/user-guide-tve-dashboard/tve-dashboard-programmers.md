@@ -16,7 +16,7 @@ The **Programmers** tab in the left panel displays a list of existing programmer
 * **Programmer ID**: A media company identifier within the system.
 * **Channels**: The number of associated channels linked to a programmer.
 
-![List of existing programmers](/help/authentication/assets/tve-dashboard/new-tve-dashboard/programmers/programmers-list-view.png)
+![List of existing programmers](../assets/tve-dashboard/new-tve-dashboard/programmers/programmers-list-view.png)
 
 *List of existing programmers*
 
@@ -35,7 +35,7 @@ Follow these steps to manage various settings of a specific programmer.
    * [Registered Applications](#registered-applications)
    * [Custom Schemes](#custom-schemes)
 
-   ![Programmer settings](/help/authentication/assets/tve-dashboard/new-tve-dashboard/programmers/programmer-tabs-view.png)
+   ![Programmer settings](../assets/tve-dashboard/new-tve-dashboard/programmers/programmer-tabs-view.png)
 
    *Programmer settings*
 
@@ -49,7 +49,7 @@ This tab displays a list of channels linked with a current programmer. Select a 
 
 To add a new channel for the selected programmer, select **Add new channel** from the upper-right corner of **Available Channels** section. Learn [how to add a new channel](/help/authentication/user-guide-tve-dashboard/tve-dashboard-channels.md#add-new-channel).
 
-   ![Add a new channel](/help/authentication/assets/tve-dashboard/new-tve-dashboard/programmers/programmer-add-new-channel-button.png)
+   ![Add a new channel](../assets/tve-dashboard/new-tve-dashboard/programmers/programmer-add-new-channel-button.png)
 
    *Add a new channel*
 
@@ -80,7 +80,7 @@ Follow these steps to add a new certificate.
 
 1. Select **Add new certificate** at the upper-right corner of the **Available Certificates** section.
 
-   ![Add a new certificate](/help/authentication/assets/tve-dashboard/new-tve-dashboard/programmers/programmer-add-new-certificate-button.png)
+   ![Add a new certificate](../assets/tve-dashboard/new-tve-dashboard/programmers/programmer-add-new-certificate-button.png)
 
    *Add a new certificate*
 
@@ -106,7 +106,7 @@ Follow these steps to delete a certificate.
 
 1. Select **Remove**.
 
-   ![Remove the selected certificate](/help/authentication/assets/tve-dashboard/new-tve-dashboard/programmers/programmer-remove-certificate-button.png)
+   ![Remove the selected certificate](../assets/tve-dashboard/new-tve-dashboard/programmers/programmer-remove-certificate-button.png)
 
    *Remove the selected certificate*
 
@@ -116,7 +116,7 @@ A new configuration change has been created and is ready for server update. The 
 
 ### Registered Applications {#registered-applications}
 
-This tab displays a list of registered applications. For more details related to registered applications usage, refer to the [dynamic client registration overview](/help/authentication/integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md) documentation.
+This tab displays a list of registered applications. For more details related to registered applications usage, refer to the [dynamic client registration overview](../integration-guide-programmers/rest-apis/rest-api-dcr/dynamic-client-registration-overview.md) documentation.
 
 You can make the following actions with registered applications:
 
@@ -129,7 +129,7 @@ Follow these steps to add a new registered application.
 
 1. Select **Add new application** at the upper-right corner of the **Registered Applications** section.
 
-   ![Add a new application](/help/authentication/assets/tve-dashboard/new-tve-dashboard/programmers/programmer-add-new-application-button.png)
+   ![Add a new application](../assets/tve-dashboard/new-tve-dashboard/programmers/programmer-add-new-application-button.png)
 
    *Add a new application*
 
@@ -173,7 +173,7 @@ Follow these steps to download a software statement.
 
 1. Select **Download**.
 
-   ![Download a software statement](/help/authentication/assets/tve-dashboard/new-tve-dashboard/programmers/programmer-download-software-statement-button.png)
+   ![Download a software statement](../assets/tve-dashboard/new-tve-dashboard/programmers/programmer-download-software-statement-button.png)
 
    *Download a software statement*
 
@@ -192,7 +192,7 @@ Follow these steps to generate a new custom scheme.
 
 1. Select **Generate new custom scheme**.
 
-   ![Generate a new custom scheme](/help/authentication/assets/tve-dashboard/new-tve-dashboard/programmers/programmer-add-new-custom-scheme-button.png)
+   ![Generate a new custom scheme](../assets/tve-dashboard/new-tve-dashboard/programmers/programmer-add-new-custom-scheme-button.png)
 
    *Generate a new custom scheme*
 
@@ -206,7 +206,7 @@ Follow these steps to add a new programmer entity.
 
 1. Select **Add new programmer** at the upper-right corner of the **Programmers** section.
 
-   ![Add a new programmer](/help/authentication/assets/tve-dashboard/new-tve-dashboard/programmers/programmer-add-new-programmer-button.png)
+   ![Add a new programmer](../assets/tve-dashboard/new-tve-dashboard/programmers/programmer-add-new-programmer-button.png)
 
    *Add a new programmer*
 

@@ -17,7 +17,7 @@ The **MVPDs** tab in the left panel displays a list of MVPDs with the following 
 
 * **MVPD ID**: A unique ID of MVPD used to set up a new integration in the system.
 
-![List of integrated MVPDs](/help/authentication/assets/tve-dashboard/new-tve-dashboard/mvpds/mvpds-list-view.png)
+![List of integrated MVPDs](../assets/tve-dashboard/new-tve-dashboard/mvpds/mvpds-list-view.png)
 
 *List of integrated MVPDs*
 
