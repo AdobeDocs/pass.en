@@ -5,18 +5,27 @@ exl-id: 725cc64b-6b03-46e3-a038-41e9b1341c6b
 ---
 # Concurrency Monitoring Introduction {#intro}
 
-To know about [Escalation procedures](/help/concurrency-monitoring/cm-escalation-procedures.md) regarding Concurrency Monitoring, see the escalation procedures article. 
+Concurrency Monitoring is a service that enables content providers and identity providers  (MVPDs and Programmers) to define and enforce limits on concurrent video streaming across multiple applications, devices, and platforms. Whether you're a programmer looking to control how many streams a subscriber can watch simultaneously, or an MVPD wanting to enforce usage policies across your content partners, Concurrency Monitoring provides the tools you need.
 
-Concurrency Monitoring allows both Identity and Content providers (MVPDs and Programmers) to define and enforce limits on concurrent usage across multiple applications (potentially owned by multiple partners). 
+## What is Concurrency Monitoring? {#what-is-cm}
 
-**The Concurrency Monitoring API is hosted at the following location:**
+Concurrency Monitoring is a centralized service that tracks and manages active video streaming sessions in real-time. It allows you to:
 
-* **V2.0: [Concurrency Monitoring API](http://docs.adobeptime.io/cm-api-v2/)**
+- **Limit concurrent streams per subscriber** - Control how many simultaneous video streams a user can access
+- **Enforce device restrictions** - Limit streaming to specific device types or quantities
+- **Implement location-based policies** - Restrict streaming based on geographic location
+- **Create content-specific rules** - Apply different limits for live vs. VOD content
+- **Monitor usage patterns** - Gain insights into how your content is being consumed
 
-To sign up for our Concurrency Monitoring service, contact our [Support Team](mailto:tve-support@adobe.com). Specify the following information and our team will be happy to help you out:
+## How It Works {#how-it-works}
 
-1. Name of your company
-1. Applications you want to integrate with Concurrency Monitoring. For each application, please provide:
-    * Application name
-    * Application platform(s)
-1. The third party who requested the integration (in case you are subscribing to Concurrency Monitoring on the request of another party, programmer or MVPD)
+Concurrency Monitoring operates through a simple but powerful API:
+
+1. **Session Initialization** - When a user starts watching content, your application creates a session
+2. **Policy Evaluation** - The service evaluates your defined policies against current usage
+3. **Real-time Monitoring** - Heartbeat calls keep sessions active and monitor compliance
+
+## New to Concurrency Monitoring? {#new-to-cm}
+
+Start with our [Getting Started Guide](getting-started/getting-started-overview.md) to understand the basics and set up your first integration.
+

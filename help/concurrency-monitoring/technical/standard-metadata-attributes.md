@@ -12,7 +12,7 @@ This page aims to provide an exhaustive list of metadata attributes that the Con
 
 ## Attributes required by design {#attr-req-by-design}
 
-The Concurrency Monitoring API forces clients to send the following values as part of any valid initialization call: [session initiation calls](/help/concurrency-monitoring/restrict-concurr-usage-mult-apps.md#api-calls-descr). 
+The Concurrency Monitoring API forces clients to send the following values as part of any valid initialization call: [session initiation calls](/help/concurrency-monitoring/technical/restrict-concurr-usage-mult-apps.md#api-calls-descr). 
 
 | Field Name    | Example value               | Where to use it      | Obtained from                                                                                                                                                                                                             |
 |---------------|-----------------------------|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -25,7 +25,7 @@ The Concurrency Monitoring API forces clients to send the following values as pa
 
 The fields in the table below can be used by Programmers and MVPDs to create policies which will be implemented in Concurrency Monitoring.
 
-With [API v2.0](http://docs.adobeptime.io/cm-api-v2/), if any of these attributes is required by the defined policies, a session init attempt without that attribute will result in a 400 Bad Request.
+With [API v2.0](https://streams-stage.adobeprimetime.com/swagger-ui/index.html), if any of these attributes is required by the defined policies, a session init attempt without that attribute will result in a 400 Bad Request.
 
 
 | Entity | Attribute name | Data type |Description | External reference (ex: EIDR, OATC) | Example value | Validation rules |
@@ -77,5 +77,5 @@ Contact the Concurrency Monitoring team by [creating a ticket in Zendesk](mailto
 
 You can find more examples of policies and integration cookbooks in the following:
 
-* [Policy Decision Point](/help/concurrency-monitoring/cm-policy-decision-point.md)
-* [API Console - Adobe Concurrency Monitoring](http://docs.adobeptime.io/cm-api-v2/)
+* [Policy Decision Point](/help/concurrency-monitoring/technical/cm-policy-decision-point.md)
+* [API Console - Adobe Concurrency Monitoring](https://streams-stage.adobeprimetime.com/swagger-ui/index.html)

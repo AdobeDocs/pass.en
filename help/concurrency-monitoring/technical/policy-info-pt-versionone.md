@@ -11,13 +11,13 @@ exl-id: 964bb28d-cfef-4a37-b6c4-10cc59be0b47
 
 The following diagram shows the flow in case the customer opts for the **Policy Information Point**, in which case CM is merely used for querying the activity and all the access logic is embedded in the client application):
 
-![](assets/pip-workflow.png)
+![](../assets/pip-workflow.png)
 
  
 
 The diagram below illustrates how stream counting works for a user that watches content from 2 devices.
 
-![](assets/pip-sequence.png)
+![](../assets/pip-sequence.png)
 
 In a nutshell, the usual message flow is as follows: 
 

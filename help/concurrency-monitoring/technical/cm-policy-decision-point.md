@@ -21,7 +21,7 @@ For each of the applicable policies, we then need to collect all the **relevant 
 
 **Stream "S" is started by an application that includes policy "P" among its policies.**
 
-![Stream "S" is started by an application that includes policy "P" among its policies.](assets/pdp-domain-model.png)
+![Stream "S" is started by an application that includes policy "P" among its policies.](../assets/pdp-domain-model.png)
  
 ## Dry Run Use Cases {#dry-run-use-cases}
 
@@ -33,7 +33,7 @@ We'll start with a single tenant, with a single application and a single policy 
 
 Once a stream is started, the activity will only consist of that stream and it is allowed to play.
 
- ![One tenant. One application. One policy. One stream](assets/onetenant-app-policy-stream.png)
+ ![One tenant. One application. One policy. One stream](../assets/onetenant-app-policy-stream.png)
 
 
 ### 2. One tenant. One application. One policy. Two streams. {#onetenant-oneapp-onepolicy-twostreams}
@@ -42,7 +42,7 @@ Once a second stream is started (by the same subject using the same application)
 
 The limit is exceeded because the policy states that only one stream is allowed to play, so we'll only allow the latest stream (**s2**) to play.
 
-![One tenant. One application. One policy. Two streams.](assets/tenant-app-policy-twostream.png)
+![One tenant. One application. One policy. Two streams.](../assets/tenant-app-policy-twostream.png)
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ The limit is exceeded because the policy states that only one stream is allowed 
 
 Let's now assume that a new tenant wants to enforce the same policy in their applications:
 
-![Two tenants. Two applications. One policy. Two streams.](assets/onepolicy-twotenant-app-stream.png)
+![Two tenants. Two applications. One policy. Two streams.](../assets/onepolicy-twotenant-app-stream.png)
 
 Due to the two tenants being linked by the same policy, the situation described in usecase 2 is applicable here and **s3** is allowed to play as it is the latest stream.
 
@@ -60,7 +60,7 @@ Due to the two tenants being linked by the same policy, the situation described 
 
 Now, let's assume that the second tenant deploys a new application and wants to define a new policy that will be shared between **app2** and **app3**.
 
-![Two tenants. Three applications. Two policies. Two streams.](assets/twotenant-policies-streams-threeapps.png)
+![Two tenants. Three applications. Two policies. Two streams.](../assets/twotenant-policies-streams-threeapps.png)
 
 At this moment, the active streams **s3** and **s4** are both allowed. For **s3**, when policy **P1** is evaluated, the system will only count **s3** as **relevant activity** (**s4** is in no way related to policy **P1**) so there is no violation.
 
@@ -70,16 +70,16 @@ Policy **P2** is applied to both streams and it will include both **s3** and **s
 
 Now assuming that a new stream initialization attempt is performed using **app2**:
 
-![Two tenants. Three applications. Two policies. Three streams.](assets/twotenants-policies-threeapps-streams.png)
+![Two tenants. Three applications. Two policies. Three streams.](../assets/twotenants-policies-threeapps-streams.png)
 
 **s5** is allowed to start by **P1** (which allows newer streams to take over) but it is denied by **P2**, so it won't start.
 
 The same will happen if a stream init is attempted with app3: the same policy P2 will deny access for it.
 
-![](assets/stream-init-attempted-app3.png)
+![](../assets/stream-init-attempted-app3.png)
 
 Now, let's see what would happen if the user tries to create a new stream using app1:
 
-![](assets/new-stream-with-app1.png)
+![](../assets/new-stream-with-app1.png)
 
 The application app1 is in no way related to the policy **P2**, so it will only apply the policy **P1**: which allows the new stream to start and denies the older one (**s3** in this case).

@@ -17,7 +17,7 @@ The **Concurrency Monitoring Usage Reports** service is available via a REST API
 
 ## Prerequisites {#usage-rep-prerequisites}
 
-In order to access the Concurrency Monitoring Usage Reports product, a customer must first contact the Concurrency Monitoring [Support Team](mailto:tve-support@adobe.com) and they will carry out the necessary steps to allow you access to the API product. More details on [CMU API Access](/help/concurrency-monitoring/cmu-api-access.md). 
+In order to access the Concurrency Monitoring Usage Reports product, a customer must first contact the Concurrency Monitoring [Support Team](mailto:tve-support@adobe.com) and they will carry out the necessary steps to allow you access to the API product. More details on [CMU API Access](/help/concurrency-monitoring/reports/cmu-api-access.md). 
 
 ## General Report Metrics & Breakdowns {#general-rep-metrics-breakdown}
 
@@ -85,6 +85,6 @@ The main purpose of this report is to help you understand the impact of setting 
 
 ### Reports examples
 
-For best data accuracy, we recommend the reports presented on this page [CMU reports examples](/help/concurrency-monitoring/cm-usage-reports-examples.md)
+For best data accuracy, we recommend the reports presented on this page [CMU reports examples](/help/concurrency-monitoring/reports/cm-usage-reports-examples.md)
 
 [^1]: Minutely reports are not available by default. Please contact the Concurrency Monitoring [Support Team](mailto:tve-support@adobe.com) to request them. 

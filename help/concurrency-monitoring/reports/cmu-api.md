@@ -18,7 +18,7 @@ Concurrency Monitoring Usage (CMU) is implemented as a WOLAP (Web-based [Online 
 >
 >The CMU API is not generally available. Contact your Adobe representative for availability questions.
 
-The CMU API provides a hierarchical view of the underlying OLAP cubes. Each resource ([dimension](/help/concurrency-monitoring/cm-usage-reports.md#dimensions-2-filter-metrics) in the dimension hierarchy, mapped as a URL path segment) generates reports with (aggregated) [metrics](/help/concurrency-monitoring/cm-usage-reports.md#monitor-metrics) for the current selection. Each resource points to its parent resource (for roll-up) and its sub-resources (for drill-down). Slicing and dicing are achieved via query string parameters pinning dimensions to specific values or ranges.
+The CMU API provides a hierarchical view of the underlying OLAP cubes. Each resource ([dimension](/help/concurrency-monitoring/reports/cm-usage-reports.md#dimensions-2-filter-metrics) in the dimension hierarchy, mapped as a URL path segment) generates reports with (aggregated) [metrics](/help/concurrency-monitoring/reports/cm-usage-reports.md#monitor-metrics) for the current selection. Each resource points to its parent resource (for roll-up) and its sub-resources (for drill-down). Slicing and dicing are achieved via query string parameters pinning dimensions to specific values or ranges.
 
 The REST API provides the available data within a time interval specified in the request (falling back to default values if none provided), according to the dimension path, provided filters, and selected metrics. The time range will not be applied for reports that do not contain time dimensions (year, month, day, hour, minute, second).
 
@@ -32,7 +32,7 @@ The following drill-down trees illustrate the dimensions (resources) available i
 
 **Dimensions available to CM Tenants**
 
-![](assets/new_breakdown.png)
+![](../assets/new_breakdown.png)
 
 A `GET` to the `https://mgmt.auth.adobe.com/cmu/v2` API endpoint will return a representation containing:
 
@@ -256,4 +256,4 @@ Accept-Encoding: gzip, deflate
 
 ## Related Information {#related-information}
 
-* [CMU Overview](/help/concurrency-monitoring/cm-usage-reports.md)
+* [CMU Overview](/help/concurrency-monitoring/reports/cm-usage-reports.md)

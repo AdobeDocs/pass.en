@@ -19,7 +19,7 @@ This page describes new features, changes, and known issues with this release.
 * the number of users who have reached each concurrency level (i.e. how many users have ever had 2 concurrent streams, 3 concurrent streams, and so on) during each granularity interval
 * the total duration for each concurrency level, in minutes (the average value can be computed by simply dividing this value by the above count)
 * the total number of times users have encountered each concurrency level, to estimate the impact of a given rule in terms of both impacted users and aggregated user experience
-More details are on the [Usage Reports](/help/concurrency-monitoring/cm-usage-reports.md) page. 
+More details are on the [Usage Reports](/help/concurrency-monitoring/reports/cm-usage-reports.md) page. 
 
 We also improved SQL injection protection and added several bug fixes. 
 

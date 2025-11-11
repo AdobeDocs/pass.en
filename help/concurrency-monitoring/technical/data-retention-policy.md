@@ -24,7 +24,7 @@ A Data Retention Policy determines how long Adobe stores customer's data. The de
 
 ## Data collection {#data-collection} 
 
-*Clickstream data* represents data shared by customers on the session heartbeats (for example, subjectID, mvpdName, and metadata). All custom metadata fields are referenced in the [Standard metadata attributes](/help/concurrency-monitoring/standard-metadata-attributes.md).
+*Clickstream data* represents data shared by customers on the session heartbeats (for example, subjectID, mvpdName, and metadata). All custom metadata fields are referenced in the [Standard metadata attributes](/help/concurrency-monitoring/technical/standard-metadata-attributes.md).
 
 ## Customer types {#customer-types}
 

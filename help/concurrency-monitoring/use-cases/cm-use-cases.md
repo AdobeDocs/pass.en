@@ -13,7 +13,24 @@ The main use cases supported by this centralized service should be:
 
 1. As soon as a subscriber starts watching a video, the application can **initialize a streaming session** and start **reporting activity** data.
 1. In the same central service, another instance will receive ***CM decisions*** - in case the application has one or more policies registered in the CM service, the service will respond with access decision based on the current activity.
- 
+
+## Common Use Cases {#common-use-cases}
+
+### Basic Stream Limiting
+
+Limit the number of concurrent streams per subscriber across all your applications.
+
+### Device-Based Restrictions
+
+Allow only a certain number of streams per device type (mobile, tablet, TV, etc.).
+
+### Content-Specific Rules
+
+Apply different limits for live content vs. VOD content.
+
+### Location-Based Policies
+
+Restrict streaming based on geographic location or network type.
 
 ## Creating a session {#create-session}
 

@@ -22,7 +22,7 @@ exl-id: 3b3b36fe-9f04-4de9-bd84-9f8d766bbc71
 ## Application {#application-defn}
 
 * Developed by the Tenant for video content access
-* Makes and enforces decisions about content access based on information provided by the Concurrency Monitoring Service (this is valid in the [Policy Information Point](/help/concurrency-monitoring/policy-info-pt-versionone.md) case)
+* Makes and enforces decisions about content access based on information provided by the Concurrency Monitoring Service (this is valid in the [Policy Information Point](/help/concurrency-monitoring/technical/policy-info-pt-versionone.md) case)
 * Will have a unique **application ID** provided by Adobe.
 
 ## Concurrency Monitoring Service {#cm-service-defn}
