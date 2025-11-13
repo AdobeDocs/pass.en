@@ -155,6 +155,8 @@ user-guide-description: Adobe Pass Authentication is an entitlement solution for
             -   [Entitlement service monitoring overview](integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-overview.md)
             -   [Entitlement service monitoring API](integration-guide-programmers/features-premium/esm/entitlement-service-monitoring-api.md)
             -   [Server-side metrics](integration-guide-programmers/features-premium/esm/understanding-serverside-metrics.md)
+        -   SSO Service {#sso-service}
+            -   [Adobe Single Sign-On Service](integration-guide-programmers/features-premium/sso-service/sso-service.md)
         -   Analytics {#analytics}
             -   [Integrating Adobe Pass Authentication server side data into Adobe Analytics](integration-guide-programmers/features-premium/analytics/integrate-authn-servr-data-analytics.md)
             -   [Using Experience Cloud ID in Adobe Pass Authentication](integration-guide-programmers/features-premium/analytics/exp-cloud-id-authn.md)
