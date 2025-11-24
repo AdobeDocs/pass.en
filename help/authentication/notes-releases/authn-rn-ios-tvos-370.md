@@ -26,5 +26,3 @@ Adds improvements for AccessEnabler framework usage by allowing Keychain storage
 You can download iOS/tvOS SDK v3.7.0 from here.
 
 Before upgrading to this version, please check this technote.
-
-DEMO
