@@ -46,7 +46,7 @@ Follow the steps to manage various settings of a specific channel.
 
 >[!IMPORTANT]
 >
-> View [Review and push changes](/help/authentication/user-guide-tve-dashboard/tve-dashboard-review-push-changes.md) for more information on activating the configuration changes. 
+> View [Review and push changes](/help/authentication/user-guide-tve-dashboard/tve-dashboard-review-push-changes.md) for more information on activating the configuration changes.
 
 ### General settings {#general-settings}
 
@@ -92,12 +92,12 @@ This tab displays a list of available integrations between the currently selecte
 
 This tab displays a list of [available certificates](#available-certificates) and [inherited available certificates](#inherited-avail-certificates) used in the user metadata encryption flows. It displays details about each certificate that includes:
 
-* The status (whether enabled for **user metadata encryption** usage or not) 
+* The status (whether enabled for **user metadata encryption** usage or not)
 * Serial number
-* Name of the issuer organization 
+* Name of the issuer organization
 * Name of the subject organization
 * Issued date
-* Expiry date 
+* Expiry date
 * A dropdown menu to encrypt user metadata (if you select **Yes**, the certificate encrypts sensitive user information, such as zip code values).
 
 #### Available certificates {#available-certificates}
@@ -134,7 +134,7 @@ A new configuration change has been created and is ready for server update. To u
 
 ##### Delete certificate {#delete-certificate}
 
-Follow these steps to delete a certificate. 
+Follow these steps to delete a certificate.
 
 1. Hover on the certificate that you want to delete from the list of **Available certificates**.
 
@@ -145,20 +145,20 @@ Follow these steps to delete a certificate.
    *Remove the selected certificate*
 
 1. Select **Delete** from the **Delete active certificate** dialog box.
- 
+
 A new configuration change has been created and is ready for server update. The certificate will be deleted from the **Available certificates** section only after [review and push changes](/help/authentication/user-guide-tve-dashboard/tve-dashboard-review-push-changes.md).
 
 #### Inherited available certificates {#inherited-avail-certificates}
 
 Media companies define these certificates at their own level. All channels associated with the same media company can use these certificates.
 
-   ![Inherited available certificates](../assets/tve-dashboard/new-tve-dashboard/channels/channel-inherited-available-certificates-panel-view.png)
+![Inherited available certificates](../assets/tve-dashboard/new-tve-dashboard/channels/channel-inherited-available-certificates-panel-view.png)
 
-   *Inherited available certificates*
+*Inherited available certificates*
 
 ### Domains {#domains}
 
-This tab displays a list of available domains through which the respective channel communicates with Adobe Pass Authentication. 
+This tab displays a list of available domains through which the respective channel communicates with Adobe Pass Authentication.
 
 You can make the following changes to domains:
 
@@ -179,7 +179,7 @@ Follow these steps to add a domain.
 
    *Add a new domain*
 
-1. Type the name of your domain in the **New domain** dialog box. 
+1. Type the name of your domain in the **New domain** dialog box.
 
 1. Select **Add domain** to add a new domain for the selected channel.
 
@@ -262,7 +262,8 @@ Follow these steps to download a software statement.
 
 ### Custom Schemes {#custom-schemes}
 
-This tab displays a list of custom schemes. For more details related to custom schemes usage, refer to the [iOS/tvOS application registration](/help/authentication/integration-guide-programmers/legacy/sdks/ios-tvos-sdk/iostvos-application-registration.md).
+This tab displays a list of custom schemes.
+The custom schemes can be used for the Android and iOS Devices.
 
 You can make the following changes to custom schemes:
 
@@ -280,7 +281,40 @@ Follow these steps to generate a new custom scheme.
 
 A new configuration change has been created and is ready for server update. To use the new custom scheme listed in the **Custom Schemes** section, proceed with the [review and push changes](/help/authentication/user-guide-tve-dashboard/tve-dashboard-review-push-changes.md) flow.
 
-#### Inherited custom schemes {#inherited-custom-schemes}
+#### If you don't have access to Adobe's TVE Dashboard:
+
+Submit a ticket to <tve-support@adobe.com>. Please include channel id and someone from our support team will create a custom scheme for you.
+
+#### ANDROID {#Android}
+
+1. Custom Scheme - The custom scheme created in the TVE Dashboard can be used for Android devices applications.
+
+1. In your application's resource file `strings.xml` add the following code:
+
+```XML
+
+       <string name="software_statement">softwarestatement value</string>
+       <string name="redirect_uri">adbe.TTIFAaWuR-CmxXv1Di8PlQ://</string>
+
+```
+
+#### iOS {#iOS}
+
+Custom Scheme can be used in your application's `info.plist` file. Please find the below example where you need to add the URL generated in the TVE Dashboard:
+
+```plist
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>adbe.u-XFXJeTSDuJiIQs0HVRAg</string> // replace this with your custom scheme
+            </array>
+        </dict>
+    </array>
+```
+
+### Inherited custom schemes {#inherited-custom-schemes}
 
 Media companies define these custom schemes at their own level. All channels associated with the same media company can use these custom schemes.
 
@@ -304,7 +338,7 @@ Follow these steps to add a new channel.
 
 1. Type a unique identifier in the **Channel ID**.
 
-1. Type the brand name of the channel used for commercial purposes in the **Display name**. 
+1. Type the brand name of the channel used for commercial purposes in the **Display name**.
 
 1. Select **Add channel**.
 
