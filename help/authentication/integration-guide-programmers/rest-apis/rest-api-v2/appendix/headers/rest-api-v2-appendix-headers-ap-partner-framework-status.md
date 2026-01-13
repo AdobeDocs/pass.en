@@ -64,8 +64,8 @@ The `Base64-encoded` value of the JSON element containing the following attribut
                   <ul>
                      <li><b>granted</b><br/>The user allowed the application to access subscription information.</li>
                      <li><b>denied</b><br/>The user denied the application to access subscription information.</li>
-                     <li><b>pending</b><br/>The user did not choose yet to allow the application to access subscription information.</li>
-                     <li><b>notDetermined</b><br/>The application is not allowed to access subscription information.</li>
+                     <li><b>restricted</b><br/>The application is not allowed to access subscription information.</li>
+                     <li><b>notDetermined</b><br/>The user hasn’t chosen whether to allow the application to access subscription information.</li>
                   </ul>
                </td>
             </tr>
