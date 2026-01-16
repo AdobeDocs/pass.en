@@ -685,6 +685,201 @@ For using the [DCR API](https://developer.adobe.com/adobe-pass/api/dcr_api/inter
 
 +++
 
+### Apple SSO FAQs {#apple-sso-general}
+
++++Apple SSO FAQs
+
+#### 1. What is Apple SSO and how does it work with REST API V2? {#apple-sso-faq1}
+
+Apple SSO (Single Sign-On) enables users to sign in to their TV provider account at the device system level using Apple's [Video Subscriber Account Framework](https://developer.apple.com/documentation/videosubscriberaccount), eliminating the need to authenticate on an app-by-app basis.
+
+REST API V2 supports Partner Single Sign-On (SSO) for end users of client applications running on iOS, iPadOS, or tvOS through the partner flows.
+
+For more details, refer to the following documents:
+
+* [Apple SSO Overview](/help/authentication/integration-guide-programmers/features-standard/sso-access/partner-sso/apple-sso/apple-sso-overview.md)
+* [Apple SSO Cookbook (REST API V2)](/help/authentication/integration-guide-programmers/features-standard/sso-access/partner-sso/apple-sso/apple-sso-cookbook-rest-api-v2.md)
+* [Single sign-on using partner flows](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-partner-flows.md)
+
+#### 2. What are the prerequisites for implementing Apple SSO? {#apple-sso-faq2}
+
+Before implementing Apple SSO, ensure the following prerequisites are met:
+
+**Streaming Application Requirements:**
+
+* Contact Apple to enable the [Video Subscriber Account Framework](https://developer.apple.com/documentation/videosubscriberaccount) as part of your Apple Team ID.
+* Configure the Video Subscriber Single Sign-On Entitlement as part of your Apple Developer Account.
+* Use Xcode version 8 or above and iOS/tvOS version 10 or above.
+* Request user permission to access subscription information at device level.
+* Include the `X-Device-Info` and/or `User-Agent` headers so Adobe Pass Authentication backend can identify the device platform.
+* Include the `AP-Partner-Framework-Status` header with valid partner framework status in all relevant API requests.
+
+**Adobe Pass Configuration:**
+
+* Enable Single Sign-On (SSO) for each desired integration and platform (iOS/tvOS) through the Adobe Pass TVE Dashboard by setting the `Enable Single Sign On` property to `Yes`.
+
+**MVPD Requirements:**
+
+* The MVPD must be onboarded with Apple for Apple SSO support.
+* The MVPD must be onboarded with Adobe Pass Authentication for partner SSO configuration.
+
+For more details, refer to the [Apple SSO Overview - Prerequisites](/help/authentication/integration-guide-programmers/features-standard/sso-access/partner-sso/apple-sso/apple-sso-overview.md#apple-sso-prerequisites) documentation.
+
+#### 3. What is the AP-Partner-Framework-Status header and why is it required? {#apple-sso-faq3}
+
+The `AP-Partner-Framework-Status` header contains partner framework status information retrieved from Apple's Video Subscriber Account Framework.
+
+**Always Required:**
+
+* [Retrieve partner authentication request](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-partner-authentication-request.md)
+* [Create and retrieve profile using partner authentication response](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md)
+
+**Conditionally Required:**
+
+* [Retrieve profiles](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md)
+* [Retrieve profile for specific mvpd](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md)
+* [Retrieve authorization decisions using specific mvpd](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-authorization-decisions-using-specific-mvpd.md)
+* [Retrieve preauthorization decisions using specific mvpd](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/decisions-apis/rest-api-v2-decisions-apis-retrieve-preauthorization-decisions-using-specific-mvpd.md)
+
+The streaming application must retrieve this information by calling the Video Subscriber Account Framework and include it as a base64-encoded JSON payload in the header.
+
+**Best Practice:**
+
+* The streaming application should retrieve partner framework status when the application enters foreground state.
+* Cache the partner framework status information and refresh when the application transitions from background to foreground.
+* Ensure the partner framework status contains valid values (user permission granted, valid provider identifier, valid expiration date).
+
+For more details, refer to the [AP-Partner-Framework-Status](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/appendix/headers/rest-api-v2-appendix-headers-ap-partner-framework-status.md) documentation.
+
+#### 4. How do I troubleshoot Apple SSO issues? {#apple-sso-faq4}
+
+When troubleshooting Apple SSO issues, follow this general approach:
+
+**Step 1: Verify SAML Request Generation**
+
+* Check that the [Retrieve partner authentication request](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-partner-authentication-request.md) endpoint returns a valid partner authentication request (SAML request).
+* Verify the `authenticationRequest - request` attribute contains a properly formatted SAML request after base64 decoding.
+* Ensure the `AP-Partner-Framework-Status` header contains valid partner framework status information.
+
+**Step 2: Identify VSA Errors**
+
+* Review error responses from the Video Subscriber Account Framework.
+* Consult the [Video Subscriber Account Framework](https://developer.apple.com/documentation/videosubscriberaccount/vserror#Error-codes) documentation for error codes and descriptions.
+* Note that VSA error documentation is fairly generic and may not provide detailed root cause information.
+
+**Step 3: Check Common Issues**
+
+* User permission access status must be granted (check `VSAccountAccessStatus.granted`).
+* User provider mapping identifier must be present and valid (`accountProviderIdentifier`).
+* User provider profile's expiration date must be valid (`authenticationExpirationDate`).
+* The MVPD must be onboarded with Apple (check `boardingStatus` in Configuration endpoint response).
+* The MVPD integration must have Apple SSO enabled in TVE Dashboard.
+
+**Step 4: Involve MVPD for Investigation**
+
+* If the Video Subscriber Account Framework receives a valid SAML request but does not return a SAML response following MVPD interaction, involve the Apple SSO-enabled MVPD to troubleshoot.
+* The issue may also be related to MVPD-specific configuration or implementation on Apple's side.
+
+#### 5. What are common VSA errors and how should I handle them? {#apple-sso-faq5}
+
+Common scenarios and their handling:
+
+**User Denies Permission:**
+
+* The `VSAccountAccessStatus` will not be `.granted`.
+* Fall back to basic authentication flow and present the application's own MVPD picker.
+
+**MVPD Not Onboarded with Apple (Error Code 1):**
+
+* The VSA Framework returns an error with `error.code == 1`.
+* The `error.userInfo["VSErrorInfoKeyUnsupportedProviderIdentifier"]` contains the Apple MSO ID.
+* Fall back to basic authentication flow, but you can skip prompting the user with your MVPD picker if you can map the Apple MSO ID to an MVPD in your configuration.
+
+**No Metadata Returned:**
+
+* The `vsaMetadata` is `nil` or required fields are missing.
+* Fall back to basic authentication flow.
+
+**SAML Response Not Returned:**
+
+* The `samlAttributeQueryResponse` is `nil` after MVPD authentication.
+* This may indicate an issue with the MVPD's Apple SSO implementation.
+* Consider contacting Adobe, the MVPD and Apple for investigation.
+
+For detailed error information, refer to the [Video Subscriber Account Framework](https://developer.apple.com/documentation/videosubscriberaccount) documentation.
+
+#### 6. What does the profile type "appleSSO" indicate? {#apple-sso-faq6}
+
+A profile with `type` set to "appleSSO" indicates that the user authenticated through Apple's Partner Single Sign-On flow using the Video Subscriber Account Framework.
+
+This profile type has specific requirements:
+
+* When making decisions (preauthorization/authorization) requests with an "appleSSO" profile, the streaming application should include a valid `AP-Partner-Framework-Status` header with current partner framework status.
+* During logout, the response will include `actionName` set to "partner_logout" and `actionType` set to "partner_interactive", indicating the user must complete logout at the partner (system) level.
+
+Regular profiles (non-Apple SSO) do not have these requirements and follow the basic authentication flows.
+
+#### 7. How do I handle logout for Apple SSO profiles? {#apple-sso-faq7}
+
+When initiating logout for a user with an "appleSSO" type profile:
+
+* The Adobe Pass Logout endpoint response will include:
+    * `actionName` set to "partner_logout"
+    * `actionType` set to "partner_interactive"
+    * The `url` attribute will be missing
+
+* The streaming application must prompt the user to complete the logout process at the partner (system) level by going to:
+    * `Settings -> TV Provider` on iOS/iPadOS
+    * `Settings -> Accounts -> TV Provider` on tvOS
+
+* The user must manually sign out from their TV Provider at the system level to complete the logout process.
+
+For more details, refer to the [Apple SSO Cookbook (REST API V2) - Logout Phase](/help/authentication/integration-guide-programmers/features-standard/sso-access/partner-sso/apple-sso/apple-sso-cookbook-rest-api-v2.md#cookbook) documentation.
+
+#### 8. Can I fall back to basic authentication if Apple SSO fails? {#apple-sso-faq8}
+
+Yes, the Adobe Pass Authentication REST API V2 automatically falls back to basic authentication flow in the following scenarios:
+
+**Automatic Fallback:**
+
+* Partner single sign-on validation fails at the Adobe Pass backend
+* User denies permission to access subscription information
+* MVPD is not onboarded with Apple
+* VSA Framework does not return valid metadata
+
+**Response Indication:**
+
+When falling back to basic authentication, the [Retrieve partner authentication request](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-partner-authentication-request.md) endpoint response will contain:
+
+* `actionName` set to either "authenticate" or "resume"
+* `actionType` set to either "interactive" or "direct"
+
+The streaming application should handle these responses by initiating the basic authentication flow.
+
+**Manual Fallback:**
+
+To disable Apple SSO for a specific integration and always use basic authentication:
+
+* Set the `Enable Single Sign On` property to `No` in the Adobe Pass TVE Dashboard for the desired integration and platform (iOS/tvOS).
+
+For more details, refer to the [Single sign-on using partner flows](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/flows/single-sign-on-access-flows/rest-api-v2-single-sign-on-partner-flows.md) documentation.
+
+#### 9. Where can I find more information about the Video Subscriber Account Framework? {#apple-sso-faq9}
+
+For detailed information about Apple's Video Subscriber Account Framework, including API reference, error codes, and integration guidelines, refer to the official Apple documentation:
+
+* [Video Subscriber Account Framework Documentation](https://developer.apple.com/documentation/videosubscriberaccount)
+
+Key classes and protocols to review:
+
+* [VSAccountManager](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmanager) - Main manager for subscriber account operations
+* [VSAccountMetadataRequest](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadatarequest) - Request for subscriber account information
+* [VSAccountMetadata](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmetadata) - Response containing subscriber account information
+* [VSAccountManagerDelegate](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountmanagerdelegate) - Delegate protocol for account manager events
+* [VSAccountAccessStatus](https://developer.apple.com/documentation/videosubscriberaccount/vsaccountaccessstatus) - User permission status enumeration
+
++++
+
 ## Migration FAQs {#migration-faqs}
 
 Continue with this section if you are working on an application that needs to migrate an existing application to REST API V2.
