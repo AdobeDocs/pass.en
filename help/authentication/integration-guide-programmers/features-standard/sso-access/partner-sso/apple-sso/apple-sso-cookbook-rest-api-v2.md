@@ -190,10 +190,22 @@ Perform the given steps to implement the Apple single sign-on using partner flow
 1. **Retrieve profiles:** The streaming application gathers all the necessary data to retrieve all profiles information by sending a request to the Profiles endpoint.
 
    >[!IMPORTANT]
+   > 
+   > The REST API v2 endpoint you **must** use at this step is either:
    >
-   > Refer to the [Retrieve profiles](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md#Request) API documentation for details on:
+   > * [Retrieve profiles](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md#Request) API
+   > 
+   > or
+   > 
+   > * [Retrieve profiles for specific mvpd](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md#Request) API
    >
-   > * All the _required_ parameters, like `serviceProvider`
+   > Make sure you **do not** make use of [Create and retrieve profile using partner authentication response](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/partner-single-sign-on-apis/rest-api-v2-partner-single-sign-on-apis-retrieve-profile-using-partner-authentication-response.md#Request) API at this step. 
+
+   >[!IMPORTANT]
+   >
+   > Refer to the [Retrieve profiles](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profiles.md#Request) API or [Retrieve profiles for specific mvpd](/help/authentication/integration-guide-programmers/rest-apis/rest-api-v2/apis/profiles-apis/rest-api-v2-profiles-apis-retrieve-profile-for-specific-mvpd.md#Request) API documentation for details on:
+   >
+   > * All the _required_ parameters, like `serviceProvider` (or `mvpd`)
    > * All the _required_ headers, like `Authorization`, `AP-Device-Identifier`, and `AP-Partner-Framework-Status`
    > * All the _optional_ parameters and headers
    >
