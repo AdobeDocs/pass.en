@@ -1,8 +1,8 @@
 ---
 title: API Endpoints
 description: Complete list of the Concurrency Monitoring APIs
+exl-id: e8a9dfd2-cd16-4971-b9bc-9646987dd3ce
 ---
-
 # API Endpoints 
 
 ## Core Session Management

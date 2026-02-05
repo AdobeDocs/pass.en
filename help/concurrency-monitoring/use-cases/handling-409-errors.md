@@ -1,8 +1,8 @@
 ---
 title: Handling 409 Conflict Errors
 description: Learn how to handle 409 Conflict errors when concurrent usage limits are reached
+exl-id: 23a73e48-8ae0-4e0e-85db-dfc09d1386a7
 ---
-
 # Handling 409 Conflict Errors {#handling-409-errors}
 
 When a user tries to start a new stream and hits a concurrent usage limit, Concurrency Monitoring returns a **409 Conflict** response. Understanding how to handle this error is crucial for providing a good user experience.
@@ -121,5 +121,3 @@ A 409 Conflict occurs when:
 - **Parse response carefully** - Extract all relevant information
 - **Handle edge cases** - What if no conflicts are returned?
 - **Log conflicts** - Track policy violations for analysis
-
-

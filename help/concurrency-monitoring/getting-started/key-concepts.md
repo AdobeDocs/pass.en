@@ -1,8 +1,8 @@
 ---
 title: Key Concepts
 description: Learn the fundamental concepts of Concurrency Monitoring including sessions, policies, metadata, and more
+exl-id: 9721055a-70e6-4ba1-a1e0-04406eec25e6
 ---
-
 # Key Concepts {#key-concepts}
 
 Understanding the core concepts of Concurrency Monitoring is essential for successful implementation. This guide explains the fundamental building blocks and how they work together.
@@ -263,4 +263,3 @@ Tenant: "Streaming Company"
 | **FIFO**        | First In, First Out conflict resolution    |
 | **Tenant**      | Organization owning applications           |
 | **Application** | Software program using CM                  |
-

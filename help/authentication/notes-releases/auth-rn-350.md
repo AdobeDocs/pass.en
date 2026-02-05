@@ -1,8 +1,8 @@
 ---
 title: Adobe Pass Authentication 3.5.0 Release Notes
 description: Learn about the new features, changes, and known issues with this release.
+exl-id: b196f636-26a5-4974-903e-40b5f8b93a24
 ---
-
 # Adobe Pass Authentication 3.5.0 Release Notes
 
 Last update: Tue Dec 09 2025 00:00:00 GMT+0000 (Coordinated Universal Time)

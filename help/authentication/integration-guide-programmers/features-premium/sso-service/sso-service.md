@@ -1,9 +1,8 @@
 ---
 title: Adobe Single Sign-On Service
 description: Learn about the Adobe Pass SSO Service that enables seamless authentication across multiple devices and applications.
-exl-id: a1ff85d4-f7d2-4dea-b82f-d29730d9012f
+exl-id: ffca2bcc-c933-4688-8d98-c5e03390f66c
 ---
-
 # Adobe Single Sign-On Service {#sso-service}
 
 This document describes use cases, endpoints and API for Adobe Single Sign-On Service.
@@ -1591,4 +1590,3 @@ All error responses include these fields:
 | header_invalid | 401 | Error validating JWT signature | get_new_token |
 | header_invalid | 401 | JWT subject (sub) is missing or empty in AD-Service-Token | get_new_token |
 | header_invalid | 401 | Error extracting JWT subject | get_new_token |
-

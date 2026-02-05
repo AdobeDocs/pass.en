@@ -1,8 +1,8 @@
 ---
 title: API Reference Overview
 description: Complete reference for the Concurrency Monitoring API including endpoints, authentication, and response formats
+exl-id: 6a1c6507-03d5-4003-8b88-502eb4019346
 ---
-
 # API Reference Overview {#api-reference-overview}
 
 The Concurrency Monitoring API provides a RESTful interface for managing streaming sessions and enforcing concurrent usage policies. This reference provides complete documentation for all endpoints, authentication methods, request/response formats, and error handling.

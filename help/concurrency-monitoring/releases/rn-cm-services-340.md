@@ -1,6 +1,7 @@
 ---
 title: Adobe Concurrency Monitoring Services 3.4.0 Release Notes
 description: Adobe Concurrency Monitoring Services 3.4.0 Release Notes
+exl-id: cf436f40-5388-4b03-815e-d8be55fe005a
 ---
 # Adobe Concurrency Monitoring Services 3.4.0 Release Notes {#cm-services-rns}
 
@@ -18,4 +19,4 @@ Release Date: 01/30/2024
 
 ## Known Issues {#known-issues}
 
-None 
+None

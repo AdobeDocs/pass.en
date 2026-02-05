@@ -1,8 +1,8 @@
 ---
 title: LIFO vs FIFO Strategies
 description: Understand the difference between LIFO and FIFO strategies and when to use each approach
+exl-id: 2d7c4bc8-0491-429b-8471-3b5629aa76a6
 ---
-
 # LIFO vs FIFO Strategies {#lifo-fifo-strategies}
 
 When implementing Concurrency Monitoring, you need to choose between two fundamental strategies for handling conflicts when usage limits are reached: **LIFO (Last In, First Out)** or **FIFO (First In, First Out)**. Understanding these strategies is crucial for designing the right user experience and implementing the appropriate error handling.

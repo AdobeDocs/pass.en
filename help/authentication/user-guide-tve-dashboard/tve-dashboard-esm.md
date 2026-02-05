@@ -1,8 +1,8 @@
 ---
 title: ESM Dashboard
 description: Learn how to use the ESM Dashboard to monitor entitlement and events data across MVPD partners.
+exl-id: ac5f289a-c26d-4156-bc56-7968c49c100f
 ---
-
 # ESM Dashboard {#esm-dashboard}
 
 >[!NOTE]
