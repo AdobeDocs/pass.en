@@ -38,3 +38,15 @@ Release Date: **12/09/2025 - 12/11/2025**
 * Fixed an issue in REST API V2 where `authenticated_profile_expired` error code was not returned when authenticated profiles expired.
 * Fixed an issue where authorization latency calculations and preflight TTL values were incorrect in REST API V2.
 * Fixed an issue where inconsistent response format was returned when DCR token expires.
+
+## Maintenance Update - February 2026 {#maintenance-update-february-2026}
+
+Adobe Pass Authentication: adobe-pass-**3.5.0.5**  
+Release Date: **02/24/2026 - 02/26/2026**
+
+This maintenance update release includes important improvements to enhance system reliability and security:
+
+### Enhancements
+
+* Improved authentication degradation handling for proxied MVPD configurations in REST API V2, ensuring more consistent behavior during MVPD service interruptions.
+* Enhanced URL parameter validation and redirect handling to strengthen security controls and improve overall system integrity.
