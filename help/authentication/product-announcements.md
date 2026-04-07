@@ -23,6 +23,12 @@ Make sure you stay informed about the decommissioning timelines and that you pla
 
 This section compiles references to the release history and corresponding release notes for Adobe Pass Authentication.
 
+### 2026 {#product-releases-2026}
+
+| Release Notes                                                                                             | Dates                   |
+|-----------------------------------------------------------------------------------------------------------|-------------------------|
+| [Adobe Pass Authentication 3.6.0 release notes](notes-releases/auth-rn-360.md)                            | 04/07/2025 - 04/09/2025 |
+
 ### 2025 {#product-releases-2025}
 
 | Release Notes                                                                                             | Dates                   |
