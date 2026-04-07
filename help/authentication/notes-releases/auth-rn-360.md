@@ -18,7 +18,7 @@ This page describes new features, changes, and known issues with this release:
 ### Build Number {#build-number-360}
 
 Adobe Pass Authentication: adobe-pass-**3.6.0**  
-Release Date: **04/07/2025 - 04/09/2025**
+Release Date: **04/07/2026 - 04/09/2026**
 
 ### Release Overview {#release-overview-360}
 
