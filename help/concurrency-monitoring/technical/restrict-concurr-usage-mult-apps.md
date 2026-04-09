@@ -49,7 +49,7 @@ The following items MUST be packaged in the application(s):
 1. interval for heartbeats
 1. interval for checking compliance
  
-<!---
+<!--
 ## Workflows
  
 
@@ -421,4 +421,4 @@ Related Information
 Introduction - Adobe Concurrency Monitoring
 API Console - Adobe Concurrency Monitoring
 User Metadata - Adobe Pass Authentication
---->
+-->

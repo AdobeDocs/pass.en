@@ -8,7 +8,7 @@ user-guide-description: Learn to define and enforce limits on concurrent usage a
 
 # Adobe Pass Concurrency Monitoring help {#cm}
 
-- [CM Introduction](cm-home.md) {#cm-intro}
+- [CM Introduction](cm-home.md)
 - Getting Started {#getting-started}
     - [Getting Started with Concurrency Monitoring](getting-started/getting-started-overview.md)
     - [Key Concepts](getting-started/key-concepts.md)
@@ -28,7 +28,7 @@ user-guide-description: Learn to define and enforce limits on concurrent usage a
     - [Implementation Models](technical/implementation-models.md)
     - [Single Tenant Policy Multiple Apps](technical/single-tenant-policy-mult-app.md)
     - [Restrict Concurrent Usage Multiple Apps](technical/restrict-concurr-usage-mult-apps.md)
-- [CM Usage Reports](reports/cm-usage-reports.md) {#cm-usage-reports}
+- [CM Usage Reports](reports/cm-usage-reports.md)
 - Tech notes {#tech-notes}
     - [Standard Metadata Attributes](technical/standard-metadata-attributes.md)
     - [Custom Metadata](technical/custom-metadata.md)
@@ -66,4 +66,4 @@ user-guide-description: Learn to define and enforce limits on concurrent usage a
   - [Concurrency Monitoring - 2.5.0 Release Notes](releases/rn-cm-250.md)
   - [Concurrency Monitoring - 2.3.2 Release Notes](releases/rn-cm-232.md)
   - [Concurrency Monitoring - 2.2.2 Release Notes](releases/rn-cm-222.md)
-- [Support procedures](support/cm-escalation-procedures.md) {#support-procedures}
+- [Support procedures](support/cm-escalation-procedures.md)

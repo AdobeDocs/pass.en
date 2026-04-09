@@ -4,8 +4,10 @@ type: Documentation
 product: adobe primetime
 solution: Pass
 feature-set: Pass
+landing-page-name: pass
+landing-page-breadcrumb-title: Pass
 git-repo: https://github.com/AdobeDocs/pass.en
-index: yes
+index: true
 ---
 
 # Metadata for internal use

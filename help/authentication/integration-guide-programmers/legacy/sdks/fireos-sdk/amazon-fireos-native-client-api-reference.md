@@ -62,8 +62,7 @@ Please refer to <https://tve.zendesk.com/hc/en-us/articles/115005561623-fire-TV-
 
 | API call: constructor |
 | --- |
-| ```public static AccessEnabler getInstance(Context appContext, String softwareStatement, String redirectUrl)<br>        throws AccessEnablerException```<br><br>    
-```public static AccessEnabler getInstance(Context appContext, String env_url, String softwareStatement, String redirectUrl) throws AccessEnablerException``` |
+| ```public static AccessEnabler getInstance(Context appContext, String softwareStatement, String redirectUrl)<br>        throws AccessEnablerException```<br><br>  <code> public static AccessEnabler getInstance(Context appContext, String env_url, String softwareStatement, String redirectUrl) throws AccessEnablerException </code> |
 
 **Availability:** v3.0+
 

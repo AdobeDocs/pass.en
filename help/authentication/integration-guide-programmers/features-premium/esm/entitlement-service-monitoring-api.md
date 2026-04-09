@@ -99,10 +99,10 @@ There is also a special usage for the dimension names in the query string: If th
 | *URL* | *SQL Equivalent*|
 |---|---|
 | /dimension1/dimension2/dimension3?dimension1=value1 | SELECT * from projection WHERE dimension1 = 'value1' </br> GROUP BY dimension1, dimension2, dimension3 |
-|/dimension1/dimension2/dimension3?dimension1=value1&dimension1=value2 |SELECT * from projection WHERE dimension1 IN ('value1', 'value2') </br> GROUP BY dimension1, dimension2, dimension3 | 
-| /dimension1/dimension2/dimension3?dimension1!=value1 | SELECT * from projection WHERE dimension1 <> 'value1' | </br> GROUP BY dimension1, dimension2, dimension3 | 
-| /dimension1/dimension2/dimension3?dimension1!=value1&dimension2!=value2  | SELECT * from projection WHERE dimension1 NOT IN ('value1', 'value2') | </br> GROUP BY dimension1, dimension2, dimension3 | 
-| Assuming there is no direct path: /dimension1/dimension3 </br> but there is a path: /dimension1/dimension2/dimension3 </br> </br> /dimension1?dimension3 |  SELECT * from projection GROUP BY dimension1, dimension3 | 
+|/dimension1/dimension2/dimension3?dimension1=value1&dimension1=value2 |SELECT * from projection WHERE dimension1 IN ('value1', 'value2') </br> GROUP BY dimension1, dimension2, dimension3 |
+| /dimension1/dimension2/dimension3?dimension1!=value1 | SELECT * from projection WHERE dimension1 <> 'value1' \| </br> GROUP BY dimension1, dimension2, dimension3 |
+| /dimension1/dimension2/dimension3?dimension1!=value1&dimension2!=value2  | SELECT * from projection WHERE dimension1 NOT IN ('value1', 'value2') \| </br> GROUP BY dimension1, dimension2, dimension3 |
+| Assuming there is no direct path: /dimension1/dimension3 </br> but there is a path: /dimension1/dimension2/dimension3 </br> </br> /dimension1?dimension3 | SELECT * from projection GROUP BY dimension1, dimension3 |
 
 >[!NOTE] 
 >
@@ -115,27 +115,27 @@ The following query string parameters have reserved meanings for the API (and th
 | Parameter | Optional  | Description                                                                                                                                                                                                                                                                                         | Default value  |Example |
 | --- | ---- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ---- | --- |
 |access_token | Yes | The DCR token can be passed as a standard Authorization Bearer token.                                                                                                                                                                                         | None | access_token=XXXXXX |
-| dimension-name | Yes | Any dimension name – either contained in the current URL path or in any valid subpath; the value will be treated as an equals filter. If no value is provided, this will force the specified dimension to be included in the output even if it is not included or adjacent to the current path      | None | someDimension=someValue&someOtherDimension | 
-| end | Yes | End time for the report in millis                                                                                                                                                                                                                                                                   | Current time of the server | end=2024-07-30 | 
-| format | Yes | Used for content negotiation (with the same effect but lower precedence than the path "extension" – see bellow).                                                                                                                                                                                    | None: the content negotiation will try the other strategies | format=json | 
+| dimension-name | Yes | Any dimension name – either contained in the current URL path or in any valid subpath; the value will be treated as an equals filter. If no value is provided, this will force the specified dimension to be included in the output even if it is not included or adjacent to the current path      | None | someDimension=someValue&someOtherDimension |
+| end | Yes | End time for the report in millis                                                                                                                                                                                                                                                                   | Current time of the server | end=2024-07-30 |
+| format | Yes | Used for content negotiation (with the same effect but lower precedence than the path "extension" – see bellow).                                                                                                                                                                                    | None: the content negotiation will try the other strategies | format=json |
 | limit | Yes | Maximum number of rows to be returned                                                                                                                                                                                                                                                               | Default value reported by the server in the self link if no limit is specified in the request | limit=1500 |
 | metrics | Yes | Comma-separated list of metric names to be returned; this should be used for both filtering a subset of the available metrics (to reduce the payload size) and also for enforcing the API to return a projection which contains the requested metrics (rather than the default optimal projection). | All the metrics available for the current projection will be returned in case this parameter is not provided. | metrics=m1,m2 |
-| start | Yes | Start time for the report as ISO8601; the server will fill in the remaining part if only a prefix is provided: e.g., start=2024 will result in start=2024-01-01:00:00:00                                                                                                                            | Reported by the server in the self link; the server tries to provide reasonable defaults based on the selected time granularity | start=2024-07-15 | 
+| start | Yes | Start time for the report as ISO8601; the server will fill in the remaining part if only a prefix is provided: e.g., start=2024 will result in start=2024-01-01:00:00:00                                                                                                                            | Reported by the server in the self link; the server tries to provide reasonable defaults based on the selected time granularity | start=2024-07-15 |
 
 The only available HTTP method currently is GET.
 
 ## ESM API Status Codes {#esm-api-status-codes}
 
-| Status Code | Reason Phrase | Description | 
+| Status Code | Reason Phrase | Description |
 |---|---|---|
-| 200 | OK |  The response will contain "roll-up" and "drill-down" links (if applicable). The report will be rendered as an attribute of the resource: a nested "report" element/property. | 
-| 400 | Bad Request | The response body will contain a text message explaining what's wrong with the request. </br> </br> A 400 Bad Request status is accompanied by an explaining text in the response body (plain/text media type) which provides useful information regarding the client error. Besides the trivial scenarios such as invalid date formats or filters applied to non-existing dimensions, the system will also refuse to respond to queries that require a massive volume of data to be returned or aggregated on the fly. | 
+| 200 | OK |  The response will contain "roll-up" and "drill-down" links (if applicable). The report will be rendered as an attribute of the resource: a nested "report" element/property. |
+| 400 | Bad Request | The response body will contain a text message explaining what's wrong with the request. </br> </br> A 400 Bad Request status is accompanied by an explaining text in the response body (plain/text media type) which provides useful information regarding the client error. Besides the trivial scenarios such as invalid date formats or filters applied to non-existing dimensions, the system will also refuse to respond to queries that require a massive volume of data to be returned or aggregated on the fly. |
 | 401 |  Unauthorized | Caused by a request that does not contain the proper OAuth headers in order to authenticate the user |
 | 403 |  Forbidden | Indicates that the request is not allowed in the current security context; this occurs when the user is authenticated but not allowed to access the requested information |
 | 404 |  Not Found | Occurs in case an invalid URL path is provided with the request. This should never occur if the client follows the "drill-down"/"roll-up" links provided with 200 responses |
 | 405 |  Method Not Allowed | Signals that an unsupported method was used in the request. Although currently only the GET method is supported, future versions may allow HEAD or OPTIONS |
 | 406 |   Not Acceptable | Signals that an unsupported media type was requested by the client |
-| 500 |  Internal Server Error |  "This should never happen" | 
+| 500 |  Internal Server Error |  "This should never happen" |
 | 503 |  Service Unavailable |  Signals an error within the application or its dependencies |
 
 ## Data Formats {#data-formats}

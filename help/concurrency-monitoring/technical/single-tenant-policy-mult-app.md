@@ -29,7 +29,7 @@ Two apps + one website are used to start streams:
  
 
 
-<!---
+<!--
 
 Figure 1: Policy with one rule
 
@@ -465,4 +465,4 @@ Related Information
 Introduction - Adobe Concurrency Monitoring
 API Console - Adobe Concurrency Monitoring
 User Metadata - Adobe Pass Authentication
---->
+-->

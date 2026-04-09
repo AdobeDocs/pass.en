@@ -471,7 +471,7 @@ Passes the event type and an array of associated information. Event types are:
 Data is specific to each event type:
 </br>
 
-|Event type (String) | Data (Array)  | 
+|Event type (String) | Data (Array)  |
 |:--- | :--- |
 |mvpdSelection|0: Selected MVPD|
 ||1: Device Type|
@@ -621,22 +621,22 @@ For example:
 
 ### Callback Error Codes {#callback-error-codes}
 
-|Generic Errors | | 
-|:--- | :--- | 
+|Generic Errors | |
+|:--- | :--- |
 |Internal Error | A system error occurred when trying to process request.|
 |Provider not Selected Error| Occurs when customer cancels in the provider selection dialog|
-|Provider not Available Error|  Occurs when no providers are available.| 
+|Provider not Available Error|  Occurs when no providers are available.|
 
-|Authentication Errors | | 
-|:--- | :--- | 
+|Authentication Errors | |
+|:--- | :--- |
 |Generic Authentication Error | Returned when the reason is not known or cannot be published. |
-|Internal Authentication Error | A system error occurred when trying to authenticate. | 
-| User Not Authenticated Error | User is not authenticated. | 
+|Internal Authentication Error | A system error occurred when trying to authenticate. |
+| User Not Authenticated Error | User is not authenticated. |
 | Multiple Authentication Requests Error | Additional authentication requests were received before the first one completed. |
 
 |Authorization Errors | |
-|:--- | :--- | 
-|Generic Authorization Error | Returned when the reason is not known or cannot be published.| 
+|:--- | :--- |
+|Generic Authorization Error | Returned when the reason is not known or cannot be published.|
 |Internal Authorization Error |   A system error occurred when trying to authorize. |
 |User not Authorized Error |  The customer is not authorized to view the requested content. |
 

@@ -36,7 +36,7 @@ In a working Client-to-Server solution the following components are involved:
 | | \[Optional\] AuthN Module | if Streaming Device has a User Agent (i.e. Web Browser), the AuthN Module is responsible for authenticating the user on the MVPD IdP. |
 | \[Optional\] AuthN Device | AuthN App | if the Streaming Device does not have a User Agent (i.e. Web Browser), the AuthN Application is a Programmer web application that is accessed from a separte user's device using a web browser. |
 | Adobe Infrastructure | Adobe Pass Service | A service that integrates with the MVPD IdP and AuthZ Service and provides authentication and authorization decisions. |
-|  MVPD Infrastructure | MVPD IdP | An MVPD endpoint that provides credential-based authentication service to validate their user's identity. | 
+|  MVPD Infrastructure | MVPD IdP | An MVPD endpoint that provides credential-based authentication service to validate their user's identity. |
 | | MVPD AuthZ Service | An MVPD endpoint that provides authorization decisions based on user's subscriptions, parental controls, etc. |
 
 ## Flows{#flows}

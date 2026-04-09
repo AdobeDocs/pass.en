@@ -37,7 +37,8 @@ Enable SSL Proxying `\[ *Proxy -\> Proxy Settings... -\> SSL* \]`
 
 Check the "Enable SSL Proxying" checkbox and add all of the HTTPS locations.
 
-<!-- NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
+<!-- 
+NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/ProxySettings.PNG) ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/SSLSettings.PNG) ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/AddHttpsLocations.PNG)
 -->
 
@@ -62,7 +63,8 @@ If your output becomes too cluttered you can choose to ignore or exclude locatio
 
 DNS spoofing is very useful when trying to redirect a request to a different IP, especially when working with mobile devices:
 
-<!-- NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
+<!-- 
+NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/DNSSpoofing.PNG)
 -->
 
@@ -77,7 +79,8 @@ DNS spoofing is very useful when trying to redirect a request to a different IP,
 
 With map remote you can redirect an "incoming" request to a different endpoint. The most common use case for this feature is to "Map" `AccessEnabler.swf` to `AccessEnablerDebug.swf:`
 
-<!-- NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
+<!-- 
+NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/MapRemote.PNG) ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/MapRemoteAdd.PNG)
 -->
 
@@ -97,7 +100,8 @@ With map remote you can redirect an "incoming" request to a different endpoint. 
 
 Browse to <http://charlesproxy.com/charles.crt> from your iOS device.  This will start the certificate install dialog:
 
-<!-- NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
+<!-- 
+NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/iOSDeviceSSLCertificate1\(1\).PNG)![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/iOSDeviceSSLCertificate2\(1\).PNG)![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/iOSDeviceSSLCertificate3.PNG)
 -->
 
@@ -116,7 +120,8 @@ On your iOS device select `\[ *Settings* -\> *Wi-FI* -\> (*YOUR\_WIFI\_NETWORK)*
 
  </br>
 
-<!-- NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
+<!-- 
+NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/iOSDeviceManualProxy1.png)![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/iOSDeviceManualProxy2.PNG)
 -->
 
@@ -125,7 +130,8 @@ Here you need to specify the IP and port of the machine where you are running Ch
  
  </br>
 
-<!-- NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
+<!-- 
+NOTE TO WRITER - THESE IMAGES LINKS ARE BROKEN
 ![](https://dzf8vqv24eqhg.cloudfront.net/userfiles/258/326/ckfinder/images/iOSDeviceManualProxy3.PNG)
 -->
 

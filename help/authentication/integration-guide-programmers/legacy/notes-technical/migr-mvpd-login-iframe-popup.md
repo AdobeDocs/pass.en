@@ -16,10 +16,12 @@ exl-id: 389ea0ea-4e18-4c2e-a527-c84bffd808b4
 ## Popup versus iFrame {#popup-vs-iframe}
 
 Some users have encountered 3rd-party cookie issues with the iFrame implementation of an MVPD login page. 
-<!--These issues are described in the tech notes linked below:
+<!--
+These issues are described in the tech notes linked below:
 
 * [Adobe Pass Authentication and Safari login issues](https://tve.helpdocsonline.com/adobe-pass)
-* [MVPD iFrame login and 3rd party cookies](https://tve.helpdocsonline.com/mvpd)-->
+* [MVPD iFrame login and 3rd party cookies](https://tve.helpdocsonline.com/mvpd)
+-->
 
 The Adobe Pass Authentication team **recommends implementing the popup / new window login page** rather than the iFrame version on Firefox and Safari.  However, if you are implementing a login page for Internet Explorer, you may encounter issues with the popup implementation. The IE issues are caused by the fact that, after the user authenticates with their MVPD in the popup window, Adobe Pass Authentication forces a parent page redirect, which is seen as a popup blocker by Internet Explorer. The Adobe Pass Authentication team **recommends implementing the iFrame login for Internet Explorer**.
 
