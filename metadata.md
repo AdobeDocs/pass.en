@@ -2,7 +2,7 @@
 cloud: Experience Cloud
 type: Documentation
 product: adobe primetime
-solution: Pass
+solution: Adobe Pass
 feature-set: Pass
 landing-page-name: pass
 landing-page-breadcrumb-title: Pass
