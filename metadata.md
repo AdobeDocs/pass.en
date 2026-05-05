@@ -8,7 +8,7 @@ product_v2:
   - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
     label: "Pass"
 landing-page-name: pass
-landing-page-breadcrumb-title: Pass
+landing-page-breadcrumb-title: Adobe Pass
 git-repo: https://github.com/AdobeDocs/pass.en
 index: true
 ---
