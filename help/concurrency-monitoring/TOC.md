@@ -4,6 +4,7 @@ feature: Concurrency Monitoring
 audience: end-user
 user-guide-title: Adobe Pass Concurrency Monitoring
 user-guide-description: Learn to define and enforce limits on concurrent usage across multiple applications.
+nudge: true
 ---
 
 # Adobe Pass Concurrency Monitoring help {#cm}
