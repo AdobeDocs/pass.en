@@ -4,6 +4,7 @@ audience: end-user
 feature: Authentication
 user-guide-title: Adobe Pass Authentication
 user-guide-description: Adobe Pass Authentication is an entitlement solution for TV Everywhere, providing a modular framework for determining whether someone who requests access to a resource is entitled to it.
+nudge: true
 ---
 
 # Adobe Pass Authentication Help {#authentication}
