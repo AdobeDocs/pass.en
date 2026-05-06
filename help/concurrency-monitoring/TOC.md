@@ -39,6 +39,7 @@ nudge: true
     - [How to: Distinguish between VOD and Live Content in Concurrency Monitoring](technical/vod-live-dist.md)
     - [Data retention policy](technical/data-retention-policy.md)
 - Releases {#cm-release-notes}
+  - [Concurrency Monitoring - 4.0.1 release notes](releases/rn-cm-services-401.md)
   - [Concurrency Monitoring - 3.6.2 release notes](releases/rn-cm-services-362.md)
   - [Concurrency Monitoring - 3.6.1 release notes](releases/rn-cm-services-361.md)
   - [Concurrency Monitoring - 3.6.0 release notes](releases/rn-cm-services-360.md)
