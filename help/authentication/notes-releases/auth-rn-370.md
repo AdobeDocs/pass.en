@@ -1,7 +1,6 @@
 ---
 title: Adobe Pass Authentication 3.7.0 Release Notes
 description: Adobe Pass Authentication 3.7.0 Release Notes
-hold: true
 ---
 # Adobe Pass Authentication 3.7.0 Release Notes {#authn-370-rn}
 
@@ -27,7 +26,7 @@ This release focuses on MVPD integration upgrades, bug fixes, and TVE Dashboard 
 
 #### MVPD Integrations
 
-* Added support for Bell MVPD using OAuth2 with PKCE.
+* Added PKCE support for OAuth2-based MVPD authentication.
 
 #### Enhancements
 
