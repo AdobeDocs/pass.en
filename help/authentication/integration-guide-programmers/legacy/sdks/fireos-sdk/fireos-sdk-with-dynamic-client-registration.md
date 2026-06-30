@@ -64,7 +64,7 @@ If a value is provided for the *urls* parameter, the resulting network call targ
 
 | API call: requestor configuration |
 | --- |
-| ```public void setRequestor(String requestorId, ArrayList<String> urls)``` |
+| `public void setRequestor(String requestorId, ArrayList<String> urls)` |
 
 **Availability:** v3.0+
 

@@ -62,7 +62,7 @@ Please refer to <https://tve.zendesk.com/hc/en-us/articles/115005561623-fire-TV-
 
 | API call: constructor |
 | --- |
-| ```public static AccessEnabler getInstance(Context appContext, String softwareStatement, String redirectUrl)<br>        throws AccessEnablerException```<br><br>  <code> public static AccessEnabler getInstance(Context appContext, String env_url, String softwareStatement, String redirectUrl) throws AccessEnablerException </code> |
+| <code>public static AccessEnabler getInstance(Context appContext, String softwareStatement, String redirectUrl)<br>        throws AccessEnablerException<br><br>  public static AccessEnabler getInstance(Context appContext, String env_url, String softwareStatement, String redirectUrl) throws AccessEnablerException </code> |
 
 **Availability:** v3.0+
 
@@ -94,7 +94,7 @@ If a value is provided for the *urls* parameter, the resulting network call targ
 
 | API call: requestor configuration |
 | --- |
-| ```public void setRequestor(String requestorId)``` |
+| `public void setRequestor(String requestorId)` |
 
 
 **Availability:** v3.0+
@@ -102,7 +102,7 @@ If a value is provided for the *urls* parameter, the resulting network call targ
 
 | API call: requestor configuration |
 | --- |
-| ```public void setRequestor(String requestorId, ArrayList<String> urls)``` |
+| `public void setRequestor(String requestorId, ArrayList<String> urls)` |
 
 **Availability:** v3.0+
 
@@ -133,7 +133,7 @@ If a value is provided for the *urls* parameter, the resulting network call targ
 
 | Callback: requestor configuration complete |
 | --- |
-| ```public void setRequestorComplete(int status)``` |
+| `public void setRequestorComplete(int status)` |
 
 **Availability:** v1.0+
 
@@ -160,7 +160,7 @@ The values will be passed to the server independent of the current flow (authent
 
 | API call: setOptions |
 | --- |
-| ```public void setOptions(HashMap<String,String> options)``` |
+| `public void setOptions(HashMap<String,String> options)` |
 
 **Availability:** v3.0+
 
@@ -181,7 +181,7 @@ If an MVPD supports the "Authentication per Requestor" feature, then multiple au
 
 | API call: check authentication status |
 | --- |
-| ```public void checkAuthentication()``` |
+| `public void checkAuthentication()` |
 
 **Availability:** v1.0+
 
@@ -204,13 +204,13 @@ Finally, the authentication status is communicated to the application via the *s
 
 | API call: initiates the authentication flow |
 | --- |
-| ```public void getAuthentication()``` |
+| `public void getAuthentication()` |
 
 **Availability:** v1.0+
 
 | API call: initiates the authentication flow |
 | --- |
-| ```public void getAuthentication(boolean forceAuthN, Map<String, Object> genericData)``` |
+| `public void getAuthentication(boolean forceAuthN, Map<String, Object> genericData)` |
 
 **Availability:** v1.0+
 
@@ -232,7 +232,7 @@ Once the user has selected the desired MVPD, the upper-layer application is requ
 
 | **Callback: display the MVPD selection UI** |
 | --- |
-| ```public void displayProviderDialog(ArrayList<Mvpd> mvpds)``` |
+| `public void displayProviderDialog(ArrayList<Mvpd> mvpds)` |
 
 **Availability:** v1.0+
 
@@ -250,7 +250,7 @@ Once the user has selected the desired MVPD, the upper-layer application is requ
 
 | **API call: set the currently selected provider** |
 | --- |
-| ```public void setSelectedProvider(String mvpdId)``` |
+| `public void setSelectedProvider(String mvpdId)` |
 
 
 **Availability:**v 1.0+
@@ -266,7 +266,7 @@ Once the user has selected the desired MVPD, the upper-layer application is requ
 
 | **Callback: display MVPD login page** |
 | --- |
-| ```public void navigateToUrl(String url)``` |
+| `public void navigateToUrl(String url)` |
 
 **Availability:** v1.0+
 
@@ -284,7 +284,7 @@ Once the user has selected the desired MVPD, the upper-layer application is requ
 
 | **API call: retrieve the authentication token** |
 | --- |
-| ```public void getAuthenticationToken(String cookies)``` |
+| `public void getAuthenticationToken(String cookies)` |
 
 **Availability:** v1.0+
 
@@ -304,7 +304,7 @@ This callback also signals when the logout flow is complete.
 
 | **Callback: report the status of the authentication flow** |
 | --- |
-| ```public void setAuthenticationStatus(int status, String errorCode)``` |
+| `public void setAuthenticationStatus(int status, String errorCode)` |
 
 **Availability:** v1.0+
 
@@ -330,7 +330,7 @@ This callback also signals when the logout flow is complete.
 
 | **API call: set the currently selected provider** |
 | --- |
-| ```public void checkPreauthorizedResources(ArrayList<String> resources)``` |
+| `public void checkPreauthorizedResources(ArrayList<String> resources)` |
 
 **Availability:** v1.0+
 
@@ -346,7 +346,7 @@ This callback also signals when the logout flow is complete.
 
 | **API call: set the currently selected provider** |
 | --- |
-| ```public void checkPreauthorizedResources(ArrayList<String> resources)``` |
+| `public void checkPreauthorizedResources(ArrayList<String> resources)` |
 
 **Availability:**v 1.0+
 
@@ -362,13 +362,13 @@ This callback also signals when the logout flow is complete.
 
 | **API call: check authorization status** |
 | --- |
-| ```public void checkAuthorization(String resourceId)``` |
+| `public void checkAuthorization(String resourceId)` |
 
 **Availability:** v1.0+
 
 | **API call: check authorization status** |
 | --- |
-| ```public void checkAuthorization(String resourceId, Map<String, Object> genericData)``` |
+| `public void checkAuthorization(String resourceId, Map<String, Object> genericData)` |
 
 **Availability:** v1.0+
 
@@ -387,13 +387,13 @@ This callback also signals when the logout flow is complete.
 
 | **API call: initiate the authorization flow** |
 | --- |
-| ```public void getAuthorization(String resourceId)``` |
+| `public void getAuthorization(String resourceId)` |
 
 **Availability:** v1.0+
 
 | **API call: initiate the authorization flow** |
 | --- |
-| ```public void getAuthorization(String resourceId, Map<String, Object> genericData)``` |
+| `public void getAuthorization(String resourceId, Map<String, Object> genericData)` |
 
 **Availability:** v1.0+
 
@@ -418,7 +418,7 @@ This callback also signals when the logout flow is complete.
 
 | **Callback: authorization flow completed successfully** |
 | --- |
-| ```public void setToken(String token, String resourceId)``` |
+| `public void setToken(String token, String resourceId)` |
 
 **Availability:**v 1.0+
 
@@ -437,7 +437,7 @@ This callback also signals when the logout flow is complete.
 
 | **Callback: authorization flow failed** |
 | --- |
-| ```public void tokenRequestFailed(String resourceId, <br>        String errorCode, String errorDescription)``` |
+| <code>public void tokenRequestFailed(String resourceId, <br>        String errorCode, String errorDescription)</code> |
 
 **Availability:** v1.0+
 
@@ -458,7 +458,7 @@ This callback also signals when the logout flow is complete.
 
 | **API call: initiate the logout flow** |
 | --- |
-| ```public void logout()``` |
+| `public void logout()` |
 
 **Availability:** v1.0+
 
@@ -474,7 +474,7 @@ This callback also signals when the logout flow is complete.
 
 | **API call: determine the currently selected MVPD** |
 | --- |
-| ```public void getSelectedProvider()``` |
+| `public void getSelectedProvider()` |
 
 **Availability:** v1.0+
 
@@ -490,7 +490,7 @@ This callback also signals when the logout flow is complete.
 
 | **Callback: information about the currently selected MVPD** |
 | --- |
-| ```public void selectedProvider(Mvpd mvpd)``` |
+| `public void selectedProvider(Mvpd mvpd)` |
 
 **Availability:** v1.0+
 
@@ -508,7 +508,7 @@ This callback also signals when the logout flow is complete.
 
 | **API call: query the AccessEnabler for metadata** |
 | --- |
-| ```public void getMetadata(MetadataKey metadataKey)``` |
+| `public void getMetadata(MetadataKey metadataKey)` |
 
 **Availability:** v1.0+
 
@@ -544,7 +544,7 @@ The actual User Metadata available to a Programmer depends on what an MVPD makes
 
 | **Callback: result of metadata retrieval request** |
 | --- |
-| ```public void setMetadataStatus(MetadataKey key, MetadataStatus result)``` |
+| `public void setMetadataStatus(MetadataKey key, MetadataStatus result)` |
 
 **Availability:** v1.0+
 
@@ -606,7 +606,7 @@ This value is null when the request was made for simple metadata (Authentication
 
 | **API call: get AccessEnabler version** |
 | --- |
-| ```public static String getVersion()``` |
+| `public static String getVersion()` |
 
 ## Tracking Events {#tracking}
 
@@ -637,7 +637,7 @@ The Access Enabler triggers an additional callback that is not necessarily relat
 
 | Callback: tracking events |
 | --- |
-| ```public void sendTrackingData(Event event, ArrayList<String> data)``` |
+| `public void sendTrackingData(Event event, ArrayList<String> data)` |
 
 **Availability:** v1.0+
 

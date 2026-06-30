@@ -33,7 +33,7 @@ Steps 1 and 2 are setting up the test environment on one of the testing machines
               54.184.208.150
   ```
 
-```Choose any IP from **addresses** section (e.g. `52.13.71.11)```
+``Choose any IP from **addresses** section (e.g. `52.13.71.11)``
 
   ```cmd
   C:\>nslookup entitlement-prequal.auth.adobe.com 
@@ -42,7 +42,7 @@ Steps 1 and 2 are setting up the test environment on one of the testing machines
               54.190.212.171
   ```
 
-```Choose any IP from **addresses** section (e.g. `54.190.212.171)```
+``Choose any IP from **addresses** section (e.g. `54.190.212.171)``
 
 
 * **On Linux/Mac**
@@ -56,7 +56,7 @@ Steps 1 and 2 are setting up the test environment on one of the testing machines
     ............ 60 IN A      54.184.208.150
 ```    
 
-```Choose any IP from **A records (**e.g `52.13.71.11)```
+``Choose any IP from **A records (**e.g `52.13.71.11)``
 
 ```sh
     $ dig entitlement-prequal.auth.adobe.com
@@ -67,7 +67,7 @@ Steps 1 and 2 are setting up the test environment on one of the testing machines
     ............ 60 IN A      54.190.212.171
 ```    
 
-```Choose any IP from **A records (**e.g `54.190.212.171)```
+``Choose any IP from **A records (**e.g `54.190.212.171)``
 
 >[!NOTE] 
 >

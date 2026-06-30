@@ -226,7 +226,7 @@ The CSV will contain a header row and then the report data as subsequent rows. T
 
 The order of the fields in the header row will reflect the sort-order of the table data.
 
-Example: https://mgmt.auth.adobe.com/cmu/v2/year/month.csv will produce a file named ```report__2012-07-20_2012-08-20_1000.csv``` with the following content:
+Example: https://mgmt.auth.adobe.com/cmu/v2/year/month.csv will produce a file named `report__2012-07-20_2012-08-20_1000.csv` with the following content:
 
 | Year | Month | Clients |
 |:----:|:-----:|:-------:|

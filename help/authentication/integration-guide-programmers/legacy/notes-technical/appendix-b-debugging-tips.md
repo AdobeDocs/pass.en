@@ -30,7 +30,7 @@ It is browser dependable, but in Firefox:  "Tools" -\> "Clear Recent History…"
 
 Access the [Flash Player help](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html).
   
-Select the ```entitlement.\*``` (depending on what it is tested) and click "Delete website".  
+Select the `entitlement.\*` (depending on what it is tested) and click "Delete website".  
  
 
 ## Debugging Tools {#tools}

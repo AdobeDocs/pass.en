@@ -131,7 +131,7 @@ Associated documentation:
 
 | API call: iOS AccessEnabler constructor |
 | --- |
-| ```- (id) init;``` |
+| `- (id) init;` |
 
 **Availability:** v1.0+ **Until:** v3.0
 
@@ -151,7 +151,7 @@ Associated documentation:
 
 | API call: setOptions |
 | --- |
-| ```- (void) setOptions:(NSDictionary *)options;``` |
+| `- (void) setOptions:(NSDictionary *)options;` |
 
 **Availability:** v2.3.0+
 
@@ -183,7 +183,7 @@ If a value is provided for the `urls` parameter, the resulting network call targ
 
 | API call: requestor configuration |
 | --- |
-| ```- (void) setRequestor:(NSString *)requestorID``` |
+| `- (void) setRequestor:(NSString *)requestorID` |
 
 
 **Availability:** v3.0+

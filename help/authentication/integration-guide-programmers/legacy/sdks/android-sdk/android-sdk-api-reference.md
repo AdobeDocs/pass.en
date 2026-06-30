@@ -86,13 +86,13 @@ If a value is provided for the *urls* parameter, the resulting network call targ
 
 | API call: requestor configuration |
 | --- |
-| ```public void setRequestor(String requestorId)``` |
+| `public void setRequestor(String requestorId)` |
 
 **Availability:** v3.0+
 
 | API call: requestor configuration |
 | --- |
-| ```public void setRequestor(String requestorId, ArrayList<String> urls)``` |
+| `public void setRequestor(String requestorId, ArrayList<String> urls)` |
 
 **Availability:** v3.0+
 
@@ -618,7 +618,7 @@ There are two types of metadata available to Programmers:
 
 | Callback: result of metadata retrieval request |
 | --- |
-| ```public void setMetadataStatus(MetadataKey key, MetadataStatus result)``` |
+| `public void setMetadataStatus(MetadataKey key, MetadataStatus result)` |
 
 **Availability:** v1.0+
 
@@ -682,7 +682,7 @@ This value is null when the request was made for simple metadata (Authentication
 
 | API call: get AccessEnabler version |
 | --- |
-| ```public static String getVersion()``` |
+| `public static String getVersion()` |
 
 
 [Back to Android API...](#api)
@@ -721,7 +721,7 @@ The Access Enabler triggers an additional callback that is not necessarily relat
 
 | Callback: tracking events |
 | --- |
-| ```public void sendTrackingData(Event event, ArrayList<String> data)``` |
+| `public void sendTrackingData(Event event, ArrayList<String> data)` |
 
 **Availability:** v1.0+
 
