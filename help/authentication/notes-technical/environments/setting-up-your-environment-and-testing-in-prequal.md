@@ -112,3 +112,4 @@ Steps 1 and 2 are setting up the test environment on one of the testing machines
 * If you want to go deeper into testing Adobe Pass Authentication, we recommend you use the [API test site](http://entitlement-prequal.auth.adobe.com/apitest/api.html).
 
 You can find more details on API test site at [How to test Authentication and Authorization flows using Adobe's API test site](/help/authentication/integration-guide-programmers/legacy/notes-technical/test-authn-authz-flows-using-adobes-api-test-site.md).
+

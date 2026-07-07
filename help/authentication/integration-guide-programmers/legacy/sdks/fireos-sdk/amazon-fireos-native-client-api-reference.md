@@ -678,3 +678,4 @@ Following are instructions for interpreting the values in the *data* array:
     - **3** - Operating system type
 
 **Triggered by:** `checkAuthentication(), getAuthentication(), checkAuthorization(), getAuthorization(), setSelectedProvider()`
+

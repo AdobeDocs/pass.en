@@ -166,3 +166,4 @@ Deprecated:
 | invalid_request | 400 | The request is malformed. The SDK should stop performing calls to the server. |
 | invalid_client | 403 | The client id is not longer permitted to perform requests. The sdk MUST perform again the client registration. |
 | access_denied | 401 | The access_token is not valid. The sdk MUST request a new access_token. |
+
