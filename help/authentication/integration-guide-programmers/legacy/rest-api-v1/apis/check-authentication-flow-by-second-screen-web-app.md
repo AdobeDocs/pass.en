@@ -57,4 +57,4 @@ This API should be consumed by the second screen login web app to confirm that A
     }
 ```
 
-### [Back to REST API Reference](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/rest-api-reference.md)
+**[Back to REST API Reference](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/rest-api-reference.md)**

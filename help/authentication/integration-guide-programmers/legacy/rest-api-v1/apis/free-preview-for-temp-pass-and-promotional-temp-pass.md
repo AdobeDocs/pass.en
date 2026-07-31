@@ -56,4 +56,4 @@ Allows the creation of an authentication token for Temp Pass and Promotional Tem
 | generic_data                        | Used to limit the scope of the token for Promotional Temp Pass.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 
-### [Back to REST API Reference](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/rest-api-reference.md)
+**[Back to REST API Reference](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/rest-api-reference.md)**

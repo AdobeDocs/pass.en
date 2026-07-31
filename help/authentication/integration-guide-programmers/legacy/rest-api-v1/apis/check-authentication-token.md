@@ -63,4 +63,4 @@ Indicates whether the device has an unexpired authentication token.
     </error>
 ```
 
-### [Back to REST API Reference](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/rest-api-reference.md)
+**[Back to REST API Reference](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/rest-api-reference.md)**

@@ -53,4 +53,4 @@ Deletes the reg code record and releases the reg code for reuse.
 
 </br>
 
-### [Back to REST API Reference](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/rest-api-reference.md)
+**[Back to REST API Reference](/help/authentication/integration-guide-programmers/legacy/rest-api-v1/rest-api-reference.md)**
