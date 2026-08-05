@@ -27,7 +27,6 @@ This section compiles references to the release history and corresponding releas
 
 | Release Notes                                                                                  | Dates                   |
 |------------------------------------------------------------------------------------------------|-------------------------|
-<!-- | [Adobe Pass Authentication 3.8.0 release notes](notes-releases/auth-rn-380.md) | 08/11/2026 - 08/13/2026 | -->
 | [Adobe Pass Authentication 3.7.0 release notes](notes-releases/auth-rn-370.md) | 05/12/2026 - 05/14/2026 |
 | [Adobe Pass Authentication 3.6.0 release notes](notes-releases/auth-rn-360.md)                 | 04/07/2026 - 04/09/2026 |
 
