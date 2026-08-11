@@ -1,7 +1,6 @@
 ---
 title: Adobe Pass Authentication 3.8.0 Release Notes
 description: Adobe Pass Authentication 3.8.0 Release Notes
-hold: true
 ---
 # Adobe Pass Authentication 3.8.0 Release Notes {#authn-380-rn}
 
