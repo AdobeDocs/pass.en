@@ -2,6 +2,9 @@
 title: API Usage Examples
 description: API endpoint usage of Concurrency Monitoring
 exl-id: eb232926-9c68-4874-b76d-4c458d059f0d
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # API Overview {#api-overview}
 

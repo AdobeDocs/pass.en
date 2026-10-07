@@ -2,6 +2,9 @@
 title: iOS/tvOS API Preauthorize
 description: iOS/tvOS API Preauthorize
 exl-id: 79c596a4-0e38-4b6c-bb85-f97c6af45ed8
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Preauthorize {#preauthorize}
 

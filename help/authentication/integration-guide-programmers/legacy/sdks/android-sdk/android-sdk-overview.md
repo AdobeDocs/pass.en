@@ -2,6 +2,9 @@
 title: Android SDK Overview
 description: Android SDK Overview
 exl-id: a1d98325-32a1-4881-8635-9a3c38169422
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Android SDK Overview {#android-sdk-overview}
 

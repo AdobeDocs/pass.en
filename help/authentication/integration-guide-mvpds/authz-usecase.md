@@ -2,6 +2,9 @@
 title: MVPD Authorization
 description: MVPD Authorization
 exl-id: 215780e4-12b6-4ba6-8377-4d21b63b6975
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # MVPD Authorization
 

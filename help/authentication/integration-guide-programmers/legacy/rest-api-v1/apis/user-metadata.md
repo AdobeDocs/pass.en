@@ -2,6 +2,9 @@
 title: User Metadata
 description: User Metadata
 exl-id: 3d7b6429-972f-4ccb-80fd-a99870a02f65
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) User Metadata {#user-metadata}
 

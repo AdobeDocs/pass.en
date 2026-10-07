@@ -2,6 +2,9 @@
 title: Custom metadata
 description: Custom metadata
 exl-id: 0cfd1158-8c6c-47c2-b838-5490ff4bf0ce
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Custom metadata {#cm}
 

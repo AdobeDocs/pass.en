@@ -2,6 +2,9 @@
 title: MVPD Authentication
 description: MVPD Authentication
 exl-id: 9ff4a46e-a37b-414c-a163-9e586252a9c3
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # MVPD Authentication {#mvpd-authn}
 

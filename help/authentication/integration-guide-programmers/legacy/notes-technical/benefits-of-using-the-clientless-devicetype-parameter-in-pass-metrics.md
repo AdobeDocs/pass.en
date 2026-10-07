@@ -2,6 +2,9 @@
 title: Benefits of using the Clientless deviceType parameter in Adobe Pass Authentication metrics
 description: Benefits of using the Clientless deviceType parameter in Adobe Pass Authentication metrics
 exl-id: a5004887-d5fa-468e-971b-10806519175b
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Benefits of using the Clientless deviceType parameter in Adobe Pass Authentication metrics {#benefits-of-using-the-clientless-devicetype-parameter-in-primetime-authentication-metrics}
 

@@ -2,6 +2,9 @@
 title: Dashboard
 description: Learn about the home page of TVE Dashboard.
 exl-id: 3073cd86-89f8-4c65-996b-24edda24f25b
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Dashboard {#dashboard}
 

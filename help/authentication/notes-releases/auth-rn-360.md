@@ -2,6 +2,9 @@
 title: Adobe Pass Authentication 3.6.0 Release Notes
 description: Adobe Pass Authentication 3.6.0 Release Notes
 exl-id: a88ec78a-b3b0-46d2-9d79-f0d9a81ba94f
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Adobe Pass Authentication 3.6.0 Release Notes {#authn-360-rn}
 

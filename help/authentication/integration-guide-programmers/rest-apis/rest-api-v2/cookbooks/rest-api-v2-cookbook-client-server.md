@@ -2,6 +2,9 @@
 title: REST API V2 Cookbook (Client-to-Server)
 description: REST API V2 Cookbook (Client-to-Server)
 exl-id: 6a5a89d2-ea54-4f9c-9505-e575ced4301c
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # REST API V2 Cookbook (Client-to-Server) {#rest-api-v2-cookbook-client-to-server}
 

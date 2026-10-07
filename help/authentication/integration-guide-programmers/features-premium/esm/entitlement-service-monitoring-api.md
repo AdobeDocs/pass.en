@@ -2,6 +2,9 @@
 title: Entitlement Service Monitoring API
 description: Entitlement Service Monitoring API
 exl-id: a9572372-14a6-4caa-9ab6-4a6baababaa1
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Entitlement Service Monitoring API {#entitlement-service-monitoring-api}
 

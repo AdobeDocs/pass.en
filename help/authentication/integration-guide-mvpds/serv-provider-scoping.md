@@ -2,6 +2,9 @@
 title: Service Provider Scoping
 description: Service Provider Scoping
 exl-id: 730c43e1-46c0-4eec-b562-b1ad93cce6d3
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Service Provider Scoping {#service-provoider-scoping}
 

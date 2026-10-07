@@ -2,6 +2,9 @@
 title: Adobe Concurrency Monitoring Services 3.6.0 Release Notes
 description: Adobe Concurrency Monitoring Services 3.6.0 Release Notes
 exl-id: 7cdf9244-7db0-42d7-ab3a-2282cea4499d
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Adobe Concurrency Monitoring Services 3.6.0 Release Notes {#cm-services-rns}
 

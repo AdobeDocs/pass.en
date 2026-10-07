@@ -2,6 +2,9 @@
 title: Concurrency Monitoring Usage Reports
 description: Concurrency Monitoring Usage Reports
 exl-id: 20220436-e748-4b22-8e7c-e074e0bfe242
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Concurrency Monitoring Usage Reports {#cm-usage-reports}
 

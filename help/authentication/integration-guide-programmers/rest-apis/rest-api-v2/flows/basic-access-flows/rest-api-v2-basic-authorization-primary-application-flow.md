@@ -2,6 +2,9 @@
 title: Basic Authorization - Primary Application - Flow
 description: REST API V2 - Basic Authorization - Primary Application - Flow
 exl-id: 46bc9326-966e-44fc-8546-2f58be01b7bc
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Basic authorization flow performed within primary application {#basic-authorization-flow-performed-within-primary-application}
 

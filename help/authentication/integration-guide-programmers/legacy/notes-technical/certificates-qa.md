@@ -2,6 +2,9 @@
 title: Certificates Q&A
 description: Certificates Q&A
 exl-id: d4e493b0-4467-42b1-9758-16c5941d8051
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Certificates Q&A {#certificates-q}
 

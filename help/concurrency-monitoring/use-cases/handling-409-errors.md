@@ -2,6 +2,9 @@
 title: Handling 409 Conflict Errors
 description: Learn how to handle 409 Conflict errors when concurrent usage limits are reached
 exl-id: 23a73e48-8ae0-4e0e-85db-dfc09d1386a7
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Handling 409 Conflict Errors {#handling-409-errors}
 

@@ -2,6 +2,9 @@
 title: Understanding the Adobe Environments
 description: Understanding the Adobe Environments
 exl-id: bb6cf37f-48cd-47bb-b3c2-f7a96e49b12d
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Understanding the Adobe Environments {#understanding-the-adobe-environments}
 

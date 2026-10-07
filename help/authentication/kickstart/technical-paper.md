@@ -2,6 +2,9 @@
 title: About Adobe Pass Authentication
 description: About Adobe Pass Authentication
 exl-id: 5edeaccb-f9fa-4395-83b4-706c518d5a03
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # About Adobe&reg; Pass Authentication {#about-adobe-pass-authentication}
 

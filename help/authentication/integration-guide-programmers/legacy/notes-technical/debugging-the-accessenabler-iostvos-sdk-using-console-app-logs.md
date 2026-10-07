@@ -2,6 +2,9 @@
 title: Debugging the AccessEnabler iOS/tvOS SDK using Console app logs
 description: Debugging the AccessEnabler iOS/tvOS SDK using Console app logs
 exl-id: 0dad325e-db15-4ea0-a87a-75409eaf8d46
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Debugging the AccessEnabler iOS/tvOS SDK using Console app logs {#debugging-the-accessenabler-iostvos-sdk-using-console-app-logs}
 

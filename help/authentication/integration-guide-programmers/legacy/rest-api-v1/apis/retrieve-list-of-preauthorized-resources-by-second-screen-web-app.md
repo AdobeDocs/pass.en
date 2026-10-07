@@ -2,6 +2,9 @@
 title: Retrieve List of Preauthorized Resources by Second Screen Web App
 description: Retrieve List of Preauthorized Resources by Second Screen Web App
 exl-id: 78eeaf24-4cc1-4523-8298-999c9effdb7a
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Retrieve List of Preauthorized Resources by Second Screen Web App {#retrieve-list-of-preauthorized-resources-by-second-screen-web-app}
 

@@ -2,6 +2,9 @@
 title: Retrieve List of Preauthorized Resources
 description: Retrieve List of Preauthorized Resources
 exl-id: 3821378c-bab5-4dc9-abd7-328df4b60cc3
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Retrieve List of Preauthorized Resources {#retrieve-list-of-preauthorized-resources}
 

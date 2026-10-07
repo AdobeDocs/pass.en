@@ -2,6 +2,9 @@
 title: MVPD Preflight Authorization
 description: MVPD Preflight Authorization
 exl-id: da2e7150-b6a8-42f3-9930-4bc846c7eee9
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # MVPD Preflight Authorization
 

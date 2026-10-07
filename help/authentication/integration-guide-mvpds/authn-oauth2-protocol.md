@@ -2,6 +2,9 @@
 title: Authentication using the OAuth 2.0 Protocol
 description: Authentication using the OAuth 2.0 Protocol
 exl-id: 0c1f04fe-51dc-4b4d-88e7-66e8f4609e02
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Authentication using the OAuth 2.0 Protocol
 

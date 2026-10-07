@@ -2,6 +2,9 @@
 title: iOS/tvOS API Reference
 description: iOS/tvOS API Reference
 exl-id: 017a55a8-0855-4c52-aad0-d3d597996fcb
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) iOS/tvOS SDK API Reference {#iostvos-sdk-api-reference}
 

@@ -2,6 +2,9 @@
 title: Support procedures FAQs
 description: Support procedures FAQs
 exl-id: 1d754e5a-d5fa-4411-8932-2a36294da6eb
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Support procedures FAQs {#support-procedures-faqs}
 

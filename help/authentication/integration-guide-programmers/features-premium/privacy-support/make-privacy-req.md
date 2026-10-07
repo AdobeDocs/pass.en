@@ -2,6 +2,9 @@
 title: How to make a privacy request
 description: How to make a privacy request
 exl-id: abb21306-98d6-4899-914a-bdfa85cbd204
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # How to make a privacy request {#howto-make-privacy-request}
 

@@ -2,6 +2,9 @@
 title: WKWebView support on iOS SDK 3.1+
 description: WKWebView support on iOS SDK 3.1+
 exl-id: 90062be0-1a0a-44ae-8d8e-f4d97a92b17a
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) WKWebView support on iOS SDK 3.1+ {#wkwebview-support-on-ios-sdk-3.1}
 

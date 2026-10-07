@@ -2,6 +2,9 @@
 title: Retrieve access token
 description: Dynamic Client Registration API - Retrieve access token
 exl-id: 23287acf-5d56-46f0-b65e-79bf7d667708
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Retrieve access token {#retrieve-access-token}
 

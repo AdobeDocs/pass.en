@@ -2,6 +2,9 @@
 title: Setting up Your Environment and Testing in Pre-Qual
 description: Setting up Your Environment and Testing in Pre-Qual
 exl-id: f822c0a1-045a-401f-a44f-742ed25bfcdc
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Setting up Your Environment and Testing in Pre-Qual{#setting-up-your-environment-and-testing-in-prequal}
 

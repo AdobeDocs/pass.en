@@ -2,6 +2,9 @@
 title: Preauthorize
 description: JavaScript preauthorize
 exl-id: b7493ca6-1862-4cea-a11e-a634c935c86e
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Preauthorize {#js-preauthorize}
 

@@ -2,6 +2,9 @@
 title: Single Sign-On - Platform Identity - Flows
 description: REST API V2 - Single Sign-On - Platform Identity - Flows
 exl-id: 5200e851-84e8-4cb4-b068-63b91a2a8945
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Single sign-on using platform identity flows {#single-sign-on-platform-identity-full-flows}
 

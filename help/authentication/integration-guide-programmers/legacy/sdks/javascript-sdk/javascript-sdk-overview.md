@@ -2,6 +2,9 @@
 title: JavaScript SDK Overview
 description: JavaScript SDK Overview
 exl-id: 8756c804-a4c1-4ee3-b2b9-be45f38bdf94
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) JavaScript SDK Overview {#javascript-sdk-overview}
 

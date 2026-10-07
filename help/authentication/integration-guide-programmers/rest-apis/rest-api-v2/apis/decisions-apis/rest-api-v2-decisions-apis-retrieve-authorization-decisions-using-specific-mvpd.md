@@ -2,6 +2,9 @@
 title: Retrieve authorization decisions using specific mvpd
 description: REST API V2 - Retrieve authorization decisions using specific mvpd
 exl-id: e8889395-4434-4bec-a212-a8341bb9c310
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Retrieve authorization decisions using specific mvpd {#retrieve-authorization-decisions-using-specific-mvpd}
 

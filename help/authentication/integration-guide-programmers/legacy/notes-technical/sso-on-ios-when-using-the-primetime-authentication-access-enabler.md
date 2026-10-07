@@ -2,6 +2,9 @@
 title: SSO on iOS when using the Adobe Pass Authentication Access Enabler
 description: SSO on iOS when using the Adobe Pass Authentication Access Enabler
 exl-id: 882f0abb-2e6e-461d-a375-3ab410991935
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) SSO on iOS when using the Adobe Pass Authentication Access Enabler {#sso-on-ios-when-using-the-primetime-authentication-access-enabler}
 

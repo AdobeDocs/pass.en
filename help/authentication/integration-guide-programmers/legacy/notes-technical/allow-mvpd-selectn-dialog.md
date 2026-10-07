@@ -2,6 +2,9 @@
 title: Allow MVPDs in the Selection Dialog
 description: Allow MVPDs in the Selection Dialog
 exl-id: 2c0e0f06-ddc6-4bea-90dc-d7ef8e78d27e
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Allow MVPDs in the Selection Dialog {#allow-mvpds-selection-dialog}
 

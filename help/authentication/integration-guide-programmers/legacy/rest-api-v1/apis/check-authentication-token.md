@@ -2,6 +2,9 @@
 title: Check Authentication Token
 description: Check Authentication Token
 exl-id: 9020f261-44d8-4bd5-b85b-a8667679f563
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Check Authentication Token {#check-authentication-token}
 

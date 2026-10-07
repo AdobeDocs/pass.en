@@ -2,6 +2,9 @@
 title: Appendix B "Debugging Tips"
 description: Appendix B "Debugging Tips"
 exl-id: ea024797-315e-47c0-99ea-1ac49c8c9697
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Appendix B: Debugging Tips {#appendix-b-debugging-tips}
 

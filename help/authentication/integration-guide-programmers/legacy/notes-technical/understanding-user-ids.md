@@ -2,6 +2,9 @@
 title: Understanding User IDs
 description: Understanding User IDs
 exl-id: 813a8501-db72-4850-a387-c8db6120db80
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Understanding User IDs {#understanding-user-ids}
 

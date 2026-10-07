@@ -2,6 +2,9 @@
 title: Android SDK API Reference
 description: Android SDK API Reference
 exl-id: f932e9a1-2dbe-4e35-bd60-a4737407942d
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Android SDK API Reference {#android-sdk-api-reference}
 

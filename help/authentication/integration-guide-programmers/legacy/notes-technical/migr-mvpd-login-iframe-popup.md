@@ -2,6 +2,9 @@
 title: How to migrate the MVPD Login Page from iFrame to Popup
 description: How to migrate the MVPD Login Page from iFrame to Popup
 exl-id: 389ea0ea-4e18-4c2e-a527-c84bffd808b4
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) How to migrate the MVPD login page from iFrame to Popup {#migr-mvpd-login-iframe-popup}
 

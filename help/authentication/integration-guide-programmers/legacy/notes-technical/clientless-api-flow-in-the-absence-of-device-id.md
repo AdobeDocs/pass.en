@@ -2,6 +2,9 @@
 title: Clientless API Flow in the Absence of Device ID
 description: Clientless API Flow in the Absence of Device ID
 exl-id: 6549a6d6-03a9-4d95-99fb-d3ada832323d
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Clientless API Flow in the Absence of Device ID {#clientless-api-flow-in-the-absence-of-device-id}
 

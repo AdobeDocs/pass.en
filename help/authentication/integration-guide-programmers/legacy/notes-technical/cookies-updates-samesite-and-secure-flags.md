@@ -2,6 +2,9 @@
 title: Cookies Updates - SameSite and Secure flags
 description: Cookies Updates - SameSite and Secure flags
 exl-id: cc1f60fd-fa64-48cb-a185-dba562a54c33
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Cookies Updates - SameSite and Secure flags {#cookies-updates---samesite-and-secure-flags}
 

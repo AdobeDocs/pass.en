@@ -2,6 +2,9 @@
 title: Passing client information (device, connection, and application)
 description: Passing client information (device, connection, and application)
 exl-id: 0b21ef0e-c169-48ff-ac01-25411cfece1e
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Passing client information (device, connection, and application) {#pass-client-info}
 

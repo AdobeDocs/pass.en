@@ -2,6 +2,9 @@
 title: Provide MVPD List
 description: Provide MVPD List
 exl-id: db2d8f19-d0b9-4195-bf0b-f9de0d96062b
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Provide MVPD List {#provide-mvpd-list}
 

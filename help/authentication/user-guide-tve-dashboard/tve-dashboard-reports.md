@@ -2,6 +2,9 @@
 title: Reports
 description: Learn how the data is aggregated in TVE Dashboard reports.
 exl-id: d8ba48de-d743-4dc2-866c-7d6e3ff94773
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Reports {#Reports}
 

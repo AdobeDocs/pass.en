@@ -2,6 +2,9 @@
 title: Header - Authorization
 description: REST API V2 - Header - Authorization
 exl-id: 86917d7e-ffd9-4d34-8f9c-5a50083f85e6
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 
 # Header - Authorization {#header-authorization}

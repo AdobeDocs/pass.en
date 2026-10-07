@@ -2,6 +2,9 @@
 title: Concurrency Monitoring 3.2.0 Release Notes
 description: Concurrency Monitoring 3.2.0 Release Notes
 exl-id: a50aa34f-6b88-4859-94f9-9aeb7caf7d7f
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Concurrency Monitoring 3.2.0 Release Notes {#cm-320-rn}
 

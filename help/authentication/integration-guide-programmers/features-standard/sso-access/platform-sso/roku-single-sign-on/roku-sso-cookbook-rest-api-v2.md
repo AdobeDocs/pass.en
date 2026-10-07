@@ -2,6 +2,9 @@
 title: Roku SSO Cookbook (REST API V2)
 description: Roku SSO Cookbook (REST API V2)
 exl-id: 77b154bc-c09f-49d4-b1af-cc33bc6dd22b
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Roku SSO Cookbook (REST API V2) {#roku-sso-cookbook-rest-api-v2}
 

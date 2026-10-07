@@ -2,6 +2,9 @@
 title: Using Experience Cloud ID in Adobe Pass Authentication
 description: Using Experience Cloud ID in Adobe Pass Authentication
 exl-id: 03354c01-5aad-4d81-beee-1c3834599134
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Using Experience Cloud ID in Adobe Pass Authentication
 

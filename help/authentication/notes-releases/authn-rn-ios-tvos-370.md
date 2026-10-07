@@ -2,6 +2,9 @@
 title: Authentication iOS / tvOS 3.7.0 Release Notes
 description: Authentication iOS / tvOS 3.7.0 Release Notes
 exl-id: 19c1179e-16b1-4608-954f-25b0980d7ad9
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Authentication iOS / tvOS 3.7.0 Release Notes {#ios-tvos-sdk-370-rn}
 

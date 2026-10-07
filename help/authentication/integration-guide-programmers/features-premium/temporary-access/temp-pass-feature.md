@@ -2,6 +2,9 @@
 title: TempPass Feature
 description: TempPass Feature
 exl-id: 1df14090-8e71-4e3e-82d8-f441d07c6f64
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # TempPass Feature {#temp-pass-feature}
 

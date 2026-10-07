@@ -2,6 +2,9 @@
 title: Entitlement Service Monitoring Overview
 description: Entitlement Service Monitoring Overview
 exl-id: ebd5d650-0a32-4583-9045-5156356494e2
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Entitlement Service Monitoring Overview {#entitlement-service-monitoring-overview}
 

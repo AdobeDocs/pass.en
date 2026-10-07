@@ -2,6 +2,9 @@
 title: Retrieve Authorization Token
 description: Retrieve Authorization Token
 exl-id: 0b010958-efa8-4dd9-b11b-5d10f51f5680
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Retrieve Authorization Token {#retrieve-authorization-token}
 

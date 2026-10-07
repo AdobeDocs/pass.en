@@ -2,6 +2,9 @@
 title: Concurrency Monitoring escalation procedures
 description: Concurrency Monitoring escalation procedures
 exl-id: eb110465-3a74-489e-a521-0e17f5aeecb8
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Concurrency Monitoring escalation procedures {#esc-procedures}
 

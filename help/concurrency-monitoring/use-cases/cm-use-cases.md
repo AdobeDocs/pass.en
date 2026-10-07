@@ -2,6 +2,9 @@
 title: Use cases
 description: Use cases in Concurrency Monitoring.
 exl-id: 6cc30bb6-e985-4d9a-9f99-a7f04ae8deb7
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Use Cases {#use-cases}
 

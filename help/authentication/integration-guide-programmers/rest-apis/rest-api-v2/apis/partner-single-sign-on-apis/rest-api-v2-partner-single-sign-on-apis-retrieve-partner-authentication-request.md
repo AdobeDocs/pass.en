@@ -2,6 +2,9 @@
 title: Retrieve partner authentication request
 description: REST API V2 - Retrieve partner authentication request
 exl-id: 52d8a8e9-c176-410f-92bc-e83449278943
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Retrieve partner authentication request {#retrieve-partner-authentication-request}
 

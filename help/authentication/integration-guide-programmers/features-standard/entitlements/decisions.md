@@ -2,6 +2,9 @@
 title: Decisions
 description: Decisions
 exl-id: 1efd70af-8c1d-43c4-87fc-14488d42b23d
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Decisions {#decisions}
 

@@ -2,6 +2,9 @@
 title: MVPD Listing of IP Addresses
 description: MVPD Listing of IP Addresses
 exl-id: be18084c-22f5-47b5-b088-d9032681113d
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 
 # MVPD Listing of IP Addresses

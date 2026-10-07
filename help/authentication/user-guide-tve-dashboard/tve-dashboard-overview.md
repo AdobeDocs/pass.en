@@ -2,6 +2,9 @@
 title: TVE Dashboard overview
 description: Know about TVE Dashboard and the resources.
 exl-id: 91baeb34-a32a-4dc3-94d8-f6cfca59dc4e
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # TVE Dashboard overview {#tve-db-overview}
 

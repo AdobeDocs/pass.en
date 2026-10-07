@@ -2,6 +2,9 @@
 title: Throttling mechanism
 description: Throttling mechanism
 exl-id: 15236570-1a75-42fb-9bba-0e2d7a59c9f6
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Throttling mechanism {#throttling-mechanism}
 

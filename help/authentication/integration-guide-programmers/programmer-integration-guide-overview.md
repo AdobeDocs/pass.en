@@ -2,6 +2,9 @@
 title: Programmer integration guide
 description: Programmer integration guide
 exl-id: 51461caf-08ef-459e-b284-8f317f45e7b1
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Programmer integration guide {#programmer-integration-guide}
 

@@ -2,6 +2,9 @@
 title: Adobe Concurrency Monitoring 2.9 Release Notes
 description: Adobe Concurrency Monitoring 2.9 Release Notes
 exl-id: fd793b1f-b704-492b-850c-dae6478b575a
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Concurrency Monitoring 2.9 Release Notes {#rn-cm29} 
 

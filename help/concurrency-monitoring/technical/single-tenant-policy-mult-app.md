@@ -2,6 +2,9 @@
 title: Implementing CM for a Single Tenant/Policy and Multiple Applications
 description: Implementing CM for a Single Tenant/Policy and Multiple Applications
 exl-id: 5c579c7d-f235-4dba-95c2-8485021d9065
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Implementing CM for a Single Tenant/Policy and Multiple Applications {#imp-cm}
  

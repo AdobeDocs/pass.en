@@ -2,6 +2,9 @@
 title: Apple SSO Overview
 description: Apple SSO Overview
 exl-id: 7cf47d01-a35a-4c85-b562-e5ebb6945693
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Apple SSO Overview {#apple-sso-overview}
 

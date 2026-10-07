@@ -2,6 +2,9 @@
 title: Android SDK with Dynamic Client Registration
 description: Android SDK with Dynamic Client Registration
 exl-id: 8d0c1507-8e80-40a4-8698-fb795240f618
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Android SDK with Dynamic Client Registration {#android-sdk-with-dynamic-client-registration}
 

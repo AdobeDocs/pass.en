@@ -2,6 +2,9 @@
 title: MVPD User Metadata Exchange
 description: MVPD User Metadata Exchange
 exl-id: 8bce6acc-cd33-476c-af5e-27eb2239cad1
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # MVPD User Metadata Exchange
 

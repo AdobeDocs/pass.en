@@ -2,6 +2,9 @@
 title: Integrating Adobe Pass Authentication server side data into Adobe Analytics
 description: Integrating Adobe Pass Authentication server side data into Adobe Analytics
 exl-id: c1f1f2a3-c98c-4aed-92ad-1f9bfd80b82b
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Integrating Adobe Pass Authentication server side data into Adobe Analytics
 

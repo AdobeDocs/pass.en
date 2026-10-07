@@ -2,6 +2,9 @@
 title: Avoid Using '&'reg_code in /authenticate Request
 description: Avoid Using '&'reg_code in /authenticate Request
 exl-id: c0ecb6f9-2167-498c-8a2d-a692425b31c5
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Avoid Using '&'reg_code in /authenticate Request {#clientless-avoid-using-reg_code-in-authenticate-request}
 

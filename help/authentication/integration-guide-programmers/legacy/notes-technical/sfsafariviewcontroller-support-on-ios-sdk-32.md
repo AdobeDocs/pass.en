@@ -2,6 +2,9 @@
 title: SFSafariViewController support on iOS SDK 3.2+
 description: SFSafariViewController support on iOS SDK 3.2+
 exl-id: 6691550f-c36f-4fae-aa77-082ca7d8a60a
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) SFSafariViewController support on iOS SDK 3.2+ {#sfsafariviewcontroller-support-on-ios-sdk-3.2}
 

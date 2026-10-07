@@ -2,6 +2,9 @@
 title: Understanding Server-side Metrics
 description: Understanding Server-side Metrics
 exl-id: 516884e9-6b0b-451a-b84a-6514f571aa44
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Understanding Server-side Metrics {#understanding-server-side-metrics}
 

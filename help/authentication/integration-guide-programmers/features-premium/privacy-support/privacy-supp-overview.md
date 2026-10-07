@@ -2,6 +2,9 @@
 title: Privacy support overview
 description: Privacy support overview
 exl-id: 9868a7e7-30f6-420e-a660-7d2f7870374d
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Privacy support overview {#priv-supp-overview}
 

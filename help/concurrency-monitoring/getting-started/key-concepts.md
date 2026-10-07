@@ -2,6 +2,9 @@
 title: Key Concepts
 description: Learn the fundamental concepts of Concurrency Monitoring including sessions, policies, metadata, and more
 exl-id: 9721055a-70e6-4ba1-a1e0-04406eec25e6
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Key Concepts {#key-concepts}
 

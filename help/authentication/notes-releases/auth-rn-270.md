@@ -2,6 +2,9 @@
 title: Adobe Pass Authentication 2.70 Release Notes
 description: Adobe Pass Authentication 2.70 Release Notes
 exl-id: 81713f8e-bc51-4057-9b00-6a2d6c83cd02
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Adobe Pass Authentication 2.70 Release Notes {#authn-270-rn}
 

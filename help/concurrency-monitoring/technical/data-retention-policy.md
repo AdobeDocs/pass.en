@@ -2,6 +2,9 @@
 title: Data retention policy
 description: Data retention policy
 exl-id: aa7d2d5e-9a8b-404b-874c-9e5923417784
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Data retention policy {#data-retention-policy}
 

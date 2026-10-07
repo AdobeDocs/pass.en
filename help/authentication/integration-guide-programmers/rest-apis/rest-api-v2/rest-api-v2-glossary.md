@@ -2,6 +2,9 @@
 title: REST API V2 Glossary
 description: REST API V2 Glossary
 exl-id: 8b3bd2de-1ff8-4c57-b18d-27ecdf2b0de2
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # REST API V2 Glossary {#rest-api-v2-glossary}
 

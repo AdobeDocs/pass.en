@@ -2,6 +2,9 @@
 title: Create authentication session
 description: REST API V2 - Create authentication session
 exl-id: bb2a6bb4-0778-4748-a674-df9d0e8242c8
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Create authentication session {#create-authentication-session}
 

@@ -2,6 +2,9 @@
 title: Home-Based Authentication (HBA)
 description: Home-Based Authentication (HBA)
 exl-id: abdc7724-4290-404a-8f93-953662cdc2bc
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Home-Based Authentication (HBA) {#home-based-authentication}
 

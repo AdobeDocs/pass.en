@@ -2,6 +2,9 @@
 title: How to test Authentication and Authorization flows using Adobe's API test site
 description: How to test Authentication and Authorization flows using Adobe's API test site
 exl-id: 04af4aed-35e4-44cb-98ce-7643165a8869
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) How to test Authentication and Authorization flows using Adobe's API Test site {#How-to-test-auth-flows}
 

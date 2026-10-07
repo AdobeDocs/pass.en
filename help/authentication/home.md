@@ -2,6 +2,9 @@
 title: Welcome to Adobe&reg; Pass Authentication
 description: Welcome to Adobe&reg; Pass Authentication
 exl-id: a8b01469-3d5f-4a44-9ae8-06a68c29d56d
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Welcome to Adobe&reg; Pass Authentication {#welcome}
 

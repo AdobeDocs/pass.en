@@ -2,6 +2,9 @@
 title: Media Tokens
 description: Media Tokens
 exl-id: 7e486d2c-e078-464d-90b1-14e2cfb4d20a
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Media Tokens {#media-tokens}
 

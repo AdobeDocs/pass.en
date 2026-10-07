@@ -2,6 +2,9 @@
 title: Registration Page
 description: Registration Page
 exl-id: 581b8e2e-7420-4511-88b9-f2cd43a41e10
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Registration Page {#registration-page}
 

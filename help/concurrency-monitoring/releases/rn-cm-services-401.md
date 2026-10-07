@@ -2,6 +2,9 @@
 title: Adobe Concurrency Monitoring Services 4.0.1 Release Notes
 description: Adobe Concurrency Monitoring Services 4.0.1 Release Notes
 exl-id: 912016d2-778b-4efe-a533-265775df2041
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Adobe Concurrency Monitoring Services 4.0.1 Release Notes {#cm-services-rns}
 

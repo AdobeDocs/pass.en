@@ -2,6 +2,9 @@
 title: Initiate Logout
 description: Initiate logout
 exl-id: 9625b5a2-31d9-4e20-8703-4a9e4eeb1618
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Initiate Logout {#initiate-logout}
 

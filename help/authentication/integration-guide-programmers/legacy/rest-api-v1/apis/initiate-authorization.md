@@ -2,6 +2,9 @@
 title: Initiate Authorization
 description: Initiate Authorization
 exl-id: 2f8a5499-e94f-40dd-9fb0-aac8e080de66
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Initiate Authorization {#initiate-authorization}
 

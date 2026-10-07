@@ -2,6 +2,9 @@
 title: Single Sign-On Support
 description: Single Sign-On Support
 exl-id: edc3719e-c627-464c-9b10-367a425698c6
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Single Sign-On Support
 

@@ -2,6 +2,9 @@
 title: Monitoring Adobe Pass Authentication
 description: Monitoring Adobe Pass Authentication
 exl-id: fb000e9d-b5aa-45b1-a914-9e419ec8a4d9
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Monitoring Adobe Pass Authentication {#monitoring-adobe-primetime-authentication}
 

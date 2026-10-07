@@ -2,6 +2,9 @@
 title: Glossary
 description: Glossary of terms in Concurrency Monitoring
 exl-id: 3b3b36fe-9f04-4de9-bd84-9f8d766bbc71
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Glossary {#glossary}
 

@@ -2,6 +2,9 @@
 title: Retrieve profiles
 description: REST API V2 - Retrieve profiles
 exl-id: 72922aa8-95ca-48dc-8523-e335802fc366
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Retrieve profiles {#retrieve-profiles}
 

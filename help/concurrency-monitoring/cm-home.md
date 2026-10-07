@@ -2,6 +2,9 @@
 title: Concurrency Monitoring Introduction
 description: Concurrency Monitoring Introduction
 exl-id: 725cc64b-6b03-46e3-a038-41e9b1341c6b
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Concurrency Monitoring Introduction {#intro}
 

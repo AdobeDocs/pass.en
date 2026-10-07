@@ -2,6 +2,9 @@
 title: Adobe Single Sign-On Service
 description: Learn about the Adobe Pass SSO Service that enables seamless authentication across multiple devices and applications.
 exl-id: ffca2bcc-c933-4688-8d98-c5e03390f66c
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Adobe Single Sign-On Service {#sso-service}
 

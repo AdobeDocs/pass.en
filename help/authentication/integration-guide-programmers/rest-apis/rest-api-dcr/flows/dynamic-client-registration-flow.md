@@ -2,6 +2,9 @@
 title: Dynamic Client Registration Flow
 description: Dynamic Client Registration Flow
 exl-id: d881cf0a-de09-4b1d-a094-d5490f944796
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Dynamic Client Registration Flow {#dynamic-client-registration-flow}
 

@@ -2,6 +2,9 @@
 title: Product Announcements
 description: Product Announcements
 exl-id: 3c9c66e1-d31d-4af3-8ab2-eb32492f42ca
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Product Announcements {#product-announcements}
 

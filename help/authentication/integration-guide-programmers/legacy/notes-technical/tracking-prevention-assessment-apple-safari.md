@@ -2,6 +2,9 @@
 title: Tracking Prevention Assessment Apple Safari
 description: Tracking Prevention Assessment Apple Safari
 exl-id: a3362020-92ff-4232-b923-e462868730d5
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Tracking Prevention Assessment - Apple Safari {#tracking-prevention-assessment-apple-safari}
 

@@ -2,6 +2,9 @@
 title: Implementation models
 description: Implementation models
 exl-id: 3bcb63ba-9b4a-4df4-8d24-e520b8830a10
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Implementation models {#imp-models}
 

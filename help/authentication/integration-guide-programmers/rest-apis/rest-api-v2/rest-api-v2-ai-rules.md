@@ -2,6 +2,9 @@
 title: REST API V2 AI Rules
 description: REST API V2 AI Rules
 exl-id: 7bcea820-2324-44a5-8628-9a10c1bec067
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # REST API V2 AI Rules {#rest-api-v2-ai-rules}
 

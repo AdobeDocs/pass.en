@@ -2,6 +2,9 @@
 title: Single Sign-On - Partner - Flows
 description: REST API V2 - Single Sign-On - Partner - Flows
 exl-id: 5735d67f-a311-4d03-ad48-93c0fcbcace5
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Single sign-on using partner flows {#single-sign-on-partner-flows}
 

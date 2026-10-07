@@ -2,6 +2,9 @@
 title: JavaScript SDK API Reference
 description: JavaScript SDK API Reference
 exl-id: 48d48327-14e6-46f3-9e80-557f161acd8a
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) JavaScript SDK API Reference {#javascript-sdk-api-reference}
 

@@ -2,6 +2,9 @@
 title: Minimum System Requirements
 description: Minimum System Requirements
 exl-id: 57b21e2a-abd7-4b4b-85f1-25584a850e40
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Minimum System Requirements {#minimum-system-requirements}
 

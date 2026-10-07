@@ -2,6 +2,9 @@
 title: Preflight Feature, How to Enable, Troubleshoot or Determine the Issue
 description: Preflight Feature, How to Enable, Troubleshoot or Determine the Issue
 exl-id: 9e4ec343-371f-4116-915f-191e5f42cb47
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Preflight Feature: How to Enable, Troubleshoot or Determine the Issue {#preflight-feature}
 

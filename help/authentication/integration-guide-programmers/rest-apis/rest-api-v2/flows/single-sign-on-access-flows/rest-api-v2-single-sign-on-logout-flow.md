@@ -2,6 +2,9 @@
 title: Single Logout - Flow
 description: REST API V2 - Single Logout - Flow
 exl-id: d7092ca7-ea7b-4e92-b45f-e373a6d673d6
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Single logout flow {#single-logout-flow}
 

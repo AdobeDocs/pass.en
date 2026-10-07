@@ -2,6 +2,9 @@
 title: Amazon SSO Cookbook (REST API V1)
 description: Amazon SSO Cookbook (REST API V1)
 exl-id: 4c65eae7-81c1-4926-9202-a36fd13af6ec
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Amazon SSO Cookbook (REST API V1) {#amazon-sso-cookbook-rest-api-v1}
 

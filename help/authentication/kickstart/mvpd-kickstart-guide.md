@@ -2,6 +2,9 @@
 title: MVPD kickstart guide
 description: MVPD kickstart guide
 exl-id: 6423cc9a-a45a-4cde-b562-4cb72c98e505
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # MVPD kickstart guide {#mvpd-kickstart-guide}
 

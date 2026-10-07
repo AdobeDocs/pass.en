@@ -2,6 +2,9 @@
 title: Initiate logout for specific mvpd
 description: REST API V2 - Initiate logout for specific mvpd
 exl-id: 2482de87-b3d4-4ea8-bd4a-25bf10017e01
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Initiate logout for specific mvpd {#initiate-logout-for-specific-mvpd}
 

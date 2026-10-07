@@ -2,6 +2,9 @@
 title: TVE Dashboard Integrations
 description: Know about the integrations between your channels and MVPDs and how to manage integrations.
 exl-id: 0add340b-120c-4e82-8e3c-6c190d77cf7e
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Integrations
 

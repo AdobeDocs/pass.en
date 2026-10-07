@@ -2,6 +2,9 @@
 title: CMU API access
 description: CMU API access
 exl-id: 8d216703-aabc-489e-93fe-d4d105616b1d
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Concurrency Monitoring Usage API access {#cmu-api-usage-access}
 

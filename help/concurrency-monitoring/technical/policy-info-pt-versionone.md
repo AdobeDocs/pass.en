@@ -2,6 +2,9 @@
 title: Policy Information Point
 description: Policy Information Point
 exl-id: 964bb28d-cfef-4a37-b6c4-10cc59be0b47
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Policy Information Point {#pip}
 

@@ -2,6 +2,9 @@
 title: Adobe Pass Authentication and the Android 6 "Marshmallow" New Permissions Model
 description: Adobe Pass Authentication and the Android 6 "Marshmallow" New Permissions Model
 exl-id: 3c96769e-b25b-48ab-bb74-40f13d4e5a84
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Adobe Pass Authentication and the Android 6 "Marshmallow" New Permissions Model {#adobe-primetime-authentication-and-the-android-6-marshmallow-new-permissions-model}
 

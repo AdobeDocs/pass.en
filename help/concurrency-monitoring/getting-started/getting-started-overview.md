@@ -2,6 +2,9 @@
 title: Getting Started with Concurrency Monitoring
 description: Learn the basics of Concurrency Monitoring and how to get started with your integration
 exl-id: d2b8c7c4-b02d-4bea-9310-162064fd7216
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Getting Started with Concurrency Monitoring {#getting-started-overview}
 

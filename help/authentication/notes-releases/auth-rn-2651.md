@@ -2,6 +2,9 @@
 title: Adobe Pass Authentication 2.65.1 Release Notes
 description: Adobe Pass Authentication 2.65.1 Release Notes
 exl-id: 28d112db-b038-4d11-93c5-d6ab67a29700
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Adobe Pass Authentication 2.65.1 Release Notes {#authn-2651-rn}
 

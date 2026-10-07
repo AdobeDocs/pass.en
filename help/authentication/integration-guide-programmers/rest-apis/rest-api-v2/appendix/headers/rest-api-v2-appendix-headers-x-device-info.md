@@ -2,6 +2,9 @@
 title: Header - X-Device-Info
 description: REST API V2 - Header - X-Device-Info
 exl-id: 0ef25e06-86de-427a-a938-7ba3817f0d5e
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Header - X-Device-Info {#header-x-device-info}
 

@@ -2,6 +2,9 @@
 title: TVE Dashboard MVPDs
 description: Learn about MVPDs and its configurations within the TVE Dashboard.
 exl-id: 802c1570-9a5b-4bec-8fb2-6c7738b28bc9
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # MVPDs
 

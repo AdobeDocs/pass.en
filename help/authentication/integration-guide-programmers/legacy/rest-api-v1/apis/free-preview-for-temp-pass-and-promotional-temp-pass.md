@@ -2,6 +2,9 @@
 title: Free Preview for Temp Pass and Promotional Temp Pass
 description: Free Preview for Temp Pass and Promotional Temp Pass
 exl-id: c584bf0c-15c4-4a4d-b6a2-8d15ee786fe3
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Free Preview for Temp Pass and Promotional Temp Pass {#free-preview-for-temp-pass-and-promotional-temp-pass}
 

@@ -2,6 +2,9 @@
 title: Basic Authentication - Secondary Application - Flow
 description: REST API V2 - Basic Authentication - Secondary Application - Flow
 exl-id: 83bf592e-c679-4cfe-984d-710a9598c620
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Basic authentication flow performed within secondary application {#basic-authentication-flow-performed-within-secondary-application}
 

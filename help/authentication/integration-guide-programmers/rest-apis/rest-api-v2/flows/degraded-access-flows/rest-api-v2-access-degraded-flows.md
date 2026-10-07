@@ -2,6 +2,9 @@
 title: Degraded Access Flows
 description: REST API V2 - Degraded Access Flows
 exl-id: 9276f5d9-8b1a-4282-8458-0c1e1e06bcf5
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Degraded access flows {#degraded-access-flows}
 

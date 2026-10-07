@@ -2,6 +2,9 @@
 title: LIFO vs FIFO Strategies
 description: Understand the difference between LIFO and FIFO strategies and when to use each approach
 exl-id: 2d7c4bc8-0491-429b-8471-3b5629aa76a6
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # LIFO vs FIFO Strategies {#lifo-fifo-strategies}
 

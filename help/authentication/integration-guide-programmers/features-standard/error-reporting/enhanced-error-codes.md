@@ -2,6 +2,9 @@
 title: Enhanced Error Codes
 description: Enhanced Error Codes
 exl-id: 2b0a9095-206b-4dc7-ab9e-e34abf4d359c
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Enhanced Error Codes {#enhanced-error-codes}
 

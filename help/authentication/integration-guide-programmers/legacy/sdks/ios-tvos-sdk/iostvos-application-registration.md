@@ -2,6 +2,9 @@
 title: iOS/tvOS Application Registration
 description: iOS/tvOS Application Registration
 exl-id: 89ee6b5a-29fa-4396-bfc8-7651aa3d6826
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 
 # (Legacy) iOS/tvOS Application Registration {#iostvos-application-registration}

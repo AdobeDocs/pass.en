@@ -2,6 +2,9 @@
 title: Retrieve Platform SSO profile-request
 description: Retrieve Platform SSO profile-request
 exl-id: 44fd4e26-4d9a-4607-ac2c-b85d848f5fc6
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Retrieve Platform SSO profile-request {#retrieve-platform-sso-profile-request}
 

@@ -2,6 +2,9 @@
 title: Channels
 description: Learn about channels and their various configurations within the TVE Dashboard.
 exl-id: bbddeccb-6b6f-4a8f-87ab-d4af538eee1d
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Channels {#channels}
 

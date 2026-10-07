@@ -2,6 +2,9 @@
 title: Android Application Registration
 description: Android Application Registration
 exl-id: 6238bd87-ac97-4a5c-9d92-3631f7b2d46a
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Android Application Registration {#android-application-registration}
 

@@ -2,6 +2,9 @@
 title: Tracking Prevention Assessment Google Chrome
 description: Tracking Prevention Assessment Google Chrome
 exl-id: f3d552da-2fd7-4ac8-9f82-876625af5d47
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Tracking Prevention Assessment - Google Chrome {#tracking-prevention-assessment-google-chrome}
 

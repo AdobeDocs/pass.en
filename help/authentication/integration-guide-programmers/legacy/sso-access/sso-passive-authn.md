@@ -2,6 +2,9 @@
 title: SSO via Passive Authentication
 description: SSO via Passive Authentication
 exl-id: ce45899f-6e94-4bb0-a2c1-51f03bd66d8d
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) SSO via Passive Authentication
 

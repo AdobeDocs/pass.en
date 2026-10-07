@@ -2,6 +2,9 @@
 title: Retrieve authentication session using code
 description: REST API V2 - Retrieve authentication session using code
 exl-id: 5cc209eb-ee6b-4bb9-9c04-3444408844b7
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Retrieve authentication session using code {#retrieve-authentication-session-using-code}
 

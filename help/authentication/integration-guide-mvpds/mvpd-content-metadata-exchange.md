@@ -2,6 +2,9 @@
 title: MVPD Content Metadata Exchange
 description: MVPD Content Metadata Exchange
 exl-id: d17e60dc-6c61-4ca2-bad8-1840c95261e0
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # MVPD Content Metadata Exchange
 

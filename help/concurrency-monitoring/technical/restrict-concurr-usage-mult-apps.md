@@ -2,6 +2,9 @@
 title: Restrict concurrent usage with multiple applications belonging to different owners
 description: Restricting concurrent usage with multiple applications belonging to different owners
 exl-id: c358befc-36d6-4f55-92cc-4d02064c65fb
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Restricting concurrent usage with multiple applications belonging to different owners {#restr-concurr-usage}
 

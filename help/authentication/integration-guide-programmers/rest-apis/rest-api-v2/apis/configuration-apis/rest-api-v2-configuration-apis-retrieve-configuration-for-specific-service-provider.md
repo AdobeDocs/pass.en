@@ -2,6 +2,9 @@
 title: Retrieve configuration for specific service provider
 description: REST API V2 - Retrieve configuration for specific service provider
 exl-id: ad7e4c6d-ed96-4ae7-82a9-3c24e5fc9302
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Retrieve configuration for specific service provider {#retrieve-configuration-for-specific-service-provider}
 

@@ -2,6 +2,9 @@
 title: Policy decision point
 description: Policy decision point
 exl-id: 94bc638c-bef8-45ea-b20a-9b7038adecdd
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Policy decision point {#policy-desc-pt}
 

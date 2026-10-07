@@ -2,6 +2,9 @@
 title: Adobe Pass Authentication Android 3.7.3 Release Notes
 description: Adobe Pass Authentication Android 3.7.3 Release Notes
 exl-id: f335357e-c209-428d-af2a-2181551447d4
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Adobe Pass Authentication Android 3.7.3 Release Notes {#android-sdk-373-rn}
 

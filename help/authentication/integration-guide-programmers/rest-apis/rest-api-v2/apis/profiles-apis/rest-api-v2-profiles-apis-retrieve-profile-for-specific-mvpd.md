@@ -2,6 +2,9 @@
 title: Retrieve profile for specific mvpd
 description: REST API V2 - Retrieve profile for specific mvpd
 exl-id: ed1abc33-c279-4465-b5a0-b4e5b892076e
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Retrieve profile for specific mvpd {#retrieve-profile-for-specific-mvpd}
 

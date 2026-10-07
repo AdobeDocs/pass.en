@@ -2,6 +2,9 @@
 title: Basic Preauthorization - Primary Application - Flow
 description: REST API V2 - Basic Preauthorization - Primary Application - Flow
 exl-id: f557f6c3-d5b2-4ec8-be51-91a90fbd31c0
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Basic preauthorization flow performed within primary application {#basic-preauthorization-flow-performed-within-primary-application}
 

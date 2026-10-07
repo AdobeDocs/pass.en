@@ -2,6 +2,9 @@
 title: Header - AD-Service-Token
 description: REST API V2 - Header - AD-Service-Token
 exl-id: 856f76fc-cde6-4b3f-81f7-deaa0df015dc
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Header - AD-Service-Token {#header-ad-service-token}
 

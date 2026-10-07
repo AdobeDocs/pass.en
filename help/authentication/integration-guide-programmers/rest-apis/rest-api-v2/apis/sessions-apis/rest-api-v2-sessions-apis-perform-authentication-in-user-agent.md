@@ -2,6 +2,9 @@
 title: Perform authentication in user agent
 description: REST API V2 - Perform authentication in user agent
 exl-id: d615dde0-71a8-4b6c-a12e-1e3b5e20728c
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Perform authentication in user agent {#perform-authentication-in-user-agent}
 

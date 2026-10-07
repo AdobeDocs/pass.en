@@ -2,6 +2,9 @@
 title: Degradation Feature
 description: Degradation Feature
 exl-id: c7d6685b-a235-42eb-9c9c-0ffa1747f614
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Degradation Feature {#degradation-feature}
 

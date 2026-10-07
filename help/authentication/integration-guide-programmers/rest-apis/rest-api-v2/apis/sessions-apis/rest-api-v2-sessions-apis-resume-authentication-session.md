@@ -2,6 +2,9 @@
 title: Resume authentication session
 description: REST API V2 - Resume authentication session
 exl-id: 66c33546-2be0-473f-9623-90499d1c13eb
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Resume authentication session {#resume-authentication-session}
 

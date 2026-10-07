@@ -2,6 +2,9 @@
 title: Changes log
 description: Know how an admin can monitor the configuration changes in the TVE Dashboard.
 exl-id: 9b53a61b-679f-491e-90f3-5d827e21b32c
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Changes log {#changes-log}
 

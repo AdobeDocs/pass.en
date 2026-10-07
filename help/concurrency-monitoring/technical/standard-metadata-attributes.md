@@ -2,6 +2,9 @@
 title: Standard metadata attributes
 description: Standard metadata attributes
 exl-id: 99ffa98c-213f-47a5-a6e7-fbacb77875d0
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Standard metadata attributes {#std-metadata-attributes}
 

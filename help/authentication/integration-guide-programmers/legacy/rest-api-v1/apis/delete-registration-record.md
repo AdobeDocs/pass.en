@@ -2,6 +2,9 @@
 title: Delete Registration Record
 description: Delete registration resord
 exl-id: 42707070-2e1f-4847-93fd-30025aef56c1
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Delete Registration Record {#delete-registration-record}
 

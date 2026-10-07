@@ -2,6 +2,9 @@
 title: Adobe Pass Authentication 3.4.0 Release Notes
 description: Adobe Pass Authentication 3.4.0 Release Notes
 exl-id: ad572617-f607-419d-a085-70c025465080
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Adobe Pass Authentication 3.4.0 Release Notes {#authn-340-rn}
 

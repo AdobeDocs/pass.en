@@ -2,6 +2,9 @@
 title: Amazon FireOS Technical Overview
 description: Amazon FireOS Technical Overview
 exl-id: 939683ee-0dd9-42ab-9fde-8686d2dc0cd0
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Amazon FireOS Technical Overview {#amazon-fireos-technical-overview}
 

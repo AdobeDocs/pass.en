@@ -2,6 +2,9 @@
 title: Proxy MVPD Web Service
 description: Proxy MVPD Web Service
 exl-id: f75cbc4d-4132-4ce8-a81c-1561a69d1d3a
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 
 # Proxy MVPD web service {#proxy-mvpd-wbservice}

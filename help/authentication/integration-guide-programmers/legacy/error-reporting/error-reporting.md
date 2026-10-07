@@ -2,6 +2,9 @@
 title: Error Reporting
 description: Error Reporting
 exl-id: a52bd2cf-c712-40a2-a25e-7d9560b46ba6
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Error Reporting {#error-reporting}
 

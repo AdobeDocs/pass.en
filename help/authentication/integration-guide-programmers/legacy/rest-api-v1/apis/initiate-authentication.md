@@ -2,6 +2,9 @@
 title: Initiate Authentication
 description: Initiate authentication
 exl-id: 55dddd29-68d6-4aae-8744-307fea285e29
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Initiate Authentication {#initiate-authentication}
 

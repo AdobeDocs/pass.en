@@ -2,6 +2,9 @@
 title: Concurrency Monitoring Usage Reports Examples
 description: Concurrency Monitoring Usage Reports Examples
 exl-id: e612ea40-c59c-440e-9c80-754b81b37a72
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Concurrency Monitoring Usage Reports Examples{#cm-usage-reports-examples}
 

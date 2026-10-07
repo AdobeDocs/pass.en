@@ -2,6 +2,9 @@
 title: Amazon FireOS Application Registration
 description: Amazon FireOS Application Registration
 exl-id: 650fd4a2-dfc3-4c74-9b5b-6bea832a28ca
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Amazon FireOS Application Registration {#amazon-fireos-application-registration}
 

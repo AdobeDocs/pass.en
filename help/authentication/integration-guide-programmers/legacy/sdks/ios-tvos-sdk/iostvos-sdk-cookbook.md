@@ -2,6 +2,9 @@
 title: iOS/tvOS Cookbook
 description: iOS/tvOS Cookbook
 exl-id: 4743521e-d323-4d1d-ad24-773127cfbe42
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) iOS/tvOS SDK Cookbook {#iostvos-sdk-cookbook}
 

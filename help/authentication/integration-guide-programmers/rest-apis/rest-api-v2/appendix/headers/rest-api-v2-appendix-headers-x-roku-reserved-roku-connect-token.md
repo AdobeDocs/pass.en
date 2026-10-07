@@ -2,6 +2,9 @@
 title: Header - X-Roku-Reserved-Roku-Connect-Token
 description: REST API V2 - Header - X-Roku-Reserved-Roku-Connect-Token
 exl-id: 21016d5b-4d10-4018-a82c-f2797b2d9fb9
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Header - X-Roku-Reserved-Roku-Connect-Token {#header-x-roku-reserved-roku-connect-token}
 

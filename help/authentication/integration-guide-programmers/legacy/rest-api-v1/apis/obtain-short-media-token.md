@@ -2,6 +2,9 @@
 title: Obtain Short Media Token
 description: obtain short media token
 exl-id: 667eaaba-423e-4d54-9dbe-084b3c049e1f
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Obtain Short Media Token {#obtain-short-media-token}
 

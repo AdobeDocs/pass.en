@@ -2,6 +2,9 @@
 title: MVPD integration guide
 description: MVPD integration guide
 exl-id: b918550b-96a8-4e80-af28-0a2f63a02396
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # MVPD integration guide {#mvpd-integration-guide}
 

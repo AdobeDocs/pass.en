@@ -2,6 +2,9 @@
 title: REST API Reference
 description: Rest api reference
 exl-id: 67e4639e-db0b-4400-bb81-e214263e8395
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) REST API Reference {#rest-api-reference}
 

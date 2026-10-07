@@ -2,6 +2,9 @@
 title: MVPD Logout
 description: MVPD Logout
 exl-id: a2b57d02-9688-48e3-beff-1012cd361d0c
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # MVPD Logout
 

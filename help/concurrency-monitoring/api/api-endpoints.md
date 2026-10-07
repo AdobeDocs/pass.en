@@ -2,6 +2,9 @@
 title: API Endpoints
 description: Complete list of the Concurrency Monitoring APIs
 exl-id: e8a9dfd2-cd16-4971-b9bc-9646987dd3ce
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # API Endpoints 
 

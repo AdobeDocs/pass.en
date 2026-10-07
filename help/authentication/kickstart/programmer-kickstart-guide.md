@@ -2,6 +2,9 @@
 title: Programmer kickstart guide
 description: Programmer kickstart guide
 exl-id: 0aecdb81-9b97-4475-b0b0-654d916b2374
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Programmer kickstart guide {#programmer-kickstart-guide}
 

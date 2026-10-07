@@ -2,6 +2,9 @@
 title: JavaScript SDK Cookbook
 description: JavaScript SDK Cookbook
 exl-id: d57f7a4a-ac77-4f3c-8008-0cccf8839f7c
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) JavaScript SDK Cookbook {#javascript-sdk-cookbook}
 

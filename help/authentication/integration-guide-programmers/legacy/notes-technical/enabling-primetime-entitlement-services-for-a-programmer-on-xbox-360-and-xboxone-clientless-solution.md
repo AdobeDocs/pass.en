@@ -2,6 +2,9 @@
 title: Enabling Adobe Pass Entitlement Services for a Programer on Xbox 360 and XboxOne Clientless
 description: Enabling Adobe Pass Entitlement Services for a Programer on Xbox 360 and XboxOne Clientless
 exl-id: ff7254de-9ea4-4c27-a186-d1c2eea12222
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Enabling Adobe Pass Entitlement Services for a Programer on Xbox 360 and XboxOne Clientless {#enabling-primetime-entitlement-services-for-a-programer-on-xbox-360-and-xboxone-clientless}
 

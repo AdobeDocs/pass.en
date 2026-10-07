@@ -2,6 +2,9 @@
 title: Temporary Access Flows
 description: REST API V2 - Temporary Access Flows
 exl-id: 387fcdb0-3a42-4893-ba83-e809426f92be
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Temporary access flows {#temporary-access-flows}
 

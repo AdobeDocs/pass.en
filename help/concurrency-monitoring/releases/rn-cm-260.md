@@ -2,6 +2,9 @@
 title: Adobe Pass Concurrency Monitoring 2.6.0 Release Notes
 description: Adobe Pass Concurrency Monitoring 2.6.0 Release Notes
 exl-id: f24980e3-ffe8-4b5e-8adc-ae443baed40f
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Adobe Pass Concurrency Monitoring 2.6.0 Release Notes {#cm-260}
  

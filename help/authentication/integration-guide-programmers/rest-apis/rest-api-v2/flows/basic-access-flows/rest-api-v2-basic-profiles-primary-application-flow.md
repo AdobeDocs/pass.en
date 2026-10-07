@@ -2,6 +2,9 @@
 title: Basic Profiles - Primary Application - Flow
 description: REST API V2 - Basic Profiles - Primary Application - Flow
 exl-id: 19ddf382-9a32-4b94-aa84-7611c0e1780e
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Basic profiles flow performed within primary application {#basic-profiles-flow-primary-application}
 

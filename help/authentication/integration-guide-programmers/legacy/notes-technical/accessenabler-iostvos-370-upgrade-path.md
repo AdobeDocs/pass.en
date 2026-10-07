@@ -2,6 +2,9 @@
 title: AccessEnabler iOS/tvOS 3.7.0 Upgrade Path
 description: AccessEnabler iOS/tvOS 3.7.0 Upgrade Path
 exl-id: f15c7414-ec9b-4e21-b457-1ecf59f47441
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) AccessEnabler iOS/tvOS 3.7.0 Upgrade Path {#accessenabler-iostvos-370-upgrade-path}
 

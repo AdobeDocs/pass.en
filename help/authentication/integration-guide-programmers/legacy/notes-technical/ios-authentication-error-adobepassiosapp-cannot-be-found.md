@@ -2,6 +2,9 @@
 title: iOS Authentication Error - adobepass.ios.app Cannot Be Found
 description: iOS Authentication Error - adobepass.ios.app Cannot Be Found
 exl-id: cd97c6fb-f0fa-45c2-82c1-f28aa6b2fd12
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) iOS Authentication Error - adobepass.ios.app Cannot Be Found {#ios-authentication-error-adobepass.ios.app-cannot-be-found}
 

@@ -2,6 +2,9 @@
 title: Dynamic Client Registration Overview
 description: Dynamic Client Registration Overview
 exl-id: 9f98dfcd-4375-48c3-beff-259dfb1d3a26
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Dynamic Client Registration Overview {#dynamic-client-registration-overview}
 

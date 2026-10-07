@@ -2,6 +2,9 @@
 title: Prevent MVPDs from appearing in the Selection Dialog
 description: Prevent MVPDs from appearing in the Selection Dialog
 exl-id: 20faf501-c006-45e2-a725-fb1273ecaffe
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Prevent MVPDs from appearing in the Selection Dialog
 

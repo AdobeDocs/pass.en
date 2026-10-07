@@ -2,6 +2,9 @@
 title: Access Enabler Android SDK Single Sign-On (SSO) on Android 10 apps
 description: Access Enabler Android SDK Single Sign-On (SSO) on Android 10 apps
 exl-id: dedade15-c451-4757-b684-d3728e11dd87
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) Access Enabler Android SDK Single Sign-On (SSO) on Android 10 apps {#access-enabler-android-sdk-single-sign-on-sso-on-android-10-apps}
 

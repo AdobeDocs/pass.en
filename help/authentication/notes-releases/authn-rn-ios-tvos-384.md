@@ -2,6 +2,9 @@
 title: Adobe Pass Authentication iOS / tvOS 3.8.4 Release Notes
 description: Adobe Pass Authentication iOS / tvOS 3.8.4 Release Notes
 exl-id: 51d38e2a-b500-402b-9583-f7b5ad6648fd
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Adobe Pass Authentication iOS / tvOS 3.8.4 Release Notes {#ios-tvos-sdk-384-rn}
 

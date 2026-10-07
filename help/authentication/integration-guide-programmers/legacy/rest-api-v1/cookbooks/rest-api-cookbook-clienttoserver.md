@@ -2,6 +2,9 @@
 title: REST API Cookbook (Client-to-Server)
 description: Rest API cookbook client to server.
 exl-id: f54a1eda-47d5-4f02-b343-8cdbc99a73c0
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # (Legacy) REST API Cookbook (Client-to-Server) {#rest-api-cookbook-client-to-server}
 

@@ -2,6 +2,9 @@
 title: Retrieve client credentials
 description: Dynamic Client Registration API - Retrieve client credentials
 exl-id: 0b39768b-25b8-47b9-8080-59c56fb829fb
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Retrieve client credentials {#retrieve-client-credentials}
 

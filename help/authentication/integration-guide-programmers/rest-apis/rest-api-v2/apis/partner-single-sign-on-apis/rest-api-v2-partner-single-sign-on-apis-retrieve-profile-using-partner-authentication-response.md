@@ -2,6 +2,9 @@
 title: Create and retrieve profile using partner authentication response
 description: REST API V2 - Create and retrieve profile using partner authentication response
 exl-id: cae260ff-a229-4df7-bbf9-4cdf300c0f9a
+product_v2:
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 ---
 # Create and retrieve profile using partner authentication response {#create-and-retrieve-profile-using-partner-authentication-response}
 
