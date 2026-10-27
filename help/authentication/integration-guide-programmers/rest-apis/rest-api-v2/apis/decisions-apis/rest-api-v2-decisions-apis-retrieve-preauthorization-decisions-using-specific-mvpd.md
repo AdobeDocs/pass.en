@@ -268,6 +268,13 @@ product_v2:
                <td><i>required</i></td>
             </tr>
             <tr>
+               <td style="background-color: #DEEBFF;">userMetadata</td>
+               <td>
+                  Optional userMetadata shared by the MVPD. The available keys depend on the MVPD configuration. Each metadata key is returned as an object containing <b>value</b> and <b>state</b>. For example, Spectrum may return <code>packageType</code>. Metadata is returned only when the MVPD provides it in the preauthorization response.
+               </td>
+               <td>optional</td>
+            </tr>
+            <tr>
                <td style="background-color: #DEEBFF;">error</td>
                <td>The error provides additional information about the 'Deny' decision that adheres to the <a href="../../../../features-standard/error-reporting/enhanced-error-codes.md">Enhanced Error Codes</a> documentation.</td>
                <td>optional</td>
@@ -359,14 +366,26 @@ Content-Type: application/json;charset=UTF-8
          "serviceProvider": "REF30",
          "mvpd": "Cablevision",
          "source": "mvpd",
-         "authorized": true
+         "authorized": true,
+         "userMetadata": {
+            "packageType": {
+               "value": "INCLUSION",
+               "state": "plain"
+            }
+         }
       },
       {
          "resource": "resource2",
          "serviceProvider": "REF30",
          "mvpd": "Cablevision",
          "source": "mvpd",
-         "authorized": true
+         "authorized": true,
+         "userMetadata": {
+            "packageType": {
+               "value": "INCLUSION",
+               "state": "plain"
+            }
+         }
       },
       {
          "resource": "resource3",

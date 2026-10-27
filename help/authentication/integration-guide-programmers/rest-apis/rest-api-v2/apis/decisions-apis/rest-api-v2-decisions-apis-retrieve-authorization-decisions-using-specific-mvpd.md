@@ -296,6 +296,13 @@ product_v2:
                <td>optional</td>
             </tr>
             <tr>
+               <td style="background-color: #DEEBFF;">userMetadata</td>
+               <td>
+                  Optional userMetadata shared by the MVPD. The available keys depend on the MVPD configuration. Each metadata key is returned as an object containing <b>value</b> and <b>state</b>. For example, Spectrum may return <code>packageType</code>.
+               </td>
+               <td>optional</td>
+            </tr>
+            <tr>
                <td style="background-color: #DEEBFF;">error</td>
                <td>The error provides additional information about the 'Deny' decision that adheres to the <a href="../../../../features-standard/error-reporting/enhanced-error-codes.md">Enhanced Error Codes</a> documentation.</td>
                <td>optional</td>
@@ -393,7 +400,13 @@ Content-Type: application/json;charset=UTF-8
                 "serializedToken": "PHNpZ25hdHVyZUluZm8..."
             },
             "notBefore": 1697094207324,
-            "notAfter": 1697098802367
+            "notAfter": 1697098802367,
+            "userMetadata": {
+                "packageType": {
+                    "value": "INCLUSION",
+                    "state": "plain"
+                }
+            }
         }
     ]
 }
