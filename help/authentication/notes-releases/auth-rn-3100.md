@@ -1,7 +1,6 @@
 ---
 title: Adobe Pass Authentication 3.10.0 Release Notes
 description: Adobe Pass Authentication 3.10.0 Release Notes
-hold: true
 product_v2:
   - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
     internal-label: Pass

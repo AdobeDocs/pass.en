@@ -13,7 +13,7 @@ nudge: true
 -   [Product Announcements](product-announcements.md)
 -   Product Releases {#product-releases}
     -   2026 {#2026}
-        -   {hide-from-toc} [Adobe Pass Authentication 3.10.0 release notes](notes-releases/auth-rn-3100.md)
+        -   [Adobe Pass Authentication 3.10.0 release notes](notes-releases/auth-rn-3100.md)
         -   [Adobe Pass Authentication 3.9.0 release notes](notes-releases/auth-rn-390.md)
         -   [Adobe Pass Authentication 3.8.0 release notes](notes-releases/auth-rn-380.md)
         -   [Adobe Pass Authentication 3.7.0 release notes](notes-releases/auth-rn-370.md)
