@@ -16,24 +16,16 @@ To get started, visit the public documentation of the APIs you are interested in
 
 ## Base URLs {#rest-api-v2-apis-base-urls}
 
-Use the environment-specific base URL below for REST API V2 requests. Append
-the relative `path` documented for each API to this base URL.
+Use the environment-specific base URL below for REST API V2 requests. Append the relative `path` documented for each API to this base URL.
 
-Some API responses return interactive URLs that the streaming device must open
-in a browser or user agent. Examples include the `url` attribute returned by
-[Initiate logout for specific mvpd](logout-apis/rest-api-v2-logout-apis-initiate-logout-for-specific-mvpd.md)
-and the `Location` redirect returned by
-[Perform authentication in user agent](sessions-apis/rest-api-v2-sessions-apis-perform-authentication-in-user-agent.md).
+Some API responses return interactive URLs that the streaming device must open in a browser or user agent. Examples include the `url` attribute returned by [Initiate logout for specific mvpd](logout-apis/rest-api-v2-logout-apis-initiate-logout-for-specific-mvpd.md) and the `Location` redirect returned by [Perform authentication in user agent](sessions-apis/rest-api-v2-sessions-apis-perform-authentication-in-user-agent.md).
 
-These interactive URLs use the same Adobe Pass Service Provider (SP) host.
-Open an absolute interactive URL exactly as returned. If Adobe Pass returns a
-relative interactive URL beginning with `/adobe-services/`, resolve it against
-the SP host for the target environment:
+These interactive URLs use the same Adobe Pass Service Provider (SP) host. Open an absolute interactive URL exactly as returned. If Adobe Pass returns a relative interactive URL beginning with `/adobe-services/`, resolve it against the SP host for the target environment:
 
-| Environment | REST API V2 and interactive URL base URL |
-| --- | --- |
-| Production | `https://sp.auth.adobe.com` |
-| Staging | `https://sp.auth-staging.adobe.com` |
+| Environment | REST API V2 and interactive Base URL |
+| --- |--------------------------------------|
+| Production | `https://sp.auth.adobe.com`          |
+| Staging | `https://sp.auth-staging.adobe.com`  |
 
 ## Configuration {#rest-api-v2-apis-configuration}
 
